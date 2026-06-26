@@ -163,17 +163,20 @@ cdef CosmologicalState compute_next_state(CosmologicalState current,
     nxt.phi_4d_flux = current.rho_I * PHI_INV_4 * expansion_ratio
     nxt.cumulative_leakage = current.cumulative_leakage + nxt.phi_4d_flux * dt
 
+    # Restoring force to maintain the 3:1 ratio (Derrick-Hobart stabilization)
+    cdef double restoration = params.structural_coupling * (current.rho_S - 3.0 * current.rho_I)
+
     # 3. Structural energy density update
-    #    Diluted by volume expansion (∝ a^-3) AND drained by the φ^-4 leakage
+    #    Diluted by volume expansion (∝ a^-3) AND drained by the φ^-4 leakage and restoration
     cdef double vol_factor = 1.0 / (expansion_ratio * expansion_ratio * expansion_ratio)
     cdef double d_rho_S = -(3.0 * da_dt / (current.scale_factor + 1e-30)) * current.rho_S \
-                          - nxt.phi_4d_flux
+                          - nxt.phi_4d_flux - restoration
     nxt.rho_S = max(current.rho_S * vol_factor + d_rho_S * dt, 0.0)
 
     # 4. Interface energy density update
-    #    Fed by structural decay (the 3:1 re-balance) minus dimensional drag
+    #    Fed by structural decay (the 3:1 re-balance) and restoration minus dimensional drag
     cdef double d_rho_I = (nxt.phi_4d_flux / TAP_RATIO) \
-                          - (params.dimensional_drag * current.rho_I)
+                          - (params.dimensional_drag * current.rho_I) + restoration
     nxt.rho_I = max(current.rho_I * vol_factor + d_rho_I * dt, 0.0)
 
     # 5. Entropy accumulation (BOL heat death counter)
