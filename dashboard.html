@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP Model -- Unified Physics & Cosmology Dashboard</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- MathJax CDN for LaTeX equations -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --bg-color: #030308;
+            --panel-bg: rgba(10, 10, 24, 0.7);
+            --border-color: rgba(124, 106, 247, 0.15);
+            --accent-purple: #7c6af7;
+            --accent-cyan: #4ecdc4;
+            --accent-orange: #ff6b6b;
+            --accent-yellow: #ffd93d;
+            --text-main: #f0f0f5;
+            --text-muted: #8f8fa3;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 2rem;
+            background-image: radial-gradient(circle at 50% 50%, rgba(124, 106, 247, 0.08) 0%, transparent 60%);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 2rem;
+        }
+
+        .panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .control-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .control-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .control-group input[type="range"] {
+            width: 100%;
+            height: 6px;
+            background: #18182a;
+            border-radius: 3px;
+            outline: none;
+            -webkit-appearance: none;
+            accent-color: var(--accent-purple);
+        }
+
+        .control-group .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .control-group .val-display {
+            font-family: monospace;
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .card {
+            background-color: rgba(16, 16, 35, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-cyan);
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(124, 106, 247, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .tab {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tab.active {
+            color: var(--accent-purple);
+        }
+
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-purple);
+            border-radius: 2px;
+        }
+
+        .chart-container {
+            width: 100%;
+            height: 480px;
+            background-color: rgba(5, 5, 12, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .equations-panel {
+            margin-top: 2rem;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .equations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .eq-card {
+            background-color: rgba(5, 5, 12, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+
+        .eq-card h4 {
+            color: var(--accent-purple);
+            margin-bottom: 0.75rem;
+        }
+
+        .eq-math {
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .badge-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .badge {
+            background-color: rgba(124, 106, 247, 0.08);
+            border: 1px solid rgba(124, 106, 247, 0.2);
+            border-radius: 8px;
+            padding: 0.75rem;
+            text-align: center;
+        }
+
+        .badge .label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .badge .value {
+            font-family: monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin-top: 0.25rem;
+        }
+
+        .badge.warning {
+            background-color: rgba(255, 107, 107, 0.08);
+            border-color: rgba(255, 107, 107, 0.2);
+        }
+
+        .badge.warning .value {
+            color: var(--accent-orange);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TAP Model</h1>
+            <p>Temporal Asymmetric Pulsation Cosmology & Soliton Stabilization Dashboard</p>
+        </header>
+
+        <div class="grid">
+            <!-- LEFT PANEL: CONTROLS -->
+            <div class="panel">
+                <div class="control-group">
+                    <div class="slider-header">
+                        <label for="coupling">Soliton Coupling</label>
+                        <span id="coupling-val" class="val-display">10.0</span>
+                    </div>
+                    <input type="range" id="coupling" min="0" max="15" step="0.5" value="10">
+                </div>
+
+                <div class="control-group">
+                    <div class="slider-header">
+                        <label for="hubble">Hubble Expansion ($H_0$)</label>
+                        <span id="hubble-val" class="val-display">0.07</span>
+                    </div>
+                    <input type="range" id="hubble" min="0.01" max="0.2" step="0.01" value="0.07">
+                </div>
+
+                <div class="control-group">
+                    <div class="slider-header">
+                        <label for="drag">Dimensional Drag ($D_{\text{drag}}$)</label>
+                        <span id="drag-val" class="val-display">0.01</span>
+                    </div>
+                    <input type="range" id="drag" min="0.001" max="0.1" step="0.005" value="0.01">
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.05); margin: 1.5rem 0;">
+
+                <h3 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem;">Live Simulation Status</h3>
+                <div class="badge-grid">
+                    <div class="badge" id="ratio-badge">
+                        <div class="label">Mean S:I Ratio</div>
+                        <div class="value" id="mean-ratio">3.00</div>
+                    </div>
+                    <div class="badge" id="deviation-badge">
+                        <div class="label">Ratio Error</div>
+                        <div class="value" id="ratio-error">0.00%</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Derrick-Hobart Restoring Force</h3>
+                    <p>When coupling is low (e.g. &lt; 2.0), the asymmetry of the leakage and drag equations pulls the soliton's ratio down to ~1.65. Increasing the coupling activates the restoring force, dynamically locking the ratio back to 3:1.</p>
+                </div>
+            </div>
+
+            <!-- RIGHT PANEL: INTERACTIVE CHARTS -->
+            <div class="panel">
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('soliton')">3:1 Soliton Dynamics</button>
+                    <button class="tab" onclick="switchTab('volumes')">Hypersphere Volume Collapse</button>
+                    <button class="tab" onclick="switchTab('couplings')">RGE Coupling Running</button>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="physics-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- MATHEMATICAL EQUATIONS SECTION -->
+        <div class="equations-panel">
+            <h2 style="font-size: 1.3rem; color: var(--text-main); border-left: 3px solid var(--accent-purple); padding-left: 0.75rem;">Geometric Field Equations</h2>
+            <div class="equations-grid">
+                <div class="eq-card">
+                    <h4>1. Soliton Restoring Force</h4>
+                    <p>Maintains the Derrick-Hobart 3:1 spatial partition against bulk leakage perturbations:</p>
+                    <div class="eq-math">
+                        $$\text{restoration} = g_{\text{coupling}} \times (\rho_S - 3\rho_I)$$
+                    </div>
+                </div>
+
+                <div class="eq-card">
+                    <h4>2. $\phi^{-4}$ Dimensional Leakage</h4>
+                    <p>replaces the static $\Lambda$ (cosmological constant) on the 3D brane:</p>
+                    <div class="eq-math">
+                        $$\Phi_{\text{leak}} = \rho_I \cdot \phi^{-4} \frac{a(t+dt)}{a(t)}$$
+                    </div>
+                </div>
+
+                <div class="eq-card">
+                    <h4>3. Hypersphere Unit Volume</h4>
+                    <p>Shrinks rapidly above $D=5$, spiking the local energy density at the $13\text{D}$ ceiling:</p>
+                    <div class="eq-math">
+                        $$V_D = \frac{\pi^{D/2}}{\Gamma(D/2 + 1)}$$
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global Constants
+        const PHI = (1 + Math.sqrt(5)) / 2;
+        const PHI_INV4 = Math.pow(PHI, -4);
+        
+        // State variables
+        let currentTab = 'soliton';
+        let chart = null;
+
+        // Elements
+        const couplingSlider = document.getElementById('coupling');
+        const couplingVal = document.getElementById('coupling-val');
+        const hubbleSlider = document.getElementById('hubble');
+        const hubbleVal = document.getElementById('hubble-val');
+        const dragSlider = document.getElementById('drag');
+        const dragVal = document.getElementById('drag-val');
+
+        const meanRatioDisplay = document.getElementById('mean-ratio');
+        const ratioErrorDisplay = document.getElementById('ratio-error');
+        const ratioBadge = document.getElementById('ratio-badge');
+        const deviationBadge = document.getElementById('deviation-badge');
+
+        // Initial Chart Setup
+        function setupChart() {
+            const ctx = document.getElementById('physics-chart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: { datasets: [] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                            ticks: { color: 'gray' },
+                            title: { display: true, text: 'Cosmic Time (arbitrary)', color: 'gray' }
+                        },
+                        y: {
+                            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                            ticks: { color: 'gray' },
+                            title: { display: true, text: 'Energy Density / Value', color: 'gray' }
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: 'white' } }
+                    }
+                }
+            });
+            updateView();
+        }
+
+        // Run the simulation in JS
+        function runTAPSimulation(coupling, H, drag) {
+            const n_steps = 5000;
+            const dt = 0.01;
+            
+            let t = 0.0;
+            let a = 1.0;
+            let rho_S = 0.75;
+            let rho_I = 0.25;
+            
+            let t_arr = [];
+            let rhoS_arr = [];
+            let rhoI_arr = [];
+            let ratio_arr = [];
+            
+            for (let i = 0; i < n_steps; i++) {
+                t_arr.push(t);
+                rhoS_arr.push(rho_S);
+                rhoI_arr.push(rho_I);
+                ratio_arr.push(rho_S / (rho_I + 1e-30));
+                
+                // Expansion
+                let da_dt = H * a * Math.sqrt(Math.max(rho_I, 0.0) + 1e-30);
+                let a_new = a + da_dt * dt;
+                let cur_H = da_dt / (a + 1e-30);
+                
+                let exp_ratio = a_new / (a + 1e-30);
+                let phi_flux = rho_I * PHI_INV4 * exp_ratio;
+                
+                let restoration = coupling * (rho_S - 3.0 * rho_I);
+                
+                // Pure differential updates
+                let d_rho_S = -3.0 * cur_H * rho_S - phi_flux - restoration;
+                let d_rho_I = -3.0 * cur_H * rho_I + (phi_flux / 3.0) - (drag * rho_I) + restoration;
+                
+                rho_S = Math.max(rho_S + d_rho_S * dt, 0.0);
+                rho_I = Math.max(rho_I + d_rho_I * dt, 0.0);
+                
+                a = a_new;
+                t += dt;
+            }
+            
+            // Calculate mean ratio in stable window (first 2000 steps to avoid zero density scaling)
+            let stable_ratios = ratio_arr.slice(0, 2000);
+            let sum = stable_ratios.reduce((acc, v) => acc + v, 0);
+            let mean_ratio = sum / stable_ratios.length;
+            
+            return { t_arr, rhoS_arr, rhoI_arr, ratio_arr, mean_ratio };
+        }
+
+        // Get Hypersphere Volumes
+        function getHypersphereVolumes() {
+            let dims = [];
+            let vols = [];
+            let densities = [];
+            
+            // gamma helper
+            function gamma(z) {
+                if (z === 1) return 1;
+                if (z === 1.5) return Math.sqrt(Math.PI) / 2;
+                if (z === 2) return 1;
+                if (z === 2.5) return 1.329340;
+                if (z === 3) return 2;
+                if (z === 3.5) return 3.323351;
+                if (z === 4) return 6;
+                if (z === 4.5) return 11.631728;
+                if (z === 5) return 24;
+                if (z === 5.5) return 52.342778;
+                if (z === 6) return 120;
+                if (z === 6.5) return 287.885278;
+                if (z === 7) return 720;
+                if (z === 7.5) return 1871.254303;
+                if (z === 8) return 5040;
+                // general approximation for high dimensions
+                return Math.sqrt(2 * Math.PI / z) * Math.pow(z / Math.E, z);
+            }
+            
+            for (let d = 1; d <= 15; d++) {
+                dims.push(d);
+                let g = gamma(d / 2.0 + 1.0);
+                let v = Math.pow(Math.PI, d / 2.0) / g;
+                vols.push(v);
+                densities.push(1.0 / v);
+            }
+            return { dims, vols, densities };
+        }
+
+        // Get RGE Couplings
+        function getRGECouplings() {
+            let scales = [];
+            let a1_inv = [];
+            let a2_inv = [];
+            
+            let m_Z = 91.1876;
+            let m_P = 1.2209e19;
+            
+            let b1 = -4.1;
+            let b2 = 19.0 / 6.0;
+            
+            let a1_mz = (5.0 / 3.0) * (1.0 - 0.2312) * 127.9;
+            let a2_mz = 0.2312 * 127.9;
+            
+            // Generate scales logarithmically
+            let steps = 100;
+            let log_mz = Math.log10(m_Z);
+            let log_mp = Math.log10(m_P);
+            
+            for (let i = 0; i < steps; i++) {
+                let log_scale = log_mz + (i / (steps - 1)) * (log_mp - log_mz);
+                let scale = Math.pow(10, log_scale);
+                scales.push(scale);
+                
+                let ln_ratio = Math.log(scale / m_Z);
+                a1_inv.push(a1_mz + (b1 / (2 * Math.PI)) * ln_ratio);
+                a2_inv.push(a2_mz + (b2 / (2 * Math.PI)) * ln_ratio);
+            }
+            return { scales, a1_inv, a2_inv };
+        }
+
+        // Update the View (re-run physics and plot)
+        function updateView() {
+            const coupling = parseFloat(couplingSlider.value);
+            const H = parseFloat(hubbleSlider.value);
+            const drag = parseFloat(dragSlider.value);
+            
+            couplingVal.innerText = coupling.toFixed(1);
+            hubbleVal.innerText = H.toFixed(2);
+            dragVal.innerText = drag.toFixed(3);
+            
+            if (currentTab === 'soliton') {
+                const sim = runTAPSimulation(coupling, H, drag);
+                
+                meanRatioDisplay.innerText = sim.mean_ratio.toFixed(4);
+                let err = Math.abs(sim.mean_ratio - 3.0) / 3.0 * 100;
+                ratioErrorDisplay.innerText = err.toFixed(3) + "%";
+                
+                if (err < 1.0) {
+                    ratioBadge.className = "badge";
+                    deviationBadge.className = "badge";
+                } else {
+                    ratioBadge.className = "badge warning";
+                    deviationBadge.className = "badge warning";
+                }
+                
+                // Downsample for plotting (plot every 10 steps)
+                let t_plot = sim.t_arr.filter((_, idx) => idx % 10 === 0);
+                let rhoS_plot = sim.rhoS_arr.filter((_, idx) => idx % 10 === 0);
+                let rhoI_plot = sim.rhoI_arr.filter((_, idx) => idx % 10 === 0);
+                
+                chart.data.labels = t_plot;
+                chart.data.datasets = [
+                    {
+                        label: 'Structural Density \u03c1_S (3/4)',
+                        data: rhoS_plot,
+                        borderColor: '#4ecdc4',
+                        backgroundColor: 'rgba(78, 205, 196, 0.1)',
+                        borderWidth: 2,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Interface Density \u03c1_I (1/4)',
+                        data: rhoI_plot,
+                        borderColor: '#ff6b6b',
+                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                        borderWidth: 2,
+                        yAxisID: 'y'
+                    }
+                ];
+                chart.options.scales.x.type = 'linear';
+                chart.options.scales.x.title.text = 'Cosmic Time (natural units)';
+                chart.options.scales.y.title.text = 'Energy Density';
+                chart.update();
+                
+            } else if (currentTab === 'volumes') {
+                const vol_data = getHypersphereVolumes();
+                
+                chart.data.labels = vol_data.dims;
+                chart.data.datasets = [
+                    {
+                        label: 'Hypersphere Unit Volume V_D',
+                        data: vol_data.vols,
+                        borderColor: '#7c6af7',
+                        backgroundColor: 'rgba(124, 106, 247, 0.1)',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Relative Energy Density (1/V_D)',
+                        data: vol_data.densities,
+                        borderColor: '#ff6b6b',
+                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                        borderWidth: 2,
+                        borderDash: [5, 5]
+                    }
+                ];
+                chart.options.scales.x.type = 'category';
+                chart.options.scales.x.title.text = 'Manifold Dimension (D)';
+                chart.options.scales.y.title.text = 'Scale / Volume Value';
+                chart.update();
+                
+            } else if (currentTab === 'couplings') {
+                const rge = getRGECouplings();
+                
+                chart.data.labels = rge.scales.map(s => s.toExponential(2));
+                chart.data.datasets = [
+                    {
+                        label: 'Hypercharge Coupling \u03b1_1^-1',
+                        data: rge.a1_inv,
+                        borderColor: '#7c6af7',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'SU(2) Weak Coupling \u03b1_2^-1',
+                        data: rge.a2_inv,
+                        borderColor: '#ff6b6b',
+                        borderWidth: 2
+                    }
+                ];
+                chart.options.scales.x.type = 'category';
+                chart.options.scales.x.title.text = 'Energy Scale \u03bc (GeV)';
+                chart.options.scales.y.title.text = 'Inverse Coupling Strength';
+                chart.update();
+            }
+        }
+
+        // Switch Tabs
+        window.switchTab = function(tabName) {
+            currentTab = tabName;
+            
+            document.querySelectorAll('.tab').forEach(t => {
+                t.classList.remove('active');
+            });
+            
+            // find tab button
+            let tabIdx = (tabName === 'soliton') ? 0 : (tabName === 'volumes') ? 1 : 2;
+            document.querySelectorAll('.tab')[tabIdx].classList.add('active');
+            
+            updateView();
+        }
+
+        // Event Listeners
+        couplingSlider.addEventListener('input', updateView);
+        hubbleSlider.addEventListener('input', updateView);
+        dragSlider.addEventListener('input', updateView);
+
+        // Run
+        window.onload = setupChart;
+    </script>
+</body>
+</html>
