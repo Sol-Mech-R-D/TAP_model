@@ -242,7 +242,7 @@ def main():
     generate_frontiers_plots(neutrinos, cmb, reset)
     
     print("\n" + SEP)
-    print("  🎯 ALL THREE FRONTIERS CONVERGE. The TAP Model is highly predictive,")
+    print("  [SUCCESS] ALL THREE FRONTIERS CONVERGE. The TAP Model is highly predictive,")
     print("     structurally stable, and preserves global quantum unitarity.")
     print(SEP + "\n")
 
