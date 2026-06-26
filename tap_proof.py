@@ -84,25 +84,23 @@ def run_tap_python(initial_energy=1.0,
         # — Expansion (driven by 1/4 interface potential) —
         da_dt   = hubble_constant * a * math.sqrt(max(rho_I, 0.0) + 1e-30)
         a_new   = a + da_dt * dt
+        H       = da_dt / (a + 1e-30)
 
         # — φ^-4 Dimensional Leakage (replaces Λ) —
         exp_ratio = a_new / (a + 1e-30)
         phi_flux  = rho_I * PHI_INV_4 * exp_ratio
         cum_leak += phi_flux * dt
 
-        # — Volume dilution factor (standard FLRW: ∝ a^-3) —
-        vol_f  = 1.0 / (exp_ratio ** 3)
-
         # Restoring force to maintain the 3:1 ratio (Derrick-Hobart stabilization)
         restoration = structural_coupling * (rho_S - 3.0 * rho_I)
 
         # — Structural energy update —
-        d_rho_S = -(3.0 * da_dt / (a + 1e-30)) * rho_S - phi_flux - restoration
-        rho_S   = max(rho_S * vol_f + d_rho_S * dt, 0.0)
+        d_rho_S = -3.0 * H * rho_S - phi_flux - restoration
+        rho_S   = max(rho_S + d_rho_S * dt, 0.0)
 
         # — Interface energy update —
-        d_rho_I = (phi_flux / TAP_RATIO) - (dimensional_drag * rho_I) + restoration
-        rho_I   = max(rho_I * vol_f + d_rho_I * dt, 0.0)
+        d_rho_I = -3.0 * H * rho_I + (phi_flux / TAP_RATIO) - (dimensional_drag * rho_I) + restoration
+        rho_I   = max(rho_I + d_rho_I * dt, 0.0)
 
         # — Entropy accumulation —
         entropy += (phi_flux + max(-d_rho_S, 0.0)) * dt

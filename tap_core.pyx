@@ -155,6 +155,7 @@ cdef CosmologicalState compute_next_state(CosmologicalState current,
     # 1. Expansion — driven by interface potential (the 1/4 probability sea pull)
     cdef double da_dt = params.hubble_constant * current.scale_factor * sqrt(current.rho_I + 1e-30)
     nxt.scale_factor = current.scale_factor + (da_dt * dt)
+    cdef double H = da_dt / (current.scale_factor + 1e-30)
 
     # 2. Dimensional Leakage — THE DARK ENERGY REPLACEMENT
     #    φ^-4 ≈ 0.1459 is the leakage coefficient derived from the 3:1 stability law.
@@ -168,16 +169,14 @@ cdef CosmologicalState compute_next_state(CosmologicalState current,
 
     # 3. Structural energy density update
     #    Diluted by volume expansion (∝ a^-3) AND drained by the φ^-4 leakage and restoration
-    cdef double vol_factor = 1.0 / (expansion_ratio * expansion_ratio * expansion_ratio)
-    cdef double d_rho_S = -(3.0 * da_dt / (current.scale_factor + 1e-30)) * current.rho_S \
-                          - nxt.phi_4d_flux - restoration
-    nxt.rho_S = max(current.rho_S * vol_factor + d_rho_S * dt, 0.0)
+    cdef double d_rho_S = -3.0 * H * current.rho_S - nxt.phi_4d_flux - restoration
+    nxt.rho_S = max(current.rho_S + d_rho_S * dt, 0.0)
 
     # 4. Interface energy density update
     #    Fed by structural decay (the 3:1 re-balance) and restoration minus dimensional drag
-    cdef double d_rho_I = (nxt.phi_4d_flux / TAP_RATIO) \
+    cdef double d_rho_I = -3.0 * H * current.rho_I + (nxt.phi_4d_flux / TAP_RATIO) \
                           - (params.dimensional_drag * current.rho_I) + restoration
-    nxt.rho_I = max(current.rho_I * vol_factor + d_rho_I * dt, 0.0)
+    nxt.rho_I = max(current.rho_I + d_rho_I * dt, 0.0)
 
     # 5. Entropy accumulation (BOL heat death counter)
     #    Entropy grows with leakage and structural decay
