@@ -521,11 +521,11 @@
     "category": "Nuclear Physics",
     "critic": "Dr. Gross",
     "objection": "QCD running coupling alpha_s(M_Z)",
-    "value": 0.12463838518393215,
+    "value": 0.11700280494633288,
     "expected": 0.1179,
-    "err_pct": 5.715339426575188,
+    "err_pct": 0.7609796892850972,
     "unit": "",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 49,
