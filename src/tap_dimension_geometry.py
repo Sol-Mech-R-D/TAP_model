@@ -22,7 +22,7 @@ import matplotlib.gridspec as gridspec
 from mpl_toolkits.mplot3d import Axes3D
 import os
 
-PHI = (1 + math.sqrt(5)) / 2
+from science_constants import PHI, PI
 SEP = "=" * 72
 
 def analytical_proof():
@@ -34,7 +34,7 @@ def analytical_proof():
     # The derivative of log(V_D) is 0.5 * ln(pi) - 0.5 * digamma(D/2 + 1)
     # Setting to 0 implies digamma(D/2 + 1) = ln(pi) ≈ 1.144729
     # Using numerical inversion:
-    ln_pi = math.log(math.pi)
+    ln_pi = math.log(PI)
     
     # Simple Newton-Raphson to solve digamma(x) = ln_pi
     # approximation for digamma(x): ln(x) - 1/(2x) - 1/(12x^2)
@@ -78,7 +78,7 @@ def analytical_proof():
     print(f"     " + "-" * 72)
     
     for d in range(1, 16):
-        v = (math.pi ** (d / 2.0)) / math.gamma(d / 2.0 + 1.0)
+        v = (PI ** (d / 2.0)) / math.gamma(d / 2.0 + 1.0)
         a = d * v
         s = PHI ** d
         ratio = s / a
@@ -99,7 +99,7 @@ def generate_visual_proofs():
     ratios = []
     
     for d in dims:
-        v = (math.pi ** (d / 2.0)) / math.gamma(d / 2.0 + 1.0)
+        v = (PI ** (d / 2.0)) / math.gamma(d / 2.0 + 1.0)
         a = d * v
         s = PHI ** d
         vols.append(v)

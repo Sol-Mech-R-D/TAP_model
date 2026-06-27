@@ -11,6 +11,7 @@ Three-critic rebuttal proofs:
 
 import math
 import numpy as np
+from scipy import constants as const
 from scipy.integrate import quad, odeint
 from scipy.optimize import fsolve
 import matplotlib
@@ -19,12 +20,15 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os, sys
 
+from science_constants import PHI, PHI_INV4, PI, ALPHA_OBSERVED, PROTON_ELECTRON_MASS_RATIO
+
 # ─────────────────────────────────────────────────────────────────────────────
 # SHARED CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
-PHI_INV4  = PHI ** -4                 # ~0.14590  Leakage coefficient
-PI        = math.pi
+C_LIGHT   = const.c                   # SciPy-backed speed of light
+HBAR      = const.hbar                # SciPy-backed reduced Planck constant
+G_NEWTON  = const.G                   # SciPy-backed gravitational constant
+MU_OBSERVED = PROTON_ELECTRON_MASS_RATIO  # Proton/electron mass ratio from SciPy
 TAP_RATIO = 3.0
 MAX_DIM   = 13
 
@@ -232,7 +236,7 @@ def rebuttal_bell():
 
     # The Fine-Structure Constant:
     # alpha = e^2 / (4*pi*epsilon_0 * hbar * c)  ~  1/137.036
-    alpha_observed = 1.0 / 137.035999084
+    alpha_observed = ALPHA_OBSERVED
 
     # TAP DERIVATION:
     # The field excitation (particle) has 3 structural DoF and 1 interface DoF.
@@ -318,8 +322,7 @@ def rebuttal_bell():
     print("  STEP 2: Deriving mu (Proton-to-Electron Mass Ratio) from TAP")
     print()
 
-    # mu = m_proton / m_electron = 1836.15267
-    mu_observed = 1836.15267343
+    mu_observed = MU_OBSERVED
 
     # TAP DERIVATION:
     # The proton is a composite resonance of 3 valence quarks (a 3-body soliton).

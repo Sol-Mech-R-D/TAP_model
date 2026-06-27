@@ -18,13 +18,12 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
-PHI_INV4  = PHI ** -4                 # ~0.14590
-PI        = math.pi
-v_obs     = 246.22                    # Higgs VEV in GeV
+v_obs     = HIGGS_VEV_GEV            # Higgs VEV in GeV
 
 SEP = "=" * 72
 

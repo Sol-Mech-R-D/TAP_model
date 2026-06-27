@@ -11,18 +11,20 @@ Rebuttal proofs for:
 
 import math
 import numpy as np
+from scipy import constants as const
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PHI_INV4, PI, PLANCK_MASS_GEV
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
-PHI_INV4  = PHI ** -4                 # ~0.14590
-PI        = math.pi
+HBAR      = const.hbar                # SciPy-backed reduced Planck constant
+C_LIGHT   = const.c                   # SciPy-backed speed of light
 TAP_RATIO = 3.0
 MAX_DIM   = 13
 
@@ -150,7 +152,7 @@ def rebuttal_arkani_hamed():
     #   2*pi = Kaluza-Klein circle loop circumference
     #   phi^-9 / pi = quantum loop correction term for the D=9 internal dimensions (13 - 4 = 9)
 
-    m_P = 1.2209e19   # GeV
+    m_P = PLANCK_MASS_GEV
     m_H_obs = 125.1   # GeV
 
     exponent = 2.0 * PI * 13.0 * (1.0 - (PHI ** -9) / PI)

@@ -30,13 +30,13 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PI
+
 # -----------------------------------------------------------------------------
 # GLOBAL CONSTANTS
 # -----------------------------------------------------------------------------
-PHI       = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV4  = PHI ** -4                       # ~0.145898 (cosmic leakage)
 PHI_INV8  = PHI ** -8                       # ~0.021286 (boundary thickness)
-PI        = math.pi
 
 SEP = "=" * 72
 

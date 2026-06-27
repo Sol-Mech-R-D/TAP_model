@@ -19,18 +19,17 @@ import numpy as np
 import scipy.linalg as la
 from scipy.integrate import solve_ivp, quad
 
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV, PLANCK_MASS_GEV
+
 # -----------------------------------------------------------------------------
 # GLOBAL CONSTANTS
 # -----------------------------------------------------------------------------
-PHI       = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV3  = PHI ** -3
-PHI_INV4  = PHI ** -4
 PHI_INV7  = PHI ** -7
 PHI_INV8  = PHI ** -8
 PHI_INV44 = PHI ** -44
-PI        = math.pi
-v_obs     = 246.22  # GeV (Electroweak VEV)
-m_P       = 1.2209e19  # GeV (Planck Mass)
+v_obs     = HIGGS_VEV_GEV
+m_P       = PLANCK_MASS_GEV
 
 print("=" * 72)
 print("  TAP UNIFIED GRAND SIMULATION ENGINE")

@@ -15,13 +15,12 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import os
 
+from science_constants import PHI, PHI_INV4, PI, PLANCK_MASS_GEV, HIGGS_MASS_GEV
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI      = (1 + math.sqrt(5)) / 2
-PHI_INV4 = PHI ** -4
-PI       = math.pi
-m_P      = 1.2209e19  # Planck Mass in GeV
+m_P = PLANCK_MASS_GEV
 
 # ─────────────────────────────────────────────────────────────────────────────
 # SOLVING THE WARPED DIRAC EIGENVALUE PROBLEM
@@ -82,7 +81,7 @@ def main():
     print()
     
     # Standard Higgs reference
-    m_H_obs = 125.10  # GeV
+    m_H_obs = HIGGS_MASS_GEV  # GeV
     print(f"  Planck Mass m_P                       : {m_P:.4e} GeV")
     print(f"  Lowest Dirac Mode mass (TAP Pred)     : {m_pred:.6f} GeV")
     print(f"  Observed Higgs Mass (LHC)             : {m_H_obs:.6f} GeV")

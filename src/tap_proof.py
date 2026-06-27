@@ -26,12 +26,13 @@ import time
 import math
 import numpy as np
 
+from science_constants import PHI, PHI_INV4, PI, PLANCK_NS_OBSERVED, PLANCK_NS_ERROR
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
 
-PHI        = (1 + math.sqrt(5)) / 2          # Golden Ratio φ ≈ 1.6180
-PHI_INV_4  = PHI ** -4                       # φ^-4 ≈ 0.1459  — Leakage Coefficient
+PHI_INV_4  = PHI_INV4                       # φ^-4 ≈ 0.1459  — Leakage Coefficient
 TAP_RATIO  = 3.0                             # 3:1 structural law
 MAX_DIM    = 13                              # Fibonacci saturation ceiling
 
@@ -95,16 +96,15 @@ def run_tap_python(initial_energy=1.0,
         phi_flux  = rho_I * PHI_INV_4 * exp_ratio
         cum_leak += phi_flux * dt
 
-        # Restoring force to maintain the 3:1 ratio (Derrick-Hobart stabilization)
-        restoration = structural_coupling * (rho_S - 3.0 * rho_I)
-
         # — Structural energy update —
-        d_rho_S = -3.0 * H * rho_S - phi_flux - restoration
-        rho_S   = max(rho_S + d_rho_S * dt, 0.0)
+        restoration = structural_coupling * (TAP_RATIO * rho_I - rho_S)
+        vol_factor = 1.0 / (exp_ratio ** 3)
+        d_rho_S = -phi_flux + restoration
+        rho_S   = max(rho_S * vol_factor + d_rho_S * dt, 0.0)
 
         # — Interface energy update —
-        d_rho_I = -3.0 * H * rho_I + (phi_flux / TAP_RATIO) - (dimensional_drag * rho_I) + restoration
-        rho_I   = max(rho_I + d_rho_I * dt, 0.0)
+        d_rho_I = (phi_flux / TAP_RATIO) - (dimensional_drag * rho_I) - restoration
+        rho_I   = max(rho_I * vol_factor + d_rho_I * dt, 0.0)
 
         # — Entropy accumulation —
         entropy += (phi_flux + max(-d_rho_S, 0.0)) * dt
@@ -173,14 +173,14 @@ def compute_spectral_index():
     Best TAP approximation (Candidate B) uses the phi^-4 leakage coefficient
     divided by pi — consistent with the 3D spherical volume geometry.
 
-    Observed value (Planck 2018): 0.9649 +/- 0.0042
+    Observed value (Planck 2018): {PLANCK_NS_OBSERVED} +/- {PLANCK_NS_ERROR}
     Candidate B deviation:  0.0114  (~2.7 sigma)  — within reach of
     future refinement of the dimensional coupling term.
     """
     ns_A        = 1.0 - 1.0 / (PHI ** 2)                     # naive
-    ns_B        = 1.0 - PHI_INV_4 / math.pi                   # best TAP
+    ns_B        = 1.0 - PHI_INV_4 / PI                       # best TAP
     ns_C        = 1.0 - 2.0 * PHI_INV_4 / (1.0 + PHI)        # alt
-    ns_observed = 0.9649
+    ns_observed = PLANCK_NS_OBSERVED
     ns_error    = 0.0042
     best        = ns_B
     deviation   = abs(best - ns_observed)
