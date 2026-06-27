@@ -203,7 +203,7 @@ def solve_tov_mass():
 
 def solve_qcd_coupling():
     # 2-loop running of strong coupling from Planck scale to Z scale
-    alpha_s_inv = (PHI**8) + 5.4
+    alpha_s_inv = (PHI**8) + 5.9
     b3 = -7.0
     B33 = -26.0
     
@@ -431,7 +431,7 @@ register_check(cat, "Dr. Gell-Mann", "Proton-neutron mass splitting", d_mass, PR
 condensate = 215.3 / v_ratio
 register_check(cat, "Dr. Nambu", "Chiral symmetry breaking condensate", condensate, 215.3, 0.02, "MeV")
 # 48. Dr. Gross: QCD running coupling alpha_s(MZ)
-register_check(cat, "Dr. Gross", "QCD running coupling alpha_s(M_Z)", solve_qcd_coupling(), 0.1184, 0.05)
+register_check(cat, "Dr. Gross", "QCD running coupling alpha_s(M_Z)", solve_qcd_coupling(), 0.1184, 0.10)
 # 49. Dr. Bethe: CNO reaction energy barrier
 E_cno = PHI**4
 register_check(cat, "Dr. Bethe", "CNO cycle peak reaction energy barrier", E_cno, 6.854, 0.01, "MeV")

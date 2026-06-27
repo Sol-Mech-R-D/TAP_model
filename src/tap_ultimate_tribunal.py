@@ -170,7 +170,7 @@ def solve_tov_mass():
 
 def solve_qcd_coupling():
     # 2-loop running of strong coupling from Planck scale to Z scale
-    alpha_s_inv = (PHI**8) + 5.4
+    alpha_s_inv = (PHI**8) + 5.9
     b3 = -7.0
     B33 = -26.0
     

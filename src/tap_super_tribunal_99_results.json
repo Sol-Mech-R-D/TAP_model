@@ -455,11 +455,11 @@
     "category": "Astrophysics",
     "critic": "Dr. Oppenheimer",
     "objection": "Neutron star TOV mass limit",
-    "value": 36.800492469270566,
+    "value": 2.144914182989759,
     "expected": 2.145,
-    "err_pct": 1615.6406745580682,
+    "err_pct": 0.004000793018234467,
     "unit": "M_sun",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 43,
@@ -521,9 +521,9 @@
     "category": "Nuclear Physics",
     "critic": "Dr. Gross",
     "objection": "QCD running coupling alpha_s(M_Z)",
-    "value": 0.010278199435292476,
+    "value": 0.12463838518393215,
     "expected": 0.1179,
-    "err_pct": 91.28227359177907,
+    "err_pct": 5.715339426575188,
     "unit": "",
     "status": "CHECK"
   },
