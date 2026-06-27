@@ -1060,9 +1060,9 @@
     "category": "Materials",
     "critic": "Dr. Mott",
     "objection": "Mott insulator critical density",
-    "value": 0.2543753271005469,
+    "value": 0.259104805504777,
     "expected": 0.25446,
-    "err_pct": 0.033275524425501427,
+    "err_pct": 1.8253578184299974,
     "unit": "",
     "status": "PASS"
   },

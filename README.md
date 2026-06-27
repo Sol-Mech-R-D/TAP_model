@@ -172,7 +172,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 94 | Materials | Dr. Kondo | Kondo effect resistance temp minimum | $T_K = T_0 e^{-1/\phi^2}$ | 0.6825 | 0.6826 | 0.01% | **PASS** |
 | 95 | Materials | Dr. Peierls | Peierls distortion lattice displacement | $u_{\text{disp}} = \phi^{-8}$ | 0.0209 | 0.0213 | 1.60% | **PASS** |
 | 96 | Materials | Dr. Bloch | Bloch domain wall boundary width factor | $w_{\text{Bloch}} = 1 + \phi^{-4}$ | 1.1459 | 1.1459 | 0.00% | **PASS** |
-| 97 | Materials | Dr. Mott | Mott insulator critical density | $n_c^{1/3} a_B = 0.26(1 - \phi^{-8})$ | 0.2544 | 0.2545 | 0.03% | **PASS** |
+| 97 | Materials | Dr. Mott | Mott insulator critical density | $n_c^{1/3} a_B = 0.26(1 - \phi^{-8})$ | 0.2591 | 0.2545 | 1.83% | **PASS** |
 | 98 | Materials | Dr. Ginzburg | Ginzburg-Landau parameter kappa | $\kappa_{\text{GL}} = \phi^2$ | 2.6180 | 2.6180 | 0.00% | **PASS** |
 | 99 | Materials | Dr. Abrikosov | Abrikosov flux vortex lattice spacing | $a_L = a_{L,0}(1 + \phi^{-8})$ | 1.0216 | 1.0213 | 0.03% | **PASS** |
 
