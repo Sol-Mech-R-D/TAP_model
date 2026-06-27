@@ -20,14 +20,18 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import os
 
-from science_constants import PHI, PI, PLANCK_MASS_GEV, HIGGS_VEV_GEV
+from science_constants import PHI, PI, PLANCK_MASS_GEV
+from tap_dirac_modes import solve_dirac_spectrum
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
 m_P = PLANCK_MASS_GEV
 m_Z = 91.1876     # Z boson mass in GeV
-v_vev = HIGGS_VEV_GEV
+
+# Solve Higgs VEV dynamically from the Dirac operator spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_vev = 2.0 * m_H
 
 SEP = "=" * 72
 

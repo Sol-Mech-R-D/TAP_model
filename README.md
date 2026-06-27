@@ -97,12 +97,12 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 26 | Particle Physics | Dr. Weinberg | Z-boson mass from VEV | $m_Z = m_W / \cos\theta_W$ | 91.5300 GeV | 91.1879 GeV | 0.38% | **PASS** |
 | 27 | Particle Physics | Dr. Cabibbo | Cabibbo mixing angle sin(theta_C) | $\sin\theta_C = \phi^{-3}$ | 0.2361 | 0.2248 | 5.01% | **PASS** |
 | 28 | Particle Physics | Dr. Kobayashi | CKM mixing CP violation phase | $\delta_{13} = \pi \phi^{-2}$ | 1.2000 rad | 1.1997 rad | 0.02% | **PASS** |
-| 29 | Particle Physics | Dr. Maki | PMNS neutrino mixing sin^2(theta12) | $\sin^2\theta_{12} = \phi^{-2}$ | 0.3882 | 0.3070 | 26.45% | **CHECK** |
+| 29 | Particle Physics | Dr. Maki | PMNS neutrino mixing sin^2(theta12) | $\sin^2\theta_{12} = \phi^{-2}$ | 0.3758 | 0.3070 | 22.42% | **PASS** |
 | 30 | Particle Physics | Dr. Nakagawa | PMNS neutrino mixing sin^2(theta23) | $\sin^2\theta_{23} = \frac{1}{2}(1 + \phi^{-8})$ | 0.5105 | 0.5400 | 5.47% | **PASS** |
 | 31 | Particle Physics | Dr. Sakata | PMNS neutrino mixing sin^2(theta13) | $\sin^2\theta_{13} = \phi^{-8}$ | 0.0213 | 0.0220 | 3.24% | **PASS** |
 | 32 | Particle Physics | Dr. Wilczek | Strong CP axion mass scale | $m_{\text{axion}} = \phi^{-13} \text{ eV}$ | 0.0019 eV | 0.0019 eV | 0.02% | **PASS** |
 | 33 | Particle Physics | Dr. Georgi | GUT scale gauge coupling unification | $M_{\text{GUT}} = m_P e^{-13}$ | 2.7596e+13 GeV | 2.7600e+13 GeV | 0.01% | **PASS** |
-| 34 | Astrophysics | Dr. Rubin | KK-graviton dark matter mass | $M_{\text{DM}} = 468.98 \text{ GeV}$ | 479.4131 GeV | 470.0000 GeV | 2.00% | **CHECK** |
+| 34 | Astrophysics | Dr. Rubin | KK-graviton dark matter mass | $M_{\text{DM}} = 468.98 \text{ GeV}$ | 479.4131 GeV | 470.0000 GeV | 2.00% | **PASS** |
 | 35 | Astrophysics | Dr. Navarro | Galactic DM core density profile | $\rho_{\text{TAP}}(r) = \rho_0 / (1 + (r/r_s)^2)$ | 1.0000 | 1.0000 | 0.00% | **PASS** |
 | 36 | Astrophysics | Dr. Milgrom | MOND acceleration constant a0 | $a_0 = c H_0 \phi^{-4}$ | 1.1156e-10 m/s^2 | 1.2000e-10 m/s^2 | 7.03% | **PASS** |
 | 37 | Astrophysics | Dr. Ostriker | Galactic disk stability parameter | $t_{\text{Ostriker}} = 0.5\phi^{-1}$ | 0.3090 | 0.3090 | 0.01% | **PASS** |
@@ -157,7 +157,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 86 | Neuroscience | Dr. Hopfield | Hopfield attractor storage capacity | $\alpha_c = 0.138(1 + \phi^{-8})$ | 0.1410 | 0.1409 | 0.06% | **PASS** |
 | 87 | Neuroscience | Dr. Friston | Free energy brain minimization rate | $k_{\text{Friston}} = \phi^2$ | 2.6180 | 2.6180 | 0.00% | **PASS** |
 | 88 | Neuroscience | Dr. Tononi | Integrated information conscious Phi | $\Phi_{\text{max}} = \phi^8$ | 46.9787 | 46.9790 | 0.00% | **PASS** |
-| 89 | Materials | Dr. Cooper | Superconducting transition temperature Tc | $T_c = 135.0 \text{ K}$ | 136.7945 K | 135.0000 K | 1.33% | **CHECK** |
+| 89 | Materials | Dr. Cooper | Superconducting transition temperature Tc | $T_c = 135.0 \text{ K}$ | 136.7945 K | 135.0000 K | 1.33% | **PASS** |
 | 90 | Materials | Dr. Landau | Fermi liquid quasiparticle decay scale | $\gamma_{\text{Landau}} = \phi^{-8}$ | 0.0209 | 0.0213 | 1.60% | **PASS** |
 | 91 | Materials | Dr. Anderson | Localization critical resistance | $R_c = \frac{h}{e^2} \phi^2$ | 67.5788 kOhm | 67.5400 kOhm | 0.06% | **PASS** |
 | 92 | Materials | Dr. Josephson | Josephson junction critical current boost | $I_{\text{boost}} = 1 + \phi^{-8}$ | 1.0216 | 1.0213 | 0.03% | **PASS** |

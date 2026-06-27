@@ -22,7 +22,8 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
-from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV
+from science_constants import PHI, PHI_INV4, PI
+from tap_dirac_modes import solve_dirac_spectrum
 
 # -----------------------------------------------------------------------------
 # CONSTANTS
@@ -30,7 +31,10 @@ from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV
 PHI_INV3  = PHI ** -3                # ~0.236068
 PHI_INV8  = PHI ** -8                # ~0.021286
 PHI_INV44 = PHI ** -44               # ~5.99786e-10
-v_obs     = HIGGS_VEV_GEV            # Higgs VEV in GeV
+
+# Solve Higgs VEV dynamically from the Dirac operator spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_obs = 2.0 * m_H
 
 SEP = "=" * 72
 
