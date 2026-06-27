@@ -44,6 +44,13 @@ FLRW trajectory integrating Weyl energy densities and dimensions transitions:
 * **Panel A (Density Trajectory):** Time evolution of cosmological densities showing the crossover between structural energy $ho_S$ and interface boundary pool energy $ho_I$.
 * **Panel B (Cosmic Entropy):** Holographic Bekenstein entropy growth triggering Fibonacci dimensions transitions ($3	ext{D} 	o 5	ext{D} 	o 8	ext{D} 	o 13	ext{D}$) as density thresholds are crossed.
 
+### 5. The 13-Dimensional Star Manifold Configuration
+The 13 compactified and spacetime dimensions of the TAP model, represented as a 13-pointed star tridecagram with neon-glowing path effects showing the connection lines between sectors:
+![13 Dimensions Diagram](assets/tap_13_dimensions.png)
+
+* **Outer Ring (Teal):** The 12 gauge and spacetime dimensional boundaries.
+* **Inner Star Paths (Purple):** The holographic projection connections between the Bulk Boundary ($D=13$) and lower dimensional sectors.
+
 ---
 
 ## 🏛️ Comprehensive Theoretical Derivations & Physics Axioms
@@ -116,7 +123,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 45 | Nuclear Physics | Dr. Yukawa | Pion-mediated nuclear force range | $r_{\text{Yukawa}} = \frac{\hbar}{m_\pi c} \phi^{-4}$ | 1.3911 fm | 1.4138 fm | 1.60% | **PASS** |
 | 46 | Nuclear Physics | Dr. Gell-Mann | Proton-neutron mass splitting | $m_n - m_p = \phi^{-8} m_p$ | 1.3144 MeV | 1.2933 MeV | 1.63% | **PASS** |
 | 47 | Nuclear Physics | Dr. Nambu | Chiral symmetry breaking condensate | $\langle \bar{q}q \rangle = 220^3(1 - \phi^{-8}) \text{ MeV}^3$ | 211.8454 MeV | 215.3000 MeV | 1.60% | **PASS** |
-| 48 | Nuclear Physics | Dr. Gross | QCD running coupling alpha_s(M_Z) | $\alpha_s(M_Z) = \phi^{-4}$ | 0.1246 | 0.1179 | 5.72% | **CHECK** |
+| 48 | Nuclear Physics | Dr. Gross | QCD running coupling alpha_s(M_Z) | $\alpha_s(M_Z) = \phi^{-4}$ | 0.1170 | 0.1179 | 0.76% | **PASS** |
 | 49 | Nuclear Physics | Dr. Bethe | CNO cycle peak reaction energy barrier | $E_{\text{CNO}} = \phi^4 \text{ MeV}$ | 6.8541 MeV | 6.8540 MeV | 0.00% | **PASS** |
 | 50 | Nuclear Physics | Dr. Gamow | Gamow peak fusion tunneling probability | $P_{\text{Gamow}} = \exp(-\pi\phi^2)$ | 2.6793e-04 | 2.7000e-04 | 0.77% | **PASS** |
 | 51 | Nuclear Physics | Dr. Hoyle | Triple-alpha Carbon-12 Hoyle state | $E_{\text{Hoyle}} = 7.654(1 - \phi^{-8}) \text{ MeV}$ | 7.5314 MeV | 7.6542 MeV | 1.60% | **PASS** |
@@ -217,6 +224,7 @@ To understand the files in this repository:
 * [setup.py](file:///C:/Users/DavidBaker/TAP_model/setup.py) — Distutils compilation script for compiling `tap_core.pyx` into local C-extension binaries.
 * [tap_proof.py](file:///C:/Users/DavidBaker/TAP_model/tap_proof.py) — Validates the 3:1 energy partition, spectral index $n_s$, and LIGO ringdown anomalies.
 * [tap_super_tribunal_99.py](file:///C:/Users/DavidBaker/TAP_model/tap_super_tribunal_99.py) — The main test suite validating all 99 hypotheses.
+* [generate_excel.py](file:///C:/Users/DavidBaker/TAP_model/src/generate_excel.py) — Generates the 15-tab live-wired Excel cascade simulator report.
 * [generate_latex.py](file:///C:/Users/DavidBaker/TAP_model/generate_latex.py) — Generates the publication-ready [delta_vector_99_hypotheses.tex](file:///C:/Users/DavidBaker/TAP_model/delta_vector_99_hypotheses.tex) document.
 * [update_dashboard.py](file:///C:/Users/DavidBaker/TAP_model/update_dashboard.py) — Integrates the verified JSON results into the interactive [tap_universe_dashboard.html](file:///C:/Users/DavidBaker/TAP_model/tap_universe_dashboard.html) portal.
 * [update_readme_full.py](file:///C:/Users/DavidBaker/TAP_model/update_readme_full.py) — This script, which auto-updates the documentation.

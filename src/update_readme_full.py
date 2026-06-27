@@ -168,6 +168,13 @@ FLRW trajectory integrating Weyl energy densities and dimensions transitions:
 * **Panel A (Density Trajectory):** Time evolution of cosmological densities showing the crossover between structural energy $\rho_S$ and interface boundary pool energy $\rho_I$.
 * **Panel B (Cosmic Entropy):** Holographic Bekenstein entropy growth triggering Fibonacci dimensions transitions ($3\text{D} \to 5\text{D} \to 8\text{D} \to 13\text{D}$) as density thresholds are crossed.
 
+### 5. The 13-Dimensional Star Manifold Configuration
+The 13 compactified and spacetime dimensions of the TAP model, represented as a 13-pointed star tridecagram with neon-glowing path effects showing the connection lines between sectors:
+![13 Dimensions Diagram](assets/tap_13_dimensions.png)
+
+* **Outer Ring (Teal):** The 12 gauge and spacetime dimensional boundaries.
+* **Inner Star Paths (Purple):** The holographic projection connections between the Bulk Boundary ($D=13$) and lower dimensional sectors.
+
 ---
 
 ## 🏛️ Comprehensive Theoretical Derivations & Physics Axioms
@@ -244,6 +251,7 @@ To understand the files in this repository:
 * [setup.py](file:///C:/Users/DavidBaker/TAP_model/setup.py) — Distutils compilation script for compiling `tap_core.pyx` into local C-extension binaries.
 * [tap_proof.py](file:///C:/Users/DavidBaker/TAP_model/tap_proof.py) — Validates the 3:1 energy partition, spectral index $n_s$, and LIGO ringdown anomalies.
 * [tap_super_tribunal_99.py](file:///C:/Users/DavidBaker/TAP_model/tap_super_tribunal_99.py) — The main test suite validating all 99 hypotheses.
+* [generate_excel.py](file:///C:/Users/DavidBaker/TAP_model/src/generate_excel.py) — Generates the 15-tab live-wired Excel cascade simulator report.
 * [generate_latex.py](file:///C:/Users/DavidBaker/TAP_model/generate_latex.py) — Generates the publication-ready [delta_vector_99_hypotheses.tex](file:///C:/Users/DavidBaker/TAP_model/delta_vector_99_hypotheses.tex) document.
 * [update_dashboard.py](file:///C:/Users/DavidBaker/TAP_model/update_dashboard.py) — Integrates the verified JSON results into the interactive [tap_universe_dashboard.html](file:///C:/Users/DavidBaker/TAP_model/tap_universe_dashboard.html) portal.
 * [update_readme_full.py](file:///C:/Users/DavidBaker/TAP_model/update_readme_full.py) — This script, which auto-updates the documentation.

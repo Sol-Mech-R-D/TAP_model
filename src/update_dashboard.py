@@ -94,11 +94,22 @@ def main():
     tab_panel_content = """
         <!-- TAB: HYPOTHESES -->
         <div id="tab-hypotheses" class="tab-panel">
-            <div style="margin-bottom: 2rem;">
-                <h2 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff;">Delta Vector's 99 Hypotheses</h2>
+            <div style="margin-bottom: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <h2 style="font-family: 'Orbitron', sans-serif; font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">Delta Vector's 99 Hypotheses</h2>
                 <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 900px; margin-bottom: 1.5rem;">
                     A unified multi-disciplinary framework verifying exactly 99 physical, chemical, biological, and materials science objections. Every single constraint resolves parameter-free using the golden ratio scaling relations.
                 </p>
+                
+                <div style="display: flex; gap: 2rem; align-items: center; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap;">
+                    <img src="tap_13_dimensions.png" style="max-width: 320px; border-radius: 12px; border: 1px solid var(--card-border); box-shadow: 0 0 20px var(--accent-glow);" alt="TAP 13D Star Manifold Configuration" />
+                    <div style="text-align: left; max-width: 400px;">
+                        <h4 style="font-family: 'Orbitron', sans-serif; color: #fff; margin-bottom: 0.5rem;">📊 Interactive 13-Dimensional Cascade Simulator</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+                            Each of the 13 physical dimensions is mapped to a dedicated sheet in the comprehensive report. All sheets are live-wired to the Overview parameters, allowing you to edit the golden ratio or VEV ratio and watch the entire 99-check cascade recalculate instantly.
+                        </p>
+                        <a href="tap_model_comprehensive_report.xlsx" class="btn" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--accent-color); color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; transition: background 0.3s;" onmouseover="this.style.background='#6956e3'" onmouseout="this.style.background='var(--accent-color)'">📥 Download Excel Cascade Model</a>
+                    </div>
+                </div>
                 
                 <div class="search-bar-container" style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
                     <input type="text" id="search-input" placeholder="Search hypothesis, critic name, or category..." style="flex: 2; min-width: 250px;">
