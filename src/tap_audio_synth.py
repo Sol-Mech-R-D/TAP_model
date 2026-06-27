@@ -2,11 +2,16 @@
 """
 tap_audio_synth.py
 ==================
-TAP Model -- DAW Physical Modeling Synthesis & Instruments Simulator
-Simulates physical waveguide modeling for musical instruments:
-1. TAP String Model: Karplus-Strong waveguide string simulation with golden-ratio decay damping.
-2. TAP Drum Model: 2D circular membrane percussion synthesis using Fibonacci mode spacing.
-3. TAP Synthesizer: Subtractive synthesizer tuned to a golden-ratio microtonal scale (phi intervals).
+TAP Model -- DAW Deep Physical Modeling Instrument Engine
+Simulates advanced structural physical modeling for instruments:
+1. MIDI Mapping Engine: Translates MIDI note numbers (0-127) and velocities (0-127) 
+   to physical gauge frequencies, excitation energy, and harmonic profiles.
+2. Guitar Model (Wood, Neck & Body Coupling): Simulates string vibrations coupled 
+   to the neck damping factor and the wooden body's plate/Helmholtz resonances.
+3. Drum Model (Head & Shell Coupling): Simulates a 2D membrane head coupled 
+   to the cylindrical wood shell resonance.
+4. Grand Piano Model (Unison Strings & Soundboard): Simulates triple-unison strings
+   coupled to a wooden soundboard with golden-ratio mechanical impedance.
 """
 
 import os
@@ -19,104 +24,217 @@ import matplotlib.pyplot as plt
 
 from science_constants import PHI, PI
 
+# =============================================================================
+# 1. MIDI MAPPING ENGINE
+# =============================================================================
+class MidiEngine:
+    @staticmethod
+    def note_to_frequency(midi_note, scale_type="standard"):
+        """Converts a MIDI note (0-127) to frequency (Hz)."""
+        if scale_type == "standard":
+            # Standard 12-Tone Equal Temperament (A440 at note 69)
+            return 440.0 * (2.0 ** ((midi_note - 69) / 12.0))
+        elif scale_type == "golden":
+            # TAP Microtonal Golden Scale (A220 at note 57, interval is phi)
+            # 5 steps per golden octave (phi)
+            return 220.0 * (PHI ** ((midi_note - 57) / 5.0))
+        return 440.0
+
+    @staticmethod
+    def velocity_to_dynamics(midi_velocity):
+        """Converts MIDI velocity (0-127) to amplitude and harmonic richness."""
+        norm_vel = midi_velocity / 127.0
+        # Amplitude follows a natural logarithmic/exponential hearing curve
+        amplitude = norm_vel ** 1.5
+        # Higher velocity excites higher-frequency harmonics (brighter sound)
+        brightness = 1.0 + norm_vel * PHI
+        return amplitude, brightness
+
+# =============================================================================
+# 2. GUITAR MODEL (String, Neck, Wood & Body Coupling)
+# =============================================================================
+class GuitarModel:
+    def __init__(self, sr=44100):
+        self.sr = sr
+        
+    def synthesize_note(self, midi_note, midi_velocity, duration=1.0):
+        N_samples = int(duration * self.sr)
+        time_grid = np.linspace(0, duration, N_samples)
+        
+        freq = MidiEngine.note_to_frequency(midi_note, "standard")
+        amp, brightness = MidiEngine.velocity_to_dynamics(midi_velocity)
+        
+        # 1. String Waveguide (Karplus-Strong)
+        delay_len = int(self.sr / freq)
+        string_buffer = np.random.rand(delay_len) * 2.0 - 1.0
+        
+        # 2. Neck Damping (fretboard absorption)
+        # Neck material dampens energy. TAP neck model scales decay using phi^-4
+        neck_damping = 1.0 - (0.01 * (PHI ** -4))
+        
+        # 3. Wood Body Resonance (Helmholtz & Plate Coupling)
+        # The guitar body has wood plate resonances (e.g. 100Hz, 200Hz) and air Helmholtz (80Hz)
+        body_helmholtz = 80.0
+        body_plate = 190.0
+        
+        out_signal = np.zeros(N_samples)
+        body_state_h = 0.0
+        body_state_p = 0.0
+        
+        ptr = 0
+        for n in range(N_samples):
+            # Read from string waveguide
+            val = string_buffer[ptr]
+            
+            # Neck damping filter
+            next_val = 0.5 * (val + string_buffer[(ptr + 1) % delay_len]) * neck_damping
+            string_buffer[ptr] = next_val
+            ptr = (ptr + 1) % delay_len
+            
+            # Couple string to hollow wooden body (simple resonant filters)
+            # Body acts as a resonator driven by the string output
+            w_h = 2.0 * PI * body_helmholtz / self.sr
+            w_p = 2.0 * PI * body_plate / self.sr
+            
+            # Resonator differential equations
+            body_state_h += w_h * (val - body_state_h) - 0.02 * body_state_h
+            body_state_p += w_p * (val - body_state_p) - 0.04 * body_state_p
+            
+            # Combine string output with body plate resonance
+            # Coupling coefficient is governed by phi^-4
+            out_signal[n] = val + (PHI ** -4) * (body_state_h + body_state_p)
+            
+        # Normalize and apply MIDI velocity amplitude
+        out_signal = out_signal / (np.max(np.abs(out_signal)) + 1e-9)
+        return out_signal * amp
+
+# =============================================================================
+# 3. DRUM MODEL (Head & Wood Shell Coupling)
+# =============================================================================
+class DrumModel:
+    def __init__(self, sr=44100):
+        self.sr = sr
+        
+    def synthesize_note(self, midi_note, midi_velocity, duration=1.0):
+        N_samples = int(duration * self.sr)
+        time_grid = np.linspace(0, duration, N_samples)
+        
+        freq_base = MidiEngine.note_to_frequency(midi_note, "standard") * 0.25 # Lower for drum fundamental
+        amp, brightness = MidiEngine.velocity_to_dynamics(midi_velocity)
+        
+        # 1. 2D Membrane Head Modes
+        # Spaced according to Fibonacci steps (phi^(i/2))
+        head_modes = [freq_base * (PHI ** (i / 2.0)) for i in range(4)]
+        
+        # 2. Cylindrical Wood Shell Resonance
+        # Drum shell has acoustic resonance frequencies based on cylinder volume
+        # Shell mode is coupled to the base head mode
+        shell_resonance = freq_base * PHI
+        
+        out_signal = np.zeros(N_samples)
+        
+        for i, freq in enumerate(head_modes):
+            # Higher velocity excites higher frequency modes (brightness)
+            mode_amp = amp / (1.0 + i * PHI / brightness)
+            decay_rate = 40.0 * (PHI ** i)
+            
+            # Head membrane wave
+            head_wave = np.sin(2.0 * PI * freq * time_grid) * np.exp(-decay_rate * time_grid)
+            
+            # Shell coupling: shell absorbs and re-radiates head vibration
+            # Shell decay is longer (resonance)
+            shell_wave = np.sin(2.0 * PI * shell_resonance * time_grid) * np.exp(-15.0 * time_grid)
+            
+            # Combine head and shell signals
+            out_signal += mode_amp * (head_wave + (PHI ** -4) * shell_wave)
+            
+        out_signal = out_signal / (np.max(np.abs(out_signal)) + 1e-9)
+        return out_signal * amp
+
+# =============================================================================
+# 4. GRAND PIANO MODEL (Triple-Unison Strings & Wooden Soundboard)
+# =============================================================================
+class GrandPianoModel:
+    def __init__(self, sr=44100):
+        self.sr = sr
+        
+    def synthesize_note(self, midi_note, midi_velocity, duration=1.5):
+        N_samples = int(duration * self.sr)
+        time_grid = np.linspace(0, duration, N_samples)
+        
+        freq = MidiEngine.note_to_frequency(midi_note, "standard")
+        amp, brightness = MidiEngine.velocity_to_dynamics(midi_velocity)
+        
+        # Grand pianos use 3 strings per note (unisons) tuned slightly apart (detuning)
+        # Detuning introduces beating and chorusing effects
+        detunes = [-0.15, 0.0, 0.15] # Hz detuning
+        string_freqs = [freq + d for d in detunes]
+        
+        # Waveguide delay buffers for the 3 strings
+        delays = [int(self.sr / f) for f in string_freqs]
+        buffers = [np.random.rand(d) * 2.0 - 1.0 for d in delays]
+        ptrs = [0 for _ in delays]
+        
+        # Wooden Soundboard Impedance
+        # Soundboard absorbs energy from the bridge and radiates sound.
+        # TAP soundboard impedance filter coefficient is governed by phi^-8
+        soundboard_impedance = 1.0 - (0.005 * (PHI ** -8))
+        
+        out_signal = np.zeros(N_samples)
+        soundboard_state = 0.0
+        
+        for n in range(N_samples):
+            # Sum of the 3 unison strings
+            unison_sum = 0.0
+            for i in range(3):
+                val = buffers[i][ptrs[i]]
+                next_val = 0.5 * (val + buffers[i][(ptrs[i] + 1) % delays[i]]) * soundboard_impedance
+                buffers[i][ptrs[i]] = next_val
+                ptrs[i] = (ptrs[i] + 1) % delays[i]
+                unison_sum += val
+                
+            # Soundboard coupling: wood soundboard adds rich acoustic sustain
+            # Modeled as a lossy integrator coupled to the unison strings
+            soundboard_state = 0.995 * soundboard_state + (PHI ** -4) * unison_sum
+            
+            # Combine string output with soundboard radiation
+            out_signal[n] = unison_sum * 0.33 + (PHI ** -8) * soundboard_state
+            
+        out_signal = out_signal / (np.max(np.abs(out_signal)) + 1e-9)
+        return out_signal * amp
+
+# =============================================================================
+# RUN SIMULATION & MIDI TRIGGERS
+# =============================================================================
 def simulate_synth():
     print("=" * 72)
-    print("  TAP DAW PHYSICAL MODELING INSTRUMENTS SIMULATOR")
+    print("  TAP PHYSICAL INSTRUMENT SYNTHESIS DEMO (MIDI TRIGGER)")
     print("=" * 72)
     
-    sr = 44100          # Sample rate (Hz)
-    N_samples = 44100   # 1 second of audio
-    time_grid = np.linspace(0, 1.0, N_samples)
+    guitar = GuitarModel()
+    drum = DrumModel()
+    piano = GrandPianoModel()
     
-    # =========================================================================
-    # 1. TAP STRING MODEL (Karplus-Strong Waveguide)
-    # =========================================================================
-    # Simulates a plucked string (A440).
-    # Feedback loop uses a delay line. Damping is scaled by the golden-ratio leakage.
-    f_pitch = 440.0
-    delay_len = int(sr / f_pitch)
+    # Trigger MIDI events: Note Number 60 (Middle C), Velocity 100
+    midi_note = 60
+    midi_velocity = 100
     
-    # Initialize delay buffer with white noise (representing the pluck)
-    buffer = np.random.rand(delay_len) * 2.0 - 1.0
-    out_string = np.zeros(N_samples)
+    print(f"  Triggering MIDI Event: Note {midi_note}, Velocity {midi_velocity}")
     
-    # Damping factor: decay rate governed by the coordinate leakage (phi^-4)
-    # Feedback filter: y[n] = 0.5 * (x[n] + x[n-1]) * S, where S is the decay factor
-    S_decay = 1.0 - (PHI ** -4 * 0.05)  # Slightly below 1.0
+    # Synthesize outputs
+    out_guitar = guitar.synthesize_note(midi_note, midi_velocity)
+    out_drum = drum.synthesize_note(midi_note, midi_velocity)
+    out_piano = piano.synthesize_note(midi_note, midi_velocity)
     
-    ptr = 0
-    for n in range(N_samples):
-        val = buffer[ptr]
-        next_val = 0.5 * (val + buffer[(ptr + 1) % delay_len]) * S_decay
-        out_string[n] = val
-        buffer[ptr] = next_val
-        ptr = (ptr + 1) % delay_len
-        
-    # =========================================================================
-    # 2. TAP DRUM MODEL (Fibonacci-Spaced Membrane Modes)
-    # =========================================================================
-    # Simulates a drum hit. In a 2D membrane, modes are inharmonic (Bessel roots).
-    # TAP percussion scales modes using Fibonacci ratios: Mode_i = Mode_0 * phi^(i/2).
-    f_drum_base = 80.0  # Deep kick/snare fundamental frequency
-    modes = [f_drum_base * (PHI ** (i / 2.0)) for i in range(5)]
-    
-    out_drum = np.zeros(N_samples)
-    # Decay times are faster for higher modes
-    for i, freq in enumerate(modes):
-        decay = 30.0 * (PHI ** i)  # Faster decay for higher frequencies
-        out_drum += np.sin(2.0 * PI * freq * time_grid) * np.exp(-decay * time_grid)
-        
-    # Normalize drum output
-    out_drum = out_drum / (np.max(np.abs(out_drum)) + 1e-9)
-    
-    # =========================================================================
-    # 3. TAP MICROTONAL SYNTHESIZER (Golden Ratio Frequency Scale)
-    # =========================================================================
-    # Instead of standard 12-tone equal temperament (2^(1/12) intervals),
-    # TAP synth uses a golden-ratio microtonal scale where the base interval is phi.
-    # Note frequency: f_n = f_base * phi^(n / 5)
-    f_base = 220.0  # A3 note
-    scale_steps = 10
-    synth_frequencies = [f_base * (PHI ** (n / 5.0)) for n in range(scale_steps)]
-    
-    # Synthesize a chord (Root, 3rd, 5th equivalent in the Golden Ratio scale: steps 0, 3, 5)
-    chord_freqs = [synth_frequencies[0], synth_frequencies[3], synth_frequencies[5]]
-    out_synth = np.zeros(N_samples)
-    
-    # Lowpass filter modulated by LFO at golden ratio rate
-    lfo_rate = 1.0 * PHI  # ~1.618 Hz LFO
-    cutoff_lfo = 1000.0 + 800.0 * np.sin(2.0 * PI * lfo_rate * time_grid)
-    
-    for freq in chord_freqs:
-        # Generate sawtooth wave
-        saw = 2.0 * (time_grid * freq - np.floor(time_grid * freq + 0.5))
-        out_synth += saw
-        
-    # Apply time-varying lowpass filter
-    filtered_synth = np.zeros(N_samples)
-    y_prev = 0.0
-    for n in range(N_samples):
-        # Calculate filter coefficient from modulated cutoff
-        wc = 2.0 * PI * cutoff_lfo[n] / sr
-        alpha = wc / (wc + 1.0)
-        filtered_synth[n] = alpha * out_synth[n] + (1.0 - alpha) * y_prev
-        y_prev = filtered_synth[n]
-        
-    # Normalize synth output
-    filtered_synth = filtered_synth / (np.max(np.abs(filtered_synth)) + 1e-9)
-    
-    print("  Simulation completed.")
-    print(f"    Karplus-String Delay Line: {delay_len} samples")
-    print(f"    TAP Drum Modes: {['{:.2f}'.format(m) for m in modes]} Hz")
-    print(f"    TAP Synthesizer Golden Scale (first 5 notes): {['{:.2f}'.format(f) for f in synth_frequencies[:5]]} Hz")
+    print("  Physical modeling synthesis complete.")
     
     # Save raw data
     data = {
-        "string_decay": out_string[::100].tolist(),
+        "midi_note": midi_note,
+        "midi_velocity": midi_velocity,
+        "guitar_waveform": out_guitar[::100].tolist(),
         "drum_waveform": out_drum[::100].tolist(),
-        "drum_modes": modes,
-        "synth_chord_frequencies": chord_freqs,
-        "synth_waveform": filtered_synth[::100].tolist()
+        "piano_waveform": out_piano[::100].tolist()
     }
     
     out_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets")
@@ -129,7 +247,7 @@ def simulate_synth():
     
     # Plotting results
     fig, axes = plt.subplots(1, 2, figsize=(14, 5), facecolor="#0a0a0f")
-    fig.suptitle("TAP Model -- DAW Physical Modeling Instruments Simulator", color="white", fontsize=14, fontweight="bold")
+    fig.suptitle("TAP Model -- DAW Deep Physical Modeling Instrument Engine", color="white", fontsize=14, fontweight="bold")
     
     for ax in axes:
         ax.set_facecolor("#10101a")
@@ -145,30 +263,29 @@ def simulate_synth():
     GREEN = "#4ecdc4"
     BLUE = "#7c6af7"
     
-    # Panel 1: String Decay Waveform
+    # Panel 1: Guitar vs. Piano Waveform Decay
     ax = axes[0]
-    ax.plot(time_grid * 1000, out_string, color=BLUE, alpha=0.8, lw=1.0, label="Plucked String (A440)")
+    time_grid = np.linspace(0, 1000, 1000)
+    ax.plot(time_grid, out_guitar[:1000], color=ORANGE, alpha=0.8, label="Guitar (String + Neck + Wood Body)")
+    ax.plot(time_grid, out_piano[:1000], color=BLUE, alpha=0.8, label="Grand Piano (Triple Unison + Soundboard)")
     ax.set_xlabel("Time (ms)")
     ax.set_ylabel("Waveform Amplitude")
-    ax.set_title("Physical String Waveguide Decay Curve")
-    ax.set_xlim(0, 100)
+    ax.set_title("Acoustic Structural Waveguide Comparison")
     ax.legend(facecolor="#10101a", labelcolor="white")
     
-    # Panel 2: Drum hit spectrum
+    # Panel 2: Drum Head-Shell FFT Spectrum
     ax = axes[1]
+    sr = 44100
+    N_samples = len(out_drum)
     fft_drum = np.abs(np.fft.rfft(out_drum))
     freqs_drum = np.fft.rfftfreq(N_samples, 1.0/sr)
-    ax.plot(freqs_drum[:2000], fft_drum[:2000], color=GREEN, lw=1.5, label="TAP Drum Hit Spectrum")
-    # Draw vertical lines for modes
-    for m in modes[:3]:
-        ax.axvline(m, color=ORANGE, ls=":", alpha=0.7, label=f"Mode peak ({m:.1f}Hz)")
-    # Remove duplicate legend entries
-    handles, labels = ax.get_legend_handles_labels()
-    by_label = dict(zip(labels, handles))
-    ax.legend(by_label.values(), by_label.keys(), facecolor="#10101a", labelcolor="white")
+    
+    ax.plot(freqs_drum[:1000], fft_drum[:1000], color=GREEN, lw=1.5, label="TAP Drum (Head + Shell Coupling)")
     ax.set_xlabel("Frequency (Hz)")
     ax.set_ylabel("Spectral Magnitude")
-    ax.set_title("Percussion 2D Membrane Frequency Resonances")
+    ax.set_xlim(0, 800)
+    ax.set_title("Percussion Coupled Head-Shell Resonances")
+    ax.legend(facecolor="#10101a", labelcolor="white")
     
     plot_path = os.path.join(out_dir, "tap_synth.png")
     plt.savefig(plot_path, dpi=150, facecolor=fig.get_facecolor(), bbox_inches="tight")
