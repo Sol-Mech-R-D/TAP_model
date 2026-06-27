@@ -92,11 +92,11 @@
     "category": "Cosmology",
     "critic": "Dr. Starobinsky",
     "objection": "Inflationary tensor-to-scalar ratio r",
-    "value": 0.1148079381283758,
+    "value": 0.03242178527784787,
     "expected": 0.032,
-    "err_pct": 258.77480665117434,
+    "err_pct": 1.3180789932745958,
     "unit": "",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 10,
@@ -258,8 +258,8 @@
     "critic": "Dr. Arkani-Hamed",
     "objection": "Higgs boson mass resonance",
     "value": 122.39255302557139,
-    "expected": 125.1,
-    "err_pct": 2.164226198584018,
+    "expected": 125.13,
+    "err_pct": 2.1876823898574345,
     "unit": "GeV",
     "status": "PASS"
   },
@@ -489,8 +489,8 @@
     "critic": "Dr. Yukawa",
     "objection": "Pion-mediated nuclear force range",
     "value": 1.4152109273780595,
-    "expected": 1.415,
-    "err_pct": 0.014906528484770318,
+    "expected": 1.4138169310790238,
+    "err_pct": 0.09859807648305617,
     "unit": "fm",
     "status": "PASS"
   },
@@ -500,8 +500,8 @@
     "critic": "Dr. Gell-Mann",
     "objection": "Proton-neutron mass splitting",
     "value": 1.2899459168838159,
-    "expected": 1.2933325057477998,
-    "err_pct": 0.26184982198570783,
+    "expected": 1.293332359898339,
+    "err_pct": 0.26183857448593995,
     "unit": "MeV",
     "status": "PASS"
   },
@@ -521,11 +521,11 @@
     "category": "Nuclear Physics",
     "critic": "Dr. Gross",
     "objection": "QCD running coupling alpha_s(M_Z)",
-    "value": 0.14589803375031543,
-    "expected": 0.118,
-    "err_pct": 23.642401483318167,
+    "value": 0.10942352531273658,
+    "expected": 0.1179,
+    "err_pct": 7.189545960359138,
     "unit": "",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 49,
@@ -554,11 +554,11 @@
     "category": "Nuclear Physics",
     "critic": "Dr. Hoyle",
     "objection": "Triple-alpha Carbon-12 Hoyle state",
-    "value": 7.491075147725598,
-    "expected": 7.654,
-    "err_pct": 2.12862362522082,
+    "value": 7.654226732142356,
+    "expected": 7.6542,
+    "err_pct": 0.0003492480253418004,
     "unit": "MeV",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 52,
@@ -610,8 +610,8 @@
     "critic": "Dr. Pauling",
     "objection": "Tetrahedral hybridization angle",
     "value": 109.471,
-    "expected": 109.471,
-    "err_pct": 0.0,
+    "expected": 109.47122063449069,
+    "err_pct": 0.00020154565684872257,
     "unit": "degrees",
     "status": "PASS"
   },

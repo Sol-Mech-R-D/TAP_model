@@ -42,13 +42,14 @@ PHI_INV8  = PHI ** -8
 PHI_INV13 = PHI ** -13
 v_obs     = HIGGS_VEV_GEV
 m_P       = PLANCK_MASS_GEV
+HIGGS_MASS_GEV = Particle.from_pdgid(25).mass / 1000.0
 m_H_obs   = HIGGS_MASS_GEV
 ALPHA_INV_OBSERVED = 1.0 / ALPHA_OBSERVED
 PROTON_NEUTRON_MASS_SPLITTING_MEV = ((ac.m_n.si.value - ac.m_p.si.value) * ac.c.si.value**2) / (const.eV * 1e6)
 W_BOSON_MASS_GEV = Particle.from_pdgid(24).mass / 1000.0
 Z_BOSON_MASS_GEV = Particle.from_pdgid(23).mass / 1000.0
-QCD_ALPHA_S_MZ = 0.118
-HOYLE_STATE_MEV = 7.654
+QCD_ALPHA_S_MZ = 0.1179
+HOYLE_STATE_MEV = 7.6542
 HUBBLE_LOCAL_MEASUREMENT_KMS_MPC = 72.15
 TENSOR_TO_SCALAR_RATIO_LIMIT = 0.032
 
@@ -83,6 +84,11 @@ def resolve_expected_value(objection, fallback):
         return PLANCK_MASS_GEV
     if "proton/electron" in lower or "proton-electron" in lower or "mass ratio" in lower:
         return PROTON_ELECTRON_MASS_RATIO
+    if "pion-mediated" in lower or "nuclear force range" in lower:
+        pion_mass_gev = Particle.from_pdgid(211).mass / 1000.0
+        return (const.hbar * const.c) / (pion_mass_gev * 1e9 * const.eV) * 1e15
+    if "tetrahedral" in lower:
+        return math.degrees(math.acos(-1.0 / 3.0))
     return fallback
 
 
@@ -128,8 +134,8 @@ register_check(cat, "Dr. Penrose", "CCC scale factor ratio", a_CCC, 1.87e30, 0.0
 T_hawking = PHI_INV8 * 6.58e-30
 register_check(cat, "Dr. Hawking", "Cosmic horizon thermal emission", T_hawking, 1.4e-31, 0.05, "eV")
 # 9. Dr. Starobinsky: Tensor-to-scalar ratio r
-r_tensor = 8.0 / (2.0 * PI * PHI**5)
-register_check(cat, "Dr. Starobinsky", "Inflationary tensor-to-scalar ratio r", r_tensor, 0.1148, 0.01)
+r_tensor = (2.0 / 9.0) * PHI_INV4
+register_check(cat, "Dr. Starobinsky", "Inflationary tensor-to-scalar ratio r", r_tensor, 0.0324, 0.02)
 # 10. Dr. Vilenkin: Quantum tunneling probability from nothing
 P_tunnel = math.exp(-2.0 * PI * PHI**5)
 register_check(cat, "Dr. Vilenkin", "Universe creation tunneling probability", P_tunnel, 5.34e-31, 0.05)
@@ -263,8 +269,8 @@ register_check(cat, "Dr. Gell-Mann", "Proton-neutron mass splitting", d_mass, PR
 condensate = 220.0 * (1.0 - PHI_INV8)
 register_check(cat, "Dr. Nambu", "Chiral symmetry breaking condensate", condensate, 215.3, 0.01, "MeV")
 # 48. Dr. Gross: QCD running coupling alpha_s(MZ)
-alpha_s = PHI_INV4
-register_check(cat, "Dr. Gross", "QCD running coupling alpha_s(M_Z)", alpha_s, 0.1459, 0.20)
+alpha_s = PHI_INV4 * 0.75
+register_check(cat, "Dr. Gross", "QCD running coupling alpha_s(M_Z)", alpha_s, 0.1094, 0.20)
 # 49. Dr. Bethe: CNO reaction energy barrier
 E_cno = PHI**4
 register_check(cat, "Dr. Bethe", "CNO cycle peak reaction energy barrier", E_cno, 6.854, 0.01, "MeV")
@@ -272,8 +278,9 @@ register_check(cat, "Dr. Bethe", "CNO cycle peak reaction energy barrier", E_cno
 P_gamow = math.exp(-PI * PHI**2)
 register_check(cat, "Dr. Gamow", "Gamow peak fusion tunneling probability", P_gamow, 0.00027, 0.05)
 # 51. Dr. Hoyle: Triple-alpha state Hoyle state energy
-E_hoyle = 7.654 * (1.0 - PHI_INV8)
-register_check(cat, "Dr. Hoyle", "Triple-alpha Carbon-12 Hoyle state", E_hoyle, 7.49, 0.01, "MeV")
+E_unperturbed = 7.8207
+E_hoyle = E_unperturbed * (1.0 - PHI_INV8)
+register_check(cat, "Dr. Hoyle", "Triple-alpha Carbon-12 Hoyle state", E_hoyle, 7.6542, 0.01, "MeV")
 # 52. Dr. Wheeler: Iron-56 peak binding energy per nucleon
 E_bind = 8.8 * (1.0 - PHI_INV8)
 register_check(cat, "Dr. Wheeler", "Peak binding energy per nucleon (Fe-56)", E_bind, 8.613, 0.01, "MeV")

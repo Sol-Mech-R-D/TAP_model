@@ -61,6 +61,13 @@ def test_super_tribunal_uses_science_library_references():
 
 def test_super_tribunal_resolves_science_library_targets():
     import tap_super_tribunal_99 as tribunal
+    from particle import Particle
+    import math
 
     assert tribunal.resolve_expected_value("Bare fine-structure constant alpha^-1", 137.036) == pytest.approx(1.0 / const.alpha)
     assert tribunal.resolve_expected_value("Proton-neutron mass splitting", 1.29) == pytest.approx((const.m_n - const.m_p) * const.c**2 / (const.eV * 1e6))
+    assert tribunal.resolve_expected_value("Higgs boson mass resonance", 125.10) == pytest.approx(Particle.from_pdgid(25).mass / 1000.0)
+    pion_mass_gev = Particle.from_pdgid(211).mass / 1000.0
+    expected_pion_range = (const.hbar * const.c) / (pion_mass_gev * 1e9 * const.eV) * 1e15
+    assert tribunal.resolve_expected_value("Pion-mediated nuclear force range", 1.41) == pytest.approx(expected_pion_range)
+    assert tribunal.resolve_expected_value("Tetrahedral hybridization angle", 109.5) == pytest.approx(math.degrees(math.acos(-1.0 / 3.0)))
