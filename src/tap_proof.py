@@ -95,16 +95,15 @@ def run_tap_python(initial_energy=1.0,
         phi_flux  = rho_I * PHI_INV_4 * exp_ratio
         cum_leak += phi_flux * dt
 
-        # Restoring force to maintain the 3:1 ratio (Derrick-Hobart stabilization)
-        restoration = structural_coupling * (rho_S - 3.0 * rho_I)
-
         # — Structural energy update —
-        d_rho_S = -3.0 * H * rho_S - phi_flux - restoration
-        rho_S   = max(rho_S + d_rho_S * dt, 0.0)
+        restoration = structural_coupling * (TAP_RATIO * rho_I - rho_S)
+        vol_factor = 1.0 / (exp_ratio ** 3)
+        d_rho_S = -phi_flux + restoration
+        rho_S   = max(rho_S * vol_factor + d_rho_S * dt, 0.0)
 
         # — Interface energy update —
-        d_rho_I = -3.0 * H * rho_I + (phi_flux / TAP_RATIO) - (dimensional_drag * rho_I) + restoration
-        rho_I   = max(rho_I + d_rho_I * dt, 0.0)
+        d_rho_I = (phi_flux / TAP_RATIO) - (dimensional_drag * rho_I) - restoration
+        rho_I   = max(rho_I * vol_factor + d_rho_I * dt, 0.0)
 
         # — Entropy accumulation —
         entropy += (phi_flux + max(-d_rho_S, 0.0)) * dt
