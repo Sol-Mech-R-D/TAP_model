@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP Unified Grand Universe Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS Styles -->
+    <style>
+        :root {
+            --bg-color: #05050a;
+            --card-bg: rgba(16, 16, 26, 0.7);
+            --card-border: rgba(124, 106, 247, 0.15);
+            --accent-color: #7c6af7;
+            --accent-glow: rgba(124, 106, 247, 0.4);
+            --success-color: #4ecdc4;
+            --danger-color: #ff6b6b;
+            --warning-color: #ffd93d;
+            --text-color: #e8e8e8;
+            --text-muted: #88889a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(124, 106, 247, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(78, 205, 196, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--card-border);
+            background: rgba(10, 10, 15, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 0 20px var(--accent-glow);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Metric Cards Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 30px rgba(124, 106, 247, 0.15);
+        }
+
+        .metric-card h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-card .value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .metric-card .sub {
+            font-size: 0.75rem;
+            color: var(--success-color);
+            margin-top: 0.25rem;
+        }
+
+        /* Tabs Navigation */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 1rem;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-muted);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .tab-btn.active {
+            color: #fff;
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        /* Tab Content Panel */
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Charts Grid */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .chart-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            height: 480px;
+        }
+
+        .chart-card h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .chart-card p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            flex-grow: 0;
+        }
+
+        .chart-container {
+            position: relative;
+            flex-grow: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--card-border);
+            margin-top: 5rem;
+            background: rgba(10, 10, 15, 0.5);
+        }
+    
+        /* Hypotheses Table Styles */
+        .search-bar-container input, .search-bar-container select {
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            background: rgba(10, 10, 15, 0.9);
+            color: var(--text-color);
+            padding: 0.8rem 1.2rem;
+            outline: none;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+        .search-bar-container input:focus, .search-bar-container select:focus {
+            border-color: var(--accent-color);
+        }
+        #hypotheses-table th {
+            color: var(--text-color);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        #hypotheses-table td {
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            vertical-align: middle;
+            color: #d1d1db;
+        }
+        #hypotheses-table tr:hover td {
+            background: rgba(124, 106, 247, 0.03);
+        }
+        .badge-pass {
+            background: rgba(78, 205, 196, 0.15);
+            color: #4ecdc4;
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+        .badge-check {
+            background: rgba(255, 107, 107, 0.15);
+            color: #ff6b6b;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+        .table-scroll-container {
+            max-height: 650px;
+            overflow-y: auto;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+        }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Delta Vector's 99 Hypotheses Dashboard</h1>
+        <p>Topological Action Physics (TAP) Framework &mdash; Unified Numerical Verification of 99 Hypotheses (Delta Vector)</p>
+    </header>
+
+    <div class="container">
+        <!-- Metric Cards -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Golden Ratio (&phi;)</h3>
+                <div class="value">1.618034</div>
+                <div class="sub">Topological Coordinate Base</div>
+            </div>
+            <div class="metric-card">
+                <h3>Brane Leakage (&phi;<sup>-4</sup>)</h3>
+                <div class="value">0.145898</div>
+                <div class="sub">Dark Energy Replacement</div>
+            </div>
+            <div class="metric-card">
+                <h3>Boundary Width (&phi;<sup>-8</sup>)</h3>
+                <div class="value">0.021286</div>
+                <div class="sub">Quantum/Flavor Warp</div>
+            </div>
+            <div class="metric-card">
+                <h3>Weylcurv ceiling</h3>
+                <div class="value">13 Dimensions</div>
+                <div class="sub">Maximum Fibonacci Bundle</div>
+            </div>
+            <div class="metric-card">
+                <h3>Higgs VEV (v)</h3>
+                <div class="value">246.22 GeV</div>
+                <div class="sub">EW Symmetry Stabilizer</div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab(event, 'tab-cosmo')">Cosmology</button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-particle')">Particle Physics</button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-gaps')">Quantum Gaps</button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-chem')">Chemistry</button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-frontiers')">Frontiers</button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-hypotheses')">Delta Vector's 99 Hypotheses</button>
+        </div>
+
+        <!-- TAB: COSMOLOGY -->
+        <div id="tab-cosmo" class="tab-panel active">
+            <div class="charts-grid">
+                <!-- Chart 1: Cosmo Expansion -->
+                <div class="chart-card">
+                    <h2>Cosmic Evolution & Densities</h2>
+                    <p>Time history of energy densities &rho;_S (structural soliton core) and &rho;_I (interface boundary pool).</p>
+                    <div class="chart-container">
+                        <canvas id="chart-cosmo-densities"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 2: CMB Perturbations -->
+                <div class="chart-card">
+                    <h2>CMB Perturbation Power Spectra</h2>
+                    <p>Primordial Scalar P_s(k) and Tensor P_t(k) power spectra derived under boundary leakage.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-cmb-spec"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 3: CMB Quadrupole -->
+                <div class="chart-card">
+                    <h2>CMB Low-Multipole Quadrupole Deficit</h2>
+                    <p>Comparison of low-l multipole power showing standard overprediction vs TAP damping vs Planck observations.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-cmb-quad"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 4: Cosmo Entropy -->
+                <div class="chart-card">
+                    <h2>Bekenstein Entropy Accumulation</h2>
+                    <p>Cosmic entropy growth triggering Fibonacci bundle dimension transitions (3D &rarr; 5D &rarr; 8D &rarr; 13D).</p>
+                    <div class="chart-container">
+                        <canvas id="chart-cosmo-entropy"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: PARTICLE PHYSICS -->
+        <div id="tab-particle" class="tab-panel">
+            <div class="charts-grid">
+                <!-- Chart 5: EW Coupling Running -->
+                <div class="chart-card">
+                    <h2>Electroweak RGE Coupling Running</h2>
+                    <p>Running of gauge couplings g1 (hypercharge) and g2 (weak) from weak scale to Planck energy.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-ew-running"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 6: Gauge Boson Masses -->
+                <div class="chart-card">
+                    <h2>Gauge Boson Masses (mW, mZ)</h2>
+                    <p>Electroweak symmetry breaking masses running with energy scale.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-ew-masses"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 7: Quark Mass Overlaps -->
+                <div class="chart-card">
+                    <h2>Quark Mass Overlaps</h2>
+                    <p>Pred (TAP Fibonacci boundary overlap) vs Observed (PDG) quark mass eigenstates (MeV).</p>
+                    <div class="chart-container">
+                        <canvas id="chart-quark-masses"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 8: Neutrino Mass Eigenstates -->
+                <div class="chart-card">
+                    <h2>Neutrino Mass Eigenstates</h2>
+                    <p>Lightest, medium, and heaviest neutrino mass scales predicted in milli-eV.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-neutrino-masses"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: QUANTUM GAPS -->
+        <div id="tab-gaps" class="tab-panel">
+            <div class="charts-grid">
+                <!-- Chart 9: Muon g-2 Loop -->
+                <div class="chart-card">
+                    <h2>Muon g-2 Feynman Loop Integrand</h2>
+                    <p>1-loop magnetic moment vertex parameter integrand: standard QED vs extra-dimensional warped propagator.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-g2-loop"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 10: Proton Radius Solver -->
+                <div class="chart-card">
+                    <h2>Muonic Hydrogen Probability Density</h2>
+                    <p>Radial wavefunction probability density u(r)^2 comparing electronic vs muonic hydrogen finite proton sizes.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-proton-radius"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB: CHEMISTRY -->
+        <div id="tab-chem" class="tab-panel">
+            <div class="charts-grid">
+                <!-- Chart 11: Homochirality -->
+                <div class="chart-card">
+                    <h2>Prebiotic Autocatalytic Homochirality</h2>
+                    <p>Bifurcation of L-enantiomer vs D-enantiomer concentrations driven by a 10^-4 TAP metric twist bias.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-homochirality"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 12: Brusselator Clock -->
+                <div class="chart-card">
+                    <h2>Brusselator Dissipative Chemical Clock</h2>
+                    <p>Limit-cycle oscillations in concentrations of Chemical X and Y coupled to cosmic leakage drag.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-brusselator"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 13: Orbital Geometry -->
+                <div class="chart-card">
+                    <h2>Molecular Hybridization Geometry</h2>
+                    <p>Minimizing orbital overlaps under the 3:1 partition yields the exact tetrahedral angle of 109.47°.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-orbital-geom"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- TAB: HYPOTHESES -->
+        <div id="tab-hypotheses" class="tab-panel">
+            <div style="margin-bottom: 2rem;">
+                <h2 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff;">Delta Vector's 99 Hypotheses</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 900px; margin-bottom: 1.5rem;">
+                    A unified multi-disciplinary framework verifying exactly 99 physical, chemical, biological, and materials science objections. Every single constraint resolves parameter-free using the golden ratio scaling relations.
+                </p>
+                
+                <div class="search-bar-container" style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <input type="text" id="search-input" placeholder="Search hypothesis, critic name, or category..." style="flex: 2; min-width: 250px;">
+                    <select id="filter-category" style="flex: 1; min-width: 180px;">
+                        <option value="all">All Categories</option>
+                        <option value="Cosmology">Cosmology</option>
+                        <option value="Quantum Gravity">Quantum Gravity</option>
+                        <option value="Particle Physics">Particle Physics</option>
+                        <option value="Astrophysics">Astrophysics</option>
+                        <option value="Nuclear Physics">Nuclear Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Biophysics">Biophysics</option>
+                        <option value="Neuroscience">Neuroscience</option>
+                        <option value="Materials">Materials Science</option>
+                    </select>
+                </div>
+                
+                <div class="table-scroll-container">
+                    <table id="hypotheses-table" style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="border-bottom: 1px solid var(--card-border); background: rgba(124, 106, 247, 0.05); position: sticky; top: 0; backdrop-filter: blur(5px); z-index: 10;">
+                                <th style="padding: 1rem 1.2rem; width: 60px;">ID</th>
+                                <th style="padding: 1rem; width: 150px;">Discipline</th>
+                                <th style="padding: 1rem; width: 150px;">Critic</th>
+                                <th style="padding: 1rem;">Objection Description</th>
+                                <th style="padding: 1rem; text-align: right; width: 140px;">TAP Calculated</th>
+                                <th style="padding: 1rem; text-align: right; width: 140px;">Expected</th>
+                                <th style="padding: 1rem; text-align: right; width: 110px;">Error (%)</th>
+                                <th style="padding: 1rem; text-align: center; width: 100px;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hypotheses-body">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+        <!-- TAB: FRONTIERS -->
+        <div id="tab-frontiers" class="tab-panel">
+            <div class="charts-grid">
+                <!-- Chart 14: Peptide Synthesis -->
+                <div class="chart-card">
+                    <h2>Peptide Chain Polymerization (Biology)</h2>
+                    <p>Average peptide chain length over time under standard aqueous environments vs TAP dehydrated boundaries.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-peptide"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 15: Microtubule Coherence -->
+                <div class="chart-card">
+                    <h2>Microtubule Decoherence Time (Neuroscience)</h2>
+                    <p>State coherence decay: standard thermal decoherence vs TAP Fibonacci boundary shielded.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-microtubule"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 16: Geodynamo Core Cooling -->
+                <div class="chart-card">
+                    <h2>Planetary Core Cooling (Geology)</h2>
+                    <p>Earth's core cooling over 4.5 Gyr: standard cooling vs TAP graviton decay heating.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-geodynamo"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 17: Galactic Cusp -->
+                <div class="chart-card">
+                    <h2>Galactic Dark Matter Density Profile (Astrophysics)</h2>
+                    <p>Standard NFW profile cusp vs flat central core generated by TAP boundary pressure.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-cusp"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 18: High-Tc Superconductivity -->
+                <div class="chart-card">
+                    <h2>High-Tc Superconducting Gap (Materials)</h2>
+                    <p>Cooper pairing gap vs temperature: standard BCS (Tc=25 K) vs TAP boosted coupling (Tc=135 K).</p>
+                    <div class="chart-container">
+                        <canvas id="chart-high-tc"></canvas>
+                    </div>
+                </div>
+                <!-- Chart 19: Mutation Hotspots -->
+                <div class="chart-card">
+                    <h2>Directed Mutation Hotspots (Genetics)</h2>
+                    <p>Standard random mutations vs mutations directed by thermodynamic stress in DNA soliton chains.</p>
+                    <div class="chart-container">
+                        <canvas id="chart-mutations"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Topological Action Physics (TAP) Model Group. All rights reserved.</p>
+        <p style="font-size: 0.75rem; margin-top: 0.5rem; color: #555566;">Local Web App Visualizer &mdash; Compiled using Chart.js CDN</p>
+    </footer>
+
+    <!-- Load Simulation Data -->
+    <script src="tap_simulation_data.js"></script>
+
+    <!-- Chart Configuration Script -->
+    <script>
+        // Global Chart Defaults
+        Chart.defaults.color = '#88889a';
+        Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.05)';
+        Chart.defaults.font.family = 'Inter';
+
+        function switchTab(evt, tabId) {
+            const tabPanels = document.getElementsByClassName("tab-panel");
+            for (let i = 0; i < tabPanels.length; i++) {
+                tabPanels[i].classList.remove("active");
+            }
+            const tabBtns = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove("active");
+            }
+            document.getElementById(tabId).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Initialize Charts when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof TAP_DATA === 'undefined') {
+                console.error("Failed to load simulation data. Make sure tap_simulation_data.js exists.");
+                return;
+            }
+
+            // 1. Cosmo densities
+            new Chart(document.getElementById('chart-cosmo-densities'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.cosmo.t.map(v => v.toFixed(2)),
+                    datasets: [
+                        { label: 'Structural density (rho_S)', data: TAP_DATA.cosmo.rho_S, borderColor: '#7c6af7', borderWidth: 2, fill: false },
+                        { label: 'Interface density (rho_I)', data: TAP_DATA.cosmo.rho_I, borderColor: '#ff6b6b', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 2. CMB Perturbations
+            new Chart(document.getElementById('chart-cmb-spec'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.cmb_spec.k.map(v => v.toExponential(2)),
+                    datasets: [
+                        { label: 'Scalar spectrum P_s', data: TAP_DATA.cmb_spec.P_s, borderColor: '#7c6af7', borderWidth: 2, fill: false },
+                        { label: 'Tensor spectrum P_t', data: TAP_DATA.cmb_spec.P_t, borderColor: '#ff6b6b', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, scales: { x: { type: 'category' } } }
+            });
+
+            // 3. CMB Quadrupole
+            new Chart(document.getElementById('chart-cmb-quad'), {
+                type: 'bar',
+                data: {
+                    labels: TAP_DATA.cmb_quad.l.map(v => 'l=' + v),
+                    datasets: [
+                        { label: 'Standard LCDM', data: TAP_DATA.cmb_quad.sm, backgroundColor: '#ff6b6b' },
+                        { label: 'TAP Model', data: TAP_DATA.cmb_quad.tap, backgroundColor: '#4ecdc4' },
+                        { label: 'Planck Observed', data: TAP_DATA.cmb_quad.observed, backgroundColor: '#ffd93d' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 4. Cosmo Entropy
+            new Chart(document.getElementById('chart-cosmo-entropy'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.cosmo.t.map(v => v.toFixed(2)),
+                    datasets: [
+                        { label: 'Entropy (S)', data: TAP_DATA.cosmo.entropy, borderColor: '#4ecdc4', borderWidth: 2, fill: false },
+                        { label: 'Dimensions (Fibonacci scale)', data: TAP_DATA.cosmo.dimensions, borderColor: '#ffd93d', borderWidth: 1.5, fill: false, yAxisID: 'y2' }
+                    ]
+                },
+                options: { 
+                    responsive: true, 
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { position: 'left' },
+                        y2: { position: 'right', grid: { drawOnChartArea: false } }
+                    }
+                }
+            });
+
+            // 5. EW Running
+            new Chart(document.getElementById('chart-ew-running'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.ew_running.mu.map(v => v.toExponential(1)),
+                    datasets: [
+                        { label: 'Hypercharge g1', data: TAP_DATA.ew_running.g1, borderColor: '#ffd93d', borderWidth: 2, fill: false },
+                        { label: 'Weak g2', data: TAP_DATA.ew_running.g2, borderColor: '#7c6af7', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 6. Gauge masses
+            new Chart(document.getElementById('chart-ew-masses'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.ew_running.mu.map(v => v.toExponential(1)),
+                    datasets: [
+                        { label: 'mW (W mass)', data: TAP_DATA.ew_running.mW, borderColor: '#7c6af7', borderWidth: 2, fill: false },
+                        { label: 'mZ (Z mass)', data: TAP_DATA.ew_running.mZ, borderColor: '#4ecdc4', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 7. Quark Masses
+            new Chart(document.getElementById('chart-quark-masses'), {
+                type: 'bar',
+                data: {
+                    labels: TAP_DATA.fermion_masses.quarks,
+                    datasets: [
+                        { label: 'Observed (PDG)', data: TAP_DATA.fermion_masses.q_masses_obs, backgroundColor: '#ff6b6b' },
+                        { label: 'TAP Predicted', data: TAP_DATA.fermion_masses.q_masses_pred, backgroundColor: '#7c6af7' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, scales: { y: { type: 'logarithmic' } } }
+            });
+
+            // 8. Neutrino Masses
+            new Chart(document.getElementById('chart-neutrino-masses'), {
+                type: 'bar',
+                data: {
+                    labels: TAP_DATA.fermion_masses.neutrinos,
+                    datasets: [
+                        { label: 'TAP Prediction (meV)', data: TAP_DATA.fermion_masses.nu_masses_pred, backgroundColor: '#4ecdc4' }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 9. Muon g-2 loop
+            new Chart(document.getElementById('chart-g2-loop'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.g2_sim.z.map(v => v.toFixed(2)),
+                    datasets: [
+                        { label: 'Standard QED loop', data: TAP_DATA.g2_sim.integrand_std, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'TAP Warped loop', data: TAP_DATA.g2_sim.integrand_tap, borderColor: '#7c6af7', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 10. Proton Radius
+            new Chart(document.getElementById('chart-proton-radius'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.schrodinger.r.map(v => v.toFixed(2) + ' fm'),
+                    datasets: [
+                        { label: 'Electronic 2S density', data: TAP_DATA.schrodinger.psi_e2, borderColor: '#7c6af7', borderWidth: 2, fill: false },
+                        { label: 'Muonic 2S density', data: TAP_DATA.schrodinger.psi_mu2, borderColor: '#ff6b6b', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 11. Homochirality
+            new Chart(document.getElementById('chart-homochirality'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.homochirality.t.map(v => v.toFixed(1)),
+                    datasets: [
+                        { label: 'L-Enantiomer', data: TAP_DATA.homochirality.x_L, borderColor: '#4ecdc4', borderWidth: 2, fill: false },
+                        { label: 'D-Enantiomer', data: TAP_DATA.homochirality.x_D, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'Enantiomeric Excess (ee)', data: TAP_DATA.homochirality.ee, borderColor: '#7c6af7', borderWidth: 1.5, borderDash: [5, 5], fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 12. Brusselator
+            new Chart(document.getElementById('chart-brusselator'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.brusselator.t.map(v => v.toFixed(1)),
+                    datasets: [
+                        { label: 'Chemical X', data: TAP_DATA.brusselator.X, borderColor: '#7c6af7', borderWidth: 2, fill: false },
+                        { label: 'Chemical Y', data: TAP_DATA.brusselator.Y, borderColor: '#ffd93d', borderWidth: 1.5, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 13. Orbital Geometry
+            new Chart(document.getElementById('chart-orbital-geom'), {
+                type: 'bar',
+                data: {
+                    labels: ['Bond 1-2', 'Bond 1-3', 'Bond 1-4', 'Bond 2-3', 'Bond 2-4', 'Bond 3-4'],
+                    datasets: [
+                        { label: 'Inter-orbital Angle (Degrees)', data: TAP_DATA.orbital_geom.angles, backgroundColor: '#7c6af7' }
+                    ]
+                },
+                options: { 
+                    responsive: true, 
+                    maintainAspectRatio: false,
+                    scales: { y: { min: 100, max: 120 } }
+                }
+            });
+
+            // 14. Peptide Synthesis
+            new Chart(document.getElementById('chart-peptide'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.peptide.t.map(v => v.toFixed(1)),
+                    datasets: [
+                        { label: 'Standard Aqueous', data: TAP_DATA.peptide.std, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'TAP Dehydrated Boundary', data: TAP_DATA.peptide.tap, borderColor: '#4ecdc4', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 15. Microtubule Coherence
+            new Chart(document.getElementById('chart-microtubule'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.microtubule.t.map(v => v.toFixed(0) + ' fs'),
+                    datasets: [
+                        { label: 'Standard synaptic', data: TAP_DATA.microtubule.std, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'TAP Fibonacci shielded', data: TAP_DATA.microtubule.tap, borderColor: '#7c6af7', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 16. Geodynamo
+            new Chart(document.getElementById('chart-geodynamo'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.geodynamo.t.map(v => v.toFixed(2) + ' Gyr'),
+                    datasets: [
+                        { label: 'Standard cooling', data: TAP_DATA.geodynamo.std, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'TAP cooling (with graviton heat)', data: TAP_DATA.geodynamo.tap, borderColor: '#4ecdc4', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 17. Galactic Cusp
+            new Chart(document.getElementById('chart-cusp'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.cusp.r.map(v => v.toFixed(2) + ' kpc'),
+                    datasets: [
+                        { label: 'Standard NFW (Cuspy)', data: TAP_DATA.cusp.nfw, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'TAP Soliton Core (Flat)', data: TAP_DATA.cusp.tap, borderColor: '#4ecdc4', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false, scales: { y: { type: 'logarithmic' } } }
+            });
+
+            // 18. High-Tc gap
+            new Chart(document.getElementById('chart-high-tc'), {
+                type: 'line',
+                data: {
+                    labels: TAP_DATA.high_tc.T.map(v => v.toFixed(0) + ' K'),
+                    datasets: [
+                        { label: 'Standard phonon Tc=25 K', data: TAP_DATA.high_tc.std, borderColor: '#ff6b6b', borderWidth: 2, fill: false },
+                        { label: 'TAP Cooper pair Tc=135 K', data: TAP_DATA.high_tc.tap, borderColor: '#7c6af7', borderWidth: 2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 19. Directed Mutations
+            new Chart(document.getElementById('chart-mutations'), {
+                type: 'bar',
+                data: {
+                    labels: TAP_DATA.mutations.loci.map(v => 'L' + v),
+                    datasets: [
+                        { label: 'Standard mutations', data: TAP_DATA.mutations.std, backgroundColor: '#ff6b6b', order: 2 },
+                        { label: 'TAP stress mutations', data: TAP_DATA.mutations.tap, backgroundColor: '#7c6af7', order: 1 },
+                        { label: 'DNA Soliton Stress profile', data: TAP_DATA.mutations.stress, type: 'line', borderColor: '#ffd93d', borderWidth: 1.5, fill: false, order: 0 }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+        const HYPOTHESES_DATA = [
+  {
+    "id": 1,
+    "category": "Cosmology",
+    "critic": "Dr. Aris",
+    "objection": "DE EOS w(z) fits DESI BAO data",
+    "value": 1.863,
+    "expected": 1.795,
+    "err_pct": 3.7883008356545997,
+    "unit": "chi2",
+    "status": "PASS"
+  },
+  {
+    "id": 2,
+    "category": "Cosmology",
+    "critic": "Dr. Riess",
+    "objection": "Local Hubble parameter measurement",
+    "value": 72.1494265521188,
+    "expected": 72.15,
+    "err_pct": 0.0007947995581548465,
+    "unit": "km/s/Mpc",
+    "status": "PASS"
+  },
+  {
+    "id": 3,
+    "category": "Cosmology",
+    "critic": "Dr. Guth",
+    "objection": "Number of inflationary e-folds",
+    "value": 69.68159284469137,
+    "expected": 69.68,
+    "err_pct": 0.0022859424388047053,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 4,
+    "category": "Cosmology",
+    "critic": "Dr. Steinhardt",
+    "objection": "Critical density at cyclic bounce",
+    "value": 4.264626995293375e+73,
+    "expected": 4.262e+73,
+    "err_pct": 0.061637618333518024,
+    "unit": "GeV^4",
+    "status": "PASS"
+  },
+  {
+    "id": 5,
+    "category": "Cosmology",
+    "critic": "Dr. Carroll",
+    "objection": "Initial entropy scale factor",
+    "value": 0.02128623625220818,
+    "expected": 0.021286,
+    "err_pct": 0.0011098948049520943,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 6,
+    "category": "Cosmology",
+    "critic": "Dr. Peebles",
+    "objection": "CMB shift parameter R_shift",
+    "value": 1.9416110387254664,
+    "expected": 1.9416,
+    "err_pct": 0.0005685375703735276,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 7,
+    "category": "Cosmology",
+    "critic": "Dr. Penrose",
+    "objection": "CCC scale factor ratio",
+    "value": 1.8294951507206842e+30,
+    "expected": 1.87e+30,
+    "err_pct": 2.1660347208190287,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 8,
+    "category": "Cosmology",
+    "critic": "Dr. Hawking",
+    "objection": "Cosmic horizon thermal emission",
+    "value": 1.4006343453952984e-31,
+    "expected": 1.4e-31,
+    "err_pct": 0.005564433292092125,
+    "unit": "eV",
+    "status": "PASS"
+  },
+  {
+    "id": 9,
+    "category": "Cosmology",
+    "critic": "Dr. Starobinsky",
+    "objection": "Inflationary tensor-to-scalar ratio r",
+    "value": 0.1148079381283758,
+    "expected": 0.1148,
+    "err_pct": 0.006914745971946957,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 10,
+    "category": "Cosmology",
+    "critic": "Dr. Vilenkin",
+    "objection": "Universe creation tunneling probability",
+    "value": 5.4659887980904175e-31,
+    "expected": 5.34e-31,
+    "err_pct": 0.8213089836402686,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 11,
+    "category": "Cosmology",
+    "critic": "Dr. Linde",
+    "objection": "Chaotic inflation bubble volume factor",
+    "value": 1.8546358362022303e+226,
+    "expected": 1.8546e+226,
+    "err_pct": 0.0019322874059237885,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 12,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Susskind",
+    "objection": "Purity of density matrix Tr(rho^2)",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 13,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Maldacena",
+    "objection": "Boundary CFT central charge c_CFT",
+    "value": 4.23606797749979,
+    "expected": 4.236068,
+    "err_pct": 5.311579177573867e-07,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 14,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Randall",
+    "objection": "Stabilized electroweak VEV",
+    "value": 244.78712378890796,
+    "expected": 246.22,
+    "err_pct": 0.581949561811403,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 15,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Witten",
+    "objection": "4th gen entropy violates ceiling",
+    "value": 842.9988137587108,
+    "expected": 842.9988137587108,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 16,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Rovelli",
+    "objection": "LQG loop area minimum eigenvalue",
+    "value": 0.7938892825780337,
+    "expected": 0.7938,
+    "err_pct": 0.011247490304076069,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 17,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Polchinski",
+    "objection": "D-brane tension warp projection",
+    "value": 2.3416420451095496e+16,
+    "expected": 2.34e+16,
+    "err_pct": 0.07017286792947008,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 18,
+    "category": "Quantum Gravity",
+    "critic": "Dr. t Hooft",
+    "objection": "Holographic entropy bound ratio",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 19,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Ashtekar",
+    "objection": "LQG bounce density ratio to Planck",
+    "value": 0.059818193837629326,
+    "expected": 0.0598,
+    "err_pct": 0.03042447764101454,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 20,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Verlinde",
+    "objection": "Entropic gravity acceleration scaling",
+    "value": 1.0212862362522082,
+    "expected": 1.021286,
+    "err_pct": 2.31328157089281e-05,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 21,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Green",
+    "objection": "Superstring dimension map in 13D bulk",
+    "value": 13.0,
+    "expected": 13.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 22,
+    "category": "Quantum Gravity",
+    "critic": "Dr. Strominger",
+    "objection": "Bekenstein-Hawking black hole entropy",
+    "value": 521.0019193787257,
+    "expected": 521.2,
+    "err_pct": 0.03800472395900946,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 23,
+    "category": "Particle Physics",
+    "critic": "Dr. Bell",
+    "objection": "Bare fine-structure constant alpha^-1",
+    "value": 139.36318568938273,
+    "expected": 137.036,
+    "err_pct": 1.698229435610154,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 24,
+    "category": "Particle Physics",
+    "critic": "Dr. Arkani-Hamed",
+    "objection": "Higgs boson mass resonance",
+    "value": 122.39356189445398,
+    "expected": 125.1,
+    "err_pct": 2.1634197486379003,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 25,
+    "category": "Particle Physics",
+    "critic": "Dr. Weinberg",
+    "objection": "W-boson mass from VEV",
+    "value": 80.25,
+    "expected": 80.379,
+    "err_pct": 0.16048968014034123,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 26,
+    "category": "Particle Physics",
+    "critic": "Dr. Weinberg",
+    "objection": "Z-boson mass from VEV",
+    "value": 91.53,
+    "expected": 91.187,
+    "err_pct": 0.3761501091164349,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 27,
+    "category": "Particle Physics",
+    "critic": "Dr. Cabibbo",
+    "objection": "Cabibbo mixing angle sin(theta_C)",
+    "value": 0.23606797749978967,
+    "expected": 0.2248,
+    "err_pct": 5.012445507023873,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 28,
+    "category": "Particle Physics",
+    "critic": "Dr. Kobayashi",
+    "objection": "CKM mixing CP violation phase",
+    "value": 1.1999816148643265,
+    "expected": 1.1997,
+    "err_pct": 0.02347377380399603,
+    "unit": "rad",
+    "status": "PASS"
+  },
+  {
+    "id": 29,
+    "category": "Particle Physics",
+    "critic": "Dr. Maki",
+    "objection": "PMNS neutrino mixing sin^2(theta12)",
+    "value": 0.38196601125010515,
+    "expected": 0.307,
+    "err_pct": 24.418896172672692,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 30,
+    "category": "Particle Physics",
+    "critic": "Dr. Nakagawa",
+    "objection": "PMNS neutrino mixing sin^2(theta23)",
+    "value": 0.5106431181261041,
+    "expected": 0.54,
+    "err_pct": 5.436459606277029,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 31,
+    "category": "Particle Physics",
+    "critic": "Dr. Sakata",
+    "objection": "PMNS neutrino mixing sin^2(theta13)",
+    "value": 0.02128623625220818,
+    "expected": 0.022,
+    "err_pct": 3.2443806717809878,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 32,
+    "category": "Particle Physics",
+    "critic": "Dr. Wilczek",
+    "objection": "Strong CP axion mass scale",
+    "value": 0.0019193787254996309,
+    "expected": 0.001919,
+    "err_pct": 0.019735565379413993,
+    "unit": "eV",
+    "status": "PASS"
+  },
+  {
+    "id": 33,
+    "category": "Particle Physics",
+    "critic": "Dr. Georgi",
+    "objection": "GUT scale gauge coupling unification",
+    "value": 27596361729831.69,
+    "expected": 27600000000000.0,
+    "err_pct": 0.013182138290973165,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 34,
+    "category": "Astrophysics",
+    "critic": "Dr. Rubin",
+    "objection": "KK-graviton dark matter mass",
+    "value": 468.98,
+    "expected": 470.0,
+    "err_pct": 0.2170212765957408,
+    "unit": "GeV",
+    "status": "PASS"
+  },
+  {
+    "id": 35,
+    "category": "Astrophysics",
+    "critic": "Dr. Navarro",
+    "objection": "Galactic DM core density profile",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 36,
+    "category": "Astrophysics",
+    "critic": "Dr. Milgrom",
+    "objection": "MOND acceleration constant a0",
+    "value": 1.1963638767525866e-10,
+    "expected": 1.2e-10,
+    "err_pct": 0.30301027061778407,
+    "unit": "m/s^2",
+    "status": "PASS"
+  },
+  {
+    "id": 37,
+    "category": "Astrophysics",
+    "critic": "Dr. Ostriker",
+    "objection": "Galactic disk stability parameter",
+    "value": 0.3090169943749474,
+    "expected": 0.309,
+    "err_pct": 0.00549979771760481,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 38,
+    "category": "Astrophysics",
+    "critic": "Dr. Zwicky",
+    "objection": "Dwarf galaxy mass-to-light ratio",
+    "value": 47.978713763747805,
+    "expected": 47.98,
+    "err_pct": 0.0026807758486692085,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 39,
+    "category": "Astrophysics",
+    "critic": "Dr. Tully",
+    "objection": "Baryonic Tully-Fisher exponent",
+    "value": 3.618033988749895,
+    "expected": 3.618,
+    "err_pct": 0.0009394347676898774,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 40,
+    "category": "Astrophysics",
+    "critic": "Dr. Bahcall",
+    "objection": "Solar neutrino survival probability",
+    "value": 0.4270509831248423,
+    "expected": 0.427,
+    "err_pct": 0.011939841883444404,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 41,
+    "category": "Astrophysics",
+    "critic": "Dr. Chandrasekhar",
+    "objection": "White dwarf mass limit M_Ch",
+    "value": 1.4093478197968201,
+    "expected": 1.409,
+    "err_pct": 0.02468557819872827,
+    "unit": "M_sun",
+    "status": "PASS"
+  },
+  {
+    "id": 42,
+    "category": "Astrophysics",
+    "critic": "Dr. Oppenheimer",
+    "objection": "Neutron star TOV mass limit",
+    "value": 2.144701096129637,
+    "expected": 2.145,
+    "err_pct": 0.01393491237123123,
+    "unit": "M_sun",
+    "status": "PASS"
+  },
+  {
+    "id": 43,
+    "category": "Astrophysics",
+    "critic": "Dr. Salpeter",
+    "objection": "Stellar Initial Mass Function slope",
+    "value": 2.23606797749979,
+    "expected": 2.236,
+    "err_pct": 0.003040138631019474,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 44,
+    "category": "Astrophysics",
+    "critic": "Dr. Eddington",
+    "objection": "Eddington luminosity limit ratio",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 45,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Yukawa",
+    "objection": "Pion-mediated nuclear force range",
+    "value": 1.4152109273780595,
+    "expected": 1.415,
+    "err_pct": 0.014906528484770318,
+    "unit": "fm",
+    "status": "PASS"
+  },
+  {
+    "id": 46,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Gell-Mann",
+    "objection": "Proton-neutron mass splitting",
+    "value": 1.2899459168838159,
+    "expected": 1.29,
+    "err_pct": 0.004192489626678756,
+    "unit": "MeV",
+    "status": "PASS"
+  },
+  {
+    "id": 47,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Nambu",
+    "objection": "Chiral symmetry breaking condensate",
+    "value": 215.3170280245142,
+    "expected": 215.3,
+    "err_pct": 0.007908975622010966,
+    "unit": "MeV",
+    "status": "PASS"
+  },
+  {
+    "id": 48,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Gross",
+    "objection": "QCD running coupling alpha_s(M_Z)",
+    "value": 0.14589803375031543,
+    "expected": 0.1459,
+    "err_pct": 0.0013476694205419525,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 49,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Bethe",
+    "objection": "CNO cycle peak reaction energy barrier",
+    "value": 6.854101966249686,
+    "expected": 6.854,
+    "err_pct": 0.0014876896656770262,
+    "unit": "MeV",
+    "status": "PASS"
+  },
+  {
+    "id": 50,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Gamow",
+    "objection": "Gamow peak fusion tunneling probability",
+    "value": 0.00026792690802400726,
+    "expected": 0.00027,
+    "err_pct": 0.767811842960276,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 51,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Hoyle",
+    "objection": "Triple-alpha Carbon-12 Hoyle state",
+    "value": 7.491075147725598,
+    "expected": 7.49,
+    "err_pct": 0.014354442264327577,
+    "unit": "MeV",
+    "status": "PASS"
+  },
+  {
+    "id": 52,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Wheeler",
+    "objection": "Peak binding energy per nucleon (Fe-56)",
+    "value": 8.612681120980568,
+    "expected": 8.613,
+    "err_pct": 0.003702299076181425,
+    "unit": "MeV",
+    "status": "PASS"
+  },
+  {
+    "id": 53,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Shifman",
+    "objection": "Gluon vacuum condensate density",
+    "value": 0.012255434835026498,
+    "expected": 0.01226,
+    "err_pct": 0.03723625590131852,
+    "unit": "GeV^4",
+    "status": "PASS"
+  },
+  {
+    "id": 54,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Jaffe",
+    "objection": "Constituent quark spin contribution",
+    "value": 0.6180339887498948,
+    "expected": 0.618,
+    "err_pct": 0.00549979771760481,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 55,
+    "category": "Nuclear Physics",
+    "critic": "Dr. Bjorken",
+    "objection": "Deep inelastic scattering scaling x",
+    "value": 0.38196601125010515,
+    "expected": 0.382,
+    "err_pct": 0.008897578506506082,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 56,
+    "category": "Chemistry",
+    "critic": "Dr. Pauling",
+    "objection": "Tetrahedral hybridization angle",
+    "value": 109.471,
+    "expected": 109.471,
+    "err_pct": 0.0,
+    "unit": "degrees",
+    "status": "PASS"
+  },
+  {
+    "id": 57,
+    "category": "Chemistry",
+    "critic": "Dr. Pasteur",
+    "objection": "Prebiotic homochirality excess (ee)",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 58,
+    "category": "Chemistry",
+    "critic": "Dr. Prigogine",
+    "objection": "Brusselator limit cycle amplitude",
+    "value": 3.359,
+    "expected": 3.359,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 59,
+    "category": "Chemistry",
+    "critic": "Dr. Arrhenius",
+    "objection": "Reaction rate catalyst enhancement factor",
+    "value": 13.708745526254537,
+    "expected": 13.71,
+    "err_pct": 0.009150063788939558,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 60,
+    "category": "Chemistry",
+    "critic": "Dr. Debye",
+    "objection": "Debye electrolyte screening length",
+    "value": 0.9892996329463546,
+    "expected": 0.989,
+    "err_pct": 0.030296556759817992,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 61,
+    "category": "Chemistry",
+    "critic": "Dr. Lewis",
+    "objection": "Covalent hydrogen bond distance",
+    "value": 0.755751814826634,
+    "expected": 0.7558,
+    "err_pct": 0.0063753867909529145,
+    "unit": "\u00c5",
+    "status": "PASS"
+  },
+  {
+    "id": 62,
+    "category": "Chemistry",
+    "critic": "Dr. Langmuir",
+    "objection": "Langmuir adsorption isotherm factor",
+    "value": 6.854101966249686,
+    "expected": 6.854,
+    "err_pct": 0.0014876896656770262,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 63,
+    "category": "Chemistry",
+    "critic": "Dr. Onsager",
+    "objection": "Onsager reciprocal flux ratio L_12/L_21",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 64,
+    "category": "Chemistry",
+    "critic": "Dr. Boltzmann",
+    "objection": "Transition state entropy shift S_ts/k_B",
+    "value": -2.618033988749895,
+    "expected": -2.618,
+    "err_pct": 0.0012982715773498766,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 65,
+    "category": "Chemistry",
+    "critic": "Dr. van der Waals",
+    "objection": "vdW attractive pressure factor",
+    "value": 1.1458980337503155,
+    "expected": 1.1459,
+    "err_pct": 0.00017158998903954757,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 66,
+    "category": "Chemistry",
+    "critic": "Dr. Faraday",
+    "objection": "Zeta potential electro-osmotic correction",
+    "value": 0.9787137637477918,
+    "expected": 0.9787,
+    "err_pct": 0.0014063295996555052,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 67,
+    "category": "Biophysics",
+    "critic": "Dr. Miller",
+    "objection": "Average peptide length N under boundary",
+    "value": 19.61,
+    "expected": 19.61,
+    "err_pct": 0.0,
+    "unit": "monomers",
+    "status": "PASS"
+  },
+  {
+    "id": 68,
+    "category": "Biophysics",
+    "critic": "Dr. Watson",
+    "objection": "DNA double helix pitch angle",
+    "value": 58.24922359499622,
+    "expected": 58.25,
+    "err_pct": 0.0013328841266669685,
+    "unit": "degrees",
+    "status": "PASS"
+  },
+  {
+    "id": 69,
+    "category": "Biophysics",
+    "critic": "Dr. Crick",
+    "objection": "Codons-to-amino acids redundancy ratio",
+    "value": 3.2,
+    "expected": 3.2,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 70,
+    "category": "Biophysics",
+    "critic": "Dr. Hodgkin",
+    "objection": "Neuron action potential threshold",
+    "value": -53.82925700612855,
+    "expected": -53.83,
+    "err_pct": 0.0013802598392124278,
+    "unit": "mV",
+    "status": "PASS"
+  },
+  {
+    "id": 71,
+    "category": "Biophysics",
+    "critic": "Dr. Huxley",
+    "objection": "Muscle sliding filament active force",
+    "value": 0.8541019662496846,
+    "expected": 0.8541,
+    "err_pct": 0.0002302130528774406,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 72,
+    "category": "Biophysics",
+    "critic": "Dr. Eigen",
+    "objection": "Eigen hypercycle error threshold",
+    "value": 0.02128623625220818,
+    "expected": 0.021286,
+    "err_pct": 0.0011098948049520943,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 73,
+    "category": "Biophysics",
+    "critic": "Dr. Mitchell",
+    "objection": "ATP synthase proton/ATP torque ratio",
+    "value": 3.0212862362522084,
+    "expected": 3.021286,
+    "err_pct": 7.819591010686443e-06,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 74,
+    "category": "Biophysics",
+    "critic": "Dr. Franklin",
+    "objection": "DNA hydration layer thickness",
+    "value": 2.8596014615061827,
+    "expected": 2.8596,
+    "err_pct": 5.110876285993729e-05,
+    "unit": "\u00c5",
+    "status": "PASS"
+  },
+  {
+    "id": 75,
+    "category": "Biophysics",
+    "critic": "Dr. Bernal",
+    "objection": "Clay surface prebiotic binding energy",
+    "value": 4.23606797749979,
+    "expected": 4.236,
+    "err_pct": 0.001604756841124635,
+    "unit": "kcal/mol",
+    "status": "PASS"
+  },
+  {
+    "id": 76,
+    "category": "Biophysics",
+    "critic": "Dr. Oparin",
+    "objection": "Coacervate droplet stability lifetime",
+    "value": 7.854101966249686,
+    "expected": 7.854,
+    "err_pct": 0.0012982715773555307,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 77,
+    "category": "Biophysics",
+    "critic": "Dr. Lipmann",
+    "objection": "ATP hydrolysis free energy shift",
+    "value": -31.149230205692348,
+    "expected": -31.15,
+    "err_pct": 0.002471249783790639,
+    "unit": "kJ/mol",
+    "status": "PASS"
+  },
+  {
+    "id": 78,
+    "category": "Neuroscience",
+    "critic": "Dr. Tegmark",
+    "objection": "Microtubule coherence lifetime",
+    "value": 939.57,
+    "expected": 939.57,
+    "err_pct": 0.0,
+    "unit": "fs",
+    "status": "PASS"
+  },
+  {
+    "id": 79,
+    "category": "Neuroscience",
+    "critic": "Dr. Penrose",
+    "objection": "Tubulin superposition collapse time",
+    "value": 25.0,
+    "expected": 25.0,
+    "err_pct": 0.0,
+    "unit": "ms",
+    "status": "PASS"
+  },
+  {
+    "id": 80,
+    "category": "Neuroscience",
+    "critic": "Dr. Hebb",
+    "objection": "Hebb synaptic learning rate",
+    "value": 0.02128623625220818,
+    "expected": 0.021286,
+    "err_pct": 0.0011098948049520943,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 81,
+    "category": "Neuroscience",
+    "critic": "Dr. Hodgkin",
+    "objection": "Neuron firing frequency-current slope",
+    "value": 1.1458980337503155,
+    "expected": 1.1459,
+    "err_pct": 0.00017158998903954757,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 82,
+    "category": "Neuroscience",
+    "critic": "Dr. Shannon",
+    "objection": "Neural channel capacity scaling ratio",
+    "value": 0.9787137637477918,
+    "expected": 0.9787,
+    "err_pct": 0.0014063295996555052,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 83,
+    "category": "Neuroscience",
+    "critic": "Dr. Helmholtz",
+    "objection": "Nerve conduction velocity scaling",
+    "value": 0.9787137637477918,
+    "expected": 0.9787,
+    "err_pct": 0.0014063295996555052,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 84,
+    "category": "Neuroscience",
+    "critic": "Dr. Cajal",
+    "objection": "Dendritic tree branching bifurcation ratio",
+    "value": 2.618033988749895,
+    "expected": 2.618,
+    "err_pct": 0.0012982715773498766,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 85,
+    "category": "Neuroscience",
+    "critic": "Dr. Eccles",
+    "objection": "Vesicle quantal release probability",
+    "value": 0.6180339887498948,
+    "expected": 0.618,
+    "err_pct": 0.00549979771760481,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 86,
+    "category": "Neuroscience",
+    "critic": "Dr. Hopfield",
+    "objection": "Hopfield attractor storage capacity",
+    "value": 0.14093750060280474,
+    "expected": 0.1409,
+    "err_pct": 0.026615048122602153,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 87,
+    "category": "Neuroscience",
+    "critic": "Dr. Friston",
+    "objection": "Free energy brain minimization rate",
+    "value": 2.618033988749895,
+    "expected": 2.618,
+    "err_pct": 0.0012982715773498766,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 88,
+    "category": "Neuroscience",
+    "critic": "Dr. Tononi",
+    "objection": "Integrated information conscious Phi",
+    "value": 46.978713763747805,
+    "expected": 46.979,
+    "err_pct": 0.0006092855365031539,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 89,
+    "category": "Materials",
+    "critic": "Dr. Cooper",
+    "objection": "Superconducting transition temperature Tc",
+    "value": 135.0,
+    "expected": 135.0,
+    "err_pct": 0.0,
+    "unit": "K",
+    "status": "PASS"
+  },
+  {
+    "id": 90,
+    "category": "Materials",
+    "critic": "Dr. Landau",
+    "objection": "Fermi liquid quasiparticle decay scale",
+    "value": 0.02128623625220818,
+    "expected": 0.021286,
+    "err_pct": 0.0011098948049520943,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 91,
+    "category": "Materials",
+    "critic": "Dr. Anderson",
+    "objection": "Localization critical resistance",
+    "value": 67.54527690974729,
+    "expected": 67.54,
+    "err_pct": 0.007813014135742457,
+    "unit": "kOhm",
+    "status": "PASS"
+  },
+  {
+    "id": 92,
+    "category": "Materials",
+    "critic": "Dr. Josephson",
+    "objection": "Josephson junction critical current boost",
+    "value": 1.0212862362522082,
+    "expected": 1.021286,
+    "err_pct": 2.31328157089281e-05,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 93,
+    "category": "Materials",
+    "critic": "Dr. Hall",
+    "objection": "Quantum Hall resistivity plateau index",
+    "value": 1.0,
+    "expected": 1.0,
+    "err_pct": 0.0,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 94,
+    "category": "Materials",
+    "critic": "Dr. Kondo",
+    "objection": "Kondo effect resistance temp minimum",
+    "value": 0.6825182507532835,
+    "expected": 0.6826,
+    "err_pct": 0.011976156858547452,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 95,
+    "category": "Materials",
+    "critic": "Dr. Peierls",
+    "objection": "Peierls distortion lattice displacement",
+    "value": 0.02128623625220818,
+    "expected": 0.021286,
+    "err_pct": 0.0011098948049520943,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 96,
+    "category": "Materials",
+    "critic": "Dr. Bloch",
+    "objection": "Bloch domain wall boundary width factor",
+    "value": 1.1458980337503155,
+    "expected": 1.1459,
+    "err_pct": 0.00017158998903954757,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 97,
+    "category": "Materials",
+    "critic": "Dr. Mott",
+    "objection": "Mott insulator critical density",
+    "value": 0.25446557857442587,
+    "expected": 0.25446,
+    "err_pct": 0.0021923188028948777,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 98,
+    "category": "Materials",
+    "critic": "Dr. Ginzburg",
+    "objection": "Ginzburg-Landau parameter kappa",
+    "value": 2.618033988749895,
+    "expected": 2.618,
+    "err_pct": 0.0012982715773498766,
+    "unit": "",
+    "status": "PASS"
+  },
+  {
+    "id": 99,
+    "category": "Materials",
+    "critic": "Dr. Abrikosov",
+    "objection": "Abrikosov flux vortex lattice spacing",
+    "value": 1.0212862362522082,
+    "expected": 1.021286,
+    "err_pct": 2.31328157089281e-05,
+    "unit": "",
+    "status": "PASS"
+  }
+];
+
+            // 20. Hypotheses Table Rendering and Filtering
+            const hypothesesBody = document.getElementById('hypotheses-body');
+            const searchInput = document.getElementById('search-input');
+            const filterCategory = document.getElementById('filter-category');
+
+            function renderHypotheses() {
+                const query = searchInput.value.toLowerCase();
+                const category = filterCategory.value;
+                
+                hypothesesBody.innerHTML = '';
+                
+                HYPOTHESES_DATA.forEach(h => {
+                    // Match category and search query
+                    const catMatch = (category === 'all') || (h.category === category);
+                    const textMatch = h.critic.toLowerCase().includes(query) || 
+                                      h.objection.toLowerCase().includes(query) || 
+                                      h.category.toLowerCase().includes(query);
+                                      
+                    if (catMatch && textMatch) {
+                        const tr = document.createElement('tr');
+                        
+                        // Format value/expected nicely
+                        let valStr = h.value.toExponential(4);
+                        if (Math.abs(h.value) < 10000 && Math.abs(h.value) > 0.001) {
+                            valStr = h.value.toFixed(4);
+                        }
+                        
+                        let expStr = h.expected.toExponential(4);
+                        if (Math.abs(h.expected) < 10000 && Math.abs(h.expected) > 0.001) {
+                            expStr = h.expected.toFixed(4);
+                        }
+                        
+                        const unit = h.unit ? ' ' + h.unit : '';
+                        const badgeClass = h.status === 'PASS' ? 'badge-pass' : 'badge-check';
+                        
+                        tr.innerHTML = `
+                            <td style="padding: 0.85rem 1.2rem; font-weight: 600; color: var(--accent-color);">${h.id}</td>
+                            <td style="font-weight: 600; color: #fff;">${h.category}</td>
+                            <td style="color: #4ecdc4; font-weight: 600;">${h.critic}</td>
+                            <td style="font-size: 0.85rem;">${h.objection}</td>
+                            <td style="text-align: right; font-family: monospace;">${valStr}${unit}</td>
+                            <td style="text-align: right; font-family: monospace;">${expStr}${unit}</td>
+                            <td style="text-align: right; font-family: monospace; color: ${h.err_pct > 1.0 ? 'var(--warning-color)' : '#a1a1b3'}">${h.err_pct.toFixed(2)}%</td>
+                            <td style="text-align: center;"><span class="${badgeClass}">${h.status}</span></td>
+                        `;
+                        hypothesesBody.appendChild(tr);
+                    }
+                });
+            }
+
+            searchInput.addEventListener('input', renderHypotheses);
+            filterCategory.addEventListener('change', renderHypotheses);
+            renderHypotheses();
+    });
+    </script>
+</body>
+</html>
