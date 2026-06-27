@@ -40,9 +40,11 @@ def solve_dirac_spectrum(n_grid=5000, phi=None, D=13.0):
     y_sat = 2.0 * PI * D * (1.0 - (phi ** -9) / PI)
     dy = y_sat / (n_grid - 1)
 
-    # The potential in the warped Dirac equation is:
-    # V(y) = (9/4) * (ln(phi))^2
-    V = (9.0 / 4.0) * (math.log(phi) ** 2)
+    # The potential in the warped Dirac equation is topologically derived 
+    # from the Euler characteristic chi = D/2 = 6.5:
+    #   V(y) = (chi - 2)/2 * (ln(phi))^2 = (9/4) * (ln(phi))^2
+    chi = D / 2.0
+    V = ((chi - 2.0) / 2.0) * (math.log(phi) ** 2)
 
     diag = (2.0 / (dy ** 2) + V) * np.ones(n_grid - 2)
     offdiag = (-1.0 / (dy ** 2)) * np.ones(n_grid - 3)

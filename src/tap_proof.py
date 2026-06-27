@@ -61,7 +61,7 @@ def run_tap_python(initial_energy=1.0,
     flux_arr    = np.zeros(n_steps)
     ent_arr     = np.zeros(n_steps)
     leak_arr    = np.zeros(n_steps)
-    dim_arr     = np.zeros(n_steps, dtype=np.int32)
+    dim_arr     = np.zeros(n_steps, dtype=np.float64)
 
     # Initial state — Big Bang partition  (3:1 Law)
     t            = 0.0
@@ -84,7 +84,28 @@ def run_tap_python(initial_energy=1.0,
         flux_arr[i] = phi_flux
         ent_arr[i]  = entropy
         leak_arr[i] = cum_leak
-        dim_arr[i]  = cur_dim
+        
+        # Fermi-Dirac smoothing (quantum tunneling overlay) for dimension expectation value
+        next_dim = cur_dim
+        next_th = 0.0
+        for j in range(len(FIBONACCI_BUNDLES)):
+            if FIBONACCI_BUNDLES[j] == cur_dim:
+                if j < len(FIBONACCI_BUNDLES) - 1:
+                    next_dim = FIBONACCI_BUNDLES[j + 1]
+                    next_th = FIBONACCI_THRESHOLDS[j + 1]
+                else:
+                    next_dim = 1
+                    next_th = sat_limit
+                break
+        
+        width = 2.0  # Tunneling energy scale
+        if next_th > 0 and cur_dim != 1 and next_dim != 1:
+            factor = 1.0 / (1.0 + math.exp(-max(min((entropy - next_th) / width, 20.0), -20.0)))
+            avg_dim = cur_dim + (next_dim - cur_dim) * factor
+        else:
+            avg_dim = float(cur_dim)
+            
+        dim_arr[i] = avg_dim
 
         # — Expansion (driven by 1/4 interface potential) —
         da_dt   = hubble_constant * a * math.sqrt(max(rho_I, 0.0) + 1e-30)
@@ -146,14 +167,8 @@ def run_tap_python(initial_energy=1.0,
 # ─────────────────────────────────────────────────────────────────────────────
 
 def get_runner():
-    try:
-        sys.path.insert(0, os.path.dirname(__file__))
-        import tap_core
-        print("  [BUILD] ✅ Cython tap_core extension loaded — running at C speed.")
-        return tap_core.run_tap_simulation
-    except ImportError:
-        print("  [BUILD] ⚠️  Cython extension not compiled — using NumPy fallback.")
-        return run_tap_python
+    # Force NumPy simulation core to ensure quantum dimension overlay calculations are performed
+    return run_tap_python
 
 # ─────────────────────────────────────────────────────────────────────────────
 # ANALYTICAL PROOF FUNCTIONS
@@ -216,9 +231,10 @@ def verify_fibonacci_dimension_steps(dim_array):
     3 → 5 → 8 → 13 → (reset to 1) → 3 → ...
     """
     transitions = []
-    for i in range(1, len(dim_array)):
-        if dim_array[i] != dim_array[i-1]:
-            transitions.append((i, int(dim_array[i-1]), int(dim_array[i])))
+    rounded = np.round(dim_array).astype(int)
+    for i in range(1, len(rounded)):
+        if rounded[i] != rounded[i-1]:
+            transitions.append((i, int(rounded[i-1]), int(rounded[i])))
     return transitions
 
 def compute_leakage_coefficient_match():

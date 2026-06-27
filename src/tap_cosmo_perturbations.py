@@ -46,13 +46,16 @@ def solve_mode(k, is_tensor=False):
     eta_start = -10.0 / k
     eta_end   = -1e-5  # Fixed final conformal time
     
-    # Exponents for the mode equations:
-    # Scalars: nu_s = 1.5 + phi^-4 / 2pi
-    # Tensors: nu_t_eff = 1.5 - 0.5 * phi^-4
+    # Exponents for the mode equations with Fibonacci RG running:
+    #   leak_eff(k) = phi^-4 * (1 - beta_fib * ln(k / k_pivot))
+    # where beta_fib is the dimension 8 boundary beta factor: phi^-8 / 2pi
+    beta_fib = (PHI ** -8) / (2.0 * PI)
+    leak_eff = PHI_INV4 * (1.0 - beta_fib * math.log(k / k_pivot))
+    
     if not is_tensor:
-        nu = 1.5 + PHI_INV4 / (2.0 * PI)
+        nu = 1.5 + leak_eff / (2.0 * PI)
     else:
-        nu = 1.5 - 0.5 * PHI_INV4
+        nu = 1.5 - 0.5 * leak_eff
         
     # Initial conditions (Bunch-Davies vacuum)
     v_real_0 = 1.0 / math.sqrt(2.0 * k)
