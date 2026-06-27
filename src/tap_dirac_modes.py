@@ -33,14 +33,16 @@ m_P = PLANCK_MASS_GEV
 #   y_0 = 0 (our brane)
 #   y_sat = 2 * pi * 13 * (1 - phi^-9 / pi)  (13D saturation boundary)
 
-def solve_dirac_spectrum(n_grid=5000):
-    # The topological boundary is 81.339
-    y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI ** -9) / PI)
+def solve_dirac_spectrum(n_grid=5000, phi=None, D=13.0):
+    if phi is None:
+        phi = PHI
+    # The topological boundary is 81.339 when D=13
+    y_sat = 2.0 * PI * D * (1.0 - (phi ** -9) / PI)
     dy = y_sat / (n_grid - 1)
 
     # The potential in the warped Dirac equation is:
     # V(y) = (9/4) * (ln(phi))^2
-    V = (9.0 / 4.0) * (math.log(PHI) ** 2)
+    V = (9.0 / 4.0) * (math.log(phi) ** 2)
 
     diag = (2.0 / (dy ** 2) + V) * np.ones(n_grid - 2)
     offdiag = (-1.0 / (dy ** 2)) * np.ones(n_grid - 3)
@@ -50,11 +52,7 @@ def solve_dirac_spectrum(n_grid=5000):
     eigenvalues, eigenvectors = np.linalg.eigh(H_matrix)
 
     # The eigenvalues are m^2 (in units where Planck scale is 1.0)
-    # The physical mass is:
-    #   m_n = m_P * sqrt(2 * eigenvalues[n]) * exp(-warp_exponent)
-    # where warp_exponent = A(y_sat) = y_sat * ln(phi)
-    # and 2.0 represents the spinor kinetic connection factor.
-    warp_exponent = y_sat * math.log(PHI)
+    warp_exponent = y_sat * math.log(phi)
     warp_scale = math.exp(-warp_exponent)
 
     # Lowest physical mass mode (Higgs boson candidate)

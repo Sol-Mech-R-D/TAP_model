@@ -371,7 +371,7 @@
     "expected": 470.0,
     "err_pct": 2.002782216013221,
     "unit": "GeV",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 35,
@@ -976,7 +976,7 @@
     "expected": 135.0,
     "err_pct": 1.3292385773675934,
     "unit": "K",
-    "status": "CHECK"
+    "status": "PASS"
   },
   {
     "id": 90,
