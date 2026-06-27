@@ -8,6 +8,7 @@ Runs quantitative checks for all rounds and frontiers.
 """
 
 import sys
+import os
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 if hasattr(sys.stderr, 'reconfigure'):
@@ -16,8 +17,77 @@ if hasattr(sys.stderr, 'reconfigure'):
 import json
 import math
 import numpy as np
+from scipy import constants as const
+from astropy import constants as ac
+from particle import Particle
 
-from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV, PLANCK_MASS_GEV
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV, PLANCK_MASS_GEV, HIGGS_MASS_GEV
+
+# -----------------------------------------------------------------------------
+# CASCADING COUPLINGS (Unified Feedback Loop)
+# -----------------------------------------------------------------------------
+m_P = PLANCK_MASS_GEV
+# Derive Higgs mass and VEV from Planck scale warping (Check 14)
+y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
+warp_factor = math.exp(-y_sat * math.log(PHI))
+m_H = m_P * warp_factor  # Effective Higgs Mass
+v_pred = 2.0 * m_H        # Effective VEV
+v_ratio = v_pred / HIGGS_VEV_GEV
+
+# Baryon Mass shift
+m_nucleon_ratio = 1.0 + PHI ** -8
+
+# Dynamic ODE Solvers
+def solve_pasteur():
+    epsilon_tap = 1.0e-4
+    k_cat = 0.5
+    k_ann = 1.0
+    Y0 = [0.1, 0.1]
+    def frank_model(t, Y):
+        x_L, x_D = Y
+        F = 0.05
+        dx_L = F + k_cat * x_L * (1.0 + epsilon_tap) - k_ann * x_L * x_D - 0.02 * x_L
+        dx_D = F + k_cat * x_D * (1.0 - epsilon_tap) - k_ann * x_L * x_D - 0.02 * x_D
+        return [dx_L, dx_D]
+    from scipy.integrate import solve_ivp
+    sol = solve_ivp(frank_model, (0.0, 50.0), Y0, method='RK45')
+    x_L, x_D = sol.y[0][-1], sol.y[1][-1]
+    return (x_L - x_D) / (x_L + x_D)
+
+def solve_prigogine():
+    A = 1.0
+    B_0 = 3.0
+    tau = 25.0
+    Y0 = [1.0, 2.5]
+    t_eval = np.linspace(0.0, 100.0, 1000)
+    def brusselator(t, State):
+        X, Y = State
+        B_eff = B_0 * (1.0 - PHI_INV4 * np.exp(-t / tau))
+        dX = A - (B_eff + 1.0) * X + (X**2) * Y
+        dY = B_eff * X - (X**2) * Y
+        return [dX, dY]
+    from scipy.integrate import solve_ivp
+    sol = solve_ivp(brusselator, (0.0, 100.0), Y0, t_eval=t_eval, method='RK45')
+    X = sol.y[0]
+    late_X = X[t_eval > 75.0]
+    return np.max(late_X) - np.min(late_X)
+
+def solve_miller():
+    k_c = 0.8
+    k_h_tap = 2.0 * np.exp(-PI * PHI**2)
+    Y0 = [1.0]
+    def poly_ode(t, y):
+        N = y[0]
+        M = max(10.0 - 0.5 * N, 0.1)
+        return [k_c * M - k_h_tap * N]
+    from scipy.integrate import solve_ivp
+    sol = solve_ivp(poly_ode, (0.0, 10.0), Y0)
+    return sol.y[0][-1]
+
+def solve_tegmark():
+    gamma_std = 0.05
+    gamma_tap = gamma_std * (PHI ** -8)
+    return 1.0 / gamma_tap
 
 # -----------------------------------------------------------------------------
 # CONSTANTS
@@ -134,19 +204,23 @@ register_check("Chemistry", "Dr. Pauling", "Tetrahedral hybridization angle", 10
 
 # Dr. Pasteur (homochirality): Thermal fluctuations racemization objection
 # Check final enantiomeric excess under TAP metric bias is 1.0 (100% purity)
-register_check("Chemistry", "Dr. Pasteur", "Prebiotic homochirality excess (ee)", 1.0, 1.0, 0.001)
+pasteur_ee = solve_pasteur()
+register_check("Chemistry", "Dr. Pasteur", "Prebiotic homochirality excess (ee)", pasteur_ee, 1.0, 0.001)
 
 # Dr. Prigogine (Brusselator): Cosmic leakage coupling scale objection
 # Check limit cycle amplitude is active (> 3.0) under cosmic drag
-register_check("Chemistry", "Dr. Prigogine", "Brusselator limit cycle amplitude", 3.359, 3.359, 0.01)
+prigogine_amp = solve_prigogine()
+register_check("Chemistry", "Dr. Prigogine", "Brusselator limit cycle amplitude", prigogine_amp, 3.359, 0.01)
 
 # Dr. Miller (peptide synthesis): Hydrolysis dominates over condensation objection
 # Check peptide length N > 15
-register_check("Biology", "Dr. Miller", "Average peptide length N under boundary", 19.61, 19.61, 0.01, unit="monomers")
+miller_length = solve_miller()
+register_check("Biology", "Dr. Miller", "Average peptide length N under boundary", miller_length, 19.61, 0.01, unit="monomers")
 
 # Dr. Tegmark (microtubule coherence): Room temp decoherence objection
 # Check coherence time > 900 fs (Standard synaptic is 20 fs, so > 40x improvement)
-register_check("Neuroscience", "Dr. Tegmark", "Microtubule coherence lifetime", 939.57, 939.57, 0.01, unit="fs")
+tegmark_lifetime = solve_tegmark()
+register_check("Neuroscience", "Dr. Tegmark", "Microtubule coherence lifetime", tegmark_lifetime, 939.57, 0.01, unit="fs")
 
 # Dr. Buffett (geodynamo): Heat cooling and geodynamo collapse objection
 # Check core temperature remains above 4200 K active threshold
@@ -190,9 +264,21 @@ def main():
     
     # Export results to JSON for verification
     out_path = "C:/Users/DavidBaker/TAP_model/tap_ultimate_tribunal_results.json"
-    with open(out_path, "w") as f:
-        json.dump(checks, f, indent=2)
-    print(f"  [EXPORT] Tribunal results saved -> {out_path}\n")
+    try:
+        with open(out_path, "w") as f:
+            json.dump(checks, f, indent=2)
+        print(f"  [EXPORT] Tribunal results saved -> {out_path}")
+    except Exception as e:
+        print(f"  [WARNING] Could not save to default path: {e}")
+
+    out_dir = os.path.dirname(os.path.abspath(__file__))
+    assets_path = os.path.join(out_dir, "..", "assets", "tap_ultimate_tribunal_results.json")
+    try:
+        with open(assets_path, "w") as f:
+            json.dump(checks, f, indent=2)
+        print(f"  [EXPORT] Tribunal results copied -> {assets_path}\n")
+    except Exception as e:
+        print(f"  [WARNING] Could not copy results to assets: {e}\n")
 
 if __name__ == "__main__":
     main()
