@@ -41,18 +41,28 @@ def main():
     x = [math.cos(a) for a in angles]
     y = [math.sin(a) for a in angles]
     
-    # Draw tridecagram star lines (step = 5)
+    import matplotlib.patheffects as path_effects
+    
+    # Draw tridecagram star lines (step = 5) with neon glow
     step = 5
     for i in range(N):
         next_idx = (i + step) % N
-        ax.plot([x[i], x[next_idx]], [y[i], y[next_idx]], color=(124/255, 106/255, 247/255, 0.35), 
-                linestyle='-', linewidth=1.2, alpha=0.35)
+        line, = ax.plot([x[i], x[next_idx]], [y[i], y[next_idx]], color='#7c6af7', 
+                linestyle='-', linewidth=1.2, alpha=0.45)
+        line.set_path_effects([
+            path_effects.Stroke(linewidth=4, foreground='#7c6af7', alpha=0.15),
+            path_effects.Normal()
+        ])
         
-    # Draw outer tridecagon boundary
+    # Draw outer tridecagon boundary with neon glow
     for i in range(N):
         next_idx = (i + 1) % N
-        ax.plot([x[i], x[next_idx]], [y[i], y[next_idx]], color='#4ecdc4', 
-                linestyle='-', linewidth=1.5, alpha=0.5)
+        line, = ax.plot([x[i], x[next_idx]], [y[i], y[next_idx]], color='#4ecdc4', 
+                linestyle='-', linewidth=1.8, alpha=0.6)
+        line.set_path_effects([
+            path_effects.Stroke(linewidth=5, foreground='#4ecdc4', alpha=0.2),
+            path_effects.Normal()
+        ])
         
     # Draw nodes and add text
     for i, d in enumerate(dims):

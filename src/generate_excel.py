@@ -4,7 +4,7 @@ generate_excel.py
 =================
 Generates a beautifully styled Excel workbook (assets/tap_model_comprehensive_report.xlsx) 
 containing all 99 objections tribunal checks, equations, expected vs calculated values, 
-and the global parameter sweep data, fully wired together with live Excel formulas.
+and the 13 dimension tabs, fully live-wired together.
 """
 
 import os
@@ -46,11 +46,11 @@ def extract_tolerances_and_expected():
 
 def main():
     print("=" * 80)
-    print("  TAP COMPREHENSIVE EXCEL EXPORTER (LIVE-WIRED)")
+    print("  TAP COMPREHENSIVE EXCEL EXPORTER (13-DIMENSIONAL CASCADE)")
     print("  Generating publication-grade Excel report...")
     print("=" * 80)
 
-    # 1. Load results JSON
+    # Load results JSON
     json_path = os.path.join(src_dir, "tap_super_tribunal_99_results.json")
     if not os.path.exists(json_path):
         print(f"  [ERROR] Results JSON not found at {json_path}. Run tap_super_tribunal_99.py first.")
@@ -59,13 +59,12 @@ def main():
     with open(json_path, "r", encoding="utf-8") as f:
         results = json.load(f)
 
-    # Extract live tolerances
+    # Extract tolerances
     tols, expected_vals = extract_tolerances_and_expected()
 
-    # Create Workbook
     wb = openpyxl.Workbook()
     
-    # Setup styles
+    # Styles
     font_family = "Segoe UI"
     title_font = Font(name=font_family, size=16, bold=True, color="FFFFFF")
     header_font = Font(name=font_family, size=11, bold=True, color="FFFFFF")
@@ -73,7 +72,6 @@ def main():
     normal_font = Font(name=font_family, size=10)
     italic_font = Font(name=font_family, size=10, italic=True)
     
-    # Colors (Elegant Slate/Navy theme)
     header_fill = PatternFill(start_color="1F4E78", end_color="1F4E78", fill_type="solid")
     accent_fill = PatternFill(start_color="DDEBF7", end_color="DDEBF7", fill_type="solid")
     zebra_fill = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
@@ -85,13 +83,12 @@ def main():
     double_bottom = Border(bottom=Side(border_style="double", color="1F4E78"), top=Side(border_style="thin", color="D9D9D9"))
 
     # =========================================================================
-    # TAB 1: OVERVIEW (BASE PARAMETERS FOR THE CASCADE)
+    # TAB 1: OVERVIEW
     # =========================================================================
     ws_ov = wb.active
     ws_ov.title = "TAP Model Overview"
     ws_ov.views.sheetView[0].showGridLines = True
     
-    # Title Block
     ws_ov.merge_cells("A1:D2")
     title_cell = ws_ov["A1"]
     title_cell.value = "Topological Action Physics (TAP) Model Overview"
@@ -99,7 +96,6 @@ def main():
     title_cell.fill = header_fill
     title_cell.alignment = Alignment(horizontal="center", vertical="center")
     
-    # We explicitly separate input parameters so that they can be live-edited
     overview_data = [
         ("Parameter", "Symbol / Equation", "Value", "Description"),
         ("Golden Ratio (Base Parameter)", "phi", PHI, "Fundamental geometric scale factor of the 13D compactified flavor manifold."),
@@ -131,7 +127,7 @@ def main():
         row_idx += 1
 
     # =========================================================================
-    # TAB 2: 99 OBJECTIONS TRIBUNAL (LIVE WIRED TO TAB 1)
+    # TAB 2: 99 OBJECTIONS TRIBUNAL
     # =========================================================================
     ws_checks = wb.create_sheet(title="99 Objections Tribunal")
     ws_checks.views.sheetView[0].showGridLines = True
@@ -143,7 +139,6 @@ def main():
         "TAP Resolved Value (Path 2)", "Relative Error (%)", "Unit", "Status"
     ]
     
-    # Write Headers
     for col_idx, h in enumerate(headers):
         cell = ws_checks.cell(row=1, column=col_idx+1, value=h)
         cell.font = header_font
@@ -151,9 +146,8 @@ def main():
         cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
     ws_checks.row_dimensions[1].height = 28
 
-    # Define formula mappings
     excel_formulas = {
-        1: "=1.86253",  # Chi2 fit
+        1: "=1.86253",
         2: "=67.4 * SQRT(1 + 'TAP Model Overview'!$C$5 ^ -4)",
         3: "=2 * PI() * 'TAP Model Overview'!$C$5 ^ 5",
         4: "=('TAP Model Overview'!$C$7 ^ 4) * 'TAP Model Overview'!$C$5 ^ -13",
@@ -250,7 +244,7 @@ def main():
         95: "=1.0",
         96: "='TAP Model Overview'!$C$5 ^ -8",
         97: "='TAP Model Overview'!$C$5 ^ -8",
-        98: "='TAP Model Overview'!$C$5 ^ 8",
+        98: "='TAP Model Overview'!$C$8",
         99: "=1 - 'TAP Model Overview'!$C$5 ^ -8"
     }
 
@@ -279,7 +273,6 @@ def main():
         c_tap.number_format = "0.000000E+00" if abs(r["value"]) < 1e-3 or abs(r["value"]) > 1e5 else "0.00000"
         
         # Relative Error (%) (Live Excel Formula)
-        # =ABS(G2 - F2) / F2
         c_err = ws_checks.cell(row=row_num, column=8, value=f"=ABS(G{row_num}-F{row_num})/F{row_num}")
         c_err.number_format = "0.00%"
         
@@ -292,7 +285,6 @@ def main():
         status_cell.fill = pass_fill
         status_cell.alignment = Alignment(horizontal="center")
         
-        # Apply formatting
         for c in range(1, 11):
             cell = ws_checks.cell(row=row_num, column=c)
             if c != 10:
@@ -320,7 +312,7 @@ def main():
         ws_checks.cell(row=summary_row, column=col).border = double_bottom
 
     # =========================================================================
-    # TAB 3: CASCADE SWEEPS (LIVE-WIRED DATA GRID)
+    # TAB 3: CASCADE SWEEPS
     # =========================================================================
     ws_sweeps = wb.create_sheet(title="Cascade Sweeps")
     ws_sweeps.views.sheetView[0].showGridLines = True
@@ -359,9 +351,6 @@ def main():
         
         c_val = ws_sweeps.cell(row=r_row, column=1, value=p)
         c_val.number_format = "0.00000"
-        
-        # Live Excel formula referencing dynamic values from our sweeps calculation
-        # This mirrors the cascade sweep data points
         c_err = ws_sweeps.cell(row=r_row, column=2, value=err / 100.0)
         c_err.number_format = "0.00%"
         c_m = ws_sweeps.cell(row=r_row, column=3, value=m_H)
@@ -389,6 +378,66 @@ def main():
             ws_sweeps.cell(row=r_row, column=c).font = normal_font
             if idx % 2 == 1:
                 ws_sweeps.cell(row=r_row, column=c).fill = zebra_fill
+
+    # =========================================================================
+    # TABS 4-16: THE 13 DIMENSION TABS (LIVE WIRED)
+    # =========================================================================
+    dims = [
+        {"num": 1, "name": "Spacetime_Point", "desc": "Seed/compaction scale", "eq": "='TAP Model Overview'!$C$5 ^ 0", "val": 1.0, "unit": "dimensionless"},
+        {"num": 2, "name": "Temporal_Phase", "desc": "Time flow entropy", "eq": "='TAP Model Overview'!$C$5 ^ -8", "val": PHI**-8, "unit": "dimensionless"},
+        {"num": 3, "name": "Spatial_Brane", "desc": "Observable 3D space", "eq": "=PI() * 'TAP Model Overview'!$C$5 ^ -1", "val": math.pi/PHI, "unit": "dimensionless"},
+        {"num": 4, "name": "Relativistic_Spacetime", "desc": "4D spacetime brane", "eq": "=2 * PI() * 'TAP Model Overview'!$C$5 ^ 5", "val": 2.0*math.pi*PHI**5, "unit": "dimensionless"},
+        {"num": 5, "name": "AdS_Bulk_Channel", "desc": "5D gravity leakage", "eq": "='TAP Model Overview'!$C$5 ^ -4", "val": PHI**-4, "unit": "dimensionless"},
+        {"num": 6, "name": "Calabi-Yau_Base", "desc": "Fermion spin states", "eq": "='TAP Model Overview'!$C$5 ^ 3", "val": PHI**3, "unit": "dimensionless"},
+        {"num": 7, "name": "M-Theory_7-Sphere", "desc": "Supergravity coords", "eq": "='TAP Model Overview'!$C$5 ^ -13", "val": PHI**-13, "unit": "dimensionless"},
+        {"num": 8, "name": "Boundary_Width", "desc": "Fibonacci F_6 scale", "eq": "='TAP Model Overview'!$C$5 ^ 8", "val": PHI**8, "unit": "dimensionless"},
+        {"num": 9, "name": "Weyl_Curvature", "desc": "Gravity KK modes", "eq": "=1.2e-10 * ('TAP Model Overview'!$C$5 ^ -4)", "val": 1.2e-10*PHI**-4, "unit": "m/s^2"},
+        {"num": 10, "name": "Superstring_Base", "desc": "Anomaly cancellation", "eq": "=10 + 3 * 'TAP Model Overview'!$C$5 ^ 0", "val": 13.0, "unit": "dimensions"},
+        {"num": 11, "name": "M-Theory_Bulk", "desc": "11D supergravity", "eq": "=11.0", "val": 11.0, "unit": "dimensions"},
+        {"num": 12, "name": "F-Theory_Projection", "desc": "Gauge group bundles", "eq": "=12.0", "val": 12.0, "unit": "dimensions"},
+        {"num": 13, "name": "Saturation_Ceiling", "desc": "Holographic entropy limit", "eq": "=2 * PI() * 'TAP Model Overview'!$C$6 * (1 - 'TAP Model Overview'!$C$5 ^ -9 / PI())", "val": 2.0*math.pi*13.0*(1 - PHI**-9/math.pi), "unit": "dimensionless"}
+    ]
+
+    for d in dims:
+        ws_d = wb.create_sheet(title=f"D{d['num']}_{d['name']}")
+        ws_d.views.sheetView[0].showGridLines = True
+        
+        # Title Block
+        ws_d.merge_cells("A1:D2")
+        title_cell = ws_d["A1"]
+        title_cell.value = f"Dimension {d['num']}: {d['name'].replace('_', ' ')}"
+        title_cell.font = title_font
+        title_cell.fill = header_fill
+        title_cell.alignment = Alignment(horizontal="center", vertical="center")
+        
+        d_headers = ["Metric / Variable", "Theoretical Formula", "Value", "Unit"]
+        for idx, h in enumerate(d_headers):
+            cell = ws_d.cell(row=4, column=idx+1, value=h)
+            cell.font = header_font
+            cell.fill = header_fill
+            cell.alignment = Alignment(horizontal="left", vertical="center")
+            
+        row_num = 5
+        
+        # Primary Scale row
+        ws_d.cell(row=row_num, column=1, value="Primary Scaling Factor").font = bold_font
+        ws_d.cell(row=row_num, column=2, value=d["eq"]).font = italic_font
+        c_val = ws_d.cell(row=row_num, column=3, value=d["eq"])
+        c_val.number_format = "0.00000" if abs(d["val"]) > 1e-4 and abs(d["val"]) < 1e5 else "0.00E+00"
+        ws_d.cell(row=row_num, column=4, value=d["unit"]).alignment = Alignment(horizontal="center")
+        
+        for c in range(1, 5):
+            ws_d.cell(row=row_num, column=c).border = thin_border
+            ws_d.cell(row=row_num, column=c).font = normal_font
+            
+        # Description row
+        row_num += 1
+        ws_d.cell(row=row_num, column=1, value="Description").font = bold_font
+        ws_d.merge_cells(start_row=row_num, start_column=2, end_row=row_num, end_column=4)
+        ws_d.cell(row=row_num, column=2, value=d["desc"]).font = normal_font
+        
+        for c in range(1, 5):
+            ws_d.cell(row=row_num, column=c).border = thin_border
 
     # =========================================================================
     # Auto-adjust column widths across all sheets
@@ -420,7 +469,7 @@ def main():
         
     out_path = os.path.join(out_dir, "tap_model_comprehensive_report.xlsx")
     wb.save(out_path)
-    print(f"\n  [SUCCESS] Live-wired Excel workbook saved -> {out_path}")
+    print(f"\n  [SUCCESS] 13-Dimensional live-wired Excel workbook saved -> {out_path}")
     print("=" * 80)
 
 if __name__ == "__main__":
