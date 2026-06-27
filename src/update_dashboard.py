@@ -12,9 +12,9 @@ import re
 
 def main():
     root_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(root_dir, "tap_super_tribunal_99_results.json")
-    html_path = os.path.join(root_dir, "tap_universe_dashboard.html")
-    dest_html_path = os.path.join(root_dir, "tap_universe_dashboard.html")
+    json_path = os.path.join(root_dir, "..", "assets", "tap_super_tribunal_99_results.json")
+    html_path = os.path.join(root_dir, "..", "assets", "tap_universe_dashboard.html")
+    dest_html_path = os.path.join(root_dir, "..", "assets", "tap_universe_dashboard.html")
     
     # Read the JSON results
     with open(json_path, "r") as f:
@@ -246,7 +246,7 @@ def main():
         f.write(html_content)
         
     # Write a copy to dashboard.html too
-    dashboard_path = os.path.join(root_dir, "dashboard.html")
+    dashboard_path = os.path.join(root_dir, "..", "assets", "dashboard.html")
     with open(dashboard_path, "w", encoding="utf-8") as f:
         f.write(html_content)
         

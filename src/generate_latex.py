@@ -45,7 +45,7 @@ def escape_latex(text):
     return text
 
 def main():
-    tex_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "delta_vector_99_hypotheses.tex")
+    tex_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs", "delta_vector_99_hypotheses.tex")
     
     # Header material
     header = r"""\documentclass[10pt,journal,compsoc]{IEEEtran}

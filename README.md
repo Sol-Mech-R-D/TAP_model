@@ -13,7 +13,7 @@ All 99 hypotheses generate precise numerical outputs that are verified using the
 
 ### 1. The Six Applied Science Frontiers
 Plotting peptide synthesis lengths, microtubule coherence times, geodynamo heating scales, core-cusp density profiles, high-Tc superconductivity gap evolution, and stress-directed mutation rate profiles:
-![Six Applied Science Frontiers](tap_six_frontiers.png)
+![Six Applied Science Frontiers](assets/tap_six_frontiers.png)
 
 * **Panel A (Peptide Synthesis):** Average peptide chain length over time. Standard aqueous conditions flatline at $N pprox 3.3$ (dimers), while the TAP mineral boundary dehydrated zone reaches $N = 19.61$ monomers within $t = 50$ steps.
 * **Panel B (Microtubule Coherence):** Density matrix coherence decay. Standard decoherence drops to zero in $20	ext{ fs}$, whereas the TAP 13D Fibonacci boundary shielding extends coherence to $939.57	ext{ fs}$.
@@ -24,7 +24,7 @@ Plotting peptide synthesis lengths, microtubule coherence times, geodynamo heati
 
 ### 2. The Three Chemistry Frontiers
 Showing Molecular orbital hybridization, Frank autocatalytic homochirality bifurcation, and the Brusselator limit-cycle chemical clock:
-![Three Chemistry Frontiers](tap_chemistry_frontiers.png)
+![Three Chemistry Frontiers](assets/tap_chemistry_frontiers.png)
 
 * **Panel A (Tetrahedral Angles):** Gradient descent minimization of hybridization overlap vectors converges to exactly $109.471^\circ$ (off-diagonal overlap matrix element $S_{ij} = -0.333333$, representing exactly $-1/3$).
 * **Panel B (Autocatalytic Homochirality):** Starting from a symmetric racemic state ($x_L pprox x_D pprox 0.1$), a tiny chiral metric bias $\epsilon_{	ext{TAP}} = 10^{-4}$ triggers a sharp bifurcation, driving $100\%$ L-handed purity ($ee = 1.0$) within 50 steps.
@@ -32,14 +32,14 @@ Showing Molecular orbital hybridization, Frank autocatalytic homochirality bifur
 
 ### 3. Weak Point Sniping & Quantum Anomalies
 Comparing standard QED vs TAP warped loop calculations for the muon g-2 anomaly and muonic hydrogen proton radius discrepancies:
-![Weak Point Sniping](tap_anomaly_simulations.png)
+![Weak Point Sniping](assets/tap_anomaly_simulations.png)
 
 * **Panel A (Muon g-2 Loop):** Integrand vs loop momentum. Under TAP, Kaluza-Klein excitations warp the propagator, modifying the vertex correction at high energies and resolving the $4.2\sigma$ Muon g-2 anomaly.
 * **Panel B (Proton Radius Wavefunction):** Muonic hydrogen radial wavefunction probability density $u(r)^2$. Shows the overlap difference between electronic and muonic 2S states, with TAP's boundary scale factor correcting the proton charge radius anomaly.
 
 ### 4. Extra-Dimensional Trajectory & Evolution
 FLRW trajectory integrating Weyl energy densities and dimensions transitions:
-![Main Trajectory](tap_proof_plots.png)
+![Main Trajectory](assets/tap_proof_plots.png)
 
 * **Panel A (Density Trajectory):** Time evolution of cosmological densities showing the crossover between structural energy $ho_S$ and interface boundary pool energy $ho_I$.
 * **Panel B (Cosmic Entropy):** Holographic Bekenstein entropy growth triggering Fibonacci dimensions transitions ($3	ext{D} 	o 5	ext{D} 	o 8	ext{D} 	o 13	ext{D}$) as density thresholds are crossed.
