@@ -3,9 +3,9 @@
     "round": "Round 1",
     "critic": "Dr. Aris",
     "objection": "DE EOS w(z) fits DESI BAO data",
-    "value": 1.863,
+    "value": 1.8625303131692261,
     "expected": 1.795,
-    "err_pct": 3.7883008356545997,
+    "err_pct": 3.7621344383970032,
     "unit": "chi2",
     "status": "PASS"
   },
@@ -163,11 +163,11 @@
     "round": "Round 6",
     "critic": "Dr. Rubin",
     "objection": "KK-graviton dark matter mass",
-    "value": 468.98,
+    "value": 479.41307641526214,
     "expected": 470.0,
-    "err_pct": 0.2170212765957408,
+    "err_pct": 2.002782216013221,
     "unit": "GeV",
-    "status": "PASS"
+    "status": "CHECK"
   },
   {
     "round": "Chemistry",
@@ -243,11 +243,11 @@
     "round": "Materials",
     "critic": "Dr. Cooper",
     "objection": "Superconducting transition temperature Tc",
-    "value": 135.0,
+    "value": 136.79447207944625,
     "expected": 135.0,
-    "err_pct": 0.0,
+    "err_pct": 1.3292385773675934,
     "unit": "K",
-    "status": "PASS"
+    "status": "CHECK"
   },
   {
     "round": "Genetics",

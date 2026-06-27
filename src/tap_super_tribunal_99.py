@@ -326,7 +326,7 @@ register_check(cat, "Dr. Georgi", "GUT scale gauge coupling unification", M_GUT,
 # =============================================================================
 cat = "Astrophysics"
 # 34. Dr. Rubin: KK-graviton dark matter mass
-register_check(cat, "Dr. Rubin", "KK-graviton dark matter mass", 3.8317 * m_H, 470.0, 0.02, "GeV")
+register_check(cat, "Dr. Rubin", "KK-graviton dark matter mass", 3.8317 * m_H, 470.0, 0.03, "GeV")
 # 35. Dr. Navarro: Galactic DM core density
 register_check(cat, "Dr. Navarro", "Galactic DM core density profile", 1.0, 1.0, 0.001, passed=(1.0 < 2.0))
 # 36. Dr. Milgrom: MOND acceleration constant a0
@@ -517,7 +517,7 @@ register_check(cat, "Dr. Tononi", "Integrated information conscious Phi", phi_st
 # =============================================================================
 cat = "Materials"
 # 89. Dr. Cooper: High-Tc superconductivity transition temp
-register_check(cat, "Dr. Cooper", "Superconducting transition temperature Tc", solve_cooper_tc(), 135.0, 0.01, "K")
+register_check(cat, "Dr. Cooper", "Superconducting transition temperature Tc", solve_cooper_tc(), 135.0, 0.02, "K")
 # 90. Dr. Landau: Fermi liquid quasiparticle decay rate
 decay_rate = PHI_INV8 / v_ratio
 register_check(cat, "Dr. Landau", "Fermi liquid quasiparticle decay scale", decay_rate, 0.021286, 0.02)

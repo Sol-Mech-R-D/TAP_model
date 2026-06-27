@@ -69,7 +69,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 
 | ID | Category | Critic | Objection / Tension | TAP Model Formula | TAP Calculated | Observed/Expected | Error (%) | Status |
 |:---:|:---|:---|:---|:---|:---:|:---:|:---:|:---:|
-| 1 | Cosmology | Dr. Aris | DE EOS w(z) fits DESI BAO data | $w(z) = -1 + \frac{\phi^{-4}(1+z)^{0.5}}{6(\phi^{-4}(1+z)^{0.5} + 1 - \phi^{-4})}$ | 1.8630 chi2 | 1.7950 chi2 | 3.79% | **PASS** |
+| 1 | Cosmology | Dr. Aris | DE EOS w(z) fits DESI BAO data | $w(z) = -1 + \frac{\phi^{-4}(1+z)^{0.5}}{6(\phi^{-4}(1+z)^{0.5} + 1 - \phi^{-4})}$ | 1.8625 chi2 | 1.7950 chi2 | 3.76% | **PASS** |
 | 2 | Cosmology | Dr. Riess | Local Hubble parameter measurement | $H_0^{\text{local}} = H_0^{\text{CMB}} \sqrt{1 + \phi^{-4}}$ | 72.1494 km/s/Mpc | 72.1500 km/s/Mpc | 0.00% | **PASS** |
 | 3 | Cosmology | Dr. Guth | Number of inflationary e-folds | $N = 2\pi \phi^5$ | 69.6816 | 69.6800 | 0.00% | **PASS** |
 | 4 | Cosmology | Dr. Steinhardt | Critical density at cyclic bounce | $\rho_{\text{bounce}} = m_P^4 \phi^{-13}$ | 4.2645e+73 GeV^4 | 4.2620e+73 GeV^4 | 0.06% | **PASS** |
@@ -102,7 +102,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 31 | Particle Physics | Dr. Sakata | PMNS neutrino mixing sin^2(theta13) | $\sin^2\theta_{13} = \phi^{-8}$ | 0.0213 | 0.0220 | 3.24% | **PASS** |
 | 32 | Particle Physics | Dr. Wilczek | Strong CP axion mass scale | $m_{\text{axion}} = \phi^{-13} \text{ eV}$ | 0.0019 eV | 0.0019 eV | 0.02% | **PASS** |
 | 33 | Particle Physics | Dr. Georgi | GUT scale gauge coupling unification | $M_{\text{GUT}} = m_P e^{-13}$ | 2.7596e+13 GeV | 2.7600e+13 GeV | 0.01% | **PASS** |
-| 34 | Astrophysics | Dr. Rubin | KK-graviton dark matter mass | $M_{\text{DM}} = 468.98 \text{ GeV}$ | 468.9800 GeV | 470.0000 GeV | 0.22% | **PASS** |
+| 34 | Astrophysics | Dr. Rubin | KK-graviton dark matter mass | $M_{\text{DM}} = 468.98 \text{ GeV}$ | 479.4131 GeV | 470.0000 GeV | 2.00% | **CHECK** |
 | 35 | Astrophysics | Dr. Navarro | Galactic DM core density profile | $\rho_{\text{TAP}}(r) = \rho_0 / (1 + (r/r_s)^2)$ | 1.0000 | 1.0000 | 0.00% | **PASS** |
 | 36 | Astrophysics | Dr. Milgrom | MOND acceleration constant a0 | $a_0 = c H_0 \phi^{-4}$ | 1.1156e-10 m/s^2 | 1.2000e-10 m/s^2 | 7.03% | **PASS** |
 | 37 | Astrophysics | Dr. Ostriker | Galactic disk stability parameter | $t_{\text{Ostriker}} = 0.5\phi^{-1}$ | 0.3090 | 0.3090 | 0.01% | **PASS** |
@@ -157,7 +157,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 86 | Neuroscience | Dr. Hopfield | Hopfield attractor storage capacity | $\alpha_c = 0.138(1 + \phi^{-8})$ | 0.1410 | 0.1409 | 0.06% | **PASS** |
 | 87 | Neuroscience | Dr. Friston | Free energy brain minimization rate | $k_{\text{Friston}} = \phi^2$ | 2.6180 | 2.6180 | 0.00% | **PASS** |
 | 88 | Neuroscience | Dr. Tononi | Integrated information conscious Phi | $\Phi_{\text{max}} = \phi^8$ | 46.9787 | 46.9790 | 0.00% | **PASS** |
-| 89 | Materials | Dr. Cooper | Superconducting transition temperature Tc | $T_c = 135.0 \text{ K}$ | 135.0000 K | 135.0000 K | 0.00% | **PASS** |
+| 89 | Materials | Dr. Cooper | Superconducting transition temperature Tc | $T_c = 135.0 \text{ K}$ | 136.7945 K | 135.0000 K | 1.33% | **CHECK** |
 | 90 | Materials | Dr. Landau | Fermi liquid quasiparticle decay scale | $\gamma_{\text{Landau}} = \phi^{-8}$ | 0.0209 | 0.0213 | 1.60% | **PASS** |
 | 91 | Materials | Dr. Anderson | Localization critical resistance | $R_c = \frac{h}{e^2} \phi^2$ | 67.5788 kOhm | 67.5400 kOhm | 0.06% | **PASS** |
 | 92 | Materials | Dr. Josephson | Josephson junction critical current boost | $I_{\text{boost}} = 1 + \phi^{-8}$ | 1.0216 | 1.0213 | 0.03% | **PASS** |

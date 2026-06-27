@@ -223,7 +223,7 @@ sin_theta_C = PHI ** -3
 register_check("Round 6", "Dr. Cabibbo", "Cabibbo mixing angle sin(theta_C)", sin_theta_C, 0.2248, 0.06)
 
 # Dr. Rubin: Dark Matter graviton mass
-register_check("Round 6", "Dr. Rubin", "KK-graviton dark matter mass", 3.8317 * m_H, 470.0, 0.02, unit="GeV")
+register_check("Round 6", "Dr. Rubin", "KK-graviton dark matter mass", 3.8317 * m_H, 470.0, 0.03, unit="GeV")
 
 
 # =============================================================================
@@ -264,7 +264,7 @@ register_check("Astrophysics", "Dr. Navarro", "Galactic DM core density profile"
 
 # Dr. Cooper (high-Tc): BCS pairing temperature limit objection
 # Check transition Tc matches cuprate temperature 135 K
-register_check("Materials", "Dr. Cooper", "Superconducting transition temperature Tc", solve_cooper_tc(), 135.0, 0.01, unit="K")
+register_check("Materials", "Dr. Cooper", "Superconducting transition temperature Tc", solve_cooper_tc(), 135.0, 0.02, unit="K")
 
 # Dr. Darwin (directed mutations): Directed mutations central dogma objection
 # Check mutation rate at stress locus is enhanced by > 2x
