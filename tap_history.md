@@ -9,9 +9,13 @@ This document traces the complete chronological history, scientific milestones, 
 
 The TAP model projects all physical forces, mixing parameters, and biochemical processes from a warped 13-dimensional manifold governed by the recursive geometry of Fibonacci dimensions. 
 
-Below is the **13-pointed star (tridecagram) diagram** visualizing the topological layout and roles of the 13 dimensions:
+Below is the **13-pointed star (tridecagram) diagram** visualizing the topological layout and connections of the 13 dimensions:
 
 ![TAP 13 Dimensions Manifold Diagram](tap_13_dimensions.png)
+
+Furthermore, we can extract each dimension from the whole to visualize its individual discrete geometric shape (from a 0D point up to a 13D regular polygon):
+
+![Discrete Dimensions Shapes Grid](tap_dimensions_discrete.png)
 
 ### Dimensional Roles & Fibonacci Mapping:
 * **D=1 (Spatial Point):** The initial seed/compaction state before dimensional transitions occur.
