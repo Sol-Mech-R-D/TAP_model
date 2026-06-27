@@ -22,7 +22,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 # =============================================================================
 # 1. MIDI MAPPING ENGINE
@@ -70,7 +73,7 @@ class GuitarModel:
         
         # 2. Neck Damping (fretboard absorption)
         # Neck material dampens energy. TAP neck model scales decay using phi^-4
-        neck_damping = 1.0 - (0.01 * (PHI ** -4))
+        neck_damping = 1.0 - (0.01 * (PHI ** -4) * v_ratio)
         
         # 3. Wood Body Resonance (Helmholtz & Plate Coupling)
         # The guitar body has wood plate resonances (e.g. 100Hz, 200Hz) and air Helmholtz (80Hz)
@@ -102,7 +105,7 @@ class GuitarModel:
             
             # Combine string output with body plate resonance
             # Coupling coefficient is governed by phi^-4
-            out_signal[n] = val + (PHI ** -4) * (body_state_h + body_state_p)
+            out_signal[n] = val + (PHI ** -4) * (body_state_h + body_state_p) * v_ratio
             
         # Normalize and apply MIDI velocity amplitude
         out_signal = out_signal / (np.max(np.abs(out_signal)) + 1e-9)

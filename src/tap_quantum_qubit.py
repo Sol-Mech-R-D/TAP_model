@@ -16,7 +16,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PHI_INV4, PI
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_qubit():
     print("=" * 72)
@@ -35,7 +38,7 @@ def simulate_qubit():
     
     # TAP Fibonacci shielding reduces dephasing by a factor related to phi^-8
     # Because high-dimensional projection restricts available noise modes
-    phi_8_shield = PHI ** -8
+    phi_8_shield = PHI ** -8 * v_ratio
     gamma_dephase_tap = gamma_dephase_std * phi_8_shield
     
     # Initial state (coherent superposition: |+> = (|0> + |1>)/sqrt(2))

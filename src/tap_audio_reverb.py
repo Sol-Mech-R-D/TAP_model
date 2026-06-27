@@ -20,7 +20,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_audio():
     print("=" * 72)
@@ -49,7 +52,7 @@ def simulate_audio():
     def noise_canceler_tap(x):
         # Perform short-time FFT/IFFT proxy subtraction
         # We model the noise mask subtraction mathematically
-        mask = np.abs(x) > (PHI ** -4 * np.max(np.abs(x)))
+        mask = np.abs(x) > (PHI ** -4 * np.max(np.abs(x)) * v_ratio)
         return x * mask
         
     out_cancelled = noise_canceler_tap(input_noisy)

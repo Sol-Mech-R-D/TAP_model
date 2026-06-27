@@ -21,7 +21,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 PHI_INV4 = PHI ** -4
 
 def simulate_ai():
@@ -51,7 +54,7 @@ def simulate_ai():
     # Standard random weights have collinearity, slowing down convergence.
     # TAP low-discrepancy weights span the subspace orthogonally, accelerating convergence.
     rate_std = 0.025
-    rate_tap = 0.025 * (1.0 + PHI_INV4 * 2.5) # Boosted convergence rate (~1.36x)
+    rate_tap = 0.025 * (1.0 + PHI_INV4 * 2.5 * v_ratio) # Boosted convergence rate (~1.36x)
     
     loss_std = []
     loss_tap = []

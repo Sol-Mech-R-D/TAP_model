@@ -20,7 +20,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_matmul():
     print("=" * 72)
@@ -51,7 +54,7 @@ def simulate_matmul():
     # Levels: 0, +/- phi^-0, +/- phi^-1, +/- phi^-2, +/- phi^-3, +/- phi^-4, +/- phi^-5, +/- phi^-6
     phi_levels = [0.0]
     for k in range(7):
-        phi_levels.append(PHI ** -k)
+        phi_levels.append(PHI ** -k * v_ratio)
     phi_levels = np.array(sorted(phi_levels))
     # Mirror for negative values
     tap_levels = np.concatenate([-phi_levels[::-1][:-1], phi_levels]) # 15 discrete levels

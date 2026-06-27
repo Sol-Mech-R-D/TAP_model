@@ -17,7 +17,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PHI_INV4, PI
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_boundary():
     print("=" * 72)
@@ -51,7 +54,7 @@ def simulate_boundary():
     # Demonstrates fractional laminarization of the boundary layer
     # The stabilized boundary layer profile is modeled as a linear combination of the
     # turbulent state and the clean laminar state, scaled by the TAP leakage rate (phi^-4)
-    u_tap = u_turbulent_std + PHI_INV4 * (u_laminar - u_turbulent_std)
+    u_tap = u_turbulent_std + PHI_INV4 * (u_laminar - u_turbulent_std) * v_ratio
     u_tap[0] = 0.0 # No-slip
     
     # Calculate skin friction coefficients (Cf) from velocity gradient at the wall (y=0)

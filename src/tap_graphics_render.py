@@ -47,7 +47,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_graphics():
     print("=" * 72)
@@ -66,7 +69,7 @@ def simulate_graphics():
     # 2. TAP Golden Ratio (Fibonacci) Lattice Sampling
     indices = np.arange(N_samples) + 0.5
     r_tap = np.sqrt(indices / N_samples)
-    theta_tap = 2.0 * PI * indices * PHI  # Multiplied by golden ratio
+    theta_tap = 2.0 * PI * indices * PHI * v_ratio  # Multiplied by golden ratio
     x_tap = r_tap * np.cos(theta_tap)
     y_tap = r_tap * np.sin(theta_tap)
     

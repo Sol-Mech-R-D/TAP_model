@@ -20,7 +20,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_context():
     print("=" * 72)
@@ -43,7 +46,7 @@ def simulate_context():
     
     # TAP: Scheduling block fetches using the low-discrepancy Weyl sequence
     # Ensures memory requests are distributed uniformly across all 32 banks, avoiding conflicts
-    accessed_banks_tap = [int(((t * PHI) % 1.0) * N_banks) for t in range(N_threads)]
+    accessed_banks_tap = [int(((t * PHI * v_ratio) % 1.0) * N_banks) for t in range(N_threads)]
     unique_banks_tap = len(set(accessed_banks_tap))
     conflicts_tap = N_threads - unique_banks_tap
     

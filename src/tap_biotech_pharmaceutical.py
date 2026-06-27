@@ -16,7 +16,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 PHI_INV8 = PHI ** -8
 
 def simulate_biotech():
@@ -35,7 +38,7 @@ def simulate_biotech():
     k_hydrolysis_std = 0.4   # Standard hydrolysis rate in water (fast degradation)
     
     # TAP mineral boundary layer suppresses hydrolysis by phi^-8
-    k_hydrolysis_tap = k_hydrolysis_std * PHI_INV8
+    k_hydrolysis_tap = k_hydrolysis_std * PHI_INV8 * v_ratio
     
     # Simulate peptide average length over time (monomer-polymer equilibrium)
     length_std = np.zeros(steps)

@@ -16,7 +16,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from science_constants import PHI, PHI_INV4, PI
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 def simulate_tokamak():
     print("=" * 72)
@@ -80,7 +83,7 @@ def simulate_tokamak():
             d1n_tap = (n_tap[i+1] - n_tap[i-1]) / (2*dr)
             
             # TAP stabilization includes the phi^-4 topological drag term
-            restoration = PHI_INV4 * (n_tap[i] - n_std[i])
+            restoration = PHI_INV4 * (n_tap[i] - n_std[i]) * v_ratio
             dn_tap[i] = D_ri_tap * (d2n_tap + d1n_tap / ri) + source[i] - restoration
             
         # Boundary conditions: dn/dr = 0 at center, n = 0 at wall
