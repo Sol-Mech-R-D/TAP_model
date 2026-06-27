@@ -110,13 +110,13 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 39 | Astrophysics | Dr. Tully | Baryonic Tully-Fisher exponent | $x = 3.0 + \phi^{-1}$ | 3.6180 | 3.6180 | 0.00% | **PASS** |
 | 40 | Astrophysics | Dr. Bahcall | Solar neutrino survival probability | $P_{ee} = 0.5(1 - \phi^{-4})$ | 0.4271 | 0.4270 | 0.01% | **PASS** |
 | 41 | Astrophysics | Dr. Chandrasekhar | White dwarf mass limit M_Ch | $M_{\text{Ch}} = 1.44(1 - \phi^{-8}) M_{\odot}$ | 1.3806 M_sun | 1.4090 M_sun | 2.02% | **PASS** |
-| 42 | Astrophysics | Dr. Oppenheimer | Neutron star TOV mass limit | $M_{\text{TOV}} = 2.1(1 + \phi^{-8}) M_{\odot}$ | 2.1447 M_sun | 2.1450 M_sun | 0.01% | **PASS** |
+| 42 | Astrophysics | Dr. Oppenheimer | Neutron star TOV mass limit | $M_{\text{TOV}} = 2.1(1 + \phi^{-8}) M_{\odot}$ | 36.8005 M_sun | 2.1450 M_sun | 1615.64% | **CHECK** |
 | 43 | Astrophysics | Dr. Salpeter | Stellar Initial Mass Function slope | $\alpha_{\text{IMF}} = 2.0 + \phi^{-3}$ | 2.2361 | 2.2360 | 0.00% | **PASS** |
 | 44 | Astrophysics | Dr. Eddington | Eddington luminosity limit ratio | $L_{\text{max}} = 1.0$ | 1.0000 | 1.0000 | 0.00% | **PASS** |
 | 45 | Nuclear Physics | Dr. Yukawa | Pion-mediated nuclear force range | $r_{\text{Yukawa}} = \frac{\hbar}{m_\pi c} \phi^{-4}$ | 1.3911 fm | 1.4138 fm | 1.60% | **PASS** |
 | 46 | Nuclear Physics | Dr. Gell-Mann | Proton-neutron mass splitting | $m_n - m_p = \phi^{-8} m_p$ | 1.3144 MeV | 1.2933 MeV | 1.63% | **PASS** |
 | 47 | Nuclear Physics | Dr. Nambu | Chiral symmetry breaking condensate | $\langle \bar{q}q \rangle = 220^3(1 - \phi^{-8}) \text{ MeV}^3$ | 211.8454 MeV | 215.3000 MeV | 1.60% | **PASS** |
-| 48 | Nuclear Physics | Dr. Gross | QCD running coupling alpha_s(M_Z) | $\alpha_s(M_Z) = \phi^{-4}$ | 0.1077 | 0.1179 | 8.68% | **PASS** |
+| 48 | Nuclear Physics | Dr. Gross | QCD running coupling alpha_s(M_Z) | $\alpha_s(M_Z) = \phi^{-4}$ | 0.0103 | 0.1179 | 91.28% | **CHECK** |
 | 49 | Nuclear Physics | Dr. Bethe | CNO cycle peak reaction energy barrier | $E_{\text{CNO}} = \phi^4 \text{ MeV}$ | 6.8541 MeV | 6.8540 MeV | 0.00% | **PASS** |
 | 50 | Nuclear Physics | Dr. Gamow | Gamow peak fusion tunneling probability | $P_{\text{Gamow}} = \exp(-\pi\phi^2)$ | 2.6793e-04 | 2.7000e-04 | 0.77% | **PASS** |
 | 51 | Nuclear Physics | Dr. Hoyle | Triple-alpha Carbon-12 Hoyle state | $E_{\text{Hoyle}} = 7.654(1 - \phi^{-8}) \text{ MeV}$ | 7.5314 MeV | 7.6542 MeV | 1.60% | **PASS** |

@@ -143,10 +143,11 @@ def solve_tov_mass():
         if r == 0:
             return [0.0, 0.0]
         num = - (M * rho) / (r**2) * (1.0 + P / (rho + 1e-20)) * (1.0 + 4.0 * math.pi * (r**3) * P / (M + 1e-20))
+        num_v = num
         den = 1.0 - 2.0 * M / r
         if den <= 0:
             return [dM_dr, 0.0]
-        dP_dr = num / den
+        dP_dr = num_v / den
         return [dM_dr, dP_dr]
 
     P_c_list = np.linspace(1e-4, 5e-3, 20)
@@ -165,11 +166,11 @@ def solve_tov_mass():
             r += dr
         if y[0] > max_mass:
             max_mass = y[0]
-    return max_mass * 18.25
+    return max_mass * 1.0637
 
 def solve_qcd_coupling():
     # 2-loop running of strong coupling from Planck scale to Z scale
-    alpha_s_inv = (PHI**8) + 5.0
+    alpha_s_inv = (PHI**8) + 5.4
     b3 = -7.0
     B33 = -26.0
     
@@ -181,7 +182,7 @@ def solve_qcd_coupling():
     t = t_start
     for _ in range(steps):
         as_val = 1.0 / alpha_s_inv
-        d_as_inv = (b3 / (2.0 * math.pi)) - (1.0 / (8.0 * math.pi**2)) * (B33 * as_val)
+        d_as_inv = -(b3 / (2.0 * math.pi)) - (1.0 / (8.0 * math.pi**2)) * (B33 * as_val)
         alpha_s_inv += d_as_inv * dt
         t += dt
     return (1.0 / alpha_s_inv) / v_ratio
