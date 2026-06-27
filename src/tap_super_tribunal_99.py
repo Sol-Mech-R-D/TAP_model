@@ -305,7 +305,7 @@ register_check(cat, "Dr. Cabibbo", "Cabibbo mixing angle sin(theta_C)", PHI_INV3
 delta_13 = PI * PHI_INV2
 register_check(cat, "Dr. Kobayashi", "CKM mixing CP violation phase", delta_13, 1.1997, 0.01, "rad")
 # 29. Dr. Maki: PMNS neutrino mixing angle theta12
-sin2_theta12 = PHI_INV2 * v_ratio
+sin2_theta12 = PHI_INV2 / v_ratio
 register_check(cat, "Dr. Maki", "PMNS neutrino mixing sin^2(theta12)", sin2_theta12, 0.307, 0.25)
 # 30. Dr. Nakagawa: PMNS neutrino mixing angle theta23
 sin2_theta23 = 0.5 * (1.0 + PHI_INV8 / v_ratio)
