@@ -27,11 +27,10 @@ from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV, PLANCK_MASS_GEV,
 # CASCADING COUPLINGS (Unified Feedback Loop)
 # -----------------------------------------------------------------------------
 m_P = PLANCK_MASS_GEV
-# Derive Higgs mass and VEV from Planck scale warping (Check 14)
-y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
-warp_factor = math.exp(-y_sat * math.log(PHI))
-m_H = m_P * warp_factor  # Effective Higgs Mass
-v_pred = 2.0 * m_H        # Effective VEV
+# Solve the warped Dirac eigenvalue problem on the 13D compactified manifold
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_pred = 2.0 * m_H        # Effective VEV from lowest eigenvalue
 v_ratio = v_pred / HIGGS_VEV_GEV
 
 # Baryon Mass shift
@@ -153,11 +152,6 @@ register_check("Round 3", "Dr. Zeilinger", "Casimir force coefficient", C_tap, 0
 # Dr. Penrose: 2nd law of thermodynamics
 register_check("Round 3", "Dr. Penrose", "Holographic entropy conservation", 1.0, 1.0, 0.0001)
 
-# Dr. Arkani-Hamed: Higgs Mass stabilization
-# m_H = m_P * warp_factor
-y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
-warp_factor = math.exp(-y_sat * math.log(PHI))
-m_H = m_P * warp_factor
 register_check("Round 3", "Dr. Arkani-Hamed", "Higgs boson mass resonance", m_H, HIGGS_MASS_GEV, 0.03, unit="GeV")
 
 # Round 4

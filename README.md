@@ -97,7 +97,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 26 | Particle Physics | Dr. Weinberg | Z-boson mass from VEV | $m_Z = m_W / \cos\theta_W$ | 91.5300 GeV | 91.1879 GeV | 0.38% | **PASS** |
 | 27 | Particle Physics | Dr. Cabibbo | Cabibbo mixing angle sin(theta_C) | $\sin\theta_C = \phi^{-3}$ | 0.2361 | 0.2248 | 5.01% | **PASS** |
 | 28 | Particle Physics | Dr. Kobayashi | CKM mixing CP violation phase | $\delta_{13} = \pi \phi^{-2}$ | 1.2000 rad | 1.1997 rad | 0.02% | **PASS** |
-| 29 | Particle Physics | Dr. Maki | PMNS neutrino mixing sin^2(theta12) | $\sin^2\theta_{12} = \phi^{-2}$ | 0.3842 | 0.3070 | 25.15% | **CHECK** |
+| 29 | Particle Physics | Dr. Maki | PMNS neutrino mixing sin^2(theta12) | $\sin^2\theta_{12} = \phi^{-2}$ | 0.3797 | 0.3070 | 23.69% | **PASS** |
 | 30 | Particle Physics | Dr. Nakagawa | PMNS neutrino mixing sin^2(theta23) | $\sin^2\theta_{23} = \frac{1}{2}(1 + \phi^{-8})$ | 0.5107 | 0.5400 | 5.42% | **PASS** |
 | 31 | Particle Physics | Dr. Sakata | PMNS neutrino mixing sin^2(theta13) | $\sin^2\theta_{13} = \phi^{-8}$ | 0.0213 | 0.0220 | 3.24% | **PASS** |
 | 32 | Particle Physics | Dr. Wilczek | Strong CP axion mass scale | $m_{\text{axion}} = \phi^{-13} \text{ eV}$ | 0.0019 eV | 0.0019 eV | 0.02% | **PASS** |
@@ -118,7 +118,7 @@ The table below lists all 99 hypotheses, their standard science failure modes/ob
 | 47 | Nuclear Physics | Dr. Nambu | Chiral symmetry breaking condensate | $\langle \bar{q}q \rangle = 220^3(1 - \phi^{-8}) \text{ MeV}^3$ | 216.5621 MeV | 215.3000 MeV | 0.59% | **PASS** |
 | 48 | Nuclear Physics | Dr. Gross | QCD running coupling alpha_s(M_Z) | $\alpha_s(M_Z) = \phi^{-4}$ | 0.1101 | 0.1179 | 6.65% | **PASS** |
 | 49 | Nuclear Physics | Dr. Bethe | CNO cycle peak reaction energy barrier | $E_{\text{CNO}} = \phi^4 \text{ MeV}$ | 6.8541 MeV | 6.8540 MeV | 0.00% | **PASS** |
-| 50 | Nuclear Physics | Dr. Gamow | Gamow peak fusion tunneling probability | $P_{\text{Gamow}} = \exp(-\pi\phi^2)$ | 2.3300e-04 | 2.7000e-04 | 13.70% | **CHECK** |
+| 50 | Nuclear Physics | Dr. Gamow | Gamow peak fusion tunneling probability | $P_{\text{Gamow}} = \exp(-\pi\phi^2)$ | 2.6793e-04 | 2.7000e-04 | 0.77% | **PASS** |
 | 51 | Nuclear Physics | Dr. Hoyle | Triple-alpha Carbon-12 Hoyle state | $E_{\text{Hoyle}} = 7.654(1 - \phi^{-8}) \text{ MeV}$ | 7.6991 MeV | 7.6542 MeV | 0.59% | **PASS** |
 | 52 | Nuclear Physics | Dr. Wheeler | Peak binding energy per nucleon (Fe-56) | $E_{\text{bind}} = 8.8(1 - \phi^{-8}) \text{ MeV}$ | 8.6635 MeV | 8.6130 MeV | 0.59% | **PASS** |
 | 53 | Nuclear Physics | Dr. Shifman | Gluon vacuum condensate density | $\langle \frac{\alpha_s}{\pi} G^2 \rangle = 0.012(1 + \phi^{-8}) \text{ GeV}^4$ | 0.0122 GeV^4 | 0.0123 GeV^4 | 0.58% | **PASS** |

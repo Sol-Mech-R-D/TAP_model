@@ -56,11 +56,10 @@ TENSOR_TO_SCALAR_RATIO_LIMIT = 0.032
 # -----------------------------------------------------------------------------
 # CASCADING COUPLINGS (Unified Feedback Loop)
 # -----------------------------------------------------------------------------
-# Derive Higgs mass and VEV from Planck scale warping (Check 14)
-y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
-warp_factor = math.exp(-y_sat * math.log(PHI))
-m_H_pred = m_P * warp_factor  # Effective Higgs Mass
-v_pred = 2.0 * m_H_pred        # Effective VEV
+# Solve the warped Dirac eigenvalue problem on the 13D compactified manifold
+from tap_dirac_modes import solve_dirac_spectrum
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_pred = 2.0 * m_H        # Effective VEV from lowest eigenvalue
 v_ratio = v_pred / HIGGS_VEV_GEV
 
 # QED & Fine-structure coupling
@@ -221,11 +220,6 @@ cat = "Quantum Gravity"
 register_check(cat, "Dr. Susskind", "Purity of density matrix Tr(rho^2)", 1.0, 1.0, 0.0001)
 # 13. Dr. Maldacena: Boundary CFT central charge
 register_check(cat, "Dr. Maldacena", "Boundary CFT central charge c_CFT", PHI**3, 4.236068, 0.01)
-# 14. Dr. Randall: Electroweak scale VEV
-y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
-warp_factor = math.exp(-y_sat * math.log(PHI))
-m_H = m_P * warp_factor
-v_pred = 2.0 * m_H
 register_check(cat, "Dr. Randall", "Stabilized electroweak VEV", v_pred, HIGGS_VEV_GEV, 0.03, "GeV")
 # 15. Dr. Witten: 4th generation entropy ceiling
 S_4 = PHI ** 14
