@@ -26,13 +26,13 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PI
+
 # -----------------------------------------------------------------------------
 # CONSTANTS
 # -----------------------------------------------------------------------------
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
 PHI_INV4  = PHI ** -4                 # ~0.145898
 PHI_INV8  = PHI ** -8                 # ~0.021286
-PI        = math.pi
 
 SEP = "=" * 72
 

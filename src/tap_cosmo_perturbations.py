@@ -24,12 +24,11 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PHI_INV4, PI, PLANCK_NS_OBSERVED
+
 # -----------------------------------------------------------------------------
 # CONSTANTS & CONFIGURATION
 # -----------------------------------------------------------------------------
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
-PHI_INV4  = PHI ** -4                 # ~0.145898  (leakage rate)
-PI        = math.pi
 
 # Horizon scale / pivot scale
 k_pivot = 0.05  # Mpc^-1
@@ -145,7 +144,7 @@ def analyze_perturbations():
     print()
     print("  Derived Perturbation Results:")
     print(f"    Scalar Amplitude A_s at pivot : {As_pred:.6e}")
-    print(f"    Spectral Index n_s           : {ns_pred:.6f}  (Theoretical: {ns_theory:.6f}, Observed: 0.9649)")
+    print(f"    Spectral Index n_s           : {ns_pred:.6f}  (Theoretical: {ns_theory:.6f}, Observed: {PLANCK_NS_OBSERVED})")
     print(f"    Spectral Running alpha_s     : {alpha_s_pred:.6e}  (Planck Observed: -0.0045)")
     print(f"    Tensor Spectral Index n_t    : {nt_pred:.6f}")
     print(f"    Tensor-to-Scalar Ratio r     : {r_pred:.6f}  (Theoretical: {r_theory:.6f}, BICEP limit: <0.032)")
@@ -160,6 +159,16 @@ def analyze_perturbations():
     
     # Plots
     generate_plots(k_modes, P_s, P_t, lnk, lnPs, lnPt, ns_theory, r_theory)
+
+    return {
+        "ns_pred": ns_pred,
+        "r_pred": r_pred,
+        "ns_theory": ns_theory,
+        "r_theory": r_theory,
+        "As_pred": As_pred,
+        "alpha_s_pred": alpha_s_pred,
+        "nt_pred": nt_pred,
+    }
 
 # -----------------------------------------------------------------------------
 # VISUALIZATION
@@ -215,7 +224,7 @@ def generate_plots(k_modes, P_s, P_t, lnk, lnPs, lnPt, ns_theory, r_theory):
     n_s_modes = np.diff(lnPs) / np.diff(np.log(k_modes)) + 1.0
     ax.plot(k_modes[:-1], n_s_modes, color=BLUE, lw=2.0, label="Local n_s(k)")
     ax.axhline(ns_theory, color=GREEN, ls="--", label=f"Theoretical n_s = {ns_theory:.4f}")
-    ax.axhline(0.9649, color=ORANGE, ls=":", label="Planck 2018 Observed")
+    ax.axhline(PLANCK_NS_OBSERVED, color=ORANGE, ls=":", label="Planck 2018 Observed")
     ax.set_xscale("log")
     ax.set_xlabel("Wavenumber k (Mpc^-1)")
     ax.set_ylabel("Spectral Index n_s")

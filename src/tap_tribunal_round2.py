@@ -17,12 +17,11 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PHI_INV4, PI
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
-PHI_INV4  = PHI ** -4                 # ~0.14590
-PI        = math.pi
 TAP_RATIO = 3.0
 MAX_DIM   = 13
 

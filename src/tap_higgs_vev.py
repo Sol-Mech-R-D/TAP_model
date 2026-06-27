@@ -10,12 +10,13 @@ the 3/4 structural and 1/4 interface partitions.
 
 import math
 
+from science_constants import HIGGS_VEV_GEV, HIGGS_MASS_GEV
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI = (1 + math.sqrt(5)) / 2
-v_obs = 246.22  # Observed Higgs vacuum expectation value (vev) in GeV
-m_H_obs = 125.10  # Observed Higgs mass in GeV
+v_obs = HIGGS_VEV_GEV
+m_H_obs = HIGGS_MASS_GEV
 
 # ─────────────────────────────────────────────────────────────────────────────
 # THE TAP DERIVATION

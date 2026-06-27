@@ -15,28 +15,80 @@ if hasattr(sys.stderr, 'reconfigure'):
 
 import json
 import math
+import os
 import numpy as np
+from astropy import constants as ac
+from scipy import constants as const
+from particle import Particle
+
+from science_constants import (
+    PHI,
+    PHI_INV4,
+    PI,
+    HIGGS_VEV_GEV,
+    PLANCK_MASS_GEV,
+    HIGGS_MASS_GEV,
+    ALPHA_OBSERVED,
+    PROTON_ELECTRON_MASS_RATIO,
+)
 
 # -----------------------------------------------------------------------------
 # CONSTANTS & PARAMETERS
 # -----------------------------------------------------------------------------
-PHI       = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV   = PHI ** -1
 PHI_INV2  = PHI ** -2
 PHI_INV3  = PHI ** -3
-PHI_INV4  = PHI ** -4
 PHI_INV8  = PHI ** -8
 PHI_INV13 = PHI ** -13
-PI        = math.pi
-v_obs     = 246.22       # Higgs VEV in GeV
-m_P       = 1.2209e19    # Planck mass in GeV
-m_H_obs   = 125.10       # Higgs Mass in GeV
+v_obs     = HIGGS_VEV_GEV
+m_P       = PLANCK_MASS_GEV
+m_H_obs   = HIGGS_MASS_GEV
+ALPHA_INV_OBSERVED = 1.0 / ALPHA_OBSERVED
+PROTON_NEUTRON_MASS_SPLITTING_MEV = ((ac.m_n.si.value - ac.m_p.si.value) * ac.c.si.value**2) / (const.eV * 1e6)
+W_BOSON_MASS_GEV = Particle.from_pdgid(24).mass / 1000.0
+Z_BOSON_MASS_GEV = Particle.from_pdgid(23).mass / 1000.0
+QCD_ALPHA_S_MZ = 0.118
+HOYLE_STATE_MEV = 7.654
+HUBBLE_LOCAL_MEASUREMENT_KMS_MPC = 72.15
+TENSOR_TO_SCALAR_RATIO_LIMIT = 0.032
 
 # Track results
 checks = []
 
+
+def resolve_expected_value(objection, fallback):
+    """Resolve a check target against real scientific libraries when possible."""
+    lower = objection.lower()
+    if "hubble" in lower:
+        return HUBBLE_LOCAL_MEASUREMENT_KMS_MPC
+    if "tensor-to-scalar" in lower or "tensor to scalar" in lower or "tensor-to-scalar ratio" in lower:
+        return TENSOR_TO_SCALAR_RATIO_LIMIT
+    if "alpha_s" in lower or "running coupling" in lower:
+        return QCD_ALPHA_S_MZ
+    if "hoyle" in lower:
+        return HOYLE_STATE_MEV
+    if "fine-structure" in lower or "alpha" in lower:
+        return 1.0 / ALPHA_OBSERVED
+    if "proton-neutron mass splitting" in lower or "mass splitting" in lower:
+        return PROTON_NEUTRON_MASS_SPLITTING_MEV
+    if "higgs boson mass" in lower:
+        return HIGGS_MASS_GEV
+    if "w-boson" in lower or "w boson" in lower:
+        return W_BOSON_MASS_GEV
+    if "z-boson" in lower or "z boson" in lower:
+        return Z_BOSON_MASS_GEV
+    if "electroweak vew" in lower or "electroweak v" in lower or "vev" in lower:
+        return HIGGS_VEV_GEV
+    if "planck" in lower and "mass" in lower:
+        return PLANCK_MASS_GEV
+    if "proton/electron" in lower or "proton-electron" in lower or "mass ratio" in lower:
+        return PROTON_ELECTRON_MASS_RATIO
+    return fallback
+
+
 def register_check(category, critic, objection, value, expected, tol, unit="", passed=True):
-    err = abs(value - expected) / (abs(expected) + 1e-30) if expected != 0 else 0
+    resolved_expected = resolve_expected_value(objection, expected)
+    err = abs(value - resolved_expected) / (abs(resolved_expected) + 1e-30) if resolved_expected != 0 else 0
     status = "PASS" if (err <= tol and passed) else "CHECK"
     checks.append({
         "id": len(checks) + 1,
@@ -44,7 +96,7 @@ def register_check(category, critic, objection, value, expected, tol, unit="", p
         "critic": critic,
         "objection": objection,
         "value": value,
-        "expected": expected,
+        "expected": resolved_expected,
         "err_pct": err * 100.0,
         "unit": unit,
         "status": status
@@ -99,7 +151,7 @@ y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
 warp_factor = math.exp(-y_sat * math.log(PHI))
 m_H = m_P * warp_factor
 v_pred = 2.0 * m_H
-register_check(cat, "Dr. Randall", "Stabilized electroweak VEV", v_pred, 246.22, 0.03, "GeV")
+register_check(cat, "Dr. Randall", "Stabilized electroweak VEV", v_pred, HIGGS_VEV_GEV, 0.03, "GeV")
 # 15. Dr. Witten: 4th generation entropy ceiling
 S_4 = PHI ** 14
 S_ceiling = PHI ** 13
@@ -132,9 +184,9 @@ register_check(cat, "Dr. Strominger", "Bekenstein-Hawking black hole entropy", S
 cat = "Particle Physics"
 # 23. Dr. Bell: Bare fine-structure constant
 alpha_bare = 1.0 / (4.0 * PI * PHI**5)
-register_check(cat, "Dr. Bell", "Bare fine-structure constant alpha^-1", 1.0/alpha_bare, 137.036, 0.05)
+register_check(cat, "Dr. Bell", "Bare fine-structure constant alpha^-1", 1.0/alpha_bare, ALPHA_INV_OBSERVED, 0.05)
 # 24. Dr. Arkani-Hamed: Higgs boson mass
-register_check(cat, "Dr. Arkani-Hamed", "Higgs boson mass resonance", m_H, 125.10, 0.03, "GeV")
+register_check(cat, "Dr. Arkani-Hamed", "Higgs boson mass resonance", m_H, HIGGS_MASS_GEV, 0.03, "GeV")
 # 25. Dr. Weinberg: W-boson mass
 register_check(cat, "Dr. Weinberg", "W-boson mass from VEV", 80.25, 80.379, 0.01, "GeV")
 # 26. Dr. Weinberg: Z-boson mass
@@ -206,7 +258,7 @@ r_yukawa = 9.7 * PHI_INV4
 register_check(cat, "Dr. Yukawa", "Pion-mediated nuclear force range", r_yukawa, 1.415, 0.01, "fm")
 # 46. Dr. Gell-Mann: Proton-neutron mass splitting
 d_mass = 60.6 * PHI_INV8
-register_check(cat, "Dr. Gell-Mann", "Proton-neutron mass splitting", d_mass, 1.29, 0.01, "MeV")
+register_check(cat, "Dr. Gell-Mann", "Proton-neutron mass splitting", d_mass, PROTON_NEUTRON_MASS_SPLITTING_MEV, 0.01, "MeV")
 # 47. Dr. Nambu: Chiral symmetry breaking condensate
 condensate = 220.0 * (1.0 - PHI_INV8)
 register_check(cat, "Dr. Nambu", "Chiral symmetry breaking condensate", condensate, 215.3, 0.01, "MeV")
@@ -421,7 +473,8 @@ def main():
     print("=" * 90)
     
     # Export results to JSON for verification
-    out_path = "C:/Users/DavidBaker/TAP_model/tap_super_tribunal_99_results.json"
+    out_dir = os.path.dirname(os.path.abspath(__file__))
+    out_path = os.path.join(out_dir, "tap_super_tribunal_99_results.json")
     with open(out_path, "w") as f:
         json.dump(checks, f, indent=2)
     print(f"  [EXPORT] Grand master tribunal results saved -> {out_path}\n")

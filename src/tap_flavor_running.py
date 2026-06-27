@@ -20,14 +20,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import os
 
+from science_constants import PHI, PI, PLANCK_MASS_GEV, HIGGS_VEV_GEV
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI = (1 + math.sqrt(5)) / 2
-PI = math.pi
-m_P = 1.2209e19   # Planck Mass in GeV
+m_P = PLANCK_MASS_GEV
 m_Z = 91.1876     # Z boson mass in GeV
-v_vev = 246.22    # Higgs VEV in GeV
+v_vev = HIGGS_VEV_GEV
 
 SEP = "=" * 72
 

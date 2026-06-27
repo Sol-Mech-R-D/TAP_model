@@ -26,12 +26,13 @@ import time
 import math
 import numpy as np
 
+from science_constants import PHI, PHI_INV4, PI, PLANCK_NS_OBSERVED, PLANCK_NS_ERROR
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
 
-PHI        = (1 + math.sqrt(5)) / 2          # Golden Ratio φ ≈ 1.6180
-PHI_INV_4  = PHI ** -4                       # φ^-4 ≈ 0.1459  — Leakage Coefficient
+PHI_INV_4  = PHI_INV4                       # φ^-4 ≈ 0.1459  — Leakage Coefficient
 TAP_RATIO  = 3.0                             # 3:1 structural law
 MAX_DIM    = 13                              # Fibonacci saturation ceiling
 
@@ -172,14 +173,14 @@ def compute_spectral_index():
     Best TAP approximation (Candidate B) uses the phi^-4 leakage coefficient
     divided by pi — consistent with the 3D spherical volume geometry.
 
-    Observed value (Planck 2018): 0.9649 +/- 0.0042
+    Observed value (Planck 2018): {PLANCK_NS_OBSERVED} +/- {PLANCK_NS_ERROR}
     Candidate B deviation:  0.0114  (~2.7 sigma)  — within reach of
     future refinement of the dimensional coupling term.
     """
     ns_A        = 1.0 - 1.0 / (PHI ** 2)                     # naive
-    ns_B        = 1.0 - PHI_INV_4 / math.pi                   # best TAP
+    ns_B        = 1.0 - PHI_INV_4 / PI                       # best TAP
     ns_C        = 1.0 - 2.0 * PHI_INV_4 / (1.0 + PHI)        # alt
-    ns_observed = 0.9649
+    ns_observed = PLANCK_NS_OBSERVED
     ns_error    = 0.0042
     best        = ns_B
     deviation   = abs(best - ns_observed)

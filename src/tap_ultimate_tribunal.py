@@ -17,16 +17,15 @@ import json
 import math
 import numpy as np
 
+from science_constants import PHI, PHI_INV4, PI, HIGGS_VEV_GEV, PLANCK_MASS_GEV
+
 # -----------------------------------------------------------------------------
 # CONSTANTS
 # -----------------------------------------------------------------------------
-PHI       = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV3  = PHI ** -3
-PHI_INV4  = PHI ** -4
 PHI_INV8  = PHI ** -8
-PI        = math.pi
-v_obs     = 246.22  # Higgs VEV in GeV
-m_P       = 1.2209e19  # Planck mass in GeV
+v_obs     = HIGGS_VEV_GEV
+m_P       = PLANCK_MASS_GEV
 
 SEP = "=" * 80
 LINE = "-" * 80
@@ -89,7 +88,7 @@ register_check("Round 3", "Dr. Penrose", "Holographic entropy conservation", 1.0
 y_sat = 2.0 * PI * 13.0 * (1.0 - (PHI**-9)/PI)
 warp_factor = math.exp(-y_sat * math.log(PHI))
 m_H = m_P * warp_factor
-register_check("Round 3", "Dr. Arkani-Hamed", "Higgs boson mass resonance", m_H, 125.10, 0.03, unit="GeV")
+register_check("Round 3", "Dr. Arkani-Hamed", "Higgs boson mass resonance", m_H, HIGGS_MASS_GEV, 0.03, unit="GeV")
 
 # Round 4
 # Dr. Maldacena: Holographic bounds
@@ -98,7 +97,7 @@ register_check("Round 4", "Dr. Maldacena", "Boundary CFT central charge", c_CFT,
 
 # Dr. Randall: Radion VEV stabilization
 v_pred = 2.0 * m_H
-register_check("Round 4", "Dr. Randall", "Stabilized electroweak VEV", v_pred, 246.22, 0.03, unit="GeV")
+register_check("Round 4", "Dr. Randall", "Stabilized electroweak VEV", v_pred, HIGGS_VEV_GEV, 0.03, unit="GeV")
 
 # Dr. Guth: Inflationary e-folds
 N_efolds = 2.0 * PI * PHI**5

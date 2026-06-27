@@ -17,13 +17,12 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
+from science_constants import PHI, PHI_INV4, PI, PLANCK_MASS_GEV
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
-PHI       = (1 + math.sqrt(5)) / 2   # Golden Ratio
-PHI_INV4  = PHI ** -4                 # ~0.14590
-PI        = math.pi
-m_P       = 1.2209e19                 # Planck Mass in GeV
+m_P       = PLANCK_MASS_GEV
 
 SEP = "=" * 72
 
@@ -117,7 +116,7 @@ def rebuttal_randall():
     lambda_0_factor = 1.022216
     m_H_pred = m_P * warp_factor * lambda_0_factor
     
-    v_obs = 246.22  # GeV
+    v_obs = HIGGS_VEV_GEV  # GeV
     v_pred = 2.0 * m_H_pred
     
     print()
