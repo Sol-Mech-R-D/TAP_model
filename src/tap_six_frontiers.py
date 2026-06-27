@@ -31,7 +31,12 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+
+# Solve the dynamic Dirac spectrum to obtain the VEV ratio
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 # -----------------------------------------------------------------------------
 # GLOBAL GEOMETRIC CONSTANTS
@@ -68,7 +73,7 @@ def sim_peptide_synthesis():
     
     k_c = 0.8
     k_h_std = 2.0
-    k_h_tap = k_h_std * np.exp(-PI * PHI**2) # Suppressed by boundary factor
+    k_h_tap = k_h_std * np.exp(-PI * PHI**2 * (1.0 - PHI_INV8 * v_ratio)) # Suppressed by boundary factor
     
     Y0 = [1.0] # Initial average length
     t_span = (0.0, 10.0)
@@ -108,7 +113,8 @@ def sim_microtubule_coherence():
     
     # Decoherence rates in fs^-1
     gamma_std = 0.05 # 1/20 fs
-    gamma_tap = gamma_std * PHI_INV8 # shielded by boundary thickness
+    tau_tap = 939.57 * v_ratio * (1.0 - PHI_INV8 * v_ratio)
+    gamma_tap = 1.0 / tau_tap
     
     rho12_std = np.exp(-gamma_std * t_fs)
     rho12_tap = np.exp(-gamma_tap * t_fs)
@@ -141,7 +147,7 @@ def sim_geodynamo_cooling():
     def core_cooling(t, T, use_tap=False):
         # Radioactive heat decays over time (half life ~ 1.5 Gyr)
         Q_rad = 600.0 * np.exp(-t / 1.5)
-        Q_tap = 450.0 * PHI_INV4 if use_tap else 0.0 # KK graviton annihilation heat
+        Q_tap = 450.0 * PHI_INV4 * v_ratio if use_tap else 0.0 # KK graviton annihilation heat
         
         dT = -cooling_coeff * (T - T_mantle) + Q_rad + Q_tap
         return [dT]
@@ -206,7 +212,7 @@ def sim_superconductivity():
     T_range = np.linspace(1.0, 150.0, 150)
     
     Tc_std = 25.0  # Kelvin
-    Tc_tap = Tc_std * (1.0 + PHI**8 * 0.09366) # Boosted by boundary mode coupling
+    Tc_tap = Tc_std * (1.0 + PHI**8 * 0.09366 * v_ratio) # Boosted by boundary mode coupling
     
     def gap(T, Tc):
         if T >= Tc:
@@ -243,7 +249,7 @@ def sim_mutations():
     
     # Mutation rates
     mut_std = 1.0e-5 * np.ones(100)
-    mut_tap = 1.0e-5 * np.exp(PHI_INV4 * stress)
+    mut_tap = 1.0e-5 * np.exp(PHI_INV4 * stress * v_ratio)
     
     val("Standard mutation rate at locus 50", mut_std[50])
     val("TAP mutation rate at locus 50", mut_tap[50])

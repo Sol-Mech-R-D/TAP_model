@@ -28,7 +28,12 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
 
-from science_constants import PHI, PI
+from science_constants import PHI, PI, HIGGS_VEV_GEV
+from tap_dirac_modes import solve_dirac_spectrum
+
+# Solve the dynamic Dirac spectrum to obtain the VEV ratio
+_, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
+v_ratio = (2.0 * m_H) / HIGGS_VEV_GEV
 
 # -----------------------------------------------------------------------------
 # GLOBAL GEOMETRIC CONSTANTS
@@ -78,7 +83,7 @@ def sim_muon_g2():
         # The extra dimensional boundary thickness phi^-8 introduces a conformal resonance
         # peaked near z=0.5 where virtual momentum splits evenly.
         g_z = np.sin(PI * z) * np.exp(-z / PHI)
-        return 2.0 * z + PHI_INV8 * g_z * C_0
+        return 2.0 * z + PHI_INV8 * g_z * C_0 * v_ratio
         
     I_std, _ = quad(integrand_std, 0.0, 1.0)
     I_tap, _ = quad(integrand_tap, 0.0, 1.0)
@@ -132,7 +137,7 @@ def sim_lithium_problem():
     Y_p = 0.75
     
     # Calibrated leak coefficient = 0.01738
-    leak_coeff = 0.01738
+    leak_coeff = 0.01738 * v_ratio
     
     def bbn_rates(t, Y, use_tap=False):
         He3, He4, Be7, Li7 = Y
@@ -216,7 +221,7 @@ def sim_proton_radius():
             if use_tap:
                 # Muon's 5D wave overlap creates an attractive potential modification near the origin
                 r_c = 0.85 # fm
-                V[i] = V[i] * (1.0 + PHI_INV8 * np.exp(-ri / r_c))
+                V[i] = V[i] * (1.0 + PHI_INV8 * np.exp(-ri / r_c) * v_ratio)
                 
         # Radial kinetic energy matrix tridiagonal representation (l=0)
         # H = - (hbar_c)^2 / (2 * mu) * d^2/dr^2 + V * hbar_c
@@ -279,7 +284,7 @@ def sim_cmb_quadrupole():
     # TAP power spectrum: damped at large scales (small k) due to boundary leakage horizon
     # Calibrated damping transition scale S_d = 150.0
     S_d = 150.0
-    P_k_tap = P_k_sm * np.exp(- (PI**2) * PHI_INV4 * np.exp(- k * D_rec / S_d))
+    P_k_tap = P_k_sm * np.exp(- (PI**2) * PHI_INV4 * np.exp(- k * D_rec / S_d) * v_ratio)
     
     # Spherical Bessel helper functions for l=2,3,4,5
     def j2(x):
