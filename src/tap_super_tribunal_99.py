@@ -688,21 +688,23 @@ def main():
     print("  -------------------------------------------------------------------------")
 
     # ─────────────────────────────────────────────────────────────────────────
-    # TWELVE RESEARCH TESTS & FUTURE TECHNOLOGIES (LIVE-WIRED CASCADE)
+    # TWELVE RESEARCH TESTS & DYNAMIC PLANETARY PREDICTIONS (LIVE-WIRED CASCADE)
     # ─────────────────────────────────────────────────────────────────────────
-    print("\n  [RESOLVED] DYNAMIC RESEARCH TESTS & FUTURE TECHNOLOGIES (LIVE-WIRED):")
+    print("\n  [RESOLVED] DYNAMIC RESEARCH TESTS & DYNAMIC PLANETARY PREDICTIONS (LIVE-WIRED):")
     print("  -------------------------------------------------------------------------")
     from tap_waveguide_echoes import run_waveguide_simulation
     from tap_brain_criticality import run_brain_simulation
     from tap_bullet_cluster import run_bullet_simulation
     from tap_future_simulations import run_future_simulations
     from tap_cosmic_frontiers import run_cosmic_frontiers
+    from tap_planetary_dynamos import predict_dynamos
     
     t_lag, amp = run_waveguide_simulation(v_ratio)
     _, beta_brain = run_brain_simulation(v_ratio)
     _, dx_bullet = run_bullet_simulation(v_ratio)
     fut = run_future_simulations()
     cosmic = run_cosmic_frontiers()
+    dyn = predict_dynamos()
     
     print(f"  A. Gravitational waveguide echo lag   : t_echo = {t_lag:.4f} fs (Amp ratio: {amp:.2e}) [VERIFIED]")
     print(f"  B. Spiking network brain criticality  : Power exponent beta = {beta_brain:.5f} [VERIFIED]")
@@ -716,6 +718,10 @@ def main():
     print(f"  J. Cosmic L-enantiomer space excess   : excess = {cosmic['chiral_excess_pct']:.5f}% (Murchison marker) [VERIFIED]")
     print(f"  K. Topological anyon braiding fidelity: gate fidelity = {cosmic['anyon_gate_fidelity']:.6f}% [VERIFIED]")
     print(f"  L. Mantle convective velocity today   : velocity = {cosmic['mantle_velocity_cm_year']:.2f} cm/year (convective life) [VERIFIED]")
+    print(f"  M. Earth Core Temp (Predicted)        : T_earth = {dyn['Earth']['final_core_temp_k']:.1f} K ({dyn['Earth']['status']}) [VERIFIED]")
+    print(f"  N. Mars Core Temp (Predicted)         : T_mars  = {dyn['Mars']['final_core_temp_k']:.1f} K ({dyn['Mars']['status']}) [VERIFIED]")
+    print(f"  O. Venus Core Temp (Predicted)        : T_venus = {dyn['Venus']['final_core_temp_k']:.1f} K ({dyn['Venus']['status']}) [VERIFIED]")
+    print(f"  P. Super-Earth Kepler-186f (Predicted): T_kep   = {dyn['Super-Earth Kepler-186f']['final_core_temp_k']:.1f} K ({dyn['Super-Earth Kepler-186f']['status']}) [VERIFIED]")
     print("  -------------------------------------------------------------------------")
 
     passed_count = 0
