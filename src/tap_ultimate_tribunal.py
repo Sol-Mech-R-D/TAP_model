@@ -355,7 +355,8 @@ def main():
     print(SEP)
     
     # Export results to JSON for verification
-    out_path = "C:/Users/DavidBaker/TAP_model/tap_ultimate_tribunal_results.json"
+    out_dir = os.path.dirname(os.path.abspath(__file__))
+    out_path = os.path.join(out_dir, "..", "tap_ultimate_tribunal_results.json")
     try:
         with open(out_path, "w") as f:
             json.dump(checks, f, indent=2)

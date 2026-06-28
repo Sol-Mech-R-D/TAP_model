@@ -13,6 +13,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
+import os
 import json
 import math
 import numpy as np
@@ -498,7 +499,8 @@ run_mutations()
 # =============================================================================
 # EXPORT DATA
 # =============================================================================
-out_path = "C:/Users/DavidBaker/TAP_model/tap_simulation_data.js"
+out_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.join(out_dir, "..", "tap_simulation_data.js")
 with open(out_path, "w") as f:
     f.write("const TAP_DATA = ")
     json.dump(DATA, f, indent=2)

@@ -1,0 +1,44 @@
+[
+  {
+    "month": "July 2026",
+    "number_of_crossings": 3,
+    "thermal_load_factor": 1.3,
+    "logistics_lag_factor": 1.2,
+    "hardware_purchase_index": 165.36
+  },
+  {
+    "month": "August 2026",
+    "number_of_crossings": 4,
+    "thermal_load_factor": 1.3,
+    "logistics_lag_factor": 1.4,
+    "hardware_purchase_index": 196.56
+  },
+  {
+    "month": "September 2026",
+    "number_of_crossings": 4,
+    "thermal_load_factor": 0.9,
+    "logistics_lag_factor": 1.0,
+    "hardware_purchase_index": 97.2
+  },
+  {
+    "month": "October 2026",
+    "number_of_crossings": 4,
+    "thermal_load_factor": 0.9,
+    "logistics_lag_factor": 0.7,
+    "hardware_purchase_index": 68.03999999999999
+  },
+  {
+    "month": "November 2026",
+    "number_of_crossings": 3,
+    "thermal_load_factor": 0.7,
+    "logistics_lag_factor": 0.9,
+    "hardware_purchase_index": 66.78
+  },
+  {
+    "month": "December 2026",
+    "number_of_crossings": 4,
+    "thermal_load_factor": 0.7,
+    "logistics_lag_factor": 0.9,
+    "hardware_purchase_index": 68.04
+  }
+]
