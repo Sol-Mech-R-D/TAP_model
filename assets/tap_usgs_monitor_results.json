@@ -4,6 +4,14 @@
   "cycle_period_days": 8.12133,
   "aligned_events": [
     {
+      "place": "10 km ESE of Ger\u00e1ki, Greece",
+      "magnitude": 4.1,
+      "time": "2026-06-28T22:08:28.460000+00:00",
+      "phase": 0.8741,
+      "node_distance": 0.1259,
+      "stress_coupling_pct": 0.18
+    },
+    {
       "place": "173 km S of Lembar, Indonesia",
       "magnitude": 5,
       "time": "2026-06-28T21:43:51.470000+00:00",
@@ -114,14 +122,6 @@
       "phase": 0.8436,
       "node_distance": 0.1564,
       "stress_coupling_pct": 0.01
-    },
-    {
-      "place": "128 km S of Sand Point, Alaska",
-      "magnitude": 3.6,
-      "time": "2026-06-28T15:04:06.524000+00:00",
-      "phase": 0.8378,
-      "node_distance": 0.1622,
-      "stress_coupling_pct": 0.0
     }
   ]
 }

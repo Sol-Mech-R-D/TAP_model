@@ -1,0 +1,26 @@
+{
+  "cosmic_beats": {
+    "Earth-Sun": {
+      "period_days": 31.0802,
+      "resonance_ratio": 1.2613
+    },
+    "Earth-Moon": {
+      "period_days": 7.8288,
+      "resonance_ratio": 2.0374
+    },
+    "Earth-Jupiter": {
+      "period_days": 347.0829,
+      "resonance_ratio": 0.9766
+    }
+  },
+  "phononic_shielding": {
+    "periodic_transmission": 0.011109,
+    "fibonacci_transmission": 0.0,
+    "shielding_factor_db": 92.86
+  },
+  "interpersonal_sync": {
+    "spikes_person_a": 0,
+    "spikes_person_b": 0,
+    "sync_percentage": 0.0
+  }
+}
