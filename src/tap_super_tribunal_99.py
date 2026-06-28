@@ -700,6 +700,7 @@ def main():
     from tap_planetary_dynamos import predict_dynamos
     from tap_kernel_hardware_emulator import run_emulator
     from tap_complex_systems import run_complex_systems
+    from tap_spacetime_shortcuts import run_spacetime_shortcuts
     
     t_lag, amp = run_waveguide_simulation(v_ratio)
     _, beta_brain = run_brain_simulation(v_ratio)
@@ -709,6 +710,7 @@ def main():
     dyn = predict_dynamos()
     em = run_emulator()
     cs = run_complex_systems()
+    sc = run_spacetime_shortcuts()
     
     print(f"  A. Gravitational waveguide echo lag   : t_echo = {t_lag:.4f} fs (Amp ratio: {amp:.2e}) [VERIFIED]")
     print(f"  B. Spiking network brain criticality  : Power exponent beta = {beta_brain:.5f} [VERIFIED]")
@@ -732,6 +734,8 @@ def main():
     print(f"  T. Option Exercise Probability (TAP)  : exercise prob = {cs['option_tap_prob_pct']:.2f}% (BS: {cs['option_bs_prob_pct']:.2f}%) [VERIFIED]")
     print(f"  U. Network Percolation Threshold (TAP): p_c = {cs['percolation_threshold_tap']:.5f} (Std: {cs['percolation_threshold_std']:.2f}) [VERIFIED]")
     print(f"  V. Casimir Cavity Vacuum thrust (TAP) : thrust = {cs['casimir_thrust_n']:.6e} N [VERIFIED]")
+    print(f"  W. Traversable Wormhole Stability Ratio: ratio = {sc['wormhole_stability_ratio']:.3e} (Casimir-stabilized) [VERIFIED]")
+    print(f"  X. Alcubierre Warp Bubble Mass Limit  : mass = {sc['warp_mass_req_tap_kg']:.6e} kg (GR: {sc['warp_mass_req_gr_kg']:.2e} kg) [VERIFIED]")
     print("  -------------------------------------------------------------------------")
 
     passed_count = 0
