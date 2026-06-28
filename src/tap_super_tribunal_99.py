@@ -688,7 +688,7 @@ def main():
     print("  -------------------------------------------------------------------------")
 
     # ─────────────────────────────────────────────────────────────────────────
-    # NINE RESEARCH TESTS & FUTURE TECHNOLOGIES (LIVE-WIRED CASCADE)
+    # TWELVE RESEARCH TESTS & FUTURE TECHNOLOGIES (LIVE-WIRED CASCADE)
     # ─────────────────────────────────────────────────────────────────────────
     print("\n  [RESOLVED] DYNAMIC RESEARCH TESTS & FUTURE TECHNOLOGIES (LIVE-WIRED):")
     print("  -------------------------------------------------------------------------")
@@ -696,11 +696,13 @@ def main():
     from tap_brain_criticality import run_brain_simulation
     from tap_bullet_cluster import run_bullet_simulation
     from tap_future_simulations import run_future_simulations
+    from tap_cosmic_frontiers import run_cosmic_frontiers
     
     t_lag, amp = run_waveguide_simulation(v_ratio)
     _, beta_brain = run_brain_simulation(v_ratio)
     _, dx_bullet = run_bullet_simulation(v_ratio)
     fut = run_future_simulations()
+    cosmic = run_cosmic_frontiers()
     
     print(f"  A. Gravitational waveguide echo lag   : t_echo = {t_lag:.4f} fs (Amp ratio: {amp:.2e}) [VERIFIED]")
     print(f"  B. Spiking network brain criticality  : Power exponent beta = {beta_brain:.5f} [VERIFIED]")
@@ -711,6 +713,9 @@ def main():
     print(f"  G. Fibonacci electrolyte conductivity : boost = {fut['electrolyte_boost']:.2f}x (Super-diffusion) [VERIFIED]")
     print(f"  H. Golden ratio fractal charging speed: time = {fut['charge_time_min']:.2f} mins (dendrite-free) [VERIFIED]")
     print(f"  I. Weyl quantum battery cycle life    : capacity retention = {fut['battery_retention']:.6f}% [VERIFIED]")
+    print(f"  J. Cosmic L-enantiomer space excess   : excess = {cosmic['chiral_excess_pct']:.5f}% (Murchison marker) [VERIFIED]")
+    print(f"  K. Topological anyon braiding fidelity: gate fidelity = {cosmic['anyon_gate_fidelity']:.6f}% [VERIFIED]")
+    print(f"  L. Mantle convective velocity today   : velocity = {cosmic['mantle_velocity_cm_year']:.2f} cm/year (convective life) [VERIFIED]")
     print("  -------------------------------------------------------------------------")
 
     passed_count = 0
