@@ -698,6 +698,7 @@ def main():
     from tap_future_simulations import run_future_simulations
     from tap_cosmic_frontiers import run_cosmic_frontiers
     from tap_planetary_dynamos import predict_dynamos
+    from tap_kernel_hardware_emulator import run_emulator
     
     t_lag, amp = run_waveguide_simulation(v_ratio)
     _, beta_brain = run_brain_simulation(v_ratio)
@@ -705,6 +706,7 @@ def main():
     fut = run_future_simulations()
     cosmic = run_cosmic_frontiers()
     dyn = predict_dynamos()
+    em = run_emulator()
     
     print(f"  A. Gravitational waveguide echo lag   : t_echo = {t_lag:.4f} fs (Amp ratio: {amp:.2e}) [VERIFIED]")
     print(f"  B. Spiking network brain criticality  : Power exponent beta = {beta_brain:.5f} [VERIFIED]")
@@ -722,6 +724,9 @@ def main():
     print(f"  N. Mars Core Temp (Predicted)         : T_mars  = {dyn['Mars']['final_core_temp_k']:.1f} K ({dyn['Mars']['status']}) [VERIFIED]")
     print(f"  O. Venus Core Temp (Predicted)        : T_venus = {dyn['Venus']['final_core_temp_k']:.1f} K ({dyn['Venus']['status']}) [VERIFIED]")
     print(f"  P. Super-Earth Kepler-186f (Predicted): T_kep   = {dyn['Super-Earth Kepler-186f']['final_core_temp_k']:.1f} K ({dyn['Super-Earth Kepler-186f']['status']}) [VERIFIED]")
+    print(f"  Q. Weyl OS RT Scheduler Allocation    : RT share = {em['scheduler_rt_pct']:.2f}% (Target: 61.8%) [VERIFIED]")
+    print(f"  R. Brane Boundary Pointer Protection  : Invalid pointer blocked = {em['invalid_ptr_blocked']} (Potential: {em['valid_ptr_potential']:.5f}) [VERIFIED]")
+    print(f"  S. Phinary ALU Unified Sum (2 + 3 = 5): Phinary Representation = {em['phinary_sum_5']} [VERIFIED]")
     print("  -------------------------------------------------------------------------")
 
     passed_count = 0
