@@ -1,0 +1,1831 @@
+{
+  "solar_rotation_days": 27.2753,
+  "solar_sub_breath_days": 6.438824906700013,
+  "predictions_365d": [
+    {
+      "day_from_solstice": 0,
+      "cme_stress_idx": 50.0,
+      "gic_hazard_idx": 72.5
+    },
+    {
+      "day_from_solstice": 1,
+      "cme_stress_idx": 76.6,
+      "gic_hazard_idx": 113.61
+    },
+    {
+      "day_from_solstice": 2,
+      "cme_stress_idx": 84.75,
+      "gic_hazard_idx": 128.35
+    },
+    {
+      "day_from_solstice": 3,
+      "cme_stress_idx": 71.78,
+      "gic_hazard_idx": 110.72
+    },
+    {
+      "day_from_solstice": 4,
+      "cme_stress_idx": 53.19,
+      "gic_hazard_idx": 83.26
+    },
+    {
+      "day_from_solstice": 5,
+      "cme_stress_idx": 48.79,
+      "gic_hazard_idx": 77.21
+    },
+    {
+      "day_from_solstice": 6,
+      "cme_stress_idx": 65.14,
+      "gic_hazard_idx": 103.73
+    },
+    {
+      "day_from_solstice": 7,
+      "cme_stress_idx": 89.54,
+      "gic_hazard_idx": 142.8
+    },
+    {
+      "day_from_solstice": 8,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 158.97
+    },
+    {
+      "day_from_solstice": 9,
+      "cme_stress_idx": 88.84,
+      "gic_hazard_idx": 140.11
+    },
+    {
+      "day_from_solstice": 10,
+      "cme_stress_idx": 61.91,
+      "gic_hazard_idx": 96.44
+    },
+    {
+      "day_from_solstice": 11,
+      "cme_stress_idx": 41.22,
+      "gic_hazard_idx": 63.19
+    },
+    {
+      "day_from_solstice": 12,
+      "cme_stress_idx": 41.53,
+      "gic_hazard_idx": 62.43
+    },
+    {
+      "day_from_solstice": 13,
+      "cme_stress_idx": 58.47,
+      "gic_hazard_idx": 86.02
+    },
+    {
+      "day_from_solstice": 14,
+      "cme_stress_idx": 72.58,
+      "gic_hazard_idx": 104.37
+    },
+    {
+      "day_from_solstice": 15,
+      "cme_stress_idx": 66.61,
+      "gic_hazard_idx": 93.6
+    },
+    {
+      "day_from_solstice": 16,
+      "cme_stress_idx": 40.98,
+      "gic_hazard_idx": 56.35
+    },
+    {
+      "day_from_solstice": 17,
+      "cme_stress_idx": 13.79,
+      "gic_hazard_idx": 18.59
+    },
+    {
+      "day_from_solstice": 18,
+      "cme_stress_idx": 5.13,
+      "gic_hazard_idx": 6.81
+    },
+    {
+      "day_from_solstice": 19,
+      "cme_stress_idx": 19.68,
+      "gic_hazard_idx": 25.84
+    },
+    {
+      "day_from_solstice": 20,
+      "cme_stress_idx": 42.6,
+      "gic_hazard_idx": 55.63
+    },
+    {
+      "day_from_solstice": 21,
+      "cme_stress_idx": 52.72,
+      "gic_hazard_idx": 68.85
+    },
+    {
+      "day_from_solstice": 22,
+      "cme_stress_idx": 41.15,
+      "gic_hazard_idx": 54.08
+    },
+    {
+      "day_from_solstice": 23,
+      "cme_stress_idx": 19.26,
+      "gic_hazard_idx": 25.59
+    },
+    {
+      "day_from_solstice": 24,
+      "cme_stress_idx": 8.6,
+      "gic_hazard_idx": 11.62
+    },
+    {
+      "day_from_solstice": 25,
+      "cme_stress_idx": 21.94,
+      "gic_hazard_idx": 30.23
+    },
+    {
+      "day_from_solstice": 26,
+      "cme_stress_idx": 51.75,
+      "gic_hazard_idx": 72.86
+    },
+    {
+      "day_from_solstice": 27,
+      "cme_stress_idx": 76.54,
+      "gic_hazard_idx": 110.28
+    },
+    {
+      "day_from_solstice": 28,
+      "cme_stress_idx": 79.54,
+      "gic_hazard_idx": 117.25
+    },
+    {
+      "day_from_solstice": 29,
+      "cme_stress_idx": 63.18,
+      "gic_hazard_idx": 95.15
+    },
+    {
+      "day_from_solstice": 30,
+      "cme_stress_idx": 46.78,
+      "gic_hazard_idx": 71.81
+    },
+    {
+      "day_from_solstice": 31,
+      "cme_stress_idx": 49.35,
+      "gic_hazard_idx": 76.97
+    },
+    {
+      "day_from_solstice": 32,
+      "cme_stress_idx": 72.59,
+      "gic_hazard_idx": 114.57
+    },
+    {
+      "day_from_solstice": 33,
+      "cme_stress_idx": 99.12,
+      "gic_hazard_idx": 157.63
+    },
+    {
+      "day_from_solstice": 34,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 159.5
+    },
+    {
+      "day_from_solstice": 35,
+      "cme_stress_idx": 91.24,
+      "gic_hazard_idx": 145.24
+    },
+    {
+      "day_from_solstice": 36,
+      "cme_stress_idx": 64.09,
+      "gic_hazard_idx": 101.35
+    },
+    {
+      "day_from_solstice": 37,
+      "cme_stress_idx": 48.48,
+      "gic_hazard_idx": 75.81
+    },
+    {
+      "day_from_solstice": 38,
+      "cme_stress_idx": 55.6,
+      "gic_hazard_idx": 85.63
+    },
+    {
+      "day_from_solstice": 39,
+      "cme_stress_idx": 75.73,
+      "gic_hazard_idx": 114.49
+    },
+    {
+      "day_from_solstice": 40,
+      "cme_stress_idx": 86.89,
+      "gic_hazard_idx": 128.62
+    },
+    {
+      "day_from_solstice": 41,
+      "cme_stress_idx": 74.41,
+      "gic_hazard_idx": 107.67
+    },
+    {
+      "day_from_solstice": 42,
+      "cme_stress_idx": 44.1,
+      "gic_hazard_idx": 62.35
+    },
+    {
+      "day_from_solstice": 43,
+      "cme_stress_idx": 17.5,
+      "gic_hazard_idx": 24.21
+    },
+    {
+      "day_from_solstice": 44,
+      "cme_stress_idx": 13.26,
+      "gic_hazard_idx": 17.97
+    },
+    {
+      "day_from_solstice": 45,
+      "cme_stress_idx": 30.9,
+      "gic_hazard_idx": 41.18
+    },
+    {
+      "day_from_solstice": 46,
+      "cme_stress_idx": 51.48,
+      "gic_hazard_idx": 67.76
+    },
+    {
+      "day_from_solstice": 47,
+      "cme_stress_idx": 54.34,
+      "gic_hazard_idx": 71.03
+    },
+    {
+      "day_from_solstice": 48,
+      "cme_stress_idx": 35.49,
+      "gic_hazard_idx": 46.33
+    },
+    {
+      "day_from_solstice": 49,
+      "cme_stress_idx": 11.22,
+      "gic_hazard_idx": 14.7
+    },
+    {
+      "day_from_solstice": 50,
+      "cme_stress_idx": 3.83,
+      "gic_hazard_idx": 5.08
+    },
+    {
+      "day_from_solstice": 51,
+      "cme_stress_idx": 22.03,
+      "gic_hazard_idx": 29.62
+    },
+    {
+      "day_from_solstice": 52,
+      "cme_stress_idx": 53.05,
+      "gic_hazard_idx": 72.66
+    },
+    {
+      "day_from_solstice": 53,
+      "cme_stress_idx": 73.71,
+      "gic_hazard_idx": 103.14
+    },
+    {
+      "day_from_solstice": 54,
+      "cme_stress_idx": 70.56,
+      "gic_hazard_idx": 101.02
+    },
+    {
+      "day_from_solstice": 55,
+      "cme_stress_idx": 51.53,
+      "gic_hazard_idx": 75.48
+    },
+    {
+      "day_from_solstice": 56,
+      "cme_stress_idx": 38.69,
+      "gic_hazard_idx": 57.94
+    },
+    {
+      "day_from_solstice": 57,
+      "cme_stress_idx": 48.64,
+      "gic_hazard_idx": 74.3
+    },
+    {
+      "day_from_solstice": 58,
+      "cme_stress_idx": 77.54,
+      "gic_hazard_idx": 120.46
+    },
+    {
+      "day_from_solstice": 59,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 157.39
+    },
+    {
+      "day_from_solstice": 60,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 158.78
+    },
+    {
+      "day_from_solstice": 61,
+      "cme_stress_idx": 89.01,
+      "gic_hazard_idx": 141.92
+    },
+    {
+      "day_from_solstice": 62,
+      "cme_stress_idx": 63.84,
+      "gic_hazard_idx": 101.73
+    },
+    {
+      "day_from_solstice": 63,
+      "cme_stress_idx": 55.14,
+      "gic_hazard_idx": 87.38
+    },
+    {
+      "day_from_solstice": 64,
+      "cme_stress_idx": 69.28,
+      "gic_hazard_idx": 108.71
+    },
+    {
+      "day_from_solstice": 65,
+      "cme_stress_idx": 91.41,
+      "gic_hazard_idx": 141.43
+    },
+    {
+      "day_from_solstice": 66,
+      "cme_stress_idx": 98.59,
+      "gic_hazard_idx": 149.87
+    },
+    {
+      "day_from_solstice": 67,
+      "cme_stress_idx": 80.16,
+      "gic_hazard_idx": 119.37
+    },
+    {
+      "day_from_solstice": 68,
+      "cme_stress_idx": 47.35,
+      "gic_hazard_idx": 68.96
+    },
+    {
+      "day_from_solstice": 69,
+      "cme_stress_idx": 23.74,
+      "gic_hazard_idx": 33.79
+    },
+    {
+      "day_from_solstice": 70,
+      "cme_stress_idx": 24.78,
+      "gic_hazard_idx": 34.47
+    },
+    {
+      "day_from_solstice": 71,
+      "cme_stress_idx": 44.48,
+      "gic_hazard_idx": 60.6
+    },
+    {
+      "day_from_solstice": 72,
+      "cme_stress_idx": 60.91,
+      "gic_hazard_idx": 81.52
+    },
+    {
+      "day_from_solstice": 73,
+      "cme_stress_idx": 55.73,
+      "gic_hazard_idx": 73.58
+    },
+    {
+      "day_from_solstice": 74,
+      "cme_stress_idx": 30.54,
+      "gic_hazard_idx": 39.98
+    },
+    {
+      "day_from_solstice": 75,
+      "cme_stress_idx": 5.65,
+      "gic_hazard_idx": 7.37
+    },
+    {
+      "day_from_solstice": 76,
+      "cme_stress_idx": 2.33,
+      "gic_hazard_idx": 3.05
+    },
+    {
+      "day_from_solstice": 77,
+      "cme_stress_idx": 24.17,
+      "gic_hazard_idx": 31.91
+    },
+    {
+      "day_from_solstice": 78,
+      "cme_stress_idx": 53.82,
+      "gic_hazard_idx": 72.02
+    },
+    {
+      "day_from_solstice": 79,
+      "cme_stress_idx": 68.18,
+      "gic_hazard_idx": 92.87
+    },
+    {
+      "day_from_solstice": 80,
+      "cme_stress_idx": 58.52,
+      "gic_hazard_idx": 81.39
+    },
+    {
+      "day_from_solstice": 81,
+      "cme_stress_idx": 38.01,
+      "gic_hazard_idx": 54.07
+    },
+    {
+      "day_from_solstice": 82,
+      "cme_stress_idx": 29.87,
+      "gic_hazard_idx": 43.49
+    },
+    {
+      "day_from_solstice": 83,
+      "cme_stress_idx": 46.7,
+      "gic_hazard_idx": 69.53
+    },
+    {
+      "day_from_solstice": 84,
+      "cme_stress_idx": 79.11,
+      "gic_hazard_idx": 120.22
+    },
+    {
+      "day_from_solstice": 85,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 154.68
+    },
+    {
+      "day_from_solstice": 86,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 156.89
+    },
+    {
+      "day_from_solstice": 87,
+      "cme_stress_idx": 81.76,
+      "gic_hazard_idx": 129.57
+    },
+    {
+      "day_from_solstice": 88,
+      "cme_stress_idx": 60.77,
+      "gic_hazard_idx": 96.83
+    },
+    {
+      "day_from_solstice": 89,
+      "cme_stress_idx": 60.11,
+      "gic_hazard_idx": 95.84
+    },
+    {
+      "day_from_solstice": 90,
+      "cme_stress_idx": 80.56,
+      "gic_hazard_idx": 127.92
+    },
+    {
+      "day_from_solstice": 91,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 157.42
+    },
+    {
+      "day_from_solstice": 92,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 155.38
+    },
+    {
+      "day_from_solstice": 93,
+      "cme_stress_idx": 82.63,
+      "gic_hazard_idx": 126.25
+    },
+    {
+      "day_from_solstice": 94,
+      "cme_stress_idx": 50.08,
+      "gic_hazard_idx": 75.02
+    },
+    {
+      "day_from_solstice": 95,
+      "cme_stress_idx": 31.7,
+      "gic_hazard_idx": 46.46
+    },
+    {
+      "day_from_solstice": 96,
+      "cme_stress_idx": 38.33,
+      "gic_hazard_idx": 54.89
+    },
+    {
+      "day_from_solstice": 97,
+      "cme_stress_idx": 58.68,
+      "gic_hazard_idx": 82.14
+    },
+    {
+      "day_from_solstice": 98,
+      "cme_stress_idx": 69.58,
+      "gic_hazard_idx": 95.33
+    },
+    {
+      "day_from_solstice": 99,
+      "cme_stress_idx": 56.59,
+      "gic_hazard_idx": 76.08
+    },
+    {
+      "day_from_solstice": 100,
+      "cme_stress_idx": 26.97,
+      "gic_hazard_idx": 35.73
+    },
+    {
+      "day_from_solstice": 101,
+      "cme_stress_idx": 3.51,
+      "gic_hazard_idx": 4.61
+    },
+    {
+      "day_from_solstice": 102,
+      "cme_stress_idx": 4.65,
+      "gic_hazard_idx": 6.06
+    },
+    {
+      "day_from_solstice": 103,
+      "cme_stress_idx": 28.37,
+      "gic_hazard_idx": 37.08
+    },
+    {
+      "day_from_solstice": 104,
+      "cme_stress_idx": 54.08,
+      "gic_hazard_idx": 71.19
+    },
+    {
+      "day_from_solstice": 105,
+      "cme_stress_idx": 60.68,
+      "gic_hazard_idx": 80.85
+    },
+    {
+      "day_from_solstice": 106,
+      "cme_stress_idx": 45.01,
+      "gic_hazard_idx": 60.99
+    },
+    {
+      "day_from_solstice": 107,
+      "cme_stress_idx": 24.51,
+      "gic_hazard_idx": 33.89
+    },
+    {
+      "day_from_solstice": 108,
+      "cme_stress_idx": 21.65,
+      "gic_hazard_idx": 30.6
+    },
+    {
+      "day_from_solstice": 109,
+      "cme_stress_idx": 43.94,
+      "gic_hazard_idx": 63.56
+    },
+    {
+      "day_from_solstice": 110,
+      "cme_stress_idx": 77.08,
+      "gic_hazard_idx": 114.07
+    },
+    {
+      "day_from_solstice": 111,
+      "cme_stress_idx": 97.3,
+      "gic_hazard_idx": 147.06
+    },
+    {
+      "day_from_solstice": 112,
+      "cme_stress_idx": 91.93,
+      "gic_hazard_idx": 141.55
+    },
+    {
+      "day_from_solstice": 113,
+      "cme_stress_idx": 70.27,
+      "gic_hazard_idx": 109.85
+    },
+    {
+      "day_from_solstice": 114,
+      "cme_stress_idx": 55.14,
+      "gic_hazard_idx": 87.18
+    },
+    {
+      "day_from_solstice": 115,
+      "cme_stress_idx": 62.61,
+      "gic_hazard_idx": 99.67
+    },
+    {
+      "day_from_solstice": 116,
+      "cme_stress_idx": 87.76,
+      "gic_hazard_idx": 139.97
+    },
+    {
+      "day_from_solstice": 117,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 159.05
+    },
+    {
+      "day_from_solstice": 118,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 157.87
+    },
+    {
+      "day_from_solstice": 119,
+      "cme_stress_idx": 81.16,
+      "gic_hazard_idx": 126.61
+    },
+    {
+      "day_from_solstice": 120,
+      "cme_stress_idx": 51.68,
+      "gic_hazard_idx": 79.35
+    },
+    {
+      "day_from_solstice": 121,
+      "cme_stress_idx": 40.16,
+      "gic_hazard_idx": 60.5
+    },
+    {
+      "day_from_solstice": 122,
+      "cme_stress_idx": 51.96,
+      "gic_hazard_idx": 76.62
+    },
+    {
+      "day_from_solstice": 123,
+      "cme_stress_idx": 71.48,
+      "gic_hazard_idx": 103.03
+    },
+    {
+      "day_from_solstice": 124,
+      "cme_stress_idx": 76.18,
+      "gic_hazard_idx": 107.29
+    },
+    {
+      "day_from_solstice": 125,
+      "cme_stress_idx": 56.65,
+      "gic_hazard_idx": 78.06
+    },
+    {
+      "day_from_solstice": 126,
+      "cme_stress_idx": 25.18,
+      "gic_hazard_idx": 34.01
+    },
+    {
+      "day_from_solstice": 127,
+      "cme_stress_idx": 5.09,
+      "gic_hazard_idx": 6.76
+    },
+    {
+      "day_from_solstice": 128,
+      "cme_stress_idx": 10.52,
+      "gic_hazard_idx": 13.82
+    },
+    {
+      "day_from_solstice": 129,
+      "cme_stress_idx": 34.18,
+      "gic_hazard_idx": 44.64
+    },
+    {
+      "day_from_solstice": 130,
+      "cme_stress_idx": 53.93,
+      "gic_hazard_idx": 70.42
+    },
+    {
+      "day_from_solstice": 131,
+      "cme_stress_idx": 52.34,
+      "gic_hazard_idx": 68.72
+    },
+    {
+      "day_from_solstice": 132,
+      "cme_stress_idx": 31.96,
+      "gic_hazard_idx": 42.43
+    },
+    {
+      "day_from_solstice": 133,
+      "cme_stress_idx": 12.98,
+      "gic_hazard_idx": 17.5
+    },
+    {
+      "day_from_solstice": 134,
+      "cme_stress_idx": 15.31,
+      "gic_hazard_idx": 21.05
+    },
+    {
+      "day_from_solstice": 135,
+      "cme_stress_idx": 40.93,
+      "gic_hazard_idx": 57.5
+    },
+    {
+      "day_from_solstice": 136,
+      "cme_stress_idx": 71.99,
+      "gic_hazard_idx": 103.49
+    },
+    {
+      "day_from_solstice": 137,
+      "cme_stress_idx": 86.28,
+      "gic_hazard_idx": 126.9
+    },
+    {
+      "day_from_solstice": 138,
+      "cme_stress_idx": 76.46,
+      "gic_hazard_idx": 114.91
+    },
+    {
+      "day_from_solstice": 139,
+      "cme_stress_idx": 56.19,
+      "gic_hazard_idx": 86.1
+    },
+    {
+      "day_from_solstice": 140,
+      "cme_stress_idx": 47.8,
+      "gic_hazard_idx": 74.45
+    },
+    {
+      "day_from_solstice": 141,
+      "cme_stress_idx": 62.43,
+      "gic_hazard_idx": 98.44
+    },
+    {
+      "day_from_solstice": 142,
+      "cme_stress_idx": 90.06,
+      "gic_hazard_idx": 143.16
+    },
+    {
+      "day_from_solstice": 143,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 159.49
+    },
+    {
+      "day_from_solstice": 144,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 159.25
+    },
+    {
+      "day_from_solstice": 145,
+      "cme_stress_idx": 75.93,
+      "gic_hazard_idx": 120.18
+    },
+    {
+      "day_from_solstice": 146,
+      "cme_stress_idx": 51.79,
+      "gic_hazard_idx": 81.09
+    },
+    {
+      "day_from_solstice": 147,
+      "cme_stress_idx": 47.81,
+      "gic_hazard_idx": 73.76
+    },
+    {
+      "day_from_solstice": 148,
+      "cme_stress_idx": 63.75,
+      "gic_hazard_idx": 96.57
+    },
+    {
+      "day_from_solstice": 149,
+      "cme_stress_idx": 81.13,
+      "gic_hazard_idx": 120.36
+    },
+    {
+      "day_from_solstice": 150,
+      "cme_stress_idx": 79.79,
+      "gic_hazard_idx": 115.73
+    },
+    {
+      "day_from_solstice": 151,
+      "cme_stress_idx": 55.79,
+      "gic_hazard_idx": 79.08
+    },
+    {
+      "day_from_solstice": 152,
+      "cme_stress_idx": 25.13,
+      "gic_hazard_idx": 34.83
+    },
+    {
+      "day_from_solstice": 153,
+      "cme_stress_idx": 9.86,
+      "gic_hazard_idx": 13.38
+    },
+    {
+      "day_from_solstice": 154,
+      "cme_stress_idx": 18.96,
+      "gic_hazard_idx": 25.31
+    },
+    {
+      "day_from_solstice": 155,
+      "cme_stress_idx": 40.78,
+      "gic_hazard_idx": 53.73
+    },
+    {
+      "day_from_solstice": 156,
+      "cme_stress_idx": 53.46,
+      "gic_hazard_idx": 69.91
+    },
+    {
+      "day_from_solstice": 157,
+      "cme_stress_idx": 44.35,
+      "gic_hazard_idx": 57.88
+    },
+    {
+      "day_from_solstice": 158,
+      "cme_stress_idx": 21.08,
+      "gic_hazard_idx": 27.62
+    },
+    {
+      "day_from_solstice": 159,
+      "cme_stress_idx": 4.85,
+      "gic_hazard_idx": 6.41
+    },
+    {
+      "day_from_solstice": 160,
+      "cme_stress_idx": 11.68,
+      "gic_hazard_idx": 15.68
+    },
+    {
+      "day_from_solstice": 161,
+      "cme_stress_idx": 38.31,
+      "gic_hazard_idx": 52.36
+    },
+    {
+      "day_from_solstice": 162,
+      "cme_stress_idx": 64.95,
+      "gic_hazard_idx": 90.67
+    },
+    {
+      "day_from_solstice": 163,
+      "cme_stress_idx": 72.54,
+      "gic_hazard_idx": 103.61
+    },
+    {
+      "day_from_solstice": 164,
+      "cme_stress_idx": 59.21,
+      "gic_hazard_idx": 86.55
+    },
+    {
+      "day_from_solstice": 165,
+      "cme_stress_idx": 41.61,
+      "gic_hazard_idx": 62.18
+    },
+    {
+      "day_from_solstice": 166,
+      "cme_stress_idx": 39.93,
+      "gic_hazard_idx": 60.88
+    },
+    {
+      "day_from_solstice": 167,
+      "cme_stress_idx": 59.94,
+      "gic_hazard_idx": 92.97
+    },
+    {
+      "day_from_solstice": 168,
+      "cme_stress_idx": 87.76,
+      "gic_hazard_idx": 137.97
+    },
+    {
+      "day_from_solstice": 169,
+      "cme_stress_idx": 100.0,
+      "gic_hazard_idx": 158.68
+    },
+    {
+      "day_from_solstice": 170,
+      "cme_stress_idx": 92.06,
+      "gic_hazard_idx": 146.75
+    },
+    {
+      "day_from_solstice": 171,
+      "cme_stress_idx": 67.87,
+      "gic_hazard_idx": 108.18
+    },
+    {
+      "day_from_solstice": 172,
+      "cme_stress_idx": 50.44,
+      "gic_hazard_idx": 80.01
+    },
+    {
+      "day_from_solstice": 173,
+      "cme_stress_idx": 53.73,
+      "gic_hazard_idx": 84.41
+    },
+    {
+      "day_from_solstice": 174,
+      "cme_stress_idx": 72.4,
+      "gic_hazard_idx": 112.19
+    },
+    {
+      "day_from_solstice": 175,
+      "cme_stress_idx": 86.75,
+      "gic_hazard_idx": 132.12
+    },
+    {
+      "day_from_solstice": 176,
+      "cme_stress_idx": 80.21,
+      "gic_hazard_idx": 119.71
+    },
+    {
+      "day_from_solstice": 177,
+      "cme_stress_idx": 54.07,
+      "gic_hazard_idx": 78.92
+    },
+    {
+      "day_from_solstice": 178,
+      "cme_stress_idx": 26.5,
+      "gic_hazard_idx": 37.79
+    },
+    {
+      "day_from_solstice": 179,
+      "cme_stress_idx": 16.78,
+      "gic_hazard_idx": 23.4
+    },
+    {
+      "day_from_solstice": 180,
+      "cme_stress_idx": 28.66,
+      "gic_hazard_idx": 39.13
+    },
+    {
+      "day_from_solstice": 181,
+      "cme_stress_idx": 47.35,
+      "gic_hazard_idx": 63.48
+    },
+    {
+      "day_from_solstice": 182,
+      "cme_stress_idx": 52.85,
+      "gic_hazard_idx": 69.85
+    },
+    {
+      "day_from_solstice": 183,
+      "cme_stress_idx": 37.63,
+      "gic_hazard_idx": 49.29
+    },
+    {
+      "day_from_solstice": 184,
+      "cme_stress_idx": 13.38,
+      "gic_hazard_idx": 17.46
+    },
+    {
+      "day_from_solstice": 185,
+      "cme_stress_idx": 0.68,
+      "gic_hazard_idx": 0.89
+    },
+    {
+      "day_from_solstice": 186,
+      "cme_stress_idx": 10.98,
+      "gic_hazard_idx": 14.47
+    },
+    {
+      "day_from_solstice": 187,
+      "cme_stress_idx": 36.55,
+      "gic_hazard_idx": 48.83
+    },
+    {
+      "day_from_solstice": 188,
+      "cme_stress_idx": 57.28,
+      "gic_hazard_idx": 77.87
+    },
+    {
+      "day_from_solstice": 189,
+      "cme_stress_idx": 58.25,
+      "gic_hazard_idx": 80.83
+    },
+    {
+      "day_from_solstice": 190,
+      "cme_stress_idx": 42.57,
+      "gic_hazard_idx": 60.42
+    },
+    {
+      "day_from_solstice": 191,
+      "cme_stress_idx": 28.39,
+      "gic_hazard_idx": 41.24
+    },
+    {
+      "day_from_solstice": 192,
+      "cme_stress_idx": 32.65,
+      "gic_hazard_idx": 48.5
+    },
+    {
+      "day_from_solstice": 193,
+      "cme_stress_idx": 56.0,
+      "gic_hazard_idx": 84.93
+    },
+    {
+      "day_from_solstice": 194,
+      "cme_stress_idx": 82.05,
+      "gic_hazard_idx": 126.71
+    },
+    {
+      "day_from_solstice": 195,
+      "cme_stress_idx": 91.65,
+      "gic_hazard_idx": 143.6
+    },
+    {
+      "day_from_solstice": 196,
+      "cme_stress_idx": 79.43,
+      "gic_hazard_idx": 125.76
+    },
+    {
+      "day_from_solstice": 197,
+      "cme_stress_idx": 58.34,
+      "gic_hazard_idx": 92.92
+    },
+    {
+      "day_from_solstice": 198,
+      "cme_stress_idx": 48.05,
+      "gic_hazard_idx": 76.63
+    },
+    {
+      "day_from_solstice": 199,
+      "cme_stress_idx": 57.64,
+      "gic_hazard_idx": 91.59
+    },
+    {
+      "day_from_solstice": 200,
+      "cme_stress_idx": 77.65,
+      "gic_hazard_idx": 122.37
+    },
+    {
+      "day_from_solstice": 201,
+      "cme_stress_idx": 88.55,
+      "gic_hazard_idx": 137.8
+    },
+    {
+      "day_from_solstice": 202,
+      "cme_stress_idx": 78.0,
+      "gic_hazard_idx": 119.41
+    },
+    {
+      "day_from_solstice": 203,
+      "cme_stress_idx": 51.79,
+      "gic_hazard_idx": 77.74
+    },
+    {
+      "day_from_solstice": 204,
+      "cme_stress_idx": 28.84,
+      "gic_hazard_idx": 42.36
+    },
+    {
+      "day_from_solstice": 205,
+      "cme_stress_idx": 24.79,
+      "gic_hazard_idx": 35.59
+    },
+    {
+      "day_from_solstice": 206,
+      "cme_stress_idx": 38.52,
+      "gic_hazard_idx": 54.04
+    },
+    {
+      "day_from_solstice": 207,
+      "cme_stress_idx": 53.43,
+      "gic_hazard_idx": 73.35
+    },
+    {
+      "day_from_solstice": 208,
+      "cme_stress_idx": 52.35,
+      "gic_hazard_idx": 70.51
+    },
+    {
+      "day_from_solstice": 209,
+      "cme_stress_idx": 32.75,
+      "gic_hazard_idx": 43.44
+    },
+    {
+      "day_from_solstice": 210,
+      "cme_stress_idx": 9.12,
+      "gic_hazard_idx": 11.97
+    },
+    {
+      "day_from_solstice": 211,
+      "cme_stress_idx": 0.27,
+      "gic_hazard_idx": 0.36
+    },
+    {
+      "day_from_solstice": 212,
+      "cme_stress_idx": 12.95,
+      "gic_hazard_idx": 16.92
+    },
+    {
+      "day_from_solstice": 213,
+      "cme_stress_idx": 36.01,
+      "gic_hazard_idx": 47.35
+    },
+    {
+      "day_from_solstice": 214,
+      "cme_stress_idx": 50.24,
+      "gic_hazard_idx": 66.84
+    },
+    {
+      "day_from_solstice": 215,
+      "cme_stress_idx": 45.2,
+      "gic_hazard_idx": 61.13
+    },
+    {
+      "day_from_solstice": 216,
+      "cme_stress_idx": 28.22,
+      "gic_hazard_idx": 38.94
+    },
+    {
+      "day_from_solstice": 217,
+      "cme_stress_idx": 17.73,
+      "gic_hazard_idx": 25.01
+    },
+    {
+      "day_from_solstice": 218,
+      "cme_stress_idx": 26.84,
+      "gic_hazard_idx": 38.74
+    },
+    {
+      "day_from_solstice": 219,
+      "cme_stress_idx": 51.69,
+      "gic_hazard_idx": 76.32
+    },
+    {
+      "day_from_solstice": 220,
+      "cme_stress_idx": 74.64,
+      "gic_hazard_idx": 112.58
+    },
+    {
+      "day_from_solstice": 221,
+      "cme_stress_idx": 79.61,
+      "gic_hazard_idx": 122.37
+    },
+    {
+      "day_from_solstice": 222,
+      "cme_stress_idx": 65.94,
+      "gic_hazard_idx": 102.95
+    },
+    {
+      "day_from_solstice": 223,
+      "cme_stress_idx": 48.71,
+      "gic_hazard_idx": 76.94
+    },
+    {
+      "day_from_solstice": 224,
+      "cme_stress_idx": 45.29,
+      "gic_hazard_idx": 72.05
+    },
+    {
+      "day_from_solstice": 225,
+      "cme_stress_idx": 59.97,
+      "gic_hazard_idx": 95.65
+    },
+    {
+      "day_from_solstice": 226,
+      "cme_stress_idx": 80.19,
+      "gic_hazard_idx": 127.61
+    },
+    {
+      "day_from_solstice": 227,
+      "cme_stress_idx": 87.61,
+      "gic_hazard_idx": 138.44
+    },
+    {
+      "day_from_solstice": 228,
+      "cme_stress_idx": 74.22,
+      "gic_hazard_idx": 115.95
+    },
+    {
+      "day_from_solstice": 229,
+      "cme_stress_idx": 49.45,
+      "gic_hazard_idx": 76.06
+    },
+    {
+      "day_from_solstice": 230,
+      "cme_stress_idx": 31.91,
+      "gic_hazard_idx": 48.17
+    },
+    {
+      "day_from_solstice": 231,
+      "cme_stress_idx": 33.24,
+      "gic_hazard_idx": 49.12
+    },
+    {
+      "day_from_solstice": 232,
+      "cme_stress_idx": 48.07,
+      "gic_hazard_idx": 69.44
+    },
+    {
+      "day_from_solstice": 233,
+      "cme_stress_idx": 59.06,
+      "gic_hazard_idx": 83.38
+    },
+    {
+      "day_from_solstice": 234,
+      "cme_stress_idx": 52.35,
+      "gic_hazard_idx": 72.28
+    },
+    {
+      "day_from_solstice": 235,
+      "cme_stress_idx": 29.92,
+      "gic_hazard_idx": 40.5
+    },
+    {
+      "day_from_solstice": 236,
+      "cme_stress_idx": 8.03,
+      "gic_hazard_idx": 10.68
+    },
+    {
+      "day_from_solstice": 237,
+      "cme_stress_idx": 3.04,
+      "gic_hazard_idx": 4.0
+    },
+    {
+      "day_from_solstice": 238,
+      "cme_stress_idx": 17.24,
+      "gic_hazard_idx": 22.53
+    },
+    {
+      "day_from_solstice": 239,
+      "cme_stress_idx": 36.97,
+      "gic_hazard_idx": 48.26
+    },
+    {
+      "day_from_solstice": 240,
+      "cme_stress_idx": 44.71,
+      "gic_hazard_idx": 58.65
+    },
+    {
+      "day_from_solstice": 241,
+      "cme_stress_idx": 34.47,
+      "gic_hazard_idx": 45.69
+    },
+    {
+      "day_from_solstice": 242,
+      "cme_stress_idx": 16.98,
+      "gic_hazard_idx": 22.85
+    },
+    {
+      "day_from_solstice": 243,
+      "cme_stress_idx": 10.09,
+      "gic_hazard_idx": 13.84
+    },
+    {
+      "day_from_solstice": 244,
+      "cme_stress_idx": 23.0,
+      "gic_hazard_idx": 32.24
+    },
+    {
+      "day_from_solstice": 245,
+      "cme_stress_idx": 47.99,
+      "gic_hazard_idx": 68.82
+    },
+    {
+      "day_from_solstice": 246,
+      "cme_stress_idx": 67.07,
+      "gic_hazard_idx": 98.42
+    },
+    {
+      "day_from_solstice": 247,
+      "cme_stress_idx": 67.6,
+      "gic_hazard_idx": 101.39
+    },
+    {
+      "day_from_solstice": 248,
+      "cme_stress_idx": 53.11,
+      "gic_hazard_idx": 81.24
+    },
+    {
+      "day_from_solstice": 249,
+      "cme_stress_idx": 39.98,
+      "gic_hazard_idx": 62.18
+    },
+    {
+      "day_from_solstice": 250,
+      "cme_stress_idx": 42.84,
+      "gic_hazard_idx": 67.48
+    },
+    {
+      "day_from_solstice": 251,
+      "cme_stress_idx": 61.54,
+      "gic_hazard_idx": 97.75
+    },
+    {
+      "day_from_solstice": 252,
+      "cme_stress_idx": 81.22,
+      "gic_hazard_idx": 129.51
+    },
+    {
+      "day_from_solstice": 253,
+      "cme_stress_idx": 85.28,
+      "gic_hazard_idx": 135.87
+    },
+    {
+      "day_from_solstice": 254,
+      "cme_stress_idx": 69.95,
+      "gic_hazard_idx": 110.8
+    },
+    {
+      "day_from_solstice": 255,
+      "cme_stress_idx": 47.54,
+      "gic_hazard_idx": 74.54
+    },
+    {
+      "day_from_solstice": 256,
+      "cme_stress_idx": 35.71,
+      "gic_hazard_idx": 55.19
+    },
+    {
+      "day_from_solstice": 257,
+      "cme_stress_idx": 42.03,
+      "gic_hazard_idx": 63.8
+    },
+    {
+      "day_from_solstice": 258,
+      "cme_stress_idx": 57.52,
+      "gic_hazard_idx": 85.52
+    },
+    {
+      "day_from_solstice": 259,
+      "cme_stress_idx": 64.72,
+      "gic_hazard_idx": 94.09
+    },
+    {
+      "day_from_solstice": 260,
+      "cme_stress_idx": 53.26,
+      "gic_hazard_idx": 75.66
+    },
+    {
+      "day_from_solstice": 261,
+      "cme_stress_idx": 29.14,
+      "gic_hazard_idx": 40.48
+    },
+    {
+      "day_from_solstice": 262,
+      "cme_stress_idx": 9.69,
+      "gic_hazard_idx": 13.18
+    },
+    {
+      "day_from_solstice": 263,
+      "cme_stress_idx": 8.49,
+      "gic_hazard_idx": 11.34
+    },
+    {
+      "day_from_solstice": 264,
+      "cme_stress_idx": 23.67,
+      "gic_hazard_idx": 31.22
+    },
+    {
+      "day_from_solstice": 265,
+      "cme_stress_idx": 39.7,
+      "gic_hazard_idx": 51.95
+    },
+    {
+      "day_from_solstice": 266,
+      "cme_stress_idx": 41.18,
+      "gic_hazard_idx": 53.74
+    },
+    {
+      "day_from_solstice": 267,
+      "cme_stress_idx": 26.4,
+      "gic_hazard_idx": 34.56
+    },
+    {
+      "day_from_solstice": 268,
+      "cme_stress_idx": 8.87,
+      "gic_hazard_idx": 11.72
+    },
+    {
+      "day_from_solstice": 269,
+      "cme_stress_idx": 5.44,
+      "gic_hazard_idx": 7.28
+    },
+    {
+      "day_from_solstice": 270,
+      "cme_stress_idx": 21.35,
+      "gic_hazard_idx": 29.12
+    },
+    {
+      "day_from_solstice": 271,
+      "cme_stress_idx": 45.59,
+      "gic_hazard_idx": 63.5
+    },
+    {
+      "day_from_solstice": 272,
+      "cme_stress_idx": 60.36,
+      "gic_hazard_idx": 86.01
+    },
+    {
+      "day_from_solstice": 273,
+      "cme_stress_idx": 56.58,
+      "gic_hazard_idx": 82.5
+    },
+    {
+      "day_from_solstice": 274,
+      "cme_stress_idx": 41.6,
+      "gic_hazard_idx": 62.04
+    },
+    {
+      "day_from_solstice": 275,
+      "cme_stress_idx": 32.6,
+      "gic_hazard_idx": 49.61
+    },
+    {
+      "day_from_solstice": 276,
+      "cme_stress_idx": 41.21,
+      "gic_hazard_idx": 63.82
+    },
+    {
+      "day_from_solstice": 277,
+      "cme_stress_idx": 63.15,
+      "gic_hazard_idx": 99.16
+    },
+    {
+      "day_from_solstice": 278,
+      "cme_stress_idx": 81.77,
+      "gic_hazard_idx": 129.65
+    },
+    {
+      "day_from_solstice": 279,
+      "cme_stress_idx": 82.58,
+      "gic_hazard_idx": 131.61
+    },
+    {
+      "day_from_solstice": 280,
+      "cme_stress_idx": 65.86,
+      "gic_hazard_idx": 105.01
+    },
+    {
+      "day_from_solstice": 281,
+      "cme_stress_idx": 46.39,
+      "gic_hazard_idx": 73.63
+    },
+    {
+      "day_from_solstice": 282,
+      "cme_stress_idx": 40.43,
+      "gic_hazard_idx": 63.6
+    },
+    {
+      "day_from_solstice": 283,
+      "cme_stress_idx": 51.52,
+      "gic_hazard_idx": 79.96
+    },
+    {
+      "day_from_solstice": 284,
+      "cme_stress_idx": 67.39,
+      "gic_hazard_idx": 102.83
+    },
+    {
+      "day_from_solstice": 285,
+      "cme_stress_idx": 70.93,
+      "gic_hazard_idx": 106.09
+    },
+    {
+      "day_from_solstice": 286,
+      "cme_stress_idx": 55.34,
+      "gic_hazard_idx": 80.97
+    },
+    {
+      "day_from_solstice": 287,
+      "cme_stress_idx": 30.35,
+      "gic_hazard_idx": 43.39
+    },
+    {
+      "day_from_solstice": 288,
+      "cme_stress_idx": 13.88,
+      "gic_hazard_idx": 19.39
+    },
+    {
+      "day_from_solstice": 289,
+      "cme_stress_idx": 16.5,
+      "gic_hazard_idx": 22.57
+    },
+    {
+      "day_from_solstice": 290,
+      "cme_stress_idx": 32.35,
+      "gic_hazard_idx": 43.44
+    },
+    {
+      "day_from_solstice": 291,
+      "cme_stress_idx": 44.45,
+      "gic_hazard_idx": 58.83
+    },
+    {
+      "day_from_solstice": 292,
+      "cme_stress_idx": 39.78,
+      "gic_hazard_idx": 52.14
+    },
+    {
+      "day_from_solstice": 293,
+      "cme_stress_idx": 20.87,
+      "gic_hazard_idx": 27.24
+    },
+    {
+      "day_from_solstice": 294,
+      "cme_stress_idx": 3.68,
+      "gic_hazard_idx": 4.81
+    },
+    {
+      "day_from_solstice": 295,
+      "cme_stress_idx": 3.63,
+      "gic_hazard_idx": 4.78
+    },
+    {
+      "day_from_solstice": 296,
+      "cme_stress_idx": 22.03,
+      "gic_hazard_idx": 29.38
+    },
+    {
+      "day_from_solstice": 297,
+      "cme_stress_idx": 44.81,
+      "gic_hazard_idx": 60.8
+    },
+    {
+      "day_from_solstice": 298,
+      "cme_stress_idx": 54.8,
+      "gic_hazard_idx": 75.88
+    },
+    {
+      "day_from_solstice": 299,
+      "cme_stress_idx": 46.64,
+      "gic_hazard_idx": 66.04
+    },
+    {
+      "day_from_solstice": 300,
+      "cme_stress_idx": 31.38,
+      "gic_hazard_idx": 45.47
+    },
+    {
+      "day_from_solstice": 301,
+      "cme_stress_idx": 26.57,
+      "gic_hazard_idx": 39.38
+    },
+    {
+      "day_from_solstice": 302,
+      "cme_stress_idx": 40.62,
+      "gic_hazard_idx": 61.49
+    },
+    {
+      "day_from_solstice": 303,
+      "cme_stress_idx": 65.19,
+      "gic_hazard_idx": 100.5
+    },
+    {
+      "day_from_solstice": 304,
+      "cme_stress_idx": 82.22,
+      "gic_hazard_idx": 128.67
+    },
+    {
+      "day_from_solstice": 305,
+      "cme_stress_idx": 79.67,
+      "gic_hazard_idx": 126.05
+    },
+    {
+      "day_from_solstice": 306,
+      "cme_stress_idx": 61.95,
+      "gic_hazard_idx": 98.64
+    },
+    {
+      "day_from_solstice": 307,
+      "cme_stress_idx": 45.96,
+      "gic_hazard_idx": 73.3
+    },
+    {
+      "day_from_solstice": 308,
+      "cme_stress_idx": 46.2,
+      "gic_hazard_idx": 73.45
+    },
+    {
+      "day_from_solstice": 309,
+      "cme_stress_idx": 61.97,
+      "gic_hazard_idx": 97.77
+    },
+    {
+      "day_from_solstice": 310,
+      "cme_stress_idx": 77.98,
+      "gic_hazard_idx": 121.53
+    },
+    {
+      "day_from_solstice": 311,
+      "cme_stress_idx": 77.81,
+      "gic_hazard_idx": 119.33
+    },
+    {
+      "day_from_solstice": 312,
+      "cme_stress_idx": 58.52,
+      "gic_hazard_idx": 88.03
+    },
+    {
+      "day_from_solstice": 313,
+      "cme_stress_idx": 33.41,
+      "gic_hazard_idx": 49.19
+    },
+    {
+      "day_from_solstice": 314,
+      "cme_stress_idx": 20.6,
+      "gic_hazard_idx": 29.64
+    },
+    {
+      "day_from_solstice": 315,
+      "cme_stress_idx": 27.26,
+      "gic_hazard_idx": 38.33
+    },
+    {
+      "day_from_solstice": 316,
+      "cme_stress_idx": 43.52,
+      "gic_hazard_idx": 59.87
+    },
+    {
+      "day_from_solstice": 317,
+      "cme_stress_idx": 51.29,
+      "gic_hazard_idx": 69.21
+    },
+    {
+      "day_from_solstice": 318,
+      "cme_stress_idx": 40.39,
+      "gic_hazard_idx": 53.64
+    },
+    {
+      "day_from_solstice": 319,
+      "cme_stress_idx": 17.69,
+      "gic_hazard_idx": 23.23
+    },
+    {
+      "day_from_solstice": 320,
+      "cme_stress_idx": 1.3,
+      "gic_hazard_idx": 1.7
+    },
+    {
+      "day_from_solstice": 321,
+      "cme_stress_idx": 4.77,
+      "gic_hazard_idx": 6.24
+    },
+    {
+      "day_from_solstice": 322,
+      "cme_stress_idx": 25.18,
+      "gic_hazard_idx": 33.08
+    },
+    {
+      "day_from_solstice": 323,
+      "cme_stress_idx": 45.65,
+      "gic_hazard_idx": 60.66
+    },
+    {
+      "day_from_solstice": 324,
+      "cme_stress_idx": 50.13,
+      "gic_hazard_idx": 67.68
+    },
+    {
+      "day_from_solstice": 325,
+      "cme_stress_idx": 37.41,
+      "gic_hazard_idx": 51.5
+    },
+    {
+      "day_from_solstice": 326,
+      "cme_stress_idx": 22.12,
+      "gic_hazard_idx": 31.13
+    },
+    {
+      "day_from_solstice": 327,
+      "cme_stress_idx": 21.75,
+      "gic_hazard_idx": 31.31
+    },
+    {
+      "day_from_solstice": 328,
+      "cme_stress_idx": 41.01,
+      "gic_hazard_idx": 60.42
+    },
+    {
+      "day_from_solstice": 329,
+      "cme_stress_idx": 67.46,
+      "gic_hazard_idx": 101.54
+    },
+    {
+      "day_from_solstice": 330,
+      "cme_stress_idx": 82.1,
+      "gic_hazard_idx": 125.98
+    },
+    {
+      "day_from_solstice": 331,
+      "cme_stress_idx": 75.91,
+      "gic_hazard_idx": 118.36
+    },
+    {
+      "day_from_solstice": 332,
+      "cme_stress_idx": 57.61,
+      "gic_hazard_idx": 90.9
+    },
+    {
+      "day_from_solstice": 333,
+      "cme_stress_idx": 45.87,
+      "gic_hazard_idx": 72.94
+    },
+    {
+      "day_from_solstice": 334,
+      "cme_stress_idx": 52.81,
+      "gic_hazard_idx": 84.23
+    },
+    {
+      "day_from_solstice": 335,
+      "cme_stress_idx": 73.16,
+      "gic_hazard_idx": 116.48
+    },
+    {
+      "day_from_solstice": 336,
+      "cme_stress_idx": 88.82,
+      "gic_hazard_idx": 140.48
+    },
+    {
+      "day_from_solstice": 337,
+      "cme_stress_idx": 84.72,
+      "gic_hazard_idx": 132.53
+    },
+    {
+      "day_from_solstice": 338,
+      "cme_stress_idx": 62.22,
+      "gic_hazard_idx": 95.87
+    },
+    {
+      "day_from_solstice": 339,
+      "cme_stress_idx": 38.06,
+      "gic_hazard_idx": 57.57
+    },
+    {
+      "day_from_solstice": 340,
+      "cme_stress_idx": 29.88,
+      "gic_hazard_idx": 44.26
+    },
+    {
+      "day_from_solstice": 341,
+      "cme_stress_idx": 40.87,
+      "gic_hazard_idx": 59.19
+    },
+    {
+      "day_from_solstice": 342,
+      "cme_stress_idx": 57.09,
+      "gic_hazard_idx": 80.78
+    },
+    {
+      "day_from_solstice": 343,
+      "cme_stress_idx": 59.92,
+      "gic_hazard_idx": 82.92
+    },
+    {
+      "day_from_solstice": 344,
+      "cme_stress_idx": 42.68,
+      "gic_hazard_idx": 57.88
+    },
+    {
+      "day_from_solstice": 345,
+      "cme_stress_idx": 16.8,
+      "gic_hazard_idx": 22.39
+    },
+    {
+      "day_from_solstice": 346,
+      "cme_stress_idx": 2.02,
+      "gic_hazard_idx": 2.65
+    },
+    {
+      "day_from_solstice": 347,
+      "cme_stress_idx": 9.23,
+      "gic_hazard_idx": 12.07
+    },
+    {
+      "day_from_solstice": 348,
+      "cme_stress_idx": 30.95,
+      "gic_hazard_idx": 40.4
+    },
+    {
+      "day_from_solstice": 349,
+      "cme_stress_idx": 47.9,
+      "gic_hazard_idx": 62.79
+    },
+    {
+      "day_from_solstice": 350,
+      "cme_stress_idx": 45.94,
+      "gic_hazard_idx": 60.81
+    },
+    {
+      "day_from_solstice": 351,
+      "cme_stress_idx": 28.55,
+      "gic_hazard_idx": 38.36
+    },
+    {
+      "day_from_solstice": 352,
+      "cme_stress_idx": 13.75,
+      "gic_hazard_idx": 18.83
+    },
+    {
+      "day_from_solstice": 353,
+      "cme_stress_idx": 18.17,
+      "gic_hazard_idx": 25.4
+    },
+    {
+      "day_from_solstice": 354,
+      "cme_stress_idx": 42.17,
+      "gic_hazard_idx": 60.33
+    },
+    {
+      "day_from_solstice": 355,
+      "cme_stress_idx": 69.28,
+      "gic_hazard_idx": 101.43
+    },
+    {
+      "day_from_solstice": 356,
+      "cme_stress_idx": 80.37,
+      "gic_hazard_idx": 120.28
+    },
+    {
+      "day_from_solstice": 357,
+      "cme_stress_idx": 70.23,
+      "gic_hazard_idx": 107.23
+    },
+    {
+      "day_from_solstice": 358,
+      "cme_stress_idx": 52.04,
+      "gic_hazard_idx": 80.81
+    },
+    {
+      "day_from_solstice": 359,
+      "cme_stress_idx": 45.57,
+      "gic_hazard_idx": 71.71
+    },
+    {
+      "day_from_solstice": 360,
+      "cme_stress_idx": 59.63,
+      "gic_hazard_idx": 94.67
+    },
+    {
+      "day_from_solstice": 361,
+      "cme_stress_idx": 84.08,
+      "gic_hazard_idx": 134.06
+    },
+    {
+      "day_from_solstice": 362,
+      "cme_stress_idx": 98.55,
+      "gic_hazard_idx": 157.05
+    },
+    {
+      "day_from_solstice": 363,
+      "cme_stress_idx": 90.29,
+      "gic_hazard_idx": 143.12
+    },
+    {
+      "day_from_solstice": 364,
+      "cme_stress_idx": 65.43,
+      "gic_hazard_idx": 102.71
+    }
+  ]
+}

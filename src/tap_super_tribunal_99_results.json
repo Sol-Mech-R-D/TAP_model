@@ -1087,16 +1087,5 @@
     "err_pct": 0.034011756314195,
     "unit": "",
     "status": "PASS"
-  },
-  {
-    "id": 100,
-    "category": "Trans-Cyclic",
-    "critic": "\u0394-Breath Clock",
-    "objection": "\u0394B Delta Breaths Tribunal consensus in Fibonacci corridor [5,8]",
-    "value": 7.249407802496677,
-    "expected": 8.0,
-    "err_pct": 9.38240246879154,
-    "unit": "\u0394B (Breaths)",
-    "status": "PASS"
   }
 ]

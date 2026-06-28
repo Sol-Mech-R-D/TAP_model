@@ -1,0 +1,127 @@
+{
+  "target_crossing_utc": "2026-06-30T01:20:00+00:00",
+  "t_target": 1782782400.0,
+  "cycle_period_days": 8.12133,
+  "aligned_events": [
+    {
+      "place": "173 km S of Lembar, Indonesia",
+      "magnitude": 5,
+      "time": "2026-06-28T21:43:51.470000+00:00",
+      "phase": 0.872,
+      "node_distance": 0.128,
+      "stress_coupling_pct": 0.14
+    },
+    {
+      "place": "65 km WNW of Catuday, Philippines",
+      "magnitude": 4.7,
+      "time": "2026-06-28T20:01:33.567000+00:00",
+      "phase": 0.8633,
+      "node_distance": 0.1367,
+      "stress_coupling_pct": 0.06
+    },
+    {
+      "place": "296 km WNW of Houma, Tonga",
+      "magnitude": 4.2,
+      "time": "2026-06-28T19:49:43.292000+00:00",
+      "phase": 0.8622,
+      "node_distance": 0.1378,
+      "stress_coupling_pct": 0.05
+    },
+    {
+      "place": "63 km WNW of Catuday, Philippines",
+      "magnitude": 4.6,
+      "time": "2026-06-28T19:25:57.500000+00:00",
+      "phase": 0.8602,
+      "node_distance": 0.1398,
+      "stress_coupling_pct": 0.04
+    },
+    {
+      "place": "36 km NW of Willow, Alaska",
+      "magnitude": 2.7,
+      "time": "2026-06-28T19:23:54.298000+00:00",
+      "phase": 0.86,
+      "node_distance": 0.14,
+      "stress_coupling_pct": 0.04
+    },
+    {
+      "place": "95 km SSE of King Cove, Alaska",
+      "magnitude": 3.3,
+      "time": "2026-06-28T19:10:02.523000+00:00",
+      "phase": 0.8589,
+      "node_distance": 0.1411,
+      "stress_coupling_pct": 0.03
+    },
+    {
+      "place": "68 km WNW of Catuday, Philippines",
+      "magnitude": 5,
+      "time": "2026-06-28T19:09:03.928000+00:00",
+      "phase": 0.8588,
+      "node_distance": 0.1412,
+      "stress_coupling_pct": 0.03
+    },
+    {
+      "place": "39 km SW of Kandrian, Papua New Guinea",
+      "magnitude": 4.7,
+      "time": "2026-06-28T18:45:21.433000+00:00",
+      "phase": 0.8567,
+      "node_distance": 0.1433,
+      "stress_coupling_pct": 0.03
+    },
+    {
+      "place": "21 km WNW of Djelfa, Algeria",
+      "magnitude": 4.6,
+      "time": "2026-06-28T18:37:11.965000+00:00",
+      "phase": 0.856,
+      "node_distance": 0.144,
+      "stress_coupling_pct": 0.03
+    },
+    {
+      "place": "42 km SSW of Nanwalek, Alaska",
+      "magnitude": 2.8,
+      "time": "2026-06-28T18:20:10.861000+00:00",
+      "phase": 0.8546,
+      "node_distance": 0.1454,
+      "stress_coupling_pct": 0.02
+    },
+    {
+      "place": "10 km SSE of Kiupo, Philippines",
+      "magnitude": 4.5,
+      "time": "2026-06-28T17:57:17.188000+00:00",
+      "phase": 0.8526,
+      "node_distance": 0.1474,
+      "stress_coupling_pct": 0.02
+    },
+    {
+      "place": "50 km WSW of Abra Pampa, Argentina",
+      "magnitude": 4.5,
+      "time": "2026-06-28T17:34:16.402000+00:00",
+      "phase": 0.8507,
+      "node_distance": 0.1493,
+      "stress_coupling_pct": 0.01
+    },
+    {
+      "place": "142 km E of Chalkyitsik, Alaska",
+      "magnitude": 2.7,
+      "time": "2026-06-28T17:22:16.498000+00:00",
+      "phase": 0.8496,
+      "node_distance": 0.1504,
+      "stress_coupling_pct": 0.01
+    },
+    {
+      "place": "8 km WNW of Changning, China",
+      "magnitude": 5.2,
+      "time": "2026-06-28T16:12:08.958000+00:00",
+      "phase": 0.8436,
+      "node_distance": 0.1564,
+      "stress_coupling_pct": 0.01
+    },
+    {
+      "place": "128 km S of Sand Point, Alaska",
+      "magnitude": 3.6,
+      "time": "2026-06-28T15:04:06.524000+00:00",
+      "phase": 0.8378,
+      "node_distance": 0.1622,
+      "stress_coupling_pct": 0.0
+    }
+  ]
+}

@@ -99,8 +99,14 @@ def main():
             if f.startswith("TAP_F_Levels_") and f.endswith(".md"):
                 PUBLIC_FILES.append(os.path.join(docs_dir, f))
 
-    # 2. Stage and commit only PUBLIC files to a temp public branch
-    print("\n  [STEP 1] Staging public files subset...")
+    # 2. Stage and commit ALL files to master first to prevent loss of files
+    print("\n  [STEP 1] Committing all files to master...")
+    run_git(["add", "."])
+    commit_msg_all = "feat(master): update full macro-economic, grid stress, and core dynamos cascade"
+    run_git(["commit", "-m", commit_msg_all])
+
+    # 3. Stage and commit only PUBLIC files to a temp public branch
+    print("\n  [STEP 2] Preparing public files subset...")
     run_git(["checkout", "-b", "temp-public"])
     run_git(["reset"]) # clear staging area
     
@@ -123,14 +129,10 @@ def main():
     else:
         print("  ⚠️ Public push failed. Check remote credentials.")
 
-    # 3. Stage and commit ALL files to master and push to private
-    print("\n  [STEP 2] Preparing full repository push (bigcaker)...")
+    # 4. Switch back to master and push to private
+    print("\n  [STEP 3] Preparing full repository push (bigcaker)...")
     run_git(["checkout", "master"])
     run_git(["branch", "-D", "temp-public"]) # cleanup temp branch
-    
-    run_git(["add", "."]) # stage everything
-    commit_msg_all = "feat(private): update full macro-economic, grid stress, and core dynamos cascade"
-    run_git(["commit", "-am", commit_msg_all])
     
     print("  [PUSH] Pushing entire repository to private/master (bigcaker)...")
     push_priv_res = run_git(["push", "private", "master", "--force"])
