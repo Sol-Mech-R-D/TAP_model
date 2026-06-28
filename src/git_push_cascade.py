@@ -65,12 +65,15 @@ PUBLIC_FILES = [
     "src/tap_quantum_decoherence.py",
     "src/tap_neural_resonance.py",
     "src/tap_cosmic_quantum_neuro.py",
+    "src/tap_biochem_qubit_graphene.py",
     "docs/TAP_Cosmic_Quantum_Neuro_Brainstorm.md",
+    "docs/TAP_Biochem_Qubit_Graphene_Brainstorm.md",
     "assets/tap_usgs_monitor_results.json",
     "assets/tap_solar_dynamo_results.json",
     "assets/tap_quantum_decoherence_results.json",
     "assets/tap_neural_resonance_results.json",
-    "assets/tap_cosmic_quantum_neuro_results.json"
+    "assets/tap_cosmic_quantum_neuro_results.json",
+    "assets/tap_biochem_qubit_graphene_results.json"
 ]
 
 def run_git(args):
