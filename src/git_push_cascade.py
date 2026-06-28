@@ -67,6 +67,7 @@ PUBLIC_FILES = [
     "src/tap_cosmic_quantum_neuro.py",
     "src/tap_biochem_qubit_graphene.py",
     "src/tap_qubit_driver.ino",
+    "src/read_qubit.py",
     "docs/TAP_Cosmic_Quantum_Neuro_Brainstorm.md",
     "docs/TAP_Biochem_Qubit_Graphene_Brainstorm.md",
     "docs/TAP_Macro_Qubit_Graphene_Schematic.md",
