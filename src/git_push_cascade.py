@@ -59,7 +59,15 @@ PUBLIC_FILES = [
     "assets/dashboard.html",
     "assets/tap_parameter_sweep.png",
     "assets/tap_proof_plots.png",
-    "assets/tap_core_ai_coupling.json"
+    "assets/tap_core_ai_coupling.json",
+    "src/tap_usgs_monitor.py",
+    "src/tap_solar_dynamo.py",
+    "src/tap_quantum_decoherence.py",
+    "src/tap_neural_resonance.py",
+    "assets/tap_usgs_monitor_results.json",
+    "assets/tap_solar_dynamo_results.json",
+    "assets/tap_quantum_decoherence_results.json",
+    "assets/tap_neural_resonance_results.json"
 ]
 
 def run_git(args):
