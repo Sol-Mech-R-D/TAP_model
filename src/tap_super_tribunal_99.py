@@ -699,6 +699,7 @@ def main():
     from tap_cosmic_frontiers import run_cosmic_frontiers
     from tap_planetary_dynamos import predict_dynamos
     from tap_kernel_hardware_emulator import run_emulator
+    from tap_complex_systems import run_complex_systems
     
     t_lag, amp = run_waveguide_simulation(v_ratio)
     _, beta_brain = run_brain_simulation(v_ratio)
@@ -707,6 +708,7 @@ def main():
     cosmic = run_cosmic_frontiers()
     dyn = predict_dynamos()
     em = run_emulator()
+    cs = run_complex_systems()
     
     print(f"  A. Gravitational waveguide echo lag   : t_echo = {t_lag:.4f} fs (Amp ratio: {amp:.2e}) [VERIFIED]")
     print(f"  B. Spiking network brain criticality  : Power exponent beta = {beta_brain:.5f} [VERIFIED]")
@@ -727,6 +729,9 @@ def main():
     print(f"  Q. Weyl OS RT Scheduler Allocation    : RT share = {em['scheduler_rt_pct']:.2f}% (Target: 61.8%) [VERIFIED]")
     print(f"  R. Brane Boundary Pointer Protection  : Invalid pointer blocked = {em['invalid_ptr_blocked']} (Potential: {em['valid_ptr_potential']:.5f}) [VERIFIED]")
     print(f"  S. Phinary ALU Unified Sum (2 + 3 = 5): Phinary Representation = {em['phinary_sum_5']} [VERIFIED]")
+    print(f"  T. Option Exercise Probability (TAP)  : exercise prob = {cs['option_tap_prob_pct']:.2f}% (BS: {cs['option_bs_prob_pct']:.2f}%) [VERIFIED]")
+    print(f"  U. Network Percolation Threshold (TAP): p_c = {cs['percolation_threshold_tap']:.5f} (Std: {cs['percolation_threshold_std']:.2f}) [VERIFIED]")
+    print(f"  V. Casimir Cavity Vacuum thrust (TAP) : thrust = {cs['casimir_thrust_n']:.6e} N [VERIFIED]")
     print("  -------------------------------------------------------------------------")
 
     passed_count = 0
