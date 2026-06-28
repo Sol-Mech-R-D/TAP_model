@@ -1,0 +1,19 @@
+{
+  "biochemical_matrices": {
+    "days_simulated": 7,
+    "average_cortisol_stress": 0.5034,
+    "average_melatonin_sleep": 0.4897
+  },
+  "lowtech_quartz_qubit": {
+    "base_q_factor": 10000.0,
+    "fibonacci_q_factor": 68541.02,
+    "t2_coherence_standard_ms": 97.1405,
+    "t2_coherence_fibonacci_ms": 665.8107
+  },
+  "graphene_acoustic_exfoliation": {
+    "ultrasound_power_watts": 50.0,
+    "standard_yield_pct": 6.8,
+    "fibonacci_yield_pct": 34.27,
+    "exfoliation_efficiency_multiplier": 5.04
+  }
+}

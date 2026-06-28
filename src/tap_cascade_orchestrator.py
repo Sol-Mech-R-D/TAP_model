@@ -35,6 +35,7 @@ SCRIPTS = [
     "tap_grid_supply_cascade.py",
     "tap_epidemiology_correlation.py",
     "tap_cosmic_quantum_neuro.py",
+    "tap_biochem_qubit_graphene.py",
     "update_dashboard.py"
 ]
 
