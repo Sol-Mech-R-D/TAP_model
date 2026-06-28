@@ -35,6 +35,7 @@ PUBLIC_FILES = [
     "src/tap_fresno_weather.py",
     "src/tap_seismic_correlation.py",
     "src/tap_geophysics_brainstorm.py",
+    "src/tap_core_ai_cascade.py",
     
     # Documents
     "docs/TAP_Tappasecond.md",
@@ -47,6 +48,7 @@ PUBLIC_FILES = [
     "docs/TAP_Master_Map_Dynasties.md",
     "docs/TAP_Cross_Chunk_Interactions.md",
     "docs/TAP_Warp_and_Time_Travel.md",
+    "docs/TAP_PlanetaryCores_AI_Energy_Brainstorm.md",
     
     # Assets / Public Data
     "assets/tap_fresno_july2026.json",
@@ -56,7 +58,8 @@ PUBLIC_FILES = [
     "assets/tap_universe_dashboard.html",
     "assets/dashboard.html",
     "assets/tap_parameter_sweep.png",
-    "assets/tap_proof_plots.png"
+    "assets/tap_proof_plots.png",
+    "assets/tap_core_ai_coupling.json"
 ]
 
 def run_git(args):
