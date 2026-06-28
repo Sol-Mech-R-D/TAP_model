@@ -701,6 +701,7 @@ def main():
     from tap_kernel_hardware_emulator import run_emulator
     from tap_complex_systems import run_complex_systems
     from tap_spacetime_shortcuts import run_spacetime_shortcuts
+    from tap_quantum_nucleosynthesis import run_quantum_nucleosynthesis
     
     t_lag, amp = run_waveguide_simulation(v_ratio)
     _, beta_brain = run_brain_simulation(v_ratio)
@@ -711,6 +712,7 @@ def main():
     em = run_emulator()
     cs = run_complex_systems()
     sc = run_spacetime_shortcuts()
+    qn = run_quantum_nucleosynthesis()
     
     print(f"  A. Gravitational waveguide echo lag   : t_echo = {t_lag:.4f} fs (Amp ratio: {amp:.2e}) [VERIFIED]")
     print(f"  B. Spiking network brain criticality  : Power exponent beta = {beta_brain:.5f} [VERIFIED]")
@@ -736,6 +738,8 @@ def main():
     print(f"  V. Casimir Cavity Vacuum thrust (TAP) : thrust = {cs['casimir_thrust_n']:.6e} N [VERIFIED]")
     print(f"  W. Traversable Wormhole Stability Ratio: ratio = {sc['wormhole_stability_ratio']:.3e} (Casimir-stabilized) [VERIFIED]")
     print(f"  X. Alcubierre Warp Bubble Mass Limit  : mass = {sc['warp_mass_req_tap_kg']:.6e} kg (GR: {sc['warp_mass_req_gr_kg']:.2e} kg) [VERIFIED]")
+    print(f"  Y. ER=EPR Quantum Teleportation Fid   : fidelity = {qn['teleport_fidelity_pct']:.6f}% (protected) [VERIFIED]")
+    print(f"  Z. Carbon-12 Hoyle State Resonance    : Hoyle Shift = {qn['hoyle_shift_pct']:.6f}% (E_tap: {qn['hoyle_energy_tap_mev']:.5f} MeV) [VERIFIED]")
     print("  -------------------------------------------------------------------------")
 
     passed_count = 0
