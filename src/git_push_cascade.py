@@ -78,7 +78,7 @@ def main():
     remotes_res = run_git(["remote"])
     remotes = remotes_res.stdout.split()
     
-    private_url = "git@github.com:bigcaker/TAP_model.git" # default SSH path
+    private_url = "https://github.com/bigcaker/TAP_model.git" # use HTTPS to support token/credential helper
     if "private" not in remotes:
         print(f"  [CONFIG] Adding private remote pointing to: {private_url}")
         run_git(["remote", "add", "private", private_url])
