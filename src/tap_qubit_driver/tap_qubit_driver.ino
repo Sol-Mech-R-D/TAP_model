@@ -1,26 +1,38 @@
 #include <Arduino.h>
 
-const int TX_PIN = 9;   // Acoustic pulse transmitter (Pin 9)
-const int RX_PIN = A0;  // Piezo feedback receiver (Analog 0)
+const int TX_PIN_POS = 9;  // Acoustic pulse transmitter positive (Pin 9)
+const int TX_PIN_NEG = 8;  // Acoustic pulse transmitter negative (Pin 8)
+const int RX_PIN = A0;      // Piezo feedback receiver (Analog 0)
 const int SAMPLE_COUNT = 100;
 
 void setup() {
   Serial.begin(115200);
-  pinMode(TX_PIN, OUTPUT);
+  pinMode(TX_PIN_POS, OUTPUT);
+  pinMode(TX_PIN_NEG, OUTPUT);
   pinMode(13, OUTPUT);
+  
+  digitalWrite(TX_PIN_POS, LOW);
+  digitalWrite(TX_PIN_NEG, LOW);
 }
 
 void loop() {
   Serial.println("\n--- STARTING T2 COHERENCE DECAY SWEEP ---");
   
   for (int delay_ms = 0; delay_ms <= 300; delay_ms += 10) {
-    // 5V single-ended excitation pulse train (50 cycles)
+    // 10V Differential excitation pulse train (50 cycles)
     for (int i = 0; i < 50; i++) {
-      digitalWrite(TX_PIN, HIGH);
+      digitalWrite(TX_PIN_POS, HIGH);
+      digitalWrite(TX_PIN_NEG, LOW);
       delayMicroseconds(111);
-      digitalWrite(TX_PIN, LOW);
+      
+      digitalWrite(TX_PIN_POS, LOW);
+      digitalWrite(TX_PIN_NEG, HIGH);
       delayMicroseconds(111);
     }
+    
+    // Return pins to LOW to discharge the piezo
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, LOW);
     
     // Coherence decay delay
     delay(delay_ms);
