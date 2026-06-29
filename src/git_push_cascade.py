@@ -128,7 +128,7 @@ def main():
     # 3. Stage and commit only PUBLIC files to a temp public branch
     print("\n  [STEP 2] Preparing public files subset...")
     run_git(["checkout", "-b", "temp-public"])
-    run_git(["reset"]) # clear staging area
+    run_git(["rm", "--cached", "-r", "."]) # clear index completely
     
     staged_count = 0
     for f in PUBLIC_FILES:
@@ -145,9 +145,9 @@ def main():
     print("  [PUSH] Pushing public branch to origin/master (Sol-Mech R&D)...")
     push_res = run_git(["push", "origin", "temp-public:master", "--force"])
     if push_res.returncode == 0:
-        print("  ✅ Public push successful!")
+        print("  [SUCCESS] Public push successful!")
     else:
-        print("  ⚠️ Public push failed. Check remote credentials.")
+        print("  [WARNING] Public push failed. Check remote credentials.")
 
     # 4. Switch back to master and push to private
     print("\n  [STEP 3] Preparing full repository push (bigcaker)...")
@@ -157,9 +157,9 @@ def main():
     print("  [PUSH] Pushing entire repository to private/master (bigcaker)...")
     push_priv_res = run_git(["push", "private", "master", "--force"])
     if push_priv_res.returncode == 0:
-        print("  ✅ Private push successful!")
+        print("  [SUCCESS] Private push successful!")
     else:
-        print("  ⚠️ Private push failed. Check remote credentials or configure URL.")
+        print("  [WARNING] Private push failed. Check remote credentials or configure URL.")
         print("     Ensure bigcaker repo exists at the designated address.")
         
     print("=" * 80)
