@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-const int TX_PIN = 9;   // Acoustic pulse transmitter (Pin 9)
+const int TX_PIN = 5;   // Acoustic pulse transmitter moved to Pin 5
 const int RX_PIN = A0;  // Piezo feedback receiver (Analog 0)
 const int SAMPLE_COUNT = 100;
 
@@ -24,7 +24,7 @@ void setup() {
   digitalWrite(TX_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP 5V SINGLE-ENDED JINGLE TEST BURST            ");
+  Serial.println("  TAP 5V SINGLE-ENDED JINGLE ON PIN 5              ");
   Serial.println("==================================================");
   
   // Blink LED warning
@@ -33,7 +33,7 @@ void setup() {
     digitalWrite(13, LOW); delay(100);
   }
   
-  Serial.println("📡 PLAYING 5V JINGLE (DO DO DOO)...");
+  Serial.println("📡 PLAYING 5V JINGLE ON PIN 5 (DO DO DOO)...");
   
   // Note 1 ("do"): 2000 Hz (500 ms)
   play_note(2000, 500);
