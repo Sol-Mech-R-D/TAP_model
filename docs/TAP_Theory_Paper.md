@@ -26,6 +26,13 @@ The cosmic cycle consists of two phases:
 1. **The Exhale (Expansion):** The 1/4 interface potential drives a power-law expansion, during which energy leaks into the extra dimensions at a rate scaling with $\phi^{-4}$.
 2. **The Inhale (Reset):** Upon reaching the 13D saturation limit, the volume collapses, holographically compressing information back to $D=1$ under perfect quantum purity conservation.
 
+### 1.1 The Universality of the Cascade: Scale-Free Criticality & Renormalization Group Flows
+The multidisciplinary reach of the TAP cascade—linking cosmology, condensed matter physics, neuroscience, and biochemistry—is grounded in the physics of **Universality Classes** and **Scale-Invariant Renormalization Group (RG) flows**. 
+
+In statistical mechanics and field theory, physical systems of completely different microscopic structures (e.g., liquid-gas critical points and ferromagnetic spin transitions) exhibit identical power-law scaling exponents near phase transitions. This occurs because the micro-scale degrees of freedom decouple at criticality, leaving the system governed entirely by long-range topological configurations and conformal symmetries.
+
+The TAP model proposes that the cosmological, biological, and material systems validated in this suite represent distinct physical manifestations of the same **topological universality class**. By operating in a state of scale-free criticality, these systems are modulated by a shared higher-dimensional metric potential. The "cascade" represents the geometric propagation of these scale-invariant critical exponents ($D=1, 2, 3, 5, 8, 13$), mirroring the mathematical structures of RG flow equations.
+
 ---
 
 ## 2. The 3:1 Soliton Partition & Wave-Particle Duality
