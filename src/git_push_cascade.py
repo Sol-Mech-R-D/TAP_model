@@ -86,6 +86,7 @@ PUBLIC_FILES = [
     "docs/TAP_Hardware_Bill_of_Materials.md",
     "docs/TAP_Capacitor_and_Diode_Inventory.md",
     "docs/TAP_8th_Grade_Fundamentals_Curriculum.md",
+    "docs/TAP_12th_Grade_Peer_Review_Curriculum.md",
     "TERMUX_NOTE.md",
     "PXL_20260620_152100745.jpg",
     "PXL_20260620_152104825.jpg",
