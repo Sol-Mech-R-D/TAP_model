@@ -4,6 +4,46 @@
   "cycle_period_days": 8.12133,
   "aligned_events": [
     {
+      "place": "107 km SSW of Sarangani, Philippines",
+      "magnitude": 5.2,
+      "time": "2026-06-29T04:23:05.855000+00:00",
+      "phase": 0.9061,
+      "node_distance": 0.0939,
+      "stress_coupling_pct": 2.95
+    },
+    {
+      "place": "39 km SSW of Cordova, Alaska",
+      "magnitude": 3,
+      "time": "2026-06-29T03:37:26.396000+00:00",
+      "phase": 0.9022,
+      "node_distance": 0.0978,
+      "stress_coupling_pct": 2.19
+    },
+    {
+      "place": "35 km SSW of Cordova, Alaska",
+      "magnitude": 5.3,
+      "time": "2026-06-29T03:32:39.606000+00:00",
+      "phase": 0.9018,
+      "node_distance": 0.0982,
+      "stress_coupling_pct": 2.12
+    },
+    {
+      "place": "Kermadec Islands region",
+      "magnitude": 4.9,
+      "time": "2026-06-29T03:10:28.375000+00:00",
+      "phase": 0.8999,
+      "node_distance": 0.1001,
+      "stress_coupling_pct": 1.82
+    },
+    {
+      "place": "102 km N of Yakutat, Alaska",
+      "magnitude": 2.7,
+      "time": "2026-06-29T03:05:34.262000+00:00",
+      "phase": 0.8995,
+      "node_distance": 0.1005,
+      "stress_coupling_pct": 1.76
+    },
+    {
       "place": "21 km E of Eagle Village, Alaska",
       "magnitude": 3.6,
       "time": "2026-06-29T01:36:28.332000+00:00",
@@ -82,46 +122,6 @@
       "phase": 0.8622,
       "node_distance": 0.1378,
       "stress_coupling_pct": 0.05
-    },
-    {
-      "place": "63 km WNW of Catuday, Philippines",
-      "magnitude": 4.6,
-      "time": "2026-06-28T19:25:57.500000+00:00",
-      "phase": 0.8602,
-      "node_distance": 0.1398,
-      "stress_coupling_pct": 0.04
-    },
-    {
-      "place": "36 km NW of Willow, Alaska",
-      "magnitude": 2.7,
-      "time": "2026-06-28T19:23:54.298000+00:00",
-      "phase": 0.86,
-      "node_distance": 0.14,
-      "stress_coupling_pct": 0.04
-    },
-    {
-      "place": "95 km SSE of King Cove, Alaska",
-      "magnitude": 3.3,
-      "time": "2026-06-28T19:10:02.523000+00:00",
-      "phase": 0.8589,
-      "node_distance": 0.1411,
-      "stress_coupling_pct": 0.03
-    },
-    {
-      "place": "68 km WNW of Catuday, Philippines",
-      "magnitude": 5,
-      "time": "2026-06-28T19:09:03.928000+00:00",
-      "phase": 0.8588,
-      "node_distance": 0.1412,
-      "stress_coupling_pct": 0.03
-    },
-    {
-      "place": "39 km SW of Kandrian, Papua New Guinea",
-      "magnitude": 4.7,
-      "time": "2026-06-28T18:45:21.433000+00:00",
-      "phase": 0.8567,
-      "node_distance": 0.1433,
-      "stress_coupling_pct": 0.03
     }
   ]
 }

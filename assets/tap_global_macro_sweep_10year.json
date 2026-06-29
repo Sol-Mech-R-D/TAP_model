@@ -59,9 +59,9 @@
     {
       "date": "2021-07-08",
       "actual_temp_f": 109.76,
-      "alignment": 0.7429932134082652,
+      "alignment": 0.7429932134082651,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 1.1144898201123978,
+      "market_vix_delta": 1.1144898201123976,
       "port_delay_hours": 0.0
     },
     {
@@ -947,7 +947,7 @@
     {
       "date": "2021-10-27",
       "actual_temp_f": 68.36,
-      "alignment": -0.4802757690601625,
+      "alignment": -0.48027576906016245,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.0960551538120325,
       "port_delay_hours": 0.0
@@ -1027,7 +1027,7 @@
     {
       "date": "2021-11-06",
       "actual_temp_f": 69.25999999999999,
-      "alignment": 0.8401247537996587,
+      "alignment": 0.8401247537996586,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.16802495075993173,
       "port_delay_hours": 0.0
@@ -2203,9 +2203,9 @@
     {
       "date": "2022-04-02",
       "actual_temp_f": 81.86,
-      "alignment": 0.09245194805811037,
+      "alignment": 0.09245194805811036,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.018490389611622075,
+      "market_vix_delta": 0.018490389611622072,
       "port_delay_hours": 0.0
     },
     {
@@ -2259,9 +2259,9 @@
     {
       "date": "2022-04-09",
       "actual_temp_f": 82.94,
-      "alignment": 0.8135239434660836,
+      "alignment": 0.8135239434660835,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.16270478869321672,
+      "market_vix_delta": 0.1627047886932167,
       "port_delay_hours": 0.0
     },
     {
@@ -2323,9 +2323,9 @@
     {
       "date": "2022-04-17",
       "actual_temp_f": 79.7,
-      "alignment": 0.8667312616520357,
+      "alignment": 0.8667312616520356,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.17334625233040715,
+      "market_vix_delta": 0.17334625233040712,
       "port_delay_hours": 0.0
     },
     {
@@ -2835,9 +2835,9 @@
     {
       "date": "2022-06-20",
       "actual_temp_f": 95.0,
-      "alignment": 0.7447532577544286,
+      "alignment": 0.7447532577544285,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.14895065155088572,
+      "market_vix_delta": 0.1489506515508857,
       "port_delay_hours": 0.0
     },
     {
@@ -3019,10 +3019,10 @@
     {
       "date": "2022-07-13",
       "actual_temp_f": 101.66000000000001,
-      "alignment": -0.5040549416165963,
+      "alignment": -0.5040549416165961,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.7560824124248944,
-      "port_delay_hours": 2.016219766466385
+      "market_vix_delta": 0.7560824124248942,
+      "port_delay_hours": 2.0162197664663846
     },
     {
       "date": "2022-07-14",
@@ -3219,9 +3219,9 @@
     {
       "date": "2022-08-07",
       "actual_temp_f": 101.12,
-      "alignment": -0.32851398290569156,
+      "alignment": -0.3285139829056916,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.49277097435853734,
+      "market_vix_delta": 0.49277097435853745,
       "port_delay_hours": 0.0
     },
     {
@@ -3363,9 +3363,9 @@
     {
       "date": "2022-08-25",
       "actual_temp_f": 105.8,
-      "alignment": 0.7587244405172706,
+      "alignment": 0.7587244405172707,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 1.138086660775906,
+      "market_vix_delta": 1.1380866607759061,
       "port_delay_hours": 0.0
     },
     {
@@ -3547,9 +3547,9 @@
     {
       "date": "2022-09-17",
       "actual_temp_f": 87.62,
-      "alignment": -0.34693211521475004,
+      "alignment": -0.3469321152147501,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.06938642304295001,
+      "market_vix_delta": 0.06938642304295002,
       "port_delay_hours": 0.0
     },
     {
@@ -3771,9 +3771,9 @@
     {
       "date": "2022-10-15",
       "actual_temp_f": 87.80000000000001,
-      "alignment": 0.6575488974415783,
+      "alignment": 0.6575488974415782,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.13150977948831566,
+      "market_vix_delta": 0.13150977948831563,
       "port_delay_hours": 0.0
     },
     {
@@ -4491,10 +4491,10 @@
     {
       "date": "2023-01-13",
       "actual_temp_f": 60.620000000000005,
-      "alignment": -0.5522747261967075,
+      "alignment": -0.5522747261967074,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.1104549452393415,
-      "port_delay_hours": 2.20909890478683
+      "market_vix_delta": 0.11045494523934148,
+      "port_delay_hours": 2.2090989047868295
     },
     {
       "date": "2023-01-14",
@@ -4667,7 +4667,7 @@
     {
       "date": "2023-02-04",
       "actual_temp_f": 62.78,
-      "alignment": 0.8089011444636389,
+      "alignment": 0.808901144463639,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.1617802288927278,
       "port_delay_hours": 0.0
@@ -5187,9 +5187,9 @@
     {
       "date": "2023-04-10",
       "actual_temp_f": 82.03999999999999,
-      "alignment": 0.46704582676375334,
+      "alignment": 0.4670458267637533,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.09340916535275068,
+      "market_vix_delta": 0.09340916535275066,
       "port_delay_hours": 0.0
     },
     {
@@ -5771,7 +5771,7 @@
     {
       "date": "2023-06-22",
       "actual_temp_f": 85.82,
-      "alignment": 0.8748973112330559,
+      "alignment": 0.874897311233056,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.1749794622466112,
       "port_delay_hours": 0.0
@@ -6083,9 +6083,9 @@
     {
       "date": "2023-07-31",
       "actual_temp_f": 106.16000000000001,
-      "alignment": 0.31076186894084956,
+      "alignment": 0.3107618689408496,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.46614280341127434,
+      "market_vix_delta": 0.46614280341127445,
       "port_delay_hours": 0.0
     },
     {
@@ -7019,9 +7019,9 @@
     {
       "date": "2023-11-25",
       "actual_temp_f": 60.980000000000004,
-      "alignment": 0.4802910786365457,
+      "alignment": 0.48029107863654563,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.09605821572730915,
+      "market_vix_delta": 0.09605821572730913,
       "port_delay_hours": 0.0
     },
     {
@@ -7835,7 +7835,7 @@
     {
       "date": "2024-03-06",
       "actual_temp_f": 63.5,
-      "alignment": 0.868457592562628,
+      "alignment": 0.8684575925626281,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.17369151851252562,
       "port_delay_hours": 0.0
@@ -8027,9 +8027,9 @@
     {
       "date": "2024-03-30",
       "actual_temp_f": 63.31999999999999,
-      "alignment": 0.7725410822829012,
+      "alignment": 0.7725410822829013,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.15450821645658025,
+      "market_vix_delta": 0.15450821645658028,
       "port_delay_hours": 0.0
     },
     {
@@ -9659,7 +9659,7 @@
     {
       "date": "2024-10-20",
       "actual_temp_f": 83.30000000000001,
-      "alignment": 0.18069523864916306,
+      "alignment": 0.18069523864916304,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.03613904772983261,
       "port_delay_hours": 0.0
@@ -9859,9 +9859,9 @@
     {
       "date": "2024-11-14",
       "actual_temp_f": 64.03999999999999,
-      "alignment": 0.7238259052345023,
+      "alignment": 0.7238259052345022,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.14476518104690048,
+      "market_vix_delta": 0.14476518104690045,
       "port_delay_hours": 0.0
     },
     {
@@ -9875,9 +9875,9 @@
     {
       "date": "2024-11-16",
       "actual_temp_f": 55.22,
-      "alignment": 0.70659794784883,
+      "alignment": 0.7065979478488299,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.141319589569766,
+      "market_vix_delta": 0.14131958956976598,
       "port_delay_hours": 0.0
     },
     {
@@ -9987,9 +9987,9 @@
     {
       "date": "2024-11-30",
       "actual_temp_f": 54.5,
-      "alignment": 0.6962429616061533,
+      "alignment": 0.6962429616061532,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.13924859232123066,
+      "market_vix_delta": 0.13924859232123063,
       "port_delay_hours": 0.0
     },
     {
@@ -10179,9 +10179,9 @@
     {
       "date": "2024-12-24",
       "actual_temp_f": 54.5,
-      "alignment": 0.6964992391296901,
+      "alignment": 0.69649923912969,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.13929984782593804,
+      "market_vix_delta": 0.13929984782593802,
       "port_delay_hours": 0.0
     },
     {
@@ -10227,10 +10227,10 @@
     {
       "date": "2024-12-30",
       "actual_temp_f": 52.16,
-      "alignment": -0.6947605971229247,
+      "alignment": -0.6947605971229246,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.13895211942458494,
-      "port_delay_hours": 2.779042388491699
+      "port_delay_hours": 2.7790423884916984
     },
     {
       "date": "2024-12-31",
@@ -10339,10 +10339,10 @@
     {
       "date": "2025-01-13",
       "actual_temp_f": 60.08,
-      "alignment": -0.6767822685883238,
+      "alignment": -0.6767822685883237,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.13535645371766478,
-      "port_delay_hours": 2.707129074353295
+      "market_vix_delta": 0.13535645371766475,
+      "port_delay_hours": 2.7071290743532948
     },
     {
       "date": "2025-01-14",
@@ -10835,9 +10835,9 @@
     {
       "date": "2025-03-16",
       "actual_temp_f": 65.12,
-      "alignment": 0.7794969733901677,
+      "alignment": 0.7794969733901678,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.15589939467803354,
+      "market_vix_delta": 0.15589939467803357,
       "port_delay_hours": 0.0
     },
     {
@@ -11035,9 +11035,9 @@
     {
       "date": "2025-04-10",
       "actual_temp_f": 87.62,
-      "alignment": 0.3252469394169943,
+      "alignment": 0.32524693941699434,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.06504938788339885,
+      "market_vix_delta": 0.06504938788339887,
       "port_delay_hours": 0.0
     },
     {
@@ -11171,7 +11171,7 @@
     {
       "date": "2025-04-27",
       "actual_temp_f": 64.94,
-      "alignment": -0.22750094851231056,
+      "alignment": -0.22750094851231054,
       "crop_stress_index": 0.0,
       "market_vix_delta": 0.04550018970246211,
       "port_delay_hours": 0.0
@@ -11331,9 +11331,9 @@
     {
       "date": "2025-05-17",
       "actual_temp_f": 78.80000000000001,
-      "alignment": -0.14794693229401107,
+      "alignment": -0.14794693229401104,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.029589386458802214,
+      "market_vix_delta": 0.02958938645880221,
       "port_delay_hours": 0.0
     },
     {
@@ -11427,9 +11427,9 @@
     {
       "date": "2025-05-29",
       "actual_temp_f": 92.30000000000001,
-      "alignment": 0.353319797018997,
+      "alignment": 0.3533197970189971,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.07066395940379941,
+      "market_vix_delta": 0.07066395940379942,
       "port_delay_hours": 0.0
     },
     {
@@ -11531,9 +11531,9 @@
     {
       "date": "2025-06-11",
       "actual_temp_f": 96.8,
-      "alignment": 0.09756309140332532,
+      "alignment": 0.09756309140332531,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.019512618280665067,
+      "market_vix_delta": 0.019512618280665063,
       "port_delay_hours": 0.0
     },
     {
@@ -11587,10 +11587,10 @@
     {
       "date": "2025-06-18",
       "actual_temp_f": 100.94,
-      "alignment": -0.7628870741428827,
+      "alignment": -0.7628870741428828,
       "crop_stress_index": 0.0,
       "market_vix_delta": 1.1443306112143241,
-      "port_delay_hours": 3.051548296571531
+      "port_delay_hours": 3.0515482965715313
     },
     {
       "date": "2025-06-19",
@@ -11755,9 +11755,9 @@
     {
       "date": "2025-07-09",
       "actual_temp_f": 99.68,
-      "alignment": 0.5105700124652616,
+      "alignment": 0.5105700124652615,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.7658550186978923,
+      "market_vix_delta": 0.7658550186978922,
       "port_delay_hours": 0.0
     },
     {
@@ -11883,9 +11883,9 @@
     {
       "date": "2025-07-25",
       "actual_temp_f": 92.66,
-      "alignment": 0.8034344131357716,
+      "alignment": 0.8034344131357717,
       "crop_stress_index": 0.0,
-      "market_vix_delta": 0.16068688262715433,
+      "market_vix_delta": 0.16068688262715436,
       "port_delay_hours": 0.0
     },
     {
