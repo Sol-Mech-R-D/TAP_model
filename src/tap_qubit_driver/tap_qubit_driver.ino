@@ -18,8 +18,8 @@ void setup() {
 }
 
 void loop() {
-  // Send 4.5 kHz acoustic pulse train (9 cycles)
-  for (int i = 0; i < 9; i++) {
+  // Send 4.5 kHz acoustic pulse train (50 cycles for increased output energy)
+  for (int i = 0; i < 50; i++) {
     digitalWrite(TX_PIN, HIGH);
     delayMicroseconds(111);
     digitalWrite(TX_PIN, LOW);
