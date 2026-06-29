@@ -84,6 +84,7 @@ PUBLIC_FILES = [
     "docs/TAP_Theory_Paper.md",
     "docs/TAP_White_Paper.md",
     "docs/TAP_Hardware_Bill_of_Materials.md",
+    "docs/TAP_Capacitor_and_Diode_Inventory.md",
     "TERMUX_NOTE.md",
     "PXL_20260620_152100745.jpg",
     "PXL_20260620_152104825.jpg",
