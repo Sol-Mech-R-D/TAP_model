@@ -157,6 +157,11 @@ $$M_{\text{DM}} \approx 468.98\text{ GeV}$$
 
 Standard massive Kaluza-Klein states in extra-dimensional physics are unstable and decay into Standard Model particles. In the TAP model, this decay is strictly forbidden by **topological Kaluza-Klein parity conservation** ($\mathbb{Z}_2$). Standard Model fields possess parity $+1$, while the first-level KK-graviton excitations possess parity $-1$. Since the $468.98\text{ GeV}$ KK-graviton is the Lightest Kaluza-Klein Particle (LKP) under this compactification geometry, its decay is kinematically and topologically prohibited, rendering it stable over cosmic timescales. Furthermore, because these particles interact with baryonic matter exclusively via graviton-mediated dimension-8 operators ($1/M_P^2$), their scattering cross-sections are highly suppressed, explaining their direct-detection invisibility (e.g., LZ and XENONnT constraints) and the absence of high-energy decay signatures.
 
+### 7.8 Prebiotic Homochirality: Primordial Chiral Seed and Autocatalytic Amplification
+The origin of biological homochirality (the exclusive selection of L-enantiomer amino acids and D-enantiomer sugars) is a major prebiotic enigma. Under the TAP model, this asymmetry is established via a two-stage mechanism coupling gravitational metric spin to organic reaction dynamics.
+
+First, the higher-dimensional metric spin of the solar wind acts as a primordial, parity-violating chiral symmetry breaker during the synthesis of organic precursors in interstellar dust grains, introducing a microscopic chiral seed (enantiomeric excess $\approx 10^{-6}$). Second, once these organic compounds are deposited on a planetary surface, standard prebiotic autocatalytic reaction networks (such as the Soai reaction) and physical chiral crystallization processes (Viedma ripening) exponentially amplify this tiny initial bias, driving the prebiotic mixture to $100\%$ homochirality. This resolves the planet-wide coordination bottleneck, ensuring uniform chiral compatibility.
+
 ---
 
 ## 8. Conclusion
