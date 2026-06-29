@@ -5,6 +5,21 @@ const int TX_PIN_NEG = 8;  // Acoustic pulse transmitter negative (Pin 8)
 const int RX_PIN = A0;      // Piezo feedback receiver (Analog 0)
 const int SAMPLE_COUNT = 100;
 
+void play_note(int freq, int duration_ms) {
+  int half_period = 500000 / freq; // half-period in microseconds
+  long cycles = (long)freq * duration_ms / 1000;
+  
+  for (long i = 0; i < cycles; i++) {
+    digitalWrite(TX_PIN_POS, HIGH);
+    digitalWrite(TX_PIN_NEG, LOW);
+    delayMicroseconds(half_period);
+    
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, HIGH);
+    delayMicroseconds(half_period);
+  }
+}
+
 void setup() {
   Serial.begin(115200);
   pinMode(TX_PIN_POS, OUTPUT);
@@ -15,58 +30,35 @@ void setup() {
   digitalWrite(TX_PIN_NEG, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP 10V DIFFERENTIAL 5-SECOND LOUD TEST TONE    ");
+  Serial.println("  TAP 10V DIFFERENTIAL JINGLE TEST BURST           ");
   Serial.println("==================================================");
   
-  // Blink LED to warn of start
+  // Blink LED warning
   for(int i=0; i<3; i++) {
     digitalWrite(13, HIGH); delay(100);
     digitalWrite(13, LOW); delay(100);
   }
   
-  Serial.println("📡 STARTING 5-SECOND TONE BURST (4.5 kHz, 10V)...");
+  Serial.println("📡 PLAYING JINGLE (DO DO DOO)...");
   
-  // 150 trials of 100 cycles each ≈ 5.0 seconds of continuous tone
-  for (int trial = 0; trial < 150; trial++) {
-    // Pulse 100 cycles at 4.5 kHz
-    for (int i = 0; i < 100; i++) {
-      digitalWrite(TX_PIN_POS, HIGH);
-      digitalWrite(TX_PIN_NEG, LOW);
-      delayMicroseconds(111);
-      
-      digitalWrite(TX_PIN_POS, LOW);
-      digitalWrite(TX_PIN_NEG, HIGH);
-      delayMicroseconds(111);
-    }
-    
-    // Immediate read of the active wave response
-    int min_val = 1023;
-    int max_val = 0;
-    for (int i = 0; i < SAMPLE_COUNT; i++) {
-      int val = analogRead(RX_PIN);
-      if (val < min_val) min_val = val;
-      if (val > max_val) max_val = val;
-      delayMicroseconds(5);
-    }
-    int amplitude = max_val - min_val;
-    
-    // Print live feedback during the tone
-    Serial.print("Live Tone | Amplitude: ");
-    Serial.print(amplitude);
-    Serial.print(" [Min: ");
-    Serial.print(min_val);
-    Serial.print(", Max: ");
-    Serial.print(max_val);
-    Serial.println("]");
-  }
+  // Note 1 ("do"): 2000 Hz (500 ms)
+  play_note(2000, 500);
+  delay(100);
   
-  // Turn off transmitter pins (silence)
+  // Note 2 ("do"): 3000 Hz (500 ms)
+  play_note(3000, 500);
+  delay(100);
+  
+  // Note 3 ("doo"): 4000 Hz (1000 ms)
+  play_note(4000, 1000);
+  
+  // Silence pins
   digitalWrite(TX_PIN_POS, LOW);
   digitalWrite(TX_PIN_NEG, LOW);
   
-  Serial.println("🔇 TONE BURST FINISHED. SILENT.");
+  Serial.println("🔇 JINGLE FINISHED. SILENT.");
 }
 
 void loop() {
-  // Do nothing in the loop so it only runs once per reset
+  // Do nothing
 }
