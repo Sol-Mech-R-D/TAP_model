@@ -28,13 +28,28 @@ void send_pulse_partition(int cycles) {
 void send_pulse_chirp(int cycles) {
   float half_period = 111.0;
   for (int i = 0; i < cycles; i++) {
-    // Pulse with expanding period
     digitalWrite(TX_PIN, HIGH);
-    delayMicroseconds((int)(half_period * 0.764)); // 38.2% duty cycle of growing period
+    delayMicroseconds((int)(half_period * 0.764)); 
     digitalWrite(TX_PIN, LOW);
-    delayMicroseconds((int)(half_period * 1.236)); // 61.8% duty cycle of growing period
+    delayMicroseconds((int)(half_period * 1.236)); 
+    half_period *= 1.015; 
+  }
+}
+
+// Method 4: Fused TAP Excitation (Chirp + Golden Ratio Energy Partition)
+// Uses the phi^-3 energy partition (23.6% active, 76.4% passive) applied to a 1.5% expanding chirp
+void send_pulse_fused(int cycles) {
+  float period = 222.0; // Starting period in microseconds (4.5 kHz)
+  for (int i = 0; i < cycles; i++) {
+    int t_high = (int)(period * 0.236); // Phi^-3 active phase (23.6%)
+    int t_low = (int)(period * 0.764);  // 1 - Phi^-3 passive phase (76.4%)
     
-    half_period *= 1.015; // Geometrically expand period by 1.5% each cycle
+    digitalWrite(TX_PIN, HIGH);
+    delayMicroseconds(t_high);
+    digitalWrite(TX_PIN, LOW);
+    delayMicroseconds(t_low);
+    
+    period *= 1.015; // Geometrically expand period by 1.5% each cycle (exhale chirp)
   }
 }
 
@@ -45,13 +60,14 @@ void run_t2_sweep(int method) {
   Serial.println(") ---");
   
   for (int delay_ms = 0; delay_ms <= 300; delay_ms += 10) {
-    // Trigger excitation based on method
     if (method == 1) {
       send_pulse_golden(50);
     } else if (method == 2) {
       send_pulse_partition(50);
     } else if (method == 3) {
       send_pulse_chirp(50);
+    } else if (method == 4) {
+      send_pulse_fused(50);
     }
     
     delay(delay_ms);
@@ -90,8 +106,8 @@ void setup() {
   digitalWrite(TX_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP THREE-METHOD ASYMMETRIC CORE (D5 -> A1)      ");
-  Serial.println("  Commands: '1' -> Golden Ratio, '2' -> 3:1 Energy, '3' -> Exhale Chirp");
+  Serial.println("  TAP FOUR-METHOD ASYMMETRIC CORE (D5 -> A1)      ");
+  Serial.println("  Commands: '1'->Golden, '2'->3:1, '3'->Chirp, '4'->Fused TAP");
   Serial.println("==================================================");
 }
 
@@ -104,9 +120,9 @@ void loop() {
       run_t2_sweep(2);
     } else if (cmd == '3') {
       run_t2_sweep(3);
+    } else if (cmd == '4') {
+      run_t2_sweep(4);
     }
   }
-  
-  // Remain silent by default
   digitalWrite(TX_PIN, LOW);
 }
