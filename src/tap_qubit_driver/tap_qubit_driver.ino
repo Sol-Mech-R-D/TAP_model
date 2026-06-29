@@ -99,8 +99,8 @@ void setup() {
   digitalWrite(TX_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP SINGLE-TO-SINGLE COHERENCE CORE (D5 -> A1)  ");
-  Serial.println("  Ready. Send '0' for Baseline, '1' for T2 Sweep, '2' for Phase Sweep.");
+  Serial.println("  TAP COHERENCE CORE (D5 -> A1) - CONTINUOUS HUM  ");
+  Serial.println("  Ready. Send '1' for T2 Sweep, '2' for Phase Sweep.");
   Serial.println("==================================================");
 }
 
@@ -112,46 +112,12 @@ void loop() {
       run_t2_sweep();
     } else if (cmd == '2') {
       run_phase_sweep();
-    } else if (cmd == '0') {
-      Serial.println("\n--- SWITCHED TO CONTINUOUS BASELINE ---");
     }
   }
 
-  // Continuous baseline mode (runs by default)
-  send_pulse_train(50);
-  
-  // Read feedback wave response
-  int min_val = 1023;
-  int max_val = 0;
-  for (int i = 0; i < SAMPLE_COUNT; i++) {
-    int val = analogRead(RX_PIN);
-    if (val < min_val) min_val = val;
-    if (val > max_val) max_val = val;
-    delayMicroseconds(5);
-  }
-  
-  int amplitude = max_val - min_val;
-  
-  // Blink Pin 13 LED
-  digitalWrite(13, HIGH);
-  delay(50);
-  digitalWrite(13, LOW);
-  
-  // Print status to serial
-  Serial.print("Qubit Amplitude: ");
-  Serial.print(amplitude);
-  Serial.print(" [Min: ");
-  Serial.print(min_val);
-  Serial.print(", Max: ");
-  Serial.print(max_val);
-  Serial.print("] | State: ");
-  if (amplitude > 100) {
-    Serial.println("|1> (Coherent State)");
-  } else if (amplitude > 30) {
-    Serial.println("(|0> + |1>)/sqrt(2) (Superposition)");
-  } else {
-    Serial.println("|0> (Decohered / Absorbed)");
-  }
-  
-  delay(1000);
+  // Continuous 4.5 kHz tone hum when not executing sweeps
+  digitalWrite(TX_PIN, HIGH);
+  delayMicroseconds(111);
+  digitalWrite(TX_PIN, LOW);
+  delayMicroseconds(111);
 }
