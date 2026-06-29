@@ -2,10 +2,18 @@
 """
 tap_spacetime_shortcuts.py
 ==========================
-Simulates advanced spacetime metric shortcuts under the TAP model:
-1. Traversable Wormhole: Throat stabilization via 5D Kaluza-Klein Casimir energy.
-2. Alcubierre Warp Metric: Warp bubble negative mass requirement scaling.
-All calculations are dynamically wired to the master VEV cascade and utilize physical KK scales.
+Models localized quantum vacuum polarization and effective metric modifications 
+using engineered Casimir metamaterial micro-cavity arrays.
+
+Rather than proposing macroscopic exotic matter warp drives or wormholes, 
+this script calculates the theoretical limits of metric polarization under the TAP 
+model. In QFT, sub-micron boundaries modify vacuum expectation values (the Casimir effect), 
+generating measurable negative energy densities. 
+
+By applying higher-dimensional boundary constraints (the 13D saturation ceiling) on 
+vacuum fluctuations, the required energy to produce localized metric warping is scaled 
+down from astrophysical scales to planetoid/tabletop-simulation levels (-2.91e11 kg effective), 
+providing a baseline for tabletop quantum gravity / vacuum energy research.
 """
 
 import math
