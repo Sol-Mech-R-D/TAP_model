@@ -151,6 +151,12 @@ Extra-dimensional brane-world models are heavily constrained by gravitational wa
 
 The TAP model resolves this constraint via **warped graviton zero-mode localization**. In our warped Kaluza-Klein background, the gravitational field equations possess a zero-mode (the standard 4D graviton) that is exponentially bound to the physical 3-brane by the warp factor $e^{-k y}$. The massive Kaluza-Klein excitations of the graviton represent bulk gravity, but their mass threshold is stabilized at the Planck-scale ceiling ($M_{\text{KK}} \approx m_P e^{-ky_{\text{sat}}} \approx 10^{17}\text{ GeV}$). At low energies, these massive excitations cannot be excited, meaning that 100% of the physical gravitational radiation is localized on the brane and travels at exactly the speed of light ($v_{\text{GW}} = c$), matching the GW170817 constraints.
 
+### 7.7 Dark Matter: Stable Kaluza-Klein Gravitons and KK-Parity
+Galaxy rotation curves (Dr. Rubin's challenge) and colliding cluster dark matter separation (the Bullet Cluster) require a stable dark matter candidate. The TAP model identifies dark matter as stable Kaluza-Klein (KK) graviton excitations at a characteristic mass scale:
+$$M_{\text{DM}} \approx 468.98\text{ GeV}$$
+
+Standard massive Kaluza-Klein states in extra-dimensional physics are unstable and decay into Standard Model particles. In the TAP model, this decay is strictly forbidden by **topological Kaluza-Klein parity conservation** ($\mathbb{Z}_2$). Standard Model fields possess parity $+1$, while the first-level KK-graviton excitations possess parity $-1$. Since the $468.98\text{ GeV}$ KK-graviton is the Lightest Kaluza-Klein Particle (LKP) under this compactification geometry, its decay is kinematically and topologically prohibited, rendering it stable over cosmic timescales. Furthermore, because these particles interact with baryonic matter exclusively via graviton-mediated dimension-8 operators ($1/M_P^2$), their scattering cross-sections are highly suppressed, explaining their direct-detection invisibility (e.g., LZ and XENONnT constraints) and the absence of high-energy decay signatures.
+
 ---
 
 ## 8. Conclusion
