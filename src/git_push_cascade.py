@@ -79,6 +79,10 @@ PUBLIC_FILES = [
     "assets/tap_cosmic_quantum_neuro_results.json",
     "assets/tap_biochem_qubit_graphene_results.json",
     "assets/tap_qubit_driver.hex",
+    "assets/tap_piezo_chassis.scad",
+    "assets/tap_octahedral_cabinet.scad",
+    "docs/TAP_Theory_Paper.md",
+    "docs/TAP_White_Paper.md",
     "TERMUX_NOTE.md"
 ]
 
@@ -127,16 +131,44 @@ def main():
 
     # 3. Stage and commit only PUBLIC files to a temp public branch
     print("\n  [STEP 2] Preparing public files subset...")
-    run_git(["checkout", "-b", "temp-public"])
-    run_git(["rm", "--cached", "-r", "."]) # clear index completely
     
+    # Ensure any old temp-public branch is deleted
+    run_git(["branch", "-D", "temp-public"])
+    run_git(["checkout", "-b", "temp-public"])
+    
+    # Physically delete any untracked or private files to ensure they don't get committed
     staged_count = 0
-    for f in PUBLIC_FILES:
-        if os.path.exists(f):
-            run_git(["add", f])
-            staged_count += 1
-            
-    print(f"  Staged {staged_count} public files.")
+    for root, dirs, files in os.walk("."):
+        if ".git" in root.split(os.sep):
+            continue
+        for file in files:
+            filepath = os.path.relpath(os.path.join(root, file), ".")
+            filepath_norm = filepath.replace("\\", "/")
+            if filepath_norm not in PUBLIC_FILES:
+                try:
+                    os.remove(filepath)
+                except Exception:
+                    pass
+
+    # Clean up empty directories
+    for root, dirs, files in os.walk(".", topdown=False):
+        if ".git" in root.split(os.sep):
+            continue
+        for d in dirs:
+            dirpath = os.path.join(root, d)
+            try:
+                if not os.listdir(dirpath):
+                    os.rmdir(dirpath)
+            except Exception:
+                pass
+                
+    # Stage all modifications and deletions
+    run_git(["add", "-A"])
+    
+    # Count actually staged files
+    status_res = run_git(["status", "--porcelain"])
+    staged_files = [line for line in status_res.stdout.splitlines() if not line.startswith("??")]
+    print(f"  Staged {len(staged_files)} file changes for public release.")
     
     commit_msg = "feat(public): update core science, weather, and agriculture models"
     print(f"  [COMMIT] Committing public files to temp branch...")
@@ -145,21 +177,21 @@ def main():
     print("  [PUSH] Pushing public branch to origin/master (Sol-Mech R&D)...")
     push_res = run_git(["push", "origin", "temp-public:master", "--force"])
     if push_res.returncode == 0:
-        print("  ✅ Public push successful!")
+        print("  [SUCCESS] Public push successful!")
     else:
-        print("  ⚠️ Public push failed. Check remote credentials.")
+        print("  [WARNING] Public push failed. Check remote credentials.")
 
     # 4. Switch back to master and push to private
     print("\n  [STEP 3] Preparing full repository push (bigcaker)...")
-    run_git(["checkout", "master"])
+    run_git(["checkout", "-f", "master"]) # force checkout to restore deleted private files
     run_git(["branch", "-D", "temp-public"]) # cleanup temp branch
     
     print("  [PUSH] Pushing entire repository to private/master (bigcaker)...")
     push_priv_res = run_git(["push", "private", "master", "--force"])
     if push_priv_res.returncode == 0:
-        print("  ✅ Private push successful!")
+        print("  [SUCCESS] Private push successful!")
     else:
-        print("  ⚠️ Private push failed. Check remote credentials or configure URL.")
+        print("  [WARNING] Private push failed. Check remote credentials or configure URL.")
         print("     Ensure bigcaker repo exists at the designated address.")
         
     print("=" * 80)
