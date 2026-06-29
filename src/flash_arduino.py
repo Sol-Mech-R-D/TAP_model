@@ -25,14 +25,15 @@ STK_LEAVE_PROGMODE = 0x51
 SYNC_SZ = 0x20
 
 class RawSerialFD:
-    def __init__(self, fd):
+    def __init__(self, fd, baud=115200):
         self.fd = fd
-        # Configure raw mode and 115200 baud rate using termios
-        attrs = termios.tcgetattr(self.fd)
+        self.set_baud(baud)
         
-        # Output/input speeds
-        attrs[4] = termios.B115200 # ospeed
-        attrs[5] = termios.B115200 # ispeed
+    def set_baud(self, baud):
+        attrs = termios.tcgetattr(self.fd)
+        baud_const = termios.B115200 if baud == 115200 else termios.B57600
+        attrs[4] = baud_const # ospeed
+        attrs[5] = baud_const # ispeed
         
         # Raw mode settings
         attrs[0] &= ~(termios.IGNBRK | termios.BRKINT | termios.PARMRK | termios.ISTRIP | termios.INLCR | termios.IGNCR | termios.ICRNL | termios.IXON)
@@ -65,6 +66,18 @@ class RawSerialFD:
             if time.time() - start > 2.0: # 2s max read timeout
                 break
         return bytes(buffer)
+
+    def flush_input(self):
+        # Read and discard all available bytes in the buffer without blocking
+        while True:
+            r, _, _ = select.select([self.fd], [], [], 0.0)
+            if r:
+                try:
+                    os.read(self.fd, 1024)
+                except Exception:
+                    break
+            else:
+                break
 
     def setDTR(self, val):
         # DTR/RTS control using ioctl on Android is sometimes restricted,
@@ -114,18 +127,38 @@ def load_hex(hex_path):
     return bytes(flash[:pages*128])
 
 def send_cmd(ser, cmd):
+    # Flush input buffer before sending command
+    ser.flush_input()
     ser.write(bytes(cmd))
-    res = ser.read(2)
-    if len(res) == 2 and res[0] == STK_INSYNC and res[1] == STK_OK:
-        return True
+    
+    # Read byte by byte looking for STK_INSYNC and STK_OK
+    start = time.time()
+    while time.time() - start < 1.0:
+        b = ser.read(1)
+        if b == bytes([STK_INSYNC]):
+            b2 = ser.read(1)
+            if b2 == bytes([STK_OK]):
+                return True
     return False
 
 def flash_device(ser, program_bytes):
     print("  [CONN] Sending sync packages...")
-    for _ in range(10):
+    for _ in range(15):
+        # Flush serial input buffer
+        ser.flush_input()
         ser.write(bytes([STK_GET_SYNC, SYNC_SZ]))
-        res = ser.read(2)
-        if len(res) == 2 and res[0] == STK_INSYNC and res[1] == STK_OK:
+        
+        # Read byte by byte looking for STK_INSYNC and STK_OK
+        insync_found = False
+        start = time.time()
+        while time.time() - start < 0.2:
+            b = ser.read(1)
+            if b == bytes([STK_INSYNC]):
+                b2 = ser.read(1)
+                if b2 == bytes([STK_OK]):
+                    insync_found = True
+                    break
+        if insync_found:
             break
         time.sleep(0.05)
     else:
@@ -169,12 +202,12 @@ def main():
     print("  TAP PURE PYTHON ARDUINO FLASHER")
     print("=" * 80)
     
-    if len(sys.argv) < 3:
-        print("  Usage: termux-usb -r <device> -e 'python src/flash_arduino.py <hex_file>'")
+    if len(sys.argv) < 2:
+        print("  Usage: python src/flash_arduino.py <hex_file> [fd]")
         return
         
     hex_file = sys.argv[1]
-    fd = int(sys.argv[2])
+    fd = int(sys.argv[2]) if len(sys.argv) >= 3 else 0
     
     if not os.path.exists(hex_file):
         print(f"  ❌ Intel Hex file not found: {hex_file}")
@@ -183,25 +216,32 @@ def main():
     program_bytes = load_hex(hex_file)
     print(f"  Loaded {len(program_bytes)} bytes of firmware.")
     
-    try:
-        # Wrap fd in raw serial class
-        ser = RawSerialFD(fd)
-        
-        # Reset Arduino
-        print("  [RESET] Sending hardware reset...")
-        ser.setDTR(False)
-        time.sleep(0.1)
-        ser.setDTR(True)
-        time.sleep(0.4) # wait for bootloader
-        
-        # Start flash sequence
-        success = flash_device(ser, program_bytes)
-        
-        if success:
-            print("\n  🎯 Firmware updated successfully!")
-            print("  You can now start the live monitor.")
-    except Exception as e:
-        print(f"\n  ❌ Serial flash error: {e}")
+    for baud in [115200, 57600]:
+        print(f"  [TRY] Attempting flashing at {baud} baud...")
+        try:
+            # Wrap fd in raw serial class
+            ser = RawSerialFD(fd, baud)
+            
+            # Reset Arduino
+            print("    [RESET] Sending hardware reset...")
+            ser.setDTR(False)
+            time.sleep(0.1)
+            ser.setDTR(True)
+            time.sleep(0.4) # wait for bootloader
+            
+            # Start flash sequence
+            success = flash_device(ser, program_bytes)
+            
+            if success:
+                print(f"\n  🎯 Firmware updated successfully at {baud} baud!")
+                print("  You can now start the live monitor.")
+                with open("/data/data/com.termux/files/home/TAP_model/assets/flash_success.tmp", "w") as sf:
+                    sf.write("OK")
+                return
+        except Exception as e:
+            print(f"    ⚠️ Flash at {baud} baud failed: {e}")
+            
+    print("\n  ❌ Failed to flash firmware at all supported baud rates.")
 
 if __name__ == "__main__":
     main()
