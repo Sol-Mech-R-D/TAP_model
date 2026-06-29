@@ -146,6 +146,11 @@ $$\tau_{\text{coherence}} \approx 939.57\text{ fs}$$
 
 The brain does not require millisecond-scale quantum memory. Instead, it utilizes **ultrafast sub-picosecond quantum triggering**. The quantum state acts as a probability gate that biases the conformational state of tubulin proteins on a femtosecond scale. Once the protein shift occurs, the information is transduced into a classical state, which then propagates classically to trigger standard action potentials. This mechanism is analogous to biological light-harvesting systems (like the FMO complex in photosynthesis), which exploit sub-picosecond quantum coherence to route excitons at room temperature before thermal decoherence occurs.
 
+### 7.6 Gravitational Wave Speed & Graviton Zero-Mode Localization
+Extra-dimensional brane-world models are heavily constrained by gravitational wave (GW) speed measurements. The binary neutron star merger event **GW170817** constrained the difference between the speed of gravity and the speed of light to within one part in $10^{15}$. If gravity leaked freely into the bulk, low-energy GWs would exhibit dispersion or velocity deviations.
+
+The TAP model resolves this constraint via **warped graviton zero-mode localization**. In our warped Kaluza-Klein background, the gravitational field equations possess a zero-mode (the standard 4D graviton) that is exponentially bound to the physical 3-brane by the warp factor $e^{-k y}$. The massive Kaluza-Klein excitations of the graviton represent bulk gravity, but their mass threshold is stabilized at the Planck-scale ceiling ($M_{\text{KK}} \approx m_P e^{-ky_{\text{sat}}} \approx 10^{17}\text{ GeV}$). At low energies, these massive excitations cannot be excited, meaning that 100% of the physical gravitational radiation is localized on the brane and travels at exactly the speed of light ($v_{\text{GW}} = c$), matching the GW170817 constraints.
+
 ---
 
 ## 8. Conclusion
