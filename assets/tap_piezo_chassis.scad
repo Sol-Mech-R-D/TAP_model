@@ -1,11 +1,10 @@
 /*
  * tap_piezo_chassis.scad
  * =======================
- * Toolless Closed-Chamber (Reverb Room) Acoustic Qubit Chassis 
- * with TAP Fibonacci-Spaced Boundary Diffusers.
+ * Closed-Chamber (Reverb Room) Acoustic Qubit Chassis 
+ * with 13:5 Fibonacci Aspect Ratio & Helical Golden Spiral Diffusers.
  * 
- * Replaces the paper/Mylar spacer layers with a sealed 3D-printed air cavity.
- * The air cavity uses a 5.0mm (F5) gap with concentric Fibonacci diffraction rings.
+ * Height: 5.0mm (F5) | Diameter: 13.0mm (F7) | Ratio: 2.60 ≈ phi^2
  * Drives Tx directly from Arduino Pin 5, reads Rx on Pin A1.
  */
 
@@ -28,12 +27,11 @@ pin_depth = 1.2;                // Depth the pin protrudes (mm)
 wire_channel_w = 3.5;           // Width of wire escape slot (mm)
 wire_channel_d = 2.0;           // Depth of wire escape slot (mm)
 
-// Chamber spacing (air gap height between Tx and Rx piezos when locked)
-// Changed to 5.0mm (5th Fibonacci Number) for proper wave resonance
-chamber_air_gap = 5.0;          
+// --- TAP Fibonacci-Locked Chamber Geometry ---
+chamber_air_gap = 5.0;          // Height = 5.0mm (F5)
+chamber_dia = 13.0;              // Diameter = 13.0mm (F7) -> Ratio = 13/5 = 2.60 ≈ phi^2
 
-// Toggle Fibonacci diffraction grooves inside the chamber
-use_fibonacci_grooves = true;   
+use_spiral_diffuser = true;     // Toggle helical Golden Spiral diffusers
 
 // Calculated dimensions
 inner_fit_dia = piezo_dia + clearance;
@@ -61,16 +59,16 @@ module bottom_chassis() {
         translate([0, 0, chassis_height + 6 - piezo_brass_thick])
             cylinder(d=inner_fit_dia, h=piezo_brass_thick + 1);
             
-        // 2. Sealed Acoustic Reverb Room Cavity (extends down below the shelf)
+        // 2. 13mm Resonant Cavity (lower half)
         translate([0, 0, chassis_height + 6 - piezo_brass_thick - chamber_air_gap/2])
-            cylinder(d=piezo_ceramic_dia + clearance, h=chamber_air_gap/2 + 0.1);
+            cylinder(d=chamber_dia, h=chamber_air_gap/2 + 0.1);
             
         // 3. Radial wire egress channel in the base
         translate([-wire_channel_w/2, -body_outer_dia/2 - 1, chassis_height + 6 - wire_channel_d - piezo_brass_thick])
             cube([wire_channel_w, body_outer_dia + 2, wire_channel_d + 1]);
             
-        // 4. Fibonacci Concentric Grooves on the bottom chamber floor
-        if (use_fibonacci_grooves) {
+        // 4. Helical Golden Spiral Diffuser on the bottom chamber floor
+        if (use_spiral_diffuser) {
             translate([0, 0, chassis_height + 6 - piezo_brass_thick - chamber_air_gap/2])
                 fibonacci_diffuser();
         }
@@ -98,16 +96,16 @@ module top_cap() {
         translate([0, 0, 7.5])
             cylinder(d=inner_fit_dia, h=piezo_brass_thick + 1);
             
-        // 3. Sealed Acoustic Reverb Room Cavity (extends up above the shelf)
+        // 3. 13mm Resonant Cavity (upper half)
         translate([0, 0, 7.5 - chamber_air_gap/2])
-            cylinder(d=piezo_ceramic_dia + clearance, h=chamber_air_gap/2 + 0.1);
+            cylinder(d=chamber_dia, h=chamber_air_gap/2 + 0.1);
             
         // 4. Radial wire egress channel in the cap
         translate([-wire_channel_w/2, -body_outer_dia/2 - 1, 7.5])
             cube([wire_channel_w, body_outer_dia + 2, wire_channel_d + 1]);
             
-        // 5. Fibonacci Concentric Grooves on the top chamber ceiling
-        if (use_fibonacci_grooves) {
+        // 5. Helical Golden Spiral Diffuser on the top chamber ceiling
+        if (use_spiral_diffuser) {
             translate([0, 0, 7.5 - chamber_air_gap/2])
                 rotate([180, 0, 0])
                     fibonacci_diffuser();
@@ -131,17 +129,16 @@ module top_cap() {
     }
 }
 
-// Generates concentric stepped ridges scaled by the Fibonacci sequence
+// Generates a helical Golden Spiral groove winding outwards
 module fibonacci_diffuser() {
-    // We carve rings into the chamber wall. 
-    // Ring 1 (Center): Dia 2mm, Depth 1.3mm
-    // Ring 2: Dia 5mm, Depth 0.8mm
-    // Ring 3: Dia 10mm, Depth 0.5mm
-    // Ring 4: Dia 15mm, Depth 0.2mm
-    translate([0, 0, -1.3]) {
-        cylinder(d=2.0, h=1.3 + 0.1);
-        cylinder(d=5.0, h=0.8 + 0.1);
-        cylinder(d=10.0, h=0.5 + 0.1);
-        cylinder(d=15.0, h=0.2 + 0.1);
+    // Radius grows linearly from 1.0mm to 6.0mm (fitting exactly inside the 13.0mm chamber)
+    // Depth of the spiral groove slopes from 0.3mm to 1.0mm (golden ratio scaling)
+    for (a = [0 : 6 : 720]) {
+        r = 1.0 + (a / 720) * 5.0;
+        d = 0.3 + (a / 720) * 0.7;
+        
+        rotate([0, 0, a])
+            translate([r, 0, -d])
+                cylinder(d=1.5, h=d + 0.1); // 1.5mm wide spiral cut
     }
 }
