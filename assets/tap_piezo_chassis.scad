@@ -2,15 +2,11 @@
  * tap_piezo_chassis.scad
  * =======================
  * Toolless Closed-Chamber (Reverb Room) Acoustic Qubit Chassis 
- * for the TAP 20mm Dual Piezo.
+ * with TAP Fibonacci-Spaced Boundary Diffusers.
  * 
  * Replaces the paper/Mylar spacer layers with a sealed 3D-printed air cavity.
+ * The air cavity uses a 5.0mm (F5) gap with concentric Fibonacci diffraction rings.
  * Drives Tx directly from Arduino Pin 5, reads Rx on Pin A1.
- * 
- * Assembly Notes:
- * - Insert Tx piezo in the Bottom Chassis cup (wires out the side slot).
- * - Insert Rx piezo in the Top Cap cup (wires out the side slot).
- * - Align pins, push together, and twist clockwise to seal the acoustic chamber.
  */
 
 // ─── PARAMETERS ─────────────────────────────────────────────────────────────
@@ -24,7 +20,7 @@ piezo_ceramic_thick = 0.25;     // Extra thickness of ceramic layer + solder joi
 clearance = 0.3;                // Print clearance (added to recesses for fit)
 sleeve_clearance = 0.4;         // Clearance between mating parts (mm)
 
-chassis_height = 10.0;          // Height of each main plate (mm)
+chassis_height = 11.0;          // Height of each main plate (mm)
 pin_height = 2.0;               // Vertical size of locking pin (mm)
 pin_width = 3.0;                // Angular width of locking pin (mm)
 pin_depth = 1.2;                // Depth the pin protrudes (mm)
@@ -33,7 +29,11 @@ wire_channel_w = 3.5;           // Width of wire escape slot (mm)
 wire_channel_d = 2.0;           // Depth of wire escape slot (mm)
 
 // Chamber spacing (air gap height between Tx and Rx piezos when locked)
-chamber_air_gap = 4.0;          // Height of the reverb room cavity (mm)
+// Changed to 5.0mm (5th Fibonacci Number) for proper wave resonance
+chamber_air_gap = 5.0;          
+
+// Toggle Fibonacci diffraction grooves inside the chamber
+use_fibonacci_grooves = true;   
 
 // Calculated dimensions
 inner_fit_dia = piezo_dia + clearance;
@@ -62,13 +62,18 @@ module bottom_chassis() {
             cylinder(d=inner_fit_dia, h=piezo_brass_thick + 1);
             
         // 2. Sealed Acoustic Reverb Room Cavity (extends down below the shelf)
-        // This forms the lower half of the closed speaker box
         translate([0, 0, chassis_height + 6 - piezo_brass_thick - chamber_air_gap/2])
             cylinder(d=piezo_ceramic_dia + clearance, h=chamber_air_gap/2 + 0.1);
             
         // 3. Radial wire egress channel in the base
         translate([-wire_channel_w/2, -body_outer_dia/2 - 1, chassis_height + 6 - wire_channel_d - piezo_brass_thick])
             cube([wire_channel_w, body_outer_dia + 2, wire_channel_d + 1]);
+            
+        // 4. Fibonacci Concentric Grooves on the bottom chamber floor
+        if (use_fibonacci_grooves) {
+            translate([0, 0, chassis_height + 6 - piezo_brass_thick - chamber_air_gap/2])
+                fibonacci_diffuser();
+        }
     }
     
     // Add 3x Bayonet Locking Pins on the collar
@@ -94,7 +99,6 @@ module top_cap() {
             cylinder(d=inner_fit_dia, h=piezo_brass_thick + 1);
             
         // 3. Sealed Acoustic Reverb Room Cavity (extends up above the shelf)
-        // This forms the upper half of the closed speaker box
         translate([0, 0, 7.5 - chamber_air_gap/2])
             cylinder(d=piezo_ceramic_dia + clearance, h=chamber_air_gap/2 + 0.1);
             
@@ -102,7 +106,14 @@ module top_cap() {
         translate([-wire_channel_w/2, -body_outer_dia/2 - 1, 7.5])
             cube([wire_channel_w, body_outer_dia + 2, wire_channel_d + 1]);
             
-        // 5. 3x L-shaped Bayonet Entry Slots + Compression Ramps
+        // 5. Fibonacci Concentric Grooves on the top chamber ceiling
+        if (use_fibonacci_grooves) {
+            translate([0, 0, 7.5 - chamber_air_gap/2])
+                rotate([180, 0, 0])
+                    fibonacci_diffuser();
+        }
+            
+        // 6. 3x L-shaped Bayonet Entry Slots + Compression Ramps
         for (a = [0, 120, 240]) {
             rotate([0, 0, a]) {
                 // Vertical entry slot from the bottom rim
@@ -117,5 +128,20 @@ module top_cap() {
                 }
             }
         }
+    }
+}
+
+// Generates concentric stepped ridges scaled by the Fibonacci sequence
+module fibonacci_diffuser() {
+    // We carve rings into the chamber wall. 
+    // Ring 1 (Center): Dia 2mm, Depth 1.3mm
+    // Ring 2: Dia 5mm, Depth 0.8mm
+    // Ring 3: Dia 10mm, Depth 0.5mm
+    // Ring 4: Dia 15mm, Depth 0.2mm
+    translate([0, 0, -1.3]) {
+        cylinder(d=2.0, h=1.3 + 0.1);
+        cylinder(d=5.0, h=0.8 + 0.1);
+        cylinder(d=10.0, h=0.5 + 0.1);
+        cylinder(d=15.0, h=0.2 + 0.1);
     }
 }
