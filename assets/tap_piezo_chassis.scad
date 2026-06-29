@@ -2,7 +2,8 @@
  * tap_piezo_chassis.scad
  * =======================
  * Closed-Chamber (Reverb Room) Acoustic Qubit Chassis 
- * with 13:5 Fibonacci Aspect Ratio & Helical Golden Spiral Diffusers.
+ * with 13:5 Fibonacci Aspect Ratio, Helical Golden Spiral Diffusers,
+ * Helmholtz Reverb Pockets, and Curved Fibonacci Deflector Fins.
  * 
  * Height: 5.0mm (F5) | Diameter: 13.0mm (F7) | Ratio: 2.60 ≈ phi^2
  * Drives Tx directly from Arduino Pin 5, reads Rx on Pin A1.
@@ -45,6 +46,49 @@ translate([body_outer_dia/2 + 5, 0, 0]) top_cap();
 
 // ─── MODULES ────────────────────────────────────────────────────────────────
 
+// Unified Chamber Cavity Module containing Helmholtz Reverb Pockets 
+// and solid curved Fibonacci deflector fins.
+module chamber_cavity(h_half) {
+    difference() {
+        union() {
+            // Main cylinder cavity
+            cylinder(d=chamber_dia, h=h_half + 0.1);
+            
+            // 3x Helmholtz Reverb Pockets (placed at 60, 180, 300 degrees to avoid bayonets)
+            // Tuned as Helmholtz resonators to amplify and store the 4.5 kHz acoustic wave
+            for (a = [60, 180, 300]) {
+                rotate([0, 0, a]) {
+                    // Resonant neck/throat
+                    translate([chamber_dia/2 - 0.5, -0.6, 0])
+                        cube([2.0, 1.2, h_half + 0.1]);
+                    // Resonant volume chamber
+                    translate([chamber_dia/2 + 2.0, 0, 0])
+                        cylinder(d=3.5, h=h_half + 0.1);
+                }
+            }
+        }
+        
+        // 3x Curved Fibonacci Deflector Fins (will render as solid plastic walls in the chamber)
+        // Curves waves into a central vortex to prevent wall scattering (topological waveguide)
+        for (a = [0, 120, 240]) {
+            rotate([0, 0, a]) {
+                intersection() {
+                    cylinder(d=chamber_dia - 0.5, h=h_half + 0.2);
+                    // Curved blade segment created by off-center ring subtraction
+                    translate([2.5, 2.5, -0.1])
+                        difference() {
+                            cylinder(d=10.0, h=h_half + 0.4);
+                            cylinder(d=8.4, h=h_half + 0.4);
+                            // Angle cutout to restrict the blade to a 120-degree sector
+                            translate([-6, -6, -0.1]) 
+                                cube([12, 6, h_half + 0.6]);
+                        }
+                }
+            }
+        }
+    }
+}
+
 module bottom_chassis() {
     difference() {
         // Main base body + male alignment guide column
@@ -59,9 +103,9 @@ module bottom_chassis() {
         translate([0, 0, chassis_height + 6 - piezo_brass_thick])
             cylinder(d=inner_fit_dia, h=piezo_brass_thick + 1);
             
-        // 2. 13mm Resonant Cavity (lower half)
+        // 2. 13mm Resonant Cavity (lower half) with Fins & Reverb Pockets
         translate([0, 0, chassis_height + 6 - piezo_brass_thick - chamber_air_gap/2])
-            cylinder(d=chamber_dia, h=chamber_air_gap/2 + 0.1);
+            chamber_cavity(chamber_air_gap/2);
             
         // 3. Radial wire egress channel in the base
         translate([-wire_channel_w/2, -body_outer_dia/2 - 1, chassis_height + 6 - wire_channel_d - piezo_brass_thick])
@@ -96,9 +140,9 @@ module top_cap() {
         translate([0, 0, 7.5])
             cylinder(d=inner_fit_dia, h=piezo_brass_thick + 1);
             
-        // 3. 13mm Resonant Cavity (upper half)
+        // 3. 13mm Resonant Cavity (upper half) with Fins & Reverb Pockets
         translate([0, 0, 7.5 - chamber_air_gap/2])
-            cylinder(d=chamber_dia, h=chamber_air_gap/2 + 0.1);
+            chamber_cavity(chamber_air_gap/2);
             
         // 4. Radial wire egress channel in the cap
         translate([-wire_channel_w/2, -body_outer_dia/2 - 1, 7.5])
@@ -131,8 +175,6 @@ module top_cap() {
 
 // Generates a helical Golden Spiral groove winding outwards
 module fibonacci_diffuser() {
-    // Radius grows linearly from 1.0mm to 6.0mm (fitting exactly inside the 13.0mm chamber)
-    // Depth of the spiral groove slopes from 0.3mm to 1.0mm (golden ratio scaling)
     for (a = [0 : 6 : 720]) {
         r = 1.0 + (a / 720) * 5.0;
         d = 0.3 + (a / 720) * 0.7;
