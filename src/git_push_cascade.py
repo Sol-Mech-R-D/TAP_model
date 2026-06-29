@@ -151,7 +151,7 @@ def main():
 
     # 4. Switch back to master and push to private
     print("\n  [STEP 3] Preparing full repository push (bigcaker)...")
-    run_git(["checkout", "master"])
+    run_git(["checkout", "-f", "master"])
     run_git(["branch", "-D", "temp-public"]) # cleanup temp branch
     
     print("  [PUSH] Pushing entire repository to private/master (bigcaker)...")
