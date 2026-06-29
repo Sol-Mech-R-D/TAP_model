@@ -25,13 +25,20 @@ m_P = PLANCK_MASS_GEV
 # ─────────────────────────────────────────────────────────────────────────────
 # SOLVING THE WARPED DIRAC EIGENVALUE PROBLEM
 # ─────────────────────────────────────────────────────────────────────────────
-# The eigenvalue equation for the extra-dimensional wavefunction \chi(y) is:
+# The eigenvalue equation for the extra-dimensional wavefunction \chi(y) is derived 
+# from the 5D Kaluza-Klein / Randall-Sundrum action:
+#   S = \int d^4x \int dy \sqrt{-g} [ i \bar{\Psi} \Gamma^M D_M \Psi - M \bar{\Psi} \Psi ]
+# Under a warped metric conformal transformation, the extra-dimensional wave equation 
+# reduces to a Sturm-Liouville boundary value problem:
 #   [ -d^2/dy^2 + V(y) ] \chi(y) = m^2 \chi(y)
 # where the warped potential is:
-#   V(y) = (9/4) * k^2  with k = phi^-4 (TAP leakage parameter)
+#   V(y) = (9/4) * k^2  with k = ln(phi) (TAP leakage parameter)
 # and boundary conditions are set at:
-#   y_0 = 0 (our brane)
-#   y_sat = 2 * pi * 13 * (1 - phi^-9 / pi)  (13D saturation boundary)
+#   y_0 = 0 (our physical 3-brane boundary)
+#   y_sat = 2 * pi * D * (1 - phi^-9 / pi)  (13D saturation boundary ceiling)
+#
+# This frames the Higgs mass scale not as an arbitrary fit parameter, but as the lowest 
+# non-zero eigenvalue (ground state mode) of the extra-dimensional Dirac differential operator.
 
 def solve_dirac_spectrum(n_grid=5000, phi=None, D=13.0):
     if phi is None:
