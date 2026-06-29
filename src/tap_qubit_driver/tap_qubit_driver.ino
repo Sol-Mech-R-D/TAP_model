@@ -51,9 +51,9 @@ void loop() {
   Serial.print(", Max: ");
   Serial.print(max_val);
   Serial.print("] | State: ");
-  if (amplitude > 800) {
+  if (amplitude > 100) {
     Serial.println("|1> (Coherent State)");
-  } else if (amplitude > 150) {
+  } else if (amplitude > 30) {
     Serial.println("(|0> + |1>)/sqrt(2) (Superposition)");
   } else {
     Serial.println("|0> (Decohered / Absorbed)");
