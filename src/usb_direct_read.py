@@ -95,10 +95,10 @@ def main():
                 log_file.flush()
                 return
                 
-            # Initialize CH340 serial parameters and baud rate (115200 baud)
+            # Initialize CH340 serial parameters and baud rate (57600 baud)
             try:
-                ch340_init(libusb, handle, 115200)
-                log_file.write("⚡ CH340 Serial Configured (115200 Baud, 8N1, DTR/RTS High).\n")
+                ch340_init(libusb, handle, 57600)
+                log_file.write("⚡ CH340 Serial Configured (57600 Baud, 8N1, DTR/RTS High).\n")
             except Exception as ex:
                 log_file.write(f"⚠️ CH340 initialization failed: {ex}\n")
                 log_file.flush()

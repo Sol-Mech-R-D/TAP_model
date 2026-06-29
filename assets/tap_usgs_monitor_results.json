@@ -4,20 +4,68 @@
   "cycle_period_days": 8.12133,
   "aligned_events": [
     {
-      "place": "10 km ESE of Ger\u00e1ki, Greece",
-      "magnitude": 4.1,
-      "time": "2026-06-28T22:08:28.460000+00:00",
+      "place": "21 km E of Eagle Village, Alaska",
+      "magnitude": 3.6,
+      "time": "2026-06-29T01:36:28.332000+00:00",
+      "phase": 0.8919,
+      "node_distance": 0.1081,
+      "stress_coupling_pct": 0.93
+    },
+    {
+      "place": "8 km ESE of Clam Gulch, Alaska",
+      "magnitude": 2.5,
+      "time": "2026-06-29T01:27:10.673000+00:00",
+      "phase": 0.8911,
+      "node_distance": 0.1089,
+      "stress_coupling_pct": 0.87
+    },
+    {
+      "place": "57 km S of Whites City, New Mexico",
+      "magnitude": 2.6,
+      "time": "2026-06-28T23:55:28.945000+00:00",
+      "phase": 0.8833,
+      "node_distance": 0.1167,
+      "stress_coupling_pct": 0.43
+    },
+    {
+      "place": "45 km NE of Hachinohe, Japan",
+      "magnitude": 4.4,
+      "time": "2026-06-28T23:11:23.571000+00:00",
+      "phase": 0.8795,
+      "node_distance": 0.1205,
+      "stress_coupling_pct": 0.3
+    },
+    {
+      "place": "8 km ESE of Ger\u00e1ki, Greece",
+      "magnitude": 4.4,
+      "time": "2026-06-28T22:08:28.432000+00:00",
       "phase": 0.8741,
       "node_distance": 0.1259,
       "stress_coupling_pct": 0.18
     },
     {
+      "place": "50 km SSW of Ollag\u00fce, Chile",
+      "magnitude": 4.2,
+      "time": "2026-06-28T21:53:27.409000+00:00",
+      "phase": 0.8728,
+      "node_distance": 0.1272,
+      "stress_coupling_pct": 0.16
+    },
+    {
       "place": "173 km S of Lembar, Indonesia",
-      "magnitude": 5,
-      "time": "2026-06-28T21:43:51.470000+00:00",
+      "magnitude": 4.9,
+      "time": "2026-06-28T21:43:51.471000+00:00",
       "phase": 0.872,
       "node_distance": 0.128,
       "stress_coupling_pct": 0.14
+    },
+    {
+      "place": "53 km S of Jurm, Afghanistan",
+      "magnitude": 4.1,
+      "time": "2026-06-28T21:31:36.490000+00:00",
+      "phase": 0.871,
+      "node_distance": 0.129,
+      "stress_coupling_pct": 0.13
     },
     {
       "place": "65 km WNW of Catuday, Philippines",
@@ -74,54 +122,6 @@
       "phase": 0.8567,
       "node_distance": 0.1433,
       "stress_coupling_pct": 0.03
-    },
-    {
-      "place": "21 km WNW of Djelfa, Algeria",
-      "magnitude": 4.6,
-      "time": "2026-06-28T18:37:11.965000+00:00",
-      "phase": 0.856,
-      "node_distance": 0.144,
-      "stress_coupling_pct": 0.03
-    },
-    {
-      "place": "42 km SSW of Nanwalek, Alaska",
-      "magnitude": 2.8,
-      "time": "2026-06-28T18:20:10.861000+00:00",
-      "phase": 0.8546,
-      "node_distance": 0.1454,
-      "stress_coupling_pct": 0.02
-    },
-    {
-      "place": "10 km SSE of Kiupo, Philippines",
-      "magnitude": 4.5,
-      "time": "2026-06-28T17:57:17.188000+00:00",
-      "phase": 0.8526,
-      "node_distance": 0.1474,
-      "stress_coupling_pct": 0.02
-    },
-    {
-      "place": "50 km WSW of Abra Pampa, Argentina",
-      "magnitude": 4.5,
-      "time": "2026-06-28T17:34:16.402000+00:00",
-      "phase": 0.8507,
-      "node_distance": 0.1493,
-      "stress_coupling_pct": 0.01
-    },
-    {
-      "place": "142 km E of Chalkyitsik, Alaska",
-      "magnitude": 2.7,
-      "time": "2026-06-28T17:22:16.498000+00:00",
-      "phase": 0.8496,
-      "node_distance": 0.1504,
-      "stress_coupling_pct": 0.01
-    },
-    {
-      "place": "8 km WNW of Changning, China",
-      "magnitude": 5.2,
-      "time": "2026-06-28T16:12:08.958000+00:00",
-      "phase": 0.8436,
-      "node_distance": 0.1564,
-      "stress_coupling_pct": 0.01
     }
   ]
 }
