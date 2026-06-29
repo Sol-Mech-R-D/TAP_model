@@ -6,11 +6,16 @@
 
 ---
 
-## 📐 1. The 20mm Piezo Acoustic Qubit Sandwich
+## 📐 1. Macroscopic Classical Topological Wave Emulator
 
-This setup uses two 20mm Piezo Brass Discs (PBDs) to construct a macroscopic, room-temperature phononic qubit. The acoustic state is trapped inside the sandwich using a Fibonacci-spaced topological buffer.
+Rather than claiming sub-atomic quantum coherence at room temperature, this system operates as a **macroscopic classical topological wave emulator**. It uses a room-temperature solid-state substrate (piezo ceramics, resonant chambers, and capacitor networks) to run **scaled wave-based math**—utilizing phase, amplitude, constructive/destructive interference, and wave superposition—which mathematically emulates the behavior of quantum qubits.
 
-### 🥞 Physical Stackup (The Sandwich)
+### 🥞 The Soliton Proof-of-Concept ("Trash Build")
+The basic "trash build" (assembled with raw paper/mylar spacers clamped between two 20mm piezo discs) is a simple, low-cost proof-of-concept. Its purpose is to demonstrate that a stable, non-dispersive **acoustic soliton wave packet** can be successfully generated, propagated, and detected using entry-level hardware and an Arduino Nano driver.
+
+For high-fidelity topological wave propagation, the system transitions to 3D-printed waveguides and cabinet enclosures (see [tap_piezo_chassis.scad](file:///C:/TAP_model/assets/tap_piezo_chassis.scad) and [tap_octahedral_cabinet.scad](file:///C:/TAP_model/assets/tap_octahedral_cabinet.scad)), which utilize tuned Helmholtz reverb pockets, Fibonacci aspect ratios, and helical Golden Spiral diffusers to prevent wall dissipation.
+
+### 🥞 Physical Stackup (The Soliton Sandwich)
 Assemble the layers in this exact order, clamped lightly with non-conductive nylon bolts:
 1.  **Transmitting Piezo (Tx):** 20mm Brass disc facing down, ceramic side up.
 2.  **Layer 1 (Mylar spacer):** $0.10$ mm thick.
