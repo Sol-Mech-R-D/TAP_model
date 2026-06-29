@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 const int TX_PIN = 5;   // Acoustic pulse transmitter (Pin 5)
-const int RX_PIN = A1;  // Piezo feedback receiver (Analog 1)
+const int RX_PIN = A0;  // Piezo feedback receiver (Analog 0 for COM4)
 const int SAMPLE_COUNT = 100;
 
 bool continuous_print = false;
@@ -112,7 +112,7 @@ void setup() {
   digitalWrite(TX_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP UNIFIED CORE (D5 -> A1) - INTERNAL PULL-UP   ");
+  Serial.println("  TAP UNIFIED CORE (D5 -> A0) - INTERNAL PULL-UP   ");
   Serial.println("  Ready. Commands: '1'->Golden, '2'->3:1, '3'->Chirp, '4'->Fused, '0'->Toggle Monitor");
   Serial.println("==================================================");
 }
@@ -131,9 +131,9 @@ void loop() {
     } else if (cmd == '0') {
       continuous_print = !continuous_print;
       if (continuous_print) {
-        Serial.println("\n📡 SILENT REAL-TIME MONITOR ACTIVE");
+        Serial.println("\n        SILENT REAL-TIME MONITOR ACTIVE");
       } else {
-        Serial.println("\n🔇 SILENT REAL-TIME MONITOR DEACTIVATED");
+        Serial.println("\n        SILENT REAL-TIME MONITOR DEACTIVATED");
       }
     }
   }
