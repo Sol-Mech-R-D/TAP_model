@@ -46,7 +46,11 @@ void loop() {
   // Print status to serial
   Serial.print("Qubit Amplitude: ");
   Serial.print(amplitude);
-  Serial.print(" | State: ");
+  Serial.print(" [Min: ");
+  Serial.print(min_val);
+  Serial.print(", Max: ");
+  Serial.print(max_val);
+  Serial.print("] | State: ");
   if (amplitude > 800) {
     Serial.println("|1> (Coherent State)");
   } else if (amplitude > 150) {
