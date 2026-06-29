@@ -78,7 +78,8 @@ PUBLIC_FILES = [
     "assets/tap_neural_resonance_results.json",
     "assets/tap_cosmic_quantum_neuro_results.json",
     "assets/tap_biochem_qubit_graphene_results.json",
-    "assets/tap_qubit_driver.hex"
+    "assets/tap_qubit_driver.hex",
+    "TERMUX_NOTE.md"
 ]
 
 def run_git(args):
