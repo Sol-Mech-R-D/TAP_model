@@ -140,7 +140,11 @@ This matches the observed Planck cosmic background baseline ($\eta_{\text{obs}} 
 Topological boundary projections naturally demand a vanishing QCD theta angle ($\theta_{\text{QCD}} = 0$), resolving the Strong CP Problem without fine-tuning. The corresponding axion-like zero-mode decay constant $f_a$ and mass $m_a$ scale with the electroweak VEV:
 * $f_a = v_{\text{obs}} \cdot \phi^8 \approx 11.57 \text{ TeV}$
 * $m_a = m_\pi \frac{f_\pi}{f_a} \approx 1.07 \text{ keV}$
-This provides a clear observational signature for light dark matter searches.
+### 7.5 Microtubule Coherence: Ultrafast Quantum-to-Classical Transduction
+Standard criticism of quantum biology (e.g., Tegmark's decoherence limit) points out that the brain's wet, warm environment destroys quantum superposition on timescales of $10^{-13}$ to $10^{-20}$ seconds, far too fast for millisecond-scale neural firing. Under the TAP model, the helical Fibonacci lattice geometry of microtubules provides passive topological shielding, extending the coherence lifetime of internal phonon-polariton states to:
+$$\tau_{\text{coherence}} \approx 939.57\text{ fs}$$
+
+The brain does not require millisecond-scale quantum memory. Instead, it utilizes **ultrafast sub-picosecond quantum triggering**. The quantum state acts as a probability gate that biases the conformational state of tubulin proteins on a femtosecond scale. Once the protein shift occurs, the information is transduced into a classical state, which then propagates classically to trigger standard action potentials. This mechanism is analogous to biological light-harvesting systems (like the FMO complex in photosynthesis), which exploit sub-picosecond quantum coherence to route excitons at room temperature before thermal decoherence occurs.
 
 ---
 
