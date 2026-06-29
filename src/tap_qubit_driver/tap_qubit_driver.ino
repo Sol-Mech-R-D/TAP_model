@@ -16,28 +16,28 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("\n--- STARTING T2 COHERENCE DECAY SWEEP ---");
+  Serial.println("\n--- STARTING 10V DIFFERENTIAL FREQUENCY SWEEP ---");
   
-  for (int delay_ms = 0; delay_ms <= 300; delay_ms += 10) {
-    // 10V Differential excitation pulse train (50 cycles)
+  // Sweep frequency from 1 kHz to 10 kHz in 100 Hz steps
+  for (int freq = 1000; freq <= 10000; freq += 100) {
+    int half_period = 500000 / freq; // half-period in microseconds
+    
+    // Send 10V Differential excitation pulse train (50 cycles at target frequency)
     for (int i = 0; i < 50; i++) {
       digitalWrite(TX_PIN_POS, HIGH);
       digitalWrite(TX_PIN_NEG, LOW);
-      delayMicroseconds(111);
+      delayMicroseconds(half_period);
       
       digitalWrite(TX_PIN_POS, LOW);
       digitalWrite(TX_PIN_NEG, HIGH);
-      delayMicroseconds(111);
+      delayMicroseconds(half_period);
     }
     
     // Return pins to LOW to discharge the piezo
     digitalWrite(TX_PIN_POS, LOW);
     digitalWrite(TX_PIN_NEG, LOW);
     
-    // Coherence decay delay
-    delay(delay_ms);
-    
-    // Read remaining wave amplitude
+    // Immediate inline read
     int min_val = 1023;
     int max_val = 0;
     for (int i = 0; i < SAMPLE_COUNT; i++) {
@@ -50,9 +50,9 @@ void loop() {
     int amplitude = max_val - min_val;
     
     // Print data point
-    Serial.print("DecayDelay:");
-    Serial.print(delay_ms);
-    Serial.print("ms | Amplitude:");
+    Serial.print("Freq:");
+    Serial.print(freq);
+    Serial.print("Hz | Amplitude:");
     Serial.print(amplitude);
     Serial.print(" [Min: ");
     Serial.print(min_val);
@@ -60,10 +60,10 @@ void loop() {
     Serial.print(max_val);
     Serial.println("]");
     
-    // Cooldown delay between trials
-    delay(200);
+    // Brief cooldown delay between frequencies (keeps sweep speed audible)
+    delay(50);
   }
   
-  Serial.println("--- T2 COHERENCE DECAY SWEEP COMPLETE ---");
-  delay(5000); // 5-second wait before starting the next sweep
+  Serial.println("--- 10V DIFFERENTIAL FREQUENCY SWEEP COMPLETE ---");
+  delay(10000); // 10-second wait before repeating
 }
