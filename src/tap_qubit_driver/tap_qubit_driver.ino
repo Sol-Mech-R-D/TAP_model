@@ -39,7 +39,7 @@ void setup() {
     digitalWrite(13, LOW); delay(100);
   }
   
-  Serial.println("📡 PLAYING JINGLE (DO DO DOO)...");
+  Serial.println("📡 PLAYING 10V JINGLE (DO DO DOO)...");
   
   // Note 1 ("do"): 2000 Hz (500 ms)
   play_note(2000, 500);
