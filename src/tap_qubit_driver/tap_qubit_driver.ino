@@ -5,6 +5,8 @@ const int TX_PIN_NEG = 8;  // Acoustic pulse transmitter negative (Pin 8)
 const int RX_PIN = A0;      // Piezo feedback receiver (Analog 0)
 const int SAMPLE_COUNT = 100;
 
+bool continuous_print = false;
+
 // Method 1: Golden Ratio Duty Cycle (38.2% / 61.8% active phase) - 10V Differential
 void send_pulse_golden(int cycles) {
   for (int i = 0; i < cycles; i++) {
@@ -83,7 +85,6 @@ void run_t2_sweep(int method) {
       send_pulse_fused(50);
     }
     
-    // Ensure transmitter is fully shut off during decay delay
     digitalWrite(TX_PIN_POS, LOW);
     digitalWrite(TX_PIN_NEG, LOW);
     
@@ -131,7 +132,7 @@ void setup() {
   Serial.println("==================================================");
   Serial.println("  TAP 2S2P 10V DIFFERENTIAL CORE (D9/D8 -> A0)    ");
   Serial.println("  INTERNAL PULL-UP ACTIVE (NO FLOATING HUM)      ");
-  Serial.println("  Commands: '1'->Golden, '2'->3:1, '3'->Chirp, '4'->Fused TAP");
+  Serial.println("  Commands: '1'->Golden, '2'->3:1, '3'->Chirp, '4'->Fused, '0'->Toggle Monitor");
   Serial.println("==================================================");
 }
 
@@ -146,8 +147,37 @@ void loop() {
       run_t2_sweep(3);
     } else if (cmd == '4') {
       run_t2_sweep(4);
+    } else if (cmd == '0') {
+      continuous_print = !continuous_print;
+      if (continuous_print) {
+        Serial.println("\n📡 SILENT REAL-TIME MONITOR ACTIVE");
+      } else {
+        Serial.println("\n🔇 SILENT REAL-TIME MONITOR DEACTIVATED");
+      }
     }
   }
-  digitalWrite(TX_PIN_POS, LOW);
-  digitalWrite(TX_PIN_NEG, LOW);
+  
+  // If continuous print is enabled, sample A0 and print in silence (no excitation)
+  if (continuous_print) {
+    int min_val = 1023;
+    int max_val = 0;
+    for (int i = 0; i < SAMPLE_COUNT; i++) {
+      int val = analogRead(RX_PIN);
+      if (val < min_val) min_val = val;
+      if (val > max_val) max_val = val;
+      delayMicroseconds(5);
+    }
+    int amplitude = max_val - min_val;
+    Serial.print("Rx Monitor | Amplitude: ");
+    Serial.print(amplitude);
+    Serial.print(" [Min: ");
+    Serial.print(min_val);
+    Serial.print(", Max: ");
+    Serial.print(max_val);
+    Serial.println("]");
+    delay(200); // 5 Hz print rate
+  } else {
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, LOW);
+  }
 }
