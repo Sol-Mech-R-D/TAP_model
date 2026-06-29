@@ -1,8 +1,7 @@
 #include <Arduino.h>
 
-const int TX_PIN_POS = 9;  // Acoustic pulse transmitter positive (Pin 9)
-const int TX_PIN_NEG = 8;  // Acoustic pulse transmitter negative (Pin 8)
-const int RX_PIN = A0;      // Piezo feedback receiver (Analog 0)
+const int TX_PIN = 9;   // Acoustic pulse transmitter (Pin 9)
+const int RX_PIN = A0;  // Piezo feedback receiver (Analog 0)
 const int SAMPLE_COUNT = 100;
 
 void play_note(int freq, int duration_ms) {
@@ -10,27 +9,22 @@ void play_note(int freq, int duration_ms) {
   long cycles = (long)freq * duration_ms / 1000;
   
   for (long i = 0; i < cycles; i++) {
-    digitalWrite(TX_PIN_POS, HIGH);
-    digitalWrite(TX_PIN_NEG, LOW);
+    digitalWrite(TX_PIN, HIGH);
     delayMicroseconds(half_period);
-    
-    digitalWrite(TX_PIN_POS, LOW);
-    digitalWrite(TX_PIN_NEG, HIGH);
+    digitalWrite(TX_PIN, LOW);
     delayMicroseconds(half_period);
   }
 }
 
 void setup() {
   Serial.begin(115200);
-  pinMode(TX_PIN_POS, OUTPUT);
-  pinMode(TX_PIN_NEG, OUTPUT);
+  pinMode(TX_PIN, OUTPUT);
   pinMode(13, OUTPUT);
   
-  digitalWrite(TX_PIN_POS, LOW);
-  digitalWrite(TX_PIN_NEG, LOW);
+  digitalWrite(TX_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP 10V DIFFERENTIAL JINGLE TEST BURST           ");
+  Serial.println("  TAP 5V SINGLE-ENDED JINGLE TEST BURST            ");
   Serial.println("==================================================");
   
   // Blink LED warning
@@ -39,7 +33,7 @@ void setup() {
     digitalWrite(13, LOW); delay(100);
   }
   
-  Serial.println("📡 PLAYING 10V JINGLE (DO DO DOO)...");
+  Serial.println("📡 PLAYING 5V JINGLE (DO DO DOO)...");
   
   // Note 1 ("do"): 2000 Hz (500 ms)
   play_note(2000, 500);
@@ -52,9 +46,8 @@ void setup() {
   // Note 3 ("doo"): 4000 Hz (1000 ms)
   play_note(4000, 1000);
   
-  // Silence pins
-  digitalWrite(TX_PIN_POS, LOW);
-  digitalWrite(TX_PIN_NEG, LOW);
+  // Silence pin
+  digitalWrite(TX_PIN, LOW);
   
   Serial.println("🔇 JINGLE FINISHED. SILENT.");
 }
