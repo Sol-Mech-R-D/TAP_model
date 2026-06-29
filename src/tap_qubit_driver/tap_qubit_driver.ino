@@ -1,55 +1,68 @@
 #include <Arduino.h>
 
-const int TX_PIN = 5;   // Acoustic pulse transmitter (Pin 5)
-const int RX_PIN = A1;  // Piezo feedback receiver (Analog 1)
+const int TX_PIN_POS = 9;  // Acoustic pulse transmitter positive (Pin 9)
+const int TX_PIN_NEG = 8;  // Acoustic pulse transmitter negative (Pin 8)
+const int RX_PIN = A0;      // Piezo feedback receiver (Analog 0)
 const int SAMPLE_COUNT = 100;
 
-// Method 1: Golden Ratio Duty Cycle (38.2% HIGH, 61.8% LOW)
+// Method 1: Golden Ratio Duty Cycle (38.2% / 61.8% active phase) - 10V Differential
 void send_pulse_golden(int cycles) {
   for (int i = 0; i < cycles; i++) {
-    digitalWrite(TX_PIN, HIGH);
-    delayMicroseconds(85);   // 38.2% of 222us
-    digitalWrite(TX_PIN, LOW);
-    delayMicroseconds(137);  // 61.8% of 222us
+    digitalWrite(TX_PIN_POS, HIGH);
+    digitalWrite(TX_PIN_NEG, LOW);
+    delayMicroseconds(85);
+    
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, HIGH);
+    delayMicroseconds(137);
   }
 }
 
-// Method 2: 3:1 Cosmological Energy Partition (25% HIGH, 75% LOW)
+// Method 2: 3:1 Cosmological Energy Partition (25% / 75% active phase) - 10V Differential
 void send_pulse_partition(int cycles) {
   for (int i = 0; i < cycles; i++) {
-    digitalWrite(TX_PIN, HIGH);
-    delayMicroseconds(55);   // 25% of 222us
-    digitalWrite(TX_PIN, LOW);
-    delayMicroseconds(167);  // 75% of 222us
+    digitalWrite(TX_PIN_POS, HIGH);
+    digitalWrite(TX_PIN_NEG, LOW);
+    delayMicroseconds(55);
+    
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, HIGH);
+    delayMicroseconds(167);
   }
 }
 
-// Method 3: "Exhale" Cosmological Chirp (Geometric Pulse Expansion)
+// Method 3: "Exhale" Cosmological Chirp (Geometric Pulse Expansion) - 10V Differential
 void send_pulse_chirp(int cycles) {
   float half_period = 111.0;
   for (int i = 0; i < cycles; i++) {
-    digitalWrite(TX_PIN, HIGH);
-    delayMicroseconds((int)(half_period * 0.764)); 
-    digitalWrite(TX_PIN, LOW);
-    delayMicroseconds((int)(half_period * 1.236)); 
-    half_period *= 1.015; 
+    digitalWrite(TX_PIN_POS, HIGH);
+    digitalWrite(TX_PIN_NEG, LOW);
+    delayMicroseconds((int)(half_period * 0.764));
+    
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, HIGH);
+    delayMicroseconds((int)(half_period * 1.236));
+    
+    half_period *= 1.015;
   }
 }
 
-// Method 4: Fused TAP Excitation (Chirp + Golden Ratio Energy Partition)
-// Uses the phi^-3 energy partition (23.6% active, 76.4% passive) applied to a 1.5% expanding chirp
+// Method 4: Fused TAP Excitation (Chirp + Golden Ratio Energy Partition) - 10V Differential
 void send_pulse_fused(int cycles) {
-  float period = 222.0; // Starting period in microseconds (4.5 kHz)
+  float period = 222.0;
   for (int i = 0; i < cycles; i++) {
-    int t_high = (int)(period * 0.236); // Phi^-3 active phase (23.6%)
-    int t_low = (int)(period * 0.764);  // 1 - Phi^-3 passive phase (76.4%)
+    int t_high = (int)(period * 0.236);
+    int t_low = (int)(period * 0.764);
     
-    digitalWrite(TX_PIN, HIGH);
+    digitalWrite(TX_PIN_POS, HIGH);
+    digitalWrite(TX_PIN_NEG, LOW);
     delayMicroseconds(t_high);
-    digitalWrite(TX_PIN, LOW);
+    
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, HIGH);
     delayMicroseconds(t_low);
     
-    period *= 1.015; // Geometrically expand period by 1.5% each cycle (exhale chirp)
+    period *= 1.015;
   }
 }
 
@@ -69,6 +82,10 @@ void run_t2_sweep(int method) {
     } else if (method == 4) {
       send_pulse_fused(50);
     }
+    
+    // Ensure transmitter is fully shut off during decay delay
+    digitalWrite(TX_PIN_POS, LOW);
+    digitalWrite(TX_PIN_NEG, LOW);
     
     delay(delay_ms);
     
@@ -101,12 +118,19 @@ void run_t2_sweep(int method) {
 
 void setup() {
   Serial.begin(115200);
-  pinMode(TX_PIN, OUTPUT);
+  pinMode(TX_PIN_POS, OUTPUT);
+  pinMode(TX_PIN_NEG, OUTPUT);
   pinMode(13, OUTPUT);
-  digitalWrite(TX_PIN, LOW);
+  
+  // Enable internal pull-up on RX_PIN to stop floating hum!
+  pinMode(RX_PIN, INPUT_PULLUP);
+  
+  digitalWrite(TX_PIN_POS, LOW);
+  digitalWrite(TX_PIN_NEG, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP FOUR-METHOD ASYMMETRIC CORE (D5 -> A1)      ");
+  Serial.println("  TAP 2S2P 10V DIFFERENTIAL CORE (D9/D8 -> A0)    ");
+  Serial.println("  INTERNAL PULL-UP ACTIVE (NO FLOATING HUM)      ");
   Serial.println("  Commands: '1'->Golden, '2'->3:1, '3'->Chirp, '4'->Fused TAP");
   Serial.println("==================================================");
 }
@@ -124,5 +148,6 @@ void loop() {
       run_t2_sweep(4);
     }
   }
-  digitalWrite(TX_PIN, LOW);
+  digitalWrite(TX_PIN_POS, LOW);
+  digitalWrite(TX_PIN_NEG, LOW);
 }
