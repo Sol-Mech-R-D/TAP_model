@@ -1,57 +1,16 @@
 #include <Arduino.h>
 
-const int TX_PIN = 5;   // Acoustic pulse transmitter moved to Pin 5
-const int RX_PIN = A0;  // Piezo feedback receiver (Analog 0)
-const int SAMPLE_COUNT = 100;
-
-void play_note(int freq, int duration_ms) {
-  int half_period = 500000 / freq; // half-period in microseconds
-  long cycles = (long)freq * duration_ms / 1000;
-  
-  for (long i = 0; i < cycles; i++) {
-    digitalWrite(TX_PIN, HIGH);
-    delayMicroseconds(half_period);
-    digitalWrite(TX_PIN, LOW);
-    delayMicroseconds(half_period);
-  }
-}
+const int TX_PIN = 5;   // Acoustic pulse transmitter (Pin 5)
 
 void setup() {
-  Serial.begin(115200);
   pinMode(TX_PIN, OUTPUT);
-  pinMode(13, OUTPUT);
-  
   digitalWrite(TX_PIN, LOW);
-  
-  Serial.println("==================================================");
-  Serial.println("  TAP 5V SINGLE-ENDED JINGLE ON PIN 5              ");
-  Serial.println("==================================================");
-  
-  // Blink LED warning
-  for(int i=0; i<3; i++) {
-    digitalWrite(13, HIGH); delay(100);
-    digitalWrite(13, LOW); delay(100);
-  }
-  
-  Serial.println("📡 PLAYING 5V JINGLE ON PIN 5 (DO DO DOO)...");
-  
-  // Note 1 ("do"): 2000 Hz (500 ms)
-  play_note(2000, 500);
-  delay(100);
-  
-  // Note 2 ("do"): 3000 Hz (500 ms)
-  play_note(3000, 500);
-  delay(100);
-  
-  // Note 3 ("doo"): 4000 Hz (1000 ms)
-  play_note(4000, 1000);
-  
-  // Silence pin
-  digitalWrite(TX_PIN, LOW);
-  
-  Serial.println("🔇 JINGLE FINISHED. SILENT.");
 }
 
 void loop() {
-  // Do nothing
+  // Continuous 4.5 kHz square wave (50% duty cycle) for multimeter measurement
+  digitalWrite(TX_PIN, HIGH);
+  delayMicroseconds(111);
+  digitalWrite(TX_PIN, LOW);
+  delayMicroseconds(111);
 }
