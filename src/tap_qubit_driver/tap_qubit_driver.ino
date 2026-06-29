@@ -99,7 +99,7 @@ void setup() {
   digitalWrite(TX_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP COHERENCE CORE (D5 -> A1) - CONTINUOUS HUM  ");
+  Serial.println("  TAP COHERENCE CORE (D5 -> A1) - SILENT BASELINE ");
   Serial.println("  Ready. Send '1' for T2 Sweep, '2' for Phase Sweep.");
   Serial.println("==================================================");
 }
@@ -115,9 +115,6 @@ void loop() {
     }
   }
 
-  // Continuous 4.5 kHz tone hum when not executing sweeps
-  digitalWrite(TX_PIN, HIGH);
-  delayMicroseconds(111);
+  // Pin is kept LOW/silent when not executing sweeps
   digitalWrite(TX_PIN, LOW);
-  delayMicroseconds(111);
 }
