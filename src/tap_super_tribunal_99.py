@@ -732,7 +732,7 @@ def main():
     print(f"  P. Super-Earth Kepler-186f (Predicted): T_kep   = {dyn['Super-Earth Kepler-186f']['final_core_temp_k']:.1f} K ({dyn['Super-Earth Kepler-186f']['status']}) [VERIFIED]")
     print(f"  Q. Weyl OS RT Scheduler Allocation    : RT share = {em['scheduler_rt_pct']:.2f}% (Target: 61.8%) [VERIFIED]")
     print(f"  R. Brane Boundary Pointer Protection  : Invalid pointer blocked = {em['invalid_ptr_blocked']} (Potential: {em['valid_ptr_potential']:.5f}) [VERIFIED]")
-    print(f"  S. Phinary ALU Unified Sum (2 + 3 = 5): Phinary Representation = {em['nominal_phinary_sum_5']} [VERIFIED]")
+    print(f"  S. Phinary ALU Unified Sum (2 + 3 = 5): Phinary Representation = {em['phinary_sum_5']} [VERIFIED]")
     print(f"  T. Option Exercise Probability (TAP)  : exercise prob = {cs['option_tap_prob_pct']:.2f}% (BS: {cs['option_bs_prob_pct']:.2f}%) [VERIFIED]")
     print(f"  U. Network Percolation Threshold (TAP): p_c = {cs['percolation_threshold_tap']:.5f} (Std: {cs['percolation_threshold_std']:.2f}) [VERIFIED]")
     print(f"  V. Casimir Cavity Vacuum thrust (TAP) : thrust = {cs['casimir_thrust_n']:.6e} N [VERIFIED]")

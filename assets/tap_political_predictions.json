@@ -1,0 +1,96 @@
+{
+  "historical_2024": [
+    {
+      "election": "US Presidential Election",
+      "date": "2024-11-05",
+      "closest_crossing": "2024-11-06 22:29",
+      "days_diff": -1.937484155428241,
+      "alignment": 0.07152682467176937,
+      "cognitive_polarization_index": 1.0107290237007653,
+      "anti_incumbent_sentiment": 1.0143053649343539,
+      "spending_soliton_index": 100.7152682467177
+    },
+    {
+      "election": "UK General Election",
+      "date": "2024-07-04",
+      "closest_crossing": "2024-07-07 06:14",
+      "days_diff": -3.259797388356482,
+      "alignment": -0.8143489358648097,
+      "cognitive_polarization_index": 0.8778476596202786,
+      "anti_incumbent_sentiment": 1.162869787172962,
+      "spending_soliton_index": 91.85651064135189
+    },
+    {
+      "election": "French Legislative Runoff",
+      "date": "2024-07-07",
+      "closest_crossing": "2024-07-07 06:14",
+      "days_diff": -0.2597973883564815,
+      "alignment": 0.9798616367926853,
+      "cognitive_polarization_index": 1.1469792455189027,
+      "anti_incumbent_sentiment": 1.195972327358537,
+      "spending_soliton_index": 109.79861636792685
+    },
+    {
+      "election": "European Parliament Elections",
+      "date": "2024-06-09",
+      "closest_crossing": "2024-06-12 12:01",
+      "days_diff": -3.5012685706828703,
+      "alignment": -0.9079871492550597,
+      "cognitive_polarization_index": 0.863801927611741,
+      "anti_incumbent_sentiment": 1.181597429851012,
+      "spending_soliton_index": 90.9201285074494
+    },
+    {
+      "election": "Taiwan Presidential Election",
+      "date": "2024-01-13",
+      "closest_crossing": "2024-01-10 14:40",
+      "days_diff": 2.388580962824074,
+      "alignment": -0.27392024501257967,
+      "cognitive_polarization_index": 0.958911963248113,
+      "anti_incumbent_sentiment": 1.054784049002516,
+      "spending_soliton_index": 97.2607975498742
+    }
+  ],
+  "future_projections": [
+    {
+      "election": "US Midterm Elections",
+      "date": "2026-11-03",
+      "closest_crossing": "2026-10-30 16:09",
+      "days_diff": 3.326657234571759,
+      "alignment": -0.8432720152528748,
+      "cognitive_polarization_index": 0.8735091977120688,
+      "anti_incumbent_sentiment": 1.168654403050575,
+      "spending_soliton_index": 91.56727984747126
+    },
+    {
+      "election": "French Presidential Election",
+      "date": "2027-04-18",
+      "closest_crossing": "2027-04-17 07:50",
+      "days_diff": 0.6730379453587962,
+      "alignment": 0.8674259244827164,
+      "cognitive_polarization_index": 1.1301138886724074,
+      "anti_incumbent_sentiment": 1.1734851848965433,
+      "spending_soliton_index": 108.67425924482717
+    },
+    {
+      "election": "German Federal Election",
+      "date": "2027-10-24",
+      "closest_crossing": "2027-10-22 23:50",
+      "days_diff": 1.0064068643055555,
+      "alignment": 0.7117928754908531,
+      "cognitive_polarization_index": 1.106768931323628,
+      "anti_incumbent_sentiment": 1.1423585750981706,
+      "spending_soliton_index": 107.11792875490853
+    },
+    {
+      "election": "US Presidential Election",
+      "date": "2028-11-07",
+      "closest_crossing": "2028-11-07 12:47",
+      "days_diff": -0.533109420787037,
+      "alignment": 0.9161152491061529,
+      "cognitive_polarization_index": 1.137417287365923,
+      "anti_incumbent_sentiment": 1.1832230498212306,
+      "spending_soliton_index": 109.16115249106153
+    }
+  ]
+}

@@ -1,0 +1,1648 @@
+{
+  "historical_epi": [
+    {
+      "date": "2021-06-28",
+      "dr_bond_angstrom": 0.7528619948292402,
+      "mutation_multiplier": 1.040827025237411,
+      "tap_ili_index": 0.5204135126187055
+    },
+    {
+      "date": "2021-07-05",
+      "dr_bond_angstrom": 0.7397273069082058,
+      "mutation_multiplier": 0.9991344073848141,
+      "tap_ili_index": 0.49956720369240704
+    },
+    {
+      "date": "2021-07-12",
+      "dr_bond_angstrom": 0.7268257741314252,
+      "mutation_multiplier": 0.9581818793149506,
+      "tap_ili_index": 0.4790909396574753
+    },
+    {
+      "date": "2021-07-19",
+      "dr_bond_angstrom": 0.724890084419657,
+      "mutation_multiplier": 0.9520375406051806,
+      "tap_ili_index": 0.4760187703025903
+    },
+    {
+      "date": "2021-07-26",
+      "dr_bond_angstrom": 0.7351554668919059,
+      "mutation_multiplier": 0.9846223017429628,
+      "tap_ili_index": 0.4923111508714814
+    },
+    {
+      "date": "2021-08-02",
+      "dr_bond_angstrom": 0.7495997731501283,
+      "mutation_multiplier": 1.030471959122756,
+      "tap_ili_index": 0.515235979561378
+    },
+    {
+      "date": "2021-08-09",
+      "dr_bond_angstrom": 0.7557346178325708,
+      "mutation_multiplier": 1.0499454126579935,
+      "tap_ili_index": 0.5249727063289967
+    },
+    {
+      "date": "2021-08-16",
+      "dr_bond_angstrom": 0.7484950869234676,
+      "mutation_multiplier": 1.026965422768631,
+      "tap_ili_index": 0.5134827113843154
+    },
+    {
+      "date": "2021-08-23",
+      "dr_bond_angstrom": 0.7342253446468411,
+      "mutation_multiplier": 0.9816698729107872,
+      "tap_ili_index": 0.4908349364553936
+    },
+    {
+      "date": "2021-08-30",
+      "dr_bond_angstrom": 0.7247836416410406,
+      "mutation_multiplier": 0.9516996659545833,
+      "tap_ili_index": 0.47584983297729166
+    },
+    {
+      "date": "2021-09-06",
+      "dr_bond_angstrom": 0.7270455278751862,
+      "mutation_multiplier": 0.9588794298708055,
+      "tap_ili_index": 1.1506553158449666
+    },
+    {
+      "date": "2021-09-13",
+      "dr_bond_angstrom": 0.7393072928205595,
+      "mutation_multiplier": 0.9978011829523631,
+      "tap_ili_index": 1.1973614195428357
+    },
+    {
+      "date": "2021-09-20",
+      "dr_bond_angstrom": 0.7519817035314732,
+      "mutation_multiplier": 1.0380327716626463,
+      "tap_ili_index": 1.2456393259951755
+    },
+    {
+      "date": "2021-09-27",
+      "dr_bond_angstrom": 0.7554749636367631,
+      "mutation_multiplier": 1.0491212085943173,
+      "tap_ili_index": 1.2589454503131807
+    },
+    {
+      "date": "2021-10-04",
+      "dr_bond_angstrom": 0.7475976708922301,
+      "mutation_multiplier": 1.0241168112241374,
+      "tap_ili_index": 1.228940173468965
+    },
+    {
+      "date": "2021-10-11",
+      "dr_bond_angstrom": 0.734425789820617,
+      "mutation_multiplier": 0.9823061334813378,
+      "tap_ili_index": 1.1787673601776052
+    },
+    {
+      "date": "2021-10-18",
+      "dr_bond_angstrom": 0.7252501521202391,
+      "mutation_multiplier": 0.9531804809728304,
+      "tap_ili_index": 1.1438165771673965
+    },
+    {
+      "date": "2021-10-25",
+      "dr_bond_angstrom": 0.7262377208303002,
+      "mutation_multiplier": 0.9563152585236413,
+      "tap_ili_index": 1.1475783102283694
+    },
+    {
+      "date": "2021-11-01",
+      "dr_bond_angstrom": 0.7364642575975804,
+      "mutation_multiplier": 0.9887767141712422,
+      "tap_ili_index": 1.1865320570054907
+    },
+    {
+      "date": "2021-11-08",
+      "dr_bond_angstrom": 0.7488485467476534,
+      "mutation_multiplier": 1.0280873881677806,
+      "tap_ili_index": 1.2337048658013365
+    },
+    {
+      "date": "2021-11-15",
+      "dr_bond_angstrom": 0.7555405888698825,
+      "mutation_multiplier": 1.0493295186647495,
+      "tap_ili_index": 1.2591954223976993
+    },
+    {
+      "date": "2021-11-22",
+      "dr_bond_angstrom": 0.7526813524765373,
+      "mutation_multiplier": 1.0402536235224622,
+      "tap_ili_index": 1.2483043482269547
+    },
+    {
+      "date": "2021-11-29",
+      "dr_bond_angstrom": 0.7423058744252954,
+      "mutation_multiplier": 1.0073193928784523,
+      "tap_ili_index": 1.2087832714541427
+    },
+    {
+      "date": "2021-12-06",
+      "dr_bond_angstrom": 0.7306766219391305,
+      "mutation_multiplier": 0.9704053845112975,
+      "tap_ili_index": 2.9112161535338927
+    },
+    {
+      "date": "2021-12-13",
+      "dr_bond_angstrom": 0.7244595084610346,
+      "mutation_multiplier": 0.9506707902866893,
+      "tap_ili_index": 2.852012370860068
+    },
+    {
+      "date": "2021-12-20",
+      "dr_bond_angstrom": 0.7279793723993727,
+      "mutation_multiplier": 0.9618436741006436,
+      "tap_ili_index": 2.885531022301931
+    },
+    {
+      "date": "2021-12-27",
+      "dr_bond_angstrom": 0.7384291459571268,
+      "mutation_multiplier": 0.9950137363212996,
+      "tap_ili_index": 2.985041208963899
+    },
+    {
+      "date": "2022-01-03",
+      "dr_bond_angstrom": 0.7497202415977743,
+      "mutation_multiplier": 1.030854354576778,
+      "tap_ili_index": 3.092563063730334
+    },
+    {
+      "date": "2022-01-10",
+      "dr_bond_angstrom": 0.755592687294676,
+      "mutation_multiplier": 1.0494948914340685,
+      "tap_ili_index": 3.1484846743022055
+    },
+    {
+      "date": "2022-01-17",
+      "dr_bond_angstrom": 0.7528042841948308,
+      "mutation_multiplier": 1.0406438379823404,
+      "tap_ili_index": 3.121931513947021
+    },
+    {
+      "date": "2022-01-24",
+      "dr_bond_angstrom": 0.742861892815764,
+      "mutation_multiplier": 1.0090843272577232,
+      "tap_ili_index": 3.0272529817731697
+    },
+    {
+      "date": "2022-01-31",
+      "dr_bond_angstrom": 0.7312634573907532,
+      "mutation_multiplier": 0.9722681395591488,
+      "tap_ili_index": 2.9168044186774464
+    },
+    {
+      "date": "2022-02-07",
+      "dr_bond_angstrom": 0.7245818364197244,
+      "mutation_multiplier": 0.9510590882702424,
+      "tap_ili_index": 2.853177264810727
+    },
+    {
+      "date": "2022-02-14",
+      "dr_bond_angstrom": 0.7275606051512868,
+      "mutation_multiplier": 0.9605144074329776,
+      "tap_ili_index": 2.881543222298933
+    },
+    {
+      "date": "2022-02-21",
+      "dr_bond_angstrom": 0.7380219620768987,
+      "mutation_multiplier": 0.9937212380132965,
+      "tap_ili_index": 2.9811637140398894
+    },
+    {
+      "date": "2022-02-28",
+      "dr_bond_angstrom": 0.7497550505617121,
+      "mutation_multiplier": 1.0309648464925383,
+      "tap_ili_index": 3.092894539477615
+    },
+    {
+      "date": "2022-03-07",
+      "dr_bond_angstrom": 0.7556755319301062,
+      "mutation_multiplier": 1.0497578599756046,
+      "tap_ili_index": 1.2597094319707254
+    },
+    {
+      "date": "2022-03-14",
+      "dr_bond_angstrom": 0.7518629217738529,
+      "mutation_multiplier": 1.0376557301632143,
+      "tap_ili_index": 1.245186876195857
+    },
+    {
+      "date": "2022-03-21",
+      "dr_bond_angstrom": 0.7403672276762417,
+      "mutation_multiplier": 1.0011656678302898,
+      "tap_ili_index": 1.2013988013963477
+    },
+    {
+      "date": "2022-03-28",
+      "dr_bond_angstrom": 0.7284836853456034,
+      "mutation_multiplier": 0.9634444831241787,
+      "tap_ili_index": 1.1561333797490145
+    },
+    {
+      "date": "2022-04-04",
+      "dr_bond_angstrom": 0.7243536764667691,
+      "mutation_multiplier": 0.9503348544106318,
+      "tap_ili_index": 1.1404018252927581
+    },
+    {
+      "date": "2022-04-11",
+      "dr_bond_angstrom": 0.7311397379806368,
+      "mutation_multiplier": 0.9718754247784143,
+      "tap_ili_index": 1.1662505097340972
+    },
+    {
+      "date": "2022-04-18",
+      "dr_bond_angstrom": 0.7442746237147259,
+      "mutation_multiplier": 1.0135686705366103,
+      "tap_ili_index": 1.2162824046439322
+    },
+    {
+      "date": "2022-04-25",
+      "dr_bond_angstrom": 0.7544516235085217,
+      "mutation_multiplier": 1.045872884069479,
+      "tap_ili_index": 1.2550474608833748
+    },
+    {
+      "date": "2022-05-02",
+      "dr_bond_angstrom": 0.7538836466045075,
+      "mutation_multiplier": 1.0440699905290662,
+      "tap_ili_index": 1.2528839886348795
+    },
+    {
+      "date": "2022-05-09",
+      "dr_bond_angstrom": 0.7425711348819646,
+      "mutation_multiplier": 1.008161392545122,
+      "tap_ili_index": 1.2097936710541464
+    },
+    {
+      "date": "2022-05-16",
+      "dr_bond_angstrom": 0.7291055767622684,
+      "mutation_multiplier": 0.9654185141279382,
+      "tap_ili_index": 1.1585022169535257
+    },
+    {
+      "date": "2022-05-23",
+      "dr_bond_angstrom": 0.724276146792448,
+      "mutation_multiplier": 0.9500887568175153,
+      "tap_ili_index": 1.1401065081810182
+    },
+    {
+      "date": "2022-05-30",
+      "dr_bond_angstrom": 0.7314759633577544,
+      "mutation_multiplier": 0.9729426839508275,
+      "tap_ili_index": 1.167531220740993
+    },
+    {
+      "date": "2022-06-06",
+      "dr_bond_angstrom": 0.745811896662415,
+      "mutation_multiplier": 1.0184483398464916,
+      "tap_ili_index": 0.5092241699232458
+    },
+    {
+      "date": "2022-06-13",
+      "dr_bond_angstrom": 0.7553205310285219,
+      "mutation_multiplier": 1.0486310028309154,
+      "tap_ili_index": 0.5243155014154577
+    },
+    {
+      "date": "2022-06-20",
+      "dr_bond_angstrom": 0.7517312154076803,
+      "mutation_multiplier": 1.0372376628877213,
+      "tap_ili_index": 0.5186188314438607
+    },
+    {
+      "date": "2022-06-27",
+      "dr_bond_angstrom": 0.7379604725149481,
+      "mutation_multiplier": 0.9935260555450304,
+      "tap_ili_index": 0.4967630277725152
+    },
+    {
+      "date": "2022-07-04",
+      "dr_bond_angstrom": 0.7259434905742872,
+      "mutation_multiplier": 0.9553813018359468,
+      "tap_ili_index": 0.4776906509179734
+    },
+    {
+      "date": "2022-07-11",
+      "dr_bond_angstrom": 0.7254819951590608,
+      "mutation_multiplier": 0.9539164058214065,
+      "tap_ili_index": 0.47695820291070323
+    },
+    {
+      "date": "2022-07-18",
+      "dr_bond_angstrom": 0.736884856668989,
+      "mutation_multiplier": 0.9901117954810393,
+      "tap_ili_index": 0.49505589774051967
+    },
+    {
+      "date": "2022-07-25",
+      "dr_bond_angstrom": 0.7509946161595107,
+      "mutation_multiplier": 1.0348995219932384,
+      "tap_ili_index": 0.5174497609966192
+    },
+    {
+      "date": "2022-08-01",
+      "dr_bond_angstrom": 0.7555256001992141,
+      "mutation_multiplier": 1.0492819410654908,
+      "tap_ili_index": 0.5246409705327454
+    },
+    {
+      "date": "2022-08-08",
+      "dr_bond_angstrom": 0.7466959414571037,
+      "mutation_multiplier": 1.0212545079116275,
+      "tap_ili_index": 0.5106272539558138
+    },
+    {
+      "date": "2022-08-15",
+      "dr_bond_angstrom": 0.7322384811081907,
+      "mutation_multiplier": 0.9753630963249844,
+      "tap_ili_index": 0.4876815481624922
+    },
+    {
+      "date": "2022-08-22",
+      "dr_bond_angstrom": 0.7243447327399094,
+      "mutation_multiplier": 0.9503064648981915,
+      "tap_ili_index": 0.47515323244909574
+    },
+    {
+      "date": "2022-08-29",
+      "dr_bond_angstrom": 0.7285378087149715,
+      "mutation_multiplier": 0.9636162835483326,
+      "tap_ili_index": 0.4818081417741663
+    },
+    {
+      "date": "2022-09-05",
+      "dr_bond_angstrom": 0.7418672561093902,
+      "mutation_multiplier": 1.0059271142085577,
+      "tap_ili_index": 1.2071125370502693
+    },
+    {
+      "date": "2022-09-12",
+      "dr_bond_angstrom": 0.7535863415474079,
+      "mutation_multiplier": 1.0431262736927154,
+      "tap_ili_index": 1.2517515284312584
+    },
+    {
+      "date": "2022-09-19",
+      "dr_bond_angstrom": 0.7546426457737527,
+      "mutation_multiplier": 1.0464792340911542,
+      "tap_ili_index": 1.255775080909385
+    },
+    {
+      "date": "2022-09-26",
+      "dr_bond_angstrom": 0.7446444689540119,
+      "mutation_multiplier": 1.0147426471334555,
+      "tap_ili_index": 1.2176911765601466
+    },
+    {
+      "date": "2022-10-03",
+      "dr_bond_angstrom": 0.7313656317777293,
+      "mutation_multiplier": 0.9725924653212935,
+      "tap_ili_index": 1.1671109583855521
+    },
+    {
+      "date": "2022-10-10",
+      "dr_bond_angstrom": 0.7243728039505508,
+      "mutation_multiplier": 0.950395569585335,
+      "tap_ili_index": 1.140474683502402
+    },
+    {
+      "date": "2022-10-17",
+      "dr_bond_angstrom": 0.7283760099282499,
+      "mutation_multiplier": 0.9631026957855817,
+      "tap_ili_index": 1.155723234942698
+    },
+    {
+      "date": "2022-10-24",
+      "dr_bond_angstrom": 0.7403183153533462,
+      "mutation_multiplier": 1.0010104085048284,
+      "tap_ili_index": 1.201212490205794
+    },
+    {
+      "date": "2022-10-31",
+      "dr_bond_angstrom": 0.7518994514747983,
+      "mutation_multiplier": 1.037771684106767,
+      "tap_ili_index": 1.2453260209281203
+    },
+    {
+      "date": "2022-11-07",
+      "dr_bond_angstrom": 0.7556597339742047,
+      "mutation_multiplier": 1.0497077135128785,
+      "tap_ili_index": 1.2596492562154542
+    },
+    {
+      "date": "2022-11-14",
+      "dr_bond_angstrom": 0.7495638454185074,
+      "mutation_multiplier": 1.0303579159727558,
+      "tap_ili_index": 1.236429499167307
+    },
+    {
+      "date": "2022-11-21",
+      "dr_bond_angstrom": 0.7377040651269624,
+      "mutation_multiplier": 0.9927121576202269,
+      "tap_ili_index": 1.1912545891442723
+    },
+    {
+      "date": "2022-11-28",
+      "dr_bond_angstrom": 0.7273261577113932,
+      "mutation_multiplier": 0.9597702155970715,
+      "tap_ili_index": 1.1517242587164858
+    },
+    {
+      "date": "2022-12-05",
+      "dr_bond_angstrom": 0.7246660243293395,
+      "mutation_multiplier": 0.9513263206829571,
+      "tap_ili_index": 2.8539789620488714
+    },
+    {
+      "date": "2022-12-12",
+      "dr_bond_angstrom": 0.7316359338969705,
+      "mutation_multiplier": 0.9734504684219399,
+      "tap_ili_index": 2.9203514052658197
+    },
+    {
+      "date": "2022-12-19",
+      "dr_bond_angstrom": 0.743337955600046,
+      "mutation_multiplier": 1.01059546356018,
+      "tap_ili_index": 3.03178639068054
+    },
+    {
+      "date": "2022-12-26",
+      "dr_bond_angstrom": 0.7530967298977069,
+      "mutation_multiplier": 1.0415721300746952,
+      "tap_ili_index": 3.1247163902240853
+    },
+    {
+      "date": "2023-01-02",
+      "dr_bond_angstrom": 0.755509065062538,
+      "mutation_multiplier": 1.0492294546159673,
+      "tap_ili_index": 3.1476883638479016
+    },
+    {
+      "date": "2023-01-09",
+      "dr_bond_angstrom": 0.7492994075025274,
+      "mutation_multiplier": 1.029518527245519,
+      "tap_ili_index": 3.088555581736557
+    },
+    {
+      "date": "2023-01-16",
+      "dr_bond_angstrom": 0.7379191134886742,
+      "mutation_multiplier": 0.993394772176323,
+      "tap_ili_index": 2.9801843165289688
+    },
+    {
+      "date": "2023-01-23",
+      "dr_bond_angstrom": 0.7276717185027082,
+      "mutation_multiplier": 0.9608671075905284,
+      "tap_ili_index": 2.882601322771585
+    },
+    {
+      "date": "2023-01-30",
+      "dr_bond_angstrom": 0.7245460303361325,
+      "mutation_multiplier": 0.9509454312599681,
+      "tap_ili_index": 2.8528362937799043
+    },
+    {
+      "date": "2023-02-06",
+      "dr_bond_angstrom": 0.7310370546238442,
+      "mutation_multiplier": 0.9715494834252344,
+      "tap_ili_index": 2.914648450275703
+    },
+    {
+      "date": "2023-02-13",
+      "dr_bond_angstrom": 0.7426882371596554,
+      "mutation_multiplier": 1.0085331029765217,
+      "tap_ili_index": 3.025599308929565
+    },
+    {
+      "date": "2023-02-20",
+      "dr_bond_angstrom": 0.7528682890208398,
+      "mutation_multiplier": 1.0408470044958926,
+      "tap_ili_index": 3.1225410134876777
+    },
+    {
+      "date": "2023-02-27",
+      "dr_bond_angstrom": 0.7554995124494371,
+      "mutation_multiplier": 1.0491991323540377,
+      "tap_ili_index": 3.147597397062113
+    },
+    {
+      "date": "2023-03-06",
+      "dr_bond_angstrom": 0.748722785576302,
+      "mutation_multiplier": 1.027688192352138,
+      "tap_ili_index": 1.2332258308225654
+    },
+    {
+      "date": "2023-03-13",
+      "dr_bond_angstrom": 0.7364118133274706,
+      "mutation_multiplier": 0.9886102436067801,
+      "tap_ili_index": 1.186332292328136
+    },
+    {
+      "date": "2023-03-20",
+      "dr_bond_angstrom": 0.7262625208527056,
+      "mutation_multiplier": 0.9563939796826895,
+      "tap_ili_index": 1.1476727756192273
+    },
+    {
+      "date": "2023-03-27",
+      "dr_bond_angstrom": 0.7252323889877558,
+      "mutation_multiplier": 0.9531240965730681,
+      "tap_ili_index": 1.1437489158876817
+    },
+    {
+      "date": "2023-04-03",
+      "dr_bond_angstrom": 0.7342758150446065,
+      "mutation_multiplier": 0.9818300779357986,
+      "tap_ili_index": 1.1781960935229583
+    },
+    {
+      "date": "2023-04-10",
+      "dr_bond_angstrom": 0.7473568193787349,
+      "mutation_multiplier": 1.0233522913381876,
+      "tap_ili_index": 1.2280227496058251
+    },
+    {
+      "date": "2023-04-17",
+      "dr_bond_angstrom": 0.7553979247476774,
+      "mutation_multiplier": 1.0488766688700584,
+      "tap_ili_index": 1.25865200264407
+    },
+    {
+      "date": "2023-04-24",
+      "dr_bond_angstrom": 0.7523004409163911,
+      "mutation_multiplier": 1.0390445197958804,
+      "tap_ili_index": 1.2468534237550564
+    },
+    {
+      "date": "2023-05-01",
+      "dr_bond_angstrom": 0.7399166334137814,
+      "mutation_multiplier": 0.9997353746627419,
+      "tap_ili_index": 1.1996824495952902
+    },
+    {
+      "date": "2023-05-08",
+      "dr_bond_angstrom": 0.7274641585375103,
+      "mutation_multiplier": 0.9602082629828363,
+      "tap_ili_index": 1.1522499155794035
+    },
+    {
+      "date": "2023-05-15",
+      "dr_bond_angstrom": 0.7246150102305249,
+      "mutation_multiplier": 0.9511643898217325,
+      "tap_ili_index": 1.1413972677860789
+    },
+    {
+      "date": "2023-05-22",
+      "dr_bond_angstrom": 0.7334816941939881,
+      "mutation_multiplier": 0.9793093498185671,
+      "tap_ili_index": 1.1751712197822806
+    },
+    {
+      "date": "2023-05-29",
+      "dr_bond_angstrom": 0.7477303461422514,
+      "mutation_multiplier": 1.0245379539669948,
+      "tap_ili_index": 1.2294455447603936
+    },
+    {
+      "date": "2023-06-05",
+      "dr_bond_angstrom": 0.7556600899815864,
+      "mutation_multiplier": 1.0497088435648296,
+      "tap_ili_index": 0.5248544217824148
+    },
+    {
+      "date": "2023-06-12",
+      "dr_bond_angstrom": 0.750389765886039,
+      "mutation_multiplier": 1.032979583623823,
+      "tap_ili_index": 0.5164897918119115
+    },
+    {
+      "date": "2023-06-19",
+      "dr_bond_angstrom": 0.7361792216997527,
+      "mutation_multiplier": 0.9878719425593203,
+      "tap_ili_index": 0.49393597127966016
+    },
+    {
+      "date": "2023-06-26",
+      "dr_bond_angstrom": 0.7252342896680563,
+      "mutation_multiplier": 0.9531301297835949,
+      "tap_ili_index": 0.47656506489179745
+    },
+    {
+      "date": "2023-07-03",
+      "dr_bond_angstrom": 0.7262598500640395,
+      "mutation_multiplier": 0.9563855019653742,
+      "tap_ili_index": 0.4781927509826871
+    },
+    {
+      "date": "2023-07-10",
+      "dr_bond_angstrom": 0.738629718358296,
+      "mutation_multiplier": 0.9956504007418024,
+      "tap_ili_index": 0.4978252003709012
+    },
+    {
+      "date": "2023-07-17",
+      "dr_bond_angstrom": 0.7522023238833944,
+      "mutation_multiplier": 1.0387330730385491,
+      "tap_ili_index": 0.5193665365192746
+    },
+    {
+      "date": "2023-07-24",
+      "dr_bond_angstrom": 0.7551075309909581,
+      "mutation_multiplier": 1.0479548901419709,
+      "tap_ili_index": 0.5239774450709854
+    },
+    {
+      "date": "2023-07-31",
+      "dr_bond_angstrom": 0.744895063414735,
+      "mutation_multiplier": 1.0155380934470424,
+      "tap_ili_index": 0.5077690467235212
+    },
+    {
+      "date": "2023-08-07",
+      "dr_bond_angstrom": 0.7305182210148568,
+      "mutation_multiplier": 0.9699025823706646,
+      "tap_ili_index": 0.4849512911853323
+    },
+    {
+      "date": "2023-08-14",
+      "dr_bond_angstrom": 0.7242549384273727,
+      "mutation_multiplier": 0.9500214364315512,
+      "tap_ili_index": 0.4750107182157756
+    },
+    {
+      "date": "2023-08-21",
+      "dr_bond_angstrom": 0.7301583730234623,
+      "mutation_multiplier": 0.968760339412139,
+      "tap_ili_index": 0.4843801697060695
+    },
+    {
+      "date": "2023-08-28",
+      "dr_bond_angstrom": 0.7441975225700297,
+      "mutation_multiplier": 1.0133239331982633,
+      "tap_ili_index": 0.5066619665991317
+    },
+    {
+      "date": "2023-09-04",
+      "dr_bond_angstrom": 0.7546999290882462,
+      "mutation_multiplier": 1.0466610649313588,
+      "tap_ili_index": 1.2559932779176306
+    },
+    {
+      "date": "2023-09-11",
+      "dr_bond_angstrom": 0.7533985092568893,
+      "mutation_multiplier": 1.0425300494081304,
+      "tap_ili_index": 1.2510360592897565
+    },
+    {
+      "date": "2023-09-18",
+      "dr_bond_angstrom": 0.7417182946787559,
+      "mutation_multiplier": 1.0054542752618274,
+      "tap_ili_index": 1.2065451303141927
+    },
+    {
+      "date": "2023-09-25",
+      "dr_bond_angstrom": 0.7288726287457091,
+      "mutation_multiplier": 0.9646790818176835,
+      "tap_ili_index": 1.1576148981812202
+    },
+    {
+      "date": "2023-10-02",
+      "dr_bond_angstrom": 0.7242989108546108,
+      "mutation_multiplier": 0.9501610153553834,
+      "tap_ili_index": 1.14019321842646
+    },
+    {
+      "date": "2023-10-09",
+      "dr_bond_angstrom": 0.7309591572966443,
+      "mutation_multiplier": 0.9713022188145934,
+      "tap_ili_index": 1.1655626625775122
+    },
+    {
+      "date": "2023-10-16",
+      "dr_bond_angstrom": 0.7439456477653603,
+      "mutation_multiplier": 1.0125244227690158,
+      "tap_ili_index": 1.2150293073228189
+    },
+    {
+      "date": "2023-10-23",
+      "dr_bond_angstrom": 0.7540606486338804,
+      "mutation_multiplier": 1.0446318369934937,
+      "tap_ili_index": 1.2535582043921925
+    },
+    {
+      "date": "2023-10-30",
+      "dr_bond_angstrom": 0.7546959313983003,
+      "mutation_multiplier": 1.0466483753143527,
+      "tap_ili_index": 1.2559780503772233
+    },
+    {
+      "date": "2023-11-06",
+      "dr_bond_angstrom": 0.7458447365136942,
+      "mutation_multiplier": 1.0185525813311738,
+      "tap_ili_index": 1.2222630975974085
+    },
+    {
+      "date": "2023-11-13",
+      "dr_bond_angstrom": 0.7334366292600525,
+      "mutation_multiplier": 0.9791663030190979,
+      "tap_ili_index": 1.1749995636229174
+    },
+    {
+      "date": "2023-11-20",
+      "dr_bond_angstrom": 0.7251627962206448,
+      "mutation_multiplier": 0.9529031926077888,
+      "tap_ili_index": 1.1434838311293465
+    },
+    {
+      "date": "2023-11-27",
+      "dr_bond_angstrom": 0.7263632680841466,
+      "mutation_multiplier": 0.9567137753143352,
+      "tap_ili_index": 1.1480565303772021
+    },
+    {
+      "date": "2023-12-04",
+      "dr_bond_angstrom": 0.7359802866140354,
+      "mutation_multiplier": 0.9872404753667882,
+      "tap_ili_index": 2.9617214261003646
+    },
+    {
+      "date": "2023-12-11",
+      "dr_bond_angstrom": 0.747854105389533,
+      "mutation_multiplier": 1.0249307952003501,
+      "tap_ili_index": 3.07479238560105
+    },
+    {
+      "date": "2023-12-18",
+      "dr_bond_angstrom": 0.7551573562193714,
+      "mutation_multiplier": 1.0481130472462843,
+      "tap_ili_index": 3.144339141738853
+    },
+    {
+      "date": "2023-12-25",
+      "dr_bond_angstrom": 0.7538798259950752,
+      "mutation_multiplier": 1.0440578630076534,
+      "tap_ili_index": 3.13217358902296
+    },
+    {
+      "date": "2024-01-01",
+      "dr_bond_angstrom": 0.7448571108820665,
+      "mutation_multiplier": 1.0154176230977965,
+      "tap_ili_index": 3.0462528692933892
+    },
+    {
+      "date": "2024-01-08",
+      "dr_bond_angstrom": 0.7331481814564494,
+      "mutation_multiplier": 0.9782507012082029,
+      "tap_ili_index": 2.934752103624609
+    },
+    {
+      "date": "2024-01-15",
+      "dr_bond_angstrom": 0.7252399013094888,
+      "mutation_multiplier": 0.9531479424657978,
+      "tap_ili_index": 2.8594438273973934
+    },
+    {
+      "date": "2024-01-22",
+      "dr_bond_angstrom": 0.7262519888267344,
+      "mutation_multiplier": 0.9563605485317801,
+      "tap_ili_index": 2.8690816455953403
+    },
+    {
+      "date": "2024-01-29",
+      "dr_bond_angstrom": 0.7354294387782453,
+      "mutation_multiplier": 0.985491953555642,
+      "tap_ili_index": 2.956475860666926
+    },
+    {
+      "date": "2024-02-05",
+      "dr_bond_angstrom": 0.747223762345224,
+      "mutation_multiplier": 1.022929936723893,
+      "tap_ili_index": 3.0687898101716793
+    },
+    {
+      "date": "2024-02-12",
+      "dr_bond_angstrom": 0.7549647591680707,
+      "mutation_multiplier": 1.0475016984797443,
+      "tap_ili_index": 3.142505095439233
+    },
+    {
+      "date": "2024-02-19",
+      "dr_bond_angstrom": 0.7540631371928559,
+      "mutation_multiplier": 1.0446397362705064,
+      "tap_ili_index": 3.1339192088115193
+    },
+    {
+      "date": "2024-02-26",
+      "dr_bond_angstrom": 0.7447962132677967,
+      "mutation_multiplier": 1.0152243196120077,
+      "tap_ili_index": 3.0456729588360227
+    },
+    {
+      "date": "2024-03-04",
+      "dr_bond_angstrom": 0.7325104601481773,
+      "mutation_multiplier": 0.9762264223702055,
+      "tap_ili_index": 1.1714717068442466
+    },
+    {
+      "date": "2024-03-11",
+      "dr_bond_angstrom": 0.7247710771034023,
+      "mutation_multiplier": 0.9516597831290914,
+      "tap_ili_index": 1.1419917397549095
+    },
+    {
+      "date": "2024-03-18",
+      "dr_bond_angstrom": 0.727073401067285,
+      "mutation_multiplier": 0.9589679060000821,
+      "tap_ili_index": 1.1507614872000984
+    },
+    {
+      "date": "2024-03-25",
+      "dr_bond_angstrom": 0.7379176140857454,
+      "mutation_multiplier": 0.9933900127154441,
+      "tap_ili_index": 1.192068015258533
+    },
+    {
+      "date": "2024-04-01",
+      "dr_bond_angstrom": 0.7502816137796467,
+      "mutation_multiplier": 1.0326362831610427,
+      "tap_ili_index": 1.2391635397932512
+    },
+    {
+      "date": "2024-04-08",
+      "dr_bond_angstrom": 0.7557517970626659,
+      "mutation_multiplier": 1.049999943612948,
+      "tap_ili_index": 1.2599999323355375
+    },
+    {
+      "date": "2024-04-15",
+      "dr_bond_angstrom": 0.7501423214337268,
+      "mutation_multiplier": 1.0321941361847955,
+      "tap_ili_index": 1.2386329634217546
+    },
+    {
+      "date": "2024-04-22",
+      "dr_bond_angstrom": 0.7370595533131341,
+      "mutation_multiplier": 0.9906663241054164,
+      "tap_ili_index": 1.1887995889264997
+    },
+    {
+      "date": "2024-04-29",
+      "dr_bond_angstrom": 0.7260383408223428,
+      "mutation_multiplier": 0.9556823790422863,
+      "tap_ili_index": 1.1468188548507434
+    },
+    {
+      "date": "2024-05-06",
+      "dr_bond_angstrom": 0.725402761980397,
+      "mutation_multiplier": 0.953664900901066,
+      "tap_ili_index": 1.1443978810812792
+    },
+    {
+      "date": "2024-05-13",
+      "dr_bond_angstrom": 0.7357952918157362,
+      "mutation_multiplier": 0.9866532579561744,
+      "tap_ili_index": 1.1839839095474092
+    },
+    {
+      "date": "2024-05-20",
+      "dr_bond_angstrom": 0.7496319230290565,
+      "mutation_multiplier": 1.0305740104713845,
+      "tap_ili_index": 1.2366888125656614
+    },
+    {
+      "date": "2024-05-27",
+      "dr_bond_angstrom": 0.7557461041820893,
+      "mutation_multiplier": 1.049981873058414,
+      "tap_ili_index": 1.259978247670097
+    },
+    {
+      "date": "2024-06-03",
+      "dr_bond_angstrom": 0.7488138261607206,
+      "mutation_multiplier": 1.0279771767816168,
+      "tap_ili_index": 0.5139885883908084
+    },
+    {
+      "date": "2024-06-10",
+      "dr_bond_angstrom": 0.7343804427036943,
+      "mutation_multiplier": 0.9821621909660726,
+      "tap_ili_index": 0.4910810954830363
+    },
+    {
+      "date": "2024-06-17",
+      "dr_bond_angstrom": 0.7247019878753493,
+      "mutation_multiplier": 0.9514404775163307,
+      "tap_ili_index": 0.4757202387581653
+    },
+    {
+      "date": "2024-06-24",
+      "dr_bond_angstrom": 0.7272353255396962,
+      "mutation_multiplier": 0.9594818927190516,
+      "tap_ili_index": 0.4797409463595258
+    },
+    {
+      "date": "2024-07-01",
+      "dr_bond_angstrom": 0.7403996097421289,
+      "mutation_multiplier": 1.0012684561954512,
+      "tap_ili_index": 0.5006342280977256
+    },
+    {
+      "date": "2024-07-08",
+      "dr_bond_angstrom": 0.7532390468574467,
+      "mutation_multiplier": 1.0420238778932993,
+      "tap_ili_index": 0.5210119389466497
+    },
+    {
+      "date": "2024-07-15",
+      "dr_bond_angstrom": 0.7545044612559161,
+      "mutation_multiplier": 1.04604060362426,
+      "tap_ili_index": 0.52302030181213
+    },
+    {
+      "date": "2024-07-22",
+      "dr_bond_angstrom": 0.7431076526369459,
+      "mutation_multiplier": 1.0098644272775836,
+      "tap_ili_index": 0.5049322136387918
+    },
+    {
+      "date": "2024-07-29",
+      "dr_bond_angstrom": 0.7290445021583378,
+      "mutation_multiplier": 0.9652246488349456,
+      "tap_ili_index": 0.4826123244174728
+    },
+    {
+      "date": "2024-08-05",
+      "dr_bond_angstrom": 0.7242814238322623,
+      "mutation_multiplier": 0.9501055073947424,
+      "tap_ili_index": 0.4750527536973712
+    },
+    {
+      "date": "2024-08-12",
+      "dr_bond_angstrom": 0.731847315865868,
+      "mutation_multiplier": 0.9741214449767815,
+      "tap_ili_index": 0.4870607224883908
+    },
+    {
+      "date": "2024-08-19",
+      "dr_bond_angstrom": 0.7462784815214942,
+      "mutation_multiplier": 1.0199293909641391,
+      "tap_ili_index": 0.5099646954820696
+    },
+    {
+      "date": "2024-08-26",
+      "dr_bond_angstrom": 0.7553844343760091,
+      "mutation_multiplier": 1.048833847227547,
+      "tap_ili_index": 0.5244169236137735
+    },
+    {
+      "date": "2024-09-02",
+      "dr_bond_angstrom": 0.7518741267807104,
+      "mutation_multiplier": 1.037691297515233,
+      "tap_ili_index": 1.2452295570182796
+    },
+    {
+      "date": "2024-09-09",
+      "dr_bond_angstrom": 0.7389439333661529,
+      "mutation_multiplier": 0.9966477937765575,
+      "tap_ili_index": 1.195977352531869
+    },
+    {
+      "date": "2024-09-16",
+      "dr_bond_angstrom": 0.7269650751372542,
+      "mutation_multiplier": 0.9586240537798043,
+      "tap_ili_index": 1.1503488645357651
+    },
+    {
+      "date": "2024-09-23",
+      "dr_bond_angstrom": 0.7248210628085395,
+      "mutation_multiplier": 0.9518184496246265,
+      "tap_ili_index": 1.1421821395495517
+    },
+    {
+      "date": "2024-09-30",
+      "dr_bond_angstrom": 0.7337674509825972,
+      "mutation_multiplier": 0.98021640970898,
+      "tap_ili_index": 1.176259691650776
+    },
+    {
+      "date": "2024-10-07",
+      "dr_bond_angstrom": 0.7471637312984359,
+      "mutation_multiplier": 1.0227393839290289,
+      "tap_ili_index": 1.2272872607148346
+    },
+    {
+      "date": "2024-10-14",
+      "dr_bond_angstrom": 0.7553210286180393,
+      "mutation_multiplier": 1.0486325822981795,
+      "tap_ili_index": 1.2583590987578153
+    },
+    {
+      "date": "2024-10-21",
+      "dr_bond_angstrom": 0.7528628302097973,
+      "mutation_multiplier": 1.040829676933632,
+      "tap_ili_index": 1.2489956123203585
+    },
+    {
+      "date": "2024-10-28",
+      "dr_bond_angstrom": 0.7418836306134075,
+      "mutation_multiplier": 1.0059790907718853,
+      "tap_ili_index": 1.2071749089262622
+    },
+    {
+      "date": "2024-11-04",
+      "dr_bond_angstrom": 0.7298243574234928,
+      "mutation_multiplier": 0.9677000945970313,
+      "tap_ili_index": 1.1612401135164376
+    },
+    {
+      "date": "2024-11-11",
+      "dr_bond_angstrom": 0.7242753649524818,
+      "mutation_multiplier": 0.9500862750718407,
+      "tap_ili_index": 1.1401035300862088
+    },
+    {
+      "date": "2024-11-18",
+      "dr_bond_angstrom": 0.7291151290777738,
+      "mutation_multiplier": 0.9654488354452293,
+      "tap_ili_index": 1.1585386025342752
+    },
+    {
+      "date": "2024-11-25",
+      "dr_bond_angstrom": 0.7405586502649036,
+      "mutation_multiplier": 1.0017732885735777,
+      "tap_ili_index": 1.2021279462882932
+    },
+    {
+      "date": "2024-12-02",
+      "dr_bond_angstrom": 0.751558268280292,
+      "mutation_multiplier": 1.0366886876448949,
+      "tap_ili_index": 3.110066062934685
+    },
+    {
+      "date": "2024-12-09",
+      "dr_bond_angstrom": 0.7557432526148823,
+      "mutation_multiplier": 1.0499728215070903,
+      "tap_ili_index": 3.1499184645212708
+    },
+    {
+      "date": "2024-12-16",
+      "dr_bond_angstrom": 0.7509057399558624,
+      "mutation_multiplier": 1.0346174078221844,
+      "tap_ili_index": 3.103852223466553
+    },
+    {
+      "date": "2024-12-23",
+      "dr_bond_angstrom": 0.7399482689011506,
+      "mutation_multiplier": 0.9998357932104373,
+      "tap_ili_index": 2.9995073796313116
+    },
+    {
+      "date": "2024-12-30",
+      "dr_bond_angstrom": 0.729056259725278,
+      "mutation_multiplier": 0.9652619701438537,
+      "tap_ili_index": 2.8957859104315613
+    },
+    {
+      "date": "2025-01-06",
+      "dr_bond_angstrom": 0.7242803703578842,
+      "mutation_multiplier": 0.9501021634169537,
+      "tap_ili_index": 2.850306490250861
+    },
+    {
+      "date": "2025-01-13",
+      "dr_bond_angstrom": 0.7293394510272474,
+      "mutation_multiplier": 0.9661608865705839,
+      "tap_ili_index": 2.8984826597117515
+    },
+    {
+      "date": "2025-01-20",
+      "dr_bond_angstrom": 0.7403257284889484,
+      "mutation_multiplier": 1.0010339395572303,
+      "tap_ili_index": 3.003101818671691
+    },
+    {
+      "date": "2025-01-27",
+      "dr_bond_angstrom": 0.7511586373469041,
+      "mutation_multiplier": 1.0354201641833567,
+      "tap_ili_index": 3.10626049255007
+    },
+    {
+      "date": "2025-02-03",
+      "dr_bond_angstrom": 0.755750553096982,
+      "mutation_multiplier": 1.0499959949705293,
+      "tap_ili_index": 3.149987984911588
+    },
+    {
+      "date": "2025-02-10",
+      "dr_bond_angstrom": 0.7513696899177414,
+      "mutation_multiplier": 1.0360900951505503,
+      "tap_ili_index": 3.108270285451651
+    },
+    {
+      "date": "2025-02-17",
+      "dr_bond_angstrom": 0.7403388406762723,
+      "mutation_multiplier": 1.0010755607528454,
+      "tap_ili_index": 3.0032266822585365
+    },
+    {
+      "date": "2025-02-24",
+      "dr_bond_angstrom": 0.7290032207203121,
+      "mutation_multiplier": 0.9650936117497588,
+      "tap_ili_index": 2.8952808352492765
+    },
+    {
+      "date": "2025-03-03",
+      "dr_bond_angstrom": 0.7242852657969621,
+      "mutation_multiplier": 0.9501177027028449,
+      "tap_ili_index": 1.140141243243414
+    },
+    {
+      "date": "2025-03-10",
+      "dr_bond_angstrom": 0.7298878058418123,
+      "mutation_multiplier": 0.967901494940477,
+      "tap_ili_index": 1.1614817939285722
+    },
+    {
+      "date": "2025-03-17",
+      "dr_bond_angstrom": 0.7418867961894249,
+      "mutation_multiplier": 1.0059891390617246,
+      "tap_ili_index": 1.2071869668740696
+    },
+    {
+      "date": "2025-03-24",
+      "dr_bond_angstrom": 0.7528151124550189,
+      "mutation_multiplier": 1.0406782094509845,
+      "tap_ili_index": 1.2488138513411815
+    },
+    {
+      "date": "2025-03-31",
+      "dr_bond_angstrom": 0.7553601188678439,
+      "mutation_multiplier": 1.0487566640317287,
+      "tap_ili_index": 1.2585079968380743
+    },
+    {
+      "date": "2025-04-07",
+      "dr_bond_angstrom": 0.7473985577272373,
+      "mutation_multiplier": 1.0234847787657058,
+      "tap_ili_index": 1.2281817345188468
+    },
+    {
+      "date": "2025-04-14",
+      "dr_bond_angstrom": 0.734098130755985,
+      "mutation_multiplier": 0.9812660658185373,
+      "tap_ili_index": 1.1775192789822446
+    },
+    {
+      "date": "2025-04-21",
+      "dr_bond_angstrom": 0.7249477734937743,
+      "mutation_multiplier": 0.9522206594227652,
+      "tap_ili_index": 1.1426647913073182
+    },
+    {
+      "date": "2025-04-28",
+      "dr_bond_angstrom": 0.7267172759114384,
+      "mutation_multiplier": 0.9578374802054479,
+      "tap_ili_index": 1.1494049762465375
+    },
+    {
+      "date": "2025-05-05",
+      "dr_bond_angstrom": 0.738405172824694,
+      "mutation_multiplier": 0.9949376399073414,
+      "tap_ili_index": 1.1939251678888096
+    },
+    {
+      "date": "2025-05-12",
+      "dr_bond_angstrom": 0.7514537406131002,
+      "mutation_multiplier": 1.0363568920126387,
+      "tap_ili_index": 1.2436282704151664
+    },
+    {
+      "date": "2025-05-19",
+      "dr_bond_angstrom": 0.7555201803907869,
+      "mutation_multiplier": 1.0492647373067914,
+      "tap_ili_index": 1.2591176847681496
+    },
+    {
+      "date": "2025-05-26",
+      "dr_bond_angstrom": 0.746980301710986,
+      "mutation_multiplier": 1.0221571348692575,
+      "tap_ili_index": 1.226588561843109
+    },
+    {
+      "date": "2025-06-02",
+      "dr_bond_angstrom": 0.7325715126265274,
+      "mutation_multiplier": 0.9764202174313525,
+      "tap_ili_index": 0.48821010871567627
+    },
+    {
+      "date": "2025-06-09",
+      "dr_bond_angstrom": 0.72436322697939,
+      "mutation_multiplier": 0.9503651700051399,
+      "tap_ili_index": 0.47518258500256993
+    },
+    {
+      "date": "2025-06-16",
+      "dr_bond_angstrom": 0.7284286591815852,
+      "mutation_multiplier": 0.9632698170154672,
+      "tap_ili_index": 0.4816349085077336
+    },
+    {
+      "date": "2025-06-23",
+      "dr_bond_angstrom": 0.7422043443934748,
+      "mutation_multiplier": 1.0069971124525527,
+      "tap_ili_index": 0.5034985562262764
+    },
+    {
+      "date": "2025-06-30",
+      "dr_bond_angstrom": 0.7541131534125257,
+      "mutation_multiplier": 1.0447984996264126,
+      "tap_ili_index": 0.5223992498132063
+    },
+    {
+      "date": "2025-07-07",
+      "dr_bond_angstrom": 0.7537270087381596,
+      "mutation_multiplier": 1.043572784752869,
+      "tap_ili_index": 0.5217863923764345
+    },
+    {
+      "date": "2025-07-14",
+      "dr_bond_angstrom": 0.7413357646697002,
+      "mutation_multiplier": 1.0042400341941606,
+      "tap_ili_index": 0.5021200170970803
+    },
+    {
+      "date": "2025-07-21",
+      "dr_bond_angstrom": 0.7277933518637445,
+      "mutation_multiplier": 0.9612532007562209,
+      "tap_ili_index": 0.48062660037811045
+    },
+    {
+      "date": "2025-07-28",
+      "dr_bond_angstrom": 0.7245096711724495,
+      "mutation_multiplier": 0.9508300186421736,
+      "tap_ili_index": 0.4754150093210868
+    },
+    {
+      "date": "2025-08-04",
+      "dr_bond_angstrom": 0.7335669209725688,
+      "mutation_multiplier": 0.9795798798480232,
+      "tap_ili_index": 0.4897899399240116
+    },
+    {
+      "date": "2025-08-11",
+      "dr_bond_angstrom": 0.7481118859706992,
+      "mutation_multiplier": 1.0257490519663268,
+      "tap_ili_index": 0.5128745259831634
+    },
+    {
+      "date": "2025-08-18",
+      "dr_bond_angstrom": 0.7557063698858162,
+      "mutation_multiplier": 1.0498557469684668,
+      "tap_ili_index": 0.5249278734842334
+    },
+    {
+      "date": "2025-08-25",
+      "dr_bond_angstrom": 0.7501781590811735,
+      "mutation_multiplier": 1.0323078933862389,
+      "tap_ili_index": 0.5161539466931194
+    },
+    {
+      "date": "2025-09-01",
+      "dr_bond_angstrom": 0.7364000241578834,
+      "mutation_multiplier": 0.9885728219835677,
+      "tap_ili_index": 1.1862873863802812
+    },
+    {
+      "date": "2025-09-08",
+      "dr_bond_angstrom": 0.7256138825174503,
+      "mutation_multiplier": 0.9543350476091657,
+      "tap_ili_index": 1.1452020571309987
+    },
+    {
+      "date": "2025-09-15",
+      "dr_bond_angstrom": 0.7257969353466525,
+      "mutation_multiplier": 0.9549161007488095,
+      "tap_ili_index": 1.1458993208985713
+    },
+    {
+      "date": "2025-09-22",
+      "dr_bond_angstrom": 0.7366193914532171,
+      "mutation_multiplier": 0.9892691458603655,
+      "tap_ili_index": 1.1871229750324386
+    },
+    {
+      "date": "2025-09-29",
+      "dr_bond_angstrom": 0.7498668387778744,
+      "mutation_multiplier": 1.0313196888310008,
+      "tap_ili_index": 1.237583626597201
+    },
+    {
+      "date": "2025-10-06",
+      "dr_bond_angstrom": 0.7557499939794848,
+      "mutation_multiplier": 1.0499942201988492,
+      "tap_ili_index": 1.259993064238619
+    },
+    {
+      "date": "2025-10-13",
+      "dr_bond_angstrom": 0.7504102697205673,
+      "mutation_multiplier": 1.0330446676625638,
+      "tap_ili_index": 1.2396536011950765
+    },
+    {
+      "date": "2025-10-20",
+      "dr_bond_angstrom": 0.7379977364824293,
+      "mutation_multiplier": 0.9936443402248952,
+      "tap_ili_index": 1.1923732082698741
+    },
+    {
+      "date": "2025-10-27",
+      "dr_bond_angstrom": 0.7270707396914057,
+      "mutation_multiplier": 0.9589594581611868,
+      "tap_ili_index": 1.150751349793424
+    },
+    {
+      "date": "2025-11-03",
+      "dr_bond_angstrom": 0.7247722680432345,
+      "mutation_multiplier": 0.9516635634548675,
+      "tap_ili_index": 1.1419962761458409
+    },
+    {
+      "date": "2025-11-10",
+      "dr_bond_angstrom": 0.7325847191545478,
+      "mutation_multiplier": 0.9764621380867364,
+      "tap_ili_index": 1.1717545657040838
+    },
+    {
+      "date": "2025-11-17",
+      "dr_bond_angstrom": 0.7449453021928845,
+      "mutation_multiplier": 1.0156975632564023,
+      "tap_ili_index": 1.2188370759076828
+    },
+    {
+      "date": "2025-11-24",
+      "dr_bond_angstrom": 0.7541612854254096,
+      "mutation_multiplier": 1.0449512820626388,
+      "tap_ili_index": 1.2539415384751664
+    },
+    {
+      "date": "2025-12-01",
+      "dr_bond_angstrom": 0.7548763538235697,
+      "mutation_multiplier": 1.047221078927413,
+      "tap_ili_index": 3.141663236782239
+    },
+    {
+      "date": "2025-12-08",
+      "dr_bond_angstrom": 0.7469372788305702,
+      "mutation_multiplier": 1.022020570032477,
+      "tap_ili_index": 3.066061710097431
+    },
+    {
+      "date": "2025-12-15",
+      "dr_bond_angstrom": 0.7350910452323803,
+      "mutation_multiplier": 0.9844178121008657,
+      "tap_ili_index": 2.953253436302597
+    },
+    {
+      "date": "2025-12-22",
+      "dr_bond_angstrom": 0.7260715618003607,
+      "mutation_multiplier": 0.9557878303137228,
+      "tap_ili_index": 2.8673634909411687
+    },
+    {
+      "date": "2025-12-29",
+      "dr_bond_angstrom": 0.7253760652748268,
+      "mutation_multiplier": 0.9535801592193482,
+      "tap_ili_index": 2.8607404776580445
+    },
+    {
+      "date": "2026-01-05",
+      "dr_bond_angstrom": 0.7335007191410603,
+      "mutation_multiplier": 0.9793697395174102,
+      "tap_ili_index": 2.938109218552231
+    },
+    {
+      "date": "2026-01-12",
+      "dr_bond_angstrom": 0.7452256632378317,
+      "mutation_multiplier": 1.016587495775394,
+      "tap_ili_index": 3.049762487326182
+    },
+    {
+      "date": "2026-01-19",
+      "dr_bond_angstrom": 0.7540541657406816,
+      "mutation_multiplier": 1.0446112587513348,
+      "tap_ili_index": 3.1338337762540043
+    },
+    {
+      "date": "2026-01-26",
+      "dr_bond_angstrom": 0.7550572543447284,
+      "mutation_multiplier": 1.0477953001303335,
+      "tap_ili_index": 3.1433859003910003
+    },
+    {
+      "date": "2026-02-02",
+      "dr_bond_angstrom": 0.7475757263577727,
+      "mutation_multiplier": 1.024047154061776,
+      "tap_ili_index": 3.0721414621853276
+    },
+    {
+      "date": "2026-02-09",
+      "dr_bond_angstrom": 0.7357158855984428,
+      "mutation_multiplier": 0.9864012037701417,
+      "tap_ili_index": 2.959203611310425
+    },
+    {
+      "date": "2026-02-16",
+      "dr_bond_angstrom": 0.7262550551728469,
+      "mutation_multiplier": 0.9563702818423426,
+      "tap_ili_index": 2.869110845527028
+    },
+    {
+      "date": "2026-02-23",
+      "dr_bond_angstrom": 0.725237709387266,
+      "mutation_multiplier": 0.9531409847842638,
+      "tap_ili_index": 2.8594229543527914
+    },
+    {
+      "date": "2026-03-02",
+      "dr_bond_angstrom": 0.733577242490808,
+      "mutation_multiplier": 0.9796126427974128,
+      "tap_ili_index": 1.1755351713568953
+    },
+    {
+      "date": "2026-03-09",
+      "dr_bond_angstrom": 0.7459204126745596,
+      "mutation_multiplier": 1.0187927954325269,
+      "tap_ili_index": 1.2225513545190323
+    },
+    {
+      "date": "2026-03-16",
+      "dr_bond_angstrom": 0.7546965493177741,
+      "mutation_multiplier": 1.046650336737467,
+      "tap_ili_index": 1.2559804040849605
+    },
+    {
+      "date": "2026-03-23",
+      "dr_bond_angstrom": 0.7540982810759295,
+      "mutation_multiplier": 1.0447512912991186,
+      "tap_ili_index": 1.2537015495589423
+    },
+    {
+      "date": "2026-03-30",
+      "dr_bond_angstrom": 0.7441137297187256,
+      "mutation_multiplier": 1.0130579547944212,
+      "tap_ili_index": 1.2156695457533053
+    },
+    {
+      "date": "2026-04-06",
+      "dr_bond_angstrom": 0.7311786557628691,
+      "mutation_multiplier": 0.9719989590589421,
+      "tap_ili_index": 1.1663987508707305
+    },
+    {
+      "date": "2026-04-13",
+      "dr_bond_angstrom": 0.7243318762369695,
+      "mutation_multiplier": 0.9502656553055147,
+      "tap_ili_index": 1.1403187863666175
+    },
+    {
+      "date": "2026-04-20",
+      "dr_bond_angstrom": 0.7286207539220716,
+      "mutation_multiplier": 0.9638795713282263,
+      "tap_ili_index": 1.1566554855938715
+    },
+    {
+      "date": "2026-04-27",
+      "dr_bond_angstrom": 0.7412677847688389,
+      "mutation_multiplier": 1.0040242498492784,
+      "tap_ili_index": 1.204829099819134
+    },
+    {
+      "date": "2026-05-04",
+      "dr_bond_angstrom": 0.7531055000967495,
+      "mutation_multiplier": 1.0415999687686461,
+      "tap_ili_index": 1.2499199625223754
+    },
+    {
+      "date": "2026-05-11",
+      "dr_bond_angstrom": 0.7549135556366894,
+      "mutation_multiplier": 1.0473391663145784,
+      "tap_ili_index": 1.256806999577494
+    },
+    {
+      "date": "2026-05-18",
+      "dr_bond_angstrom": 0.7448729032234016,
+      "mutation_multiplier": 1.015467751738556,
+      "tap_ili_index": 1.2185613020862671
+    },
+    {
+      "date": "2026-05-25",
+      "dr_bond_angstrom": 0.7307751154269042,
+      "mutation_multiplier": 0.9707180262254678,
+      "tap_ili_index": 1.1648616314705613
+    },
+    {
+      "date": "2026-06-01",
+      "dr_bond_angstrom": 0.7242484014383264,
+      "mutation_multiplier": 0.9500006864763291,
+      "tap_ili_index": 0.47500034323816454
+    },
+    {
+      "date": "2026-06-08",
+      "dr_bond_angstrom": 0.7298655410588458,
+      "mutation_multiplier": 0.9678308212333152,
+      "tap_ili_index": 0.4839154106166576
+    },
+    {
+      "date": "2026-06-15",
+      "dr_bond_angstrom": 0.7440493413454852,
+      "mutation_multiplier": 1.0128535708108959,
+      "tap_ili_index": 0.5064267854054479
+    },
+    {
+      "date": "2026-06-22",
+      "dr_bond_angstrom": 0.75482248065835,
+      "mutation_multiplier": 1.0470500727106293,
+      "tap_ili_index": 0.5235250363553147
+    }
+  ],
+  "future_epi": [
+    {
+      "winter_season": "2026-2027",
+      "total_winter_crossings": 12,
+      "holiday_crossing_dates": [
+        "12-17",
+        "12-25",
+        "01-02"
+      ],
+      "outbreak_risk_index": 9.5
+    },
+    {
+      "winter_season": "2027-2028",
+      "total_winter_crossings": 11,
+      "holiday_crossing_dates": [
+        "12-18",
+        "12-26",
+        "01-03"
+      ],
+      "outbreak_risk_index": 9.5
+    },
+    {
+      "winter_season": "2028-2029",
+      "total_winter_crossings": 12,
+      "holiday_crossing_dates": [
+        "12-17",
+        "12-25",
+        "01-02"
+      ],
+      "outbreak_risk_index": 9.5
+    },
+    {
+      "winter_season": "2029-2030",
+      "total_winter_crossings": 11,
+      "holiday_crossing_dates": [
+        "12-18",
+        "12-26",
+        "01-03"
+      ],
+      "outbreak_risk_index": 9.5
+    },
+    {
+      "winter_season": "2030-2031",
+      "total_winter_crossings": 11,
+      "holiday_crossing_dates": [
+        "12-18",
+        "12-26",
+        "01-03"
+      ],
+      "outbreak_risk_index": 9.5
+    },
+    {
+      "winter_season": "2031-2032",
+      "total_winter_crossings": 4,
+      "holiday_crossing_dates": [
+        "12-18",
+        "12-26"
+      ],
+      "outbreak_risk_index": 8.0
+    }
+  ],
+  "southern_winter_storms": [
+    {
+      "crossing_step": 249,
+      "node_date_utc": "2026-07-08 01:33",
+      "blizzard_risk_window": "07-07 to 07-09"
+    },
+    {
+      "crossing_step": 250,
+      "node_date_utc": "2026-07-16 07:44",
+      "blizzard_risk_window": "07-15 to 07-17"
+    },
+    {
+      "crossing_step": 251,
+      "node_date_utc": "2026-07-24 13:52",
+      "blizzard_risk_window": "07-23 to 07-25"
+    }
+  ]
+}
