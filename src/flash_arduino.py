@@ -4,13 +4,14 @@ flash_arduino.py
 ================
 Pure Python STK500v1 bootloader client to flash Arduino Nano (Atmega328p)
 directly from Termux over USB-C serial.
-Bypasses the need for avrdude.
+Uses raw OS file descriptors and termios for zero-dependency flashing.
 """
 
 import sys
 import os
 import time
-import serial
+import termios
+import select
 
 # STK500v1 constants
 STK_OK = 0x10
@@ -23,20 +24,79 @@ STK_PROG_PAGE = 0x64
 STK_LEAVE_PROGMODE = 0x51
 SYNC_SZ = 0x20
 
+class RawSerialFD:
+    def __init__(self, fd):
+        self.fd = fd
+        # Configure raw mode and 115200 baud rate using termios
+        attrs = termios.tcgetattr(self.fd)
+        
+        # Output/input speeds
+        attrs[4] = termios.B115200 # ospeed
+        attrs[5] = termios.B115200 # ispeed
+        
+        # Raw mode settings
+        attrs[0] &= ~(termios.IGNBRK | termios.BRKINT | termios.PARMRK | termios.ISTRIP | termios.INLCR | termios.IGNCR | termios.ICRNL | termios.IXON)
+        attrs[1] &= ~termios.OPOST
+        attrs[2] &= ~(termios.CSIZE | termios.PARENB)
+        attrs[2] |= termios.CS8
+        attrs[3] &= ~(termios.ECHO | termios.ECHONL | termios.ICANON | termios.ISIG | termios.IEXTEN)
+        
+        # Block until at least 1 char is available, no timeout
+        attrs[6][termios.VMIN] = 0
+        attrs[6][termios.VTIME] = 10 # 1.0 second timeout
+        
+        termios.tcsetattr(self.fd, termios.TCSANOW, attrs)
+
+    def write(self, data):
+        os.write(self.fd, data)
+
+    def read(self, size):
+        # Read up to size bytes with a timeout
+        buffer = bytearray()
+        start = time.time()
+        while len(buffer) < size:
+            # Check for data available using select
+            r, _, _ = select.select([self.fd], [], [], 1.0)
+            if r:
+                chunk = os.read(self.fd, size - len(buffer))
+                if not chunk:
+                    break
+                buffer.extend(chunk)
+            if time.time() - start > 2.0: # 2s max read timeout
+                break
+        return bytes(buffer)
+
+    def setDTR(self, val):
+        # DTR/RTS control using ioctl on Android is sometimes restricted,
+        # but we can try using standard TIOCMGET/TIOCMSET
+        import fcntl
+        import struct
+        TIOCMGET = 0x5415
+        TIOCMSET = 0x5418
+        TIOCM_DTR = 0x002
+        TIOCM_RTS = 0x004
+        try:
+            mget = struct.unpack('I', fcntl.ioctl(self.fd, TIOCMGET, struct.pack('I', 0)))[0]
+            if val:
+                mget |= (TIOCM_DTR | TIOCM_RTS)
+            else:
+                mget &= ~(TIOCM_DTR | TIOCM_RTS)
+            fcntl.ioctl(self.fd, TIOCMSET, struct.pack('I', mget))
+        except Exception:
+            # Ignore if ioctl is not supported on this descriptor type
+            pass
+
 def parse_hex_line(line):
-    # Parses a single Intel Hex record line
     if not line.startswith(':'):
         return None
     byte_count = int(line[1:3], 16)
     address = int(line[3:7], 16)
     record_type = int(line[7:9], 16)
     data = bytes.fromhex(line[9:9+byte_count*2])
-    checksum = int(line[9+byte_count*2:9+byte_count*2+2], 16)
     return record_type, address, data
 
 def load_hex(hex_path):
-    # Loads Intel Hex file and returns program data as a continuous bytearray
-    flash = bytearray(32256) # max program size for Atmega328p Optiboot
+    flash = bytearray(32256)
     max_addr = 0
     with open(hex_path, 'r') as f:
         for line in f:
@@ -44,13 +104,12 @@ def load_hex(hex_path):
             if not parsed:
                 continue
             record_type, address, data = parsed
-            if record_type == 0:  # Data record
+            if record_type == 0:
                 flash[address:address+len(data)] = data
                 if address + len(data) > max_addr:
                     max_addr = address + len(data)
-            elif record_type == 1:  # EOF record
+            elif record_type == 1:
                 break
-    # Round to page size (128 bytes)
     pages = (max_addr + 127) // 128
     return bytes(flash[:pages*128])
 
@@ -63,8 +122,7 @@ def send_cmd(ser, cmd):
 
 def flash_device(ser, program_bytes):
     print("  [CONN] Sending sync packages...")
-    # Get sync
-    for _ in range(5):
+    for _ in range(10):
         ser.write(bytes([STK_GET_SYNC, SYNC_SZ]))
         res = ser.read(2)
         if len(res) == 2 and res[0] == STK_INSYNC and res[1] == STK_OK:
@@ -76,34 +134,29 @@ def flash_device(ser, program_bytes):
         
     print("  ✅ Synchronized successfully.")
     
-    # Enter programming mode
     send_cmd(ser, [STK_ENTER_PROGMODE, SYNC_SZ])
     
-    # Flash pages
     page_size = 128
     total_pages = len(program_bytes) // page_size
     print(f"  [FLASH] Programming {len(program_bytes)} bytes ({total_pages} pages)...")
     
     for page in range(total_pages):
-        addr = (page * page_size) // 2  # Address is in 16-bit words
+        addr = (page * page_size) // 2
         addr_low = addr & 0xFF
         addr_high = (addr >> 8) & 0xFF
         
-        # Load address
         if not send_cmd(ser, [STK_LOAD_ADDRESS, addr_low, addr_high, SYNC_SZ]):
             print(f"  ❌ Failed to load address for page {page}.")
             return False
             
-        # Program page
         page_data = program_bytes[page*page_size : (page+1)*page_size]
-        cmd = [STK_PROG_PAGE, (page_size >> 8) & 0xFF, page_size & 0xFF, 0x46] # 'F' for Flash
+        cmd = [STK_PROG_PAGE, (page_size >> 8) & 0xFF, page_size & 0xFF, 0x46]
         ser.write(bytes(cmd) + page_data + bytes([SYNC_SZ]))
         res = ser.read(2)
         if len(res) != 2 or res[0] != STK_INSYNC or res[1] != STK_OK:
             print(f"  ❌ Failed to program page {page}.")
             return False
             
-        # Progress indicator
         sys.stdout.write(f"\r    Progress: {int((page+1)/total_pages*100)}%")
         sys.stdout.flush()
         
@@ -120,9 +173,6 @@ def main():
         print("  Usage: termux-usb -r <device> -e 'python src/flash_arduino.py <hex_file>'")
         return
         
-    # Termux automatically appends the open USB file descriptor as the LAST argument.
-    # So if we run: python src/flash_arduino.py assets/tap_qubit_driver.hex
-    # argv[1] is the hex file, and argv[2] is the file descriptor.
     hex_file = sys.argv[1]
     fd = int(sys.argv[2])
     
@@ -134,26 +184,18 @@ def main():
     print(f"  Loaded {len(program_bytes)} bytes of firmware.")
     
     try:
-        # Open serial port using file descriptor passed by termux-usb
-        ser = serial.Serial(port=None)
-        ser.fd = fd
-        ser.baudrate = 115200 # Standard Arduino Nano v3 bootloader speed
-        ser.timeout = 1.0
-        ser.open()
+        # Wrap fd in raw serial class
+        ser = RawSerialFD(fd)
         
-        # Reset Arduino using DTR/RTS lines
+        # Reset Arduino
         print("  [RESET] Sending hardware reset...")
-        ser.dtr = False
-        ser.rts = False
+        ser.setDTR(False)
         time.sleep(0.1)
-        ser.dtr = True
-        ser.rts = True
-        time.sleep(0.4) # wait for bootloader to activate
-        ser.reset_input_buffer()
+        ser.setDTR(True)
+        time.sleep(0.4) # wait for bootloader
         
         # Start flash sequence
         success = flash_device(ser, program_bytes)
-        ser.close()
         
         if success:
             print("\n  🎯 Firmware updated successfully!")
