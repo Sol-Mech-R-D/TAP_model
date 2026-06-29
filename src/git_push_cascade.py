@@ -83,7 +83,24 @@ PUBLIC_FILES = [
     "assets/tap_octahedral_cabinet.scad",
     "docs/TAP_Theory_Paper.md",
     "docs/TAP_White_Paper.md",
-    "TERMUX_NOTE.md"
+    "docs/TAP_Hardware_Bill_of_Materials.md",
+    "TERMUX_NOTE.md",
+    "PXL_20260620_152100745.jpg",
+    "PXL_20260620_152104825.jpg",
+    "PXL_20260620_152109446.jpg",
+    "PXL_20260621_042227933.jpg",
+    "PXL_20260621_045224611.jpg",
+    "PXL_20260621_045228411.jpg",
+    "PXL_20260621_045237400.jpg",
+    "PXL_20260621_045250728.jpg",
+    "PXL_20260621_045256350.jpg",
+    "PXL_20260621_045329709.jpg",
+    "PXL_20260621_045410932.jpg",
+    "PXL_20260621_045419627.jpg",
+    "PXL_20260621_045421777.jpg",
+    "PXL_20260621_053056488.jpg",
+    "PXL_20260621_053059523.jpg",
+    "PXL_20260621_053111213.jpg"
 ]
 
 def run_git(args):
