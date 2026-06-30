@@ -103,7 +103,7 @@ void fire_phase_pulses(int phase_delay, int cycles) {
   }
 }
 
-// Tetrahedral Phase Sweep for the 6cap Tetrahedron
+// Tetrahedral Phase Sweep for the 6cap Tetrahedron (direct AC measurement)
 void run_tetrahedral_phase_sweep() {
   pinMode(RX_PIN, INPUT_PULLUP); // enable pull-up strictly for AC sweeps
   Serial.println("\n--- START TETRAHEDRAL PHASE SWEEP ---");
@@ -138,13 +138,43 @@ void run_tetrahedral_phase_sweep() {
   Serial.println("--- END TETRAHEDRAL PHASE SWEEP ---");
 }
 
-// Helper function to actively drain Node 2 (C2) to GND using Pin A1 in software
+// Helper function to actively drain Node 2 (C2) to GND using Pin A0 in software
 void active_software_discharge() {
   pinMode(RX_PIN, OUTPUT);
   digitalWrite(RX_PIN, LOW);
   delay(200); // wait for charge to flow to GND (extended to ensure 10uF is fully drained)
   pinMode(RX_PIN, INPUT); // return to high-impedance read state
   delay(20);
+}
+
+// Coupled Waveguide Phase Sweep ('c')
+// Measures accumulated DC voltage on C2 resulting from AC phase interference output from Tetrahedron Node C
+void run_coupled_phase_sweep() {
+  Serial.println("\n--- START COUPLED WAVEGUIDE PHASE SWEEP ---");
+  pinMode(RX_PIN, INPUT); // keep in high-impedance input mode for reading DC voltage
+  
+  for (int phase_delay = 0; phase_delay <= 115; phase_delay += 5) {
+    // 1. software discharge the C2 reservoir
+    active_software_discharge();
+    
+    // 2. Fire 2000 phase-delayed pulse cycles to pump the rectifier
+    fire_phase_pulses(phase_delay, 2000);
+    
+    // 3. Read the accumulated DC voltage on C2 (Pin A0)
+    int val = analogRead(RX_PIN);
+    float voltage = (val / 1023.0) * 5.0;
+    
+    Serial.print("PhaseDelay:");
+    Serial.print(phase_delay);
+    Serial.print("us | ADC:");
+    Serial.print(val);
+    Serial.print(" | Voltage:");
+    Serial.print(voltage);
+    Serial.println("V");
+    
+    delay(100); // short settle delay
+  }
+  Serial.println("--- END COUPLED WAVEGUIDE PHASE SWEEP ---");
 }
 
 // Ratchet Forward Sequence (pumps charge)
@@ -246,9 +276,10 @@ void setup() {
   digitalWrite(TX2_PIN, LOW);
   
   Serial.println("==================================================");
-  Serial.println("  TAP ACTIVE STABILIZATION CORE (D3 + D5 -> A1)   ");
+  Serial.println("  TAP ACTIVE STABILIZATION CORE (D3 + D5 -> A0)   ");
   Serial.println("  Commands: 't'->Tetrahedral Sweep, '5'->Decay Sweep");
   Serial.println("            'f'->Ratchet Forward,   'b'->Ratchet Reversed");
+  Serial.println("            'c'->Coupled Waveguide Phase Sweep");
   Serial.println("==================================================");
 }
 
@@ -263,6 +294,8 @@ void loop() {
       run_ratchet_forward();
     } else if (cmd == 'b') {
       run_ratchet_backward();
+    } else if (cmd == 'c') {
+      run_coupled_phase_sweep();
     } else if (cmd == '0') {
       continuous_print = !continuous_print;
       if (continuous_print) {
