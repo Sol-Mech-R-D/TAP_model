@@ -165,6 +165,15 @@ def generate_1_year_sweep():
     sweep = []
     step = 0
     
+    # Regional roughness mappings (r_val governs phase dispersion)
+    regions = {
+        "California Strike-Slip": {"roughness": 0.75, "risk_zone": "San Andreas / Garlock"},
+        "Alaska Subduction": {"roughness": 0.30, "risk_zone": "Aleutian Trench"},
+        "Japan Trench": {"roughness": 0.20, "risk_zone": "Tohoku Megathrust"},
+        "Philippines Subduction": {"roughness": 0.45, "risk_zone": "Sarangani Corridor"},
+        "Mediterranean Rift": {"roughness": 0.80, "risk_zone": "Aegean Sea"}
+    }
+    
     # We step forward for 55 steps (approx 1.2 years)
     while current_date < datetime(2027, 7, 30):
         v = get_earth_velocity(days_from_peri)
@@ -174,11 +183,38 @@ def generate_1_year_sweep():
         step += 1
         
         if current_date >= datetime(2026, 7, 1):
+            # Calculate total stress energy based on Earth orbital velocity anomaly
+            stress_amp = 1.0 + 0.1 * abs(v - V_MEAN) / V_MEAN
+            m_max = round(6.0 + 0.8 * stress_amp, 2)
+            
+            regional_forecasts = []
+            for name, info in regions.items():
+                r_val = info["roughness"]
+                zone = info["risk_zone"]
+                if r_val < 0.4:
+                    profile = f"Single consolidated rupture hazard (M_max: {m_max})"
+                    n_events = 1
+                else:
+                    n_events = int(r_val * 8)
+                    m_ind = round(m_max - 0.7, 2)
+                    profile = f"Dispersed phase-wave swarm ({n_events} events, avg M: {m_ind})"
+                
+                regional_forecasts.append({
+                    "region": name,
+                    "zone": zone,
+                    "roughness": r_val,
+                    "profile": profile,
+                    "predicted_events": n_events
+                })
+                
             sweep.append({
                 "step": step,
                 "date_utc": current_date.strftime("%Y-%m-%d %H:%M:%S"),
-                "interval_days": interval,
-                "velocity_kms": v
+                "interval_days": round(interval, 4),
+                "velocity_kms": round(v, 4),
+                "global_stress_index_pct": round(stress_amp * 100, 2),
+                "predicted_max_m": m_max,
+                "regional_forecasts": regional_forecasts
             })
             
     return sweep

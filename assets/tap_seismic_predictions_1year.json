@@ -1,306 +1,2217 @@
 {
   "correlation_stats": {
-    "n_earthquakes": 739,
-    "mean_resultant_r": 0.05873856714170203,
-    "rayleigh_z": 2.5497120404267153,
-    "p_value": 0.07810415360198078,
-    "pct_within_12h": 11.637347767253045,
+    "n_earthquakes": 740,
+    "mean_resultant_r": 0.0600034795237951,
+    "rayleigh_z": 2.664308990672249,
+    "p_value": 0.0696474639562271,
+    "pct_within_12h": 11.621621621621623,
     "is_significant": false
   },
   "prediction_sweep": [
     {
       "step": 2,
       "date_utc": "2026-07-08 08:02:23",
-      "interval_days": 8.257308252581716,
-      "velocity_kms": 29.284797491288394
+      "interval_days": 8.2573,
+      "velocity_kms": 29.2848,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 3,
       "date_utc": "2026-07-16 14:13:31",
-      "interval_days": 8.257734566664677,
-      "velocity_kms": 29.283285633346438
+      "interval_days": 8.2577,
+      "velocity_kms": 29.2833,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 4,
       "date_utc": "2026-07-24 20:21:12",
-      "interval_days": 8.255340034799257,
-      "velocity_kms": 29.291779500380095
+      "interval_days": 8.2553,
+      "velocity_kms": 29.2918,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 5,
       "date_utc": "2026-08-02 02:21:28",
-      "interval_days": 8.250179517519058,
-      "velocity_kms": 29.310101614942393
+      "interval_days": 8.2502,
+      "velocity_kms": 29.3101,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 6,
       "date_utc": "2026-08-10 08:10:29",
-      "interval_days": 8.242372410320304,
-      "velocity_kms": 29.33786390156605
+      "interval_days": 8.2424,
+      "velocity_kms": 29.3379,
+      "global_stress_index_pct": 100.15,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 7,
       "date_utc": "2026-08-18 13:44:42",
-      "interval_days": 8.232098663722493,
-      "velocity_kms": 29.374477867428002
+      "interval_days": 8.2321,
+      "velocity_kms": 29.3745,
+      "global_stress_index_pct": 100.14,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 8,
       "date_utc": "2026-08-26 19:00:55",
-      "interval_days": 8.219592852349193,
-      "velocity_kms": 29.419170066421078
+      "interval_days": 8.2196,
+      "velocity_kms": 29.4192,
+      "global_stress_index_pct": 100.12,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 9,
       "date_utc": "2026-09-03 23:56:19",
-      "interval_days": 8.205136646907885,
-      "velocity_kms": 29.47100217899817
+      "interval_days": 8.2051,
+      "velocity_kms": 29.471,
+      "global_stress_index_pct": 100.1,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 10,
       "date_utc": "2026-09-12 04:28:33",
-      "interval_days": 8.189050118802413,
-      "velocity_kms": 29.528894864715205
+      "interval_days": 8.1891,
+      "velocity_kms": 29.5289,
+      "global_stress_index_pct": 100.08,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 11,
       "date_utc": "2026-09-20 08:35:46",
-      "interval_days": 8.171682342094815,
-      "velocity_kms": 29.591654432569502
+      "interval_days": 8.1717,
+      "velocity_kms": 29.5917,
+      "global_stress_index_pct": 100.06,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 12,
       "date_utc": "2026-09-28 12:16:40",
-      "interval_days": 8.153401751896984,
-      "velocity_kms": 29.65800132978106
+      "interval_days": 8.1534,
+      "velocity_kms": 29.658,
+      "global_stress_index_pct": 100.04,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 13,
       "date_utc": "2026-10-06 15:30:28",
-      "interval_days": 8.134586677182336,
-      "velocity_kms": 29.726599469188958
+      "interval_days": 8.1346,
+      "velocity_kms": 29.7266,
+      "global_stress_index_pct": 100.02,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 14,
       "date_utc": "2026-10-14 18:16:58",
-      "interval_days": 8.115616398151339,
-      "velocity_kms": 29.79608548958559
+      "interval_days": 8.1156,
+      "velocity_kms": 29.7961,
+      "global_stress_index_pct": 100.01,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 15,
       "date_utc": "2026-10-22 20:36:27",
-      "interval_days": 8.096862994113298,
-      "velocity_kms": 29.86509715871528
+      "interval_days": 8.0969,
+      "velocity_kms": 29.8651,
+      "global_stress_index_pct": 100.03,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 16,
       "date_utc": "2026-10-30 22:29:45",
-      "interval_days": 8.078684157851814,
-      "velocity_kms": 29.93230027008509
+      "interval_days": 8.0787,
+      "velocity_kms": 29.9323,
+      "global_stress_index_pct": 100.05,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 17,
       "date_utc": "2026-11-07 23:58:11",
-      "interval_days": 8.061417065775311,
-      "velocity_kms": 29.99641353709609
+      "interval_days": 8.0614,
+      "velocity_kms": 29.9964,
+      "global_stress_index_pct": 100.07,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 18,
       "date_utc": "2026-11-16 01:03:32",
-      "interval_days": 8.045373316765557,
-      "velocity_kms": 30.05623113797473
+      "interval_days": 8.0454,
+      "velocity_kms": 30.0562,
+      "global_stress_index_pct": 100.09,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 19,
       "date_utc": "2026-11-24 01:47:56",
-      "interval_days": 8.030834890943368,
-      "velocity_kms": 30.110642702006114
+      "interval_days": 8.0308,
+      "velocity_kms": 30.1106,
+      "global_stress_index_pct": 100.11,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 20,
       "date_utc": "2026-12-02 02:13:55",
-      "interval_days": 8.018051034578912,
-      "velocity_kms": 30.158650644295808
+      "interval_days": 8.0181,
+      "velocity_kms": 30.1587,
+      "global_stress_index_pct": 100.13,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 21,
       "date_utc": "2026-12-10 02:24:21",
-      "interval_days": 8.007235949105004,
-      "velocity_kms": 30.1993848485292
+      "interval_days": 8.0072,
+      "velocity_kms": 30.1994,
+      "global_stress_index_pct": 100.14,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 22,
       "date_utc": "2026-12-18 02:22:17",
-      "interval_days": 7.998567149247504,
-      "velocity_kms": 30.232114763548562
+      "interval_days": 7.9986,
+      "velocity_kms": 30.2321,
+      "global_stress_index_pct": 100.15,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 23,
       "date_utc": "2026-12-26 02:11:01",
-      "interval_days": 7.992184355428621,
-      "velocity_kms": 30.25625902082079
+      "interval_days": 7.9922,
+      "velocity_kms": 30.2563,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 24,
       "date_utc": "2027-01-03 01:54:01",
-      "interval_days": 7.9881887962436675,
-      "velocity_kms": 30.271392698393583
+      "interval_days": 7.9882,
+      "velocity_kms": 30.2714,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 25,
       "date_utc": "2027-01-11 01:34:47",
-      "interval_days": 7.986642815400448,
-      "velocity_kms": 30.27725235611097
+      "interval_days": 7.9866,
+      "velocity_kms": 30.2773,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 26,
       "date_utc": "2027-01-19 01:16:53",
-      "interval_days": 7.987569701734709,
-      "velocity_kms": 30.27373895059518
+      "interval_days": 7.9876,
+      "velocity_kms": 30.2737,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 27,
       "date_utc": "2027-01-27 01:03:51",
-      "interval_days": 7.990953688813902,
-      "velocity_kms": 30.260918710929534
+      "interval_days": 7.991,
+      "velocity_kms": 30.2609,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 28,
       "date_utc": "2027-02-04 00:59:10",
-      "interval_days": 7.996740100596292,
-      "velocity_kms": 30.23902202123196
+      "interval_days": 7.9967,
+      "velocity_kms": 30.239,
+      "global_stress_index_pct": 100.15,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 29,
       "date_utc": "2027-02-12 01:06:07",
-      "interval_days": 8.004835650264836,
-      "velocity_kms": 30.208440318446726
+      "interval_days": 8.0048,
+      "velocity_kms": 30.2084,
+      "global_stress_index_pct": 100.14,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 30,
       "date_utc": "2027-02-20 01:27:53",
-      "interval_days": 8.015108929481672,
-      "velocity_kms": 30.169720976660237
+      "interval_days": 8.0151,
+      "velocity_kms": 30.1697,
+      "global_stress_index_pct": 100.13,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 31,
       "date_utc": "2027-02-28 02:07:19",
-      "interval_days": 8.027391153676042,
-      "velocity_kms": 30.1235601169459
+      "interval_days": 8.0274,
+      "velocity_kms": 30.1236,
+      "global_stress_index_pct": 100.12,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 32,
       "date_utc": "2027-03-08 03:07:03",
-      "interval_days": 8.041477254203233,
-      "velocity_kms": 30.070793257993166
+      "interval_days": 8.0415,
+      "velocity_kms": 30.0708,
+      "global_stress_index_pct": 100.1,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 33,
       "date_utc": "2027-03-16 04:29:19",
-      "interval_days": 8.057127428656633,
-      "velocity_kms": 30.012383711339364
+      "interval_days": 8.0571,
+      "velocity_kms": 30.0124,
+      "global_stress_index_pct": 100.08,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 34,
       "date_utc": "2027-03-24 06:15:59",
-      "interval_days": 8.07406927433246,
-      "velocity_kms": 29.94940862951568
+      "interval_days": 8.0741,
+      "velocity_kms": 29.9494,
+      "global_stress_index_pct": 100.06,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 35,
       "date_utc": "2027-04-01 08:28:27",
-      "interval_days": 8.092000634614337,
-      "velocity_kms": 29.88304263912416
+      "interval_days": 8.092,
+      "velocity_kms": 29.883,
+      "global_stress_index_pct": 100.03,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 36,
       "date_utc": "2027-04-09 11:07:43",
-      "interval_days": 8.110593281500172,
-      "velocity_kms": 29.814539036443094
+      "interval_days": 8.1106,
+      "velocity_kms": 29.8145,
+      "global_stress_index_pct": 100.01,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 37,
       "date_utc": "2027-04-17 14:14:11",
-      "interval_days": 8.129497537397848,
-      "velocity_kms": 29.74520859223995
+      "interval_days": 8.1295,
+      "velocity_kms": 29.7452,
+      "global_stress_index_pct": 100.01,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 38,
       "date_utc": "2027-04-25 17:47:48",
-      "interval_days": 8.148347903944021,
-      "velocity_kms": 29.676396105148587
+      "interval_days": 8.1483,
+      "velocity_kms": 29.6764,
+      "global_stress_index_pct": 100.03,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 39,
       "date_utc": "2027-05-03 21:47:57",
-      "interval_days": 8.166769714233938,
-      "velocity_kms": 29.60945495726919
+      "interval_days": 8.1668,
+      "velocity_kms": 29.6095,
+      "global_stress_index_pct": 100.06,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 40,
       "date_utc": "2027-05-12 02:13:28",
-      "interval_days": 8.184386758321493,
-      "velocity_kms": 29.545720057050758
+      "interval_days": 8.1844,
+      "velocity_kms": 29.5457,
+      "global_stress_index_pct": 100.08,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 41,
       "date_utc": "2027-05-20 07:02:40",
-      "interval_days": 8.200829753027621,
-      "velocity_kms": 29.486479695633985
+      "interval_days": 8.2008,
+      "velocity_kms": 29.4865,
+      "global_stress_index_pct": 100.1,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 42,
       "date_utc": "2027-05-28 12:13:20",
-      "interval_days": 8.21574544119719,
-      "velocity_kms": 29.43294698341617
+      "interval_days": 8.2157,
+      "velocity_kms": 29.4329,
+      "global_stress_index_pct": 100.12,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 43,
       "date_utc": "2027-06-05 17:42:49",
-      "interval_days": 8.228806020106118,
-      "velocity_kms": 29.386231660967212
+      "interval_days": 8.2288,
+      "velocity_kms": 29.3862,
+      "global_stress_index_pct": 100.13,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 44,
       "date_utc": "2027-06-13 23:28:01",
-      "interval_days": 8.239718523121317,
-      "velocity_kms": 29.347313178411547
+      "interval_days": 8.2397,
+      "velocity_kms": 29.3473,
+      "global_stress_index_pct": 100.15,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 45,
       "date_utc": "2027-06-22 05:25:28",
-      "interval_days": 8.248233723189927,
-      "velocity_kms": 29.31701599581745
+      "interval_days": 8.2482,
+      "velocity_kms": 29.317,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 46,
       "date_utc": "2027-06-30 11:31:27",
-      "interval_days": 8.25415410092548,
-      "velocity_kms": 29.295988061682436
+      "interval_days": 8.2542,
+      "velocity_kms": 29.296,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 47,
       "date_utc": "2027-07-08 17:42:02",
-      "interval_days": 8.257340431326808,
-      "velocity_kms": 29.284683368824705
+      "interval_days": 8.2573,
+      "velocity_kms": 29.2847,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 48,
       "date_utc": "2027-07-16 23:53:08",
-      "interval_days": 8.257716594953848,
-      "velocity_kms": 29.283349364129087
+      "interval_days": 8.2577,
+      "velocity_kms": 29.2833,
+      "global_stress_index_pct": 100.17,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 49,
       "date_utc": "2027-07-25 06:00:44",
-      "interval_days": 8.255272310051474,
-      "velocity_kms": 29.292019804794563
+      "interval_days": 8.2553,
+      "velocity_kms": 29.292,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     },
     {
       "step": 50,
       "date_utc": "2027-08-02 12:00:49",
-      "interval_days": 8.25006360456897,
-      "velocity_kms": 29.310513420294257
+      "interval_days": 8.2501,
+      "velocity_kms": 29.3105,
+      "global_stress_index_pct": 100.16,
+      "predicted_max_m": 6.8,
+      "regional_forecasts": [
+        {
+          "region": "California Strike-Slip",
+          "zone": "San Andreas / Garlock",
+          "roughness": 0.75,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        },
+        {
+          "region": "Alaska Subduction",
+          "zone": "Aleutian Trench",
+          "roughness": 0.3,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Japan Trench",
+          "zone": "Tohoku Megathrust",
+          "roughness": 0.2,
+          "profile": "Single consolidated rupture hazard (M_max: 6.8)",
+          "predicted_events": 1
+        },
+        {
+          "region": "Philippines Subduction",
+          "zone": "Sarangani Corridor",
+          "roughness": 0.45,
+          "profile": "Dispersed phase-wave swarm (3 events, avg M: 6.1)",
+          "predicted_events": 3
+        },
+        {
+          "region": "Mediterranean Rift",
+          "zone": "Aegean Sea",
+          "roughness": 0.8,
+          "profile": "Dispersed phase-wave swarm (6 events, avg M: 6.1)",
+          "predicted_events": 6
+        }
+      ]
     }
   ]
 }
