@@ -27,12 +27,16 @@ def calculate_grid_and_supply_coupling():
     """
     # ── 1. Power Grid Sag & Resistivity Stress (e.g. Texas ERCOT) ───────────
     # Isolated grids with high thermal load have maximum vulnerability:
-    #   Grid_Sag ∝ φ⁻⁴ * ΔB * (1 + ψ) * grid_isolation_factor
-    #   Texas ERCOT isolation factor ≈ 1.2 (due to lack of interstate ties)
+    #   Grid_Sag ∝ φ⁻⁴ * ΔB * (1 + ψ) * (grid_isolation_factor - battery_buffer)
+    #   Texas ERCOT base isolation factor ≈ 1.2 (due to lack of interstate ties)
+    #   ERCOT active battery buffer + low-sag wire mitigation ≈ 0.35
     #   Europe ENTSO-E isolation factor ≈ 0.4 (highly interconnected)
     base_thermal_stress = (PHI ** -4) * DELTA_B * (1.0 + PSI)
     
-    ercot_stress = base_thermal_stress * 1.2
+    ercot_battery_buffer = 0.35
+    ercot_isolation_factor = 1.2 - ercot_battery_buffer
+    
+    ercot_stress = base_thermal_stress * ercot_isolation_factor
     entsoe_stress = base_thermal_stress * 0.4
     
     # ── 2. Rail Line Buckling Risk (Sun Kinks) ───────────────────────────────

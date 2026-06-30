@@ -1,6 +1,6 @@
 {
   "power_grids": {
-    "texas_ercot_sag_stress": 1.4377375837891084,
+    "texas_ercot_sag_stress": 1.0183974551839519,
     "europe_entsoe_sag_stress": 0.47924586126303614
   },
   "supply_lines": {
