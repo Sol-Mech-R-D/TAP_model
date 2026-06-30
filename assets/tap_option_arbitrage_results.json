@@ -8,6 +8,9 @@
     "tap_price": 7.867,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -19,6 +22,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -30,6 +36,9 @@
     "tap_price": 3.946,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.1,
+    "delta": 0.988,
+    "phi_sensitivity": -0.0033,
+    "hedge_ratio_shares": -98.8,
     "recommendation": "HOLD"
   },
   {
@@ -41,6 +50,9 @@
     "tap_price": 0.007,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.012,
+    "phi_sensitivity": -0.0033,
+    "hedge_ratio_shares": 1.2,
     "recommendation": "HOLD"
   },
   {
@@ -52,6 +64,9 @@
     "tap_price": 0.724,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 9.88,
+    "delta": 0.509,
+    "phi_sensitivity": -0.0439,
+    "hedge_ratio_shares": -50.9,
     "recommendation": "HOLD"
   },
   {
@@ -63,6 +78,9 @@
     "tap_price": 0.704,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 10.18,
+    "delta": -0.491,
+    "phi_sensitivity": -0.0439,
+    "hedge_ratio_shares": 49.1,
     "recommendation": "HOLD"
   },
   {
@@ -74,6 +92,9 @@
     "tap_price": 0.011,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.017,
+    "phi_sensitivity": -0.0047,
+    "hedge_ratio_shares": -1.7,
     "recommendation": "HOLD"
   },
   {
@@ -85,6 +106,9 @@
     "tap_price": 3.911,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.14,
+    "delta": -0.983,
+    "phi_sensitivity": -0.0047,
+    "hedge_ratio_shares": 98.3,
     "recommendation": "HOLD"
   },
   {
@@ -96,6 +120,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -0.0,
     "recommendation": "HOLD"
   },
   {
@@ -107,6 +134,9 @@
     "tap_price": 7.829,
     "integrated_vol_pct": 30.81,
     "arbitrage_yield_pct": 0.0,
+    "delta": -1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 100.0,
     "recommendation": "HOLD"
   },
   {
@@ -118,6 +148,9 @@
     "tap_price": 7.876,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -129,6 +162,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -140,6 +176,9 @@
     "tap_price": 3.968,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 0.15,
+    "delta": 0.974,
+    "phi_sensitivity": -0.0095,
+    "hedge_ratio_shares": -97.4,
     "recommendation": "HOLD"
   },
   {
@@ -151,6 +190,9 @@
     "tap_price": 0.021,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 38.65,
+    "delta": -0.026,
+    "phi_sensitivity": -0.0095,
+    "hedge_ratio_shares": 2.6,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -162,6 +204,9 @@
     "tap_price": 0.852,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 5.24,
+    "delta": 0.511,
+    "phi_sensitivity": -0.0634,
+    "hedge_ratio_shares": -51.1,
     "recommendation": "HOLD"
   },
   {
@@ -173,6 +218,9 @@
     "tap_price": 0.823,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 5.44,
+    "delta": -0.489,
+    "phi_sensitivity": -0.0634,
+    "hedge_ratio_shares": 48.9,
     "recommendation": "HOLD"
   },
   {
@@ -184,6 +232,9 @@
     "tap_price": 0.03,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 34.95,
+    "delta": 0.036,
+    "phi_sensitivity": -0.0126,
+    "hedge_ratio_shares": -3.6,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -195,6 +246,9 @@
     "tap_price": 3.92,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 0.2,
+    "delta": -0.964,
+    "phi_sensitivity": -0.0126,
+    "hedge_ratio_shares": 96.4,
     "recommendation": "HOLD"
   },
   {
@@ -206,6 +260,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.0,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": -0.0,
     "recommendation": "HOLD"
   },
   {
@@ -217,6 +274,9 @@
     "tap_price": 7.818,
     "integrated_vol_pct": 29.5,
     "arbitrage_yield_pct": 0.0,
+    "delta": -1.0,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": 100.0,
     "recommendation": "HOLD"
   },
   {
@@ -228,6 +288,9 @@
     "tap_price": 7.894,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -239,6 +302,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -250,6 +316,9 @@
     "tap_price": 4.021,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -0.14,
+    "delta": 0.949,
+    "phi_sensitivity": -0.0145,
+    "hedge_ratio_shares": -94.9,
     "recommendation": "HOLD"
   },
   {
@@ -261,6 +330,9 @@
     "tap_price": 0.055,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -9.38,
+    "delta": -0.051,
+    "phi_sensitivity": -0.0145,
+    "hedge_ratio_shares": 5.1,
     "recommendation": "HOLD"
   },
   {
@@ -272,6 +344,9 @@
     "tap_price": 1.029,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -2.0,
+    "delta": 0.514,
+    "phi_sensitivity": -0.0552,
+    "hedge_ratio_shares": -51.4,
     "recommendation": "HOLD"
   },
   {
@@ -283,6 +358,9 @@
     "tap_price": 0.981,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -2.09,
+    "delta": -0.486,
+    "phi_sensitivity": -0.0552,
+    "hedge_ratio_shares": 48.6,
     "recommendation": "HOLD"
   },
   {
@@ -294,6 +372,9 @@
     "tap_price": 0.076,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -8.62,
+    "delta": 0.069,
+    "phi_sensitivity": -0.0183,
+    "hedge_ratio_shares": -6.9,
     "recommendation": "HOLD"
   },
   {
@@ -305,6 +386,9 @@
     "tap_price": 3.945,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -0.18,
+    "delta": -0.931,
+    "phi_sensitivity": -0.0183,
+    "hedge_ratio_shares": 93.1,
     "recommendation": "HOLD"
   },
   {
@@ -316,6 +400,9 @@
     "tap_price": 0.001,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.002,
+    "phi_sensitivity": -0.0007,
+    "hedge_ratio_shares": -0.2,
     "recommendation": "HOLD"
   },
   {
@@ -327,6 +414,9 @@
     "tap_price": 7.798,
     "integrated_vol_pct": 27.43,
     "arbitrage_yield_pct": -0.0,
+    "delta": -0.998,
+    "phi_sensitivity": -0.0007,
+    "hedge_ratio_shares": 99.8,
     "recommendation": "HOLD"
   },
   {
@@ -338,6 +428,9 @@
     "tap_price": 7.913,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -0.01,
+    "delta": 0.998,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": -99.8,
     "recommendation": "HOLD"
   },
   {
@@ -349,6 +442,9 @@
     "tap_price": 0.002,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.002,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": 0.2,
     "recommendation": "HOLD"
   },
   {
@@ -360,6 +456,9 @@
     "tap_price": 4.096,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -0.27,
+    "delta": 0.919,
+    "phi_sensitivity": -0.0047,
+    "hedge_ratio_shares": -91.9,
     "recommendation": "HOLD"
   },
   {
@@ -371,6 +470,9 @@
     "tap_price": 0.112,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -9.16,
+    "delta": -0.081,
+    "phi_sensitivity": -0.0047,
+    "hedge_ratio_shares": 8.1,
     "recommendation": "HOLD"
   },
   {
@@ -382,6 +484,9 @@
     "tap_price": 1.218,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -2.33,
+    "delta": 0.517,
+    "phi_sensitivity": -0.0125,
+    "hedge_ratio_shares": -51.7,
     "recommendation": "HOLD"
   },
   {
@@ -393,6 +498,9 @@
     "tap_price": 1.151,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -2.47,
+    "delta": -0.483,
+    "phi_sensitivity": -0.0125,
+    "hedge_ratio_shares": 48.3,
     "recommendation": "HOLD"
   },
   {
@@ -404,6 +512,9 @@
     "tap_price": 0.149,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -8.4,
+    "delta": 0.106,
+    "phi_sensitivity": -0.0057,
+    "hedge_ratio_shares": -10.6,
     "recommendation": "HOLD"
   },
   {
@@ -415,6 +526,9 @@
     "tap_price": 3.998,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -0.34,
+    "delta": -0.894,
+    "phi_sensitivity": -0.0057,
+    "hedge_ratio_shares": 89.4,
     "recommendation": "HOLD"
   },
   {
@@ -426,6 +540,9 @@
     "tap_price": 0.006,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.007,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": -0.7,
     "recommendation": "HOLD"
   },
   {
@@ -437,6 +554,9 @@
     "tap_price": 7.782,
     "integrated_vol_pct": 27.33,
     "arbitrage_yield_pct": -0.02,
+    "delta": -0.993,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": 99.3,
     "recommendation": "HOLD"
   },
   {
@@ -448,6 +568,9 @@
     "tap_price": 8.008,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -0.04,
+    "delta": 0.978,
+    "phi_sensitivity": -0.0035,
+    "hedge_ratio_shares": -97.8,
     "recommendation": "HOLD"
   },
   {
@@ -459,6 +582,9 @@
     "tap_price": 0.036,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -7.94,
+    "delta": -0.022,
+    "phi_sensitivity": -0.0035,
+    "hedge_ratio_shares": 2.2,
     "recommendation": "HOLD"
   },
   {
@@ -470,6 +596,9 @@
     "tap_price": 4.407,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -0.31,
+    "delta": 0.843,
+    "phi_sensitivity": -0.0157,
+    "hedge_ratio_shares": -84.3,
     "recommendation": "HOLD"
   },
   {
@@ -481,6 +610,9 @@
     "tap_price": 0.359,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -3.7,
+    "delta": -0.157,
+    "phi_sensitivity": -0.0157,
+    "hedge_ratio_shares": 15.7,
     "recommendation": "HOLD"
   },
   {
@@ -492,6 +624,9 @@
     "tap_price": 1.761,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -1.27,
+    "delta": 0.523,
+    "phi_sensitivity": -0.026,
+    "hedge_ratio_shares": -52.3,
     "recommendation": "HOLD"
   },
   {
@@ -503,6 +638,9 @@
     "tap_price": 1.626,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -1.37,
+    "delta": -0.477,
+    "phi_sensitivity": -0.026,
+    "hedge_ratio_shares": 47.7,
     "recommendation": "HOLD"
   },
   {
@@ -514,6 +652,9 @@
     "tap_price": 0.462,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -3.35,
+    "delta": 0.2,
+    "phi_sensitivity": -0.0183,
+    "hedge_ratio_shares": -20.0,
     "recommendation": "HOLD"
   },
   {
@@ -525,6 +666,9 @@
     "tap_price": 4.24,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -0.38,
+    "delta": -0.8,
+    "phi_sensitivity": -0.0183,
+    "hedge_ratio_shares": 80.0,
     "recommendation": "HOLD"
   },
   {
@@ -536,6 +680,9 @@
     "tap_price": 0.076,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -6.7,
+    "delta": 0.044,
+    "phi_sensitivity": -0.0061,
+    "hedge_ratio_shares": -4.4,
     "recommendation": "HOLD"
   },
   {
@@ -547,6 +694,9 @@
     "tap_price": 7.777,
     "integrated_vol_pct": 27.63,
     "arbitrage_yield_pct": -0.07,
+    "delta": -0.956,
+    "phi_sensitivity": -0.0061,
+    "hedge_ratio_shares": 95.6,
     "recommendation": "HOLD"
   },
   {
@@ -558,6 +708,9 @@
     "tap_price": 8.345,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.06,
+    "delta": 0.92,
+    "phi_sensitivity": -0.0082,
+    "hedge_ratio_shares": -92.0,
     "recommendation": "HOLD"
   },
   {
@@ -569,6 +722,9 @@
     "tap_price": 0.234,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -2.05,
+    "delta": -0.08,
+    "phi_sensitivity": -0.0082,
+    "hedge_ratio_shares": 8.0,
     "recommendation": "HOLD"
   },
   {
@@ -580,6 +736,9 @@
     "tap_price": 5.084,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.2,
+    "delta": 0.767,
+    "phi_sensitivity": -0.0169,
+    "hedge_ratio_shares": -76.7,
     "recommendation": "HOLD"
   },
   {
@@ -591,6 +750,9 @@
     "tap_price": 0.889,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -1.12,
+    "delta": -0.233,
+    "phi_sensitivity": -0.0169,
+    "hedge_ratio_shares": 23.3,
     "recommendation": "HOLD"
   },
   {
@@ -602,6 +764,9 @@
     "tap_price": 2.642,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.49,
+    "delta": 0.534,
+    "phi_sensitivity": -0.0219,
+    "hedge_ratio_shares": -53.4,
     "recommendation": "HOLD"
   },
   {
@@ -613,6 +778,9 @@
     "tap_price": 2.353,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.55,
+    "delta": -0.466,
+    "phi_sensitivity": -0.0219,
+    "hedge_ratio_shares": 46.6,
     "recommendation": "HOLD"
   },
   {
@@ -624,6 +792,9 @@
     "tap_price": 1.145,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.99,
+    "delta": 0.3,
+    "phi_sensitivity": -0.0191,
+    "hedge_ratio_shares": -30.0,
     "recommendation": "HOLD"
   },
   {
@@ -635,6 +806,9 @@
     "tap_price": 4.761,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.24,
+    "delta": -0.7,
+    "phi_sensitivity": -0.0191,
+    "hedge_ratio_shares": 70.0,
     "recommendation": "HOLD"
   },
   {
@@ -646,6 +820,9 @@
     "tap_price": 0.409,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -1.71,
+    "delta": 0.134,
+    "phi_sensitivity": -0.0119,
+    "hedge_ratio_shares": -13.4,
     "recommendation": "HOLD"
   },
   {
@@ -657,6 +834,9 @@
     "tap_price": 7.941,
     "integrated_vol_pct": 27.85,
     "arbitrage_yield_pct": -0.09,
+    "delta": -0.866,
+    "phi_sensitivity": -0.0119,
+    "hedge_ratio_shares": 86.6,
     "recommendation": "HOLD"
   },
   {
@@ -668,6 +848,9 @@
     "tap_price": 0.241,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.02,
+    "delta": 0.998,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -99.8,
     "recommendation": "HOLD"
   },
   {
@@ -679,6 +862,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.002,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.2,
     "recommendation": "HOLD"
   },
   {
@@ -690,6 +876,9 @@
     "tap_price": 0.124,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.91,
+    "delta": 0.919,
+    "phi_sensitivity": -0.0008,
+    "hedge_ratio_shares": -91.9,
     "recommendation": "HOLD"
   },
   {
@@ -701,6 +890,9 @@
     "tap_price": 0.003,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.081,
+    "phi_sensitivity": -0.0008,
+    "hedge_ratio_shares": 8.1,
     "recommendation": "HOLD"
   },
   {
@@ -712,6 +904,9 @@
     "tap_price": 0.036,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 9.93,
+    "delta": 0.51,
+    "phi_sensitivity": -0.0022,
+    "hedge_ratio_shares": -51.0,
     "recommendation": "HOLD"
   },
   {
@@ -723,6 +918,9 @@
     "tap_price": 0.036,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 10.12,
+    "delta": -0.49,
+    "phi_sensitivity": -0.0022,
+    "hedge_ratio_shares": 49.0,
     "recommendation": "HOLD"
   },
   {
@@ -734,6 +932,9 @@
     "tap_price": 0.004,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.1,
+    "phi_sensitivity": -0.001,
+    "hedge_ratio_shares": -10.0,
     "recommendation": "HOLD"
   },
   {
@@ -745,6 +946,9 @@
     "tap_price": 0.124,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 1.08,
+    "delta": -0.9,
+    "phi_sensitivity": -0.001,
+    "hedge_ratio_shares": 90.0,
     "recommendation": "HOLD"
   },
   {
@@ -756,6 +960,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.004,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": -0.4,
     "recommendation": "HOLD"
   },
   {
@@ -767,6 +974,9 @@
     "tap_price": 0.249,
     "integrated_vol_pct": 49.51,
     "arbitrage_yield_pct": 0.03,
+    "delta": -0.996,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": 99.6,
     "recommendation": "HOLD"
   },
   {
@@ -778,6 +988,9 @@
     "tap_price": 0.241,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.04,
+    "delta": 0.992,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": -99.2,
     "recommendation": "HOLD"
   },
   {
@@ -789,6 +1002,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.008,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": 0.8,
     "recommendation": "HOLD"
   },
   {
@@ -800,6 +1016,9 @@
     "tap_price": 0.127,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.79,
+    "delta": 0.885,
+    "phi_sensitivity": -0.0015,
+    "hedge_ratio_shares": -88.5,
     "recommendation": "HOLD"
   },
   {
@@ -811,6 +1030,9 @@
     "tap_price": 0.006,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.115,
+    "phi_sensitivity": -0.0015,
+    "hedge_ratio_shares": 11.5,
     "recommendation": "HOLD"
   },
   {
@@ -822,6 +1044,9 @@
     "tap_price": 0.042,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 5.28,
+    "delta": 0.512,
+    "phi_sensitivity": -0.0032,
+    "hedge_ratio_shares": -51.2,
     "recommendation": "HOLD"
   },
   {
@@ -833,6 +1058,9 @@
     "tap_price": 0.042,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 5.4,
+    "delta": -0.488,
+    "phi_sensitivity": -0.0032,
+    "hedge_ratio_shares": 48.8,
     "recommendation": "HOLD"
   },
   {
@@ -844,6 +1072,9 @@
     "tap_price": 0.007,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.139,
+    "phi_sensitivity": -0.0018,
+    "hedge_ratio_shares": -13.9,
     "recommendation": "HOLD"
   },
   {
@@ -855,6 +1086,9 @@
     "tap_price": 0.126,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.92,
+    "delta": -0.861,
+    "phi_sensitivity": -0.0018,
+    "hedge_ratio_shares": 86.1,
     "recommendation": "HOLD"
   },
   {
@@ -866,6 +1100,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.013,
+    "phi_sensitivity": -0.0003,
+    "hedge_ratio_shares": -1.3,
     "recommendation": "HOLD"
   },
   {
@@ -877,6 +1114,9 @@
     "tap_price": 0.249,
     "integrated_vol_pct": 47.4,
     "arbitrage_yield_pct": 0.06,
+    "delta": -0.987,
+    "phi_sensitivity": -0.0003,
+    "hedge_ratio_shares": 98.7,
     "recommendation": "HOLD"
   },
   {
@@ -888,6 +1128,9 @@
     "tap_price": 0.242,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -0.06,
+    "delta": 0.979,
+    "phi_sensitivity": -0.0003,
+    "hedge_ratio_shares": -97.9,
     "recommendation": "HOLD"
   },
   {
@@ -899,6 +1142,9 @@
     "tap_price": 0.001,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.021,
+    "phi_sensitivity": -0.0003,
+    "hedge_ratio_shares": 2.1,
     "recommendation": "HOLD"
   },
   {
@@ -910,6 +1156,9 @@
     "tap_price": 0.132,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -0.48,
+    "delta": 0.844,
+    "phi_sensitivity": -0.0017,
+    "hedge_ratio_shares": -84.4,
     "recommendation": "HOLD"
   },
   {
@@ -921,6 +1170,9 @@
     "tap_price": 0.011,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -5.7,
+    "delta": -0.156,
+    "phi_sensitivity": -0.0017,
+    "hedge_ratio_shares": 15.6,
     "recommendation": "HOLD"
   },
   {
@@ -932,6 +1184,9 @@
     "tap_price": 0.051,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -2.02,
+    "delta": 0.515,
+    "phi_sensitivity": -0.0028,
+    "hedge_ratio_shares": -51.5,
     "recommendation": "HOLD"
   },
   {
@@ -943,6 +1198,9 @@
     "tap_price": 0.05,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -2.08,
+    "delta": -0.485,
+    "phi_sensitivity": -0.0028,
+    "hedge_ratio_shares": 48.5,
     "recommendation": "HOLD"
   },
   {
@@ -954,6 +1212,9 @@
     "tap_price": 0.013,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -5.36,
+    "delta": 0.187,
+    "phi_sensitivity": -0.0019,
+    "hedge_ratio_shares": -18.7,
     "recommendation": "HOLD"
   },
   {
@@ -965,6 +1226,9 @@
     "tap_price": 0.131,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -0.54,
+    "delta": -0.813,
+    "phi_sensitivity": -0.0019,
+    "hedge_ratio_shares": 81.3,
     "recommendation": "HOLD"
   },
   {
@@ -976,6 +1240,9 @@
     "tap_price": 0.002,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.032,
+    "phi_sensitivity": -0.0005,
+    "hedge_ratio_shares": -3.2,
     "recommendation": "HOLD"
   },
   {
@@ -987,6 +1254,9 @@
     "tap_price": 0.25,
     "integrated_vol_pct": 44.08,
     "arbitrage_yield_pct": -0.08,
+    "delta": -0.968,
+    "phi_sensitivity": -0.0005,
+    "hedge_ratio_shares": 96.8,
     "recommendation": "HOLD"
   },
   {
@@ -998,6 +1268,9 @@
     "tap_price": 0.244,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -0.14,
+    "delta": 0.959,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": -95.9,
     "recommendation": "HOLD"
   },
   {
@@ -1009,6 +1282,9 @@
     "tap_price": 0.003,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.041,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": 4.1,
     "recommendation": "HOLD"
   },
   {
@@ -1020,6 +1296,9 @@
     "tap_price": 0.138,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -0.72,
+    "delta": 0.808,
+    "phi_sensitivity": -0.0004,
+    "hedge_ratio_shares": -80.8,
     "recommendation": "HOLD"
   },
   {
@@ -1031,6 +1310,9 @@
     "tap_price": 0.016,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -5.85,
+    "delta": -0.192,
+    "phi_sensitivity": -0.0004,
+    "hedge_ratio_shares": 19.2,
     "recommendation": "HOLD"
   },
   {
@@ -1042,6 +1324,9 @@
     "tap_price": 0.06,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -2.36,
+    "delta": 0.518,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": -51.8,
     "recommendation": "HOLD"
   },
   {
@@ -1053,6 +1338,9 @@
     "tap_price": 0.058,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -2.44,
+    "delta": -0.482,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": 48.2,
     "recommendation": "HOLD"
   },
   {
@@ -1064,6 +1352,9 @@
     "tap_price": 0.019,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -5.49,
+    "delta": 0.229,
+    "phi_sensitivity": -0.0005,
+    "hedge_ratio_shares": -22.9,
     "recommendation": "HOLD"
   },
   {
@@ -1075,6 +1366,9 @@
     "tap_price": 0.137,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -0.81,
+    "delta": -0.771,
+    "phi_sensitivity": -0.0005,
+    "hedge_ratio_shares": 77.1,
     "recommendation": "HOLD"
   },
   {
@@ -1086,6 +1380,9 @@
     "tap_price": 0.004,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.06,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": -6.0,
     "recommendation": "HOLD"
   },
   {
@@ -1097,6 +1394,9 @@
     "tap_price": 0.251,
     "integrated_vol_pct": 43.92,
     "arbitrage_yield_pct": -0.18,
+    "delta": -0.94,
+    "phi_sensitivity": -0.0002,
+    "hedge_ratio_shares": 94.0,
     "recommendation": "HOLD"
   },
   {
@@ -1108,6 +1408,9 @@
     "tap_price": 0.255,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -0.21,
+    "delta": 0.894,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": -89.4,
     "recommendation": "HOLD"
   },
   {
@@ -1119,6 +1422,9 @@
     "tap_price": 0.011,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -4.49,
+    "delta": -0.106,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": 10.6,
     "recommendation": "HOLD"
   },
   {
@@ -1130,6 +1436,9 @@
     "tap_price": 0.159,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -0.58,
+    "delta": 0.739,
+    "phi_sensitivity": -0.0011,
+    "hedge_ratio_shares": -73.9,
     "recommendation": "HOLD"
   },
   {
@@ -1141,6 +1450,9 @@
     "tap_price": 0.035,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -2.58,
+    "delta": -0.261,
+    "phi_sensitivity": -0.0011,
+    "hedge_ratio_shares": 26.1,
     "recommendation": "HOLD"
   },
   {
@@ -1152,6 +1464,9 @@
     "tap_price": 0.087,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -1.29,
+    "delta": 0.525,
+    "phi_sensitivity": -0.0013,
+    "hedge_ratio_shares": -52.5,
     "recommendation": "HOLD"
   },
   {
@@ -1163,6 +1478,9 @@
     "tap_price": 0.083,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -1.35,
+    "delta": -0.475,
+    "phi_sensitivity": -0.0013,
+    "hedge_ratio_shares": 47.5,
     "recommendation": "HOLD"
   },
   {
@@ -1174,6 +1492,9 @@
     "tap_price": 0.041,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -2.41,
+    "delta": 0.313,
+    "phi_sensitivity": -0.0012,
+    "hedge_ratio_shares": -31.3,
     "recommendation": "HOLD"
   },
   {
@@ -1185,6 +1506,9 @@
     "tap_price": 0.157,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -0.64,
+    "delta": -0.687,
+    "phi_sensitivity": -0.0012,
+    "hedge_ratio_shares": 68.7,
     "recommendation": "HOLD"
   },
   {
@@ -1196,6 +1520,9 @@
     "tap_price": 0.015,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -4.1,
+    "delta": 0.146,
+    "phi_sensitivity": -0.0007,
+    "hedge_ratio_shares": -14.6,
     "recommendation": "HOLD"
   },
   {
@@ -1207,6 +1534,9 @@
     "tap_price": 0.261,
     "integrated_vol_pct": 44.41,
     "arbitrage_yield_pct": -0.25,
+    "delta": -0.854,
+    "phi_sensitivity": -0.0007,
+    "hedge_ratio_shares": 85.4,
     "recommendation": "HOLD"
   },
   {
@@ -1218,6 +1548,9 @@
     "tap_price": 0.282,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.16,
+    "delta": 0.815,
+    "phi_sensitivity": -0.0007,
+    "hedge_ratio_shares": -81.5,
     "recommendation": "HOLD"
   },
   {
@@ -1229,6 +1562,9 @@
     "tap_price": 0.034,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -1.29,
+    "delta": -0.185,
+    "phi_sensitivity": -0.0007,
+    "hedge_ratio_shares": 18.5,
     "recommendation": "HOLD"
   },
   {
@@ -1240,6 +1576,9 @@
     "tap_price": 0.197,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.3,
+    "delta": 0.686,
+    "phi_sensitivity": -0.001,
+    "hedge_ratio_shares": -68.6,
     "recommendation": "HOLD"
   },
   {
@@ -1251,6 +1590,9 @@
     "tap_price": 0.068,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.85,
+    "delta": -0.314,
+    "phi_sensitivity": -0.001,
+    "hedge_ratio_shares": 31.4,
     "recommendation": "HOLD"
   },
   {
@@ -1262,6 +1604,9 @@
     "tap_price": 0.13,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.5,
+    "delta": 0.537,
+    "phi_sensitivity": -0.0011,
+    "hedge_ratio_shares": -53.7,
     "recommendation": "HOLD"
   },
   {
@@ -1273,6 +1618,9 @@
     "tap_price": 0.121,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.54,
+    "delta": -0.463,
+    "phi_sensitivity": -0.0011,
+    "hedge_ratio_shares": 46.3,
     "recommendation": "HOLD"
   },
   {
@@ -1284,6 +1632,9 @@
     "tap_price": 0.08,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.78,
+    "delta": 0.39,
+    "phi_sensitivity": -0.0011,
+    "hedge_ratio_shares": -39.0,
     "recommendation": "HOLD"
   },
   {
@@ -1295,6 +1646,9 @@
     "tap_price": 0.191,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.33,
+    "delta": -0.61,
+    "phi_sensitivity": -0.0011,
+    "hedge_ratio_shares": 61.0,
     "recommendation": "HOLD"
   },
   {
@@ -1306,6 +1660,9 @@
     "tap_price": 0.045,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -1.17,
+    "delta": 0.253,
+    "phi_sensitivity": -0.0009,
+    "hedge_ratio_shares": -25.3,
     "recommendation": "HOLD"
   },
   {
@@ -1317,6 +1674,9 @@
     "tap_price": 0.285,
     "integrated_vol_pct": 44.76,
     "arbitrage_yield_pct": -0.19,
+    "delta": -0.747,
+    "phi_sensitivity": -0.0009,
+    "hedge_ratio_shares": 74.7,
     "recommendation": "HOLD"
   },
   {
@@ -1328,6 +1688,9 @@
     "tap_price": 9.14,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1339,6 +1702,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1350,6 +1716,9 @@
     "tap_price": 4.582,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.01,
+    "delta": 0.998,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": -99.8,
     "recommendation": "HOLD"
   },
   {
@@ -1361,6 +1730,9 @@
     "tap_price": 0.001,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.002,
+    "phi_sensitivity": -0.0006,
+    "hedge_ratio_shares": 0.2,
     "recommendation": "HOLD"
   },
   {
@@ -1372,6 +1744,9 @@
     "tap_price": 0.663,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 9.84,
+    "delta": 0.509,
+    "phi_sensitivity": -0.04,
+    "hedge_ratio_shares": -50.9,
     "recommendation": "HOLD"
   },
   {
@@ -1383,6 +1758,9 @@
     "tap_price": 0.64,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 10.22,
+    "delta": -0.491,
+    "phi_sensitivity": -0.04,
+    "hedge_ratio_shares": 49.1,
     "recommendation": "HOLD"
   },
   {
@@ -1394,6 +1772,9 @@
     "tap_price": 0.002,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.003,
+    "phi_sensitivity": -0.001,
+    "hedge_ratio_shares": -0.3,
     "recommendation": "HOLD"
   },
   {
@@ -1405,6 +1786,9 @@
     "tap_price": 4.538,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.02,
+    "delta": -0.997,
+    "phi_sensitivity": -0.001,
+    "hedge_ratio_shares": 99.7,
     "recommendation": "HOLD"
   },
   {
@@ -1416,6 +1800,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1427,6 +1814,9 @@
     "tap_price": 9.095,
     "integrated_vol_pct": 24.21,
     "arbitrage_yield_pct": 0.0,
+    "delta": -1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1438,6 +1828,9 @@
     "tap_price": 9.15,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1449,6 +1842,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1460,6 +1856,9 @@
     "tap_price": 4.596,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.03,
+    "delta": 0.993,
+    "phi_sensitivity": -0.0027,
+    "hedge_ratio_shares": -99.3,
     "recommendation": "HOLD"
   },
   {
@@ -1471,6 +1870,9 @@
     "tap_price": 0.004,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.007,
+    "phi_sensitivity": -0.0027,
+    "hedge_ratio_shares": 0.7,
     "recommendation": "HOLD"
   },
   {
@@ -1482,6 +1884,9 @@
     "tap_price": 0.781,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 5.22,
+    "delta": 0.511,
+    "phi_sensitivity": -0.0579,
+    "hedge_ratio_shares": -51.1,
     "recommendation": "HOLD"
   },
   {
@@ -1493,6 +1898,9 @@
     "tap_price": 0.747,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 5.47,
+    "delta": -0.489,
+    "phi_sensitivity": -0.0579,
+    "hedge_ratio_shares": 48.9,
     "recommendation": "HOLD"
   },
   {
@@ -1504,6 +1912,9 @@
     "tap_price": 0.007,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.011,
+    "phi_sensitivity": -0.0041,
+    "hedge_ratio_shares": -1.1,
     "recommendation": "HOLD"
   },
   {
@@ -1515,6 +1926,9 @@
     "tap_price": 4.532,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.05,
+    "delta": -0.989,
+    "phi_sensitivity": -0.0041,
+    "hedge_ratio_shares": 98.9,
     "recommendation": "HOLD"
   },
   {
@@ -1526,6 +1940,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1537,6 +1954,9 @@
     "tap_price": 9.083,
     "integrated_vol_pct": 23.18,
     "arbitrage_yield_pct": 0.0,
+    "delta": -1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1548,6 +1968,9 @@
     "tap_price": 9.171,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1559,6 +1982,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1570,6 +1996,9 @@
     "tap_price": 4.63,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -0.05,
+    "delta": 0.981,
+    "phi_sensitivity": -0.0059,
+    "hedge_ratio_shares": -98.1,
     "recommendation": "HOLD"
   },
   {
@@ -1581,6 +2010,9 @@
     "tap_price": 0.016,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -12.61,
+    "delta": -0.019,
+    "phi_sensitivity": -0.0059,
+    "hedge_ratio_shares": 1.9,
     "recommendation": "SELL/WRITE (Overpriced)"
   },
   {
@@ -1592,6 +2024,9 @@
     "tap_price": 0.945,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -1.98,
+    "delta": 0.515,
+    "phi_sensitivity": -0.0504,
+    "hedge_ratio_shares": -51.5,
     "recommendation": "HOLD"
   },
   {
@@ -1603,6 +2038,9 @@
     "tap_price": 0.889,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -2.11,
+    "delta": -0.485,
+    "phi_sensitivity": -0.0504,
+    "hedge_ratio_shares": 48.5,
     "recommendation": "HOLD"
   },
   {
@@ -1614,6 +2052,9 @@
     "tap_price": 0.025,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -11.48,
+    "delta": 0.029,
+    "phi_sensitivity": -0.0083,
+    "hedge_ratio_shares": -2.9,
     "recommendation": "HOLD"
   },
   {
@@ -1625,6 +2066,9 @@
     "tap_price": 4.526,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -0.07,
+    "delta": -0.971,
+    "phi_sensitivity": -0.0083,
+    "hedge_ratio_shares": 97.1,
     "recommendation": "HOLD"
   },
   {
@@ -1636,6 +2080,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1647,6 +2094,9 @@
     "tap_price": 9.058,
     "integrated_vol_pct": 21.55,
     "arbitrage_yield_pct": -0.0,
+    "delta": -1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1658,6 +2108,9 @@
     "tap_price": 9.191,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -0.0,
+    "delta": 1.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": -100.0,
     "recommendation": "HOLD"
   },
   {
@@ -1669,6 +2122,9 @@
     "tap_price": 0.0,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.0,
+    "phi_sensitivity": -0.0,
+    "hedge_ratio_shares": 0.0,
     "recommendation": "HOLD"
   },
   {
@@ -1680,6 +2136,9 @@
     "tap_price": 4.677,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -0.12,
+    "delta": 0.962,
+    "phi_sensitivity": -0.0024,
+    "hedge_ratio_shares": -96.2,
     "recommendation": "HOLD"
   },
   {
@@ -1691,6 +2150,9 @@
     "tap_price": 0.042,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -12.03,
+    "delta": -0.038,
+    "phi_sensitivity": -0.0024,
+    "hedge_ratio_shares": 3.8,
     "recommendation": "SELL/WRITE (Overpriced)"
   },
   {
@@ -1702,6 +2164,9 @@
     "tap_price": 1.121,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -2.32,
+    "delta": 0.517,
+    "phi_sensitivity": -0.0114,
+    "hedge_ratio_shares": -51.7,
     "recommendation": "HOLD"
   },
   {
@@ -1713,6 +2178,9 @@
     "tap_price": 1.042,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -2.49,
+    "delta": -0.483,
+    "phi_sensitivity": -0.0114,
+    "hedge_ratio_shares": 48.3,
     "recommendation": "HOLD"
   },
   {
@@ -1724,6 +2192,9 @@
     "tap_price": 0.063,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -10.9,
+    "delta": 0.055,
+    "phi_sensitivity": -0.0032,
+    "hedge_ratio_shares": -5.5,
     "recommendation": "HOLD"
   },
   {
@@ -1735,6 +2206,9 @@
     "tap_price": 4.54,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -0.17,
+    "delta": -0.945,
+    "phi_sensitivity": -0.0032,
+    "hedge_ratio_shares": 94.5,
     "recommendation": "HOLD"
   },
   {
@@ -1746,6 +2220,9 @@
     "tap_price": 0.001,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": 0.0,
+    "delta": 0.001,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": -0.1,
     "recommendation": "HOLD"
   },
   {
@@ -1757,6 +2234,9 @@
     "tap_price": 9.034,
     "integrated_vol_pct": 21.47,
     "arbitrage_yield_pct": -0.0,
+    "delta": -0.999,
+    "phi_sensitivity": -0.0001,
+    "hedge_ratio_shares": 99.9,
     "recommendation": "HOLD"
   },
   {
@@ -1768,6 +2248,9 @@
     "tap_price": 9.268,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -0.01,
+    "delta": 0.994,
+    "phi_sensitivity": -0.0009,
+    "hedge_ratio_shares": -99.4,
     "recommendation": "HOLD"
   },
   {
@@ -1779,6 +2262,9 @@
     "tap_price": 0.007,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": 0.0,
+    "delta": -0.006,
+    "phi_sensitivity": -0.0009,
+    "hedge_ratio_shares": 0.6,
     "recommendation": "HOLD"
   },
   {
@@ -1790,6 +2276,9 @@
     "tap_price": 4.901,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -0.19,
+    "delta": 0.898,
+    "phi_sensitivity": -0.0106,
+    "hedge_ratio_shares": -89.8,
     "recommendation": "HOLD"
   },
   {
@@ -1801,6 +2290,9 @@
     "tap_price": 0.192,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -4.65,
+    "delta": -0.102,
+    "phi_sensitivity": -0.0106,
+    "hedge_ratio_shares": 10.2,
     "recommendation": "HOLD"
   },
   {
@@ -1812,6 +2304,9 @@
     "tap_price": 1.625,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -1.26,
+    "delta": 0.525,
+    "phi_sensitivity": -0.0237,
+    "hedge_ratio_shares": -52.5,
     "recommendation": "HOLD"
   },
   {
@@ -1823,6 +2318,9 @@
     "tap_price": 1.468,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -1.39,
+    "delta": -0.475,
+    "phi_sensitivity": -0.0237,
+    "hedge_ratio_shares": 47.5,
     "recommendation": "HOLD"
   },
   {
@@ -1834,6 +2332,9 @@
     "tap_price": 0.268,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -4.14,
+    "delta": 0.139,
+    "phi_sensitivity": -0.0132,
+    "hedge_ratio_shares": -13.9,
     "recommendation": "HOLD"
   },
   {
@@ -1845,6 +2346,9 @@
     "tap_price": 4.663,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -0.25,
+    "delta": -0.861,
+    "phi_sensitivity": -0.0132,
+    "hedge_ratio_shares": 86.1,
     "recommendation": "HOLD"
   },
   {
@@ -1856,6 +2360,9 @@
     "tap_price": 0.02,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -9.13,
+    "delta": 0.015,
+    "phi_sensitivity": -0.0022,
+    "hedge_ratio_shares": -1.5,
     "recommendation": "HOLD"
   },
   {
@@ -1867,6 +2374,9 @@
     "tap_price": 8.967,
     "integrated_vol_pct": 21.71,
     "arbitrage_yield_pct": -0.02,
+    "delta": -0.985,
+    "phi_sensitivity": -0.0022,
+    "hedge_ratio_shares": 98.5,
     "recommendation": "HOLD"
   },
   {
@@ -1878,6 +2388,9 @@
     "tap_price": 9.513,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -0.03,
+    "delta": 0.962,
+    "phi_sensitivity": -0.0042,
+    "hedge_ratio_shares": -96.2,
     "recommendation": "HOLD"
   },
   {
@@ -1889,6 +2402,9 @@
     "tap_price": 0.09,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -2.72,
+    "delta": -0.038,
+    "phi_sensitivity": -0.0042,
+    "hedge_ratio_shares": 3.8,
     "recommendation": "HOLD"
   },
   {
@@ -1900,6 +2416,9 @@
     "tap_price": 5.463,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -0.15,
+    "delta": 0.818,
+    "phi_sensitivity": -0.0133,
+    "hedge_ratio_shares": -81.8,
     "recommendation": "HOLD"
   },
   {
@@ -1911,6 +2430,9 @@
     "tap_price": 0.583,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -1.35,
+    "delta": -0.182,
+    "phi_sensitivity": -0.0133,
+    "hedge_ratio_shares": 18.2,
     "recommendation": "HOLD"
   },
   {
@@ -1922,6 +2444,9 @@
     "tap_price": 2.45,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -0.48,
+    "delta": 0.536,
+    "phi_sensitivity": -0.02,
+    "hedge_ratio_shares": -53.6,
     "recommendation": "HOLD"
   },
   {
@@ -1933,6 +2458,9 @@
     "tap_price": 2.113,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -0.56,
+    "delta": -0.464,
+    "phi_sensitivity": -0.02,
+    "hedge_ratio_shares": 46.4,
     "recommendation": "HOLD"
   },
   {
@@ -1944,6 +2472,9 @@
     "tap_price": 0.809,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -1.16,
+    "delta": 0.246,
+    "phi_sensitivity": -0.0158,
+    "hedge_ratio_shares": -24.6,
     "recommendation": "HOLD"
   },
   {
@@ -1955,6 +2486,9 @@
     "tap_price": 5.016,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -0.19,
+    "delta": -0.754,
+    "phi_sensitivity": -0.0158,
+    "hedge_ratio_shares": 75.4,
     "recommendation": "HOLD"
   },
   {
@@ -1966,6 +2500,9 @@
     "tap_price": 0.192,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -2.21,
+    "delta": 0.076,
+    "phi_sensitivity": -0.0072,
+    "hedge_ratio_shares": -7.6,
     "recommendation": "HOLD"
   },
   {
@@ -1977,6 +2514,9 @@
     "tap_price": 8.942,
     "integrated_vol_pct": 21.89,
     "arbitrage_yield_pct": -0.05,
+    "delta": -0.924,
+    "phi_sensitivity": -0.0072,
+    "hedge_ratio_shares": 92.4,
     "recommendation": "HOLD"
   },
   {
@@ -1988,6 +2528,9 @@
     "tap_price": 4.529,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 0.2,
+    "delta": 0.978,
+    "phi_sensitivity": -0.0075,
+    "hedge_ratio_shares": -97.8,
     "recommendation": "HOLD"
   },
   {
@@ -1999,6 +2542,9 @@
     "tap_price": 0.019,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 91.07,
+    "delta": -0.022,
+    "phi_sensitivity": -0.0075,
+    "hedge_ratio_shares": 2.2,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2010,6 +2556,9 @@
     "tap_price": 2.464,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 2.08,
+    "delta": 0.841,
+    "phi_sensitivity": -0.0354,
+    "hedge_ratio_shares": -84.1,
     "recommendation": "HOLD"
   },
   {
@@ -2021,6 +2570,9 @@
     "tap_price": 0.203,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 32.72,
+    "delta": -0.159,
+    "phi_sensitivity": -0.0354,
+    "hedge_ratio_shares": 15.9,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2032,6 +2584,9 @@
     "tap_price": 0.955,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 9.96,
+    "delta": 0.512,
+    "phi_sensitivity": -0.0584,
+    "hedge_ratio_shares": -51.2,
     "recommendation": "HOLD"
   },
   {
@@ -2043,6 +2598,9 @@
     "tap_price": 0.944,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 10.09,
+    "delta": -0.488,
+    "phi_sensitivity": -0.0584,
+    "hedge_ratio_shares": 48.8,
     "recommendation": "HOLD"
   },
   {
@@ -2054,6 +2612,9 @@
     "tap_price": 0.237,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 30.77,
+    "delta": 0.187,
+    "phi_sensitivity": -0.0392,
+    "hedge_ratio_shares": -18.7,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2065,6 +2626,9 @@
     "tap_price": 2.476,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 2.31,
+    "delta": -0.813,
+    "phi_sensitivity": -0.0392,
+    "hedge_ratio_shares": 81.3,
     "recommendation": "HOLD"
   },
   {
@@ -2076,6 +2640,9 @@
     "tap_price": 0.036,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 75.33,
+    "delta": 0.038,
+    "phi_sensitivity": -0.0121,
+    "hedge_ratio_shares": -3.8,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2087,6 +2654,9 @@
     "tap_price": 4.524,
     "integrated_vol_pct": 71.52,
     "arbitrage_yield_pct": 0.34,
+    "delta": -0.962,
+    "phi_sensitivity": -0.0121,
+    "hedge_ratio_shares": 96.2,
     "recommendation": "HOLD"
   },
   {
@@ -2098,6 +2668,9 @@
     "tap_price": 4.563,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 0.26,
+    "delta": 0.959,
+    "phi_sensitivity": -0.0186,
+    "hedge_ratio_shares": -95.9,
     "recommendation": "HOLD"
   },
   {
@@ -2109,6 +2682,9 @@
     "tap_price": 0.048,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 31.97,
+    "delta": -0.041,
+    "phi_sensitivity": -0.0186,
+    "hedge_ratio_shares": 4.1,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2120,6 +2696,9 @@
     "tap_price": 2.574,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 1.51,
+    "delta": 0.806,
+    "phi_sensitivity": -0.0581,
+    "hedge_ratio_shares": -80.6,
     "recommendation": "HOLD"
   },
   {
@@ -2131,6 +2710,9 @@
     "tap_price": 0.309,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 14.12,
+    "delta": -0.194,
+    "phi_sensitivity": -0.0581,
+    "hedge_ratio_shares": 19.4,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2142,6 +2724,9 @@
     "tap_price": 1.122,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 5.3,
+    "delta": 0.515,
+    "phi_sensitivity": -0.0844,
+    "hedge_ratio_shares": -51.5,
     "recommendation": "HOLD"
   },
   {
@@ -2153,6 +2738,9 @@
     "tap_price": 1.105,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 5.38,
+    "delta": -0.485,
+    "phi_sensitivity": -0.0844,
+    "hedge_ratio_shares": 48.5,
     "recommendation": "HOLD"
   },
   {
@@ -2164,6 +2752,9 @@
     "tap_price": 0.356,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 13.37,
+    "delta": 0.227,
+    "phi_sensitivity": -0.0637,
+    "hedge_ratio_shares": -22.7,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2175,6 +2766,9 @@
     "tap_price": 2.588,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 1.65,
+    "delta": -0.773,
+    "phi_sensitivity": -0.0637,
+    "hedge_ratio_shares": 77.3,
     "recommendation": "HOLD"
   },
   {
@@ -2186,6 +2780,9 @@
     "tap_price": 0.08,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 27.49,
+    "delta": 0.067,
+    "phi_sensitivity": -0.0273,
+    "hedge_ratio_shares": -6.7,
     "recommendation": "BUY (Underpriced)"
   },
   {
@@ -2197,6 +2794,9 @@
     "tap_price": 4.562,
     "integrated_vol_pct": 68.47,
     "arbitrage_yield_pct": 0.38,
+    "delta": -0.933,
+    "phi_sensitivity": -0.0273,
+    "hedge_ratio_shares": 93.3,
     "recommendation": "HOLD"
   },
   {
@@ -2208,6 +2808,9 @@
     "tap_price": 4.636,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -0.21,
+    "delta": 0.928,
+    "phi_sensitivity": -0.0253,
+    "hedge_ratio_shares": -92.8,
     "recommendation": "HOLD"
   },
   {
@@ -2219,6 +2822,9 @@
     "tap_price": 0.111,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -8.14,
+    "delta": -0.072,
+    "phi_sensitivity": -0.0253,
+    "hedge_ratio_shares": 7.2,
     "recommendation": "HOLD"
   },
   {
@@ -2230,6 +2836,9 @@
     "tap_price": 2.745,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -0.77,
+    "delta": 0.769,
+    "phi_sensitivity": -0.0561,
+    "hedge_ratio_shares": -76.9,
     "recommendation": "HOLD"
   },
   {
@@ -2241,6 +2850,9 @@
     "tap_price": 0.469,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -4.37,
+    "delta": -0.231,
+    "phi_sensitivity": -0.0561,
+    "hedge_ratio_shares": 23.1,
     "recommendation": "HOLD"
   },
   {
@@ -2252,6 +2864,9 @@
     "tap_price": 1.351,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -2.02,
+    "delta": 0.518,
+    "phi_sensitivity": -0.0734,
+    "hedge_ratio_shares": -51.8,
     "recommendation": "HOLD"
   },
   {
@@ -2263,6 +2878,9 @@
     "tap_price": 1.323,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -2.07,
+    "delta": -0.482,
+    "phi_sensitivity": -0.0734,
+    "hedge_ratio_shares": 48.2,
     "recommendation": "HOLD"
   },
   {
@@ -2274,6 +2892,9 @@
     "tap_price": 0.536,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -4.16,
+    "delta": 0.271,
+    "phi_sensitivity": -0.061,
+    "hedge_ratio_shares": -27.1,
     "recommendation": "HOLD"
   },
   {
@@ -2285,6 +2906,9 @@
     "tap_price": 2.757,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -0.84,
+    "delta": -0.729,
+    "phi_sensitivity": -0.061,
+    "hedge_ratio_shares": 72.9,
     "recommendation": "HOLD"
   },
   {
@@ -2296,6 +2920,9 @@
     "tap_price": 0.17,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -7.24,
+    "delta": 0.109,
+    "phi_sensitivity": -0.0343,
+    "hedge_ratio_shares": -10.9,
     "recommendation": "HOLD"
   },
   {
@@ -2307,6 +2934,9 @@
     "tap_price": 4.64,
     "integrated_vol_pct": 63.67,
     "arbitrage_yield_pct": -0.29,
+    "delta": -0.891,
+    "phi_sensitivity": -0.0343,
+    "hedge_ratio_shares": 89.1,
     "recommendation": "HOLD"
   },
   {
@@ -2318,6 +2948,9 @@
     "tap_price": 4.741,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -0.38,
+    "delta": 0.895,
+    "phi_sensitivity": -0.0076,
+    "hedge_ratio_shares": -89.5,
     "recommendation": "HOLD"
   },
   {
@@ -2329,6 +2962,9 @@
     "tap_price": 0.206,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -8.03,
+    "delta": -0.105,
+    "phi_sensitivity": -0.0076,
+    "hedge_ratio_shares": 10.5,
     "recommendation": "HOLD"
   },
   {
@@ -2340,6 +2976,9 @@
     "tap_price": 2.942,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -1.07,
+    "delta": 0.738,
+    "phi_sensitivity": -0.0135,
+    "hedge_ratio_shares": -73.8,
     "recommendation": "HOLD"
   },
   {
@@ -2351,6 +2990,9 @@
     "tap_price": 0.656,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -4.62,
+    "delta": -0.262,
+    "phi_sensitivity": -0.0135,
+    "hedge_ratio_shares": 26.2,
     "recommendation": "HOLD"
   },
   {
@@ -2362,6 +3004,9 @@
     "tap_price": 1.595,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -2.37,
+    "delta": 0.521,
+    "phi_sensitivity": -0.0166,
+    "hedge_ratio_shares": -52.1,
     "recommendation": "HOLD"
   },
   {
@@ -2373,6 +3018,9 @@
     "tap_price": 1.556,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -2.43,
+    "delta": -0.479,
+    "phi_sensitivity": -0.0166,
+    "hedge_ratio_shares": 47.9,
     "recommendation": "HOLD"
   },
   {
@@ -2384,6 +3032,9 @@
     "tap_price": 0.745,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -4.41,
+    "delta": 0.308,
+    "phi_sensitivity": -0.0146,
+    "hedge_ratio_shares": -30.8,
     "recommendation": "HOLD"
   },
   {
@@ -2395,6 +3046,9 @@
     "tap_price": 2.954,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -1.15,
+    "delta": -0.692,
+    "phi_sensitivity": -0.0146,
+    "hedge_ratio_shares": 69.2,
     "recommendation": "HOLD"
   },
   {
@@ -2406,6 +3060,9 @@
     "tap_price": 0.298,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -7.19,
+    "delta": 0.151,
+    "phi_sensitivity": -0.0097,
+    "hedge_ratio_shares": -15.1,
     "recommendation": "HOLD"
   },
   {
@@ -2417,6 +3074,9 @@
     "tap_price": 4.756,
     "integrated_vol_pct": 63.44,
     "arbitrage_yield_pct": -0.48,
+    "delta": -0.849,
+    "phi_sensitivity": -0.0097,
+    "hedge_ratio_shares": 84.9,
     "recommendation": "HOLD"
   },
   {
@@ -2428,6 +3088,9 @@
     "tap_price": 5.155,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -0.39,
+    "delta": 0.82,
+    "phi_sensitivity": -0.0228,
+    "hedge_ratio_shares": -82.0,
     "recommendation": "HOLD"
   },
   {
@@ -2439,6 +3102,9 @@
     "tap_price": 0.585,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -3.3,
+    "delta": -0.18,
+    "phi_sensitivity": -0.0228,
+    "hedge_ratio_shares": 18.0,
     "recommendation": "HOLD"
   },
   {
@@ -2450,6 +3116,9 @@
     "tap_price": 3.549,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -0.75,
+    "delta": 0.686,
+    "phi_sensitivity": -0.0308,
+    "hedge_ratio_shares": -68.6,
     "recommendation": "HOLD"
   },
   {
@@ -2461,6 +3130,9 @@
     "tap_price": 1.225,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -2.15,
+    "delta": -0.314,
+    "phi_sensitivity": -0.0308,
+    "hedge_ratio_shares": 31.4,
     "recommendation": "HOLD"
   },
   {
@@ -2472,6 +3144,9 @@
     "tap_price": 2.29,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -1.3,
+    "delta": 0.53,
+    "phi_sensitivity": -0.0345,
+    "hedge_ratio_shares": -53.0,
     "recommendation": "HOLD"
   },
   {
@@ -2483,6 +3158,9 @@
     "tap_price": 2.212,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -1.34,
+    "delta": -0.47,
+    "phi_sensitivity": -0.0345,
+    "hedge_ratio_shares": 47.0,
     "recommendation": "HOLD"
   },
   {
@@ -2494,6 +3172,9 @@
     "tap_price": 1.383,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -2.04,
+    "delta": 0.378,
+    "phi_sensitivity": -0.033,
+    "hedge_ratio_shares": -37.8,
     "recommendation": "HOLD"
   },
   {
@@ -2505,6 +3186,9 @@
     "tap_price": 3.551,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -0.8,
+    "delta": -0.622,
+    "phi_sensitivity": -0.033,
+    "hedge_ratio_shares": 62.2,
     "recommendation": "HOLD"
   },
   {
@@ -2516,6 +3200,9 @@
     "tap_price": 0.782,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -2.98,
+    "delta": 0.247,
+    "phi_sensitivity": -0.0274,
+    "hedge_ratio_shares": -24.7,
     "recommendation": "HOLD"
   },
   {
@@ -2527,6 +3214,9 @@
     "tap_price": 5.197,
     "integrated_vol_pct": 64.14,
     "arbitrage_yield_pct": -0.46,
+    "delta": -0.753,
+    "phi_sensitivity": -0.0274,
+    "hedge_ratio_shares": 75.3,
     "recommendation": "HOLD"
   },
   {
@@ -2538,6 +3228,9 @@
     "tap_price": 6.003,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.23,
+    "delta": 0.752,
+    "phi_sensitivity": -0.0232,
+    "hedge_ratio_shares": -75.2,
     "recommendation": "HOLD"
   },
   {
@@ -2549,6 +3242,9 @@
     "tap_price": 1.354,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -1.01,
+    "delta": -0.248,
+    "phi_sensitivity": -0.0232,
+    "hedge_ratio_shares": 24.8,
     "recommendation": "HOLD"
   },
   {
@@ -2560,6 +3256,9 @@
     "tap_price": 4.578,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.35,
+    "delta": 0.652,
+    "phi_sensitivity": -0.0271,
+    "hedge_ratio_shares": -65.2,
     "recommendation": "HOLD"
   },
   {
@@ -2571,6 +3270,9 @@
     "tap_price": 2.17,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.74,
+    "delta": -0.348,
+    "phi_sensitivity": -0.0271,
+    "hedge_ratio_shares": 34.8,
     "recommendation": "HOLD"
   },
   {
@@ -2582,6 +3284,9 @@
     "tap_price": 3.4,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.51,
+    "delta": 0.545,
+    "phi_sensitivity": -0.0291,
+    "hedge_ratio_shares": -54.5,
     "recommendation": "HOLD"
   },
   {
@@ -2593,6 +3298,9 @@
     "tap_price": 3.234,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.53,
+    "delta": -0.455,
+    "phi_sensitivity": -0.0291,
+    "hedge_ratio_shares": 45.5,
     "recommendation": "HOLD"
   },
   {
@@ -2604,6 +3312,9 @@
     "tap_price": 2.461,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.7,
+    "delta": 0.44,
+    "phi_sensitivity": -0.0289,
+    "hedge_ratio_shares": -44.0,
     "recommendation": "HOLD"
   },
   {
@@ -2615,6 +3326,9 @@
     "tap_price": 4.536,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.38,
+    "delta": -0.56,
+    "phi_sensitivity": -0.0289,
+    "hedge_ratio_shares": 56.0,
     "recommendation": "HOLD"
   },
   {
@@ -2626,6 +3340,9 @@
     "tap_price": 1.738,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.92,
+    "delta": 0.344,
+    "phi_sensitivity": -0.027,
+    "hedge_ratio_shares": -34.4,
     "recommendation": "HOLD"
   },
   {
@@ -2637,6 +3354,9 @@
     "tap_price": 6.056,
     "integrated_vol_pct": 64.66,
     "arbitrage_yield_pct": -0.27,
+    "delta": -0.656,
+    "phi_sensitivity": -0.027,
+    "hedge_ratio_shares": 65.6,
     "recommendation": "HOLD"
   }
 ]

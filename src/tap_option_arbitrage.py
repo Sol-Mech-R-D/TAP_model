@@ -63,22 +63,49 @@ def get_crossing_times():
         days_from_peri += interval
     return crossings
 
-def black_scholes_price(S, K, T, r, sigma, option_type="call"):
-    """Standard Black-Scholes pricing (HNS baseline)."""
+def black_scholes_greeks(S, K, T, r, sigma, option_type="call"):
+    """Calculates Option Price and Delta (HNS baseline)."""
     if T <= 0:
-        return max(0.0, S - K) if option_type == "call" else max(0.0, K - S)
+        price = max(0.0, S - K) if option_type == "call" else max(0.0, K - S)
+        delta = 1.0 if (option_type == "call" and S >= K) else (-1.0 if (option_type == "put" and S < K) else 0.0)
+        return price, delta
     if sigma <= 0:
-        return max(0.0, S - K) if option_type == "call" else max(0.0, K - S)
+        price = max(0.0, S - K) if option_type == "call" else max(0.0, K - S)
+        delta = 1.0 if (option_type == "call" and S >= K) else (-1.0 if (option_type == "put" and S < K) else 0.0)
+        return price, delta
         
     d1 = (math.log(S / K) + (r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
     d2 = d1 - sigma * math.sqrt(T)
     
     if option_type == "call":
         price = S * norm.cdf(d1) - K * math.exp(-r * T) * norm.cdf(d2)
+        delta = norm.cdf(d1)
     else:
         price = K * math.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+        delta = norm.cdf(d1) - 1.0
         
-    return max(0.0, price)
+    return max(0.0, price), delta
+
+def get_tap_phi_sensitivity(S, K, T_days, crossings, r, sigma_base, option_type="call"):
+    """
+    Calculates the partial derivative of option price with respect to the sub-breath phase.
+    Approximated numerically by shifting the valuation date by +0.05 days (~2.2% phase shift).
+    Phi_TAP = (Price(t + dt) - Price(t)) / 0.05
+    """
+    T = T_days / 365.25
+    t_today = datetime(2026, 6, 30)
+    
+    # 1. Price at current date
+    vol_0 = get_integrated_tap_vol(t_today, T_days, crossings, sigma_base)
+    price_0, _ = black_scholes_greeks(S, K, T, r, vol_0, option_type)
+    
+    # 2. Price at shifted date
+    t_shift = t_today + timedelta(days=0.05)
+    vol_shift = get_integrated_tap_vol(t_shift, T_days, crossings, sigma_base)
+    price_shift, _ = black_scholes_greeks(S, K, T, r, vol_shift, option_type)
+    
+    phi = (price_shift - price_0) / 0.05
+    return phi
 
 def get_integrated_tap_vol(t_start, T_days, crossings, sigma_base):
     """
@@ -135,19 +162,21 @@ def main():
             for offset in strike_offsets:
                 K = round(S * offset, 2)
                 
-                # Price calls
-                bs_call = black_scholes_price(S, K, T, risk_free_rate, sigma_base, "call")
-                tap_call = black_scholes_price(S, K, T, risk_free_rate, tap_vol, "call")
+                # Price calls & calculate Delta
+                bs_call, bs_call_delta = black_scholes_greeks(S, K, T, risk_free_rate, sigma_base, "call")
+                tap_call, tap_call_delta = black_scholes_greeks(S, K, T, risk_free_rate, tap_vol, "call")
                 call_yield = ((tap_call - bs_call) / bs_call * 100.0) if bs_call > 0.01 else 0.0
                 
-                # Price puts
-                bs_put = black_scholes_price(S, K, T, risk_free_rate, sigma_base, "put")
-                tap_put = black_scholes_price(S, K, T, risk_free_rate, tap_vol, "put")
+                # Price puts & calculate Delta
+                bs_put, bs_put_delta = black_scholes_greeks(S, K, T, risk_free_rate, sigma_base, "put")
+                tap_put, tap_put_delta = black_scholes_greeks(S, K, T, risk_free_rate, tap_vol, "put")
                 put_yield = ((tap_put - bs_put) / bs_put * 100.0) if bs_put > 0.01 else 0.0
                 
+                # Calculate TAP Phi-Sensitivity (numerical derivative wrt sub-breath clock phase shift)
+                tap_call_phi = get_tap_phi_sensitivity(S, K, days, crossings, risk_free_rate, sigma_base, "call")
+                tap_put_phi = get_tap_phi_sensitivity(S, K, days, crossings, risk_free_rate, sigma_base, "put")
+                
                 # Classify recommendations
-                # If TAP price is significantly higher, standard options are underpriced (BUY)
-                # If TAP price is significantly lower, standard options are overpriced (WRITE/SELL)
                 call_rec = "HOLD"
                 if call_yield > 12.0:
                     call_rec = "BUY (Underpriced)"
@@ -160,6 +189,10 @@ def main():
                 elif put_yield < -12.0:
                     put_rec = "SELL/WRITE (Overpriced)"
                 
+                # Delta neutral hedge ratio (underlying shares per 1 contract of 100 options)
+                call_hedge = -round(tap_call_delta * 100.0, 1)
+                put_hedge = -round(tap_put_delta * 100.0, 1)
+                
                 screen_results.append({
                     "asset": asset_name,
                     "maturity_days": days,
@@ -169,6 +202,9 @@ def main():
                     "tap_price": round(tap_call, 3),
                     "integrated_vol_pct": round(tap_vol * 100, 2),
                     "arbitrage_yield_pct": round(call_yield, 2),
+                    "delta": round(tap_call_delta, 3),
+                    "phi_sensitivity": round(tap_call_phi, 4),
+                    "hedge_ratio_shares": call_hedge,
                     "recommendation": call_rec
                 })
                 
@@ -181,17 +217,20 @@ def main():
                     "tap_price": round(tap_put, 3),
                     "integrated_vol_pct": round(tap_vol * 100, 2),
                     "arbitrage_yield_pct": round(put_yield, 2),
+                    "delta": round(tap_put_delta, 3),
+                    "phi_sensitivity": round(tap_put_phi, 4),
+                    "hedge_ratio_shares": put_hedge,
                     "recommendation": put_rec
                 })
 
-    # Print summary of key high-yield buy opportunities
-    print(f"\n  {'Asset':12s} | {'Type':4s} | {'Maturity':8s} | {'Strike':6s} | {'BS ($)':6s} | {'TAP ($)':7s} | {'Yield (%)':9s} | {'Action'}")
-    print(f"  {'-'*12}-+-{'-'*4}-+-{'-'*8}-+-{'-'*6}-+-{'-'*6}-+-{'-'*7}-+-{'-'*9}-+-{'-'*25}")
+    # Print summary of key high-yield opportunities with Delta & Phi
+    print(f"\n  {'Asset':12s} | {'Type':4s} | {'Maturity':8s} | {'Strike':6s} | {'BS ($)':6s} | {'TAP ($)':7s} | {'Yield (%)':9s} | {'Delta':6s} | {'Phi':7s} | {'Hedge':6s} | {'Action'}")
+    print(f"  {'-'*12}-+-{'-'*4}-+-{'-'*8}-+-{'-'*6}-+-{'-'*6}-+-{'-'*7}-+-{'-'*9}-+-{'-'*6}-+-{'-'*7}-+-{'-'*6}-+-{'-'*25}")
     
     # Filter for interesting arbitrage actions (Yield > 8% or Yield < -8%)
     actions = [r for r in screen_results if abs(r["arbitrage_yield_pct"]) > 8.0]
     for act in actions[::3]: # Print selection to keep stdout clean
-        print(f"  {act['asset']:12s} | {act['type']:4s} | {act['maturity_days']:3d} days | ${act['strike']:5.2f} | ${act['bs_price']:5.2f} | ${act['tap_price']:5.2f} | {act['arbitrage_yield_pct']:+8.2f}% | {act['recommendation']}")
+        print(f"  {act['asset']:12s} | {act['type']:4s} | {act['maturity_days']:3d} days | ${act['strike']:5.2f} | ${act['bs_price']:5.2f} | ${act['tap_price']:5.2f} | {act['arbitrage_yield_pct']:+8.2f}% | {act['delta']:+5.2f} | {act['phi_sensitivity']:+6.3f} | {act['hedge_ratio_shares']:+6.1f} | {act['recommendation']}")
         
     # Export results to assets
     out_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "assets"))
