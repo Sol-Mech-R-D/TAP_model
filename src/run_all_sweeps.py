@@ -104,7 +104,7 @@ def run_decay_sweep(ser):
     while True:
         line = ser.readline().decode('utf-8', errors='ignore').strip()
         if not line:
-            if time.time() - start_time > 30.0:
+            if time.time() - start_time > 90.0:
                 break
             continue
             

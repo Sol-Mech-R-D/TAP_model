@@ -74,8 +74,8 @@ void run_active_tap_sweep() {
 }
 
 // Helper to fire overlapping phase-delayed pulses at 4.5 kHz (222 us period)
-void fire_phase_pulses(int phase_delay, int cycles) {
-  for (int i = 0; i < cycles; i++) {
+void fire_phase_pulses(int phase_delay, uint32_t cycles) {
+  for (uint32_t i = 0; i < cycles; i++) {
     if (phase_delay < 50) {
       digitalWrite(TX1_PIN, HIGH);
       delayMicroseconds(phase_delay);
@@ -104,12 +104,12 @@ void fire_phase_pulses(int phase_delay, int cycles) {
 }
 
 // Generic pulse generator with variable frequency and phase delay
-void fire_phase_pulses_variable(int freq_hz, int phase_delay_us, int cycles) {
+void fire_phase_pulses_variable(int freq_hz, int phase_delay_us, uint32_t cycles) {
   long period_us = 1000000L / freq_hz;
   long pulse_width = period_us / 4; // 25% duty cycle
   if (pulse_width < 2) pulse_width = 2; // safety clamp
   
-  for (int i = 0; i < cycles; i++) {
+  for (uint32_t i = 0; i < cycles; i++) {
     if (phase_delay_us < pulse_width) {
       digitalWrite(TX1_PIN, HIGH);
       delayMicroseconds(phase_delay_us);
@@ -245,29 +245,29 @@ void run_t1_relaxation_sweep() {
   
   active_software_discharge();
   
-  // 1. Pump capacitor to maximum using constructive 4.5kHz pulses for 1.2 seconds
+  // 1. Pump capacitor to maximum using constructive 4.5kHz pulses for 10 seconds
   Serial.println("  [PUMP] Charging storage reservoir...");
-  fire_phase_pulses(0, 5000);
+  fire_phase_pulses(0, 45000);
   
   // 2. Shut off drivers immediately
   digitalWrite(TX1_PIN, LOW);
   digitalWrite(TX2_PIN, LOW);
   
-  // 3. Monitor decay at high resolution (every 50ms for 5 seconds)
+  // 3. Monitor decay at high resolution (every 500ms for 60 seconds)
   Serial.println("  [MONITOR] Measuring decay curve...");
-  for (int i = 0; i <= 100; i++) {
+  for (int i = 0; i <= 120; i++) {
     int val = analogRead(RX_PIN);
     float voltage = (val / 1023.0) * 5.0;
     
     Serial.print("DecayTime:");
-    Serial.print(i * 50);
+    Serial.print((long)i * 500);
     Serial.print("ms | ADC:");
     Serial.print(val);
     Serial.print(" | Voltage:");
     Serial.print(voltage);
     Serial.println("V");
     
-    delay(50);
+    delay(500);
   }
   Serial.println("--- END T1 RELAXATION SWEEP ---");
 }
