@@ -43,6 +43,21 @@ ASSETS = {
     "ERCOT_Proxy": {"price": 45.00, "hist_vol": 0.65, "sector": "Grid Power Markets"}
 }
 
+PENNY_STOCKS = {
+    "TGB": {"price": 2.40, "hist_vol": 0.52, "sector": "Junior Copper Mining"},
+    "MUX": {"price": 4.10, "hist_vol": 0.65, "sector": "Junior Gold Mining"},
+    "URG": {"price": 1.20, "hist_vol": 0.70, "sector": "Uranium Mining"},
+    "NXE": {"price": 4.80, "hist_vol": 0.58, "sector": "Lithium/Uranium Exploration"},
+    "AMPS": {"price": 3.50, "hist_vol": 0.48, "sector": "Solar Utilities"},
+    "LODE": {"price": 0.45, "hist_vol": 0.90, "sector": "Renewable Metals"},
+    "WWR": {"price": 0.85, "hist_vol": 0.85, "sector": "Battery Graphite"},
+    "GEOS": {"price": 4.90, "hist_vol": 0.55, "sector": "Seismic Instruments"},
+    "SHIP": {"price": 4.20, "hist_vol": 0.62, "sector": "Dry Bulk Shipping"},
+    "CTRM": {"price": 0.95, "hist_vol": 0.80, "sector": "Maritime Transport"},
+    "RKDA": {"price": 1.80, "hist_vol": 1.10, "sector": "Crop Genetics"},
+    "GEVO": {"price": 0.90, "hist_vol": 0.85, "sector": "Biofuels"}
+}
+
 def get_earth_velocity(days_since_perihelion):
     mean_anomaly = (2.0 * math.pi * days_since_perihelion) / T_YEAR
     return V_MEAN * (1.0 + E * math.cos(mean_anomaly))
@@ -150,7 +165,9 @@ def main():
     maturities = [2, 3, 5, 7, 14, 30]
     strike_offsets = [0.90, 0.95, 1.00, 1.05, 1.10]
     
-    for asset_name, info in ASSETS.items():
+    # Combine standard assets and penny stocks
+    combined_assets = {**ASSETS, **PENNY_STOCKS}
+    for asset_name, info in combined_assets.items():
         S = info["price"]
         sigma_base = info["hist_vol"]
         print(f"  [ASSET] {asset_name:12s} | Spot: ${S:.2f} | Base Vol: {sigma_base*100:.1f}%")
