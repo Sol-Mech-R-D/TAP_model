@@ -98,6 +98,7 @@ PUBLIC_FILES = [
     "docs/TAP_Tetrahedral_Sweep_Results.md",
     "src/run_ratchet_test_auto.py",
     "docs/TAP_Ratchet_Sweep_Results.md",
+    "docs/TAP_Coupled_Waveguide_Brainstorm.md",
     "assets/tap_ratchet_sweep_results.png",
     "TERMUX_NOTE.md",
     "PXL_20260620_152100745.jpg",
