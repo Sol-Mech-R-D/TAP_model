@@ -105,6 +105,7 @@ PUBLIC_FILES = [
     "assets/tap_ratchet_sweep_results.png",
     "src/run_all_sweeps.py",
     "docs/TAP_Coupled_Waveguide_All_Results.md",
+    "docs/TAP_Double_DDCFET_Cascade.md",
     "assets/tap_coupled_frequency_sweep.png",
     "assets/tap_coupled_decay_sweep.png",
     "assets/tap_coupled_floquet_sweep.png",
