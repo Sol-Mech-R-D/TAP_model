@@ -103,6 +103,40 @@ void fire_phase_pulses(int phase_delay, int cycles) {
   }
 }
 
+// Generic pulse generator with variable frequency and phase delay
+void fire_phase_pulses_variable(int freq_hz, int phase_delay_us, int cycles) {
+  long period_us = 1000000L / freq_hz;
+  long pulse_width = period_us / 4; // 25% duty cycle
+  if (pulse_width < 2) pulse_width = 2; // safety clamp
+  
+  for (int i = 0; i < cycles; i++) {
+    if (phase_delay_us < pulse_width) {
+      digitalWrite(TX1_PIN, HIGH);
+      delayMicroseconds(phase_delay_us);
+      digitalWrite(TX2_PIN, HIGH);
+      delayMicroseconds(pulse_width - phase_delay_us);
+      digitalWrite(TX1_PIN, LOW);
+      delayMicroseconds(phase_delay_us);
+      digitalWrite(TX2_PIN, LOW);
+      delayMicroseconds(period_us - pulse_width - phase_delay_us);
+    } else {
+      digitalWrite(TX1_PIN, HIGH);
+      delayMicroseconds(pulse_width);
+      digitalWrite(TX1_PIN, LOW);
+      delayMicroseconds(phase_delay_us - pulse_width);
+      digitalWrite(TX2_PIN, HIGH);
+      delayMicroseconds(pulse_width);
+      digitalWrite(TX2_PIN, LOW);
+      long remaining = period_us - phase_delay_us - pulse_width;
+      if (remaining > 0) {
+        delayMicroseconds(remaining);
+      } else {
+        delayMicroseconds(2);
+      }
+    }
+  }
+}
+
 // Tetrahedral Phase Sweep for the 6cap Tetrahedron (direct AC measurement)
 void run_tetrahedral_phase_sweep() {
   pinMode(RX_PIN, INPUT_PULLUP); // enable pull-up strictly for AC sweeps
@@ -142,25 +176,20 @@ void run_tetrahedral_phase_sweep() {
 void active_software_discharge() {
   pinMode(RX_PIN, OUTPUT);
   digitalWrite(RX_PIN, LOW);
-  delay(200); // wait for charge to flow to GND (extended to ensure 10uF is fully drained)
+  delay(200); // wait for charge to flow to GND
   pinMode(RX_PIN, INPUT); // return to high-impedance read state
   delay(20);
 }
 
 // Coupled Waveguide Phase Sweep ('c')
-// Measures accumulated DC voltage on C2 resulting from AC phase interference output from Tetrahedron Node C
 void run_coupled_phase_sweep() {
   Serial.println("\n--- START COUPLED WAVEGUIDE PHASE SWEEP ---");
-  pinMode(RX_PIN, INPUT); // keep in high-impedance input mode for reading DC voltage
+  pinMode(RX_PIN, INPUT);
   
   for (int phase_delay = 0; phase_delay <= 115; phase_delay += 5) {
-    // 1. software discharge the C2 reservoir
     active_software_discharge();
-    
-    // 2. Fire 2000 phase-delayed pulse cycles to pump the rectifier
     fire_phase_pulses(phase_delay, 2000);
     
-    // 3. Read the accumulated DC voltage on C2 (Pin A0)
     int val = analogRead(RX_PIN);
     float voltage = (val / 1023.0) * 5.0;
     
@@ -172,13 +201,150 @@ void run_coupled_phase_sweep() {
     Serial.print(voltage);
     Serial.println("V");
     
-    delay(100); // short settle delay
+    delay(100);
   }
   Serial.println("--- END COUPLED WAVEGUIDE PHASE SWEEP ---");
 }
 
+// Option 1: Resonant Spectral Sweep ('s') - Frequency Sweep
+void run_resonant_spectral_sweep() {
+  Serial.println("\n--- START RESONANT SPECTRAL SWEEP ---");
+  pinMode(RX_PIN, INPUT);
+  
+  for (int freq = 1000; freq <= 15000; freq += 250) {
+    active_software_discharge();
+    
+    // Calculate cycles to pump for a constant 400ms duration
+    long period_us = 1000000L / freq;
+    int cycles = 400000L / period_us;
+    if (cycles < 10) cycles = 10;
+    
+    // Fire with 0us phase delay (fully constructive)
+    fire_phase_pulses_variable(freq, 0, cycles);
+    
+    int val = analogRead(RX_PIN);
+    float voltage = (val / 1023.0) * 5.0;
+    
+    Serial.print("Freq:");
+    Serial.print(freq);
+    Serial.print("Hz | ADC:");
+    Serial.print(val);
+    Serial.print(" | Voltage:");
+    Serial.print(voltage);
+    Serial.println("V");
+    
+    delay(50);
+  }
+  Serial.println("--- END RESONANT SPECTRAL SWEEP ---");
+}
+
+// Option 2: T1 Energy Relaxation Decay Sweep ('d')
+void run_t1_relaxation_sweep() {
+  Serial.println("\n--- START T1 RELAXATION SWEEP ---");
+  pinMode(RX_PIN, INPUT);
+  
+  active_software_discharge();
+  
+  // 1. Pump capacitor to maximum using constructive 4.5kHz pulses for 1.2 seconds
+  Serial.println("  [PUMP] Charging storage reservoir...");
+  fire_phase_pulses(0, 5000);
+  
+  // 2. Shut off drivers immediately
+  digitalWrite(TX1_PIN, LOW);
+  digitalWrite(TX2_PIN, LOW);
+  
+  // 3. Monitor decay at high resolution (every 50ms for 5 seconds)
+  Serial.println("  [MONITOR] Measuring decay curve...");
+  for (int i = 0; i <= 100; i++) {
+    int val = analogRead(RX_PIN);
+    float voltage = (val / 1023.0) * 5.0;
+    
+    Serial.print("DecayTime:");
+    Serial.print(i * 50);
+    Serial.print("ms | ADC:");
+    Serial.print(val);
+    Serial.print(" | Voltage:");
+    Serial.print(voltage);
+    Serial.println("V");
+    
+    delay(50);
+  }
+  Serial.println("--- END T1 RELAXATION SWEEP ---");
+}
+
+// Option 3: Two-Tone Floquet Drive Sweep ('w')
+// Sweeps the sub-harmonic modulation ratio (ratio of envelope period to carrier period)
+void run_two_tone_floquet_sweep() {
+  Serial.println("\n--- START TWO-TONE FLOQUET SWEEP ---");
+  pinMode(RX_PIN, INPUT);
+  
+  // Sweep carrier frequency from 2kHz to 12kHz in 500Hz steps with a fixed 1:2 Floquet subharmonic pump
+  for (int carrier_freq = 2000; carrier_freq <= 12000; carrier_freq += 500) {
+    active_software_discharge();
+    
+    // We drive TX2 at carrier_freq, and TX1 at carrier_freq / 2 (sub-harmonic pump)
+    long period_us = 1000000L / carrier_freq;
+    int cycles = 400000L / period_us;
+    
+    // Phase delay is set to half the period of the subharmonic pump
+    long subharmonic_delay = period_us; // 1 cycle phase delay of carrier = 0.5 cycle of subharmonic
+    
+    fire_phase_pulses_variable(carrier_freq / 2, subharmonic_delay, cycles / 2);
+    
+    int val = analogRead(RX_PIN);
+    float voltage = (val / 1023.0) * 5.0;
+    
+    Serial.print("CarrierFreq:");
+    Serial.print(carrier_freq);
+    Serial.print("Hz | ADC:");
+    Serial.print(val);
+    Serial.print(" | Voltage:");
+    Serial.print(voltage);
+    Serial.println("V");
+    
+    delay(50);
+  }
+  Serial.println("--- END TWO-TONE FLOQUET SWEEP ---");
+}
+
+// Option 4: Combined 2D Spatio-Temporal Sweep ('m')
+// Sweeps both Frequency (2kHz to 12kHz) and Phase Delay (0 to 80us) to map a 2D eigenmode heatmap.
+void run_combined_2d_sweep() {
+  Serial.println("\n--- START COMBINED 2D SWEEP ---");
+  pinMode(RX_PIN, INPUT);
+  
+  for (int freq = 2000; freq <= 10000; freq += 1000) {
+    long period_us = 1000000L / freq;
+    long pulse_width = period_us / 4;
+    
+    for (int phase = 0; phase <= 80; phase += 10) {
+      active_software_discharge();
+      
+      int cycles = 200000L / period_us;
+      if (cycles < 10) cycles = 10;
+      
+      fire_phase_pulses_variable(freq, phase, cycles);
+      
+      int val = analogRead(RX_PIN);
+      float voltage = (val / 1023.0) * 5.0;
+      
+      Serial.print("2D | Freq:");
+      Serial.print(freq);
+      Serial.print("Hz | Phase:");
+      Serial.print(phase);
+      Serial.print("us | ADC:");
+      Serial.print(val);
+      Serial.print(" | Voltage:");
+      Serial.print(voltage);
+      Serial.println("V");
+      
+      delay(20);
+    }
+  }
+  Serial.println("--- END COMBINED 2D SWEEP ---");
+}
+
 // Ratchet Forward Sequence (pumps charge)
-// Uses optimized 15us pulses to charge C1 (10nF) while maintaining charge accumulation on C2 (1uF/10uF)
 void run_ratchet_forward() {
   Serial.println("\n--- RATCHET SEQUENCE: FORWARD (Pumping Charge) ---");
   
@@ -191,10 +357,6 @@ void run_ratchet_forward() {
   delay(100);
 
   // Pulse in the correct order:
-  // t1: D5 (TX2) HIGH for 15us to charge C1
-  // t2: D3 (TX1) HIGH for 15us to pump charge into C2
-  // t3: D5 LOW
-  // t4: D3 LOW
   for (int step = 0; step < 100; step++) {
     digitalWrite(TX2_PIN, HIGH);
     delayMicroseconds(15);
@@ -233,10 +395,6 @@ void run_ratchet_backward() {
   delay(100);
 
   // Pulse in the wrong order:
-  // t1: D3 (TX1) HIGH 
-  // t2: D5 (TX2) HIGH 
-  // t3: D3 LOW
-  // t4: D5 LOW
   for (int step = 0; step < 100; step++) {
     digitalWrite(TX1_PIN, HIGH);
     delayMicroseconds(15);
@@ -269,8 +427,6 @@ void setup() {
   pinMode(TX2_PIN, OUTPUT);
   pinMode(13, OUTPUT);
   
-  // Set RX_PIN to standard high-impedance INPUT by default (NO PULLUP)
-  // to prevent charging the storage capacitor in ratchet tests
   pinMode(RX_PIN, INPUT);
   digitalWrite(TX1_PIN, LOW);
   digitalWrite(TX2_PIN, LOW);
@@ -280,6 +436,10 @@ void setup() {
   Serial.println("  Commands: 't'->Tetrahedral Sweep, '5'->Decay Sweep");
   Serial.println("            'f'->Ratchet Forward,   'b'->Ratchet Reversed");
   Serial.println("            'c'->Coupled Waveguide Phase Sweep");
+  Serial.println("            's'->Resonant Spectral Sweep");
+  Serial.println("            'd'->T1 Energy Relaxation Sweep");
+  Serial.println("            'w'->Two-Tone Floquet Sweep");
+  Serial.println("            'm'->Combined 2D Heatmap Sweep");
   Serial.println("==================================================");
 }
 
@@ -296,6 +456,14 @@ void loop() {
       run_ratchet_backward();
     } else if (cmd == 'c') {
       run_coupled_phase_sweep();
+    } else if (cmd == 's') {
+      run_resonant_spectral_sweep();
+    } else if (cmd == 'd') {
+      run_t1_relaxation_sweep();
+    } else if (cmd == 'w') {
+      run_two_tone_floquet_sweep();
+    } else if (cmd == 'm') {
+      run_combined_2d_sweep();
     } else if (cmd == '0') {
       continuous_print = !continuous_print;
       if (continuous_print) {
