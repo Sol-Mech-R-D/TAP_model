@@ -1,0 +1,10 @@
+{
+  "power_grids": {
+    "texas_ercot_sag_stress": 1.0183974551839519,
+    "europe_entsoe_sag_stress": 0.47924586126303614
+  },
+  "supply_lines": {
+    "rail_sun_kink_buckling_risk": 1.1362538868474565,
+    "panama_canal_draft_restriction": 0.02161308704427576
+  }
+}

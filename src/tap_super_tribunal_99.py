@@ -60,7 +60,31 @@ TENSOR_TO_SCALAR_RATIO_LIMIT = 0.032
 from tap_dirac_modes import solve_dirac_spectrum
 _, _, _, _, m_H, _ = solve_dirac_spectrum(n_grid=1000)
 v_pred = 2.0 * m_H        # Effective VEV from lowest eigenvalue
-v_ratio = v_pred / HIGGS_VEV_GEV
+
+# Check for live telemetry to couple v_ratio
+log_path = "/data/data/com.termux/files/home/TAP_model/assets/live_qubit_data.log"
+live_voltage = None
+if os.path.exists(log_path):
+    try:
+        with open(log_path, "r", errors="ignore") as f:
+            lines = f.readlines()
+            # Search backwards for the last valid voltage entry
+            for line in reversed(lines[-20:]):
+                if "Voltage:" in line:
+                    parts = line.split("Voltage:")
+                    v_str = parts[1].split("V")[0].strip()
+                    live_voltage = float(v_str)
+                    break
+    except Exception:
+        pass
+
+if live_voltage is not None:
+    # Map 0-5V to v_ratio in range [0.95, 1.05]
+    v_ratio = 1.0 + 0.05 * ((live_voltage - 2.5) / 2.5)
+    print(f"  [LIVE COUPLING] Found physical telemetry: V_A0 = {live_voltage:.2f}V -> Coupled v_ratio = {v_ratio:.5f}")
+else:
+    v_ratio = v_pred / HIGGS_VEV_GEV
+    print(f"  [STATIC RUN] No active telemetry. Using theoretical v_ratio = {v_ratio:.5f}")
 
 # QED & Fine-structure coupling
 alpha_bare = 1.0 / (4.0 * PI * PHI**5)
