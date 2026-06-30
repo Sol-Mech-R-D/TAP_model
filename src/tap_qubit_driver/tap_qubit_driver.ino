@@ -1,8 +1,8 @@
 #include <Arduino.h>
 
-const int TX1_PIN = 3;  // Primary transmitter (Node A)
-const int TX2_PIN = 5;  // Floquet pump / Secondary transmitter (Node B)
-const int RX_PIN = A1;  // Tetrahedral feedback receiver (Node C)
+const int TX1_PIN = 3;  // Node A (Tetrahedron) / Pump Pin D3 (Ratchet C1)
+const int TX2_PIN = 5;  // Node B (Tetrahedron) / Tx Pin D5 (Ratchet D1)
+const int RX_PIN = A0;  // Node C (Tetrahedron) / Read Pin A0 (Ratchet C2)
 const int SAMPLE_COUNT = 100;
 
 bool continuous_print = false;
@@ -40,6 +40,7 @@ void run_floquet_pump(int pin, int duration_ms) {
 
 // Active TAP Decay Sweep (Method 5)
 void run_active_tap_sweep() {
+  pinMode(RX_PIN, INPUT_PULLUP); // enable pull-up strictly for AC sweeps
   Serial.println("\n--- START ACTIVE TAP STABILIZATION SWEEP (METHOD: 5) ---");
   for (int delay_ms = 0; delay_ms <= 300; delay_ms += 10) {
     send_pulse_stacked(TX2_PIN);
@@ -76,11 +77,6 @@ void run_active_tap_sweep() {
 void fire_phase_pulses(int phase_delay, int cycles) {
   for (int i = 0; i < cycles; i++) {
     if (phase_delay < 50) {
-      // Overlapping:
-      // t = 0: TX1 -> HIGH
-      // t = phase_delay: TX2 -> HIGH
-      // t = 50: TX1 -> LOW
-      // t = 50 + phase_delay: TX2 -> LOW
       digitalWrite(TX1_PIN, HIGH);
       delayMicroseconds(phase_delay);
       digitalWrite(TX2_PIN, HIGH);
@@ -88,13 +84,8 @@ void fire_phase_pulses(int phase_delay, int cycles) {
       digitalWrite(TX1_PIN, LOW);
       delayMicroseconds(phase_delay);
       digitalWrite(TX2_PIN, LOW);
-      delayMicroseconds(122 - phase_delay); // 122 + 50 + 50 = 222 us total period
+      delayMicroseconds(122 - phase_delay);
     } else {
-      // Non-overlapping:
-      // t = 0: TX1 -> HIGH
-      // t = 50: TX1 -> LOW
-      // t = phase_delay: TX2 -> HIGH
-      // t = phase_delay + 50: TX2 -> LOW
       digitalWrite(TX1_PIN, HIGH);
       delayMicroseconds(50);
       digitalWrite(TX1_PIN, LOW);
@@ -102,7 +93,6 @@ void fire_phase_pulses(int phase_delay, int cycles) {
       digitalWrite(TX2_PIN, HIGH);
       delayMicroseconds(50);
       digitalWrite(TX2_PIN, LOW);
-      // Wait remaining time to keep period exactly at 222 us
       int remaining = 122 - phase_delay;
       if (remaining > 0) {
         delayMicroseconds(remaining);
@@ -113,14 +103,12 @@ void fire_phase_pulses(int phase_delay, int cycles) {
   }
 }
 
-// New: Tetrahedral Phase Sweep for the 6cap Tetrahedron
-// Sweeps the phase delay between Node A (Pin 3) and Node B (Pin 5)
-// to show constructive (0us) and destructive (111us) wave interference.
+// Tetrahedral Phase Sweep for the 6cap Tetrahedron
 void run_tetrahedral_phase_sweep() {
+  pinMode(RX_PIN, INPUT_PULLUP); // enable pull-up strictly for AC sweeps
   Serial.println("\n--- START TETRAHEDRAL PHASE SWEEP ---");
   
   for (int phase_delay = 0; phase_delay <= 115; phase_delay += 5) {
-    // Fire phase-interfered cycles
     fire_phase_pulses(phase_delay, 30);
     
     // Sample receiver Node C (Pin A1)
@@ -150,20 +138,117 @@ void run_tetrahedral_phase_sweep() {
   Serial.println("--- END TETRAHEDRAL PHASE SWEEP ---");
 }
 
+// Helper function to actively drain Node 2 (C2) to GND using Pin A1 in software
+void active_software_discharge() {
+  pinMode(RX_PIN, OUTPUT);
+  digitalWrite(RX_PIN, LOW);
+  delay(200); // wait for charge to flow to GND (extended to ensure 10uF is fully drained)
+  pinMode(RX_PIN, INPUT); // return to high-impedance read state
+  delay(20);
+}
+
+// Ratchet Forward Sequence (pumps charge)
+// Uses optimized 15us pulses to charge C1 (10nF) while maintaining charge accumulation on C2 (1uF/10uF)
+void run_ratchet_forward() {
+  Serial.println("\n--- RATCHET SEQUENCE: FORWARD (Pumping Charge) ---");
+  
+  // 1. Software Discharge C2 first
+  active_software_discharge();
+  
+  // Clean start: hold pins low first
+  digitalWrite(TX1_PIN, LOW);
+  digitalWrite(TX2_PIN, LOW);
+  delay(100);
+
+  // Pulse in the correct order:
+  // t1: D5 (TX2) HIGH for 15us to charge C1
+  // t2: D3 (TX1) HIGH for 15us to pump charge into C2
+  // t3: D5 LOW
+  // t4: D3 LOW
+  for (int step = 0; step < 100; step++) {
+    digitalWrite(TX2_PIN, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(TX1_PIN, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(TX2_PIN, LOW);
+    delayMicroseconds(15);
+    digitalWrite(TX1_PIN, LOW);
+    delayMicroseconds(15);
+    
+    if (step % 5 == 0) {
+      int val = analogRead(RX_PIN);
+      float voltage = (val / 1023.0) * 5.0;
+      Serial.print("Step:");
+      Serial.print(step);
+      Serial.print(" | ADC:");
+      Serial.print(val);
+      Serial.print(" | Voltage:");
+      Serial.print(voltage);
+      Serial.println("V");
+    }
+    delay(10);
+  }
+  Serial.println("--- END RATCHET SEQUENCE: FORWARD ---");
+}
+
+// Ratchet Reversed Sequence (blocks charge)
+void run_ratchet_backward() {
+  Serial.println("\n--- RATCHET SEQUENCE: REVERSED (No Pumping) ---");
+  
+  // 1. Software Discharge C2 first
+  active_software_discharge();
+  
+  digitalWrite(TX1_PIN, LOW);
+  digitalWrite(TX2_PIN, LOW);
+  delay(100);
+
+  // Pulse in the wrong order:
+  // t1: D3 (TX1) HIGH 
+  // t2: D5 (TX2) HIGH 
+  // t3: D3 LOW
+  // t4: D5 LOW
+  for (int step = 0; step < 100; step++) {
+    digitalWrite(TX1_PIN, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(TX2_PIN, HIGH);
+    delayMicroseconds(15);
+    digitalWrite(TX1_PIN, LOW);
+    delayMicroseconds(15);
+    digitalWrite(TX2_PIN, LOW);
+    delayMicroseconds(15);
+    
+    if (step % 5 == 0) {
+      int val = analogRead(RX_PIN);
+      float voltage = (val / 1023.0) * 5.0;
+      Serial.print("Step:");
+      Serial.print(step);
+      Serial.print(" | ADC:");
+      Serial.print(val);
+      Serial.print(" | Voltage:");
+      Serial.print(voltage);
+      Serial.println("V");
+    }
+    delay(10);
+  }
+  Serial.println("--- END RATCHET SEQUENCE: REVERSED ---");
+}
+
 void setup() {
   Serial.begin(115200);
   pinMode(TX1_PIN, OUTPUT);
   pinMode(TX2_PIN, OUTPUT);
   pinMode(13, OUTPUT);
   
-  // Enable internal pull-up on RX_PIN to stop floating hum
-  pinMode(RX_PIN, INPUT_PULLUP);
+  // Set RX_PIN to standard high-impedance INPUT by default (NO PULLUP)
+  // to prevent charging the storage capacitor in ratchet tests
+  pinMode(RX_PIN, INPUT);
   digitalWrite(TX1_PIN, LOW);
   digitalWrite(TX2_PIN, LOW);
   
   Serial.println("==================================================");
   Serial.println("  TAP ACTIVE STABILIZATION CORE (D3 + D5 -> A1)   ");
   Serial.println("  Commands: 't'->Tetrahedral Sweep, '5'->Decay Sweep");
+  Serial.println("            'f'->Ratchet Forward,   'b'->Ratchet Reversed");
   Serial.println("==================================================");
 }
 
@@ -174,6 +259,10 @@ void loop() {
       run_tetrahedral_phase_sweep();
     } else if (cmd == '5') {
       run_active_tap_sweep();
+    } else if (cmd == 'f') {
+      run_ratchet_forward();
+    } else if (cmd == 'b') {
+      run_ratchet_backward();
     } else if (cmd == '0') {
       continuous_print = !continuous_print;
       if (continuous_print) {
