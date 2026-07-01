@@ -1,5 +1,5 @@
 // TAP Integrated Standalone Chassis & Waveguide
-// Optimized for direct cut USB-C cable wiring (discrete wires) and solderless contacts
+// Features: Fintenna wire-routing guides, toolless contacts, & 4-channel coaxial bus tunnels
 
 module tetrahedron_frame(side_length = 50, thickness = 4) {
     // Vertices of a regular tetrahedron centered at origin
@@ -89,18 +89,29 @@ module base_cradle(width = 80, length = 110, height = 15) {
         translate([0, 0, -height/2])
         cube([width, length, height], center = true);
         
-        // 1. Cable entry port (4.2mm tunnel from back of the chassis for cut USB-C cable)
+        // 1. Cable entry port (5.5mm tunnel from back of the chassis for 16-wire USB-C cable)
         translate([0, length/2, -height/2])
         rotate([90, 0, 0])
-        cylinder(h = 30, d = 4.2, center = true, $fn=12);
+        cylinder(h = 30, d = 5.5, center = true, $fn=12);
         
-        // 2. Internal wire-distribution cavity where discrete +5V & GND wires split
+        // 2. Internal wire-distribution cavity where discrete power/CC/data wires split
         translate([0, length/4, -height/2 + 2])
-        cube([15, 20, 10.02], center = true);
+        cube([20, 25, 10.02], center = true);
         
-        // 3. Main centered recess for DCD Shift Registers, Clock switch, and Diode ROM
-        translate([0, -10, 2])
-        cube([60, 70, 15.02], center = true);
+        // 3. Register Recess (Right side - holds DCD Shift Registers & Program ROM)
+        translate([22, -10, 2])
+        cube([25, 70, 15.02], center = true);
+        
+        // 4. ALU Recess (Left side - holds 1-Bit Full Adder & Carry Latch)
+        translate([-22, -10, 2])
+        cube([25, 70, 15.02], center = true);
+        
+        // 5. 4x Coaxial Bus Tunnels (2.0mm tunnels linking Register Recess to ALU Recess)
+        for (y = [-25, -10, 5, 20]) {
+            translate([0, y, 2.5])
+            rotate([0, 90, 0])
+            cylinder(h = 22, d = 2.0, center = true, $fn=12);
+        }
     }
 }
 
