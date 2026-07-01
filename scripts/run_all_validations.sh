@@ -137,6 +137,19 @@ if [[ "$SUITE" == "all" || "$SUITE" == "sims" ]]; then
     # cosmic breath signatures. The most testable claim in the model.
     run_test "5-HT2A ↔ parent-sim coupling (tap_5ht2a_epigenetic_coupling_sim.py)" \
         "python3 src/tap_5ht2a_epigenetic_coupling_sim.py $PLOT_ARG"
+
+    # 1.7: NEW v5.0 — Myers' Anatomy Trains fascia network
+    # The substrate below the cascade: 12 myofascial meridians with
+    # dual contralateral spirals (the "twin dragons"), piezo coupling,
+    # lymph flow. The cascade reaches the substrate level.
+    run_test "Myers Anatomy Trains fascia sim (tap_fascia_sim.py)" \
+        "python3 src/tap_fascia_sim.py $PLOT_ARG"
+
+    # 1.8: NEW v5.0 — Full lymphatic cascade (parent → fascia → lymph)
+    # Closes the loop from epigenetic setpoint through fascia state
+    # to lymph flow, demonstrating the full substrate-channel chain.
+    run_test "Lymphatic cascade (tap_lymphatic_cascade_sim.py)" \
+        "python3 src/tap_lymphatic_cascade_sim.py $PLOT_ARG"
 fi
 
 # ─────────────────────────────────────────────────────────────────────────────

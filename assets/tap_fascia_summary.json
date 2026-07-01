@@ -1,0 +1,34 @@
+{
+  "stress": {
+    "mean_tension": 0.5186692307692309,
+    "mean_piezo": 0.33130769230769225,
+    "mean_lymph": 0.25083076923076925,
+    "mean_coherence": 0.9034,
+    "twin_dragon_piezo": 0.70455,
+    "twin_dragon_lymph": 0.21155000000000002,
+    "twin_dragon_em_reading": 0.70455,
+    "spiral_coupling": 0.0001
+  },
+  "tensegrity": {
+    "mean_tension": 0.04145384615384615,
+    "mean_piezo": 0.026361538461538457,
+    "mean_lymph": 0.6583923076923076,
+    "mean_coherence": 0.9966,
+    "twin_dragon_piezo": 0.00105,
+    "twin_dragon_lymph": 0.7915000000000001,
+    "twin_dragon_em_reading": 0.00105,
+    "spiral_coupling": 0.1879
+  },
+  "ayahuasca": {
+    "mean_tension": 0.29327692307692305,
+    "mean_piezo": 0.1858,
+    "mean_lymph": 0.35244615384615385,
+    "mean_coherence": 0.9691,
+    "twin_dragon_piezo": 0.37965000000000004,
+    "twin_dragon_lymph": 0.3679,
+    "twin_dragon_em_reading": 0.37965000000000004,
+    "spiral_coupling": 0.0004
+  },
+  "n_trains": 13,
+  "n_spiral": 2
+}
