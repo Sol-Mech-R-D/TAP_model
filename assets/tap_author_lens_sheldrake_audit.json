@@ -1,0 +1,106 @@
+{
+  "author_key": "sheldrake",
+  "author_name": "Rupert Sheldrake",
+  "primary_works": [
+    "A New Science of Life (1981)",
+    "Dogs That Know (1999)",
+    "The Sense of Being Stared At (2003)"
+  ],
+  "primary_claim": "Morphic resonance: self-organizing wholes are influenced by similar past wholes via non-local fields. Memory is inherent in nature; biological and social forms are shaped by accumulated influence of similar forms.",
+  "audit_timestamp": "2026-07-01T16:12:59.918409",
+  "verdict_summary": {
+    "TAP-AUGMENTED": 4,
+    "TAP-LEGAL": 2,
+    "TAP-SILENT": 1
+  },
+  "components": [
+    {
+      "id": "morphic_fields",
+      "summary": "Non-local 'morphic fields' carry information from past to present",
+      "audits": [
+        {
+          "primitive_id": "breath_clock",
+          "primitive_domain": "cosmology / time / rhythm",
+          "audit_question": "Does the author invoke cosmic-breath / Exhale-Inhale rhythms at any scale?",
+          "tap_claim": "Spacetime pulsates through Fibonacci dimensions at rates set by the breath clock (Theory Paper \u00a73).",
+          "author_component": "Non-local 'morphic fields' carry information from past to present",
+          "reference": "TAP_Theory_Paper.md \u00a73",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Sheldrake's 'morphic resonance' is non-local, cumulative, and acts on form. TAP's breath clock is local (cosmic Exhale/Inhale) but the *cumulative* aspect maps to the \u03c6\u207b\u00b9\u00b3 'per-breath drift' that accumulates information across cosmic cycles. Reframing: morphic resonance may be the breath clock at smaller scales."
+        },
+        {
+          "primitive_id": "fibonacci_dimensional_cascade",
+          "primitive_domain": "structural / recursive",
+          "audit_question": "Does the author invoke a recursive cascade of dimensions (1, 2, 3, 5, 8, 13, ...)?",
+          "tap_claim": "Stable dimensions form the Fibonacci cascade. Each step is a topological bundle.",
+          "author_component": "Non-local 'morphic fields' carry information from past to present",
+          "reference": "TAP_White_Paper.md \u00a75.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Sheldrake invokes 'fields' without specifying geometry. TAP's Fibonacci cascade (1, 2, 3, 5, 8, 13) provides a specific geometry for how form propagates. The TAP claim: morphic fields are Fibonacci-bundled."
+        },
+        {
+          "primitive_id": "pheromonal_waveguide",
+          "primitive_domain": "interpersonal / endocrine",
+          "audit_question": "Does the author invoke biochemical waveguides or interpersonal chemical coupling?",
+          "tap_claim": "VOCs and pheromones form physical waveguides carrying phase information between individuals (Biochem Qubit Brainstorm \u00a71).",
+          "author_component": "Non-local 'morphic fields' carry information from past to present",
+          "reference": "TAP_Biochem_Qubit_Graphene_Brainstorm.md \u00a71",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "TAP explicitly endorses pheromonal/biochemical waveguides carrying phase information between individuals (Biochem Qubit Brainstorm \u00a71). Sheldrake's telepathy/premonition claims are TAP-LEGAL if framed as chemical-coupling at long distances (perhaps via shared environmental VOCs)."
+        }
+      ]
+    },
+    {
+      "id": "telepathy_premonition",
+      "summary": "Dogs know when owners are coming; people feel stares",
+      "audits": [
+        {
+          "primitive_id": "pheromonal_waveguide",
+          "primitive_domain": "interpersonal / endocrine",
+          "audit_question": "Does the author invoke biochemical waveguides or interpersonal chemical coupling?",
+          "tap_claim": "VOCs and pheromones form physical waveguides carrying phase information between individuals (Biochem Qubit Brainstorm \u00a71).",
+          "author_component": "Dogs know when owners are coming; people feel stares",
+          "reference": "TAP_Biochem_Qubit_Graphene_Brainstorm.md \u00a71",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "TAP explicitly endorses pheromonal/biochemical waveguides carrying phase information between individuals (Biochem Qubit Brainstorm \u00a71). Sheldrake's telepathy/premonition claims are TAP-LEGAL if framed as chemical-coupling at long distances (perhaps via shared environmental VOCs)."
+        },
+        {
+          "primitive_id": "hnsw_agency",
+          "primitive_domain": "cognition / memory / agency",
+          "audit_question": "Does the author invoke a graph/state-machine structure for cognition?",
+          "tap_claim": "sm-hnsw is the state DB. Nodes + SemanticEdges with RelationType (CAUSES, PART_OF, CONTRADICTS, SUPPORTS, SYNONYM). 5 paradigms in distance.",
+          "author_component": "Dogs know when owners are coming; people feel stares",
+          "reference": "sm-hnsw thesis (KiKaiRyu SMDB)",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Sheldrake's 'collective memory' is consistent with a structured semantic graph (HNSW with RelationType edges) that persists across instances. The 'dogs know' claim is TAP-LEGAL if the graph edges encode semantic patterns that propagate via the waveguide."
+        }
+      ]
+    },
+    {
+      "id": "crystallization_memory",
+      "summary": "Crystals form more easily where similar crystals have formed",
+      "audits": [
+        {
+          "primitive_id": "phi_cascade_timescales",
+          "primitive_domain": "biology / pharmacology",
+          "audit_question": "Does the author's mechanism use the \u03c6-cascade timescales (\u03c6\u207b\u00b2 hr, \u03c6\u207b\u2074 6hr, \u03c6\u207b\u2078 2day, \u03c6\u207b\u00b9\u2070 5day, \u03c6\u207b\u00b9\u00b3 22day)?",
+          "tap_claim": "Time-scales in biological systems are quantized in \u03c6. Multiple timescales (hormonal, signaling, receptor, chromatin, cosmic) coexist in the same cascade.",
+          "author_component": "Crystals form more easily where similar crystals have formed",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a72.1",
+          "verdict": "TAP-SILENT",
+          "verdict_rationale": "Sheldrake's claim doesn't specify timescales. TAP would need to know whether crystallization memory is \u03c6\u207b\u2074 (signaling), \u03c6\u207b\u2078 (receptor), or \u03c6\u207b\u00b9\u2070 (chromatin) to apply."
+        },
+        {
+          "primitive_id": "weyl_curvature_ceiling",
+          "primitive_domain": "high-energy / black hole / limits",
+          "audit_question": "Does the author invoke a saturation ceiling at D=13 for any quantity (Weyl curvature, particle generations, etc.)?",
+          "tap_claim": "13D is the Weyl curvature ceiling; 4th fermion generation is geometrically prohibited (White Paper \u00a75).",
+          "author_component": "Crystals form more easily where similar crystals have formed",
+          "reference": "TAP_White_Paper.md \u00a75.1, TAP_Theory_Paper.md \u00a77.2",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Sheldrake claims morphic fields are unbounded. TAP imposes a 13D ceiling (\u03c6\u00b9\u00b3 \u2248 521). Morphic fields may be bounded by Weyl curvature saturation, giving a specific maximum 'memory depth.'"
+        }
+      ]
+    }
+  ]
+}

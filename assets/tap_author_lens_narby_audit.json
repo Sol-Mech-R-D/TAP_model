@@ -1,0 +1,115 @@
+{
+  "author_key": "narby",
+  "author_name": "Jeremy Narby",
+  "primary_works": [
+    "The Cosmic Serpent (1998)",
+    "Intelligence in Nature (2005)"
+  ],
+  "primary_claim": "Ayahuasca's DMT enables direct molecular dialogue with DNA. Cross-cultural serpent+DNA symbolism is evidence of shamans empirically accessing DNA's information content.",
+  "audit_timestamp": "2026-07-01T16:12:59.501794",
+  "verdict_summary": {
+    "TAP-AUGMENTED": 3,
+    "TAP-LEGAL": 3,
+    "TAP-ILLEGAL": 2
+  },
+  "components": [
+    {
+      "id": "structured_info",
+      "summary": "Ayahuasca produces structured visionary content",
+      "audits": [
+        {
+          "primitive_id": "microtubule_coherence",
+          "primitive_domain": "consciousness / neuroscience",
+          "audit_question": "Does the author invoke quantum coherence in the brain and at what timescale?",
+          "tap_claim": "Microtubule coherence is shielded to 939.57 fs by Fibonacci lattice geometry (Theory Paper \u00a77.5). Sub-picosecond, not millisecond.",
+          "author_component": "Ayahuasca produces structured visionary content",
+          "reference": "TAP_Theory_Paper.md \u00a77.5",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Narby invokes vision as 'seeing' DNA. TAP reframes as sub-picosecond gate event + classical cascade, not direct perception. The 1/4 interface opens; the user's narrative reconstructs."
+        },
+        {
+          "primitive_id": "soliton_3_1",
+          "primitive_domain": "biology / consciousness",
+          "audit_question": "Does the author treat the focal system as a 3:1 structural/interface soliton, with the 1/4 interface carrying information?",
+          "tap_claim": "Any 3D stable system has a 1/4 interface that is informational (Theory Paper \u00a72).",
+          "author_component": "Ayahuasca produces structured visionary content",
+          "reference": "TAP_White_Paper.md \u00a72.1, TAP_Theory_Paper.md \u00a72",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "DNA is a 3:1 soliton; the 1/4 hydration shell is informational. Narby's 'DNA is intelligent' is TAP-endorsed in the weak sense."
+        },
+        {
+          "primitive_id": "phi_cascade_timescales",
+          "primitive_domain": "biology / pharmacology",
+          "audit_question": "Does the author's mechanism use the \u03c6-cascade timescales (\u03c6\u207b\u00b2 hr, \u03c6\u207b\u2074 6hr, \u03c6\u207b\u2078 2day, \u03c6\u207b\u00b9\u2070 5day, \u03c6\u207b\u00b9\u00b3 22day)?",
+          "tap_claim": "Time-scales in biological systems are quantized in \u03c6. Multiple timescales (hormonal, signaling, receptor, chromatin, cosmic) coexist in the same cascade.",
+          "author_component": "Ayahuasca produces structured visionary content",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a72.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Narby doesn't engage timescales. The 5-HT2A sim shows the 4-stage \u03c6-cascade (hormonal \u03c6\u207b\u00b2, signaling \u03c6\u207b\u2074, receptor \u03c6\u207b\u2078, chromatin \u03c6\u207b\u00b9\u2070) is the actual bridge from DMT to visionary experience."
+        }
+      ]
+    },
+    {
+      "id": "dna_as_source",
+      "summary": "DNA is the molecular target; the 1/4 interface IS the source",
+      "audits": [
+        {
+          "primitive_id": "dna_topology",
+          "primitive_domain": "biology / DNA / genetic code",
+          "audit_question": "Does the author treat DNA as a passive storage medium or as a topological object?",
+          "tap_claim": "DNA is a Fibonacci topological object (H68 pitch, H74 hydration shell, H69 codon redundancy). The 1/4 hydration shell is the informational interface.",
+          "author_component": "DNA is the molecular target; the 1/4 interface IS the source",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a71",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "DNA is a Fibonacci topological object (H68 pitch, H74 hydration shell). Narby's intuition is correct in the strong information-theoretic sense; wrong in the encyclopedic sense."
+        },
+        {
+          "primitive_id": "soliton_3_1",
+          "primitive_domain": "biology / consciousness",
+          "audit_question": "Does the author treat the focal system as a 3:1 structural/interface soliton, with the 1/4 interface carrying information?",
+          "tap_claim": "Any 3D stable system has a 1/4 interface that is informational (Theory Paper \u00a72).",
+          "author_component": "DNA is the molecular target; the 1/4 interface IS the source",
+          "reference": "TAP_White_Paper.md \u00a72.1, TAP_Theory_Paper.md \u00a72",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "DNA is a 3:1 soliton; the 1/4 hydration shell is informational. Narby's 'DNA is intelligent' is TAP-endorsed in the weak sense."
+        },
+        {
+          "primitive_id": "phi_cascade_timescales",
+          "primitive_domain": "biology / pharmacology",
+          "audit_question": "Does the author's mechanism use the \u03c6-cascade timescales (\u03c6\u207b\u00b2 hr, \u03c6\u207b\u2074 6hr, \u03c6\u207b\u2078 2day, \u03c6\u207b\u00b9\u2070 5day, \u03c6\u207b\u00b9\u00b3 22day)?",
+          "tap_claim": "Time-scales in biological systems are quantized in \u03c6. Multiple timescales (hormonal, signaling, receptor, chromatin, cosmic) coexist in the same cascade.",
+          "author_component": "DNA is the molecular target; the 1/4 interface IS the source",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a72.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Narby doesn't engage timescales. The 5-HT2A sim shows the 4-stage \u03c6-cascade (hormonal \u03c6\u207b\u00b2, signaling \u03c6\u207b\u2074, receptor \u03c6\u207b\u2078, chromatin \u03c6\u207b\u00b9\u2070) is the actual bridge from DMT to visionary experience."
+        }
+      ]
+    },
+    {
+      "id": "serpent_motif_evidence",
+      "summary": "Cross-cultural serpent+DNA symbolism is empirical evidence",
+      "audits": [
+        {
+          "primitive_id": "universality_class",
+          "primitive_domain": "cross-cultural / convergent motif",
+          "audit_question": "Is the author inferring a specific empirical instance from what TAP would identify as a universality class?",
+          "tap_claim": "Recurrence of a motif across unrelated systems indicates a universality class, not a specific shared cause (Theory Paper \u00a71.1).",
+          "author_component": "Cross-cultural serpent+DNA symbolism is empirical evidence",
+          "reference": "TAP_Theory_Paper.md \u00a71.1",
+          "verdict": "TAP-ILLEGAL",
+          "verdict_rationale": "Narby reads cross-cultural serpent motif as evidence for DNA. TAP says the motif is a universality class (coil/serpent is the natural projection of any 1/4-interface soliton). Narby has confused a universality with a specific instance."
+        },
+        {
+          "primitive_id": "lexicon_projection",
+          "primitive_domain": "cross-cultural symbol / narrative",
+          "audit_question": "Is the author treating a culturally-specific narrative as if it were a geometric universal?",
+          "tap_claim": "The same geometric motif projects onto different cultural lexicons (snake / naga / machine elf / smoke coil). The geometry is invariant; the narrative is human.",
+          "author_component": "Cross-cultural serpent+DNA symbolism is empirical evidence",
+          "reference": "TAP_Narby_Review.md \u00a73a",
+          "verdict": "TAP-ILLEGAL",
+          "verdict_rationale": "Narby treats the Amazonian projection (cosmic anaconda) as the literal referent. TAP says the projection is culture-specific (anaconda / naga / Quetzalcoatl / machine elf), and the universal is the geometry, not the narrative."
+        }
+      ]
+    }
+  ]
+}

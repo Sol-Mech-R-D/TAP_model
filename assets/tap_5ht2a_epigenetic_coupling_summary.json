@@ -1,0 +1,24 @@
+{
+  "tensegrity": {
+    "s_setpoint": 0.582,
+    "drift_multiplier": 0.859106529209622,
+    "implied_phi_inv13": 0.0016489507951027759,
+    "implied_N_B": 8.148
+  },
+  "ayahuasca": {
+    "s_setpoint": 0.3821,
+    "drift_multiplier": 1.308557969118032,
+    "implied_phi_inv13": 0.002511618327008154,
+    "implied_N_B": 5.349399999999999
+  },
+  "baseline": {
+    "s_setpoint": 0.5,
+    "drift_multiplier": 1.0,
+    "implied_phi_inv13": 0.0019193787254996309,
+    "implied_N_B": 7.0
+  },
+  "verification": {
+    "opposite_direction_s_setpoint": "PASS",
+    "opposite_direction_cosmic_breath": "PASS"
+  }
+}

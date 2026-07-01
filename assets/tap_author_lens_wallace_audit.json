@@ -1,0 +1,115 @@
+{
+  "author_key": "wallace",
+  "author_name": "Alfred Russel Wallace",
+  "primary_works": [
+    "On the Law Which Has Regulated the Introduction of New Species (1855)",
+    "The Malay Archipelago (1869)",
+    "The World of Life (1910)"
+  ],
+  "primary_claim": "Natural selection alone is insufficient; there is a 'continuous overarching intelligence' directing the evolution of life. The universe has purpose; biological complexity is the result of an organizing principle beyond blind variation.",
+  "audit_timestamp": "2026-07-01T16:13:00.640320",
+  "verdict_summary": {
+    "TAP-AUGMENTED": 7,
+    "TAP-LEGAL": 1
+  },
+  "components": [
+    {
+      "id": "overarching_intelligence",
+      "summary": "An organizing intelligence shapes evolution",
+      "audits": [
+        {
+          "primitive_id": "hnsw_agency",
+          "primitive_domain": "cognition / memory / agency",
+          "audit_question": "Does the author invoke a graph/state-machine structure for cognition?",
+          "tap_claim": "sm-hnsw is the state DB. Nodes + SemanticEdges with RelationType (CAUSES, PART_OF, CONTRADICTS, SUPPORTS, SYNONYM). 5 paradigms in distance.",
+          "author_component": "An organizing intelligence shapes evolution",
+          "reference": "sm-hnsw thesis (KiKaiRyu SMDB)",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's 'continuous overarching intelligence' maps onto a structured semantic graph (HNSW) that spans biological and ecological scales. The 'intelligence' is the graph topology, not a homunculus. TAP-endorsed as a *structure*, with the caveat that 'intelligence' is being used metaphorically."
+        },
+        {
+          "primitive_id": "breath_clock",
+          "primitive_domain": "cosmology / time / rhythm",
+          "audit_question": "Does the author invoke cosmic-breath / Exhale-Inhale rhythms at any scale?",
+          "tap_claim": "Spacetime pulsates through Fibonacci dimensions at rates set by the breath clock (Theory Paper \u00a73).",
+          "author_component": "An organizing intelligence shapes evolution",
+          "reference": "TAP_Theory_Paper.md \u00a73",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's purpose-driven evolution is consistent with a *directed* cosmic process if 'purpose' is read as 'the structural requirement of the 3:1 soliton to maintain its 1/4 interface against degradation.' TAP-AUGMENTED: there is no teleology, but there is a topological imperative."
+        },
+        {
+          "primitive_id": "fibonacci_dimensional_cascade",
+          "primitive_domain": "structural / recursive",
+          "audit_question": "Does the author invoke a recursive cascade of dimensions (1, 2, 3, 5, 8, 13, ...)?",
+          "tap_claim": "Stable dimensions form the Fibonacci cascade. Each step is a topological bundle.",
+          "author_component": "An organizing intelligence shapes evolution",
+          "reference": "TAP_White_Paper.md \u00a75.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's biogeographic boundaries (the Wallace Line is a sharp boundary between Asian and Australian fauna) reflect deep structural discontinuities. TAP's Fibonacci cascade provides the geometric substrate: each Fibonacci step is a stable boundary, and evolution respects these boundaries."
+        }
+      ]
+    },
+    {
+      "id": "biogeography_pattern",
+      "summary": "Wallace Line and biogeographic boundaries reflect deep structure",
+      "audits": [
+        {
+          "primitive_id": "fibonacci_dimensional_cascade",
+          "primitive_domain": "structural / recursive",
+          "audit_question": "Does the author invoke a recursive cascade of dimensions (1, 2, 3, 5, 8, 13, ...)?",
+          "tap_claim": "Stable dimensions form the Fibonacci cascade. Each step is a topological bundle.",
+          "author_component": "Wallace Line and biogeographic boundaries reflect deep structure",
+          "reference": "TAP_White_Paper.md \u00a75.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's biogeographic boundaries (the Wallace Line is a sharp boundary between Asian and Australian fauna) reflect deep structural discontinuities. TAP's Fibonacci cascade provides the geometric substrate: each Fibonacci step is a stable boundary, and evolution respects these boundaries."
+        },
+        {
+          "primitive_id": "soliton_3_1",
+          "primitive_domain": "biology / consciousness",
+          "audit_question": "Does the author treat the focal system as a 3:1 structural/interface soliton, with the 1/4 interface carrying information?",
+          "tap_claim": "Any 3D stable system has a 1/4 interface that is informational (Theory Paper \u00a72).",
+          "author_component": "Wallace Line and biogeographic boundaries reflect deep structure",
+          "reference": "TAP_White_Paper.md \u00a72.1, TAP_Theory_Paper.md \u00a72",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's 'life from matter' is TAP-compatible. The 3:1 soliton structure emerges naturally from matter under the right conditions (prebiotic chemistry at mineral boundaries, Theory Paper H75). The 'organizing principle' Wallace invokes is the topological stability of the 3:1 partition."
+        }
+      ]
+    },
+    {
+      "id": "life_from_matter",
+      "summary": "Life arises from matter given the right conditions",
+      "audits": [
+        {
+          "primitive_id": "soliton_3_1",
+          "primitive_domain": "biology / consciousness",
+          "audit_question": "Does the author treat the focal system as a 3:1 structural/interface soliton, with the 1/4 interface carrying information?",
+          "tap_claim": "Any 3D stable system has a 1/4 interface that is informational (Theory Paper \u00a72).",
+          "author_component": "Life arises from matter given the right conditions",
+          "reference": "TAP_White_Paper.md \u00a72.1, TAP_Theory_Paper.md \u00a72",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's 'life from matter' is TAP-compatible. The 3:1 soliton structure emerges naturally from matter under the right conditions (prebiotic chemistry at mineral boundaries, Theory Paper H75). The 'organizing principle' Wallace invokes is the topological stability of the 3:1 partition."
+        },
+        {
+          "primitive_id": "phi_cascade_timescales",
+          "primitive_domain": "biology / pharmacology",
+          "audit_question": "Does the author's mechanism use the \u03c6-cascade timescales (\u03c6\u207b\u00b2 hr, \u03c6\u207b\u2074 6hr, \u03c6\u207b\u2078 2day, \u03c6\u207b\u00b9\u2070 5day, \u03c6\u207b\u00b9\u00b3 22day)?",
+          "tap_claim": "Time-scales in biological systems are quantized in \u03c6. Multiple timescales (hormonal, signaling, receptor, chromatin, cosmic) coexist in the same cascade.",
+          "author_component": "Life arises from matter given the right conditions",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a72.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "Wallace's evolution operates on multiple timescales (geological, biological, ecological). TAP's \u03c6-cascade provides the specific timescales: \u03c6\u207b\u2078 for receptor-level adaptation (within a species), \u03c6\u207b\u00b9\u2070 for chromatin-level (within a population), \u03c6\u207b\u00b9\u00b3 for cosmic (across species)."
+        },
+        {
+          "primitive_id": "dna_topology",
+          "primitive_domain": "biology / DNA / genetic code",
+          "audit_question": "Does the author treat DNA as a passive storage medium or as a topological object?",
+          "tap_claim": "DNA is a Fibonacci topological object (H68 pitch, H74 hydration shell, H69 codon redundancy). The 1/4 hydration shell is the informational interface.",
+          "author_component": "Life arises from matter given the right conditions",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a71",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "Wallace predates DNA's discovery, but his 'life from matter' is consistent with TAP's DNA-topology (H68-H75). The Fibonacci-derived geometry of the helix is what makes life-from-matter specifically possible at the right mineral-boundary conditions."
+        }
+      ]
+    }
+  ]
+}

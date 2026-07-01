@@ -1,0 +1,8 @@
+{
+  "final_s_setpoint": 0.582,
+  "final_t_setpoint": 0.582,
+  "drift_multiplier": 0.859106529209622,
+  "implied_phi_inv13": 0.0016489507951027759,
+  "baseline_phi_inv13": 0.0019193787254996309,
+  "phi_inv13_change_pct": -14.08934707903779
+}

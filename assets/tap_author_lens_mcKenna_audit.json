@@ -1,0 +1,126 @@
+{
+  "author_key": "mcKenna",
+  "author_name": "Terence McKenna",
+  "primary_works": [
+    "Food of the Gods (1992)",
+    "True Hallucinations (1993)",
+    "The Archaic Revival (1991)"
+  ],
+  "primary_claim": "Psilocybin mushrooms and other psychedelics are the 'strophoid' that triggered human language evolution. The 'transdimensional object at the end of time' (eschaton) is approaching as novelty increases monotonically through time.",
+  "audit_timestamp": "2026-07-01T16:13:00.275493",
+  "verdict_summary": {
+    "TAP-AUGMENTED": 7,
+    "TAP-ILLEGAL": 1,
+    "TAP-LEGAL": 1
+  },
+  "components": [
+    {
+      "id": "stoned_ape",
+      "summary": "Psychedelics drove human cognitive/language evolution",
+      "audits": [
+        {
+          "primitive_id": "phi_cascade_timescales",
+          "primitive_domain": "biology / pharmacology",
+          "audit_question": "Does the author's mechanism use the \u03c6-cascade timescales (\u03c6\u207b\u00b2 hr, \u03c6\u207b\u2074 6hr, \u03c6\u207b\u2078 2day, \u03c6\u207b\u00b9\u2070 5day, \u03c6\u207b\u00b9\u00b3 22day)?",
+          "tap_claim": "Time-scales in biological systems are quantized in \u03c6. Multiple timescales (hormonal, signaling, receptor, chromatin, cosmic) coexist in the same cascade.",
+          "author_component": "Psychedelics drove human cognitive/language evolution",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a72.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna's stoned-ape hypothesis: psilocybin drove human language evolution ~100 kya. TAP's microtubule coherence (939.57 fs) is sub-picosecond; the cascade from psilocybin to language would be: 5-HT2A binding (\u03c6\u207b\u2074 signaling) \u2192 receptor sensitivity shift (\u03c6\u207b\u2078 chronic) \u2192 chromatin consolidation (\u03c6\u207b\u00b9\u2070) \u2192 germline transmission \u2192 evolutionary selection. TAP-compatible, with specific timescales."
+        },
+        {
+          "primitive_id": "microtubule_coherence",
+          "primitive_domain": "consciousness / neuroscience",
+          "audit_question": "Does the author invoke quantum coherence in the brain and at what timescale?",
+          "tap_claim": "Microtubule coherence is shielded to 939.57 fs by Fibonacci lattice geometry (Theory Paper \u00a77.5). Sub-picosecond, not millisecond.",
+          "author_component": "Psychedelics drove human cognitive/language evolution",
+          "reference": "TAP_Theory_Paper.md \u00a77.5",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna's 'visionary' states invoke millisecond-scale perception. TAP reframes as sub-picosecond gate events, with classical cascades doing the heavy perceptual lifting. The phenomenology is real; the timescale is wrong."
+        },
+        {
+          "primitive_id": "dna_topology",
+          "primitive_domain": "biology / DNA / genetic code",
+          "audit_question": "Does the author treat DNA as a passive storage medium or as a topological object?",
+          "tap_claim": "DNA is a Fibonacci topological object (H68 pitch, H74 hydration shell, H69 codon redundancy). The 1/4 hydration shell is the informational interface.",
+          "author_component": "Psychedelics drove human cognitive/language evolution",
+          "reference": "TAP_DNA_Topology_Epigenetics.md \u00a71",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna suggests psychedelics 'unlock' latent DNA capacities. TAP's DNA-topology framework provides the mechanism: psychedelics open the 1/4 interface temporarily, allowing the chromatin state to shift. This is the material basis for 'tuning' the genome's expression without changing the sequence. TAP-legal in principle, but the *germline* transmission claim is unverified."
+        }
+      ]
+    },
+    {
+      "id": "novelty_theory",
+      "summary": "Time-wave / novelty theory: novelty increases toward eschaton",
+      "audits": [
+        {
+          "primitive_id": "breath_clock",
+          "primitive_domain": "cosmology / time / rhythm",
+          "audit_question": "Does the author invoke cosmic-breath / Exhale-Inhale rhythms at any scale?",
+          "tap_claim": "Spacetime pulsates through Fibonacci dimensions at rates set by the breath clock (Theory Paper \u00a73).",
+          "author_component": "Time-wave / novelty theory: novelty increases toward eschaton",
+          "reference": "TAP_Theory_Paper.md \u00a73",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna's novelty theory: complexity increases toward an eschaton. TAP's breath clock: cosmic Exhale/Inhale cycle. TAP-AUGMENTED if novelty corresponds to a monotonic increase in 1/4-interface information content across breath cycles. But TAP's breath is a *cyclic* event, not a one-way arrow; novelty may increase within an Exhale and reset at the Inhale."
+        },
+        {
+          "primitive_id": "weyl_curvature_ceiling",
+          "primitive_domain": "high-energy / black hole / limits",
+          "audit_question": "Does the author invoke a saturation ceiling at D=13 for any quantity (Weyl curvature, particle generations, etc.)?",
+          "tap_claim": "13D is the Weyl curvature ceiling; 4th fermion generation is geometrically prohibited (White Paper \u00a75).",
+          "author_component": "Time-wave / novelty theory: novelty increases toward eschaton",
+          "reference": "TAP_White_Paper.md \u00a75.1, TAP_Theory_Paper.md \u00a77.2",
+          "verdict": "TAP-ILLEGAL",
+          "verdict_rationale": "McKenna's eschaton is a singularity (transdimensional object at the end of time). TAP forbids singularities via the 13D Weyl curvature ceiling \u2014 the Inhale is a unitary reset, not a transcendence. The 'end of time' is a topological reset, not an escape."
+        },
+        {
+          "primitive_id": "fibonacci_dimensional_cascade",
+          "primitive_domain": "structural / recursive",
+          "audit_question": "Does the author invoke a recursive cascade of dimensions (1, 2, 3, 5, 8, 13, ...)?",
+          "tap_claim": "Stable dimensions form the Fibonacci cascade. Each step is a topological bundle.",
+          "author_component": "Time-wave / novelty theory: novelty increases toward eschaton",
+          "reference": "TAP_White_Paper.md \u00a75.1",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna's dimensional transcendence maps onto the Fibonacci cascade. The 'transdimensional object' is the 13D boundary wall; encountering it is the Exhale peak, not an escape to higher dimensions. The cascade saturates; it does not exceed."
+        }
+      ]
+    },
+    {
+      "id": "machine_elves",
+      "summary": "DMT produces self-transforming machine elves (autonomous entities)",
+      "audits": [
+        {
+          "primitive_id": "lexicon_projection",
+          "primitive_domain": "cross-cultural symbol / narrative",
+          "audit_question": "Is the author treating a culturally-specific narrative as if it were a geometric universal?",
+          "tap_claim": "The same geometric motif projects onto different cultural lexicons (snake / naga / machine elf / smoke coil). The geometry is invariant; the narrative is human.",
+          "author_component": "DMT produces self-transforming machine elves (autonomous entities)",
+          "reference": "TAP_Narby_Review.md \u00a73a",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna's 'machine elves' are the Western/modern projection of the universal coil motif (anaconda for Amazonian, naga for South Asian, machine elf for industrial Western). TAP-endorsed as a *projection*; the autonomous-entity claim is the projection being mistaken for the referent."
+        },
+        {
+          "primitive_id": "microtubule_coherence",
+          "primitive_domain": "consciousness / neuroscience",
+          "audit_question": "Does the author invoke quantum coherence in the brain and at what timescale?",
+          "tap_claim": "Microtubule coherence is shielded to 939.57 fs by Fibonacci lattice geometry (Theory Paper \u00a77.5). Sub-picosecond, not millisecond.",
+          "author_component": "DMT produces self-transforming machine elves (autonomous entities)",
+          "reference": "TAP_Theory_Paper.md \u00a77.5",
+          "verdict": "TAP-AUGMENTED",
+          "verdict_rationale": "McKenna's 'visionary' states invoke millisecond-scale perception. TAP reframes as sub-picosecond gate events, with classical cascades doing the heavy perceptual lifting. The phenomenology is real; the timescale is wrong."
+        },
+        {
+          "primitive_id": "hnsw_agency",
+          "primitive_domain": "cognition / memory / agency",
+          "audit_question": "Does the author invoke a graph/state-machine structure for cognition?",
+          "tap_claim": "sm-hnsw is the state DB. Nodes + SemanticEdges with RelationType (CAUSES, PART_OF, CONTRADICTS, SUPPORTS, SYNONYM). 5 paradigms in distance.",
+          "author_component": "DMT produces self-transforming machine elves (autonomous entities)",
+          "reference": "sm-hnsw thesis (KiKaiRyu SMDB)",
+          "verdict": "TAP-LEGAL",
+          "verdict_rationale": "Machine elves as 'autonomous entities' are consistent with semantic-graph nodes that have causal density (high RelationType weight) and can drive narrative construction. TAP-legal as a pattern-completion result, not as actual entities."
+        }
+      ]
+    }
+  ]
+}
