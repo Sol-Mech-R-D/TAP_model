@@ -1,6 +1,5 @@
 // TAP Integrated Standalone Chassis & Waveguide
-// Features: Nested Octahedron (Outer Shell) & Tetrahedron (Inner Core) Waveguide
-// Solderless compression slots, Fintenna blades, and 4 coaxial bus tunnels.
+// Universal Power Entry: Supports both direct cut USB-C wires and standard female breakout boards
 
 $fn = 24;
 
@@ -78,6 +77,30 @@ module compression_pin(d_base = 2.2, height = 6) {
     cylinder(h = height, d1 = d_base, d2 = d_base - 0.4, center = true, $fn=12);
 }
 
+module helmholtz_pocket(angle) {
+    // Tuned to 4.5 kHz (Neck: 2.2mm, Bulb: 5.0mm)
+    rotate([0, 0, angle])
+    translate([8, 0, 2.5]) {
+        // Neck channel (with slight 0.02mm overlap)
+        rotate([0, 90, 0])
+        cylinder(h = 3.02, d = 2.2, center = true, $fn=12);
+        
+        // Resonant bulb
+        translate([2.5, 0, 0])
+        sphere(d = 5.0, $fn=16);
+    }
+}
+
+module helical_grooves(radius = 6.5, depth = 0.6) {
+    // Spiral cuts for orbital angular momentum (OAM)
+    for (theta = [0 : 15 : 360]) {
+        r_val = radius * (theta / 360.0);
+        rotate([0, 0, theta])
+        translate([r_val, 0, 0])
+        sphere(d = depth, $fn=12);
+    }
+}
+
 module base_cradle(width = 80, length = 110, height = 15) {
     difference() {
         // Main block
@@ -89,19 +112,23 @@ module base_cradle(width = 80, length = 110, height = 15) {
         rotate([90, 0, 0])
         cylinder(h = 30, d = 5.5, center = true, $fn=12);
         
-        // 2. Internal wire-distribution cavity where discrete power/CC/data wires split
+        // 2. Snap-fit slot for standard USB-C Female Breakout Board (16.2mm width, 8.2mm depth, 9.2mm height)
+        translate([0, length/2 - 4, -height/2 + 3])
+        cube([16.2, 8.2, 9.22], center = true);
+        
+        // 3. Internal wire-distribution cavity where discrete power/CC/data wires split
         translate([0, length/4, -height/2 + 2])
         cube([20, 25, 10.02], center = true);
         
-        // 3. Register Recess (Right side - holds DCD Shift Registers & Program ROM)
+        // 4. Register Recess (Right side - holds DCD Shift Registers & Program ROM)
         translate([22, -10, 2])
         cube([25, 70, 15.02], center = true);
         
-        // 4. ALU Recess (Left side - holds 1-Bit Full Adder & Carry Latch)
+        // 5. ALU Recess (Left side - holds 1-Bit Full Adder & Carry Latch)
         translate([-22, -10, 2])
         cube([25, 70, 15.02], center = true);
         
-        // 5. 4x Coaxial Bus Tunnels (2.0mm tunnels linking Register Recess to ALU Recess)
+        // 6. 4x Coaxial Bus Tunnels (2.0mm tunnels linking Register Recess to ALU Recess)
         for (y = [-25, -10, 5, 20]) {
             translate([0, y, 2.5])
             rotate([0, 90, 0])
@@ -121,7 +148,6 @@ module nested_waveguide_chamber() {
         octahedron(side = 25);
         
         // Cut the chamber in half at the horizontal split-plane (Z = 12)
-        // This makes it printable and allows toolless loading of the core
         translate([0, 0, 26])
         cube([60, 60, 28], center = true);
     }
@@ -153,7 +179,6 @@ module main_chassis() {
         cylinder(h = 1.22, d = 20.2, center = true, $fn=24);
         
         // 5. Helmholtz resonance pockets inside the bottom shell
-        // neck = 2.2mm, bulb = 5.0mm
         for (angle = [45, 165, 285]) {
             rotate([0, 0, angle])
             translate([8, 0, 4.0]) {
