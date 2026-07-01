@@ -1,5 +1,5 @@
 // TAP Integrated Standalone Chassis & Waveguide
-// Optimized for stable CGAL rendering with localized $fn scaling
+// Optimized for direct cut USB-C cable wiring (discrete wires) and solderless contacts
 
 module tetrahedron_frame(side_length = 50, thickness = 4) {
     // Vertices of a regular tetrahedron centered at origin
@@ -89,13 +89,18 @@ module base_cradle(width = 80, length = 110, height = 15) {
         translate([0, 0, -height/2])
         cube([width, length, height], center = true);
         
-        // Recess for USB-C Power breakout (left side)
-        translate([-20, 0, 2])
-        cube([30, 90, 15.02], center = true);
+        // 1. Cable entry port (4.2mm tunnel from back of the chassis for cut USB-C cable)
+        translate([0, length/2, -height/2])
+        rotate([90, 0, 0])
+        cylinder(h = 30, d = 4.2, center = true, $fn=12);
         
-        // Recess for DCD Shift Registers (right side)
-        translate([20, 0, 2])
-        cube([30, 90, 15.02], center = true);
+        // 2. Internal wire-distribution cavity where discrete +5V & GND wires split
+        translate([0, length/4, -height/2 + 2])
+        cube([15, 20, 10.02], center = true);
+        
+        // 3. Main centered recess for DCD Shift Registers, Clock switch, and Diode ROM
+        translate([0, -10, 2])
+        cube([60, 70, 15.02], center = true);
     }
 }
 
