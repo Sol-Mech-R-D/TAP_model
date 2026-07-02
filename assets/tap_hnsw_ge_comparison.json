@@ -1,0 +1,384 @@
+{
+  "timestamp": "2026-07-02T12:00:00.068290",
+  "n_queries": 10,
+  "n_same_top": 3,
+  "user_avg_ms": 16.56,
+  "tap_avg_ms": 3.1580000000000004,
+  "comparisons": [
+    {
+      "query": "What is the install hierarchy for CCP?",
+      "user_top3": [
+        {
+          "dist": 1.2582,
+          "source": "AUDIT.md"
+        },
+        {
+          "dist": 1.266,
+          "source": "AUDIT.md"
+        },
+        {
+          "dist": 1.271,
+          "source": "CLEANUP-PLAN.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.9118,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.122
+        },
+        {
+          "dist": 5.4862,
+          "source": "AUDIT.md",
+          "psi": 0.507
+        },
+        {
+          "dist": 5.5701,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        }
+      ],
+      "user_time_ms": 16.06,
+      "tap_time_ms": 3.05
+    },
+    {
+      "query": "sm-hnsw knowledge base",
+      "user_top3": [
+        {
+          "dist": 1.2469,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.3077,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.3095,
+          "source": "BUSINESS-PLAN.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 5.1405,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.3986,
+          "source": "BUSINESS-PLAN.md",
+          "psi": 0.529
+        },
+        {
+          "dist": 5.4355,
+          "source": "AUDIT.md",
+          "psi": 0.509
+        }
+      ],
+      "user_time_ms": 16.16,
+      "tap_time_ms": 3.07
+    },
+    {
+      "query": "Braid group topology",
+      "user_top3": [
+        {
+          "dist": 1.2346,
+          "source": "ENGINE-NOTES.md"
+        },
+        {
+          "dist": 1.298,
+          "source": "CODEBASE-SUMMARY.md"
+        },
+        {
+          "dist": 1.3078,
+          "source": "CLEANUP-PLAN.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.4328,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.615
+        },
+        {
+          "dist": 4.919,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.3464,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.508
+        }
+      ],
+      "user_time_ms": 16.49,
+      "tap_time_ms": 2.95
+    },
+    {
+      "query": "business plan revenue",
+      "user_top3": [
+        {
+          "dist": 1.248,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.2497,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.2707,
+          "source": "CLEANUP-PLAN.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.6409,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.615
+        },
+        {
+          "dist": 5.1405,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.4805,
+          "source": "AUDIT.md",
+          "psi": 0.509
+        }
+      ],
+      "user_time_ms": 16.2,
+      "tap_time_ms": 3.22
+    },
+    {
+      "query": "audit findings cleanup",
+      "user_top3": [
+        {
+          "dist": 1.1858,
+          "source": "AUDIT.md"
+        },
+        {
+          "dist": 1.3134,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.3182,
+          "source": "CODEBASE-SUMMARY.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.1092,
+          "source": "AUDIT.md",
+          "psi": 0.507
+        },
+        {
+          "dist": 4.8013,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.4653,
+          "source": "AUDIT.md",
+          "psi": 0.509
+        }
+      ],
+      "user_time_ms": 16.22,
+      "tap_time_ms": 3.1
+    },
+    {
+      "query": "dragon alignment",
+      "user_top3": [
+        {
+          "dist": 1.0754,
+          "source": "UNIFICATION-PLAN.md"
+        },
+        {
+          "dist": 1.2369,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.304,
+          "source": "DRAGON-ALIGNMENT.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.6161,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.615
+        },
+        {
+          "dist": 4.9589,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.161,
+          "source": "CLEANUP-PLAN.md",
+          "psi": 0.674
+        }
+      ],
+      "user_time_ms": 15.88,
+      "tap_time_ms": 2.99
+    },
+    {
+      "query": "engine notes architecture",
+      "user_top3": [
+        {
+          "dist": 1.2574,
+          "source": "UNIFICATION-PLAN.md"
+        },
+        {
+          "dist": 1.2586,
+          "source": "ENGINE-NOTES.md"
+        },
+        {
+          "dist": 1.267,
+          "source": "BUSINESS-PLAN.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.3109,
+          "source": "AUDIT.md",
+          "psi": 0.507
+        },
+        {
+          "dist": 5.1405,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.2275,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.487
+        }
+      ],
+      "user_time_ms": 16.19,
+      "tap_time_ms": 3.18
+    },
+    {
+      "query": "unification plan strategy",
+      "user_top3": [
+        {
+          "dist": 1.2426,
+          "source": "UNIFICATION-PLAN.md"
+        },
+        {
+          "dist": 1.2531,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.3007,
+          "source": "ENGINE-NOTES.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 5.1405,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.34,
+          "source": "CODEBASE-SUMMARY.md",
+          "psi": 0.516
+        },
+        {
+          "dist": 5.5478,
+          "source": "AUDIT.md",
+          "psi": 0.509
+        }
+      ],
+      "user_time_ms": 17.56,
+      "tap_time_ms": 3.2
+    },
+    {
+      "query": "codebase summary structure",
+      "user_top3": [
+        {
+          "dist": 1.238,
+          "source": "BUSINESS-PLAN.md"
+        },
+        {
+          "dist": 1.2807,
+          "source": "ENGINE-NOTES.md"
+        },
+        {
+          "dist": 1.2977,
+          "source": "BUSINESS-PLAN.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 4.8413,
+          "source": "ENGINE-NOTES.md",
+          "psi": 0.525
+        },
+        {
+          "dist": 5.1405,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.4464,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.508
+        }
+      ],
+      "user_time_ms": 17.68,
+      "tap_time_ms": 3.51
+    },
+    {
+      "query": "memory file format",
+      "user_top3": [
+        {
+          "dist": 1.3101,
+          "source": "DRAGON-ALIGNMENT.md"
+        },
+        {
+          "dist": 1.313,
+          "source": "BUSINESS-PLAN.md"
+        },
+        {
+          "dist": 1.315,
+          "source": "AUDIT.md"
+        }
+      ],
+      "tap_top3": [
+        {
+          "dist": 5.1405,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.473
+        },
+        {
+          "dist": 5.5231,
+          "source": "UNIFICATION-PLAN.md",
+          "psi": 0.315
+        },
+        {
+          "dist": 5.7028,
+          "source": "AUDIT.md",
+          "psi": 0.507
+        }
+      ],
+      "user_time_ms": 17.16,
+      "tap_time_ms": 3.31
+    }
+  ],
+  "summary": {
+    "user": {
+      "embedding": "TF-IDF (hash-based, 512-dim)",
+      "distance": "Sparse L2",
+      "n_chunks": 163
+    },
+    "tap": {
+      "embedding": "Braid-group (\u03c0/8, 64-dim)",
+      "distance": "Sparse L1 \u00d7 (1 + \u0393(N_B) \u00d7 |\u0394\u03c8|)",
+      "n_chunks": 163,
+      "psi": 0.910525665875798,
+      "gamma_nb": 1.015355029803997,
+      "n_b": 8
+    }
+  }
+}

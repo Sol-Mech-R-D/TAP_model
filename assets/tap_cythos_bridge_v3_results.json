@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-07-02T12:02:55.550904",
+  "n_attempted": 4,
+  "n_compiled": 2,
+  "results": [
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/norm.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/build/cythos/norm.o",
+      "success": true,
+      "error": null,
+      "cached": true
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/sleep.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/build/cythos/sleep.o",
+      "success": true,
+      "error": null,
+      "cached": true
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/build/cythos/pim_updater.o",
+      "success": false,
+      "error": "In file included from /data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c:1162:\n/data/data/com.termux/files/usr/lib/clang/21/include/immintrin.h:14:2: error: \"This header is only meant to be used on x86 and x64 architecture\"\n   14 | #error \"This header is only meant to be used on x86 and x64 architecture\"\n      |  ^\nIn file included from /data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c:1162:\nIn file included from /data/data/com.termux/files/usr/"
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/agent.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/build/cythos/agent.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/agent.c:1:2: error: Do not use this file, it is the result of a failed Cython compilation.\n    1 | #error Do not use this file, it is the result of a failed Cython compilation.\n      |  ^\n1 error generated.\n"
+    }
+  ],
+  "include_paths_used": {
+    "python": "/data/data/com.termux/files/usr/include/python3.13",
+    "numpy": "/data/data/com.termux/files/usr/lib/python3.13/site-packages/numpy/_core/include"
+  }
+}

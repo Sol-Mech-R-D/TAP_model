@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-07-02T12:00:35.669142",
+  "live_events": {
+    "kp": 0.0,
+    "temp_f": 28.7,
+    "n_quakes_24h": 4
+  },
+  "breath_state": {
+    "psi": 0.9290631671704431,
+    "kp": 0.0,
+    "temp_f": 28.7,
+    "n_quakes": 4,
+    "kp_factor": 0.0,
+    "temp_factor": 0.00826,
+    "quake_factor": 0.012
+  },
+  "n_chunks": 163,
+  "summary": {
+    "current_psi": 0.9290631671704431,
+    "psi_range": "[0.9105, 1.0000]",
+    "breath_correction_active": true,
+    "cascade_integration": "cosmic + weather + seismic"
+  }
+}
