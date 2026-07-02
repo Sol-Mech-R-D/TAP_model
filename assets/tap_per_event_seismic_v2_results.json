@@ -1,0 +1,608 @@
+{
+  "timestamp": "2026-07-02T08:04:18.715693",
+  "mag_config": {
+    "M5+": {
+      "threshold": 0.45,
+      "time_window_h": 24,
+      "region_radius_deg": 12.0
+    },
+    "M6+": {
+      "threshold": 0.55,
+      "time_window_h": 48,
+      "region_radius_deg": 15.0
+    },
+    "M7+": {
+      "threshold": 0.65,
+      "time_window_h": 72,
+      "region_radius_deg": 20.0
+    }
+  },
+  "back_window": {
+    "start": "2021-07-01T00:00:00",
+    "end": "2026-07-02T00:00:00",
+    "per_class": {
+      "M5+": {
+        "n_predictions": 12912,
+        "n_hits": 454,
+        "precision_pct": 3.52,
+        "recall_pct": 19.45,
+        "n_actual": 2334
+      },
+      "M6+": {
+        "n_predictions": 7242,
+        "n_hits": 165,
+        "precision_pct": 2.28,
+        "recall_pct": 24.59,
+        "n_actual": 671
+      },
+      "M7+": {
+        "n_predictions": 3901,
+        "n_hits": 20,
+        "precision_pct": 0.51,
+        "recall_pct": 26.67,
+        "n_actual": 75
+      }
+    },
+    "total_predictions": 24055,
+    "total_hits": 639,
+    "total_actual": 3080,
+    "aggregate_precision_pct": 2.66,
+    "aggregate_recall_pct": 20.75
+  },
+  "forward_window": {
+    "start": "2026-07-02T00:00:00",
+    "end": "2026-08-02T00:00:00",
+    "predictions": [
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7983,
+        "threshold": 0.45,
+        "probability": 0.6334
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7982,
+        "threshold": 0.45,
+        "probability": 0.6332
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7983,
+        "threshold": 0.45,
+        "probability": 0.6332
+      },
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7981,
+        "threshold": 0.45,
+        "probability": 0.633
+      },
+      {
+        "time_utc": "2026-08-01 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.795,
+        "threshold": 0.45,
+        "probability": 0.6272
+      },
+      {
+        "time_utc": "2026-07-08 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7946,
+        "threshold": 0.45,
+        "probability": 0.6266
+      },
+      {
+        "time_utc": "2026-07-16 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7945,
+        "threshold": 0.45,
+        "probability": 0.6264
+      },
+      {
+        "time_utc": "2026-07-24 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7944,
+        "threshold": 0.45,
+        "probability": 0.6262
+      },
+      {
+        "time_utc": "2026-07-24 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7874,
+        "threshold": 0.45,
+        "probability": 0.6135
+      },
+      {
+        "time_utc": "2026-07-16 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7871,
+        "threshold": 0.45,
+        "probability": 0.6129
+      },
+      {
+        "time_utc": "2026-07-07 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7868,
+        "threshold": 0.45,
+        "probability": 0.6123
+      },
+      {
+        "time_utc": "2026-08-01 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.87,
+        "stress": 0.7867,
+        "threshold": 0.45,
+        "probability": 0.6122
+      },
+      {
+        "time_utc": "2026-08-01 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.7769,
+        "threshold": 0.45,
+        "probability": 0.5944
+      },
+      {
+        "time_utc": "2026-07-08 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.7764,
+        "threshold": 0.45,
+        "probability": 0.5935
+      },
+      {
+        "time_utc": "2026-07-15 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.776,
+        "threshold": 0.45,
+        "probability": 0.5928
+      },
+      {
+        "time_utc": "2026-07-24 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.7757,
+        "threshold": 0.45,
+        "probability": 0.5922
+      },
+      {
+        "time_utc": "2026-07-23 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.762,
+        "threshold": 0.45,
+        "probability": 0.5673
+      },
+      {
+        "time_utc": "2026-07-16 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.7615,
+        "threshold": 0.45,
+        "probability": 0.5664
+      },
+      {
+        "time_utc": "2026-07-07 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.86,
+        "stress": 0.761,
+        "threshold": 0.45,
+        "probability": 0.5654
+      },
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7983,
+        "threshold": 0.55,
+        "probability": 0.5519
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7983,
+        "threshold": 0.55,
+        "probability": 0.5517
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7982,
+        "threshold": 0.55,
+        "probability": 0.5516
+      },
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7981,
+        "threshold": 0.55,
+        "probability": 0.5514
+      },
+      {
+        "time_utc": "2026-08-01 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.795,
+        "threshold": 0.55,
+        "probability": 0.5444
+      },
+      {
+        "time_utc": "2026-07-08 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7946,
+        "threshold": 0.55,
+        "probability": 0.5437
+      },
+      {
+        "time_utc": "2026-07-16 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7945,
+        "threshold": 0.55,
+        "probability": 0.5433
+      },
+      {
+        "time_utc": "2026-07-24 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7944,
+        "threshold": 0.55,
+        "probability": 0.5431
+      },
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7485,
+        "threshold": 0.45,
+        "probability": 0.5426
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7483,
+        "threshold": 0.45,
+        "probability": 0.5425
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7484,
+        "threshold": 0.45,
+        "probability": 0.5425
+      },
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7483,
+        "threshold": 0.45,
+        "probability": 0.5423
+      },
+      {
+        "time_utc": "2026-08-01 06:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7453,
+        "threshold": 0.45,
+        "probability": 0.5369
+      },
+      {
+        "time_utc": "2026-07-08 06:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.745,
+        "threshold": 0.45,
+        "probability": 0.5363
+      },
+      {
+        "time_utc": "2026-07-16 00:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7448,
+        "threshold": 0.45,
+        "probability": 0.5361
+      },
+      {
+        "time_utc": "2026-07-31 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.85,
+        "stress": 0.7448,
+        "threshold": 0.45,
+        "probability": 0.536
+      },
+      {
+        "time_utc": "2026-07-24 12:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.95,
+        "stress": 0.7448,
+        "threshold": 0.45,
+        "probability": 0.5359
+      },
+      {
+        "time_utc": "2026-07-08 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.85,
+        "stress": 0.7441,
+        "threshold": 0.45,
+        "probability": 0.5347
+      },
+      {
+        "time_utc": "2026-07-15 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.85,
+        "stress": 0.7435,
+        "threshold": 0.45,
+        "probability": 0.5337
+      },
+      {
+        "time_utc": "2026-07-25 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.85,
+        "stress": 0.743,
+        "threshold": 0.45,
+        "probability": 0.5328
+      },
+      {
+        "time_utc": "2026-07-24 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7874,
+        "threshold": 0.55,
+        "probability": 0.5276
+      },
+      {
+        "time_utc": "2026-07-16 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7871,
+        "threshold": 0.55,
+        "probability": 0.5269
+      },
+      {
+        "time_utc": "2026-07-07 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7868,
+        "threshold": 0.55,
+        "probability": 0.5262
+      },
+      {
+        "time_utc": "2026-08-01 18:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "mag_class": "M6+",
+        "predicted_magnitude": 6.32,
+        "stress": 0.7867,
+        "threshold": 0.55,
+        "probability": 0.526
+      },
+      {
+        "time_utc": "2026-07-24 00:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7382,
+        "threshold": 0.45,
+        "probability": 0.524
+      },
+      {
+        "time_utc": "2026-07-16 12:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7379,
+        "threshold": 0.45,
+        "probability": 0.5235
+      },
+      {
+        "time_utc": "2026-07-07 18:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7376,
+        "threshold": 0.45,
+        "probability": 0.5229
+      },
+      {
+        "time_utc": "2026-08-01 18:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7375,
+        "threshold": 0.45,
+        "probability": 0.5228
+      },
+      {
+        "time_utc": "2026-08-01 00:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7284,
+        "threshold": 0.45,
+        "probability": 0.5061
+      },
+      {
+        "time_utc": "2026-07-08 12:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7279,
+        "threshold": 0.45,
+        "probability": 0.5052
+      },
+      {
+        "time_utc": "2026-07-15 18:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "mag_class": "M5+",
+        "predicted_magnitude": 5.94,
+        "stress": 0.7275,
+        "threshold": 0.45,
+        "probability": 0.5046
+      }
+    ]
+  }
+}

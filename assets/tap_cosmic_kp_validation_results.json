@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-07-02T08:05:32.011065",
+  "train_size": 30,
+  "test_size": 31,
+  "params": {
+    "baseline": 571.0988198575997,
+    "A": 0.14670271668205428,
+    "B": 34192.064965191064,
+    "r_squared": 0.7094602945670977,
+    "n": 30
+  },
+  "mae_baseline": 1.285,
+  "mae_persistence": 0.603,
+  "mae_tap": 1.535,
+  "rmse_baseline": 1.424,
+  "rmse_persistence": 0.825,
+  "rmse_tap": 2.03,
+  "storm_days_actual": 0,
+  "storm_days_tap": 0,
+  "storm_days_persistence": 0,
+  "storm_hits_tap": 0,
+  "storm_hits_persistence": 0,
+  "daily_results": [
+    {
+      "date": "2026-06-28",
+      "actual_max": 1.33,
+      "tap_pred_max": 1.3,
+      "persist_pred_max": 0.67,
+      "baseline_pred": 2.42
+    },
+    {
+      "date": "2026-06-29",
+      "actual_max": 1.33,
+      "tap_pred_max": 0.82,
+      "persist_pred_max": 1.33,
+      "baseline_pred": 2.42
+    },
+    {
+      "date": "2026-06-30",
+      "actual_max": 4.67,
+      "tap_pred_max": 0.46,
+      "persist_pred_max": 4.67,
+      "baseline_pred": 2.42
+    },
+    {
+      "date": "2026-07-01",
+      "actual_max": 4.67,
+      "tap_pred_max": 0.23,
+      "persist_pred_max": 4.67,
+      "baseline_pred": 2.42
+    },
+    {
+      "date": "2026-07-02",
+      "actual_max": 2.0,
+      "tap_pred_max": 0.1,
+      "persist_pred_max": 2.0,
+      "baseline_pred": 2.42
+    }
+  ]
+}

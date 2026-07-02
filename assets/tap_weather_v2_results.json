@@ -1,0 +1,77 @@
+{
+  "Fresno": {
+    "best_config": {
+      "alpha": 0.0,
+      "shrinkage": 0.5,
+      "A": -0.4925771760571987,
+      "bias": -6.191905900471742,
+      "r2_train": 0.4047717269551536
+    },
+    "best_mae_f": 7.371,
+    "climatology_mae_f": 9.318,
+    "old_tap_mae_f": 9.308,
+    "improvement_vs_climatology_pct": 20.9,
+    "improvement_vs_old_tap_pct": 20.81,
+    "sweep_results_count": 49
+  },
+  "Tokyo": {
+    "best_config": {
+      "alpha": 0.0,
+      "shrinkage": 0.7,
+      "A": 0.5415288808552295,
+      "bias": -5.951976122291602,
+      "r2_train": 0.22352338212253853
+    },
+    "best_mae_f": 5.617,
+    "climatology_mae_f": 9.488,
+    "old_tap_mae_f": 9.494,
+    "improvement_vs_climatology_pct": 40.8,
+    "improvement_vs_old_tap_pct": 40.84,
+    "sweep_results_count": 49
+  },
+  "London": {
+    "best_config": {
+      "alpha": 10.0,
+      "shrinkage": 0.7,
+      "A": 0.08578317467379787,
+      "bias": -3.9262196132865865,
+      "r2_train": 0.33235279683744856
+    },
+    "best_mae_f": 8.572,
+    "climatology_mae_f": 9.333,
+    "old_tap_mae_f": 9.354,
+    "improvement_vs_climatology_pct": 8.15,
+    "improvement_vs_old_tap_pct": 8.36,
+    "sweep_results_count": 49
+  },
+  "Singapore": {
+    "best_config": {
+      "alpha": 0.0,
+      "shrinkage": 1.0,
+      "A": -0.0038688405386217697,
+      "bias": 1.4417570409358458,
+      "r2_train": -0.6386514540412866
+    },
+    "best_mae_f": 2.268,
+    "climatology_mae_f": 3.221,
+    "old_tap_mae_f": 3.21,
+    "improvement_vs_climatology_pct": 29.6,
+    "improvement_vs_old_tap_pct": 29.35,
+    "sweep_results_count": 49
+  },
+  "Sydney": {
+    "best_config": {
+      "alpha": 10.0,
+      "shrinkage": 1.0,
+      "A": -0.44630360193594265,
+      "bias": 7.9361734520341605,
+      "r2_train": 0.3148713205828545
+    },
+    "best_mae_f": 3.874,
+    "climatology_mae_f": 12.946,
+    "old_tap_mae_f": 12.936,
+    "improvement_vs_climatology_pct": 70.07,
+    "improvement_vs_old_tap_pct": 70.05,
+    "sweep_results_count": 49
+  }
+}
