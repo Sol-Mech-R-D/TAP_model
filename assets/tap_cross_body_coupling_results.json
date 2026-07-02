@@ -1,0 +1,437 @@
+{
+  "timestamp": "2026-07-02T08:58:02.530762",
+  "bodies": [
+    "Sun",
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Moon",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune"
+  ],
+  "coupling_matrix": {
+    "Sun": {
+      "Sun": 1.0,
+      "Mercury": -4.4746,
+      "Venus": -5.0198,
+      "Earth": -5.6018,
+      "Moon": -4.6005,
+      "Mars": -5.6006,
+      "Jupiter": -5.7949,
+      "Saturn": -5.7932,
+      "Uranus": -5.7838,
+      "Neptune": -5.7852
+    },
+    "Mercury": {
+      "Sun": -4.4746,
+      "Mercury": 1.0,
+      "Venus": -0.3993,
+      "Earth": -1.2939,
+      "Moon": -4.8223,
+      "Mars": -1.5238,
+      "Jupiter": -1.6682,
+      "Saturn": -1.8584,
+      "Uranus": -2.0877,
+      "Neptune": -2.1811
+    },
+    "Venus": {
+      "Sun": -5.0198,
+      "Mercury": -0.3993,
+      "Venus": 1.0,
+      "Earth": -1.0704,
+      "Moon": -5.1773,
+      "Mars": -1.397,
+      "Jupiter": -1.5573,
+      "Saturn": -1.7554,
+      "Uranus": -1.9907,
+      "Neptune": -2.0852
+    },
+    "Earth": {
+      "Sun": -5.6018,
+      "Mercury": -1.2939,
+      "Venus": -1.0704,
+      "Earth": 1.0,
+      "Moon": -0.1209,
+      "Mars": -0.2464,
+      "Jupiter": -1.4055,
+      "Saturn": -1.6079,
+      "Uranus": -1.8323,
+      "Neptune": -1.9303
+    },
+    "Moon": {
+      "Sun": -4.6005,
+      "Mercury": -4.8223,
+      "Venus": -5.1773,
+      "Earth": -0.1209,
+      "Moon": 1.0,
+      "Mars": -5.5738,
+      "Jupiter": -5.7876,
+      "Saturn": -5.7857,
+      "Uranus": -5.7757,
+      "Neptune": -5.7771
+    },
+    "Mars": {
+      "Sun": -5.6006,
+      "Mercury": -1.5238,
+      "Venus": -1.397,
+      "Earth": -0.2464,
+      "Moon": -5.5738,
+      "Mars": 1.0,
+      "Jupiter": -1.4739,
+      "Saturn": -1.6915,
+      "Uranus": -1.9234,
+      "Neptune": -2.0238
+    },
+    "Jupiter": {
+      "Sun": -5.7949,
+      "Mercury": -1.6682,
+      "Venus": -1.5573,
+      "Earth": -1.4055,
+      "Moon": -5.7876,
+      "Mars": -1.4739,
+      "Jupiter": 1.0,
+      "Saturn": -0.5579,
+      "Uranus": -1.0555,
+      "Neptune": -1.1541
+    },
+    "Saturn": {
+      "Sun": -5.7932,
+      "Mercury": -1.8584,
+      "Venus": -1.7554,
+      "Earth": -1.6079,
+      "Moon": -5.7857,
+      "Mars": -1.6915,
+      "Jupiter": -0.5579,
+      "Saturn": 1.0,
+      "Uranus": -1.0005,
+      "Neptune": -1.1368
+    },
+    "Uranus": {
+      "Sun": -5.7838,
+      "Mercury": -2.0877,
+      "Venus": -1.9907,
+      "Earth": -1.8323,
+      "Moon": -5.7757,
+      "Mars": -1.9234,
+      "Jupiter": -1.0555,
+      "Saturn": -1.0005,
+      "Uranus": 1.0,
+      "Neptune": -0.9552
+    },
+    "Neptune": {
+      "Sun": -5.7852,
+      "Mercury": -2.1811,
+      "Venus": -2.0852,
+      "Earth": -1.9303,
+      "Moon": -5.7771,
+      "Mars": -2.0238,
+      "Jupiter": -1.1541,
+      "Saturn": -1.1368,
+      "Uranus": -0.9552,
+      "Neptune": 1.0
+    }
+  },
+  "earth_coupling": [
+    {
+      "body": "Sun",
+      "gravity": 0.0,
+      "tidal": 0.0,
+      "resonance": 0.014733624436148651,
+      "phi_rate": 0.3834683306669696,
+      "total": -5.601798044896881
+    },
+    {
+      "body": "Mercury",
+      "gravity": 2.6188824547661306e-09,
+      "tidal": 4.2789551628133246e-10,
+      "resonance": 0.014625807109160553,
+      "phi_rate": 0.36073972398820375,
+      "total": -1.2939430555934615
+    },
+    {
+      "body": "Venus",
+      "gravity": 1.892746441480669e-07,
+      "tidal": 6.843761612561622e-08,
+      "resonance": 0.014438559459335051,
+      "phi_rate": 0.2950292622384637,
+      "total": -1.0704489101323689
+    },
+    {
+      "body": "Moon",
+      "gravity": 3.3197607309416895e-05,
+      "tidal": 0.0012940087174691955,
+      "resonance": 0.014918169290777817,
+      "phi_rate": 0.4099390494321502,
+      "total": -0.12086968352209204
+    },
+    {
+      "body": "Mars",
+      "gravity": 6.9726115241825094e-09,
+      "tidal": 1.3327429275323582e-09,
+      "resonance": 0.3653759609676922,
+      "phi_rate": 0.9945841096402763,
+      "total": -0.24638181349641664
+    },
+    {
+      "body": "Jupiter",
+      "gravity": 3.2074347948738675e-07,
+      "tidal": 7.643295500662253e-09,
+      "resonance": 7.979404480233556e-05,
+      "phi_rate": 0.30579962188690435,
+      "total": -1.405454662395136
+    },
+    {
+      "body": "Saturn",
+      "gravity": 2.3241319881367708e-08,
+      "tidal": 2.726702214526118e-10,
+      "resonance": 8.57137730688613e-05,
+      "phi_rate": 0.309629880687552,
+      "total": -1.6079319560985212
+    },
+    {
+      "body": "Uranus",
+      "gravity": 7.823072270161882e-10,
+      "tidal": 4.307515485410839e-12,
+      "resonance": 0.00013910618197826374,
+      "phi_rate": 0.33102487849768364,
+      "total": -1.8323301357538377
+    },
+    {
+      "body": "Neptune",
+      "gravity": 3.59942495636946e-10,
+      "tidal": 1.2401388013154033e-12,
+      "resonance": 0.0001299204422109224,
+      "phi_rate": 0.32783414471196026,
+      "total": -1.9303281769742582
+    }
+  ],
+  "earth_moon_sun_states": {
+    "earth": {
+      "name": "Earth",
+      "type": "rocky planet",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 11365711774004,
+      "gamma_n_b": -21815105378.183945,
+      "psi": 0.677058,
+      "phase_rad": 1.1125,
+      "s_setpoint": 0.7212,
+      "t_setpoint": 0.9484,
+      "drift_sign": -1,
+      "sub_breath_days": 0.1459,
+      "age_gyr": 4.54
+    },
+    "moon": {
+      "name": "Moon",
+      "type": "satellite",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 413246904538,
+      "gamma_n_b": -793177315.948814,
+      "psi": 0.178349,
+      "phase_rad": -2.021,
+      "s_setpoint": 0.2824,
+      "t_setpoint": 0.0498,
+      "drift_sign": -1,
+      "sub_breath_days": 3.9862,
+      "age_gyr": 4.51
+    },
+    "sun": {
+      "name": "Sun",
+      "type": "star",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 280426698676,
+      "gamma_n_b": 538245040.50081,
+      "psi": 0.281951,
+      "phase_rad": -1.37,
+      "s_setpoint": 0.5997,
+      "t_setpoint": 0.01,
+      "drift_sign": 1,
+      "sub_breath_days": 5.9914,
+      "age_gyr": 4.6
+    }
+  },
+  "forward_30d_eff_psi": [
+    {
+      "date": "2026-07-02",
+      "earth_psi": 0.6771,
+      "moon_psi": 0.1783,
+      "eff_psi": 0.9044
+    },
+    {
+      "date": "2026-07-03",
+      "earth_psi": 0.5312,
+      "moon_psi": 0.4292,
+      "eff_psi": 0.672
+    },
+    {
+      "date": "2026-07-04",
+      "earth_psi": 0.3853,
+      "moon_psi": 0.6801,
+      "eff_psi": 0.4396
+    },
+    {
+      "date": "2026-07-05",
+      "earth_psi": 0.2394,
+      "moon_psi": 0.9309,
+      "eff_psi": 0.2071
+    },
+    {
+      "date": "2026-07-06",
+      "earth_psi": 0.0935,
+      "moon_psi": 0.1818,
+      "eff_psi": 0.9868
+    },
+    {
+      "date": "2026-07-07",
+      "earth_psi": 0.9476,
+      "moon_psi": 0.4327,
+      "eff_psi": 0.3267
+    },
+    {
+      "date": "2026-07-08",
+      "earth_psi": 0.8017,
+      "moon_psi": 0.6835,
+      "eff_psi": 0.0942
+    },
+    {
+      "date": "2026-07-09",
+      "earth_psi": 0.6558,
+      "moon_psi": 0.9344,
+      "eff_psi": 0.8618
+    },
+    {
+      "date": "2026-07-10",
+      "earth_psi": 0.5099,
+      "moon_psi": 0.1853,
+      "eff_psi": 0.6415
+    },
+    {
+      "date": "2026-07-11",
+      "earth_psi": 0.364,
+      "moon_psi": 0.4361,
+      "eff_psi": 0.4091
+    },
+    {
+      "date": "2026-07-12",
+      "earth_psi": 0.2181,
+      "moon_psi": 0.687,
+      "eff_psi": 0.1766
+    },
+    {
+      "date": "2026-07-13",
+      "earth_psi": 0.0722,
+      "moon_psi": 0.9379,
+      "eff_psi": 0.9442
+    },
+    {
+      "date": "2026-07-14",
+      "earth_psi": 0.9263,
+      "moon_psi": 0.1887,
+      "eff_psi": 0.2961
+    },
+    {
+      "date": "2026-07-15",
+      "earth_psi": 0.7804,
+      "moon_psi": 0.4396,
+      "eff_psi": 0.0637
+    },
+    {
+      "date": "2026-07-16",
+      "earth_psi": 0.6345,
+      "moon_psi": 0.6905,
+      "eff_psi": 0.8313
+    },
+    {
+      "date": "2026-07-17",
+      "earth_psi": 0.4886,
+      "moon_psi": 0.9413,
+      "eff_psi": 0.5989
+    },
+    {
+      "date": "2026-07-18",
+      "earth_psi": 0.3427,
+      "moon_psi": 0.1922,
+      "eff_psi": 0.3785
+    },
+    {
+      "date": "2026-07-19",
+      "earth_psi": 0.1968,
+      "moon_psi": 0.4431,
+      "eff_psi": 0.1461
+    },
+    {
+      "date": "2026-07-20",
+      "earth_psi": 0.0509,
+      "moon_psi": 0.6939,
+      "eff_psi": 0.9137
+    },
+    {
+      "date": "2026-07-21",
+      "earth_psi": 0.905,
+      "moon_psi": 0.9448,
+      "eff_psi": 0.2535
+    },
+    {
+      "date": "2026-07-22",
+      "earth_psi": 0.7591,
+      "moon_psi": 0.1957,
+      "eff_psi": 0.0332
+    },
+    {
+      "date": "2026-07-23",
+      "earth_psi": 0.6132,
+      "moon_psi": 0.4465,
+      "eff_psi": 0.8008
+    },
+    {
+      "date": "2026-07-24",
+      "earth_psi": 0.4673,
+      "moon_psi": 0.6974,
+      "eff_psi": 0.5683
+    },
+    {
+      "date": "2026-07-25",
+      "earth_psi": 0.3214,
+      "moon_psi": 0.9483,
+      "eff_psi": 0.3359
+    },
+    {
+      "date": "2026-07-26",
+      "earth_psi": 0.1755,
+      "moon_psi": 0.1991,
+      "eff_psi": 0.1156
+    },
+    {
+      "date": "2026-07-27",
+      "earth_psi": 0.0296,
+      "moon_psi": 0.45,
+      "eff_psi": 0.8832
+    },
+    {
+      "date": "2026-07-28",
+      "earth_psi": 0.8837,
+      "moon_psi": 0.7009,
+      "eff_psi": 0.223
+    },
+    {
+      "date": "2026-07-29",
+      "earth_psi": 0.7378,
+      "moon_psi": 0.9517,
+      "eff_psi": 0.9906
+    },
+    {
+      "date": "2026-07-30",
+      "earth_psi": 0.5919,
+      "moon_psi": 0.2026,
+      "eff_psi": 0.7703
+    },
+    {
+      "date": "2026-07-31",
+      "earth_psi": 0.446,
+      "moon_psi": 0.4535,
+      "eff_psi": 0.5378
+    }
+  ]
+}

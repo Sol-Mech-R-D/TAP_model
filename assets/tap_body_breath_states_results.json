@@ -1,0 +1,401 @@
+{
+  "timestamp": "2026-07-02T08:56:03.891655",
+  "anchor": "2026-06-21T19:46:00",
+  "earth_n_b_reference": 8,
+  "body_states": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 280426698676,
+      "gamma_n_b": 538245040.50081,
+      "psi": 0.281951,
+      "phase_rad": -1.37,
+      "s_setpoint": 0.5997,
+      "t_setpoint": 0.01,
+      "drift_sign": 1,
+      "sub_breath_days": 5.9914,
+      "age_gyr": 4.6
+    },
+    {
+      "name": "Mercury",
+      "type": "rocky planet",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 192094488018,
+      "gamma_n_b": -368702072.587493,
+      "psi": 0.747776,
+      "phase_rad": 1.5568,
+      "s_setpoint": 0.507,
+      "t_setpoint": 1.0,
+      "drift_sign": -1,
+      "sub_breath_days": 8.5563,
+      "age_gyr": 4.5
+    },
+    {
+      "name": "Venus",
+      "type": "rocky planet",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 46355615037,
+      "gamma_n_b": -88973980.309469,
+      "psi": 0.801109,
+      "phase_rad": 1.8919,
+      "s_setpoint": 0.3422,
+      "t_setpoint": 0.9744,
+      "drift_sign": -1,
+      "sub_breath_days": 35.4569,
+      "age_gyr": 4.5
+    },
+    {
+      "name": "Earth",
+      "type": "rocky planet",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 11365711774004,
+      "gamma_n_b": -21815105378.183945,
+      "psi": 0.677058,
+      "phase_rad": 1.1125,
+      "s_setpoint": 0.7212,
+      "t_setpoint": 0.9484,
+      "drift_sign": -1,
+      "sub_breath_days": 0.1459,
+      "age_gyr": 4.54
+    },
+    {
+      "name": "Moon",
+      "type": "satellite",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 413246904538,
+      "gamma_n_b": -793177315.948814,
+      "psi": 0.178349,
+      "phase_rad": -2.021,
+      "s_setpoint": 0.2824,
+      "t_setpoint": 0.0498,
+      "drift_sign": -1,
+      "sub_breath_days": 3.9862,
+      "age_gyr": 4.51
+    },
+    {
+      "name": "Mars",
+      "type": "rocky planet",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 11224093000579,
+      "gamma_n_b": -21543285317.34065,
+      "psi": 0.822669,
+      "phase_rad": 2.0274,
+      "s_setpoint": 0.2796,
+      "t_setpoint": 0.9488,
+      "drift_sign": -1,
+      "sub_breath_days": 0.1497,
+      "age_gyr": 4.6
+    },
+    {
+      "name": "Jupiter",
+      "type": "gas giant",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 2116956166491333,
+      "gamma_n_b": -4063240628777.719,
+      "psi": 0.541362,
+      "phase_rad": 0.2599,
+      "s_setpoint": 0.9832,
+      "t_setpoint": 0.6285,
+      "drift_sign": -1,
+      "sub_breath_days": 0.0008,
+      "age_gyr": 4.6
+    },
+    {
+      "name": "Saturn",
+      "type": "gas giant",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 1928675179592022,
+      "gamma_n_b": -3701858108107.107,
+      "psi": 0.470953,
+      "phase_rad": -0.1825,
+      "s_setpoint": 0.9917,
+      "t_setpoint": 0.4093,
+      "drift_sign": -1,
+      "sub_breath_days": 0.0009,
+      "age_gyr": 4.5
+    },
+    {
+      "name": "Uranus",
+      "type": "ice giant",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 1192662645875847,
+      "gamma_n_b": -2289171309191.2007,
+      "psi": 0.601815,
+      "phase_rad": 0.6397,
+      "s_setpoint": 0.9011,
+      "t_setpoint": 0.7985,
+      "drift_sign": -1,
+      "sub_breath_days": 0.0014,
+      "age_gyr": 4.5
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 1276202354305302,
+      "gamma_n_b": -2449515648285.1387,
+      "psi": 0.24531,
+      "phase_rad": -1.6003,
+      "s_setpoint": 0.4853,
+      "t_setpoint": 0.0002,
+      "drift_sign": -1,
+      "sub_breath_days": 0.0013,
+      "age_gyr": 4.5
+    },
+    {
+      "name": "Proxima Centauri",
+      "type": "red dwarf",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 391670471109,
+      "gamma_n_b": 751763970.653032,
+      "psi": 0.86055,
+      "phase_rad": 2.2654,
+      "s_setpoint": 0.18,
+      "t_setpoint": 0.8842,
+      "drift_sign": 1,
+      "sub_breath_days": 4.5228,
+      "age_gyr": 4.85
+    },
+    {
+      "name": "Sirius A",
+      "type": "A1V star",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 111264921919,
+      "gamma_n_b": 213559525.025706,
+      "psi": 0.051307,
+      "phase_rad": -2.8192,
+      "s_setpoint": 0.0258,
+      "t_setpoint": 0.3416,
+      "drift_sign": 1,
+      "sub_breath_days": 0.7878,
+      "age_gyr": 0.24
+    },
+    {
+      "name": "Crab Pulsar",
+      "type": "neutron star",
+      "date": "2026-07-02T12:00:00",
+      "n_b": 28022652778,
+      "gamma_n_b": 53786084.574156,
+      "psi": 0.945589,
+      "phase_rad": 2.7997,
+      "s_setpoint": 0.0289,
+      "t_setpoint": 0.6676,
+      "drift_sign": 1,
+      "sub_breath_days": 0.0126,
+      "age_gyr": 0.00097
+    }
+  ],
+  "earth_forward_30d": [
+    {
+      "date": "2026-07-02",
+      "psi": 0.677058,
+      "s_setpoint": 0.7212,
+      "t_setpoint": 0.9484,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-03",
+      "psi": 0.53116,
+      "s_setpoint": 0.9904,
+      "t_setpoint": 0.5973,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-04",
+      "psi": 0.385262,
+      "s_setpoint": 0.8756,
+      "t_setpoint": 0.17,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-05",
+      "psi": 0.239364,
+      "s_setpoint": 0.4666,
+      "t_setpoint": 0.0011,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-06",
+      "psi": 0.093466,
+      "s_setpoint": 0.0838,
+      "t_setpoint": 0.223,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-07",
+      "psi": 0.947568,
+      "s_setpoint": 0.0269,
+      "t_setpoint": 0.6618,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-08",
+      "psi": 0.80167,
+      "s_setpoint": 0.3405,
+      "t_setpoint": 0.9739,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-09",
+      "psi": 0.655772,
+      "s_setpoint": 0.779,
+      "t_setpoint": 0.9149,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-10",
+      "psi": 0.509874,
+      "s_setpoint": 0.999,
+      "t_setpoint": 0.531,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-11",
+      "psi": 0.363976,
+      "s_setpoint": 0.8282,
+      "t_setpoint": 0.1228,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-12",
+      "psi": 0.218078,
+      "s_setpoint": 0.4004,
+      "t_setpoint": 0.01,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-13",
+      "psi": 0.07218,
+      "s_setpoint": 0.0505,
+      "t_setpoint": 0.2809,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-14",
+      "psi": 0.926282,
+      "s_setpoint": 0.0527,
+      "t_setpoint": 0.7234,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-15",
+      "psi": 0.780384,
+      "s_setpoint": 0.4051,
+      "t_setpoint": 0.9909,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-16",
+      "psi": 0.634486,
+      "s_setpoint": 0.8319,
+      "t_setpoint": 0.874,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-17",
+      "psi": 0.488588,
+      "s_setpoint": 0.9987,
+      "t_setpoint": 0.4642,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-18",
+      "psi": 0.34269,
+      "s_setpoint": 0.775,
+      "t_setpoint": 0.0824,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-19",
+      "psi": 0.196792,
+      "s_setpoint": 0.3359,
+      "t_setpoint": 0.0277,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-20",
+      "psi": 0.050893,
+      "s_setpoint": 0.0253,
+      "t_setpoint": 0.3428,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-21",
+      "psi": 0.904995,
+      "s_setpoint": 0.0865,
+      "t_setpoint": 0.7811,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-22",
+      "psi": 0.759097,
+      "s_setpoint": 0.4714,
+      "t_setpoint": 0.9992,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-23",
+      "psi": 0.613199,
+      "s_setpoint": 0.8788,
+      "t_setpoint": 0.8264,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-24",
+      "psi": 0.467301,
+      "s_setpoint": 0.9895,
+      "t_setpoint": 0.398,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-25",
+      "psi": 0.321403,
+      "s_setpoint": 0.7169,
+      "t_setpoint": 0.0495,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-26",
+      "psi": 0.175505,
+      "s_setpoint": 0.2744,
+      "t_setpoint": 0.0538,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-27",
+      "psi": 0.029607,
+      "s_setpoint": 0.0086,
+      "t_setpoint": 0.4075,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-28",
+      "psi": 0.883709,
+      "s_setpoint": 0.1276,
+      "t_setpoint": 0.8337,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-29",
+      "psi": 0.737811,
+      "s_setpoint": 0.5383,
+      "t_setpoint": 0.9985,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-30",
+      "psi": 0.591913,
+      "s_setpoint": 0.9189,
+      "t_setpoint": 0.773,
+      "gamma": -21815105378.183945
+    },
+    {
+      "date": "2026-07-31",
+      "psi": 0.446015,
+      "s_setpoint": 0.9715,
+      "t_setpoint": 0.3336,
+      "gamma": -21815105378.183945
+    }
+  ]
+}
