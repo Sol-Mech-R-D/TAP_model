@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-07-02T08:17:24.820439",
+  "breath_producers": [
+    {
+      "name": "Sub-breath (Earth-Moon beat)",
+      "period_days": 8.12133,
+      "phi_power": 4,
+      "coupling": 0.14589803375031543,
+      "description": "Primary 8.121-day sub-breath clock"
+    },
+    {
+      "name": "Lunar synodic (Moon phases)",
+      "period_days": 29.53059,
+      "phi_power": 8,
+      "coupling": 0.02128623625220818,
+      "description": "Full moon to full moon"
+    },
+    {
+      "name": "Solar Carrington rotation",
+      "period_days": 27.2753,
+      "phi_power": 8,
+      "coupling": 0.02128623625220818,
+      "description": "Solar equatorial rotation (sunspot cycle)"
+    },
+    {
+      "name": "Earth annual orbit",
+      "period_days": 365.256,
+      "phi_power": 13,
+      "coupling": 0.0019193787254996309,
+      "description": "Earth orbital period (perihelion to perihelion)"
+    },
+    {
+      "name": "Lunar nodal (eclipse cycle)",
+      "period_days": 6793.650000000001,
+      "phi_power": 16,
+      "coupling": 0.0004531038537848218,
+      "description": "Lunar orbital plane precession"
+    },
+    {
+      "name": "Venus synodic",
+      "period_days": 583.9,
+      "phi_power": 16,
+      "coupling": 0.0004531038537848218,
+      "description": "Venus-Earth conjunction cycle"
+    },
+    {
+      "name": "Mars synodic",
+      "period_days": 779.9,
+      "phi_power": 18,
+      "coupling": 0.00017307027171223924,
+      "description": "Mars-Earth conjunction cycle"
+    },
+    {
+      "name": "Jupiter-Saturn conjunction",
+      "period_days": 7253.865,
+      "phi_power": 20,
+      "coupling": 6.610696135189592e-05,
+      "description": "Great conjunction (20-year cycle)"
+    },
+    {
+      "name": "Cosmic (Hubble time)",
+      "period_days": 5040450000000.0,
+      "phi_power": 26,
+      "coupling": 3.6840146919005873e-06,
+      "description": "Cosmic breath, age of universe"
+    }
+  ],
+  "n_b": 8,
+  "gamma_n_b": 1.015355029803997,
+  "today_drift": {
+    "total_modulation": 0.9168666267828668,
+    "eps_0": 0.0019193787254996309,
+    "eps_total": 0.0017598142975676445,
+    "per_producer": {
+      "Sub-breath (Earth-Moon beat)": {
+        "phase_deg": 113.26,
+        "phase_rad": 1.9768,
+        "coupling": 0.14589803375031543,
+        "contribution": -0.057616,
+        "phi_power": 4
+      },
+      "Lunar synodic (Moon phases)": {
+        "phase_deg": 130.15,
+        "phase_rad": 2.2716,
+        "coupling": 0.02128623625220818,
+        "contribution": -0.013726,
+        "phi_power": 8
+      },
+      "Solar Carrington rotation": {
+        "phase_deg": 140.92,
+        "phase_rad": 2.4594,
+        "coupling": 0.02128623625220818,
+        "contribution": -0.016523,
+        "phi_power": 8
+      },
+      "Earth annual orbit": {
+        "phase_deg": 10.52,
+        "phase_rad": 0.1837,
+        "coupling": 0.0019193787254996309,
+        "contribution": 0.001887,
+        "phi_power": 13
+      },
+      "Lunar nodal (eclipse cycle)": {
+        "phase_deg": 0.57,
+        "phase_rad": 0.0099,
+        "coupling": 0.0004531038537848218,
+        "contribution": 0.000453,
+        "phi_power": 16
+      },
+      "Venus synodic": {
+        "phase_deg": 6.58,
+        "phase_rad": 0.1149,
+        "coupling": 0.0004531038537848218,
+        "contribution": 0.00045,
+        "phi_power": 16
+      },
+      "Mars synodic": {
+        "phase_deg": 4.93,
+        "phase_rad": 0.086,
+        "coupling": 0.00017307027171223924,
+        "contribution": 0.000172,
+        "phi_power": 18
+      },
+      "Jupiter-Saturn conjunction": {
+        "phase_deg": 0.53,
+        "phase_rad": 0.0092,
+        "coupling": 6.610696135189592e-05,
+        "contribution": 6.6e-05,
+        "phi_power": 20
+      },
+      "Cosmic (Hubble time)": {
+        "phase_deg": 0.0,
+        "phase_rad": 0.0,
+        "coupling": 3.6840146919005873e-06,
+        "contribution": 4e-06,
+        "phi_power": 26
+      }
+    }
+  },
+  "forward_30d": [
+    {
+      "date": "2026-07-02",
+      "eps_total": 0.0017598142975676445,
+      "total_mod": 0.9168666267828668
+    },
+    {
+      "date": "2026-07-03",
+      "eps_total": 0.001606100216376019,
+      "total_mod": 0.8367812954464926
+    },
+    {
+      "date": "2026-07-04",
+      "eps_total": 0.0015987001426557468,
+      "total_mod": 0.8329258428346867
+    },
+    {
+      "date": "2026-07-05",
+      "eps_total": 0.001736696326635038,
+      "total_mod": 0.9048221195548372
+    },
+    {
+      "date": "2026-07-06",
+      "eps_total": 0.0019397987431107886,
+      "total_mod": 1.0106388683691605
+    },
+    {
+      "date": "2026-07-07",
+      "eps_total": 0.002093441277263814,
+      "total_mod": 1.0906869235610983
+    },
+    {
+      "date": "2026-07-08",
+      "eps_total": 0.0021125253103240027,
+      "total_mod": 1.1006297414149435
+    },
+    {
+      "date": "2026-07-09",
+      "eps_total": 0.0019890118668563763,
+      "total_mod": 1.0362790002992346
+    },
+    {
+      "date": "2026-07-10",
+      "eps_total": 0.0017970895024816316,
+      "total_mod": 0.9362870800882893
+    },
+    {
+      "date": "2026-07-11",
+      "eps_total": 0.0016523511032773364,
+      "total_mod": 0.8608780962950473
+    },
+    {
+      "date": "2026-07-12",
+      "eps_total": 0.0016466946608357667,
+      "total_mod": 0.8579310789261342
+    },
+    {
+      "date": "2026-07-13",
+      "eps_total": 0.001794973357962079,
+      "total_mod": 0.9351845647319197
+    },
+    {
+      "date": "2026-07-14",
+      "eps_total": 0.0020242068927542618,
+      "total_mod": 1.0546156763446168
+    },
+    {
+      "date": "2026-07-15",
+      "eps_total": 0.002213082933399834,
+      "total_mod": 1.153020456045614
+    },
+    {
+      "date": "2026-07-16",
+      "eps_total": 0.002260619179422268,
+      "total_mod": 1.1777869314633616
+    },
+    {
+      "date": "2026-07-17",
+      "eps_total": 0.002144834307219585,
+      "total_mod": 1.117462790810743
+    },
+    {
+      "date": "2026-07-18",
+      "eps_total": 0.0019366215935326806,
+      "total_mod": 1.008983567340813
+    },
+    {
+      "date": "2026-07-19",
+      "eps_total": 0.0017594710151626893,
+      "total_mod": 0.9166877759909962
+    },
+    {
+      "date": "2026-07-20",
+      "eps_total": 0.0017177897374939211,
+      "total_mod": 0.8949717503234104
+    },
+    {
+      "date": "2026-07-21",
+      "eps_total": 0.001835863852197809,
+      "total_mod": 0.9564885907130797
+    },
+    {
+      "date": "2026-07-22",
+      "eps_total": 0.0020436886566776325,
+      "total_mod": 1.0647657127415762
+    },
+    {
+      "date": "2026-07-23",
+      "eps_total": 0.0022180643997146126,
+      "total_mod": 1.1556158095569342
+    },
+    {
+      "date": "2026-07-24",
+      "eps_total": 0.0022544359452288287,
+      "total_mod": 1.1745654545806115
+    },
+    {
+      "date": "2026-07-25",
+      "eps_total": 0.002127055887094438,
+      "total_mod": 1.1082001998020203
+    },
+    {
+      "date": "2026-07-26",
+      "eps_total": 0.0019027330894882436,
+      "total_mod": 0.9913275916887876
+    },
+    {
+      "date": "2026-07-27",
+      "eps_total": 0.001701354867587247,
+      "total_mod": 0.8864091515572935
+    },
+    {
+      "date": "2026-07-28",
+      "eps_total": 0.001627249888949235,
+      "total_mod": 0.8478003154513697
+    },
+    {
+      "date": "2026-07-29",
+      "eps_total": 0.0017111800563242075,
+      "total_mod": 0.8915280937475081
+    },
+    {
+      "date": "2026-07-30",
+      "eps_total": 0.0018951661381088557,
+      "total_mod": 0.987385195496281
+    },
+    {
+      "date": "2026-07-31",
+      "eps_total": 0.002067160512813634,
+      "total_mod": 1.0769945948398143
+    }
+  ],
+  "summary": {
+    "min_eps_total": 0.0015987001426557468,
+    "max_eps_total": 0.002260619179422268,
+    "mean_eps_total": 0.0019055925252838743,
+    "std_eps_total": 0.00021173016932657542,
+    "modulation_range": 0.3448610886286748
+  }
+}

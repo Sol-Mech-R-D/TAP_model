@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-07-02T08:22:20.144210",
+  "n_breath_producers": 9,
+  "kp_validation": {
+    "train_size": 30,
+    "test_size": 31,
+    "params": {
+      "baseline": 552.1911890746758,
+      "A": 0.07899356680655126,
+      "B": 33057.466338428145,
+      "r_squared": 0.7086162929295231,
+      "n": 30
+    },
+    "mae_baseline": 1.285,
+    "mae_persistence": 0.603,
+    "mae_unified": 10.326
+  },
+  "weather_validation": {
+    "Fresno": {
+      "mae_climatology": 6.802,
+      "mae_old_tap": 6.797,
+      "mae_unified": 9.401,
+      "improvement_vs_climatology_pct": -38.22
+    },
+    "Tokyo": {
+      "mae_climatology": 6.916,
+      "mae_old_tap": 6.905,
+      "mae_unified": 8.54,
+      "improvement_vs_climatology_pct": -23.49
+    },
+    "London": {
+      "mae_climatology": 10.271,
+      "mae_old_tap": 10.276,
+      "mae_unified": 9.877,
+      "improvement_vs_climatology_pct": 3.84
+    },
+    "Singapore": {
+      "mae_climatology": 2.087,
+      "mae_old_tap": 2.089,
+      "mae_unified": 5.558,
+      "improvement_vs_climatology_pct": -166.29
+    },
+    "Sydney": {
+      "mae_climatology": 10.61,
+      "mae_old_tap": 10.602,
+      "mae_unified": 10.326,
+      "improvement_vs_climatology_pct": 2.67
+    }
+  },
+  "seismic_validation": {
+    "n_total": 2334,
+    "n_high_drift": 1167,
+    "n_high_phase": 569
+  }
+}
