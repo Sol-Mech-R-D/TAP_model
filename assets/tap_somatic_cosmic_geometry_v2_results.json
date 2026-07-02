@@ -1,0 +1,530 @@
+{
+  "timestamp": "2026-07-02T10:13:30.298710",
+  "n_templates": 22,
+  "n_somatic": 7,
+  "templates": [
+    {
+      "name": "Superfluid Vortex Braids",
+      "zone": "cold",
+      "T_K": 3.0,
+      "geometry": "vortex lattice",
+      "symmetry": "U(1)",
+      "type": "Pure Inorganic",
+      "somatic_match": "Anatomy Train spirals (twin vortices)"
+    },
+    {
+      "name": "Polythiazyl (SN)x Helices",
+      "zone": "cold",
+      "T_K": 8.0,
+      "geometry": "helical polymer",
+      "symmetry": "C_2",
+      "type": "Pure Inorganic",
+      "somatic_match": "Collagen triple helix (polymer)"
+    },
+    {
+      "name": "Fluorocarbon (PTFE-like) Sleeves",
+      "zone": "cold",
+      "T_K": 120.0,
+      "geometry": "sleeve",
+      "symmetry": "C_infty",
+      "type": "Hybrid",
+      "somatic_match": "Myelin sheath (insulating sleeve)"
+    },
+    {
+      "name": "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "zone": "cold",
+      "T_K": 130.0,
+      "geometry": "ribbon polymer",
+      "symmetry": "C_2v",
+      "type": "Hybrid",
+      "somatic_match": "Beta-sheet protein (ribbon)"
+    },
+    {
+      "name": "Carbon Biotemplates (DNA)",
+      "zone": "temperate",
+      "T_K": 150.0,
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "type": "Organic",
+      "somatic_match": "DNA double helix (IDENTICAL)"
+    },
+    {
+      "name": "Peptide Nucleic Acid (PNA) Helices",
+      "zone": "temperate",
+      "T_K": 180.0,
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "type": "Organic",
+      "somatic_match": "Actin filament (helical polymer)"
+    },
+    {
+      "name": "Quadruplet Codon DNA",
+      "zone": "temperate",
+      "T_K": 150.0,
+      "geometry": "quadruplet",
+      "symmetry": "C_4",
+      "type": "Organic",
+      "somatic_match": "Hemoglobin tetramer (C_4)"
+    },
+    {
+      "name": "Metallo-Nucleic Wires",
+      "zone": "temperate",
+      "T_K": 200.0,
+      "geometry": "wire",
+      "symmetry": "D_infty",
+      "type": "Hybrid",
+      "somatic_match": "Actin/myosin (linear wires)"
+    },
+    {
+      "name": "Organoselenium (Se-DNA)",
+      "zone": "temperate",
+      "T_K": 200.0,
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "type": "Hybrid",
+      "somatic_match": "DNA (analog)"
+    },
+    {
+      "name": "Carbon-Germanium (Germoxane) Gels",
+      "zone": "temperate",
+      "T_K": 200.0,
+      "geometry": "gel network",
+      "symmetry": "fractal",
+      "type": "Hybrid",
+      "somatic_match": "Extracellular matrix (gel)"
+    },
+    {
+      "name": "Phosphazene (P-N) Braids",
+      "zone": "temperate",
+      "T_K": 220.0,
+      "geometry": "braid",
+      "symmetry": "B_n",
+      "type": "Pure Inorganic",
+      "somatic_match": "Collagen B_3 braid (analog)"
+    },
+    {
+      "name": "Thioester Matrices",
+      "zone": "warm",
+      "T_K": 300.0,
+      "geometry": "tetrahedral",
+      "symmetry": "C_3v",
+      "type": "Organic",
+      "somatic_match": "Amino acid tetrahedral center"
+    },
+    {
+      "name": "Ge-Sn Photonic Wafers",
+      "zone": "warm",
+      "T_K": 320.0,
+      "geometry": "crystal wafer",
+      "symmetry": "D_2d",
+      "type": "Pure Inorganic",
+      "somatic_match": "Apatite crystal (bone)"
+    },
+    {
+      "name": "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "zone": "warm",
+      "T_K": 400.0,
+      "geometry": "cubane",
+      "symmetry": "T_d",
+      "type": "Hybrid",
+      "somatic_match": "Iron-sulfur cluster (biology)"
+    },
+    {
+      "name": "Carbon-Silicon (Organosilicon) Hybrids",
+      "zone": "warm",
+      "T_K": 400.0,
+      "geometry": "tetrahedral",
+      "symmetry": "T_d",
+      "type": "Hybrid",
+      "somatic_match": "Silicon in connective tissue (analog)"
+    },
+    {
+      "name": "Siloxane (Si-O) Helices",
+      "zone": "warm",
+      "T_K": 450.0,
+      "geometry": "triple helix",
+      "symmetry": "B_3",
+      "type": "Pure Inorganic",
+      "somatic_match": "Collagen triple helix (B_3)"
+    },
+    {
+      "name": "Carborane Cages (C-B)",
+      "zone": "warm",
+      "T_K": 550.0,
+      "geometry": "cage",
+      "symmetry": "I_h",
+      "type": "Hybrid",
+      "somatic_match": "Ferritin cage (I_h)"
+    },
+    {
+      "name": "Boron-Carbon-Nitrogen (BCN) Braids",
+      "zone": "hot",
+      "T_K": 35.0,
+      "geometry": "braid",
+      "symmetry": "B_n",
+      "type": "Hybrid",
+      "somatic_match": "B_3 braid in collagen (analog)"
+    },
+    {
+      "name": "Boron-Nitrogen (BN) Tubes",
+      "zone": "hot",
+      "T_K": 42.5,
+      "geometry": "cylinder",
+      "symmetry": "D_nh",
+      "type": "Pure Inorganic",
+      "somatic_match": "Microtubule hollow cylinder"
+    },
+    {
+      "name": "Silicon Carbide (SiC) Whiskers",
+      "zone": "hot",
+      "T_K": 55.0,
+      "geometry": "whisker",
+      "symmetry": "C_infty",
+      "type": "Pure Inorganic",
+      "somatic_match": "Cilia/flagella whisker"
+    },
+    {
+      "name": "Lanthanide Upconversion Networks",
+      "zone": "hot",
+      "T_K": 65.0,
+      "geometry": "network",
+      "symmetry": "fractal",
+      "type": "Pure Inorganic",
+      "somatic_match": "Lymphatic network (fractal)"
+    },
+    {
+      "name": "Dusty Plasma Helices",
+      "zone": "hot",
+      "T_K": 125.0,
+      "geometry": "helical plasma",
+      "symmetry": "helical",
+      "type": "Pure Inorganic",
+      "somatic_match": "Anatomy Train spirals (helical)"
+    }
+  ],
+  "somatic_geometries": [
+    {
+      "name": "Collagen triple helix",
+      "geometry": "triple helix",
+      "symmetry": "B_3",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "test": "P17 v3.1"
+    },
+    {
+      "name": "DNA double helix",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "test": "P7"
+    },
+    {
+      "name": "Anatomy Train spirals",
+      "geometry": "twin spirals",
+      "symmetry": "B_2",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "test": "P4"
+    },
+    {
+      "name": "Lymph vessel",
+      "geometry": "fractal tree",
+      "symmetry": "fractal",
+      "phi_rate": "\u03c6\u207b\u00b9\u00b3",
+      "test": "P2"
+    },
+    {
+      "name": "Actin filament",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "test": "fidelity"
+    },
+    {
+      "name": "Microtubule",
+      "geometry": "hollow cylinder",
+      "symmetry": "D_25",
+      "phi_rate": "\u03c6\u207b\u00b9\u00b3",
+      "test": "fidelity"
+    },
+    {
+      "name": "Myofibril (sarcomere)",
+      "geometry": "stacked bands",
+      "symmetry": "translation",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "test": "P3"
+    }
+  ],
+  "best_matches": [
+    {
+      "template": "Superfluid Vortex Braids",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Polythiazyl (SN)x Helices",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Fluorocarbon (PTFE-like) Sleeves",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Carbon Biotemplates (DNA)",
+      "somatic": "DNA double helix",
+      "score": 0.7
+    },
+    {
+      "template": "Peptide Nucleic Acid (PNA) Helices",
+      "somatic": "DNA double helix",
+      "score": 0.7
+    },
+    {
+      "template": "Quadruplet Codon DNA",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Metallo-Nucleic Wires",
+      "somatic": "DNA double helix",
+      "score": 0.25
+    },
+    {
+      "template": "Organoselenium (Se-DNA)",
+      "somatic": "DNA double helix",
+      "score": 0.7
+    },
+    {
+      "template": "Carbon-Germanium (Germoxane) Gels",
+      "somatic": "Lymph vessel",
+      "score": 0.3
+    },
+    {
+      "template": "Phosphazene (P-N) Braids",
+      "somatic": "Collagen triple helix",
+      "score": 0.25
+    },
+    {
+      "template": "Thioester Matrices",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Ge-Sn Photonic Wafers",
+      "somatic": "DNA double helix",
+      "score": 0.25
+    },
+    {
+      "template": "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Carbon-Silicon (Organosilicon) Hybrids",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Siloxane (Si-O) Helices",
+      "somatic": "Collagen triple helix",
+      "score": 0.7
+    },
+    {
+      "template": "Carborane Cages (C-B)",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Boron-Carbon-Nitrogen (BCN) Braids",
+      "somatic": "Collagen triple helix",
+      "score": 0.25
+    },
+    {
+      "template": "Boron-Nitrogen (BN) Tubes",
+      "somatic": "Microtubule",
+      "score": 0.55
+    },
+    {
+      "template": "Silicon Carbide (SiC) Whiskers",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    },
+    {
+      "template": "Lanthanide Upconversion Networks",
+      "somatic": "Lymph vessel",
+      "score": 0.3
+    },
+    {
+      "template": "Dusty Plasma Helices",
+      "somatic": "Collagen triple helix",
+      "score": 0.0
+    }
+  ],
+  "all_scores": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3,
+    0.7,
+    0.0,
+    0.0,
+    0.7,
+    0.25,
+    0.0,
+    0.3,
+    0.7,
+    0.0,
+    0.0,
+    0.7,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.25,
+    0.25,
+    0.0,
+    0.3,
+    0.7,
+    0.0,
+    0.0,
+    0.7,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3,
+    0.0,
+    0.0,
+    0.0,
+    0.25,
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.25,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.7,
+    0.3,
+    0.25,
+    0.0,
+    0.3,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.25,
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.25,
+    0.0,
+    0.0,
+    0.25,
+    0.55,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "stats": {
+    "mean_score": 0.075,
+    "max_score": 0.7,
+    "strong_matches": 8,
+    "strong_match_pct": 5.2
+  }
+}
