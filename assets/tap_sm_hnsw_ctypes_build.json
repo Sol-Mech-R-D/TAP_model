@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-07-02T11:18:31.726568",
+  "lib_path": "/data/data/com.termux/files/home/TAP_model/src/../build/libhnsw_sm.so",
+  "lib_size_bytes": 23224,
+  "source": "/data/data/com.termux/files/home/TAP_model/src/CythOS/cygemm/hnsw_sm.c",
+  "source_size_bytes": 0,
+  "compiler": "gcc",
+  "flags": [
+    "-c",
+    "-fPIC",
+    "-O2"
+  ],
+  "exports": [
+    "add_neighbor_connection",
+    "add_semantic_relation",
+    "annihilate_negated_nodes",
+    "calculate_state_distance",
+    "check_ais_anomaly",
+    "create_anti_node",
+    "create_composite_node",
+    "create_graph",
+    "create_mmap_node",
+    "create_standard_node",
+    "free_graph",
+    "free_node",
+    "generate_gan_bridge_nodes",
+    "insert_node",
+    "l2_distance",
+    "print_graph_structure",
+    "record_node_visit",
+    "run_cellular_automata_healing",
+    "run_evolutionary_optimization",
+    "search_knn"
+  ],
+  "compatibility": "l2_distance callable from Python via ctypes"
+}
