@@ -5,6 +5,44 @@ All notable changes to the TAP Model are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.3.1] - 2026-07-01
+
+### Added
+- **`docs/TAP_P17_Plastic_CubeRoot_v5.3.md`** (8 KB) — the
+  P17 v3.1 derivation: ψ = ρ^(-1/3) closes the 2.4x gap
+  to **0.21% agreement**. The 7 multiverse constants
+  provide the missing geometric factor.
+- **`docs/TAP_P17_Experimental_Design_v5.3.md`** (8 KB) — 4
+  direct experimental tests of the Plastic cube root
+  prediction. End-to-end sim ($0, 1 wk), braid geometry
+  ($80K, 6 mo), substrate density ($500K, 18 mo), phase
+  coupling ($20K, 3 mo).
+- **`docs/TAP_Multiverse_Constants_Reduction_v5.3.md`**
+  (8 KB) — algebraic analysis of the 7 multiverse
+  constants. They reduce to **4 independent + 3 derived**:
+  ρ, φ, δ_F, α are independent; Neg Golden, Silver, Bronze
+  are derived. The 4+3=7 split is Fibonacci/Lucas.
+- **`src/tap_p15_soot_fidelity_sim.py`** (7 KB) — P15
+  in-silico: soot/fidelity anti-correlation across 8
+  cosmic zones. r = -0.99. All 3 predicted clean zones
+  confirmed. PASS.
+- **`src/tap_p16_magnetite_chiral_sim.py`** (7 KB) — P16
+  in-silico: magnetite/L-excess correlation across 8
+  meteorite classes. r = 0.998. Both predicted strong
+  classes (Nakhla, Chassigny) confirmed. PASS.
+
+### Changed
+- **`src/calibration_derivation.py`** — PSI is now
+  ρ^(-1/3) (multiverse-derived), not cos(π/8) or 1/φ².
+  P17 v3 verdict: **SUPPORTED with 0.21% agreement**.
+- **`docs/TAP_v5_Paper.md`** — abstract and section 6.5
+  updated with the 0.21% P17 v3.1 result.
+
+### Validation
+- 19/19 cascade tests PASS
+- 99/99 super-tribunal tests PASS (163 sec, 9/9 disciplines)
+- P15 + P16 in-silico precursors: PASS
+
 ## [5.3.0] - 2026-07-01
 
 ### Added

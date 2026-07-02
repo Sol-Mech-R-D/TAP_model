@@ -1,0 +1,56 @@
+{
+  "results": [
+    {
+      "zone": "HII region (Orion Nebula)",
+      "soot_density": 4.5,
+      "fidelity": 0.4448580662229411,
+      "status": "MEDIUM"
+    },
+    {
+      "zone": "Dense molecular cloud (Taurus)",
+      "soot_density": 3.8,
+      "fidelity": 0.5612437364432349,
+      "status": "\u2605 HIGH FIDELITY"
+    },
+    {
+      "zone": "Protoplanetary disk (inner)",
+      "soot_density": 2.5,
+      "fidelity": 0.7788007830714049,
+      "status": "\u2605 HIGH FIDELITY"
+    },
+    {
+      "zone": "Protoplanetary disk (outer)",
+      "soot_density": 0.8,
+      "fidelity": 0.9747249016017939,
+      "status": "\u2605 HIGH FIDELITY"
+    },
+    {
+      "zone": "Diffuse ISM",
+      "soot_density": 1.2,
+      "fidelity": 0.9440274829178357,
+      "status": "\u2605 HIGH FIDELITY"
+    },
+    {
+      "zone": "Cold core (B68-like)",
+      "soot_density": 0.3,
+      "fidelity": 0.9964064722309933,
+      "status": "\u2605 HIGH FIDELITY"
+    },
+    {
+      "zone": "Earth's neighborhood (Local Bubble)",
+      "soot_density": 0.4,
+      "fidelity": 0.993620436379149,
+      "status": "\u2605 HIGH FIDELITY"
+    },
+    {
+      "zone": "Stellar wind bubble",
+      "soot_density": 3.2,
+      "fidelity": 0.6639157633354735,
+      "status": "\u2605 HIGH FIDELITY"
+    }
+  ],
+  "correlation": -0.9913657161817989,
+  "high_fidelity_count": 7,
+  "predicted_match": 3,
+  "saturation": 5.0
+}

@@ -1,6 +1,6 @@
 {
   "framework": "TAP Model v5.3",
-  "total_sims": 54,
+  "total_sims": 62,
   "categories": {
     "CASCADE": [
       "tap_5ht2a_ayahuasca_sim.py",
@@ -24,7 +24,12 @@
       "tap_cosmic_origin_sims.py",
       "tap_cosmological_cascade_sweep.py",
       "tap_final_hybrid_predictions.py",
+      "tap_high_dimension_sequence_sim.py",
+      "tap_multicycle_reset_sweep.py",
       "tap_multisphere_predictions.py",
+      "tap_multiverse_coupling_sim.py",
+      "tap_p15_soot_fidelity_sim.py",
+      "tap_p16_magnetite_chiral_sim.py",
       "tap_reset_antitemplate_sim.py",
       "tap_standalone_cascade_tribunal.py",
       "tap_super_tribunal_99.py",
@@ -68,8 +73,11 @@
       "tap_option_arbitrage.py"
     ],
     "TOOL": [
+      "calibration_derivation.py",
+      "render_mermaid_diagrams.py",
       "tap_audio_test.py",
       "tap_cascade_context.py",
+      "tap_parameter_free_constants_proof.py",
       "tap_proof.py"
     ]
   },
@@ -397,6 +405,54 @@
       "phi_rate": "phi^-16+",
       "category": "MULTISPHERE",
       "description": "Hybrid (C + other element) templates, specialized environments"
+    },
+    "tap_p15_soot_fidelity_sim.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "MULTISPHERE",
+      "description": "P15 soot/fidelity anti-correlation, 8 cosmic zones, r=-0.99"
+    },
+    "tap_p16_magnetite_chiral_sim.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-13",
+      "category": "MULTISPHERE",
+      "description": "P16 magnetite/L-excess correlation, 8 meteorite classes, r=0.998"
+    },
+    "tap_multicycle_reset_sweep.py": {
+      "layer": "multicycle reset",
+      "phi_rate": "phi^-13",
+      "category": "MULTISPHERE",
+      "description": "P17 v2 multi-cycle reset sim, validates breath clock drift"
+    },
+    "calibration_derivation.py": {
+      "layer": "tool",
+      "phi_rate": "\u2014",
+      "category": "TOOL",
+      "description": "P17 v3 calibration constant \u03ba derivation (residue \u2192 drift)"
+    },
+    "render_mermaid_diagrams.py": {
+      "layer": "tool",
+      "phi_rate": "\u2014",
+      "category": "TOOL",
+      "description": "matplotlib PNG renderer for cascade/multisphere diagrams"
+    },
+    "tap_multiverse_coupling_sim.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-13",
+      "category": "MULTISPHERE",
+      "description": "Multiverse coupling, cross-universe residue transfer"
+    },
+    "tap_parameter_free_constants_proof.py": {
+      "layer": "tool",
+      "phi_rate": "all",
+      "category": "TOOL",
+      "description": "Parameter-free constants proof (uses framework primitives only)"
+    },
+    "tap_high_dimension_sequence_sim.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-13, phi^-26",
+      "category": "MULTISPHERE",
+      "description": "High-dim sequence, cross-template and cross-zone dynamics"
     }
   }
 }

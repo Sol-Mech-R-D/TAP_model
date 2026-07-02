@@ -377,6 +377,19 @@ SIM_CASCADE_MAP = {
         "category": "MULTISPHERE",
         "description": "Hybrid (C + other element) templates, specialized environments"
     },
+    # P15-P16 in-silico precursors (added v5.3)
+    "tap_p15_soot_fidelity_sim.py": {
+        "layer": "multisphere",
+        "phi_rate": "phi^-4, phi^-13",
+        "category": "MULTISPHERE",
+        "description": "P15 soot/fidelity anti-correlation, 8 cosmic zones, r=-0.99"
+    },
+    "tap_p16_magnetite_chiral_sim.py": {
+        "layer": "multisphere",
+        "phi_rate": "phi^-13",
+        "category": "MULTISPHERE",
+        "description": "P16 magnetite/L-excess correlation, 8 meteorite classes, r=0.998"
+    },
     # P17 v2 multi-cycle sim (added v5.3)
     "tap_multicycle_reset_sweep.py": {
         "layer": "multicycle reset",

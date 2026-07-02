@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "class": "Murchison (CM2 carbonaceous)",
+      "magnetite": 8.0,
+      "l_excess": 0.0014276938399964752,
+      "l_excess_pct": 0.14276938399964753,
+      "status": "MEDIUM CHIRAL"
+    },
+    {
+      "class": "Orgueil (CI1 carbonaceous)",
+      "magnetite": 12.0,
+      "l_excess": 0.0015680634885994445,
+      "l_excess_pct": 0.15680634885994446,
+      "status": "\u2605 STRONG CHIRAL"
+    },
+    {
+      "class": "Tagish Lake (C2 ungrouped)",
+      "magnetite": 5.0,
+      "l_excess": 0.0013077861033362291,
+      "l_excess_pct": 0.13077861033362292,
+      "status": "MEDIUM CHIRAL"
+    },
+    {
+      "class": "Allende (CV3 carbonaceous)",
+      "magnetite": 3.0,
+      "l_excess": 0.001215255810124967,
+      "l_excess_pct": 0.1215255810124967,
+      "status": "MEDIUM CHIRAL"
+    },
+    {
+      "class": "Nakhla (martian, nakhlite)",
+      "magnetite": 18.0,
+      "l_excess": 0.001754502629924318,
+      "l_excess_pct": 0.1754502629924318,
+      "status": "\u2605 STRONG CHIRAL"
+    },
+    {
+      "class": "Chassigny (martian, chassignite)",
+      "magnetite": 15.0,
+      "l_excess": 0.001664100619971667,
+      "l_excess_pct": 0.1664100619971667,
+      "status": "\u2605 STRONG CHIRAL"
+    },
+    {
+      "class": "Ordinary chondrite (H5)",
+      "magnetite": 6.0,
+      "l_excess": 0.0013496840952072146,
+      "l_excess_pct": 0.13496840952072145,
+      "status": "MEDIUM CHIRAL"
+    },
+    {
+      "class": "Acapulcoite (primitive achondrite)",
+      "magnetite": 4.0,
+      "l_excess": 0.0012632764408668476,
+      "l_excess_pct": 0.12632764408668476,
+      "status": "MEDIUM CHIRAL"
+    }
+  ],
+  "correlation": 0.997995308455766,
+  "strong_chiral_count": 3,
+  "predicted_match": 2,
+  "magnetite_ref": 10.0,
+  "l_baseline": 0.001,
+  "alpha": 0.5,
+  "beta": 0.7
+}

@@ -29,6 +29,12 @@ cosmic-scale timing through a single φ-spiral geometric pattern.
    and [TAP_Multisphere_Biotemplates_v5.3.md](TAP_Multisphere_Biotemplates_v5.3.md).
 7. **Want the multiverse coupling framing (Layer 4)?** Start with
    [TAP_Multiverse_Coupling_Framework_v5.3.md](TAP_Multiverse_Coupling_Framework_v5.3.md).
+8. **Want to see P17 v3.1 (Plastic cube root) derivation?** Start with
+   [TAP_P17_Plastic_CubeRoot_v5.3.md](TAP_P17_Plastic_CubeRoot_v5.3.md).
+9. **Want to test the 7 multiverse constants reduction?** Start with
+   [TAP_Multiverse_Constants_Reduction_v5.3.md](TAP_Multiverse_Constants_Reduction_v5.3.md).
+10. **Want experimental designs for P17 v3.1?** Start with
+    [TAP_P17_Experimental_Design_v5.3.md](TAP_P17_Experimental_Design_v5.3.md).
 
 ---
 
