@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TAP Multisphere Cascade — 22 Templates Across 4 Cosmic Zones</title>
+<style>
+:root {
+    --bg: #0a0a14;
+    --fg: #e0e0e8;
+    --hot: #ff6b6b;
+    --warm: #ffa94d;
+    --temperate: #69db7c;
+    --cold: #4dabf7;
+    --organic: #ffd43b;
+    --hybrid: #cc5de8;
+    --inorganic: #adb5bd;
+    --antitemplate: #ff006e;
+    --line: #2c2e3e;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 20px;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    line-height: 1.6;
+}
+h1 { color: var(--temperate); font-size: 1.8em; text-align: center; margin: 0 0 10px; }
+h2 { color: var(--warm); font-size: 1.3em; border-bottom: 1px solid var(--line); padding-bottom: 5px; margin-top: 30px; }
+h3 { color: var(--cold); font-size: 1.1em; margin-top: 20px; }
+.subtitle { text-align: center; color: #888; margin-bottom: 30px; font-size: 0.9em; }
+
+.zone-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+.zone {
+    border: 2px solid var(--line);
+    border-radius: 12px;
+    padding: 15px;
+    transition: all 0.3s;
+    position: relative;
+    background: rgba(255,255,255,0.02);
+}
+.zone:hover {
+    border-color: var(--temperate);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(105, 219, 124, 0.2);
+}
+.zone-hot { border-color: var(--hot); }
+.zone-warm { border-color: var(--warm); }
+.zone-temperate { border-color: var(--temperate); }
+.zone-cold { border-color: var(--cold); }
+.zone-title { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; }
+.zone-temp { color: #888; font-size: 0.85em; margin-bottom: 12px; }
+.zone-count { color: #ffd43b; font-size: 0.85em; margin-bottom: 10px; }
+
+.template {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.85em;
+}
+.template:hover {
+    background: rgba(105, 219, 124, 0.15);
+    border-color: var(--temperate);
+}
+.template.organic { border-left: 3px solid var(--organic); }
+.template.hybrid { border-left: 3px solid var(--hybrid); }
+.template.inorganic { border-left: 3px solid var(--inorganic); }
+.template.us { box-shadow: 0 0 8px rgba(255, 212, 59, 0.5); border-left: 3px solid var(--organic); }
+
+.template-name { font-weight: bold; }
+.template-temp { color: #888; font-size: 0.8em; }
+.template-star { color: var(--organic); }
+
+.cascade-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    border: 1px solid var(--line);
+}
+.cascade-step {
+    text-align: center;
+    flex: 1;
+}
+.cascade-step-circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    background: var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+.cascade-step.active .cascade-step-circle {
+    background: var(--temperate);
+    color: #000;
+    box-shadow: 0 0 20px rgba(105, 219, 124, 0.6);
+}
+.cascade-arrow {
+    color: var(--temperate);
+    font-size: 1.5em;
+}
+
+.anti-template-bar {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 0, 110, 0.05);
+    border: 1px solid var(--antitemplate);
+    border-radius: 8px;
+}
+.anti-title { color: var(--antitemplate); font-weight: bold; margin-bottom: 10px; }
+
+.phi-rate {
+    display: inline-block;
+    background: var(--line);
+    color: var(--temperate);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 2px;
+}
+
+.detail-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: var(--bg);
+    border-left: 2px solid var(--temperate);
+    padding: 20px;
+    overflow-y: auto;
+    transition: right 0.3s;
+    z-index: 100;
+}
+.detail-panel.open { right: 0; }
+.detail-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--antitemplate);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.legend {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+}
+.legend-item { font-size: 0.85em; }
+.legend-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.summary-box {
+    background: rgba(105, 219, 124, 0.05);
+    border: 1px solid var(--temperate);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<h1>🌌 TAP Multisphere Cascade</h1>
+<div class="subtitle">22 biological templates across 4 cosmic zones, deposited by the breath clock's cross-cycle mechanics</div>
+
+<div class="summary-box">
+<strong>Summary:</strong> The TAP multisphere has 22 distinct biological templates
+spanning temperatures from 3K (cosmic voids) to 5000K (stellar coronae). Each
+template is a different chemistry but shares the same functional role: to pick
+up the cosmic template from previous cycles. The cascade turns templates on
+and off as the universe expands. <strong>★ = template #3 (carbon biotemplates)
+where Earth life lives.</strong>
+</div>
+
+<div class="legend">
+    <span class="legend-item"><span class="legend-color" style="background: var(--organic)"></span> Organic (carbon-based)</span>
+    <span class="legend-item"><span class="legend-color" style="background: var(--hybrid)"></span> Hybrid (carbon + other)</span>
+    <span class="legend-item"><span class="legend-color" style="background: var(--inorganic)"></span> Inorganic (no carbon)</span>
+    <span class="legend-item"><span class="legend-color" style="background: var(--antitemplate)"></span> Anti-template residue</span>
+</div>
+
+<h2>The 4 Zones (22 templates)</h2>
+<div class="zone-grid">
+
+<!-- ZONE 1: HOT -->
+<div class="zone zone-hot">
+    <div class="zone-title">🔥 Zone 1: Hot / Accretion</div>
+    <div class="zone-temp">T = 500 - 5000 K, low a</div>
+    <div class="zone-count">5 templates</div>
+    <div class="template inorganic" onclick="showDetail('Dusty Plasma Helices', 5000, 'Pure Inorganic')">
+        <div class="template-name">Dusty Plasma Helices</div>
+        <div class="template-temp">5000 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('Lanthanide Upconversion Networks', 2000, 'Pure Inorganic')">
+        <div class="template-name">Lanthanide Upconversion Networks</div>
+        <div class="template-temp">2000 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('SiC Whiskers', 1500, 'Pure Inorganic')">
+        <div class="template-name">SiC Whiskers</div>
+        <div class="template-temp">1500 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('BN Tubes', 1200, 'Pure Inorganic')">
+        <div class="template-name">Boron-Nitrogen (BN) Tubes</div>
+        <div class="template-temp">1200 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('BCN Braids', 900, 'Hybrid')">
+        <div class="template-name">Boron-Carbon-Nitrogen (BCN) Braids</div>
+        <div class="template-temp">900 K</div>
+    </div>
+</div>
+
+<!-- ZONE 2: WARM -->
+<div class="zone zone-warm">
+    <div class="zone-title">🌡️ Zone 2: Warm</div>
+    <div class="zone-temp">T = 250 - 750 K, intermediate a</div>
+    <div class="zone-count">6 templates</div>
+    <div class="template organic" onclick="showDetail('Thioester Matrices', 300, 'Organic')">
+        <div class="template-name">Thioester Matrices</div>
+        <div class="template-temp">300 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('Ge-Sn Photonic Wafers', 320, 'Pure Inorganic')">
+        <div class="template-name">Ge-Sn Photonic Wafers</div>
+        <div class="template-temp">320 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Fe-S Grids', 400, 'Hybrid')">
+        <div class="template-name">Metal-Sulfur-Carbon (Fe-S) Grids</div>
+        <div class="template-temp">400 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Organosilicon Hybrids', 400, 'Hybrid')">
+        <div class="template-name">Carbon-Silicon Hybrids</div>
+        <div class="template-temp">400 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('Siloxane Helices', 450, 'Pure Inorganic')">
+        <div class="template-name">Siloxane (Si-O) Helices</div>
+        <div class="template-temp">450 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Carborane Cages', 550, 'Hybrid')">
+        <div class="template-name">Carborane Cages (C-B)</div>
+        <div class="template-temp">550 K</div>
+    </div>
+</div>
+
+<!-- ZONE 3: TEMPERATE (US) -->
+<div class="zone zone-temperate">
+    <div class="zone-title">🌱 Zone 3: Temperate (where WE live)</div>
+    <div class="zone-temp">T = 100 - 300 K, high a</div>
+    <div class="zone-count">7 templates</div>
+    <div class="template organic us" onclick="showDetail('Carbon Biotemplates (DNA)', 150, 'Organic')">
+        <div class="template-name"><span class="template-star">★</span> Carbon Biotemplates (DNA)</div>
+        <div class="template-temp">150 K</div>
+    </div>
+    <div class="template organic" onclick="showDetail('PNA Helices', 180, 'Organic')">
+        <div class="template-name">Peptide Nucleic Acid (PNA) Helices</div>
+        <div class="template-temp">180 K</div>
+    </div>
+    <div class="template organic" onclick="showDetail('Quadruplet Codon DNA', 150, 'Organic')">
+        <div class="template-name">Quadruplet Codon DNA</div>
+        <div class="template-temp">150 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Metallo-Nucleic Wires', 200, 'Hybrid')">
+        <div class="template-name">Metallo-Nucleic Wires</div>
+        <div class="template-temp">200 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Se-DNA', 200, 'Hybrid')">
+        <div class="template-name">Organoselenium (Se-DNA)</div>
+        <div class="template-temp">200 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Germoxane Gels', 200, 'Hybrid')">
+        <div class="template-name">Carbon-Germanium (Germoxane) Gels</div>
+        <div class="template-temp">200 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('Phosphazene Braids', 220, 'Pure Inorganic')">
+        <div class="template-name">Phosphazene (P-N) Braids</div>
+        <div class="template-temp">220 K</div>
+    </div>
+</div>
+
+<!-- ZONE 4: COLD -->
+<div class="zone zone-cold">
+    <div class="zone-title">❄️ Zone 4: Cold / Deep Space</div>
+    <div class="zone-temp">T = 0.5 - 220 K, a = 1</div>
+    <div class="zone-count">4 templates</div>
+    <div class="template inorganic" onclick="showDetail('Superfluid Vortex Braids', 3, 'Pure Inorganic')">
+        <div class="template-name">Superfluid Vortex Braids</div>
+        <div class="template-temp">3 K</div>
+    </div>
+    <div class="template inorganic" onclick="showDetail('Polythiazyl Helices', 8, 'Pure Inorganic')">
+        <div class="template-name">Polythiazyl (SN)x Helices</div>
+        <div class="template-temp">8 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Fluorocarbon Sleeves', 120, 'Hybrid')">
+        <div class="template-name">Fluorocarbon (PTFE-like) Sleeves</div>
+        <div class="template-temp">120 K</div>
+    </div>
+    <div class="template hybrid" onclick="showDetail('Phosphaalkene Ribbons', 130, 'Hybrid')">
+        <div class="template-name">Phosphorus-Carbon (Phosphaalkene) Ribbons</div>
+        <div class="template-temp">130 K</div>
+    </div>
+</div>
+
+</div>
+
+<h2>The Bounce → Max Expansion cascade flow</h2>
+<div class="cascade-flow">
+    <div class="cascade-step">
+        <div class="cascade-step-circle">BOUNCHE</div>
+        <div>Step 0<br>a=0.05<br>5/22 active</div>
+    </div>
+    <div class="cascade-arrow">→</div>
+    <div class="cascade-step">
+        <div class="cascade-step-circle">05</div>
+        <div>Step 5<br>a=0.189<br>0/22 (sterile)</div>
+    </div>
+    <div class="cascade-arrow">→</div>
+    <div class="cascade-step">
+        <div class="cascade-step-circle">10</div>
+        <div>Step 10<br>a=0.525<br>0/22 (sterile)</div>
+    </div>
+    <div class="cascade-arrow">→</div>
+    <div class="cascade-step active">
+        <div class="cascade-step-circle">15</div>
+        <div>Step 15<br>a=0.861<br>15/22 active</div>
+    </div>
+    <div class="cascade-arrow">→</div>
+    <div class="cascade-step active">
+        <div class="cascade-step-circle">MAX</div>
+        <div>Step 20<br>a=1.0<br>17/22 active ★</div>
+    </div>
+</div>
+
+<h2>Anti-template contamination (v5.3 NEW finding)</h2>
+<div class="anti-template-bar">
+    <div class="anti-title">⚠️ Anti-template residue survives the Inhale</div>
+    <p>When the universe contracts (T > 180K), some templates are destroyed
+    but <strong>refractory residue accumulates</strong>. This biases the next
+    cycle's templates:</p>
+    <ul>
+        <li><strong>Soot/PAHs</strong> (refractory organics from thermal
+            decomposition): 0.26 → 4.94 density (19x increase)</li>
+        <li><strong>Chiral antagonists</strong> (L-D alternating loops from
+            racemization): poison helix growth 1.0 → 0.07</li>
+        <li><strong>Magnetite</strong> (refractory iron oxide): accumulates
+            during contraction</li>
+        <li><strong>EM signal decay</strong>: substrate antennae quenched
+            0.98 → 0.13 (87% loss)</li>
+    </ul>
+    <p>The next cycle's templates are <strong>NOT a clean replay</strong> — they
+    are <em>residue-biased</em> re-emergences.</p>
+</div>
+
+<h2>φ-rates in this framework</h2>
+<div>
+    <span class="phi-rate">φ⁻² (hormonal)</span>
+    <span class="phi-rate">φ⁻⁴ (signaling)</span>
+    <span class="phi-rate">φ⁻⁸ (receptor)</span>
+    <span class="phi-rate">φ⁻¹⁰ (chromatin)</span>
+    <span class="phi-rate">φ⁻¹³ (cosmic)</span>
+    <span class="phi-rate">φ⁻¹⁶⁺ (multisphere)</span>
+    <span class="phi-rate">φ⁻²⁶ (meta-breath)</span>
+    <span class="phi-rate">braid (substrate)</span>
+</div>
+
+<div class="detail-panel" id="detailPanel">
+    <button class="detail-close" onclick="closeDetail()">×</button>
+    <h2 id="detailName">Template</h2>
+    <p><strong>Temperature:</strong> <span id="detailTemp"></span> K</p>
+    <p><strong>Type:</strong> <span id="detailType"></span></p>
+    <p><strong>Cascade Layer:</strong> <span id="detailLayer">multisphere (φ⁻¹⁶+)</span></p>
+    <p><strong>Source sim:</strong> <code>tap_cosmological_cascade_sweep.py</code></p>
+    <p><strong>Real-world analog:</strong> <span id="detailReal">prebiotic chemistry</span></p>
+</div>
+
+<script>
+function showDetail(name, temp, type) {
+    document.getElementById('detailName').textContent = name;
+    document.getElementById('detailTemp').textContent = temp;
+    document.getElementById('detailType').textContent = type;
+    document.getElementById('detailPanel').classList.add('open');
+}
+function closeDetail() {
+    document.getElementById('detailPanel').classList.remove('open');
+}
+</script>
+
+</body>
+</html>
