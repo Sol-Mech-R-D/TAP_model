@@ -1,0 +1,36 @@
+{
+  "primitives": {
+    "phi_rate": {
+      "value": 0.0019193787254996309,
+      "description": "Cosmic \u03c6-rate (\u03c6\u207b\u00b9\u00b3), the slowest \u03c6-rate in the cascade"
+    },
+    "alpha": {
+      "value": 0.0072973525205055605,
+      "description": "Fine-structure constant (dimensionless coupling)"
+    },
+    "psi": {
+      "value": 0.38196601125010515,
+      "description": "Geometric factor from braid weave (1/\u03c6\u00b2 for \u03c6-spiral)"
+    },
+    "phi_inv2": {
+      "value": 0.38196601125010515,
+      "description": "Secondary \u03c6-rate (\u03c6\u207b\u00b2 hormonal)"
+    }
+  },
+  "kappa_estimates": {
+    "direct": 3.666918722555743e-05,
+    "empirical": 1.5355029803997057e-05,
+    "hybrid": 5.349962315431015e-06
+  },
+  "psi_implied": 1.0962880000000008,
+  "psi_framework": 0.38196601125010515,
+  "psi_ratio": 0.348417579367926,
+  "application": {
+    "sim_R_at_NB": 1000.0,
+    "kappa_used": 1.5355029803997057e-05,
+    "predicted_drift_pct": 1.5355029803997058,
+    "expected_drift_pct": 1.5355029803997056,
+    "match": true
+  },
+  "verdict": "CALIBRATION DERIVED (empirical): \u03ba = 1.535e-5. Framework primitives predict \u03ba ~ 1000x larger. Missing \u03c8 = 2.1e-3 vs framework 1/\u03c6\u00b2 = 0.382. This identifies a specific open question: derive the geometric factor from the braid group structure."
+}

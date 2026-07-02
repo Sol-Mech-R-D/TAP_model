@@ -377,6 +377,48 @@ SIM_CASCADE_MAP = {
         "category": "MULTISPHERE",
         "description": "Hybrid (C + other element) templates, specialized environments"
     },
+    # P17 v2 multi-cycle sim (added v5.3)
+    "tap_multicycle_reset_sweep.py": {
+        "layer": "multicycle reset",
+        "phi_rate": "phi^-13",
+        "category": "MULTISPHERE",
+        "description": "P17 v2 multi-cycle reset sim, validates breath clock drift"
+    },
+    # P17 v3 calibration (added v5.3)
+    "calibration_derivation.py": {
+        "layer": "tool",
+        "phi_rate": "—",
+        "category": "TOOL",
+        "description": "P17 v3 calibration constant κ derivation (residue → drift)"
+    },
+    # Mermaid PNG renderer (added v5.3)
+    "render_mermaid_diagrams.py": {
+        "layer": "tool",
+        "phi_rate": "—",
+        "category": "TOOL",
+        "description": "matplotlib PNG renderer for cascade/multisphere diagrams"
+    },
+    # Multiverse coupling (new in v5.3+)
+    "tap_multiverse_coupling_sim.py": {
+        "layer": "multisphere",
+        "phi_rate": "phi^-13",
+        "category": "MULTISPHERE",
+        "description": "Multiverse coupling, cross-universe residue transfer"
+    },
+    # Parameter-free constants proof (new in v5.3+)
+    "tap_parameter_free_constants_proof.py": {
+        "layer": "tool",
+        "phi_rate": "all",
+        "category": "TOOL",
+        "description": "Parameter-free constants proof (uses framework primitives only)"
+    },
+    # High-dim sequence sim (new in v5.3+)
+    "tap_high_dimension_sequence_sim.py": {
+        "layer": "multisphere",
+        "phi_rate": "phi^-13, phi^-26",
+        "category": "MULTISPHERE",
+        "description": "High-dim sequence, cross-template and cross-zone dynamics"
+    },
 }
 
 
