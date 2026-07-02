@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-07-02T13:18:01.266689",
+  "lib_path": "/data/data/com.termux/files/home/TAP_model/build/cythos/libtap_full_v3.so",
+  "lib_size": 21024,
+  "test": {
+    "n_bodies_tested": 10,
+    "all_worked": true
+  }
+}

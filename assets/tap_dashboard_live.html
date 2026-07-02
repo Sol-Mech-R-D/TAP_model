@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TAP Live Dashboard</title>
+<meta http-equiv="refresh" content="30">
+<style>
+  body { font-family: 'SF Mono', Consolas, monospace; background: #0a0a14; color: #e0e0e0; margin: 0; padding: 20px; }
+  h1 { color: #ffd700; font-size: 1.5em; margin: 0 0 5px 0; }
+  .subtitle { color: #999; font-size: 0.85em; margin-bottom: 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 15px; }
+  .card { background: #1a1a2e; padding: 12px; border-left: 3px solid #ffd700; }
+  .card-label { color: #888; font-size: 0.75em; text-transform: uppercase; }
+  .card-value { color: #ffd700; font-size: 1.5em; font-weight: bold; }
+  .card-sub { color: #aaa; font-size: 0.8em; margin-top: 5px; }
+  .section-title { color: #4ade80; font-size: 1.1em; margin: 20px 0 10px 0; border-bottom: 1px solid #333; padding-bottom: 5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid #222; }
+  th { color: #ffd700; }
+  td { color: #e0e0e0; }
+  .body-table { font-size: 0.85em; }
+  .body-table .psi { color: #4ade80; font-weight: bold; }
+  .body-table .nb { color: #60a5fa; }
+  .body-table .top { color: #fbbf24; }
+  .run { padding: 4px 8px; margin: 2px 0; background: #14141f; border-left: 2px solid #4ade80; }
+  .run-error { border-left-color: #f87171; }
+  .state-awake { color: #4ade80; }
+  .state-asleep { color: #888; }
+  .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4ade80; margin-right: 5px; animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+</style>
+</head>
+<body>
+<h1><span class="live-dot"></span>TAP Live Dashboard</h1>
+<div class="subtitle">Auto-refresh every 30 seconds. 2026-07-02 13:18:58</div>
+
+<div class="section-title">LIVE CASCADE STATE</div>
+<div class="grid">
+  <div class="card">
+    <div class="card-label">Current ψ</div>
+    <div class="card-value">0.9287</div>
+    <div class="card-sub">Breath state (Earth)</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Kp Index</div>
+    <div class="card-value">0.0</div>
+    <div class="card-sub">Cosmic geomagnetic activity</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Temperature</div>
+    <div class="card-value">30.7°F</div>
+    <div class="card-sub">Fresno weather</div>
+  </div>
+  <div class="card">
+    <div class="card-label">M5.5+ Quakes</div>
+    <div class="card-value">4</div>
+    <div class="card-sub">Last 24 hours</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Γ(N_B)</div>
+    <div class="card-value">1.0650</div>
+    <div class="card-sub">Breath correction factor</div>
+  </div>
+  <div class="card">
+    <div class="card-label">φ (Golden)</div>
+    <div class="card-value">1.6180</div>
+    <div class="card-sub">Universal ratio</div>
+  </div>
+</div>
+
+
+<div class="section-title">10 COSMIC BODIES</div>
+<table class="body-table">
+<tr><th>ID</th><th>Name</th><th>ψ</th><th>N_B (breaths)</th><th>log N_B</th></tr>
+
+<tr><td>0</td><td>Earth</td><td class='psi'>0.9287</td><td class='nb'>8.0e+00</td><td>0.9</td></tr>
+<tr><td>1</td><td>Sun</td><td class='psi'>0.9287</td><td class='nb'>2.8e+11</td><td>11.4</td></tr>
+<tr><td>2</td><td>Moon</td><td class='psi'>0.9287</td><td class='nb'>4.0e+11</td><td>11.6</td></tr>
+<tr><td>3</td><td>Mars</td><td class='psi'>0.9287</td><td class='nb'>1.4e+12</td><td>12.1</td></tr>
+<tr><td>4</td><td>Mercury</td><td class='psi'>0.9287</td><td class='nb'>2.4e+10</td><td>10.4</td></tr>
+<tr><td>5</td><td>Venus</td><td class='psi'>0.9287</td><td class='nb'>5.8e+09</td><td>9.8</td></tr>
+<tr><td>6</td><td>Jupiter</td><td class='psi'>0.9287</td><td class='nb'>2.1e+15</td><td>15.3</td></tr>
+<tr><td>7</td><td>Saturn</td><td class='psi'>0.9287</td><td class='nb'>2.4e+15</td><td>15.4</td></tr>
+<tr><td>8</td><td>Uranus</td><td class='psi'>0.9287</td><td class='nb'>1.5e+15</td><td>15.2</td></tr>
+<tr><td>9</td><td>Neptune</td><td class='psi'>0.9287</td><td class='nb'>1.6e+15</td><td>15.2</td></tr>
+</table>
+
+<div class="section-title">RUN-LOOP AGENT</div>
+
+
+<div class="grid">
+  <div class="card">
+    <div class="card-label">State</div>
+    <div class="card-value state-awake">AWAKE</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Runs</div>
+    <div class="card-value">3</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Wakes</div>
+    <div class="card-value">1</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Sleeps</div>
+    <div class="card-value">1</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Bodies Visited</div>
+    <div class="card-value">10</div>
+  </div>
+  <div class="card">
+    <div class="card-label">WM Merged</div>
+    <div class="card-value">0</div>
+  </div>
+</div>
+
+
+<div class="section-title">RECENT SIM RUNS</div>
+
+<div class='run'>Step 1: unified_breath_clock - 0.1s, returncode=0</div>
+<div class='run'>Step 2: per_body_p1p18 - 0.1s, returncode=0</div>
+<div class='run'>Step 3: weather_v3 - 23.4s, returncode=0</div>
+
+<div class="section-title">FRAMEWORK STATS</div>
+<div class="grid">
+  <div class="card">
+    <div class="card-label">Sim files</div>
+    <div class="card-value">148</div>
+    <div class="card-sub">In src/</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Last run</div>
+    <div class="card-value" style="font-size:1em">2026-07-02T12:53:50</div>
+  </div>
+  <div class="card">
+    <div class="card-label">Version</div>
+    <div class="card-value" style="font-size:1em">TAP v5.3.2</div>
+  </div>
+</div>
+
+</body></html>
