@@ -1,0 +1,402 @@
+{
+  "framework": "TAP Model v5.3",
+  "total_sims": 54,
+  "categories": {
+    "CASCADE": [
+      "tap_5ht2a_ayahuasca_sim.py",
+      "tap_5ht2a_epigenetic_coupling_sim.py",
+      "tap_author_lens.py",
+      "tap_ayahuasca_fascia_cascade_sim.py",
+      "tap_breath_clock.py",
+      "tap_breath_clock_chem_mod.py",
+      "tap_chromatin_state_sim.py",
+      "tap_collagen_braiding_sim.py",
+      "tap_cosmic_breath_sim.py",
+      "tap_coupled_ayahuasca_sim.py",
+      "tap_epigenetic_cosmic_cascade.py",
+      "tap_epigenetic_flop_sim.py",
+      "tap_fascia_sim.py",
+      "tap_lymphatic_cascade_sim.py",
+      "tap_real_data_validator.py"
+    ],
+    "MULTISPHERE": [
+      "tap_asynchronous_pulsation_sim.py",
+      "tap_cosmic_origin_sims.py",
+      "tap_cosmological_cascade_sweep.py",
+      "tap_final_hybrid_predictions.py",
+      "tap_multisphere_predictions.py",
+      "tap_reset_antitemplate_sim.py",
+      "tap_standalone_cascade_tribunal.py",
+      "tap_super_tribunal_99.py",
+      "tap_trans_cyclic_sweep.py"
+    ],
+    "BIOCHEM": [
+      "tap_biochem_qubit_graphene.py",
+      "tap_device_coupled_soliton.py",
+      "tap_digital_soliton_sim.py",
+      "tap_multidiscipline_sweep.py",
+      "tap_phone_minimal_soliton.py",
+      "tap_soliton_collision_stress.py",
+      "tap_soliton_shielding_comparison.py",
+      "tap_somynence_48_sim.py"
+    ],
+    "QUANTUM": [
+      "tap_core_ai_cascade.py",
+      "tap_cosmic_quantum_neuro.py",
+      "tap_quantum_decoherence.py",
+      "tap_qubit_coherence_sweep.py",
+      "tap_superconductivity_sweep.py",
+      "tap_tappasecond.py"
+    ],
+    "SOCIAL": [
+      "tap_group_hysteria_sim.py",
+      "tap_marketing_contagion_sim.py",
+      "tap_muscle_memory_sim.py",
+      "tap_neural_resonance.py",
+      "tap_pair_bonding_sim.py",
+      "tap_population_sweeps_sim.py",
+      "tap_unified_social_sim.py",
+      "tap_viral_epidemiology_sim.py"
+    ],
+    "GEOPHYSICS": [
+      "tap_global_weather.py",
+      "tap_seismic_correlation.py",
+      "tap_solar_dynamo.py",
+      "tap_usgs_monitor.py"
+    ],
+    "FINANCIAL": [
+      "tap_option_arbitrage.py"
+    ],
+    "TOOL": [
+      "tap_audio_test.py",
+      "tap_cascade_context.py",
+      "tap_proof.py"
+    ]
+  },
+  "sims": {
+    "tap_5ht2a_ayahuasca_sim.py": {
+      "layer": "signaling+receptor",
+      "phi_rate": "phi^-4, phi^-8",
+      "category": "CASCADE",
+      "description": "5-HT2A tolerance, Riba/Callaway fit"
+    },
+    "tap_5ht2a_epigenetic_coupling_sim.py": {
+      "layer": "bidirectional",
+      "phi_rate": "phi^-4 to phi^-10",
+      "category": "CASCADE",
+      "description": "5-HT2A \u2194 parent sim, opposite directions"
+    },
+    "tap_ayahuasca_fascia_cascade_sim.py": {
+      "layer": "all",
+      "phi_rate": "phi^-4 to phi^-13",
+      "category": "CASCADE",
+      "description": "Full ayahuasca pathway, 7/7 PASS"
+    },
+    "tap_chromatin_state_sim.py": {
+      "layer": "chromatin",
+      "phi_rate": "phi^-10",
+      "category": "CASCADE",
+      "description": "233-bead genome, 6/6 biomarker match"
+    },
+    "tap_collagen_braiding_sim.py": {
+      "layer": "substrate",
+      "phi_rate": "braid",
+      "category": "CASCADE",
+      "description": "Anyonic qubit in collagen, 2x coherence"
+    },
+    "tap_coupled_ayahuasca_sim.py": {
+      "layer": "bidirectional",
+      "phi_rate": "phi^-4, phi^-8, phi^-10",
+      "category": "CASCADE",
+      "description": "DMT \u2192 5-HT2A \u2192 chromatin pipeline"
+    },
+    "tap_epigenetic_cosmic_cascade.py": {
+      "layer": "epigenetic \u2192 cosmic",
+      "phi_rate": "phi^-10, phi^-13",
+      "category": "CASCADE",
+      "description": "End-to-end cascade, s_setpoint \u2192 breath"
+    },
+    "tap_epigenetic_flop_sim.py": {
+      "layer": "hormonal + epigenetic",
+      "phi_rate": "phi^-2, phi^-10",
+      "category": "CASCADE",
+      "description": "Parent sim, 30-day setpoint dynamics"
+    },
+    "tap_fascia_sim.py": {
+      "layer": "substrate",
+      "phi_rate": "phi^-8, phi^-10",
+      "category": "CASCADE",
+      "description": "12 trains, twin dragons, 4/4 PASS"
+    },
+    "tap_lymphatic_cascade_sim.py": {
+      "layer": "epigenetic \u2192 lymph",
+      "phi_rate": "phi^-2, phi^-10",
+      "category": "CASCADE",
+      "description": "Full lymphatic chain, 30d tensegrity"
+    },
+    "tap_real_data_validator.py": {
+      "layer": "tool",
+      "phi_rate": "\u2014",
+      "category": "CASCADE",
+      "description": "6/6 modelable biomarkers MATCH"
+    },
+    "tap_author_lens.py": {
+      "layer": "tool",
+      "phi_rate": "\u2014",
+      "category": "CASCADE",
+      "description": "Audit authors/sims against primitives"
+    },
+    "tap_breath_clock.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-13",
+      "category": "CASCADE",
+      "description": "N_B, \u0393(N_B), previous cycles"
+    },
+    "tap_cosmic_breath_sim.py": {
+      "layer": "cosmic + chem",
+      "phi_rate": "phi^-13, phi^-2",
+      "category": "CASCADE",
+      "description": "Multi-scale cosmic+biological breath"
+    },
+    "tap_breath_clock_chem_mod.py": {
+      "layer": "chem + cosmic",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "CASCADE",
+      "description": "48-chem ODE modulated by breath"
+    },
+    "tap_multisphere_predictions.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-16+",
+      "category": "MULTISPHERE",
+      "description": "8 biotemplates across cosmic zones"
+    },
+    "tap_asynchronous_pulsation_sim.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-4, phi^-16+",
+      "category": "MULTISPHERE",
+      "description": "Pulsating domains, biotemplate deposition"
+    },
+    "tap_trans_cyclic_sweep.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-13, phi^-26",
+      "category": "MULTISPHERE",
+      "description": "Tier 2 & 3 cross-cycle drift"
+    },
+    "tap_super_tribunal_99.py": {
+      "layer": "all",
+      "phi_rate": "all",
+      "category": "MULTISPHERE",
+      "description": "99-hypotheses super tribunal"
+    },
+    "tap_standalone_cascade_tribunal.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-13",
+      "category": "MULTISPHERE",
+      "description": "CDCPU telemetry + 99 checks"
+    },
+    "tap_cosmic_origin_sims.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-4, phi^-10",
+      "category": "MULTISPHERE",
+      "description": "Weyl Chiral Spin-Pump, Seismo-Piezo, Fe-S Memory"
+    },
+    "tap_somynence_48_sim.py": {
+      "layer": "chem",
+      "phi_rate": "phi^-2, phi^-4",
+      "category": "BIOCHEM",
+      "description": "48-chem ODE, salience+metabolic+autonomic"
+    },
+    "tap_biochem_qubit_graphene.py": {
+      "layer": "biochem",
+      "phi_rate": "phi^-4",
+      "category": "BIOCHEM",
+      "description": "Hormonal resonance, quartz qubit, graphene"
+    },
+    "tap_digital_soliton_sim.py": {
+      "layer": "soliton",
+      "phi_rate": "phi^-4",
+      "category": "BIOCHEM",
+      "description": "1D NLSE, RK4 solver"
+    },
+    "tap_device_coupled_soliton.py": {
+      "layer": "soliton",
+      "phi_rate": "phi^-4",
+      "category": "BIOCHEM",
+      "description": "NLSE + live CPU thermals/battery"
+    },
+    "tap_phone_minimal_soliton.py": {
+      "layer": "soliton",
+      "phi_rate": "phi^-4",
+      "category": "BIOCHEM",
+      "description": "6 hardware metrics coupled"
+    },
+    "tap_soliton_collision_stress.py": {
+      "layer": "soliton",
+      "phi_rate": "phi^-4",
+      "category": "BIOCHEM",
+      "description": "Two-soliton collision under CPU stress"
+    },
+    "tap_soliton_shielding_comparison.py": {
+      "layer": "soliton",
+      "phi_rate": "phi^-4",
+      "category": "BIOCHEM",
+      "description": "60s wave sim, shielded vs unshielded"
+    },
+    "tap_multidiscipline_sweep.py": {
+      "layer": "tool",
+      "phi_rate": "all",
+      "category": "BIOCHEM",
+      "description": "Unified diagnostics, Phinary ALU"
+    },
+    "tap_qubit_coherence_sweep.py": {
+      "layer": "qubit",
+      "phi_rate": "phi^-4",
+      "category": "QUANTUM",
+      "description": "Room-T qubit, Fibonacci spacer"
+    },
+    "tap_quantum_decoherence.py": {
+      "layer": "qubit",
+      "phi_rate": "phi^-4",
+      "category": "QUANTUM",
+      "description": "Superconducting qubit, Tappasecond"
+    },
+    "tap_superconductivity_sweep.py": {
+      "layer": "sc",
+      "phi_rate": "phi^-4",
+      "category": "QUANTUM",
+      "description": "Twisted bilayer graphene Tc"
+    },
+    "tap_cosmic_quantum_neuro.py": {
+      "layer": "cosmic + neuro",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "QUANTUM",
+      "description": "Sun-Earth-Moon beat, phononic shield"
+    },
+    "tap_core_ai_cascade.py": {
+      "layer": "cosmic + AI",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "QUANTUM",
+      "description": "Planetary cores, AI energy coupling"
+    },
+    "tap_tappasecond.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-13",
+      "category": "QUANTUM",
+      "description": "Fundamental time unit"
+    },
+    "tap_group_hysteria_sim.py": {
+      "layer": "neuro",
+      "phi_rate": "phi^-2, phi^-4",
+      "category": "SOCIAL",
+      "description": "10 agents, emotional contagion"
+    },
+    "tap_pair_bonding_sim.py": {
+      "layer": "neuro",
+      "phi_rate": "phi^-2",
+      "category": "SOCIAL",
+      "description": "Two coupled individuals, homeostatic"
+    },
+    "tap_muscle_memory_sim.py": {
+      "layer": "neuro",
+      "phi_rate": "phi^-4, phi^-8",
+      "category": "SOCIAL",
+      "description": "Chemical gating"
+    },
+    "tap_neural_resonance.py": {
+      "layer": "neuro",
+      "phi_rate": "phi^-4, phi^-8",
+      "category": "SOCIAL",
+      "description": "LIF neurons, Weyl mesh"
+    },
+    "tap_population_sweeps_sim.py": {
+      "layer": "epi",
+      "phi_rate": "phi^-4",
+      "category": "SOCIAL",
+      "description": "Compartmental dynamics, group sizes"
+    },
+    "tap_unified_social_sim.py": {
+      "layer": "social",
+      "phi_rate": "phi^-4",
+      "category": "SOCIAL",
+      "description": "18 States of Somynetics + Husk"
+    },
+    "tap_viral_epidemiology_sim.py": {
+      "layer": "epi+fin",
+      "phi_rate": "phi^-4",
+      "category": "SOCIAL",
+      "description": "Viral + financial volatility"
+    },
+    "tap_marketing_contagion_sim.py": {
+      "layer": "social",
+      "phi_rate": "phi^-4",
+      "category": "SOCIAL",
+      "description": "Memetic marketing"
+    },
+    "tap_solar_dynamo.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "GEOPHYSICS",
+      "description": "CME probability, GIC stress"
+    },
+    "tap_seismic_correlation.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "GEOPHYSICS",
+      "description": "M5.5+ quakes, sub-breath"
+    },
+    "tap_usgs_monitor.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "GEOPHYSICS",
+      "description": "Real-time seismic + 8.1d sub-breath"
+    },
+    "tap_global_weather.py": {
+      "layer": "cosmic",
+      "phi_rate": "phi^-4, phi^-13",
+      "category": "GEOPHYSICS",
+      "description": "5 hubs, Open-Meteo API"
+    },
+    "tap_option_arbitrage.py": {
+      "layer": "financial",
+      "phi_rate": "phi^-4",
+      "category": "FINANCIAL",
+      "description": "TAP vs HNS option pricing"
+    },
+    "tap_audio_test.py": {
+      "layer": "tool",
+      "phi_rate": "\u2014",
+      "category": "TOOL",
+      "description": "Termux:API audio test"
+    },
+    "tap_proof.py": {
+      "layer": "tool",
+      "phi_rate": "all",
+      "category": "TOOL",
+      "description": "Full TAP cosmology proof"
+    },
+    "tap_cascade_context.py": {
+      "layer": "tool",
+      "phi_rate": "\u2014",
+      "category": "TOOL",
+      "description": "Cascade context registry (50+ sims, all categories)"
+    },
+    "tap_cosmological_cascade_sweep.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-4, phi^-16+",
+      "category": "MULTISPHERE",
+      "description": "22 templates across cosmic cascade flow (Bounce \u2192 Max Expansion)"
+    },
+    "tap_reset_antitemplate_sim.py": {
+      "layer": "cosmic reset",
+      "phi_rate": "phi^-4, phi^-16+",
+      "category": "MULTISPHERE",
+      "description": "Full reset sweep, anti-templates, soot/PAH poisoning"
+    },
+    "tap_final_hybrid_predictions.py": {
+      "layer": "multisphere",
+      "phi_rate": "phi^-16+",
+      "category": "MULTISPHERE",
+      "description": "Hybrid (C + other element) templates, specialized environments"
+    }
+  }
+}

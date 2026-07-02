@@ -352,6 +352,31 @@ SIM_CASCADE_MAP = {
         "category": "TOOL",
         "description": "Full TAP cosmology proof"
     },
+    "tap_cascade_context.py": {
+        "layer": "tool",
+        "phi_rate": "—",
+        "category": "TOOL",
+        "description": "Cascade context registry (50+ sims, all categories)"
+    },
+    # Multisphere extensions (added in v5.3)
+    "tap_cosmological_cascade_sweep.py": {
+        "layer": "multisphere",
+        "phi_rate": "phi^-4, phi^-16+",
+        "category": "MULTISPHERE",
+        "description": "22 templates across cosmic cascade flow (Bounce → Max Expansion)"
+    },
+    "tap_reset_antitemplate_sim.py": {
+        "layer": "cosmic reset",
+        "phi_rate": "phi^-4, phi^-16+",
+        "category": "MULTISPHERE",
+        "description": "Full reset sweep, anti-templates, soot/PAH poisoning"
+    },
+    "tap_final_hybrid_predictions.py": {
+        "layer": "multisphere",
+        "phi_rate": "phi^-16+",
+        "category": "MULTISPHERE",
+        "description": "Hybrid (C + other element) templates, specialized environments"
+    },
 }
 
 
@@ -426,6 +451,7 @@ if __name__ == "__main__":
     if orphans:
         print(f"\n=== ORPHAN SIMS (not in registry): {len(orphans)} ===")
         for o in orphans:
+            # o is the full filename like "tap_xxx.py", strip .py for display
             print(f"  - {o}")
 
     if "--export" in sys.argv:

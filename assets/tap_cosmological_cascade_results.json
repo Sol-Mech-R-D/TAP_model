@@ -1,0 +1,341 @@
+[
+  {
+    "step": 0,
+    "phase": 4.71238898038469,
+    "phase_desc": "Local Big Bang (Bounce)",
+    "scale_factor": 0.05,
+    "hubble_rate": -4.592425496802574e-17,
+    "active_count": 5,
+    "active_list": [
+      "Boron-Carbon-Nitrogen (BCN) Braids",
+      "Boron-Nitrogen (BN) Tubes",
+      "Silicon Carbide (SiC) Whiskers",
+      "Lanthanide Upconversion Networks",
+      "Dusty Plasma Helices"
+    ]
+  },
+  {
+    "step": 1,
+    "phase": 4.869468613064179,
+    "phase_desc": "Phase 1.55pi",
+    "scale_factor": 0.05584803821730956,
+    "hubble_rate": 0.03501341990553245,
+    "active_count": 5,
+    "active_list": [
+      "Boron-Carbon-Nitrogen (BCN) Braids",
+      "Boron-Nitrogen (BN) Tubes",
+      "Silicon Carbide (SiC) Whiskers",
+      "Lanthanide Upconversion Networks",
+      "Dusty Plasma Helices"
+    ]
+  },
+  {
+    "step": 2,
+    "phase": 5.026548245743669,
+    "phase_desc": "Phase 1.60pi",
+    "scale_factor": 0.07324815475980202,
+    "hubble_rate": 0.05273460392761546,
+    "active_count": 1,
+    "active_list": [
+      "Dusty Plasma Helices"
+    ]
+  },
+  {
+    "step": 3,
+    "phase": 5.183627878423159,
+    "phase_desc": "Phase 1.65pi",
+    "scale_factor": 0.10177190101052519,
+    "hubble_rate": 0.05576078652748601,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 4,
+    "phase": 5.340707511102648,
+    "phase_desc": "Phase 1.70pi",
+    "scale_factor": 0.14071692767189992,
+    "hubble_rate": 0.052213445640222816,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 5,
+    "phase": 5.497787143782138,
+    "phase_desc": "Phase 1.75pi",
+    "scale_factor": 0.18912427893638983,
+    "hubble_rate": 0.046735590028632444,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 6,
+    "phase": 5.654866776461628,
+    "phase_desc": "Phase 1.80pi",
+    "scale_factor": 0.24580200516107514,
+    "hubble_rate": 0.041141700300857745,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 7,
+    "phase": 5.811946409141117,
+    "phase_desc": "Phase 1.85pi",
+    "scale_factor": 0.30935451262371516,
+    "hubble_rate": 0.03600264776451426,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 8,
+    "phase": 5.969026041820607,
+    "phase_desc": "Phase 1.90pi",
+    "scale_factor": 0.37821692767189985,
+    "hubble_rate": 0.03143224320198154,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 9,
+    "phase": 6.126105674500097,
+    "phase_desc": "Phase 1.95pi",
+    "scale_factor": 0.45069362910589017,
+    "hubble_rate": 0.02739356285539708,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 10,
+    "phase": 6.283185307179586,
+    "phase_desc": "Mid-Expansion",
+    "scale_factor": 0.5249999999999999,
+    "hubble_rate": 0.023809523809523815,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 11,
+    "phase": 6.440264939859076,
+    "phase_desc": "Mid-Expansion",
+    "scale_factor": 0.5993063708941097,
+    "hubble_rate": 0.0206006557864886,
+    "active_count": 0,
+    "active_list": []
+  },
+  {
+    "step": 12,
+    "phase": 6.5973445725385655,
+    "phase_desc": "Phase 0.10pi",
+    "scale_factor": 0.6717830723281,
+    "hubble_rate": 0.01769649600203561,
+    "active_count": 3,
+    "active_list": [
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Metallo-Nucleic Wires",
+      "Carbon-Germanium (Germoxane) Gels"
+    ]
+  },
+  {
+    "step": 13,
+    "phase": 6.754424205218055,
+    "phase_desc": "Phase 0.15pi",
+    "scale_factor": 0.7406454873762847,
+    "hubble_rate": 0.015037668820219459,
+    "active_count": 10,
+    "active_list": [
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 14,
+    "phase": 6.911503837897545,
+    "phase_desc": "Phase 0.20pi",
+    "scale_factor": 0.8041979948389246,
+    "hubble_rate": 0.012574903810488052,
+    "active_count": 14,
+    "active_list": [
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 15,
+    "phase": 7.0685834705770345,
+    "phase_desc": "Phase 0.25pi",
+    "scale_factor": 0.8608757210636101,
+    "hubble_rate": 0.010267259894275429,
+    "active_count": 15,
+    "active_list": [
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Carbon Biotemplates (DNA)",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 16,
+    "phase": 7.225663103256524,
+    "phase_desc": "Phase 0.30pi",
+    "scale_factor": 0.9092830723280999,
+    "hubble_rate": 0.008080339200469312,
+    "active_count": 17,
+    "active_list": [
+      "Superfluid Vortex Braids",
+      "Polythiazyl (SN)x Helices",
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Carbon Biotemplates (DNA)",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 17,
+    "phase": 7.382742735936014,
+    "phase_desc": "Phase 0.35pi",
+    "scale_factor": 0.9482280989894747,
+    "hubble_rate": 0.005984721664325335,
+    "active_count": 17,
+    "active_list": [
+      "Superfluid Vortex Braids",
+      "Polythiazyl (SN)x Helices",
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Carbon Biotemplates (DNA)",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 18,
+    "phase": 7.5398223686155035,
+    "phase_desc": "Phase 0.40pi",
+    "scale_factor": 0.976751845240198,
+    "hubble_rate": 0.003954650762637615,
+    "active_count": 17,
+    "active_list": [
+      "Superfluid Vortex Braids",
+      "Polythiazyl (SN)x Helices",
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Carbon Biotemplates (DNA)",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 19,
+    "phase": 7.696902001294993,
+    "phase_desc": "Max Expansion (Turnaround)",
+    "scale_factor": 0.9941519617826905,
+    "hubble_rate": 0.0019669335153716903,
+    "active_count": 17,
+    "active_list": [
+      "Superfluid Vortex Braids",
+      "Polythiazyl (SN)x Helices",
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Carbon Biotemplates (DNA)",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  },
+  {
+    "step": 20,
+    "phase": 7.853981633974483,
+    "phase_desc": "Max Expansion (Turnaround)",
+    "scale_factor": 1.0,
+    "hubble_rate": 3.827021247335479e-18,
+    "active_count": 17,
+    "active_list": [
+      "Superfluid Vortex Braids",
+      "Polythiazyl (SN)x Helices",
+      "Fluorocarbon (PTFE-like) Sleeves",
+      "Phosphorus-Carbon (Phosphaalkene) Ribbons",
+      "Carbon Biotemplates (DNA)",
+      "Peptide Nucleic Acid (PNA) Helices",
+      "Quadruplet Codon DNA",
+      "Metallo-Nucleic Wires",
+      "Organoselenium (Se-DNA)",
+      "Carbon-Germanium (Germoxane) Gels",
+      "Phosphazene (P-N) Braids",
+      "Thioester Matrices",
+      "Ge-Sn Photonic Wafers",
+      "Metal-Sulfur-Carbon (Fe-S) Grids",
+      "Carbon-Silicon (Organosilicon) Hybrids",
+      "Siloxane (Si-O) Helices",
+      "Carborane Cages (C-B)"
+    ]
+  }
+]
