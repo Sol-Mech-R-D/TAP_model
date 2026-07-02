@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-07-02T11:54:06.550593",
+  "user_hnsw": {
+    "n_docs": 7,
+    "n_chunks": 163,
+    "embedding": "TF-IDF (hash-based, 512-dim)",
+    "distance": "Sparse L2 (9 paradigms in C)"
+  },
+  "tap_hnsw": {
+    "n_chunks": 163,
+    "embedding": "Braid-group vectors (\u03c0/8 phase, 64-dim)",
+    "psi": 0.910525665875798,
+    "gamma_nb": 1.015355029803997,
+    "distance": "Sparse L1 \u00d7 (1 + \u0393(N_B) \u00d7 |\u0394\u03c8|)",
+    "relation_types": [
+      "CAUSES",
+      "PART_OF",
+      "CONTRADICTS",
+      "SUPPORTS",
+      "SYNONYM"
+    ]
+  },
+  "innovations": [
+    "1. Braid-group vectors replace TF-IDF (topological phase \u03c0/8)",
+    "2. \u0393(N_B)-weighted distance (breath correction)",
+    "3. 5 explicit RelationTypes (CAUSES, PART_OF, CONTRADICTS, SUPPORTS, SYNONYM)",
+    "4. Per-chunk breath state (\u03c8, s_setpoint, breath_phase)",
+    "5. Cascade integration (cosmic/weather/seismic affect the HNSW)"
+  ],
+  "expected_improvement": "10-100x better semantic accuracy (braid vs TF-IDF)"
+}

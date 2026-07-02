@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-07-02T11:53:09.843031",
+  "n_attempted": 4,
+  "n_compiled": 0,
+  "results": [
+    {
+      "file": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/agent.c",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/agent.c:1:2: error: Do not use this file, it is the result of a failed Cython compilation.\n    1 | #error Do not use this file, it is the "
+    },
+    {
+      "file": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/norm.c",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/norm.c:19:10: fatal error: 'Python.h' file not found\n   19 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    },
+    {
+      "file": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/sleep.c",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/sleep.c:38:10: fatal error: 'Python.h' file not found\n   38 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    },
+    {
+      "file": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c:48:10: fatal error: 'Python.h' file not found\n   48 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    }
+  ],
+  "python_h_available": false,
+  "build_env_limitation": "Python.h not available; Cython-generated .c files cannot be compiled standalone"
+}
