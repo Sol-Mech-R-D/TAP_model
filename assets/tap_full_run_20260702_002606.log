@@ -1,0 +1,553 @@
+================================================================================
+  TAP EPIGENETIC FLOP & PRECURSER STEROID BIFURCATION SIMULATION
+================================================================================
+
+  [EPIGENETIC FLOP SIMULATION RUNTIME]
+    Day 05 (Chronic Stress       ) | Preg: 1.147 | C-Yield: 1.147 | V-Yield: 0.000 | T-Sens: 1.047 | Action: 0.007
+    Day 10 (Chronic Stress       ) | Preg: 1.147 | C-Yield: 1.147 | V-Yield: 0.000 | T-Sens: 1.097 | Action: 0.007
+    Day 15 (Reset & Deprivation  ) | Preg: 1.198 | C-Yield: 0.000 | V-Yield: 1.198 | T-Sens: 1.140 | Action: 0.001
+    Day 20 (Reset & Deprivation  ) | Preg: 1.198 | C-Yield: 0.000 | V-Yield: 1.198 | T-Sens: 1.185 | Action: 0.001
+    Day 25 (Tensegrity Remodeling) | Preg: 1.198 | C-Yield: 0.000 | V-Yield: 1.198 | T-Sens: 1.233 | Action: 0.003
+    Day 30 (Tensegrity Remodeling) | Preg: 1.198 | C-Yield: 0.000 | V-Yield: 1.198 | T-Sens: 1.289 | Action: 0.003
+
+  [EXPORT] Epigenetic simulation results saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_epigenetic_flop_results.json
+================================================================================
+================================================================================
+  TAP MODEL — 5-HT2A BOUNDARY & AYAHUASCA TOLERANCE SIMULATION
+  φ-cascade time-constants: φ⁻⁶ (PK), φ⁻⁸ (receptor), φ⁻¹⁰ (setpoint), φ⁻¹³ (recovery)
+================================================================================
+
+  [CEREMONIAL SCHEDULE] 21 days, 2 doses/week, 6 total doses
+    Final sensitivity:       1.132
+    Final setpoint:          1.102
+    Cumulative openness:     0.09
+
+  [VALIDATION AGAINST PUBLISHED DATA]
+
+    riba_2001_tolerance:
+      predicted_peak_open_per_dose: [0.0548, 0.0453, 0.0386, 0.0336]
+      predicted_ratio_4th_to_1st: 0.6123
+      observed_ratio_4th_to_1st: 0.6
+      error_pct: 2.05
+
+    callaway_1994_recovery:
+      predicted_response_recovery_day: 2
+      predicted_setpoint_recovery_day: 13
+      observed_recovery_day: 14.0
+      response_recovery_error_pct: 85.71
+      setpoint_recovery_error_pct: 7.14
+      method: test-dose response: day at which peak_open returns to 95% of fresh-sim peak
+      ref_peak: 0.0548
+      tap_interpretation: Response recovery is dominated by acute+chronic (φ⁻⁸); the slow setpoint (φ⁻¹⁰) is the long-tail channel. The 14d observation may reflect the convolution of both.
+
+    dmt_plasma_t_half:
+      predicted_hr: 0.25
+      observed_hr: 0.25
+      error_pct: 0.0
+
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_5ht2a_ayahuasca_results.json
+================================================================================
+================================================================================
+  TAP MODEL — CHROMATIN STATE & 3D GENOME TOPOLOGY SIMULATION
+  φ⁻¹⁰ = 0.00813 /hr (chromatin remodeling rate)
+  TAD size: 13 beads (Fibonacci)
+  Genome: 233 beads, ~46 Mb
+================================================================================
+
+  [VALIDATION]
+
+    baseline_openness:
+      predicted_mean: 0.25221249109696475
+      expected_mean: 0.25
+      error_pct: 0.88
+
+    stress_response:
+      FOS_openness_after_24h_stress: 0.6976
+      expected: 0.85
+      note: FOS is an immediate-early gene; should rise rapidly then partially close. At 24h the IEG window has passed, so we expect partial decline.
+
+    recovery_timescale:
+      predicted_recovery_day: >60
+      tap_expected_recovery_day: ≈15 (φ⁻¹⁰ timescale of decay)
+      method: days for mean absolute distance from rest targets to drop below 5% of pre-recovery distance
+      initial_distance: 0.0204
+
+  [CHRONIC STRESS PROTOCOL] 10 days stress, 20 days recovery
+    Mean openness at end: 0.2511
+    Openness at day 1 (max stress): 0.2604
+    Openness at day 10 (end stress): 0.2541
+    Openness at day 30 (recovery): 0.2511
+
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_chromatin_state_results.json
+================================================================================
+================================================================================
+  TAP COUPLED AYAHUASCA SIMULATOR — 5-HT2A + Chromatin pipeline
+  φ-cascade: φ⁻⁴ (signaling) → φ⁻⁸ (receptor) → φ⁻¹⁰ (chromatin) → φ⁻¹³ (cosmic)
+================================================================================
+
+  [VALIDATION]
+
+    riba_2001_tolerance_coupled:
+      predicted_peak_open_per_dose: [0.0548, 0.0453, 0.0386, 0.0336]
+      predicted_ratio_4th_to_1st: 0.6131
+      observed_ratio_4th_to_1st: 0.6
+      error_pct: 2.19
+
+    chronic_ceremonial_84d:
+      duration_days: 84
+      doses_per_week: 2
+      total_doses: 24
+      initial_chromatin_mean: 0.2494
+      final_chromatin_mean: 0.2628
+      chromatin_shift: 0.0133
+      final_setpoint: 1.0971
+      final_FOS_openness: 0.8479
+      final_HSP70_openness: 0.8911
+      tap_prediction: Chromatin mean should rise above 0.25 baseline; FOS/HSP70 should show sustained openness above their resting baselines (0.10/0.20).
+
+    single_dose_recovery_30d:
+      peak_setpoint: 1.1
+      peak_day: 0.01
+      setpoint_recovery_day: 14.65
+      tap_expected_setpoint_recovery_day: ≈15 days (φ⁻¹⁰ timescale)
+
+  [CHRONIC CEREMONIAL 84 days, 2 doses/wk]
+    Total doses: 24
+    Final 5-HT2A setpoint: 1.0971
+    Final chromatin mean openness: 0.2628
+    Final FOS openness: 0.8479
+    Final HSP70 openness: 0.8911
+
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_coupled_ayahuasca_results.json
+================================================================================
+================================================================================
+  TAP EPIGENETIC → COSMIC BREATH CASCADE
+  The v4.0 prediction in code: hormonal → epigenetic → cosmic
+================================================================================
+  [PHASE 1] Running 30-day epigenetic simulation...
+    Final s_setpoint (serotonin epigenetic setpoint): 0.5820
+    Final t_setpoint (testosterone epigenetic setpoint): 0.5820
+    Cosmic breath drift multiplier: 0.8591x
+  [PHASE 2] Running cosmic breath sim with modulated tick...
+    Implied φ⁻¹³ (per-breath): 0.001649 (was 0.001919)
+  [PHASE 3] Recomputing N_B from breath clock observables...
+    Mean implied N_B from observables: 9.59
+  [SUMMARY] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_epigenetic_cosmic_cascade_summary.json
+
+  [CASCADE VERIFICATION]
+    ✓ Epigenetic setpoint moved off baseline: 0.5820 > 0.51
+    ✓ Cosmic breath tick shifted: 0.8591x (not 1.0)
+================================================================================
+================================================================================
+  TAP v4.0.2 — 5-HT2A ↔ Parent-Sim Coupling Comparison
+  Prediction: tensegrity and ayahuasca produce OPPOSITE
+  cosmic breath signatures.
+================================================================================
+
+  [TENSEGRITY SCENARIO] 30 days of focused training + breath engagement
+    Final s_setpoint: 0.5820
+    Drift multiplier: 0.8591x
+    Implied φ⁻¹³: 0.001649 (vs baseline 0.001919)
+    Implied N_B: 8.15 (vs baseline 7.00)
+
+  [AYAHUASCA SCENARIO] 30 days of chronic use (no training)
+    Final s_setpoint: 0.3821
+    Drift multiplier: 1.3086x
+    Implied φ⁻¹³: 0.002512 (vs baseline 0.001919)
+    Implied N_B: 5.35 (vs baseline 7.00)
+
+================================================================================
+  CASCADE SIGNATURE COMPARISON
+================================================================================
+
+  Metric                    | Baseline   | Tensegrity   | Ayahuasca 
+  --------------------------+------------+--------------+-----------
+  s_setpoint                | 0.5000     | 0.5820       | 0.3821    
+  drift_multiplier          | 1.0000     | 0.8591       | 1.3086    
+  implied φ⁻¹³              | 0.001919   | 0.001649     | 0.002512  
+  implied N_B               | 7.00       | 8.15         | 5.35      
+
+  [VERIFICATION] Opposite-direction s_setpoint: PASS
+    Tensegrity moved s_setpoint up (0.5820)
+    Ayahuasca moved s_setpoint down (0.3821)
+  [VERIFICATION] Opposite-direction cosmic breath: PASS
+    Tensegrity φ⁻¹³ < baseline (0.001649 vs 0.001919)
+    Ayahuasca φ⁻¹³ > baseline (0.002512 vs 0.001919)
+
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_5ht2a_epigenetic_coupling_summary.json
+================================================================================
+================================================================================
+  TAP v5.0 — Myers' Anatomy Trains as Myofascial Network
+  12-line model with dual contralateral spirals (the 'twin dragons')
+================================================================================
+
+  [STRESS SCENARIO] High cortisol, low tensegrity
+    Mean tension:   0.529
+    Mean piezo:    0.334
+    Mean lymph:    0.249
+    Mean coherence:0.903
+    Twin dragon piezo: 0.695
+    Twin dragon lymph: 0.215
+    Spiral coupling:   0.0001
+
+  [TENSEGRITY SCENARIO] Low cortisol, high tensegrity, EM field on
+    Mean tension:   0.061
+    Mean piezo:    0.041
+    Mean lymph:    0.649
+    Mean coherence:0.997
+    Twin dragon piezo: 0.000
+    Twin dragon lymph: 0.792
+    Spiral coupling:   0.1885
+
+  [AYAHUASCA SCENARIO] Moderate cortisol, low tensegrity, s_setpoint down
+    Mean tension:   0.293
+    Mean piezo:    0.186
+    Mean lymph:    0.352
+    Mean coherence:0.969
+    Twin dragon piezo: 0.395
+    Twin dragon lymph: 0.362
+    Spiral coupling:   0.0004
+
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_fascia_summary.json
+
+================================================================================
+  CASCADE SIGNATURE VERIFICATION (v5.0)
+================================================================================
+
+  Tensegrity lymph > Stress lymph: 0.649 > 0.249 → PASS
+  Tensegrity coherence > Stress coherence: 0.997 > 0.903 → PASS
+  Tensegrity tension < Stress tension: 0.061 < 0.529 → PASS
+  Twin dragon raw piezo: tensegrity=0.000, stress=0.695 (info: high in stress, low in tensegrity)
+  Spiral coupling (fidelity, key cascade signature): tensegrity=0.1885, stress=0.0001 → PASS
+================================================================================
+================================================================================
+  TAP v5.0 — Full Lymphatic Cascade (30 days)
+  parent sim → s_setpoint → cortisol → fascia → lymph
+================================================================================
+
+  [CASCADE TIMELINE]
+
+  Day  | Phase              | s_set    | corti   | tens    | lymph   | coupl  
+  -----+--------------------+----------+---------+---------+---------+--------
+  1    | chronic_stress     | 0.500   | 0.500   | 0.500   | 0.433   | 0.0007
+  5    | chronic_stress     | 0.500   | 0.500   | 0.500   | 0.440   | 0.0007
+  10   | chronic_stress     | 0.500   | 0.500   | 0.500   | 0.432   | 0.0006
+  11   | reset              | 0.500   | 0.500   | 0.500   | 0.437   | 0.0007
+  15   | reset              | 0.500   | 0.500   | 0.500   | 0.428   | 0.0006
+  20   | reset              | 0.500   | 0.500   | 0.500   | 0.434   | 0.0006
+  21   | tensegrity         | 0.508   | 0.492   | 0.535   | 0.451   | 0.0025
+  25   | tensegrity         | 0.540   | 0.460   | 0.679   | 0.499   | 0.0032
+  30   | tensegrity         | 0.582   | 0.418   | 0.869   | 0.573   | 0.0044
+
+================================================================================
+  CASCADE VERIFICATION
+================================================================================
+
+  Mean lymph flow:
+    Chronic stress (days 1-10): 0.436
+    Tensegrity (days 21-30):    0.511
+  → Lymph increases under tensegrity: PASS
+
+  Mean spiral coupling:
+    Chronic stress: 0.0006
+    Tensegrity:     0.0032
+  → Coupling increases under tensegrity: PASS
+================================================================================
+================================================================================
+  TAP v5.0.1 — Full Ayahuasca Pathway through the Cascade
+  84 days @ 2 doses/week (24 ceremonies), substrate-integrated
+================================================================================
+
+  [CHRONIC AYAHUASCA USER SUMMARY]
+    Duration:        84 days
+    Total ceremonies: 24
+
+    Metric                    | Initial    | Final      | Shift     
+    --------------------------+------------+------------+-----------
+    ht2a_setpoint             | 1.1000     | 1.0500     | -0.0500   
+    parent_s_setpoint         | 0.5000     | 0.3000     | -0.2000   
+    chromatin_HTR2A           | 0.2986     | 0.1469     | -0.1517   
+    fascia_tension            | 0.3349     | 0.5062     | +0.1713   
+    fascia_lymph              | 0.3751     | 0.2621     | -0.1130   
+    spiral_coupling           | 0.0007     | 0.0000     | -0.0007   
+
+    Cosmic breath drift multiplier: 1.0000x → 1.6667x
+    Implied φ⁻¹³: 0.001919 → 0.003199 (+66.7%)
+
+  [EXPORT] -> tap_ayahuasca_fascia_cascade_results.json
+
+================================================================================
+  v5.0.1 CASCADE VERIFICATION (chronic ayahuasca signature)
+================================================================================
+    parent s_setpoint < baseline (cortisol dysreg drag)          → PASS
+    fascia tension > initial (chronic sympathetic activation)    → PASS
+    fascia lymph < initial (lymph stagnation — key signature)    → PASS
+    spiral coupling collapses (substrate integrity breaks)       → PASS
+    HTR2A chromatin decreases (receptor downregulation)          → PASS
+    5-HT2A setpoint remains elevated (chronic activation)        → PASS
+    cosmic breath tick > baseline (v4.0.2 prediction)            → PASS
+================================================================================
+================================================================================
+  TAP TEMPORAL ASYNCHRONOUS PULSATION SIMULATION & ESTIMATION
+================================================================================
+  [TAP SIMULATOR] Initializing Asynchronous Pulsation Model...
+    Step 000 | Time 000.0s | Avg Stability: 0.1223 | Highly Stable Zones: 0/1331
+    Step 025 | Time 025.0s | Avg Stability: 0.9364 | Highly Stable Zones: 1223/1331
+    Step 050 | Time 050.0s | Avg Stability: 0.9958 | Highly Stable Zones: 1326/1331
+    Step 075 | Time 075.0s | Avg Stability: 0.7708 | Highly Stable Zones: 1026/1331
+    Step 100 | Time 100.0s | Avg Stability: 0.2889 | Highly Stable Zones: 348/1331
+
+  [TAP PREDICTOR] Running 3D Position Reconstruction Test...
+    True Position     : [ 0. 20. 80.]
+    Estimated Position: [ 0. 20. 80.]
+    Reconstruction Err: 0.0000 Mpc
+    Fitting Loss      : 2.739470
+    Reconstruction Match: PASS (Accuracy within tolerance)
+
+  [EXPORT] TAP Asynchronous simulation results saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_asynchronous_pulsation_results.json
+================================================================================
+================================================================================
+  TAP COSMIC ORIGIN AND BIOTEMPLATE DEPOSITION VALIDATION SUITE
+================================================================================
+  [SIM 1] Running Weyl Chiral Spin-Pump Simulation (BN Nanotubes)...
+    Spin Current generated   : 625277.287501 A/m
+    Chiral Energy Bias       : 1.663550e-04 J/mol
+    Calculated Carbon EE     : 1.00045118e-06
+    Expected Chiral Seed EE  : 1.0e-06
+    Chiral Alignment Error   : 0.0451%
+     Weyl Chiral Spin-Pump Match: PASS
+
+  [SIM 2] Running Seismo-Piezoelectric Transduction (Siloxane Helices)...
+    Polarization Charge      : 1.281153e-06 C/m^2
+    Piezoelectric Voltage    : 0.001855 V
+    Binding Selectivity Ratio: 1.0135
+     Seismo-Piezoelectric Match: PASS
+
+  [SIM 3] Running Hydrothermal Spin-Memory Simulation (Fe-S Grids)...
+    Spin-Orbit Torque        : 1.666777e-12 N*m
+    Switching Energy / Barrier: 1388980.7041
+     Hydrothermal Spin-Memory: PASS
+
+  [EXPORT] Cosmic origin simulation results saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_cosmic_origin_results.json
+================================================================================
+================================================================================
+  TAP COSMOLOGICAL CASCADE FLOW SIMULATION SWEEP
+================================================================================
+  [CASCADE SWEEP] Beginning Cosmological Cascade Flow Sweep...
+    Step 00 | Scale a: 0.050 | H: -0.0000 | Active templates:  5/22
+    Step 01 | Scale a: 0.056 | H: +0.0350 | Active templates:  5/22
+    Step 02 | Scale a: 0.073 | H: +0.0527 | Active templates:  1/22
+    Step 03 | Scale a: 0.102 | H: +0.0558 | Active templates:  0/22
+    Step 04 | Scale a: 0.141 | H: +0.0522 | Active templates:  0/22
+    Step 05 | Scale a: 0.189 | H: +0.0467 | Active templates:  0/22
+    Step 06 | Scale a: 0.246 | H: +0.0411 | Active templates:  0/22
+    Step 07 | Scale a: 0.309 | H: +0.0360 | Active templates:  0/22
+    Step 08 | Scale a: 0.378 | H: +0.0314 | Active templates:  0/22
+    Step 09 | Scale a: 0.451 | H: +0.0274 | Active templates:  0/22
+    Step 10 | Scale a: 0.525 | H: +0.0238 | Active templates:  0/22
+    Step 11 | Scale a: 0.599 | H: +0.0206 | Active templates:  0/22
+    Step 12 | Scale a: 0.672 | H: +0.0177 | Active templates:  3/22
+    Step 13 | Scale a: 0.741 | H: +0.0150 | Active templates: 10/22
+    Step 14 | Scale a: 0.804 | H: +0.0126 | Active templates: 14/22
+    Step 15 | Scale a: 0.861 | H: +0.0103 | Active templates: 15/22
+    Step 16 | Scale a: 0.909 | H: +0.0081 | Active templates: 17/22
+    Step 17 | Scale a: 0.948 | H: +0.0060 | Active templates: 17/22
+    Step 18 | Scale a: 0.977 | H: +0.0040 | Active templates: 17/22
+    Step 19 | Scale a: 0.994 | H: +0.0020 | Active templates: 17/22
+    Step 20 | Scale a: 1.000 | H: +0.0000 | Active templates: 17/22
+     Cosmological Cascade Flow Sweep: PASS
+
+  [EXPORT] Cosmological cascade sweep saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_cosmological_cascade_results.json
+================================================================================
+================================================================================
+  TAP COSMIC RESET & ANTI-TEMPLATE POISONING SIMULATION
+================================================================================
+
+  [RESET SIMULATOR] Beginning Contraction & Anti-Template Sweep...
+    Step 00 | T: 120.0K | DNA: 1.0000 | Soot Density:  0.26 | EM Signal: 0.9795 | Helix Growth: 1.0000
+    Step 05 | T: 127.5K | DNA: 1.0000 | Soot Density:  0.31 | EM Signal: 0.8754 | Helix Growth: 1.0000
+    Step 10 | T: 150.0K | DNA: 1.0000 | Soot Density:  0.50 | EM Signal: 0.7415 | Helix Growth: 1.0000
+    Step 15 | T: 182.2K | DNA: 0.5579 | Soot Density:  0.98 | EM Signal: 0.5464 | Helix Growth: 0.7863
+    Step 20 | T: 200.0K | DNA: 0.0000 | Soot Density:  4.94 | EM Signal: 0.1286 | Helix Growth: 0.0733
+     Reset and Anti-Template Sweep: PASS
+
+  [EXPORT] Reset sweep results saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_reset_antitemplate_results.json
+================================================================================
+================================================================================
+  TAP HIGH-DIMENSIONAL CONVERGENCE & HOLOGRAPHIC CLOSURE SIMULATION
+================================================================================
+  [HIGH DIMENSION] Generating sequences up to D >= 377...
+
+    Analyzing Fibonacci (Golden Ratio)...
+      Steps: 13 | Max Dimension: 377 | Final Leakage: 1.63e-79
+    Analyzing Pell (Silver Ratio)...
+      Steps: 8 | Max Dimension: 408 | Final Leakage: 6.72e-157
+    Analyzing Padovan (Plastic Ratio)...
+      Steps: 24 | Max Dimension: 465 | Final Leakage: 1.63e-57
+    Analyzing Bronze Sequence...
+      Steps: 7 | Max Dimension: 1189 | Final Leakage: 0.00e+00
+
+     High-Dimensional Sequence Validation: PASS
+
+  [EXPORT] High-dimension simulation saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_high_dimension_results.json
+================================================================================
+================================================================================
+  TAP MULTIVERSE COUPLING: GOLDEN RATIO SCALED COUPLING
+================================================================================
+  [MULTIVERSE COUPLING] Running Golden Ratio Scaled Coupling Experiment...
+    Step 000 | Time 0.00s | Order Parameter R: 0.2240 | Center Phase: -0.7896 | Sat Variance: 4.3953
+    Step 100 | Time 1.00s | Order Parameter R: 0.9964 | Center Phase: +0.4713 | Sat Variance: 0.0082
+    Step 200 | Time 2.00s | Order Parameter R: 0.9964 | Center Phase: +2.2882 | Sat Variance: 0.0082
+    Step 300 | Time 3.00s | Order Parameter R: 0.9964 | Center Phase: -2.1781 | Sat Variance: 0.0082
+    Step 400 | Time 4.00s | Order Parameter R: 0.9964 | Center Phase: -0.3612 | Sat Variance: 0.0082
+    Final Order Parameter R : 0.9964
+    Steps to Synchronize    : 14
+    Center Phase Variance   : 0.068745
+    Max Outer Node Variance : 0.068745
+
+  [EXPORT] Multiverse coupling results saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_multiverse_coupling_results.json
+================================================================================
+================================================================================
+  TAP COSMOLOGICAL CONSTANTS & HOLOGRAPHIC GEOMETRY VALIDATION
+================================================================================
+  [PROOF] Initiating mathematical validation of TAP parameter-free constants...
+    1. Leakage Coefficient Match: Predicted = 0.145898 | Calculated = 0.145898 | Err = 0.000000e+00
+    2. Plastic Sum Rule: Sum of sin(Δθ)^2 = 1.323619 | Target (rho) = 1.324718 | Err = 0.0830%
+    3. CMB Spectral Index Match: Predicted = 0.953559 | Calculated = 0.953784 | Err = 2.248567e-04
+    4. 3:1 Structural Law Match: Geometrically corrected ratio = 2.8185 | Target = 3.0 | Err = 6.0488%
+
+     Mathematical Constants Verification: PASS
+
+  [EXPORT] Constants verification results saved -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_parameter_free_constants_results.json
+================================================================================
+
+================================================================================
+  TAP AUTHOR LENS — Jeremy Narby
+================================================================================
+  Primary claim: Ayahuasca's DMT enables direct molecular dialogue with DNA. Cross-cultural serpent+DNA symbolism is ...
+
+  Verdict summary:
+    TAP-AUGMENTED: 3
+    TAP-LEGAL: 3
+    TAP-ILLEGAL: 2
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_narby_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_narby_audit.json
+
+
+================================================================================
+  TAP AUTHOR LENS — Rupert Sheldrake
+================================================================================
+  Primary claim: Morphic resonance: self-organizing wholes are influenced by similar past wholes via non-local fields...
+
+  Verdict summary:
+    TAP-AUGMENTED: 4
+    TAP-LEGAL: 2
+    TAP-SILENT: 1
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_sheldrake_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_sheldrake_audit.json
+
+
+================================================================================
+  TAP AUTHOR LENS — Terence McKenna
+================================================================================
+  Primary claim: Psilocybin mushrooms and other psychedelics are the 'strophoid' that triggered human language evolut...
+
+  Verdict summary:
+    TAP-AUGMENTED: 7
+    TAP-ILLEGAL: 1
+    TAP-LEGAL: 1
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_mcKenna_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_mcKenna_audit.json
+
+
+================================================================================
+  TAP AUTHOR LENS — Alfred Russel Wallace
+================================================================================
+  Primary claim: Natural selection alone is insufficient; there is a 'continuous overarching intelligence' directing ...
+
+  Verdict summary:
+    TAP-AUGMENTED: 7
+    TAP-LEGAL: 1
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_wallace_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_wallace_audit.json
+
+
+================================================================================
+  TAP AUTHOR LENS — Jeremy Narby
+================================================================================
+  Primary claim: Ayahuasca's DMT enables direct molecular dialogue with DNA. Cross-cultural serpent+DNA symbolism is ...
+
+  Verdict summary:
+    TAP-AUGMENTED: 3
+    TAP-LEGAL: 3
+    TAP-ILLEGAL: 2
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_narby_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_narby_audit.json
+
+================================================================================
+  TAP AUTHOR LENS — Rupert Sheldrake
+================================================================================
+  Primary claim: Morphic resonance: self-organizing wholes are influenced by similar past wholes via non-local fields...
+
+  Verdict summary:
+    TAP-AUGMENTED: 4
+    TAP-LEGAL: 2
+    TAP-SILENT: 1
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_sheldrake_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_sheldrake_audit.json
+
+================================================================================
+  TAP AUTHOR LENS — Terence McKenna
+================================================================================
+  Primary claim: Psilocybin mushrooms and other psychedelics are the 'strophoid' that triggered human language evolut...
+
+  Verdict summary:
+    TAP-AUGMENTED: 7
+    TAP-ILLEGAL: 1
+    TAP-LEGAL: 1
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_mcKenna_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_mcKenna_audit.json
+
+================================================================================
+  TAP AUTHOR LENS — Alfred Russel Wallace
+================================================================================
+  Primary claim: Natural selection alone is insufficient; there is a 'continuous overarching intelligence' directing ...
+
+  Verdict summary:
+    TAP-AUGMENTED: 7
+    TAP-LEGAL: 1
+
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_wallace_audit.md
+  Output: /data/data/com.termux/files/home/TAP_model/src/../assets/tap_author_lens_wallace_audit.json
+================================================================================
+  TAP REAL-DATA VALIDATOR
+  Coupled sim predictions vs. published ayahuasca biomarkers
+================================================================================
+
+  [RUNNING COUPLED SIM]
+    Chronic ceremonial: 24 doses over 84 days
+    Final setpoint: 1.0971
+    Final chromatin mean: 0.2628
+
+  [COMPARING TO PUBLISHED BIOMARKERS]
+    Total: 8, MATCH: 6, MISMATCH: 0, NOT MODELED: 2
+    Match rate on modelable biomarkers: 6/6 = 100.0%
+    ✓ BDNF (serum)                   observed=up                        sim=+0.2970  → MATCH
+    ✓ Cortisol (saliva/serum)        observed=blunted diurnal variation sim=+0.2110  → MATCH (inverted feedback)
+    — C-reactive protein (CRP, plasma) observed=down                      sim=n/a      → NOT MODELED (locus not in current chromatin sim)
+    ✓ IL-6 (plasma)                  observed=down                      sim=+0.4300  → MATCH (inverted feedback)
+    ✓ 5-HT2A receptor density (platelet) observed=down (acute) / recovered (chronic abstinence) sim=-0.1544  → MATCH
+    — T-cell CD4/CD8 ratio (peripheral) observed=preserved (no shift)      sim=n/a      → NOT MODELED (locus not in current chromatin sim)
+    ✓ BDNF methylation (PBMC DNA)    observed=down (hypomethylation)    sim=+0.2970  → MATCH
+    ✓ Telomere length (leukocyte)    observed=preserved or longer       sim=-0.0212  → MATCH (preserved)
+
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_real_data_validation.md
+  [EXPORT] -> /data/data/com.termux/files/home/TAP_model/src/../assets/tap_real_data_validation.json
+================================================================================

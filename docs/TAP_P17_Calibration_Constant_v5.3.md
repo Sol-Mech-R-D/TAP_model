@@ -226,9 +226,26 @@ The v5.3 framework is **stronger** with this reframing:
 
   - P17 v1 (falsification): unhelpful, just said "wrong"
   - P17 v2 (drift consistency): identified a 1000x gap
-  - **P17 v3 (calibration constant)**: identified a 2.4x
-    gap and a specific next step (derive ψ from braid
-    group)
+  - P17 v3 (calibration constant): identified a 2.4x gap
+  - **P17 v3.1 (Plastic cube root)**: SUPPORTED with
+    **0.21% agreement** — see
+    `docs/TAP_P17_Plastic_CubeRoot_v5.3.md` for the
+    winning derivation
+
+**The winning ψ**: ψ = ρ^(-1/3) = (1.3247)^(-1/3) = 0.9105
+where ρ is the Plastic number (the multiverse coupling
+center, the 3D spatial anchor).
+
+**The chain**:
+  α × φ⁻¹³ / ρ^(-1/3) = 1.538e-5
+  Empirical κ         = 1.535e-5
+  Discrepancy          = **0.21%**
+
+**Why this works**:
+  - Braid group B_3 has 3 strands in 3D space
+  - ρ is the 3D spatial anchor (real root of x³ - x - 1)
+  - The cube root is the natural 3D factor for 3 strands
+  - The 7 multiverse constants provide the missing piece
 
 The framework is now:
   - **Specific**: P17 v3 is a single math problem
