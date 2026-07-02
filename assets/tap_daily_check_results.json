@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-07-02T07:24:42.341384",
+  "seismic": {
+    "framework_prediction": "M_max=6.8 on 2026-07-08",
+    "actual_total": 76,
+    "actual_m5_plus": 24,
+    "actual_m6_plus": 2,
+    "actual_max": 6,
+    "actual_avg": 4.89,
+    "verdict": "INCONSISTENT (M6+ events, framework predicts quiet)"
+  },
+  "weather": {
+    "results": [
+      {
+        "hub": "Fresno",
+        "date": "2026-07-01",
+        "api_max_f": 93.6,
+        "tap_max_f": 94.5,
+        "actual_max_f": 92.7,
+        "api_err": 0.9,
+        "tap_err": 1.88
+      },
+      {
+        "hub": "Tokyo",
+        "date": "2026-07-01",
+        "api_max_f": 84.9,
+        "tap_max_f": 85.8,
+        "actual_max_f": 82.6,
+        "api_err": 2.34,
+        "tap_err": 3.18
+      },
+      {
+        "hub": "London",
+        "date": "2026-07-01",
+        "api_max_f": 78.1,
+        "tap_max_f": 78.9,
+        "actual_max_f": 77.5,
+        "api_err": 0.54,
+        "tap_err": 1.32
+      },
+      {
+        "hub": "Singapore",
+        "date": "2026-07-01",
+        "api_max_f": 88.5,
+        "tap_max_f": 89.2,
+        "actual_max_f": 88.3,
+        "api_err": 0.18,
+        "tap_err": 0.88
+      },
+      {
+        "hub": "Sydney",
+        "date": "2026-07-01",
+        "api_max_f": 61.5,
+        "tap_max_f": 62.0,
+        "actual_max_f": 70.0,
+        "api_err": -8.46,
+        "tap_err": -8.0
+      }
+    ],
+    "tap_wins": 1,
+    "api_wins": 4,
+    "verdict": "TAP wins 1/5, API wins 4/5"
+  },
+  "finance": {
+    "total_contracts": 960,
+    "yield_mean": 0.916,
+    "yield_max": 99.97,
+    "yield_min": -11.95,
+    "buy_signals": 34,
+    "sell_signals": 0,
+    "non_zero_phi": 588,
+    "verdict": "34 BUY + 0 SELL signals at 12% threshold"
+  },
+  "cosmic": {
+    "current_kp": 1,
+    "couplings": {
+      "california_strike_slip": 1.1362538868474565,
+      "tornado_vortex": 0.996089217351656,
+      "solar_reconnection": 0.01576193809380297
+    },
+    "verdict": "Kp=1 (no quantitative Kp prediction to compare)"
+  }
+}
