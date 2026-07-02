@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-07-02T12:29:06.494066",
+  "n_docs_loaded": 7,
+  "n_chunks_initial": 163,
+  "n_chunks_final": 167,
+  "n_ripples": 5,
+  "n_new_chunks": 4,
+  "current_psi": 0.9290631671704431,
+  "live_results": {
+    "timestamp": "2026-07-02T12:29:06.489754",
+    "current_psi": 0.9290631671704431,
+    "weather_ripple": 89,
+    "new_chunks_added": 4
+  },
+  "search_before": {
+    "top": "AUDIT.md"
+  },
+  "search_after": {
+    "top": "event_seismic",
+    "changed": true
+  },
+  "event_log": [
+    {
+      "timestamp": "2026-07-02T12:29:06.489895",
+      "type": "weather_temp",
+      "magnitude": 41.3,
+      "current_psi": 0.9290631671704431,
+      "threshold": 0.5,
+      "n_affected": 89
+    },
+    {
+      "timestamp": "2026-07-02T12:29:06.490124",
+      "type": "seismic",
+      "magnitude": 5.7,
+      "current_psi": 0.9290631671704431,
+      "threshold": 0.5525,
+      "n_affected": 98
+    },
+    {
+      "timestamp": "2026-07-02T12:29:06.490242",
+      "type": "seismic",
+      "magnitude": 5.5,
+      "current_psi": 0.9290631671704431,
+      "threshold": 0.5375,
+      "n_affected": 99
+    },
+    {
+      "timestamp": "2026-07-02T12:29:06.490359",
+      "type": "seismic",
+      "magnitude": 6,
+      "current_psi": 0.9290631671704431,
+      "threshold": 0.575,
+      "n_affected": 104
+    },
+    {
+      "timestamp": "2026-07-02T12:29:06.490547",
+      "type": "seismic",
+      "magnitude": 5.6,
+      "current_psi": 0.9290631671704431,
+      "threshold": 0.5449999999999999,
+      "n_affected": 105
+    }
+  ]
+}
