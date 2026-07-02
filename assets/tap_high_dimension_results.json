@@ -1,0 +1,394 @@
+{
+  "fibonacci": [
+    {
+      "step": 1,
+      "dimension": 2,
+      "ratio": 2.0,
+      "ratio_error": 0.3819660112501051,
+      "bulk_leakage": 0.38196601125010515,
+      "entropy": 1.3862943611198906
+    },
+    {
+      "step": 2,
+      "dimension": 3,
+      "ratio": 1.5,
+      "ratio_error": 0.1180339887498949,
+      "bulk_leakage": 0.23606797749978967,
+      "entropy": 2.0794415416798357
+    },
+    {
+      "step": 3,
+      "dimension": 5,
+      "ratio": 1.6666666666666667,
+      "ratio_error": 0.04863267791677184,
+      "bulk_leakage": 0.09016994374947422,
+      "entropy": 3.4657359027997265
+    },
+    {
+      "step": 4,
+      "dimension": 8,
+      "ratio": 1.6,
+      "ratio_error": 0.018033988749894814,
+      "bulk_leakage": 0.02128623625220818,
+      "entropy": 5.545177444479562
+    },
+    {
+      "step": 5,
+      "dimension": 13,
+      "ratio": 1.625,
+      "ratio_error": 0.0069660112501050975,
+      "bulk_leakage": 0.0019193787254996309,
+      "entropy": 9.010913347279288
+    },
+    {
+      "step": 6,
+      "dimension": 21,
+      "ratio": 1.6153846153846154,
+      "ratio_error": 0.0026493733652794837,
+      "bulk_leakage": 4.0856349008447376e-05,
+      "entropy": 14.556090791758852
+    },
+    {
+      "step": 7,
+      "dimension": 34,
+      "ratio": 1.619047619047619,
+      "ratio_error": 0.0010136302977241662,
+      "bulk_leakage": 7.841880708840183e-08,
+      "entropy": 23.56700413903814
+    },
+    {
+      "step": 8,
+      "dimension": 55,
+      "ratio": 1.6176470588235294,
+      "ratio_error": 0.00038692992636546464,
+      "bulk_leakage": 3.203906151229853e-12,
+      "entropy": 38.12309493079699
+    },
+    {
+      "step": 9,
+      "dimension": 89,
+      "ratio": 1.6181818181818182,
+      "ratio_error": 0.00014782943192326314,
+      "bulk_leakage": 2.5124649840263783e-19,
+      "entropy": 61.69009906983513
+    },
+    {
+      "step": 10,
+      "dimension": 144,
+      "ratio": 1.6179775280898876,
+      "ratio_error": 5.6460660007306984e-05,
+      "bulk_leakage": 8.049702017071726e-31,
+      "entropy": 99.81319400063212
+    },
+    {
+      "step": 11,
+      "dimension": 233,
+      "ratio": 1.6180555555555556,
+      "ratio_error": 2.15668056606777e-05,
+      "bulk_leakage": 2.0224594449739216e-49,
+      "entropy": 161.50329307046727
+    },
+    {
+      "step": 12,
+      "dimension": 377,
+      "ratio": 1.6180257510729614,
+      "ratio_error": 8.237676933475768e-06,
+      "bulk_leakage": 1.628019587365234e-79,
+      "entropy": 261.31648707109935
+    }
+  ],
+  "pell": [
+    {
+      "step": 1,
+      "dimension": 2,
+      "ratio": 2.0,
+      "ratio_error": 0.4142135623730949,
+      "bulk_leakage": 0.17157287525380993,
+      "entropy": 1.3862943611198906
+    },
+    {
+      "step": 2,
+      "dimension": 5,
+      "ratio": 2.5,
+      "ratio_error": 0.08578643762690508,
+      "bulk_leakage": 0.012193308819756419,
+      "entropy": 3.4657359027997265
+    },
+    {
+      "step": 3,
+      "dimension": 12,
+      "ratio": 2.4,
+      "ratio_error": 0.014213562373095012,
+      "bulk_leakage": 2.550890262360861e-05,
+      "entropy": 8.317766166719343
+    },
+    {
+      "step": 4,
+      "dimension": 29,
+      "ratio": 2.4166666666666665,
+      "ratio_error": 0.002453104293571595,
+      "bulk_leakage": 7.934236200835375e-12,
+      "entropy": 20.101268236238415
+    },
+    {
+      "step": 5,
+      "dimension": 70,
+      "ratio": 2.413793103448276,
+      "ratio_error": 0.0004204589248191226,
+      "bulk_leakage": 1.6058390931995764e-27,
+      "entropy": 48.52030263919617
+    },
+    {
+      "step": 6,
+      "dimension": 169,
+      "ratio": 2.414285714285714,
+      "ratio_error": 7.215191261922271e-05,
+      "bulk_leakage": 2.0460167174857572e-65,
+      "entropy": 117.14187351463076
+    },
+    {
+      "step": 7,
+      "dimension": 408,
+      "ratio": 2.4142011834319526,
+      "ratio_error": 1.2378941142365818e-05,
+      "bulk_leakage": 6.722338574080185e-157,
+      "entropy": 282.80404966845765
+    }
+  ],
+  "padovan": [
+    {
+      "step": 1,
+      "dimension": 1,
+      "ratio": 1.0,
+      "ratio_error": 0.32471795724474584,
+      "bulk_leakage": 0.7548776662466928,
+      "entropy": 0.6931471805599453
+    },
+    {
+      "step": 2,
+      "dimension": 1,
+      "ratio": 1.0,
+      "ratio_error": 0.32471795724474584,
+      "bulk_leakage": 0.7548776662466928,
+      "entropy": 0.6931471805599453
+    },
+    {
+      "step": 3,
+      "dimension": 2,
+      "ratio": 2.0,
+      "ratio_error": 0.6752820427552542,
+      "bulk_leakage": 0.5698402909980534,
+      "entropy": 1.3862943611198906
+    },
+    {
+      "step": 4,
+      "dimension": 2,
+      "ratio": 1.0,
+      "ratio_error": 0.32471795724474584,
+      "bulk_leakage": 0.5698402909980534,
+      "entropy": 1.3862943611198906
+    },
+    {
+      "step": 5,
+      "dimension": 3,
+      "ratio": 1.5,
+      "ratio_error": 0.17528204275525416,
+      "bulk_leakage": 0.43015970900194694,
+      "entropy": 2.0794415416798357
+    },
+    {
+      "step": 6,
+      "dimension": 4,
+      "ratio": 1.3333333333333333,
+      "ratio_error": 0.008615376088587423,
+      "bulk_leakage": 0.3247179572447462,
+      "entropy": 2.772588722239781
+    },
+    {
+      "step": 7,
+      "dimension": 5,
+      "ratio": 1.25,
+      "ratio_error": 0.07471795724474584,
+      "bulk_leakage": 0.24512233375330741,
+      "entropy": 3.4657359027997265
+    },
+    {
+      "step": 8,
+      "dimension": 7,
+      "ratio": 1.4,
+      "ratio_error": 0.07528204275525407,
+      "bulk_leakage": 0.13968058199610667,
+      "entropy": 4.852030263919617
+    },
+    {
+      "step": 9,
+      "dimension": 9,
+      "ratio": 1.2857142857142858,
+      "ratio_error": 0.03900367153046003,
+      "bulk_leakage": 0.0795956234914389,
+      "entropy": 6.238324625039508
+    },
+    {
+      "step": 10,
+      "dimension": 12,
+      "ratio": 1.3333333333333333,
+      "ratio_error": 0.008615376088587423,
+      "bulk_leakage": 0.034238830238905886,
+      "entropy": 8.317766166719343
+    },
+    {
+      "step": 11,
+      "dimension": 16,
+      "ratio": 1.3333333333333333,
+      "ratio_error": 0.008615376088587423,
+      "bulk_leakage": 0.011117963013627163,
+      "entropy": 11.090354888959125
+    },
+    {
+      "step": 12,
+      "dimension": 21,
+      "ratio": 1.3125,
+      "ratio_error": 0.012217957244745836,
+      "bulk_leakage": 0.0027252610404832453,
+      "entropy": 14.556090791758852
+    },
+    {
+      "step": 13,
+      "dimension": 28,
+      "ratio": 1.3333333333333333,
+      "ratio_error": 0.008615376088587423,
+      "bulk_leakage": 0.0003806660482260149,
+      "entropy": 19.408121055678468
+    },
+    {
+      "step": 14,
+      "dimension": 37,
+      "ratio": 1.3214285714285714,
+      "ratio_error": 0.0032893858161744394,
+      "bulk_leakage": 3.0299351450571803e-05,
+      "entropy": 25.646445680717974
+    },
+    {
+      "step": 15,
+      "dimension": 49,
+      "ratio": 1.3243243243243243,
+      "ratio_error": 0.0003936329204214939,
+      "bulk_leakage": 1.0374143506650746e-06,
+      "entropy": 33.96421184743732
+    },
+    {
+      "step": 16,
+      "dimension": 65,
+      "ratio": 1.3265306122448979,
+      "ratio_error": 0.0018126550001520414,
+      "bulk_leakage": 1.153393438050034e-08,
+      "entropy": 45.054566736396445
+    },
+    {
+      "step": 17,
+      "dimension": 86,
+      "ratio": 1.323076923076923,
+      "ratio_error": 0.0016410341678227969,
+      "bulk_leakage": 3.1432982010667836e-11,
+      "entropy": 59.61065752815529
+    },
+    {
+      "step": 18,
+      "dimension": 114,
+      "ratio": 1.3255813953488371,
+      "ratio_error": 0.0008634381040912853,
+      "bulk_leakage": 1.1965469045960341e-14,
+      "entropy": 79.01877858383376
+    },
+    {
+      "step": 19,
+      "dimension": 151,
+      "ratio": 1.3245614035087718,
+      "ratio_error": 0.00015655373597400768,
+      "bulk_leakage": 3.6254595189449045e-19,
+      "entropy": 104.66522426455174
+    },
+    {
+      "step": 20,
+      "dimension": 200,
+      "ratio": 1.3245033112582782,
+      "ratio_error": 0.0002146459864675876,
+      "bulk_leakage": 3.761103732708742e-25,
+      "entropy": 138.62943611198907
+    },
+    {
+      "step": 21,
+      "dimension": 265,
+      "ratio": 1.325,
+      "ratio_error": 0.00028204275525411937,
+      "bulk_leakage": 4.338032365131752e-33,
+      "entropy": 183.6840028483855
+    },
+    {
+      "step": 22,
+      "dimension": 351,
+      "ratio": 1.3245283018867924,
+      "ratio_error": 0.00018965535795345545,
+      "bulk_leakage": 1.363572932948812e-43,
+      "entropy": 243.2946603765408
+    },
+    {
+      "step": 23,
+      "dimension": 465,
+      "ratio": 1.3247863247863247,
+      "ratio_error": 6.836754157890645e-05,
+      "bulk_leakage": 1.6315789721108366e-57,
+      "entropy": 322.3134389603746
+    }
+  ],
+  "bronze": [
+    {
+      "step": 1,
+      "dimension": 3,
+      "ratio": 3.0,
+      "ratio_error": 0.3027756377319948,
+      "bulk_leakage": 0.02775637731994646,
+      "entropy": 2.0794415416798357
+    },
+    {
+      "step": 2,
+      "dimension": 10,
+      "ratio": 3.3333333333333335,
+      "ratio_error": 0.030557695601338697,
+      "bulk_leakage": 6.4745453253259565e-06,
+      "entropy": 6.931471805599453
+    },
+    {
+      "step": 3,
+      "dimension": 33,
+      "ratio": 3.3,
+      "ratio_error": 0.002775637731994962,
+      "bulk_leakage": 7.533392739988463e-18,
+      "entropy": 22.873856958478193
+    },
+    {
+      "step": 4,
+      "dimension": 109,
+      "ratio": 3.303030303030303,
+      "ratio_error": 0.0002546652983084208,
+      "bulk_leakage": 2.7680957152480463e-57,
+      "entropy": 75.55304268103404
+    },
+    {
+      "step": 5,
+      "dimension": 360,
+      "ratio": 3.302752293577982,
+      "ratio_error": 2.3344154012949758e-05,
+      "bulk_leakage": 1.5978423158349156e-187,
+      "entropy": 249.5329850015803
+    },
+    {
+      "step": 6,
+      "dimension": 1189,
+      "ratio": 3.3027777777777776,
+      "ratio_error": 2.1400457828057995e-06,
+      "bulk_leakage": 0.0,
+      "entropy": 824.151997685775
+    }
+  ]
+}

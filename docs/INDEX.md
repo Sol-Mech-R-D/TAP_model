@@ -27,6 +27,8 @@ cosmic-scale timing through a single φ-spiral geometric pattern.
 6. **Want the cosmic origin / multisphere framing?** Start with
    [TAP_Cosmic_Origin_of_Life_v5.2.md](TAP_Cosmic_Origin_of_Life_v5.2.md)
    and [TAP_Multisphere_Biotemplates_v5.3.md](TAP_Multisphere_Biotemplates_v5.3.md).
+7. **Want the multiverse coupling framing (Layer 4)?** Start with
+   [TAP_Multiverse_Coupling_Framework_v5.3.md](TAP_Multiverse_Coupling_Framework_v5.3.md).
 
 ---
 

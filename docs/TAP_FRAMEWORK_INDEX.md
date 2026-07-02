@@ -42,7 +42,7 @@ documented in **30 markdown files**, and validated by
 
 ## 1. The complete framework architecture
 
-The TAP model has **three layers**, all coupled through
+The TAP model has **four layers**, all coupled through
 the φ-spiral cascade:
 
 ### Layer 1: Original 99-Hypotheses Framework (pre-cascade)
@@ -76,16 +76,46 @@ Covers 5 cascade layers + substrate:
 
 Validated by 15 cascade tests (15/15 PASS).
 
-### Layer 3: Multisphere Biotemplates (v5.3, this doc)
+### Layer 3: Multisphere Biotemplates (v5.3)
 
-The cosmic origin of life extension. 8 biological
-templates across cosmic zones, deposited by the breath
-clock's cross-cycle mechanics. Includes the user's
-"earthlings from previous cycles' biological template
-data" intuition as P11-P14 predictions.
+The cosmic origin of life extension. **22 biological
+templates** (upgraded from 8) across 4 cosmic zones,
+deposited by the breath clock's cross-cycle mechanics.
+Includes anti-template residue (soot, magnetite, L-D,
+glass) that biases the next cycle's templates.
 
-Validated by `tap_multisphere_predictions.py` (8/8
-templates modeled).
+Validated by:
+  - `tap_multisphere_predictions.py` (8 templates)
+  - `tap_cosmological_cascade_sweep.py` (22 templates)
+  - `tap_reset_antitemplate_sim.py` (anti-template)
+  - `tap_cosmic_origin_sims.py` (Weyl Chiral Spin-Pump,
+    Seismo-Piezo, Fe-S Spin-Memory)
+  - `tap_final_hybrid_predictions.py` (hybrid templates)
+
+### Layer 4: Multiverse Coupling (v5.3, the other agent's work)
+
+The meta-cosmic extension. **7 multiverse constants** in a
+phase-locked network:
+
+  1. **Plastic (ρ ≈ 1.3247)** — center, 3D spatial anchor
+  2. **Golden (φ ≈ 1.6180)** — cascade ratio
+  3. **Negative Golden (-0.6180)** — chiral companion
+  4. **Silver (δ_S ≈ 2.4142)** — fast-converging
+  5. **Bronze (δ_B ≈ 3.3028)** — structural
+  6. **Feigenbaum (δ_F ≈ 4.6692)** — chaos threshold
+  7. **Fine Structure (α ≈ 0.0073)** — EM anchor
+
+Coupled through φ⁻ⁿ-scaled Kuramoto dynamics. R = 0.9964
+synchronization in 14 steps. 4 parameter-free proofs (0% to
+6% error). 4 sequences with dimensional closure hierarchy.
+
+Validated by:
+  - `tap_multiverse_coupling_sim.py` (R = 0.9964)
+  - `tap_parameter_free_constants_proof.py` (4/4 PASS)
+  - `tap_high_dimension_sequence_sim.py` (4/4 sequences)
+
+See `docs/TAP_Multiverse_Coupling_Framework_v5.3.md` for
+the full Layer 4 documentation.
 
 ---
 

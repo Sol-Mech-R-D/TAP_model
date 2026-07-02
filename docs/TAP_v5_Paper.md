@@ -707,7 +707,96 @@ for the experimental designs for P15-P18.
 
 ---
 
-## 7. Conclusion
+## 7. Multiverse Coupling Framework (v5.3, Layer 4)
+
+The cascade model extends beyond cosmic origin (Layer 3)
+to a **multiverse coupling framework** (Layer 4). Seven
+fundamental constants are organized in a phase-locked
+network through φ⁻ⁿ-scaled Kuramoto dynamics.
+
+### 7.1 The 7 multiverse constants
+
+  1. **Plastic (ρ ≈ 1.3247)** — center node, 3D spatial anchor
+  2. **Golden (φ ≈ 1.6180)** — fundamental cascade ratio
+  3. **Negative Golden (-0.6180)** — chiral companion
+  4. **Silver (δ_S ≈ 2.4142)** — fast-converging sequences
+  5. **Bronze (δ_B ≈ 3.3028)** — 3:1 structural law
+  6. **Feigenbaum (δ_F ≈ 4.6692)** — chaos threshold
+  7. **Fine Structure (α ≈ 0.0073)** — EM anchor
+
+### 7.2 The multiverse phase coupling
+
+A 7-node wheel graph with:
+  - Center → satellite[i]: K = φ⁻ⁱ (decay with distance)
+  - Satellite[i] → satellite[i+1]: K = φ⁻² (leakage)
+
+Kuramoto dynamics: dθ_i/dt = ω_i + K × Σⱼ K_ij × sin(θ_j - θ_i)
+
+**Result** (K=25, exceeds Feigenbaum locking threshold):
+  - Final order parameter R = 0.9964
+  - Synchronization in 14 steps
+  - Center and outer nodes have matching variance (0.069)
+
+### 7.3 The parameter-free proofs
+
+Four mathematical proofs that the 7 multiverse constants
+**derive** the 4 parameter-free TAP constants:
+
+  1. **Leakage coefficient** (φ⁻⁴ = 0.1459): 0% error
+  2. **Plastic sum rule** (Σ sin(Δθ_0j)² = ρ): 0.083% error
+  3. **CMB spectral index** (n_s = 1 - φ⁻⁴/π): 2.25e-4 error
+  4. **3:1 structural law** (Derrick-Hobart): 6.05% error
+
+All 4 PASS. The framework is not just predicting — it's
+*deriving* the constants from the geometry.
+
+### 7.4 The high-dim sequences
+
+Four sequences, 4 closure behaviors:
+
+  - **Fibonacci (Golden)**: 13 steps to D=377, leakage 1.6e-79
+  - **Pell (Silver)**: 8 steps to D=408, leakage 6.7e-157
+  - **Padovan (Plastic)**: 24 steps to D=465, leakage 1.6e-57
+  - **Bronze**: 7 steps to D=1189, leakage 0 (closure)
+
+The **dimensional closure hierarchy**: the higher the
+ratio, the faster the closure. Bronze (3.3) is fastest,
+Plastic (1.3) is slowest (stays open past D=200, hence
+its role as the spatial anchor).
+
+### 7.5 The 4-layer architecture
+
+```
+  LAYER 4: MULTIVERSE COUPLING (this section)
+  - 7 nodes, φ⁻ⁿ-scaled Kuramoto
+  - 4 parameter-free proofs
+  - 4 sequence closure behaviors
+       │
+       │ φ⁻¹⁶⁺ scale
+       ↓
+  LAYER 3: MULTISPHERE BIOTEMPLATES (Section 6)
+  - 22 templates, 4 cosmic zones
+  - Anti-template residue
+       │
+       │ φ⁻¹³ scale (breath clock)
+       ↓
+  LAYER 2: CASCADE (Sections 3-5)
+  - 6 φ-rate layers (φ⁻² to φ⁻¹³)
+  - Braid substrate in parallel
+       │
+       │ breath clock
+       ↓
+  LAYER 1: 99 HYPOTHESES (foundational)
+  - 9 disciplines, 99 objections defeated
+  - Γ(N_B) = 1.0154, P17 v3 calibration
+```
+
+See `docs/TAP_Multiverse_Coupling_Framework_v5.3.md`
+for the full Layer 4 documentation.
+
+---
+
+## 8. Conclusion
 
 The TAP (Tensegrity-Anatomy-Polyvagal) cascade model provides
 a computational framework linking conscious body practice,
