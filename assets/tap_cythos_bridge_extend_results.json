@@ -1,0 +1,237 @@
+{
+  "timestamp": "2026-07-02T12:13:57.902691",
+  "n_total": 32,
+  "n_compiled": 29,
+  "n_failed": 3,
+  "fail_categories": {
+    "Cython-stub-file": 1,
+    "x86-intrinsics-on-ARM": 1,
+    "unknown": 1
+  },
+  "results": [
+    {
+      "src": "agent.c",
+      "obj": "agent.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/agent.c:1:2: error: Do not use this file, it is the result of a failed Cython compilation.\n    1 | #error Do not use this file, it is the result of a failed Cython compilation.\n      |  ^\n1 error generated.\n",
+      "category": "Cython-stub-file"
+    },
+    {
+      "src": "api.c",
+      "obj": "api.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "backprop.c",
+      "obj": "backprop.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "bfloat16.c",
+      "obj": "bfloat16.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "cascade.c",
+      "obj": "cascade.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "dispatcher.c",
+      "obj": "dispatcher.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "drives.c",
+      "obj": "drives.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "expert_cache.c",
+      "obj": "expert_cache.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "expert_index.c",
+      "obj": "expert_index.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "feedback.c",
+      "obj": "feedback.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "gate.c",
+      "obj": "gate.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "gemm_engine.c",
+      "obj": "gemm_engine.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "grammar.c",
+      "obj": "grammar.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "kernel.c",
+      "obj": "kernel.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "kvm.c",
+      "obj": "kvm.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "main.c",
+      "obj": "main.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "memory.c",
+      "obj": "memory.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "mmap_loader.c",
+      "obj": "mmap_loader.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "moe_router.c",
+      "obj": "moe_router.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "norm.c",
+      "obj": "norm.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "pim_updater.c",
+      "obj": "pim_updater.o",
+      "success": false,
+      "error": "In file included from /data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c:1162:\n/data/data/com.termux/files/usr/lib/clang/21/include/immintrin.h:14:2: error: \"This header is only meant to be used on x86 and x64 architecture\"\n   14 | #error \"This header is only meant to be used on x86 and x64 architecture\"\n      |  ^\nIn file included from /data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c:1162:\nIn file included from /data/data/com.termux/files/usr/",
+      "category": "x86-intrinsics-on-ARM"
+    },
+    {
+      "src": "pipeline.c",
+      "obj": "pipeline.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "prefetcher.c",
+      "obj": "prefetcher.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/prefetcher.c:4425:3: error: use of undeclared identifier 'WIN32_MEMORY_RANGE_ENTRY'\n 4425 |   WIN32_MEMORY_RANGE_ENTRY __pyx_v_entry;\n      |   ^~~~~~~~~~~~~~~~~~~~~~~~\n/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/prefetcher.c:4455:5: error: use of undeclared identifier '__pyx_v_entry'; did you mean '__pyx_v_addr'?\n 4455 |     __pyx_v_entry.VirtualAddress = __pyx_v_addr;\n      |     ^~~~~~~~~~~~~\n      |     __pyx_v_a",
+      "category": "unknown"
+    },
+    {
+      "src": "routing.c",
+      "obj": "routing.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "runtime.c",
+      "obj": "runtime.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "sleep.c",
+      "obj": "sleep.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "svw.c",
+      "obj": "svw.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "svw_reader.c",
+      "obj": "svw_reader.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "test_pipeline.c",
+      "obj": "test_pipeline.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "tokenizer.c",
+      "obj": "tokenizer.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "transducer.c",
+      "obj": "transducer.o",
+      "success": true,
+      "error": null,
+      "category": null
+    },
+    {
+      "src": "transformer.c",
+      "obj": "transformer.o",
+      "success": true,
+      "error": null,
+      "category": null
+    }
+  ]
+}

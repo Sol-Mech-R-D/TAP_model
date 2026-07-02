@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-02T12:22:40.033106",
+  "lib_path": "/data/data/com.termux/files/home/TAP_model/build/cythos/libtap_arm_pim.so",
+  "lib_size": 16024,
+  "pim_test": {
+    "created": true,
+    "loaded_weights": 16384,
+    "added_points": 50,
+    "search_results": 5
+  },
+  "agent_test": {
+    "created": true,
+    "wake": true,
+    "sleep": true
+  },
+  "constants": {
+    "PHI": 1.618033988749895,
+    "PSI_PLASTIC": 0.910525665875798,
+    "GAMMA_NB": 1.0650449463109553
+  }
+}
