@@ -1,5 +1,5 @@
 # TAP Author Lens — Alfred Russel Wallace
-## Audit generated 2026-07-01 16:13
+## Audit generated 2026-07-01 23:47
 
 **Primary works:** On the Law Which Has Regulated the Introduction of New Species (1855), The Malay Archipelago (1869), The World of Life (1910)
 

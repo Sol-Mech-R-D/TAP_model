@@ -1,5 +1,5 @@
 # TAP Author Lens — Jeremy Narby
-## Audit generated 2026-07-01 16:12
+## Audit generated 2026-07-01 23:47
 
 **Primary works:** The Cosmic Serpent (1998), Intelligence in Nature (2005)
 

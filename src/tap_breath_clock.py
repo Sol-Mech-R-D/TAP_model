@@ -73,27 +73,36 @@ CABIBBO_0   = PHI ** -3               # ≈ 0.2361 — Cabibbo sin(θ_C)
 MU_SPLIT_0  = (PHI ** -8) * 938.272  # ≈ 19.96 MeV — proton-neutron split × ratio
 TC_0        = 136.79                  # K — high-Tc superconductor (TAP)
 
-# Observed values (PDG / Planck 2018 / DESI 2024)
+# Observed values with actual experimental absolute uncertainties (PDG / Planck 2018)
+# Each entry: (pred_0, observed, sigma_exp, drift_sign, label)
 OBS = {
-    "baryon_asymmetry":     (ETA_0,       6.12e-10,   0.02,  -1,  "η = φ⁻⁴⁴"),
-    "fine_structure":       (ALPHA_INV_0, 137.036,    0.02,  -1,  "α⁻¹ = 4πφ⁵"),
-    "spectral_index":       (NS_0,        0.9649,     0.005, +1,  "nₛ = 1-φ⁻⁴/π"),
-    "hubble_local":         (H0_LOCAL_0,  72.15,      0.02,   0,  "H₀_local TAP exact"),
-    "higgs_mass":           (HIGGS_0,     125.10,     0.02,  +1,  "mₕ TAP Dirac"),
-    "w_boson":              (W_BOSON_0,   80.379,     0.01,  +1,  "m_W TAP"),
-    "z_boson":              (Z_BOSON_0,   91.1879,    0.01,  -1,  "m_Z TAP"),
-    "cabibbo_angle":        (CABIBBO_0,   0.2248,     0.06,  -1,  "sin(θ_C) = φ⁻³"),
-    "tc_superconductor":    (TC_0,        135.0,      0.02,  -1,  "T_c high-Tc"),
-    "ns_candidate_b_gap":   (NS_0,        0.9649,     0.01,  +1,  "nₛ Candidate B gap"),
-    "vev_electroweak":      (VEV_0,       246.22,     0.02,   0,  "Higgs VEV"),
-    "hubble_tension_excess":(H0_LOCAL_0,  73.04,      0.03,  +1,  "SH0ES H₀ measurement"),
+    "baryon_asymmetry":     (ETA_0,       6.12e-10,   0.04e-10,  -1,  "η = φ⁻⁴⁴"),
+    "fine_structure":       (ALPHA_INV_0, 137.036,    0.000021,  -1,  "α⁻¹ = 4πφ⁵"),
+    "spectral_index":       (NS_0,        0.9649,     0.0042,    +1,  "nₛ = 1-φ⁻⁴/π"),
+    "hubble_local":         (H0_LOCAL_0,  72.15,      1.20,       0,  "H₀_local TAP exact"),
+    "higgs_mass":           (HIGGS_0,     125.10,     0.17,       0,  "mₕ TAP Dirac"),
+    "w_boson":              (W_BOSON_0,   80.379,     0.012,     +1,  "m_W TAP"),
+    "z_boson":              (Z_BOSON_0,   91.1879,    0.0021,    -1,  "m_Z TAP"),
+    "cabibbo_angle":        (CABIBBO_0,   0.2248,     0.0008,    -1,  "sin(θ_C) = φ⁻³"),
+    "tc_superconductor":    (TC_0,        135.0,      1.0,       -1,  "T_c high-Tc"),
+    "vev_electroweak":      (VEV_0,       246.22,     0.0,        0,  "Higgs VEV"),
+    "hubble_tension_excess":(H0_LOCAL_0,  73.04,      1.04,      +1,  "SH0ES H₀ measurement"),
 }
 
-# Sign convention for drift:
-#  +1 → obs > pred_0, and increases further with N
-#  -1 → obs < pred_0, and decreases further with N
-#   0 → observable is anchor (used as reference, not to constrain N)
+# Theoretical first-order perturbation uncertainty (0.5%)
+SIGMA_THEORY_FRAC = 0.005
 
+def huber_loss(resid, delta=1.5):
+    """Huber loss function for robust M-estimation of the Breath Clock."""
+    abs_resid = abs(resid)
+    if abs_resid <= delta:
+        return 0.5 * (resid ** 2)
+    else:
+        return delta * (abs_resid - 0.5 * delta)
+
+def get_combined_sigma(obs, sigma_exp):
+    """Combines absolute experimental uncertainty with theoretical model uncertainty."""
+    return math.sqrt(sigma_exp**2 + (SIGMA_THEORY_FRAC * abs(obs))**2)
 
 def gamma(N, s=1.0):
     """Universal Breath correction factor Γ(N, s) = 1 + s·N·φ⁻¹³"""
@@ -117,35 +126,32 @@ def residual_at_N(N, key):
 def chi2_at_N(N):
     """
     Global chi-squared across all observables with drift_sign != 0.
-    Weighted by 1/sigma² where sigma = sigma_frac × |obs|.
+    Weighted by 1/sigma² using combined uncertainties and robust Huber Loss.
     """
     total = 0.0
-    count = 0
-    for key, (pred_0, obs, sigma_frac, drift_sign, _) in OBS.items():
+    for key, (pred_0, obs, sigma_exp, drift_sign, _) in OBS.items():
         if drift_sign == 0:
             continue
         pred_N = breath_corrected(pred_0, N, drift_sign)
-        sigma  = sigma_frac * abs(obs)
+        sigma  = get_combined_sigma(obs, sigma_exp)
         resid  = (pred_N - obs) / (sigma + 1e-30)
-        total += resid ** 2
-        count += 1
+        total += huber_loss(resid, delta=1.5)
     return total
 
 
 def chi2_at_N_higher_order(N, quad_coeff=0.0):
     """
-    Higher-order chi-squared: linear + quadratic drift.
-    Γ(N, s) = 1 + s·N·φ⁻¹³ + quad_coeff·s·N²·φ⁻²⁶
+    Higher-order chi-squared: linear + quadratic drift with Huber Loss.
     """
     total = 0.0
-    for key, (pred_0, obs, sigma_frac, drift_sign, _) in OBS.items():
+    for key, (pred_0, obs, sigma_exp, drift_sign, _) in OBS.items():
         if drift_sign == 0:
             continue
         correction = 1.0 + drift_sign * N * PHI_INV13 + quad_coeff * drift_sign * N**2 * PHI_INV26
         pred_N = pred_0 * correction
-        sigma  = sigma_frac * abs(obs)
+        sigma  = get_combined_sigma(obs, sigma_exp)
         resid  = (pred_N - obs) / (sigma + 1e-30)
-        total += resid ** 2
+        total += huber_loss(resid, delta=1.5)
     return total
 
 
@@ -206,25 +212,69 @@ def per_observable_N_estimates():
     Returns sorted list of (N_implied, key, label, note).
     """
     results = []
-    for key, (pred_0, obs, sigma_frac, drift_sign, label) in OBS.items():
+    for key, (pred_0, obs, sigma_exp, drift_sign, label) in OBS.items():
         if drift_sign == 0:
             results.append((None, key, label, "Anchor — not used for N"))
             continue
-        # pred_0 * (1 + s*N*φ⁻¹³) = obs
-        # N = (obs/pred_0 - 1) / (s * φ⁻¹³)
         ratio = obs / pred_0
         N_impl = (ratio - 1.0) / (drift_sign * PHI_INV13)
+        sigma = get_combined_sigma(obs, sigma_exp)
+        sigma_frac = sigma / abs(obs)
         sigma_N = (sigma_frac * abs(obs) / abs(pred_0)) / (abs(drift_sign) * PHI_INV13)
         results.append((N_impl, key, label, f"σ_N ≈ {sigma_N:.1f}"))
     return results
 
 
+
 def main():
+    global PHI_INV13, SIGMA_THEORY_FRAC
     print("=" * 80)
     print("  TAP BREATH CLOCK — N_B Derivation & Cascade Wiring Design")
     print(f"  φ⁻¹³ (ε, per-Breath tick) = {PHI_INV13:.8f}")
     print(f"  φ¹³  (Meta-cycle length)  = {PHI_13:.4f} Breaths")
     print("=" * 80)
+
+    # ── Dynamic Somatic State Feedback Loop ──────────────────────────────────
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, "../assets/tap_unified_social_results.json")
+    if os.path.exists(json_path):
+        with open(json_path, "r") as f:
+            data = json.load(f)
+        threats = [step["room_threat_voc"] for step in data]
+        safeties = [step["room_safety_voc"] for step in data]
+        avg_threat = np.mean(threats)
+        avg_safety = np.mean(safeties)
+        
+        # High threat/panic widens error; high safety/coherence narrows it
+        error_multiplier = 1.0 + (avg_threat - avg_safety)
+        old_sigma = SIGMA_THEORY_FRAC
+        SIGMA_THEORY_FRAC = old_sigma * error_multiplier
+        print(f"  [DYNAMIC CALIBRATION] Wired feedback from tap_unified_social_results.json:")
+        print(f"      Average Room Threat VOC : {avg_threat:.4f}")
+        print(f"      Average Room Safety VOC : {avg_safety:.4f}")
+        print(f"      Error Multiplier        : {error_multiplier:.4f}x")
+        print(f"      Theoretical σ_theory    : {old_sigma*100:.3f}% -> {SIGMA_THEORY_FRAC*100:.3f}%\n")
+    else:
+        print("  [CALIBRATION] No social simulation results found. Running with default 0.5% uncertainty.\n")
+
+    # ── Dynamic Epigenetic Setpoint Feedback Loop ────────────────────────────
+    epi_path = os.path.join(script_dir, "../assets/tap_epigenetic_flop_results.json")
+    if os.path.exists(epi_path):
+        with open(epi_path, "r") as f:
+            epi_data = json.load(f)
+        # Extract the final Serotonin setpoint after 30 days of training/remodeling
+        final_s_setpoint = epi_data[-1]["s_setpoint"]
+        
+        # Epigenetic setpoint remodeling from 0.50 baseline reduces entropy/drift tick
+        drift_multiplier = 0.50 / final_s_setpoint
+        old_tick = PHI_INV13
+        PHI_INV13 = old_tick * drift_multiplier
+        print(f"  [EPIGENETIC CALIBRATION] Wired feedback from tap_epigenetic_flop_results.json:")
+        print(f"      Final Serotonin Setpoint : {final_s_setpoint:.4f}")
+        print(f"      Drift Tick Multiplier    : {drift_multiplier:.4f}x")
+        print(f"      Dynamic ε (per-Breath)  : {old_tick:.8f} -> {PHI_INV13:.8f}\n")
+    else:
+        print("  [CALIBRATION] No epigenetic simulation results found. Running with baseline drift tick.\n")
 
     # ── 1. Per-observable N estimates ─────────────────────────────────────────
     print("\n  [STEP 1] Per-Observable N_B Estimates:")

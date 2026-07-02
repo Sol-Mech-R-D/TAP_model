@@ -1,5 +1,5 @@
 {
-  "tappasecond_sec": 4.768014951268572e-45,
+  "tappasecond_sec": 1.8100706644731375e-45,
   "coherence_levels": [
     {
       "level": 1,
@@ -19,27 +19,27 @@
     {
       "level": 5,
       "leakage": 0.106431,
-      "t2_coherence_us": 249.03
+      "t2_coherence_us": 500.0
     },
     {
       "level": 8,
       "leakage": 0.17029,
-      "t2_coherence_us": 97.42
+      "t2_coherence_us": 256.22
     },
     {
       "level": 13,
       "leakage": 0.276721,
-      "t2_coherence_us": 36.91
+      "t2_coherence_us": 97.18
     },
     {
       "level": 21,
       "leakage": 0.447011,
-      "t2_coherence_us": 14.3
+      "t2_coherence_us": 37.25
     },
     {
       "level": 34,
       "leakage": 0.723732,
-      "t2_coherence_us": 10.0
+      "t2_coherence_us": 14.37
     },
     {
       "level": 55,

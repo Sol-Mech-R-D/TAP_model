@@ -163,6 +163,42 @@ if [[ "$SUITE" == "all" || "$SUITE" == "sims" ]]; then
     # collapse, HTR2A closure, cosmic breath tick +67%).
     run_test "Full ayahuasca pathway cascade (tap_ayahuasca_fascia_cascade_sim.py)" \
         "python3 src/tap_ayahuasca_fascia_cascade_sim.py $PLOT_ARG"
+
+    # 1.10: NEW v5.3 — Temporal Asynchronous Pulsation Model (TAP)
+    # Models localized out-of-phase pulsation, biotemplate deposition,
+    # and 3D coordinate localization.
+    run_test "Temporal Asynchronous Pulsation (tap_asynchronous_pulsation_sim.py)" \
+        "python3 src/tap_asynchronous_pulsation_sim.py"
+
+    # 1.11: NEW v5.4 — Cosmic Origin & Biotemplate Validation
+    # Models Weyl Chiral Spin-Pump, Seismo-Piezoelectric Transduction,
+    # and Hydrothermal Spin-Memory grids.
+    run_test "Cosmic Origin & Biotemplate predictions (tap_cosmic_origin_sims.py)" \
+        "python3 src/tap_cosmic_origin_sims.py"
+
+    # 1.12: NEW v5.5 — Cosmological Cascade Flow Sweep
+    # Sweeps the phase cycle from local Big Bang bounce to maximum expansion,
+    # tracking the transition of all 22 templates.
+    run_test "Cosmological Cascade Flow Sweep (tap_cosmological_cascade_sweep.py)" \
+        "python3 src/tap_cosmological_cascade_sweep.py"
+
+    # 1.13: NEW v5.6 — Cosmic Reset & Anti-Templates
+    # Simulates contraction sweep to 3.5pi, tracing refractory anti-reset residues
+    # and competitive anti-template poisoning dynamics.
+    run_test "Cosmic Reset & Anti-Templates (tap_reset_antitemplate_sim.py)" \
+        "python3 src/tap_reset_antitemplate_sim.py"
+
+    # 1.14: NEW v5.7 — High-Dimensional Convergence & Holographic Closure
+    # Generates Fibonacci, Pell, Padovan, and Bronze sequences to test
+    # holographic convergence and Planck limit bulk leaks.
+    run_test "High-Dimensional Convergence (tap_high_dimension_sequence_sim.py)" \
+        "python3 src/tap_high_dimension_sequence_sim.py"
+
+    # 1.15: NEW v5.8 — Multiverse Phase Coupling Grid
+    # Simulates a 7-node wheel graph Kuramoto coupling grid to test phase stability
+    # with the Plastic Number at the center coordinating outer satellites.
+    run_test "Multiverse Phase Coupling (tap_multiverse_coupling_sim.py)" \
+        "python3 src/tap_multiverse_coupling_sim.py"
 fi
 
 # ─────────────────────────────────────────────────────────────────────────────

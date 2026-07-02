@@ -1,5 +1,5 @@
 # TAP Author Lens — Terence McKenna
-## Audit generated 2026-07-01 16:13
+## Audit generated 2026-07-01 23:47
 
 **Primary works:** Food of the Gods (1992), True Hallucinations (1993), The Archaic Revival (1991)
 

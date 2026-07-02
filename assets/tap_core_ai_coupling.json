@@ -1,13 +1,13 @@
 {
   "planetary_cores": {
-    "earth_plume_buoyancy_delta": 0.02161308704427576,
-    "venus_plume_buoyancy_delta": 0.01080654352213788,
+    "earth_plume_buoyancy_delta": 0.02157223067231016,
+    "venus_plume_buoyancy_delta": 0.01078611533615508,
     "mars_plume_buoyancy_delta": 0.0
   },
   "ai_compute_grid": {
-    "data_center_thermal_throttling_index": 1.1981146531575904
+    "data_center_thermal_throttling_index": 1.0483503215128913
   },
   "energy_and_fuel": {
-    "baseload_fuel_grid_stress_index": 0.7213595499957942
+    "baseload_fuel_grid_stress_index": 0.631189555579894
   }
 }

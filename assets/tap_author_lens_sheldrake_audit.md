@@ -1,5 +1,5 @@
 # TAP Author Lens — Rupert Sheldrake
-## Audit generated 2026-07-01 16:12
+## Audit generated 2026-07-01 23:47
 
 **Primary works:** A New Science of Life (1981), Dogs That Know (1999), The Sense of Being Stared At (2003)
 

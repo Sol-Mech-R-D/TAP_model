@@ -23,3 +23,23 @@ PLANCK_NS_ERROR = 0.0042
 # Derived geometric constants used across the codebase
 PHI = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV4 = PHI ** -4
+
+# Centralized Breath Clock constants derived from the 99 Hypotheses Tribunal
+N_BREATH = 7         # Current Breath number (chi²-minimised)
+GAMMA_BREATH = 1.01343565  # Universal Breath correction factor
+PSI_BREATH = 0.0265           # Breath phase (position in current Exhale)
+
+# Alias names for compatibility with tap_tappasecond.py and tap_neural_resonance.py
+DELTA_B_N = N_BREATH
+DELTA_B_GAMMA = GAMMA_BREATH
+DELTA_B_PSI = PSI_BREATH
+DELTA_B_M = 0
+
+# ─── Time Constants ──────────────────────────────────────────────────────────
+PLANCK_TIME_SEC = math.sqrt((HBAR * G_NEWTON) / (C_LIGHT ** 5)) # ≈ 5.39124e-44 s
+
+# TAPPASECOND (τ_Tappa): The fundamental bulk chronon scale
+TAPPASECOND = PLANCK_TIME_SEC * (DELTA_B_GAMMA ** -PHI) * (PHI ** -DELTA_B_N) * ((1.0 - DELTA_B_PSI) ** (PHI ** -4))
+
+
+

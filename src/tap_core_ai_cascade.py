@@ -13,14 +13,12 @@ All modulated by the Trans-Cyclic address (M=0, ΔB=8, ψ=0.0265).
 import os
 import math
 import json
+from science_constants import PHI, N_BREATH, GAMMA_BREATH, PSI_BREATH
 
-PHI = (1.0 + math.sqrt(5.0)) / 2.0
-PHI_INV13 = PHI ** -13
-
-# Trans-Cyclic Address
-DELTA_B = 8
-PSI = 0.0265
-GAMMA = 1.0 + DELTA_B * PHI_INV13
+# Trans-Cyclic Address (Wired to central Breath Clock constants)
+DELTA_B = N_BREATH
+PSI = PSI_BREATH
+GAMMA = GAMMA_BREATH
 
 def calculate_core_and_compute_coupling():
     """

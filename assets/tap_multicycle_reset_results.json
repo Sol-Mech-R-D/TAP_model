@@ -1,223 +1,232 @@
 {
   "n_cycles": 20,
+  "n_b_observed": 8.0,
+  "gamma_breath": 1.015355029803997,
+  "expected_drift": 0.015355029803997056,
+  "drift_at_n_b": 17.23745069798736,
+  "consistent": false,
+  "verdict": "P17 v2 NOT SUPPORTED: drift at N_B = 1723.7451% does not match \u0393(N_B) = 1.5355% (diff 1722.2096%)",
+  "n_star": 0,
   "per_cycle": [
     {
       "cycle": 0,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.38371734595050855,
+        "soot_pahs": 2.484019560775672,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.17107321713022683,
+      "fidelity": 0.41986040563881954,
+      "drift": 6.823745069798736,
       "is_below_threshold": true
     },
     {
       "cycle": 1,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 4.468039121551345,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.3107393297961575,
+      "drift": 8.01415680626414,
       "is_below_threshold": true
     },
     {
       "cycle": 2,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 6.452058682327018,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 9.301372454884676,
       "is_below_threshold": true
     },
     {
       "cycle": 3,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 8.43607824310269,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 10.624052162068457,
       "is_below_threshold": true
     },
     {
       "cycle": 4,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 10.420097803878363,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 11.94673186925224,
       "is_below_threshold": true
     },
     {
       "cycle": 5,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 12.404117364654034,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 13.269411576436022,
       "is_below_threshold": true
     },
     {
       "cycle": 6,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 14.388136925429706,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 14.592091283619801,
       "is_below_threshold": true
     },
     {
       "cycle": 7,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 16.372156486205377,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 15.914770990803582,
       "is_below_threshold": true
     },
     {
       "cycle": 8,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 18.356176046981044,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 17.23745069798736,
       "is_below_threshold": true
     },
     {
       "cycle": 9,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 20.340195607756712,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 18.56013040517114,
       "is_below_threshold": true
     },
     {
       "cycle": 10,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 22.32421516853238,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 19.88281011235492,
       "is_below_threshold": true
     },
     {
       "cycle": 11,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 24.308234729308047,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 21.2054898195387,
       "is_below_threshold": true
     },
     {
       "cycle": 12,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 26.292254290083715,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 22.528169526722472,
       "is_below_threshold": true
     },
     {
       "cycle": 13,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 28.276273850859383,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 23.850849233906253,
       "is_below_threshold": true
     },
     {
       "cycle": 14,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 30.26029341163505,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 25.17352894109003,
       "is_below_threshold": true
     },
     {
       "cycle": 15,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 32.24431297241072,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 26.49620864827381,
       "is_below_threshold": true
     },
     {
       "cycle": 16,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 34.22833253318639,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 27.818888355457588,
       "is_below_threshold": true
     },
     {
       "cycle": 17,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 36.21235209396206,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 29.141568062641365,
       "is_below_threshold": true
     },
     {
       "cycle": 18,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 38.19637165473773,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 30.464247769825146,
       "is_below_threshold": true
     },
     {
       "cycle": 19,
       "residue_state": {
-        "soot_pahs": 5.0,
-        "magnetite": 0.5,
+        "soot_pahs": 40.1803912155134,
+        "magnetite": 0.2,
         "chiral_antagonist": 1.0
       },
-      "fidelity": 0.14200255361785397,
+      "fidelity": 0.28148148148148155,
+      "drift": 31.786927477008927,
       "is_below_threshold": true
     }
-  ],
-  "deltas": {
-    "soot_pahs": 5.388046366283074,
-    "magnetite": 0.2740740740740741,
-    "chiral_antagonist": 1.0
-  },
-  "saturation": {
-    "soot_pahs": 5.0,
-    "magnetite": 0.5,
-    "chiral_antagonist": 1.0
-  },
-  "n_star": 0,
-  "n_b_observed": 8.0,
-  "n_b_predicted_range": [
-    7,
-    9
-  ],
-  "n_b_predicted": 0,
-  "consistent": false
+  ]
 }

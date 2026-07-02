@@ -24,10 +24,12 @@ import json
 from datetime import datetime, timedelta
 from scipy.stats import norm
 
+from science_constants import PHI, GAMMA_BREATH
+
 # ─── TAP Constants ──────────────────────────────────────────────────────────
-PHI = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV4 = PHI ** -4  # ≈ 0.14590 (TAP Volatility Coupling Coefficient)
 PHI_INV13 = PHI ** -13
+BASE_PERIOD = 8.12133 * GAMMA_BREATH  # Dynamic sub-breath period modulated by central Breath Clock
 
 # ─── Earth Orbit / Crossing Constants ────────────────────────────────────────
 SOLSTICE_2026 = datetime(2026, 6, 21, 19, 46)
@@ -69,7 +71,7 @@ def get_crossing_times():
     # Generate 15 crossings ahead to cover upcoming maturities
     for step in range(15):
         v = get_earth_velocity(days_from_peri)
-        interval = 8.12 * (V_MEAN / v)
+        interval = BASE_PERIOD * (V_MEAN / v)
         crossings.append({
             "step": step,
             "date": current_date
@@ -137,7 +139,7 @@ def get_integrated_tap_vol(t_start, T_days, crossings, sigma_base):
         # Find closest sub-breath crossing node
         closest = min(crossings, key=lambda c: abs((t_current - c["date"]).total_seconds()))
         diff_days = (t_current - closest["date"]).total_seconds() / 86400.0
-        phase = (diff_days / 8.12) * 2.0 * math.pi
+        phase = (diff_days / BASE_PERIOD) * 2.0 * math.pi
         
         # Volatility is excited near the crossing boundaries (phase = 0)
         vol_t = sigma_base * (1.0 + PHI_INV4 * math.cos(phase))

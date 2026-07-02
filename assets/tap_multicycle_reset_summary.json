@@ -1,14 +1,10 @@
 {
-  "n_star": 0,
   "n_b_observed": 8.0,
-  "n_b_predicted": 0,
+  "gamma_breath": 1.015355029803997,
+  "expected_drift_pct": 1.5355029803997056,
+  "drift_at_n_b_pct": 1723.745069798736,
+  "diff_pct": 1722.2095668183365,
+  "n_star": 0,
   "consistent_with_breath_clock": false,
-  "fidelity_first": 0.17107321713022683,
-  "fidelity_last": 0.14200255361785397,
-  "fidelity_drop": 0.029070663512372863,
-  "fidelity_avg": 0.1434560867934726,
-  "max_drop": 0.029070663512372863,
-  "max_drop_cycle": 1,
-  "saturated_after_n_star": true,
-  "verdict": "P17 NOT SUPPORTED: N* does not match N_B"
+  "verdict": "P17 v2 NOT SUPPORTED: drift at N_B = 1723.7451% does not match \u0393(N_B) = 1.5355% (diff 1722.2096%)"
 }

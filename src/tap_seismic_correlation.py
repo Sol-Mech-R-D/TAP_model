@@ -16,9 +16,11 @@ import json
 import urllib.request
 from datetime import datetime, timedelta
 
+from science_constants import PHI, GAMMA_BREATH
+
 # ─── TAP Constants ──────────────────────────────────────────────────────────
-PHI = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV13 = PHI ** -13
+BASE_PERIOD = 8.12133 * GAMMA_BREATH  # Dynamic sub-breath period modulated by central Breath Clock
 
 # ─── Earth Orbit Constants ───────────────────────────────────────────────────
 T_YEAR = 365.256
@@ -39,9 +41,9 @@ def get_closest_crossing_time(eq_time):
     # Calculate days difference from Solstice 2026
     diff_days = (eq_time - SOLSTICE_2026).total_seconds() / 86400.0
     
-    # Base interval is 8.12 days at mean velocity
+    # Base interval is modulated by the central Breath Clock
     # We estimate step index
-    step_approx = round(diff_days / 8.12)
+    step_approx = round(diff_days / BASE_PERIOD)
     
     # Refine step by calculating dynamic steps
     current_time = SOLSTICE_2026
@@ -50,13 +52,13 @@ def get_closest_crossing_time(eq_time):
     if step_approx > 0:
         for _ in range(step_approx):
             v = get_earth_velocity(days_from_peri)
-            interval = 8.12 * (V_MEAN / v)
+            interval = BASE_PERIOD * (V_MEAN / v)
             current_time += timedelta(days=interval)
             days_from_peri += interval
     elif step_approx < 0:
         for _ in range(abs(step_approx)):
             v = get_earth_velocity(days_from_peri)
-            interval = 8.12 * (V_MEAN / v)
+            interval = BASE_PERIOD * (V_MEAN / v)
             current_time -= timedelta(days=interval)
             days_from_peri -= interval
             
@@ -68,9 +70,8 @@ def calculate_phase(eq_time, crossing_time):
     θ = 0 means exactly on the node.
     """
     diff_sec = (eq_time - crossing_time).total_seconds()
-    # 8.12 days in seconds is approx 701,568 seconds
-    # Convert to phase angle
-    period_sec = 8.12 * 86400.0
+    # Convert to phase angle using central BASE_PERIOD
+    period_sec = BASE_PERIOD * 86400.0
     phase = (diff_sec / period_sec) * 2.0 * math.pi
     # Wrap to [-pi, pi]
     phase = (phase + math.pi) % (2.0 * math.pi) - math.pi
@@ -177,7 +178,7 @@ def generate_1_year_sweep():
     # We step forward for 55 steps (approx 1.2 years)
     while current_date < datetime(2027, 7, 30):
         v = get_earth_velocity(days_from_peri)
-        interval = 8.12 * (V_MEAN / v)
+        interval = BASE_PERIOD * (V_MEAN / v)
         current_date += timedelta(days=interval)
         days_from_peri += interval
         step += 1

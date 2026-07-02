@@ -4,124 +4,124 @@
   "cycle_period_days": 8.12133,
   "aligned_events": [
     {
-      "place": "107 km SSW of Sarangani, Philippines",
-      "magnitude": 5.2,
-      "time": "2026-06-29T04:23:05.855000+00:00",
-      "phase": 0.9061,
-      "node_distance": 0.0939,
-      "stress_coupling_pct": 2.95
-    },
-    {
-      "place": "39 km SSW of Cordova, Alaska",
-      "magnitude": 3,
-      "time": "2026-06-29T03:37:26.396000+00:00",
-      "phase": 0.9022,
-      "node_distance": 0.0978,
-      "stress_coupling_pct": 2.19
-    },
-    {
-      "place": "35 km SSW of Cordova, Alaska",
-      "magnitude": 5.3,
-      "time": "2026-06-29T03:32:39.606000+00:00",
-      "phase": 0.9018,
-      "node_distance": 0.0982,
-      "stress_coupling_pct": 2.12
-    },
-    {
-      "place": "Kermadec Islands region",
+      "place": "50 km ENE of Kuji, Japan",
       "magnitude": 4.9,
-      "time": "2026-06-29T03:10:28.375000+00:00",
-      "phase": 0.8999,
-      "node_distance": 0.1001,
-      "stress_coupling_pct": 1.82
+      "time": "2026-07-01T16:15:34.646000+00:00",
+      "phase": 0.2133,
+      "node_distance": 0.2133,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "102 km N of Yakutat, Alaska",
-      "magnitude": 2.7,
-      "time": "2026-06-29T03:05:34.262000+00:00",
-      "phase": 0.8995,
-      "node_distance": 0.1005,
-      "stress_coupling_pct": 1.76
+      "place": "14 km ENE of P\u0101hala, Hawaii",
+      "magnitude": 2.68,
+      "time": "2026-07-01T16:14:21.660000+00:00",
+      "phase": 0.2132,
+      "node_distance": 0.2132,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "21 km E of Eagle Village, Alaska",
+      "place": "59 km S of Boca de Yuma, Dominican Republic",
+      "magnitude": 3.77,
+      "time": "2026-07-01T16:04:19.290000+00:00",
+      "phase": 0.2124,
+      "node_distance": 0.2124,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "3 km N of Otra Banda, Dominican Republic",
+      "magnitude": 3.38,
+      "time": "2026-07-01T15:57:37.310000+00:00",
+      "phase": 0.2118,
+      "node_distance": 0.2118,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "21 km NW of Golfito, Costa Rica",
+      "magnitude": 4.4,
+      "time": "2026-07-01T13:41:16.690000+00:00",
+      "phase": 0.2001,
+      "node_distance": 0.2001,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "11 km ENE of Unalakleet, Alaska",
       "magnitude": 3.6,
-      "time": "2026-06-29T01:36:28.332000+00:00",
-      "phase": 0.8919,
-      "node_distance": 0.1081,
-      "stress_coupling_pct": 0.93
+      "time": "2026-07-01T13:08:18.660000+00:00",
+      "phase": 0.1973,
+      "node_distance": 0.1973,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "8 km ESE of Clam Gulch, Alaska",
-      "magnitude": 2.5,
-      "time": "2026-06-29T01:27:10.673000+00:00",
-      "phase": 0.8911,
-      "node_distance": 0.1089,
-      "stress_coupling_pct": 0.87
+      "place": "14 km S of Volcano, Hawaii",
+      "magnitude": 2.54,
+      "time": "2026-07-01T12:10:07.220000+00:00",
+      "phase": 0.1923,
+      "node_distance": 0.1923,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "57 km S of Whites City, New Mexico",
-      "magnitude": 2.6,
-      "time": "2026-06-28T23:55:28.945000+00:00",
-      "phase": 0.8833,
-      "node_distance": 0.1167,
-      "stress_coupling_pct": 0.43
+      "place": "49 km E of Noda, Japan",
+      "magnitude": 6,
+      "time": "2026-07-01T12:08:29.986000+00:00",
+      "phase": 0.1922,
+      "node_distance": 0.1922,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "45 km NE of Hachinohe, Japan",
-      "magnitude": 4.4,
-      "time": "2026-06-28T23:11:23.571000+00:00",
-      "phase": 0.8795,
-      "node_distance": 0.1205,
-      "stress_coupling_pct": 0.3
+      "place": "2 km WSW of Bayam\u00f3n, Puerto Rico",
+      "magnitude": 2.66,
+      "time": "2026-07-01T11:54:14.230000+00:00",
+      "phase": 0.191,
+      "node_distance": 0.191,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "8 km ESE of Ger\u00e1ki, Greece",
-      "magnitude": 4.4,
-      "time": "2026-06-28T22:08:28.432000+00:00",
-      "phase": 0.8741,
-      "node_distance": 0.1259,
-      "stress_coupling_pct": 0.18
+      "place": "12 km W of Stanton, Texas",
+      "magnitude": 2.9,
+      "time": "2026-07-01T11:22:57.446000+00:00",
+      "phase": 0.1883,
+      "node_distance": 0.1883,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "50 km SSW of Ollag\u00fce, Chile",
+      "place": "224 km S of Suva, Fiji",
+      "magnitude": 5.6,
+      "time": "2026-07-01T10:42:43.103000+00:00",
+      "phase": 0.1849,
+      "node_distance": 0.1849,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "7 km ESE of An\u00e1vra, Greece",
       "magnitude": 4.2,
-      "time": "2026-06-28T21:53:27.409000+00:00",
-      "phase": 0.8728,
-      "node_distance": 0.1272,
-      "stress_coupling_pct": 0.16
+      "time": "2026-07-01T09:54:15.932000+00:00",
+      "phase": 0.1807,
+      "node_distance": 0.1807,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "173 km S of Lembar, Indonesia",
-      "magnitude": 4.9,
-      "time": "2026-06-28T21:43:51.471000+00:00",
-      "phase": 0.872,
-      "node_distance": 0.128,
-      "stress_coupling_pct": 0.14
+      "place": "65 km NNE of Punta Cana, Dominican Republic",
+      "magnitude": 3.69,
+      "time": "2026-07-01T09:23:22.150000+00:00",
+      "phase": 0.1781,
+      "node_distance": 0.1781,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "53 km S of Jurm, Afghanistan",
+      "place": "229 km ESE of Attu Station, Alaska",
       "magnitude": 4.1,
-      "time": "2026-06-28T21:31:36.490000+00:00",
-      "phase": 0.871,
-      "node_distance": 0.129,
-      "stress_coupling_pct": 0.13
+      "time": "2026-07-01T09:01:29.360000+00:00",
+      "phase": 0.1762,
+      "node_distance": 0.1762,
+      "stress_coupling_pct": 0.0
     },
     {
-      "place": "65 km WNW of Catuday, Philippines",
-      "magnitude": 4.7,
-      "time": "2026-06-28T20:01:33.567000+00:00",
-      "phase": 0.8633,
-      "node_distance": 0.1367,
-      "stress_coupling_pct": 0.06
-    },
-    {
-      "place": "296 km WNW of Houma, Tonga",
-      "magnitude": 4.2,
-      "time": "2026-06-28T19:49:43.292000+00:00",
-      "phase": 0.8622,
-      "node_distance": 0.1378,
-      "stress_coupling_pct": 0.05
+      "place": "83 km NNE of Ollag\u00fce, Chile",
+      "magnitude": 4.5,
+      "time": "2026-07-01T08:00:50.534000+00:00",
+      "phase": 0.171,
+      "node_distance": 0.171,
+      "stress_coupling_pct": 0.0
     }
   ]
 }

@@ -24,9 +24,11 @@ import json
 import urllib.request
 from datetime import datetime, timedelta
 
+from science_constants import PHI, GAMMA_BREATH
+
 # ─── TAP Constants ──────────────────────────────────────────────────────────
-PHI = (1.0 + math.sqrt(5.0)) / 2.0
 PHI_INV13 = PHI ** -13
+BASE_PERIOD = 8.12133 * GAMMA_BREATH  # Dynamic sub-breath period modulated by central Breath Clock
 
 # ─── Earth Orbit Constants ───────────────────────────────────────────────────
 SOLSTICE_2026 = datetime(2026, 6, 21, 19, 46)
@@ -56,7 +58,7 @@ def get_crossing_times():
     # Run 15 steps forwards to cover July
     for step in range(15):
         v = get_earth_velocity(days_from_peri)
-        interval = 8.12 * (V_MEAN / v)
+        interval = BASE_PERIOD * (V_MEAN / v)
         if current_date >= datetime(2026, 6, 20):
             crossings.append({
                 "step": step,
@@ -145,7 +147,7 @@ def main():
             # TAP phase modulation
             closest_crossing = min(crossings, key=lambda c: abs((day - c["date"]).total_seconds()))
             diff_days = (day - closest_crossing["date"]).total_seconds() / 86400.0
-            phase = (diff_days / 8.12) * 2.0 * math.pi
+            phase = (diff_days / BASE_PERIOD) * 2.0 * math.pi
             
             # Apply coupling
             tap_max = base_max * (1.0 + magneto_sensitivity * math.cos(phase))
