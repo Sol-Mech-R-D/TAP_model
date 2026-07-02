@@ -5,17 +5,28 @@ cascade model documentation. The model is a multi-scale computational
 framework linking conscious body practice, myofascial substrate, and
 cosmic-scale timing through a single φ-spiral geometric pattern.
 
+> **New: [TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+> the unified master index of all 50 sims, 30 docs, and the
+> complete cascade architecture. This is the canonical entry
+> point for understanding how all the pieces connect.
+> Also see [TAP_CONNECTIVITY_DASHBOARD.md](TAP_CONNECTIVITY_DASHBOARD.md)
+> for the connectivity map.
+
 ---
 
 ## Quick start
 
 1. **New to the TAP model?** Start with the [1-page summary](TAP_v5_OnePager.md)
-   and the [academic paper](TAP_v5_Paper.md).
+   and the [academic paper](TAP_v5_Paper.md). For the full picture
+   of the 50-sim framework, see [TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md).
 2. **Want to run the simulations?** Read [Running the sims](#running-the-sims) below.
 3. **Interested in the Narby re-evaluation?** Start with [TAP_Narby_Review.md](TAP_Narby_Review.md).
 4. **Want the fascia/Myers Anatomy Trains framing?** Start with [TAP_Fascia_Trains_v5.md](TAP_Fascia_Trains_v5.md).
 5. **Want the somatic practices framing (SE, Polyvagal, Feldenkrais, Nami-ryu)?**
    Start with [TAP_Somatic_Cascade.md](TAP_Somatic_Cascade.md).
+6. **Want the cosmic origin / multisphere framing?** Start with
+   [TAP_Cosmic_Origin_of_Life_v5.2.md](TAP_Cosmic_Origin_of_Life_v5.2.md)
+   and [TAP_Multisphere_Biotemplates_v5.3.md](TAP_Multisphere_Biotemplates_v5.3.md).
 
 ---
 

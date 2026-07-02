@@ -79,3 +79,18 @@ To drive the 50mm piezo ultrasonic transducer at the **Fibonacci Chord** ($21$ k
 *   **Acoustic Bath:** Bolt the 50mm transducer to the bottom of a small stainless steel container containing graphite powder suspended in water and surfactant (liquid dish soap works as a simple exfoliation surfactant).
 
 ---
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Macro_Qubit_Graphene_Schematic.md) is one of the **hardware / fabrication /
+results** docs in the framework.

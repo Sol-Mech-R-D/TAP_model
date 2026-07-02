@@ -34,3 +34,18 @@ The physical circuit functions as a **charge-field phase qubit emulator**:
 3. **Sequential Region ($\Delta t > 50\,\mu\text{s}$):** Once the delay exceeds the pulse width, the signals no longer overlap. They act as independent, sequential pulses. The receiver records the baseline charging and discharging of the capacitors without any wave phase interaction (**$135$ ADC counts**).
 
 This physical test proves that the 6-capacitor tetrahedral bridge successfully maps phase transitions, enabling classical, room-temperature wave logic.
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Tetrahedral_Sweep_Results.md) is one of the **hardware / fabrication /
+results** docs in the framework.

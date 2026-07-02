@@ -69,3 +69,18 @@ To test this coupled model, we can write a python script `run_coupled_waveguide_
     *   *The expected plot is a beautiful wave curve, showing high DC voltages at constructive phases, and a dip to near 0V at the 50us phase null!*
 
 This will give us a direct, single-plot visual proof of **Phase-to-Voltage conversion**!
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Coupled_Waveguide_Brainstorm.md) is one of the **hardware / fabrication /
+results** docs in the framework.

@@ -88,3 +88,18 @@ This unified index can be wired directly into algorithmic trading models to pric
 *   **Compute Commodity Premium:** AI cloud compute credits (like spot pricing for GPU access) should increase in price during node crossings due to throttling risks.
 *   **Baseload Fuel Premium:** Natural gas and coal futures should see price support during crossings due to pipeline grid stress.
 *   **Tectonic / Core Risk Premium:** Infrastructure bonds in seismically active live-core zones (like California/Japan) should price in a sub-breath risk factor.
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_PlanetaryCores_AI_Energy_Brainstorm.md) is one of the **hardware / fabrication /
+results** docs in the framework.

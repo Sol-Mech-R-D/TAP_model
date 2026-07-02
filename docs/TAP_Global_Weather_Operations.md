@@ -38,3 +38,18 @@ Because London has high magnetospheric sensitivity ($2.09\%$), sub-breath crossi
 
 ### C. Maritime & Air Logistics (Singapore Choke Point)
 At Singapore's equator corridor, the magnetospheric thermal coupling is lower ($1.52\%$), but the sub-breath crossing modulates **convective wind-shear and monsoon velocity**. Port authorities can anticipate high-shear windows to optimize container-ship docking schedules and prevent queue congestion in the Malacca Strait.
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Global_Weather_Operations.md) is one of the **hardware / fabrication /
+results** docs in the framework.

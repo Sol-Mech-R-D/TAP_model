@@ -96,3 +96,18 @@ This inventory catalogs the exact sizes, values, and quantities of components pr
 | **10A10** | High-Current Rectifier | 10A, 1000V |
 | **20A10** | High-Current Rectifier | 20A, 1000V |
 | **1N5349B** | Zener Clamping Diode | 12V, 5W |
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Capacitor_and_Diode_Inventory.md) is one of the **hardware / fabrication /
+results** docs in the framework.

@@ -58,3 +58,18 @@ This characterization run successfully demonstrated:
 1.  **Macroscopic State Retention:** A state lifetime of **$T_1 \approx 34.5\text{ s}$**, showing that we can tune the qubit memory lifetime arbitrarily by scaling parallel capacitance.
 2.  **Integer Overflow Resolution:** 32-bit type correction resolved loop truncation, allowing full charging and positive time tracking.
 3.  **High-Voltage Stability:** The Schottky barrier diodes allowed the system to charge up to **$4.05\text{V}$** under active drive, establishing a robust signal-to-noise ratio.
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Coupled_Waveguide_All_Results.md) is one of the **hardware / fabrication /
+results** docs in the framework.

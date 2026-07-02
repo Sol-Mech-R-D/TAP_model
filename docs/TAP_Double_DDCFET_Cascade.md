@@ -75,3 +75,18 @@ In this fully passive setup, the Arduino does **not** control D6. We keep D6 com
 1.  Sends the pulse train (D3/D5).
 2.  Monitors A0.
 3.  We will observe a **self-driven saw-tooth oscillator waveform** at A0 as the circuit naturally pumps itself up and triggers its own cascade collapses over time!
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Double_DDCFET_Cascade.md) is one of the **hardware / fabrication /
+results** docs in the framework.

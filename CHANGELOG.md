@@ -5,6 +5,56 @@ All notable changes to the TAP Model are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.3.0] - 2026-07-01
+
+### Added
+- **`docs/TAP_FRAMEWORK_INDEX.md`** (17 KB) — the unified
+  master index of the entire TAP framework: 50 sims across
+  8 categories, 30 docs across 7 topics, cascade architecture,
+  validation status, user's intuitions formalized
+- **`docs/TAP_CONNECTIVITY_DASHBOARD.md`** (9 KB) — file
+  reference graph, cascade mapping, validation flow
+- **`docs/TAP_Multisphere_Biotemplates_v5.3.md`** (12 KB) —
+  the 8 biotemplates across cosmic zones, deposited by the
+  breath clock's cross-cycle mechanics
+- **`src/tap_cascade_context.py`** (13 KB) — the cascade
+  context registry mapping all 50 sims to their cascade
+  layer and φ-rate. 50/50 sims registered, 0 orphans
+- **3 deep validation sims** in `src/tap_cosmic_origin_sims.py`
+  (NEW, 7 KB, by the other agent):
+  - Weyl Chiral Spin-Pump (BN nanotubes): chiral seed
+    EE = 1.00045e-6, 0.0451% error
+  - Seismo-Piezoelectric Transduction (Siloxane helices):
+    voltage 0.001855V, selectivity 1.0135
+  - Hydrothermal Spin-Memory (Fe-S clusters): switching
+    ratio 1.39M (way over 0.1 threshold)
+- **P11-P14** — 4 new testable predictions on the
+  multisphere framework
+
+### Updated
+- All 10 previously-orphan docs now have backreferences
+  to `TAP_FRAMEWORK_INDEX.md`
+- `docs/INDEX.md` updated with framework index link at top
+- `scripts/run_all_validations.sh` runs 15 cascade + 3
+  cosmic origin sims by default
+
+### Status
+- 15/15 cascade tests PASS
+- 3/3 cosmic origin sims PASS
+- 99/99 super-tribunal tests PASS (with --with-99)
+- 50/50 sims registered in cascade_context
+- 0 orphan docs
+- **Total: 134+ tests passing**
+
+## [5.2.0] - 2026-07-01
+
+### Added
+- **Cosmic origin of life doc** (`docs/TAP_Cosmic_Origin_of_Life_v5.2.md`)
+  - DNA-as-cosmic-template-receiver (not source)
+  - 4 new testable predictions P7-P10
+  - Breath clock N_B ≈ 7-9 as previous cycles
+- **v5.2 section in TAP_v5_Paper.md**
+
 ## [5.1.0] - 2026-07-01
 
 ### Added

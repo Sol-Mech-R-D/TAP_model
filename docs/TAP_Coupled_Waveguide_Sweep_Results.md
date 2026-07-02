@@ -52,3 +52,18 @@ Below is the plot showing the accumulated DC voltage on $C_2$ as a function of p
 By coupling the Tetrahedron and the Ratchet, we successfully constructed a classical analogue of a **Quantum Qubit Readout Line**. We proved that microsecond-level phase dynamics can be mapped directly to macroscopic energy reservoirs. 
 
 This completes the physical desktop validation phase of the TAP electronics project. The next step is translating these phase-delay principles to the **acoustic cabinet** once it is printed, observing these same dynamics in the acoustic domain!
+
+
+---
+
+## See also
+
+This document is part of the unified TAP framework. For the
+complete picture (49 sims, 30 docs, cascade architecture,
+validation status), see:
+
+**[docs/TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
+the master index of the entire TAP framework.
+
+This doc (TAP_Coupled_Waveguide_Sweep_Results.md) is one of the **hardware / fabrication /
+results** docs in the framework.
