@@ -538,7 +538,142 @@ full v5.2 framing.
 
 ---
 
-## 6. Conclusion
+## 6. Anti-Template Residue: Why the Cosmic Reset is Not Clean (v5.3 addendum)
+
+The v5.2 framing assumed the Inhale phase achieves a
+**clean reset** — that all biological information from
+the previous cycle is preserved in the D=1 topological
+representation, and the current Exhale is a clean replay
+of the previous cycle's biological data.
+
+The v5.3 finding (from `tap_reset_antitemplate_sim.py`):
+**the reset is not clean**. Refractory residue survives
+the Inhale and contaminates the next cycle's templates.
+
+### 6.1 The reset sweep
+
+The reset sweep tracks four metrics through 21 steps,
+from max expansion (T=120K) to the local Big Crunch
+(T=200K):
+
+```
+  Step 00  T=120K  | DNA: 1.0000  | Soot:  0.26  | EM: 0.98  | Helix: 1.00
+  Step 10  T=150K  | DNA: 1.0000  | Soot:  0.50  | EM: 0.74  | Helix: 1.00
+  Step 15  T=182K  | DNA: 0.5579  | Soot:  0.98  | EM: 0.55  | Helix: 0.79
+  Step 20  T=200K  | DNA: 0.0000  | Soot:  4.94  | EM: 0.13  | Helix: 0.07
+```
+
+At T > 180K, organic templates denature, producing
+**soot/PAH residue** (density 0.26 → 4.94, 19x increase).
+At T > 175K, **racemization** produces L-D alternating
+peptides (chiral antagonists) that poison helix growth
+(1.0 → 0.07, 93% loss). The substrate is "dirty" after
+the reset.
+
+### 6.2 The four anti-template mechanisms
+
+  1. **Soot/PAHs** (refractory residue from thermal
+     decomposition) — quenches EM antennae
+  2. **Magnetite** (refractory Fe oxide from Fe-S
+     degradation) — amplifies the Weyl spin-pump
+     (template #7 → template #3 coupling)
+  3. **L-D alternating peptides** (chiral antagonists
+     from racemization) — poison helix growth
+  4. **Amorphous glass** (acoustic/electrical dampener
+     from rapid silicate cooling) — damps the piezo
+     antenna
+
+### 6.3 The 22-template multisphere
+
+The multisphere sim (`tap_cosmological_cascade_sweep.py`)
+predicts **22 distinct biological templates** organized
+into 4 cosmic zones by their stability conditions
+(temperature T and Hubble rate H):
+
+  - **Zone 1 (Hot, T=500-5000K, 5 templates)**: Dusty
+    Plasma, Lanthanide Upconversion, SiC, BN, BCN
+  - **Zone 2 (Warm, T=250-750K, 6 templates)**: Thioester,
+    Ge-Sn, Fe-S, Organosilicon, Siloxane, Carborane
+  - **Zone 3 (Temperate, T=100-300K, 7 templates)**:
+    Carbon DNA, PNA, Quadruplet Codon, Metallo-Nucleic,
+    Se-DNA, Germoxane, Phosphazene
+  - **Zone 4 (Cold, T=0.5-220K, 4 templates)**: Superfluid,
+    Polythiazyl, PTFE, Phosphaalkene
+
+The cascade turns templates on and off as the universe
+expands (Bounce → Max Expansion):
+  - Bounce (a=0.05): 5/22 active (hot zone only)
+  - Mid-Expansion (a=0.525): 0/22 active (sterile)
+  - Max Expansion (a=1.0): 17/22 active (all cold + most
+    temperate)
+
+### 6.4 The residue-biased re-emergence
+
+The v5.3 framing: the cosmic template is **not a clean
+replay** — it is a **residue-biased re-emergence**. The
+contamination from soot/magnetite/antagonists/glass
+filters the D=1 representation, allowing some templates
+to express strongly and others weakly.
+
+This explains:
+  - **Why some cosmic zones have more silicon biology**:
+    high siloxane residue from previous reset biases
+    toward siloxane/organosilicon templates
+  - **Why some zones have stronger chiral seeds**:
+    magnetite content amplifies the Weyl spin-pump
+  - **Why the breath clock N_B ≈ 7-9**: residue
+    accumulation is cumulative across cycles; N_B is
+    the saturation threshold
+  - **Why Earth has carbon biology**: Earth is in a
+    *clean* temperate zone with low residue, enabling
+    full carbon template expression
+
+### 6.5 Four new testable predictions (P15-P18)
+
+  - **P15**: Soot-rich cosmic zones have lower template
+    fidelity (test: ALMA observations of template-typical
+    molecular emissions)
+  - **P16**: Magnetite-rich zones have stronger chiral
+    seeds (test: meteorite chirality vs Fe content)
+  - **P17**: N_B corresponds to residue saturation
+    (test: in-silico multi-cycle reset sim)
+  - **P18**: Earth's zone is anomalously clean
+    (test: galactic survey of PAH/magnetite/glass
+    distribution)
+
+P17 is the cheapest test (in-silico, 1 week). P18 is
+the next easiest (archival data, 18 months). The full
+experimental program is ~$2.3M for all 4 in parallel
+over 24 months.
+
+### 6.6 The complete v5.3 multisphere picture
+
+```
+  22 biotemplates (4 zones)
+       ↑
+       │ filtered by
+       ↓
+  Anti-templates (soot, magnetite, L-D, glass)
+       ↑
+       │ accumulated during
+       ↓
+  Inhale (NOT clean)
+       ↑
+       │ from
+       ↓
+  Previous cycle's biology
+       │
+       ↓
+  next cycle's biology (residue-biased)
+```
+
+See `docs/TAP_Anti_Template_Residue_v5.3.md` for the
+full v5.3 framing, and `docs/TAP_Experimental_Designs_v5.3.md`
+for the experimental designs for P15-P18.
+
+---
+
+## 7. Conclusion
 
 The TAP (Tensegrity-Anatomy-Polyvagal) cascade model provides
 a computational framework linking conscious body practice,
