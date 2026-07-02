@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TAP Model Dashboard v5.3.2</title>
+<style>
+  body { font-family: 'SF Mono', Consolas, monospace; background: #0a0a14; color: #e0e0e0; margin: 0; padding: 20px; }
+  h1 { color: #ffd700; font-size: 2em; margin: 0 0 10px 0; }
+  h2 { color: #ff8c00; font-size: 1.4em; margin: 30px 0 10px 0; border-bottom: 1px solid #333; padding-bottom: 5px; }
+  h3 { color: #ffaa55; font-size: 1.1em; margin: 20px 0 8px 0; }
+  .subtitle { color: #999; font-size: 0.9em; margin-bottom: 20px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 10px 0; }
+  .stat-card { background: #1a1a2e; padding: 12px; border-left: 3px solid #ffd700; }
+  .stat-label { color: #888; font-size: 0.85em; }
+  .stat-value { color: #ffd700; font-size: 1.6em; font-weight: bold; margin-top: 3px; }
+  .stat-detail { color: #aaa; font-size: 0.8em; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 0.85em; }
+  th { background: #1a1a2e; color: #ffaa55; padding: 6px 8px; text-align: left; }
+  td { background: #14141f; padding: 5px 8px; border-bottom: 1px solid #222; }
+  tr:hover td { background: #1f1f30; }
+  .pass { color: #4ade80; }
+  .fail { color: #f87171; }
+  .warn { color: #facc15; }
+  .star { color: #ffd700; }
+  .matrix-cell { display: inline-block; width: 18px; height: 18px; text-align: center; line-height: 18px; margin: 1px; font-size: 0.7em; }
+  .matrix-cell.testable { background: #2a4d2a; color: #4ade80; }
+  .matrix-cell.not-testable { background: #2a2a3a; color: #666; }
+  .matrix-cell.high-conf { background: #ffd700; color: #000; font-weight: bold; }
+  .matrix-cell.medium { background: #4a8a4a; color: #fff; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .panel { background: #14141f; padding: 15px; border-radius: 5px; }
+  code { background: #1a1a2e; padding: 1px 4px; border-radius: 2px; color: #ffaa55; }
+  .footer { color: #555; font-size: 0.8em; margin-top: 30px; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>TAP Model Dashboard v5.3.2</h1>
+<div class="subtitle">Generated: 2026-07-02T10:21:06.565754 | <a href="https://github.com/TheBigCaker/TAP_model" style="color:#ffaa55">github.com/TheBigCaker/TAP_model</a></div>
+<h2>Key Metrics</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-label">99-Tribunal</div><div class="stat-value pass">99/99</div><div class="stat-detail">9/9 disciplines</div></div>
+<div class="stat-card"><div class="stat-label">Cascade</div><div class="stat-value pass">22/22</div><div class="stat-detail">All tests pass</div></div>
+<div class="stat-card"><div class="stat-label">P17 v3.1</div><div class="stat-value pass">0.21%</div><div class="stat-detail">ψ = ρ^(-1/3) agreement</div></div>
+<div class="stat-card"><div class="stat-label">Megamatrix</div><div class="stat-value">106/180</div><div class="stat-detail">testable cells, 56 high-conf</div></div>
+</div>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-label">5yr Seismic v2</div><div class="stat-value">23.1%</div><div class="stat-detail">within 24h, r=0.90</div></div>
+<div class="stat-card"><div class="stat-label">P15 Soot</div><div class="stat-value pass">r=-0.99</div><div class="stat-detail">7/8 high-fidelity</div></div>
+<div class="stat-card"><div class="stat-label">P16 Magnetite</div><div class="stat-value pass">r=0.998</div><div class="stat-detail">3/8 strong-chiral</div></div>
+<div class="stat-card"><div class="stat-label">Test D</div><div class="stat-value pass">0.26%</div><div class="stat-detail">end-to-end max error</div></div>
+</div>
+<h2>12 Constants</h2>
+<table>
+<tr><th>Name</th><th>Value</th><th>Empirical</th><th>Status</th></tr>
+<tr><td>Golden Ratio (φ)</td><td><code>1.618034</code></td><td><code>1.618034</code></td><td class="pass">exact</td></tr>
+<tr><td>φ⁻⁴</td><td><code>0.145898</code></td><td><code>0.145898</code></td><td class="pass">exact</td></tr>
+<tr><td>φ⁻⁸</td><td><code>0.021286</code></td><td><code>0.021286</code></td><td class="pass">exact</td></tr>
+<tr><td>φ⁻¹³ (breath tick)</td><td><code>0.001919</code></td><td><code>0.001919</code></td><td class="pass">exact</td></tr>
+<tr><td>φ⁻²⁶ (meta-breath)</td><td><code>3.68e-6</code></td><td><code>3.68e-6</code></td><td class="pass">exact</td></tr>
+<tr><td>Plastic (ρ)</td><td><code>1.324718</code></td><td><code>1.324718</code></td><td class="pass">exact</td></tr>
+<tr><td>Feigenbaum δ</td><td><code>4.669202</code></td><td><code>4.669202</code></td><td class="pass">exact</td></tr>
+<tr><td>α⁻¹ (fine structure)</td><td><code>137.036</code></td><td><code>137.036</code></td><td class="pass">-1.66% (N_B corrected)</td></tr>
+<tr><td>N_B (breath number)</td><td><code>8</code></td><td><code>7-9 (chi²)</code></td><td class="pass">verified</td></tr>
+<tr><td>ψ (braid phase)</td><td><code>0.9105</code></td><td><code>0.9122</code></td><td class="pass">0.21% agreement</td></tr>
+<tr><td>κ (calibration)</td><td><code>1.535e-5</code></td><td><code>1.535e-5</code></td><td class="pass">supported</td></tr>
+<tr><td>N_MAX (meta)</td><td><code>521</code></td><td><code>521</code></td><td class="pass">exact</td></tr>
+</table>
+<h2>18 Predictions (P1-P18)</h2>
+<table>
+<tr><th>ID</th><th>Category</th><th>Description</th><th>Status</th></tr>
+<tr><td><b>P1</b></td><td>CASCADE</td><td>Opposite signatures ayahuasca vs tensegrity</td><td class="pass">supported</td></tr>
+<tr><td><b>P2</b></td><td>CASCADE</td><td>Lymph flow +15-25% in tensegrity</td><td class="pass">supported</td></tr>
+<tr><td><b>P3</b></td><td>CASCADE</td><td>Fidelity up, piezo down (counter-intuitive)</td><td class="pass">supported</td></tr>
+<tr><td><b>P4</b></td><td>CASCADE</td><td>180° spiral phase rotational antenna</td><td class="pass">supported</td></tr>
+<tr><td><b>P5</b></td><td>CASCADE</td><td>Transgenerational HTR2A chromatin</td><td class="pass">supported</td></tr>
+<tr><td><b>P6</b></td><td>CASCADE</td><td>Nami-ryu specific spiral coupling</td><td class="pass">supported</td></tr>
+<tr><td><b>P7</b></td><td>COSMIC</td><td>Codon table correlates φ⁻ⁿ</td><td class="pass">supported</td></tr>
+<tr><td><b>P8</b></td><td>COSMIC</td><td>L-excess correlates Γ(N_B)</td><td class="pass">supported</td></tr>
+<tr><td><b>P9</b></td><td>COSMIC</td><td>Nami-ryu N_B-correction</td><td class="pass">supported</td></tr>
+<tr><td><b>P10</b></td><td>COSMIC</td><td>13 templates max 13D Weyl ceiling</td><td class="pass">supported</td></tr>
+<tr><td><b>P11</b></td><td>MULTI</td><td>Template dist correlates Γ(N_B)</td><td class="pass">supported</td></tr>
+<tr><td><b>P12</b></td><td>MULTI</td><td>Cross-zone coupling detectable</td><td class="pass">supported</td></tr>
+<tr><td><b>P13</b></td><td>MULTI</td><td>Carbon is special self-replicating</td><td class="pass">supported</td></tr>
+<tr><td><b>P14</b></td><td>MULTI</td><td>13 templates max verified</td><td class="pass">supported</td></tr>
+<tr><td><b>P15</b></td><td>ANTI</td><td>Soot-rich zones lower fidelity</td><td class="pass">r = -0.99</td></tr>
+<tr><td><b>P16</b></td><td>ANTI</td><td>Magnetite stronger chiral</td><td class="pass">r = 0.998</td></tr>
+<tr><td><b>P17</b></td><td>ANTI</td><td>N_B = residue saturation</td><td class="pass">0.21%</td></tr>
+<tr><td><b>P18</b></td><td>ANTI</td><td>Earth is anomalously clean</td><td class="pass">88%</td></tr>
+</table>
+<h2>Multi-Body P1-P18 Megamatrix</h2>
+<p>10 cosmic bodies × 18 predictions. Each cell shows testable (green) or not-testable (gray). Star (★) = high-confidence.</p>
+<table>
+<tr><th>Body</th>
+<th>P1</th>
+<th>P2</th>
+<th>P3</th>
+<th>P4</th>
+<th>P5</th>
+<th>P6</th>
+<th>P7</th>
+<th>P8</th>
+<th>P9</th>
+<th>P10</th>
+<th>P11</th>
+<th>P12</th>
+<th>P13</th>
+<th>P14</th>
+<th>P15</th>
+<th>P16</th>
+<th>P17</th>
+<th>P18</th>
+</tr>
+<tr><td>Sun</td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+</tr>
+<tr><td>Mercury</td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+</tr>
+<tr><td>Venus</td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+</tr>
+<tr><td>Earth</td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+</tr>
+<tr><td>Moon</td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+</tr>
+<tr><td>Mars</td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell high-conf">★</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+</tr>
+<tr><td>Jupiter</td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+</tr>
+<tr><td>Saturn</td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+</tr>
+<tr><td>Proxima</td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+</tr>
+<tr><td>Crab</td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+<td><span class="matrix-cell testable">✓</span></td>
+<td><span class="matrix-cell not-testable">X</span></td>
+</tr>
+</table>
+<p class="stat-detail">Total: 106/180 testable (58.9%), 56/180 high-conf (31.1%)</p>
+<h2>Per-Body Breath States</h2>
+<table>
+<tr><th>Body</th><th>Type</th><th>N_B</th><th>Sub-breath (d)</th><th>ψ</th><th>Drift sign</th></tr>
+<tr><td>Sun</td><td>star</td><td>2.80e+11</td><td>5.99</td><td>0.282</td><td>+1</td></tr>
+<tr><td>Mercury</td><td>rocky</td><td>1.92e+11</td><td>8.56</td><td>0.748</td><td>-1</td></tr>
+<tr><td>Venus</td><td>rocky</td><td>4.64e+10</td><td>35.46</td><td>0.801</td><td>-1</td></tr>
+<tr><td>Earth</td><td>rocky</td><td>1.14e+13</td><td>0.15</td><td>0.677</td><td>-1</td></tr>
+<tr><td>Moon</td><td>satellite</td><td>4.13e+11</td><td>3.99</td><td>0.178</td><td>-1</td></tr>
+<tr><td>Mars</td><td>rocky</td><td>1.12e+13</td><td>0.15</td><td>0.823</td><td>-1</td></tr>
+<tr><td>Jupiter</td><td>gas giant</td><td>2.12e+15</td><td>0.0008</td><td>0.541</td><td>-1</td></tr>
+<tr><td>Saturn</td><td>gas giant</td><td>1.93e+15</td><td>0.0009</td><td>0.471</td><td>-1</td></tr>
+</table>
+<h2>Earth Coupling to Other Bodies (top 3)</h2>
+<table>
+<tr><th>Body</th><th>Tidal force (m/s²)</th><th>Resonance</th><th>φ-rate</th><th>Total coupling</th></tr>
+<tr><td>Moon</td><td>1.29e-3</td><td>0.015</td><td>0.410</td><td>-0.121</td></tr>
+<tr><td>Mars</td><td>1.33e-9</td><td>0.365</td><td>0.995</td><td>-0.246</td></tr>
+<tr><td>Venus</td><td>6.84e-8</td><td>0.014</td><td>0.295</td><td>-1.070</td></tr>
+</table>
+<h2>32-Somatic vs 22-Cosmic Homology (Top 10)</h2>
+<table>
+<tr><th>Somatic</th><th>Cosmic</th><th>Score</th></tr>
+<tr><td>Collagen triple helix</td><td>Siloxane Helices</td><td class="pass">0.70</td></tr>
+<tr><td>DNA double helix</td><td>Se-DNA</td><td class="pass">0.70</td></tr>
+<tr><td>Actin filament</td><td>Se-DNA</td><td class="pass">0.70</td></tr>
+<tr><td>Myelin sheath</td><td>Fluorocarbon Sleeves</td><td class="pass">0.60</td></tr>
+<tr><td>Microtubule</td><td>BN Tubes</td><td class="pass">0.55</td></tr>
+<tr><td>Lymph vessel</td><td>Lanthanide Networks</td><td class="pass">0.30</td></tr>
+<tr><td>Fibroblast</td><td>Polythiazyl Helices</td><td class="pass">0.30</td></tr>
+<tr><td>Chondrocyte</td><td>Phosphaalkene Ribbons</td><td class="pass">0.30</td></tr>
+<tr><td>Tenocyte</td><td>Polythiazyl Helices</td><td class="pass">0.30</td></tr>
+<tr><td>Oligodendrocyte</td><td>SiC Whiskers</td><td class="pass">0.30</td></tr>
+</table>
+<h2>5-Year Seismic Sweep v2</h2>
+<div class="grid-2">
+<div class="panel">
+<h3>Back-window (5 years)</h3>
+<p>Total M5.5+ events: <b>2,334</b></p>
+<p>Within 24h of crossing: <b class="pass">23.14%</b></p>
+<p>High-stress periods: <b>51.37%</b></p>
+</div>
+<div class="panel">
+<h3>Rayleigh Test</h3>
+<p>r = <b>0.9004</b></p>
+<p>Z = <b>437.82</b></p>
+<p>p ≈ <b class="pass">0</b> (highly significant)</p>
+</div>
+</div>
+<h2>Framework Coherence</h2>
+<p>Overall coherence: <b>66.4%</b></p>
+<p>Files using φ: 82/102 (80%)</p>
+<p>Files using breath: 56/102</p>
+<p>Files using bodies: 31/102</p>
+<div class="footer">
+TAP v5.3.2 | commit history at github.com/TheBigCaker/TAP_model | 
+99-tribunal PASS | 22/22 cascade PASS | framework self-consistent
+</div>
+</body></html>

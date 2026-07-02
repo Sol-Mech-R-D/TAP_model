@@ -1,0 +1,1261 @@
+{
+  "timestamp": "2026-07-02T10:22:26.983570",
+  "scripts": [
+    {
+      "name": "calibration_derivation.py",
+      "size_bytes": 10058,
+      "category": "Calibration",
+      "purpose": "calibration_derivation.py"
+    },
+    {
+      "name": "check_env.py",
+      "size_bytes": 236,
+      "category": "other",
+      "purpose": "TAP framework script"
+    },
+    {
+      "name": "dump_descriptors.py",
+      "size_bytes": 4867,
+      "category": "other",
+      "purpose": "TAP framework script"
+    },
+    {
+      "name": "flash_arduino.py",
+      "size_bytes": 8192,
+      "category": "other",
+      "purpose": "flash_arduino.py"
+    },
+    {
+      "name": "read_qubit.py",
+      "size_bytes": 1769,
+      "category": "other",
+      "purpose": "read_qubit.py"
+    },
+    {
+      "name": "render_mermaid_diagrams.py",
+      "size_bytes": 13888,
+      "category": "Rendering",
+      "purpose": "render_mermaid_diagrams.py"
+    },
+    {
+      "name": "run_all_sweeps.py",
+      "size_bytes": 11121,
+      "category": "other",
+      "purpose": "run_all_sweeps.py"
+    },
+    {
+      "name": "run_coupled_sweep.py",
+      "size_bytes": 4600,
+      "category": "other",
+      "purpose": "run_coupled_sweep.py"
+    },
+    {
+      "name": "run_ratchet_test_auto.py",
+      "size_bytes": 4531,
+      "category": "Tests/Tribunal",
+      "purpose": "run_ratchet_test_auto.py"
+    },
+    {
+      "name": "run_tetrahedral_sweep.py",
+      "size_bytes": 5378,
+      "category": "other",
+      "purpose": "run_tetrahedral_sweep.py"
+    },
+    {
+      "name": "science_constants.py",
+      "size_bytes": 1663,
+      "category": "other",
+      "purpose": "Centralized scientific constants and observational benchmarks for TAP scripts."
+    },
+    {
+      "name": "tap_5ht2a_ayahuasca_sim.py",
+      "size_bytes": 29678,
+      "category": "5-HT2A",
+      "purpose": "tap_5ht2a_ayahuasca_sim.py"
+    },
+    {
+      "name": "tap_5ht2a_epigenetic_coupling_sim.py",
+      "size_bytes": 17026,
+      "category": "Epigenetic",
+      "purpose": "tap_5ht2a_epigenetic_coupling_sim.py"
+    },
+    {
+      "name": "tap_5year_seismic_sweep.py",
+      "size_bytes": 18334,
+      "category": "Seismic/Geological",
+      "purpose": "tap_5year_seismic_sweep.py"
+    },
+    {
+      "name": "tap_5year_seismic_v2.py",
+      "size_bytes": 10366,
+      "category": "Seismic/Geological",
+      "purpose": "tap_5year_seismic_v2.py"
+    },
+    {
+      "name": "tap_asynchronous_pulsation_sim.py",
+      "size_bytes": 10562,
+      "category": "other",
+      "purpose": "tap_asynchronous_pulsation_sim.py"
+    },
+    {
+      "name": "tap_audio_test.py",
+      "size_bytes": 4997,
+      "category": "Tests/Tribunal",
+      "purpose": "tap_audio_test.py"
+    },
+    {
+      "name": "tap_author_lens.py",
+      "size_bytes": 53846,
+      "category": "Author lens",
+      "purpose": "tap_author_lens.py"
+    },
+    {
+      "name": "tap_ayahuasca_fascia_cascade_sim.py",
+      "size_bytes": 20118,
+      "category": "Cascade sims",
+      "purpose": "tap_ayahuasca_fascia_cascade_sim.py"
+    },
+    {
+      "name": "tap_biochem_qubit_graphene.py",
+      "size_bytes": 4957,
+      "category": "other",
+      "purpose": "tap_biochem_qubit_graphene.py"
+    },
+    {
+      "name": "tap_body_breath_states.py",
+      "size_bytes": 8145,
+      "category": "Breath clock",
+      "purpose": "tap_body_breath_states.py"
+    },
+    {
+      "name": "tap_breath_clock.py",
+      "size_bytes": 26645,
+      "category": "Breath clock",
+      "purpose": "tap_breath_clock.py"
+    },
+    {
+      "name": "tap_breath_clock_chem_mod.py",
+      "size_bytes": 7803,
+      "category": "Breath clock",
+      "purpose": "tap_breath_clock_chem_mod.py"
+    },
+    {
+      "name": "tap_breath_per_body.py",
+      "size_bytes": 9453,
+      "category": "Breath clock",
+      "purpose": "tap_breath_per_body.py"
+    },
+    {
+      "name": "tap_cascade_context.py",
+      "size_bytes": 17227,
+      "category": "Cascade sims",
+      "purpose": "tap_cascade_context.py"
+    },
+    {
+      "name": "tap_chromatin_state_sim.py",
+      "size_bytes": 27884,
+      "category": "Chromatin",
+      "purpose": "tap_chromatin_state_sim.py"
+    },
+    {
+      "name": "tap_collagen_braiding_sim.py",
+      "size_bytes": 5523,
+      "category": "Braid group/Quantum",
+      "purpose": "tap_collagen_braiding_sim.py"
+    },
+    {
+      "name": "tap_core_ai_cascade.py",
+      "size_bytes": 3810,
+      "category": "Core framework",
+      "purpose": "tap_core_ai_cascade.py"
+    },
+    {
+      "name": "tap_cosmic_breath_sim.py",
+      "size_bytes": 8222,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_cosmic_breath_sim.py"
+    },
+    {
+      "name": "tap_cosmic_kp_validation.py",
+      "size_bytes": 13727,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_cosmic_kp_validation.py"
+    },
+    {
+      "name": "tap_cosmic_origin_sims.py",
+      "size_bytes": 7037,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_cosmic_origin_sims.py"
+    },
+    {
+      "name": "tap_cosmic_quantum_neuro.py",
+      "size_bytes": 5159,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_cosmic_quantum_neuro.py"
+    },
+    {
+      "name": "tap_cosmological_cascade_sweep.py",
+      "size_bytes": 8086,
+      "category": "Cascade sims",
+      "purpose": "tap_cosmological_cascade_sweep.py"
+    },
+    {
+      "name": "tap_coupled_ayahuasca_sim.py",
+      "size_bytes": 25490,
+      "category": "Ayahuasca",
+      "purpose": "tap_coupled_ayahuasca_sim.py"
+    },
+    {
+      "name": "tap_cross_body_coupling.py",
+      "size_bytes": 10390,
+      "category": "Cross-domain",
+      "purpose": "tap_cross_body_coupling.py"
+    },
+    {
+      "name": "tap_daily_prediction_check.py",
+      "size_bytes": 10663,
+      "category": "Daily check",
+      "purpose": "tap_daily_prediction_check.py"
+    },
+    {
+      "name": "tap_dashboard.py",
+      "size_bytes": 16552,
+      "category": "Dashboard",
+      "purpose": "tap_dashboard.py"
+    },
+    {
+      "name": "tap_device_coupled_soliton.py",
+      "size_bytes": 5449,
+      "category": "other",
+      "purpose": "tap_device_coupled_soliton.py"
+    },
+    {
+      "name": "tap_digital_soliton_sim.py",
+      "size_bytes": 5269,
+      "category": "other",
+      "purpose": "tap_digital_soliton_sim.py"
+    },
+    {
+      "name": "tap_encyclopedia.py",
+      "size_bytes": 12973,
+      "category": "Encyclopedia",
+      "purpose": "tap_encyclopedia.py"
+    },
+    {
+      "name": "tap_encyclopedia_v2.py",
+      "size_bytes": 13191,
+      "category": "Encyclopedia",
+      "purpose": "tap_encyclopedia_v2.py"
+    },
+    {
+      "name": "tap_end_to_end_sim.py",
+      "size_bytes": 12425,
+      "category": "other",
+      "purpose": "tap_end_to_end_sim.py"
+    },
+    {
+      "name": "tap_epigenetic_cosmic_cascade.py",
+      "size_bytes": 12261,
+      "category": "Cascade sims",
+      "purpose": "tap_epigenetic_cosmic_cascade.py"
+    },
+    {
+      "name": "tap_epigenetic_flop_sim.py",
+      "size_bytes": 9625,
+      "category": "Epigenetic",
+      "purpose": "tap_epigenetic_flop_sim.py"
+    },
+    {
+      "name": "tap_fascia_sim.py",
+      "size_bytes": 26826,
+      "category": "Fascia/Spirals",
+      "purpose": "tap_fascia_sim.py"
+    },
+    {
+      "name": "tap_final_hybrid_predictions.py",
+      "size_bytes": 4830,
+      "category": "other",
+      "purpose": "tap_final_hybrid_predictions.py"
+    },
+    {
+      "name": "tap_finance_rescreen.py",
+      "size_bytes": 4904,
+      "category": "Finance/Economics",
+      "purpose": "tap_finance_rescreen.py"
+    },
+    {
+      "name": "tap_framework_coherence.py",
+      "size_bytes": 7451,
+      "category": "Coherence",
+      "purpose": "tap_framework_coherence.py"
+    },
+    {
+      "name": "tap_global_weather.py",
+      "size_bytes": 8663,
+      "category": "Weather/Atmospheric",
+      "purpose": "tap_global_weather.py"
+    },
+    {
+      "name": "tap_gravitational_waveform.py",
+      "size_bytes": 10510,
+      "category": "other",
+      "purpose": "tap_gravitational_waveform.py"
+    },
+    {
+      "name": "tap_group_hysteria_sim.py",
+      "size_bytes": 6966,
+      "category": "other",
+      "purpose": "tap_group_hysteria_sim.py"
+    },
+    {
+      "name": "tap_high_dimension_sequence_sim.py",
+      "size_bytes": 6221,
+      "category": "other",
+      "purpose": "tap_high_dimension_sequence_sim.py"
+    },
+    {
+      "name": "tap_kp_prediction_sim.py",
+      "size_bytes": 11547,
+      "category": "other",
+      "purpose": "tap_kp_prediction_sim.py"
+    },
+    {
+      "name": "tap_logistics_prediction.py",
+      "size_bytes": 13373,
+      "category": "Logistics/Shipping",
+      "purpose": "tap_logistics_prediction.py"
+    },
+    {
+      "name": "tap_lymphatic_cascade_sim.py",
+      "size_bytes": 11063,
+      "category": "Cascade sims",
+      "purpose": "tap_lymphatic_cascade_sim.py"
+    },
+    {
+      "name": "tap_marketing_contagion_sim.py",
+      "size_bytes": 9080,
+      "category": "other",
+      "purpose": "tap_marketing_contagion_sim.py"
+    },
+    {
+      "name": "tap_multi_body_p1p18_sweep.py",
+      "size_bytes": 9057,
+      "category": "other",
+      "purpose": "tap_multi_body_p1p18_sweep.py"
+    },
+    {
+      "name": "tap_multicycle_reset_sweep.py",
+      "size_bytes": 14182,
+      "category": "other",
+      "purpose": "tap_multicycle_reset_sweep.py"
+    },
+    {
+      "name": "tap_multidiscipline_sweep.py",
+      "size_bytes": 4865,
+      "category": "other",
+      "purpose": "tap_multidiscipline_sweep.py"
+    },
+    {
+      "name": "tap_multisphere_predictions.py",
+      "size_bytes": 4901,
+      "category": "Multisphere",
+      "purpose": "tap_multisphere_predictions.py"
+    },
+    {
+      "name": "tap_multiverse_coupling_sim.py",
+      "size_bytes": 5373,
+      "category": "Multiverse",
+      "purpose": "tap_multiverse_coupling_sim.py"
+    },
+    {
+      "name": "tap_muscle_memory_sim.py",
+      "size_bytes": 6639,
+      "category": "other",
+      "purpose": "tap_muscle_memory_sim.py"
+    },
+    {
+      "name": "tap_nami_per_body_p1p18.py",
+      "size_bytes": 7305,
+      "category": "Nami-ryu/Somatic",
+      "purpose": "tap_nami_per_body_p1p18.py"
+    },
+    {
+      "name": "tap_nami_ryu_breath.py",
+      "size_bytes": 9442,
+      "category": "Nami-ryu/Somatic",
+      "purpose": "tap_nami_ryu_breath.py"
+    },
+    {
+      "name": "tap_neural_resonance.py",
+      "size_bytes": 3043,
+      "category": "other",
+      "purpose": "tap_neural_resonance.py"
+    },
+    {
+      "name": "tap_option_arbitrage.py",
+      "size_bytes": 12374,
+      "category": "other",
+      "purpose": "tap_option_arbitrage.py"
+    },
+    {
+      "name": "tap_p15_soot_fidelity_sim.py",
+      "size_bytes": 6769,
+      "category": "Geometry/Visualization",
+      "purpose": "tap_p15_soot_fidelity_sim.py"
+    },
+    {
+      "name": "tap_p16_magnetite_chiral_sim.py",
+      "size_bytes": 7012,
+      "category": "other",
+      "purpose": "tap_p16_magnetite_chiral_sim.py"
+    },
+    {
+      "name": "tap_p1p18_re_evaluation.py",
+      "size_bytes": 9723,
+      "category": "other",
+      "purpose": "tap_p1p18_re_evaluation.py"
+    },
+    {
+      "name": "tap_pair_bonding_sim.py",
+      "size_bytes": 8243,
+      "category": "other",
+      "purpose": "tap_pair_bonding_sim.py"
+    },
+    {
+      "name": "tap_parameter_free_constants_proof.py",
+      "size_bytes": 4929,
+      "category": "other",
+      "purpose": "tap_parameter_free_constants_proof.py"
+    },
+    {
+      "name": "tap_per_body_p1p18.py",
+      "size_bytes": 8562,
+      "category": "Per-body",
+      "purpose": "tap_per_body_p1p18.py"
+    },
+    {
+      "name": "tap_per_event_seismic.py",
+      "size_bytes": 13187,
+      "category": "Seismic/Geological",
+      "purpose": "tap_per_event_seismic.py"
+    },
+    {
+      "name": "tap_per_event_seismic_v2.py",
+      "size_bytes": 12157,
+      "category": "Seismic/Geological",
+      "purpose": "tap_per_event_seismic_v2.py"
+    },
+    {
+      "name": "tap_phone_minimal_soliton.py",
+      "size_bytes": 10237,
+      "category": "other",
+      "purpose": "tap_phone_minimal_soliton.py"
+    },
+    {
+      "name": "tap_population_sweeps_sim.py",
+      "size_bytes": 6314,
+      "category": "other",
+      "purpose": "tap_population_sweeps_sim.py"
+    },
+    {
+      "name": "tap_proof.py",
+      "size_bytes": 26796,
+      "category": "other",
+      "purpose": "tap_proof.py"
+    },
+    {
+      "name": "tap_quantum_decoherence.py",
+      "size_bytes": 2804,
+      "category": "Coherence",
+      "purpose": "tap_quantum_decoherence.py"
+    },
+    {
+      "name": "tap_qubit_coherence_sweep.py",
+      "size_bytes": 4970,
+      "category": "Coherence",
+      "purpose": "tap_qubit_coherence_sweep.py"
+    },
+    {
+      "name": "tap_real_data_validator.py",
+      "size_bytes": 30921,
+      "category": "Real data",
+      "purpose": "tap_real_data_validator.py"
+    },
+    {
+      "name": "tap_reset_antitemplate_sim.py",
+      "size_bytes": 5857,
+      "category": "other",
+      "purpose": "tap_reset_antitemplate_sim.py"
+    },
+    {
+      "name": "tap_schumann_resonance.py",
+      "size_bytes": 7720,
+      "category": "other",
+      "purpose": "tap_schumann_resonance.py"
+    },
+    {
+      "name": "tap_seismic_correlation.py",
+      "size_bytes": 10396,
+      "category": "Seismic/Geological",
+      "purpose": "tap_seismic_correlation.py"
+    },
+    {
+      "name": "tap_solar_dynamo.py",
+      "size_bytes": 2790,
+      "category": "Solar",
+      "purpose": "tap_solar_dynamo.py"
+    },
+    {
+      "name": "tap_soliton_collision_stress.py",
+      "size_bytes": 5960,
+      "category": "other",
+      "purpose": "tap_soliton_collision_stress.py"
+    },
+    {
+      "name": "tap_soliton_shielding_comparison.py",
+      "size_bytes": 11559,
+      "category": "other",
+      "purpose": "tap_soliton_shielding_comparison.py"
+    },
+    {
+      "name": "tap_somatic_cosmic_geometry.py",
+      "size_bytes": 11732,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_somatic_cosmic_geometry.py"
+    },
+    {
+      "name": "tap_somatic_cosmic_geometry_v2.py",
+      "size_bytes": 11259,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_somatic_cosmic_geometry_v2.py"
+    },
+    {
+      "name": "tap_somatic_cosmic_v3.py",
+      "size_bytes": 12300,
+      "category": "Cosmic/Planetary",
+      "purpose": "tap_somatic_cosmic_v3.py"
+    },
+    {
+      "name": "tap_somynence_48_sim.py",
+      "size_bytes": 21341,
+      "category": "other",
+      "purpose": "tap_somynence_48_sim.py"
+    },
+    {
+      "name": "tap_standalone_cascade_tribunal.py",
+      "size_bytes": 5069,
+      "category": "Cascade sims",
+      "purpose": "tap_standalone_cascade_tribunal.py"
+    },
+    {
+      "name": "tap_super_tribunal_99.py",
+      "size_bytes": 40996,
+      "category": "99-Tribunal",
+      "purpose": "tap_super_tribunal_99.py"
+    },
+    {
+      "name": "tap_superconductivity_sweep.py",
+      "size_bytes": 6007,
+      "category": "Per-body",
+      "purpose": "tap_superconductivity_sweep.py"
+    },
+    {
+      "name": "tap_tappasecond.py",
+      "size_bytes": 3673,
+      "category": "Tappasecond",
+      "purpose": "tap_tappasecond.py"
+    },
+    {
+      "name": "tap_test_framework_challenge.py",
+      "size_bytes": 8315,
+      "category": "Tests/Tribunal",
+      "purpose": "tap_test_framework_challenge.py"
+    },
+    {
+      "name": "tap_trans_cyclic_sweep.py",
+      "size_bytes": 26905,
+      "category": "Trans-cyclic",
+      "purpose": "tap_trans_cyclic_sweep.py"
+    },
+    {
+      "name": "tap_unified_breath_clock.py",
+      "size_bytes": 10692,
+      "category": "Breath clock",
+      "purpose": "tap_unified_breath_clock.py"
+    },
+    {
+      "name": "tap_unified_cascade.py",
+      "size_bytes": 18543,
+      "category": "Cascade sims",
+      "purpose": "tap_unified_cascade.py"
+    },
+    {
+      "name": "tap_unified_social_sim.py",
+      "size_bytes": 13845,
+      "category": "Unified",
+      "purpose": "tap_unified_social_sim.py"
+    },
+    {
+      "name": "tap_usgs_monitor.py",
+      "size_bytes": 3808,
+      "category": "other",
+      "purpose": "tap_usgs_monitor.py"
+    },
+    {
+      "name": "tap_viral_epidemiology_sim.py",
+      "size_bytes": 6929,
+      "category": "other",
+      "purpose": "tap_viral_epidemiology_sim.py"
+    },
+    {
+      "name": "tap_weather_backfill.py",
+      "size_bytes": 10214,
+      "category": "Weather/Atmospheric",
+      "purpose": "tap_weather_backfill.py"
+    },
+    {
+      "name": "tap_weather_recalibration.py",
+      "size_bytes": 12855,
+      "category": "Weather/Atmospheric",
+      "purpose": "tap_weather_recalibration.py"
+    },
+    {
+      "name": "tap_weather_v2.py",
+      "size_bytes": 11139,
+      "category": "Weather/Atmospheric",
+      "purpose": "tap_weather_v2.py"
+    },
+    {
+      "name": "tap_weather_v3.py",
+      "size_bytes": 10118,
+      "category": "Weather/Atmospheric",
+      "purpose": "tap_weather_v3.py"
+    },
+    {
+      "name": "tap_zodiac_to_breath.py",
+      "size_bytes": 8892,
+      "category": "Breath clock",
+      "purpose": "tap_zodiac_to_breath.py"
+    },
+    {
+      "name": "update_dashboard.py",
+      "size_bytes": 14003,
+      "category": "Dashboard",
+      "purpose": "update_dashboard.py"
+    }
+  ],
+  "docs": [
+    {
+      "name": "INDEX.md",
+      "title": "TAP Model Documentation Index",
+      "size_bytes": 10833
+    },
+    {
+      "name": "PEER_REVIEW_CHECKLIST.md",
+      "title": "Peer-Review Checklist for the TAP Cascade Model v5.1",
+      "size_bytes": 11064
+    },
+    {
+      "name": "TAP_12th_Grade_Peer_Review_Curriculum.md",
+      "title": "\ud83c\udf93 The TAP Model: Advanced Physics Curriculum (12th-Grade / Freshman Level)",
+      "size_bytes": 11307
+    },
+    {
+      "name": "TAP_8th_Grade_Fundamentals_Curriculum.md",
+      "title": "\ud83c\udf92 The TAP Model: A Beginner's Guide (8th-Grade Level)",
+      "size_bytes": 12998
+    },
+    {
+      "name": "TAP_Anti_Template_Residue_v5.3.md",
+      "title": "TAP v5.3 \u2014 Anti-Template Residue and the Incomplete Reset",
+      "size_bytes": 15494
+    },
+    {
+      "name": "TAP_Biochem_Qubit_Graphene_Brainstorm.md",
+      "title": "TAP Model: Biochemical Flows, Low-Tech Qubits, and Graphene Synthesis",
+      "size_bytes": 4296
+    },
+    {
+      "name": "TAP_CONNECTIVITY_DASHBOARD.md",
+      "title": "TAP Framework \u2014 Connectivity Dashboard",
+      "size_bytes": 9018
+    },
+    {
+      "name": "TAP_Capacitor_and_Diode_Inventory.md",
+      "title": "TAP Component Inventory: Capacitors & Diodes",
+      "size_bytes": 5182
+    },
+    {
+      "name": "TAP_Cosmic_Origin_of_Life_v5.2.md",
+      "title": "TAP v5.2 \u2014 Cosmic Origin of Life and the DNA-as-Receiver Model",
+      "size_bytes": 14093
+    },
+    {
+      "name": "TAP_Cosmic_Quantum_Neuro_Brainstorm.md",
+      "title": "TAP Model: Cosmic Resonances, Room-Temperature Qubits, and Interpersonal Coherence",
+      "size_bytes": 3757
+    },
+    {
+      "name": "TAP_Coupled_Waveguide_All_Results.md",
+      "title": "Physical Lab Report: Hybrid Electro-Acoustic Waveguide with Capacitor Clock",
+      "size_bytes": 5221
+    },
+    {
+      "name": "TAP_Coupled_Waveguide_Brainstorm.md",
+      "title": "Brainstorming: The Coupled Phase-to-Voltage Topological Waveguide",
+      "size_bytes": 4661
+    },
+    {
+      "name": "TAP_Coupled_Waveguide_Sweep_Results.md",
+      "title": "Physical Lab Report: Coupled Phase-to-Voltage Topological Waveguide",
+      "size_bytes": 4221
+    },
+    {
+      "name": "TAP_DNA_Topology_Epigenetics.md",
+      "title": "DNA as Topology, Epigenetics, and the Source Question",
+      "size_bytes": 38879
+    },
+    {
+      "name": "TAP_Daily_Check_2026-07-02.md",
+      "title": "TAP Daily Prediction Check \u2014 2026-07-02",
+      "size_bytes": 9861
+    },
+    {
+      "name": "TAP_Daily_Check_2026-07-02_Deep.md",
+      "title": "TAP Deep Daily Check \u2014 2026-07-02",
+      "size_bytes": 11292
+    },
+    {
+      "name": "TAP_Double_DDCFET_Cascade.md",
+      "title": "Design Specification: The Double-DDCFET Regenerative Cascade Reset (TAP Breath Clock)",
+      "size_bytes": 4710
+    },
+    {
+      "name": "TAP_Encyclopedia_v5_3.md",
+      "title": "TAP Encyclopedia v5.3.2",
+      "size_bytes": 6876
+    },
+    {
+      "name": "TAP_Experimental_Designs_v5.3.md",
+      "title": "TAP v5.3 \u2014 Experimental Designs for P15-P18",
+      "size_bytes": 12542
+    },
+    {
+      "name": "TAP_FRAMEWORK_INDEX.md",
+      "title": "TAP Framework \u2014 Master Index",
+      "size_bytes": 19097
+    },
+    {
+      "name": "TAP_Fascia_Trains_v5.md",
+      "title": "TAP v5.0 \u2014 Myers' Anatomy Trains, the Twin Dragons, and the Fascia Cascade",
+      "size_bytes": 21428
+    },
+    {
+      "name": "TAP_Global_Weather_Operations.md",
+      "title": "TAP Global Weather Engine & Magnetospheric Operations Analysis",
+      "size_bytes": 3853
+    },
+    {
+      "name": "TAP_Hardware_Bill_of_Materials.md",
+      "title": "TAP Hardware Bill of Materials (BOM) & Component Logs",
+      "size_bytes": 4963
+    },
+    {
+      "name": "TAP_Macro_Qubit_Graphene_Schematic.md",
+      "title": "The TAP Macroscopic Qubit & Graphene Exfoliation Driver",
+      "size_bytes": 6005
+    },
+    {
+      "name": "TAP_Multisphere_Biotemplates_v5.3.md",
+      "title": "TAP v5.3 \u2014 Multisphere Biotemplates and the Cosmic Origin of Life",
+      "size_bytes": 15928
+    },
+    {
+      "name": "TAP_Multisphere_Cascade_Diagram.md",
+      "title": "TAP Multisphere \u2014 Visual Cascade Diagram",
+      "size_bytes": 17122
+    },
+    {
+      "name": "TAP_Multisphere_Mermaid.md",
+      "title": "TAP Multisphere \u2014 Mermaid Diagram",
+      "size_bytes": 8461
+    },
+    {
+      "name": "TAP_Multiverse_Constants_Reduction_v5.3.md",
+      "title": "TAP v5.3 \u2014 The 7 Multiverse Constants: Reduction to 4",
+      "size_bytes": 7595
+    },
+    {
+      "name": "TAP_Multiverse_Coupling_Framework_v5.3.md",
+      "title": "TAP v5.3 \u2014 Multiverse Coupling Framework",
+      "size_bytes": 16112
+    },
+    {
+      "name": "TAP_Narby_Review.md",
+      "title": "TAP-Model Review of Jeremy Narby's Science",
+      "size_bytes": 16363
+    },
+    {
+      "name": "TAP_P17_Calibration_Constant_v5.3.md",
+      "title": "TAP v5.3 \u2014 P17 Reframed: The Calibration Constant \u03ba",
+      "size_bytes": 8567
+    },
+    {
+      "name": "TAP_P17_Experimental_Design_v5.3.md",
+      "title": "TAP v5.3 \u2014 P17 v3.1 Experimental Design",
+      "size_bytes": 8586
+    },
+    {
+      "name": "TAP_P17_Plastic_CubeRoot_v5.3.md",
+      "title": "TAP v5.3 \u2014 P17 v3 Resolved: The Plastic Cube Root Derivation",
+      "size_bytes": 7927
+    },
+    {
+      "name": "TAP_P2_Lymphangiography_Protocol.md",
+      "title": "TAP v5.0 \u2014 Prediction P2: Thoracic Duct Lymph Flow in",
+      "size_bytes": 20603
+    },
+    {
+      "name": "TAP_PlanetaryCores_AI_Energy_Brainstorm.md",
+      "title": "TAP Model: The Planetary Core & Industrial compute Cascade",
+      "size_bytes": 6156
+    },
+    {
+      "name": "TAP_Qubit_Coherence_Sweep_Results.md",
+      "title": "\ud83c\udf00 TAP Qubit Coherence Optimization: Parameter Sweep Results",
+      "size_bytes": 2926
+    },
+    {
+      "name": "TAP_Ratchet_Sweep_Results.md",
+      "title": "Physical Lab Report: Diode-Capacitor Temporal Ratchet Sweep (Path A)",
+      "size_bytes": 3912
+    },
+    {
+      "name": "TAP_Somatic_Cascade.md",
+      "title": "TAP v5.1 \u2014 The Somatic Cascade",
+      "size_bytes": 19305
+    },
+    {
+      "name": "TAP_Superconductivity_Sweep_Results.md",
+      "title": "\u26a1 TAP Superconductivity Optimization: Parameter Sweep Results",
+      "size_bytes": 3347
+    },
+    {
+      "name": "TAP_Testable_Predictions_v5.md",
+      "title": "TAP v5.0 \u2014 Testable Predictions and Experimental Protocols",
+      "size_bytes": 15683
+    },
+    {
+      "name": "TAP_Tetrahedral_Sweep_Results.md",
+      "title": "\ud83d\udcd0 TAP Tetrahedral Qubit Bridge: Physical Sweep Results",
+      "size_bytes": 3444
+    },
+    {
+      "name": "TAP_Theory_Paper.md",
+      "title": "The Temporal Asymmetric Pulsation (TAP) Model",
+      "size_bytes": 16962
+    },
+    {
+      "name": "TAP_White_Paper.md",
+      "title": "The Temporal Asymmetric Pulsation (TAP) Model",
+      "size_bytes": 12560
+    },
+    {
+      "name": "TAP_v5_OnePager.md",
+      "title": "TAP v5.0 \u2014 One-Page Summary",
+      "size_bytes": 3790
+    },
+    {
+      "name": "TAP_v5_Paper.md",
+      "title": "The Tensegrity-Anatomy-Polyvagal (TAP) Cascade Model:",
+      "size_bytes": 38022
+    }
+  ],
+  "assets": [
+    {
+      "name": "tap_5ht2a_ayahuasca_30d.json",
+      "size_bytes": 11339
+    },
+    {
+      "name": "tap_5ht2a_ayahuasca_results.json",
+      "size_bytes": 195189
+    },
+    {
+      "name": "tap_5ht2a_epigenetic_coupling_summary.json",
+      "size_bytes": 602
+    },
+    {
+      "name": "tap_5ht2a_tensegrity_30d.json",
+      "size_bytes": 10748
+    },
+    {
+      "name": "tap_5year_seismic_sweep_results.json",
+      "size_bytes": 2253
+    },
+    {
+      "name": "tap_5year_seismic_v2_results.json",
+      "size_bytes": 533
+    },
+    {
+      "name": "tap_5year_sweep.json",
+      "size_bytes": 89714
+    },
+    {
+      "name": "tap_asynchronous_pulsation_results.json",
+      "size_bytes": 29606
+    },
+    {
+      "name": "tap_author_lens_mcKenna_audit.json",
+      "size_bytes": 9475
+    },
+    {
+      "name": "tap_author_lens_narby_audit.json",
+      "size_bytes": 7910
+    },
+    {
+      "name": "tap_author_lens_sheldrake_audit.json",
+      "size_bytes": 7332
+    },
+    {
+      "name": "tap_author_lens_wallace_audit.json",
+      "size_bytes": 8365
+    },
+    {
+      "name": "tap_ayahuasca_fascia_cascade_results.json",
+      "size_bytes": 52103
+    },
+    {
+      "name": "tap_biochem_qubit_graphene_results.json",
+      "size_bytes": 508
+    },
+    {
+      "name": "tap_body_breath_states_results.json",
+      "size_bytes": 9383
+    },
+    {
+      "name": "tap_breath_clock_chem_results.json",
+      "size_bytes": 110457
+    },
+    {
+      "name": "tap_breath_clock_results.json",
+      "size_bytes": 716
+    },
+    {
+      "name": "tap_breath_per_body_results.json",
+      "size_bytes": 5560
+    },
+    {
+      "name": "tap_calibration_constant.json",
+      "size_bytes": 1555
+    },
+    {
+      "name": "tap_cascade_context.json",
+      "size_bytes": 14798
+    },
+    {
+      "name": "tap_chromatin_state_results.json",
+      "size_bytes": 47171
+    },
+    {
+      "name": "tap_collagen_braiding_results.json",
+      "size_bytes": 30587
+    },
+    {
+      "name": "tap_core_ai_coupling.json",
+      "size_bytes": 353
+    },
+    {
+      "name": "tap_cosmic_breath_results.json",
+      "size_bytes": 13012
+    },
+    {
+      "name": "tap_cosmic_kp_validation_results.json",
+      "size_bytes": 1326
+    },
+    {
+      "name": "tap_cosmic_origin_results.json",
+      "size_bytes": 439
+    },
+    {
+      "name": "tap_cosmic_quantum_neuro_results.json",
+      "size_bytes": 543
+    },
+    {
+      "name": "tap_cosmological_cascade_results.json",
+      "size_bytes": 9728
+    },
+    {
+      "name": "tap_coupled_ayahuasca_results.json",
+      "size_bytes": 862462
+    },
+    {
+      "name": "tap_cross_body_coupling_results.json",
+      "size_bytes": 9558
+    },
+    {
+      "name": "tap_daily_check_results.json",
+      "size_bytes": 1988
+    },
+    {
+      "name": "tap_encyclopedia.json",
+      "size_bytes": 9416
+    },
+    {
+      "name": "tap_end_to_end_results.json",
+      "size_bytes": 1156
+    },
+    {
+      "name": "tap_epigenetic_cosmic_cascade_summary.json",
+      "size_bytes": 240
+    },
+    {
+      "name": "tap_epigenetic_flop_results.json",
+      "size_bytes": 10998
+    },
+    {
+      "name": "tap_fascia_ayahuasca_results.json",
+      "size_bytes": 239170
+    },
+    {
+      "name": "tap_fascia_stress_results.json",
+      "size_bytes": 239052
+    },
+    {
+      "name": "tap_fascia_summary.json",
+      "size_bytes": 965
+    },
+    {
+      "name": "tap_fascia_tensegrity_results.json",
+      "size_bytes": 238486
+    },
+    {
+      "name": "tap_final_hybrid_predictions.json",
+      "size_bytes": 2582
+    },
+    {
+      "name": "tap_finance_rescreen_results.json",
+      "size_bytes": 7138
+    },
+    {
+      "name": "tap_framework_coherence_results.json",
+      "size_bytes": 1242
+    },
+    {
+      "name": "tap_geocosmic_coupling.json",
+      "size_bytes": 335
+    },
+    {
+      "name": "tap_global_weather_results.json",
+      "size_bytes": 35650
+    },
+    {
+      "name": "tap_gravitational_waveform_results.json",
+      "size_bytes": 3684
+    },
+    {
+      "name": "tap_group_hysteria_results.json",
+      "size_bytes": 223463
+    },
+    {
+      "name": "tap_high_dimension_results.json",
+      "size_bytes": 9949
+    },
+    {
+      "name": "tap_kp_prediction_results.json",
+      "size_bytes": 418
+    },
+    {
+      "name": "tap_logistics_prediction_results.json",
+      "size_bytes": 6460
+    },
+    {
+      "name": "tap_lymphatic_cascade_results.json",
+      "size_bytes": 9267
+    },
+    {
+      "name": "tap_marketing_results.json",
+      "size_bytes": 14647
+    },
+    {
+      "name": "tap_multi_body_p1p18_megamatrix.json",
+      "size_bytes": 105159
+    },
+    {
+      "name": "tap_multicycle_reset_results.json",
+      "size_bytes": 5761
+    },
+    {
+      "name": "tap_multicycle_reset_summary.json",
+      "size_bytes": 356
+    },
+    {
+      "name": "tap_multisphere_predictions.json",
+      "size_bytes": 2765
+    },
+    {
+      "name": "tap_multiverse_coupling_results.json",
+      "size_bytes": 167400
+    },
+    {
+      "name": "tap_muscle_memory_results.json",
+      "size_bytes": 8072
+    },
+    {
+      "name": "tap_nami_per_body_p1p18_results.json",
+      "size_bytes": 15809
+    },
+    {
+      "name": "tap_nami_ryu_breath_results.json",
+      "size_bytes": 13411
+    },
+    {
+      "name": "tap_neural_resonance_results.json",
+      "size_bytes": 1006
+    },
+    {
+      "name": "tap_option_arbitrage_results.json",
+      "size_bytes": 309043
+    },
+    {
+      "name": "tap_p15_soot_fidelity_results.json",
+      "size_bytes": 1391
+    },
+    {
+      "name": "tap_p16_magnetite_chiral_results.json",
+      "size_bytes": 1803
+    },
+    {
+      "name": "tap_p1p18_per_body_results.json",
+      "size_bytes": 7965
+    },
+    {
+      "name": "tap_pair_bonding_results.json",
+      "size_bytes": 49618
+    },
+    {
+      "name": "tap_parameter_free_constants_results.json",
+      "size_bytes": 143
+    },
+    {
+      "name": "tap_per_body_p1p18_results.json",
+      "size_bytes": 78426
+    },
+    {
+      "name": "tap_per_event_seismic_results.json",
+      "size_bytes": 4728
+    },
+    {
+      "name": "tap_per_event_seismic_v2_results.json",
+      "size_bytes": 15840
+    },
+    {
+      "name": "tap_population_sweeps_results.json",
+      "size_bytes": 302888
+    },
+    {
+      "name": "tap_quantum_decoherence_results.json",
+      "size_bytes": 968
+    },
+    {
+      "name": "tap_real_data_validation.json",
+      "size_bytes": 5790
+    },
+    {
+      "name": "tap_reset_antitemplate_results.json",
+      "size_bytes": 7872
+    },
+    {
+      "name": "tap_schumann_resonance_results.json",
+      "size_bytes": 4661
+    },
+    {
+      "name": "tap_seismic_predictions_1year.json",
+      "size_bytes": 68266
+    },
+    {
+      "name": "tap_sim_audit.json",
+      "size_bytes": 9216
+    },
+    {
+      "name": "tap_solar_dynamo_results.json",
+      "size_bytes": 38688
+    },
+    {
+      "name": "tap_somatic_cosmic_geometry_results.json",
+      "size_bytes": 6736
+    },
+    {
+      "name": "tap_somatic_cosmic_geometry_v2_results.json",
+      "size_bytes": 10851
+    },
+    {
+      "name": "tap_somatic_cosmic_v3_results.json",
+      "size_bytes": 12927
+    },
+    {
+      "name": "tap_somynence_48_sim_results.json",
+      "size_bytes": 108514
+    },
+    {
+      "name": "tap_super_tribunal_99_results.json",
+      "size_bytes": 26479
+    },
+    {
+      "name": "tap_test_framework_challenge_results.json",
+      "size_bytes": 3078
+    },
+    {
+      "name": "tap_timeline_results.json",
+      "size_bytes": 2043
+    },
+    {
+      "name": "tap_unified_breath_clock_results.json",
+      "size_bytes": 9497
+    },
+    {
+      "name": "tap_unified_cascade_results.json",
+      "size_bytes": 1328
+    },
+    {
+      "name": "tap_unified_social_results.json",
+      "size_bytes": 541809
+    },
+    {
+      "name": "tap_usgs_monitor_results.json",
+      "size_bytes": 3504
+    },
+    {
+      "name": "tap_viral_epidemiology_results.json",
+      "size_bytes": 1683
+    },
+    {
+      "name": "tap_weather_backfill_results.json",
+      "size_bytes": 1902
+    },
+    {
+      "name": "tap_weather_recalibration_results.json",
+      "size_bytes": 2582
+    },
+    {
+      "name": "tap_weather_v2_results.json",
+      "size_bytes": 1984
+    },
+    {
+      "name": "tap_weather_v3_results.json",
+      "size_bytes": 1605
+    },
+    {
+      "name": "tap_zodiac_to_breath_results.json",
+      "size_bytes": 3018
+    },
+    {
+      "name": "tappasecond_results.json",
+      "size_bytes": 232
+    }
+  ],
+  "stats": {
+    "n_scripts": 107,
+    "n_docs": 45,
+    "n_assets": 95
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "timestamp": "2026-07-02T10:20:08.493865",
+  "n_cosmic": 22,
+  "n_somatic": 32,
+  "cosmic_templates": [
+    {
+      "name": "Superfluid Vortex Braids",
+      "zone": "cold",
+      "T_K": 3.0,
+      "geometry": "vortex lattice",
+      "symmetry": "U(1)"
+    },
+    {
+      "name": "Polythiazyl (SN)x Helices",
+      "zone": "cold",
+      "T_K": 8.0,
+      "geometry": "helical polymer",
+      "symmetry": "C_2"
+    },
+    {
+      "name": "Fluorocarbon (PTFE-like) Sleeves",
+      "zone": "cold",
+      "T_K": 120.0,
+      "geometry": "sleeve",
+      "symmetry": "C_infty"
+    },
+    {
+      "name": "Phosphaalkene Ribbons",
+      "zone": "cold",
+      "T_K": 130.0,
+      "geometry": "ribbon polymer",
+      "symmetry": "C_2v"
+    },
+    {
+      "name": "Carbon DNA",
+      "zone": "temperate",
+      "T_K": 150.0,
+      "geometry": "double helix",
+      "symmetry": "D_2"
+    },
+    {
+      "name": "PNA Helices",
+      "zone": "temperate",
+      "T_K": 180.0,
+      "geometry": "double helix",
+      "symmetry": "D_2"
+    },
+    {
+      "name": "Quadruplet Codon DNA",
+      "zone": "temperate",
+      "T_K": 150.0,
+      "geometry": "quadruplet",
+      "symmetry": "C_4"
+    },
+    {
+      "name": "Metallo-Nucleic Wires",
+      "zone": "temperate",
+      "T_K": 200.0,
+      "geometry": "wire",
+      "symmetry": "D_infty"
+    },
+    {
+      "name": "Se-DNA",
+      "zone": "temperate",
+      "T_K": 200.0,
+      "geometry": "double helix",
+      "symmetry": "D_2"
+    },
+    {
+      "name": "Germoxane Gels",
+      "zone": "temperate",
+      "T_K": 200.0,
+      "geometry": "gel network",
+      "symmetry": "fractal"
+    },
+    {
+      "name": "Phosphazene Braids",
+      "zone": "temperate",
+      "T_K": 220.0,
+      "geometry": "braid",
+      "symmetry": "B_n"
+    },
+    {
+      "name": "Thioester Matrices",
+      "zone": "warm",
+      "T_K": 300.0,
+      "geometry": "tetrahedral",
+      "symmetry": "C_3v"
+    },
+    {
+      "name": "Ge-Sn Photonic Wafers",
+      "zone": "warm",
+      "T_K": 320.0,
+      "geometry": "crystal wafer",
+      "symmetry": "D_2d"
+    },
+    {
+      "name": "Fe-S Grids",
+      "zone": "warm",
+      "T_K": 400.0,
+      "geometry": "cubane",
+      "symmetry": "T_d"
+    },
+    {
+      "name": "Organosilicon Hybrids",
+      "zone": "warm",
+      "T_K": 400.0,
+      "geometry": "tetrahedral",
+      "symmetry": "T_d"
+    },
+    {
+      "name": "Siloxane Helices",
+      "zone": "warm",
+      "T_K": 450.0,
+      "geometry": "triple helix",
+      "symmetry": "B_3"
+    },
+    {
+      "name": "Carborane Cages",
+      "zone": "warm",
+      "T_K": 550.0,
+      "geometry": "cage",
+      "symmetry": "I_h"
+    },
+    {
+      "name": "BCN Braids",
+      "zone": "hot",
+      "T_K": 35.0,
+      "geometry": "braid",
+      "symmetry": "B_n"
+    },
+    {
+      "name": "BN Tubes",
+      "zone": "hot",
+      "T_K": 42.5,
+      "geometry": "cylinder",
+      "symmetry": "D_nh"
+    },
+    {
+      "name": "SiC Whiskers",
+      "zone": "hot",
+      "T_K": 55.0,
+      "geometry": "whisker",
+      "symmetry": "C_infty"
+    },
+    {
+      "name": "Lanthanide Networks",
+      "zone": "hot",
+      "T_K": 65.0,
+      "geometry": "network",
+      "symmetry": "fractal"
+    },
+    {
+      "name": "Dusty Plasma Helices",
+      "zone": "hot",
+      "T_K": 125.0,
+      "geometry": "helical plasma",
+      "symmetry": "helical"
+    }
+  ],
+  "somatics": [
+    {
+      "name": "Collagen triple helix",
+      "category": "ECM",
+      "geometry": "triple helix",
+      "symmetry": "B_3",
+      "phi_rate": "\u03c6\u207b\u2074"
+    },
+    {
+      "name": "DNA double helix",
+      "category": "nucleic",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "phi_rate": "\u03c6\u207b\u2074"
+    },
+    {
+      "name": "Anatomy Train spirals",
+      "category": "ECM",
+      "geometry": "twin spirals",
+      "symmetry": "B_2",
+      "phi_rate": "\u03c6\u207b\u00b2"
+    },
+    {
+      "name": "Lymph vessel",
+      "category": "vascular",
+      "geometry": "fractal tree",
+      "symmetry": "fractal",
+      "phi_rate": "\u03c6\u207b\u00b9\u00b3"
+    },
+    {
+      "name": "Actin filament",
+      "category": "cytoskeleton",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "phi_rate": "\u03c6\u207b\u2078"
+    },
+    {
+      "name": "Microtubule",
+      "category": "cytoskeleton",
+      "geometry": "hollow cylinder",
+      "symmetry": "D_25",
+      "phi_rate": "\u03c6\u207b\u00b9\u00b3"
+    },
+    {
+      "name": "Myofibril (sarcomere)",
+      "category": "muscle",
+      "geometry": "stacked bands",
+      "symmetry": "translation",
+      "phi_rate": "\u03c6\u207b\u00b2"
+    },
+    {
+      "name": "Fibroblast",
+      "category": "cell",
+      "geometry": "spindle",
+      "symmetry": "C_2",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 50
+    },
+    {
+      "name": "Adipocyte",
+      "category": "cell",
+      "geometry": "sphere",
+      "symmetry": "K_h",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 100
+    },
+    {
+      "name": "Chondrocyte",
+      "category": "cell",
+      "geometry": "ovoid",
+      "symmetry": "C_2v",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 20
+    },
+    {
+      "name": "Osteocyte",
+      "category": "cell",
+      "geometry": "stellate",
+      "symmetry": "D_2h",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 30
+    },
+    {
+      "name": "Tenocyte",
+      "category": "cell",
+      "geometry": "spindle",
+      "symmetry": "C_2",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 100
+    },
+    {
+      "name": "Mast cell",
+      "category": "cell",
+      "geometry": "sphere (granular)",
+      "symmetry": "K_h",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 15
+    },
+    {
+      "name": "Macrophage",
+      "category": "cell",
+      "geometry": "ameboid",
+      "symmetry": "C_1",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 25
+    },
+    {
+      "name": "Pyramidal neuron",
+      "category": "neuron",
+      "geometry": "pyramidal",
+      "symmetry": "C_4v",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 50
+    },
+    {
+      "name": "Purkinje neuron",
+      "category": "neuron",
+      "geometry": "fan-shaped",
+      "symmetry": "C_s",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "size_um": 60
+    },
+    {
+      "name": "Bipolar neuron",
+      "category": "neuron",
+      "geometry": "bipolar",
+      "symmetry": "C_infty_v",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 20
+    },
+    {
+      "name": "Astrocyte",
+      "category": "glial",
+      "geometry": "stellate",
+      "symmetry": "D_2h",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 40
+    },
+    {
+      "name": "Oligodendrocyte",
+      "category": "glial",
+      "geometry": "myelinating",
+      "symmetry": "C_infty",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 20
+    },
+    {
+      "name": "Schwann cell",
+      "category": "glial",
+      "geometry": "myelinating",
+      "symmetry": "C_infty",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 30
+    },
+    {
+      "name": "Microglia",
+      "category": "glial",
+      "geometry": "ramified",
+      "symmetry": "fractal",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_um": 15
+    },
+    {
+      "name": "Cardiomyocyte",
+      "category": "muscle",
+      "geometry": "branched cylinder",
+      "symmetry": "C_2v",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "size_um": 100
+    },
+    {
+      "name": "Smooth muscle cell",
+      "category": "muscle",
+      "geometry": "spindle",
+      "symmetry": "C_2",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "size_um": 50
+    },
+    {
+      "name": "Skeletal muscle fiber",
+      "category": "muscle",
+      "geometry": "long cylinder (syncytium)",
+      "symmetry": "C_infty",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "size_um": 30000
+    },
+    {
+      "name": "Squamous epithelial",
+      "category": "epithelial",
+      "geometry": "flat polygon",
+      "symmetry": "C_6",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 25
+    },
+    {
+      "name": "Columnar epithelial",
+      "category": "epithelial",
+      "geometry": "tall column",
+      "symmetry": "C_infty_v",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_um": 20
+    },
+    {
+      "name": "Ciliated epithelial",
+      "category": "epithelial",
+      "geometry": "column with cilia",
+      "symmetry": "C_infty",
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "size_um": 25
+    },
+    {
+      "name": "Intermediate filament (vimentin)",
+      "category": "cytoskeleton",
+      "geometry": "coiled coil",
+      "symmetry": "C_2",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_nm": 10
+    },
+    {
+      "name": "G-protein alpha subunit",
+      "category": "protein",
+      "geometry": "alpha-beta fold",
+      "symmetry": "C_1",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_nm": 5
+    },
+    {
+      "name": "Hemoglobin tetramer",
+      "category": "protein",
+      "geometry": "tetramer",
+      "symmetry": "D_2",
+      "phi_rate": "\u03c6\u207b\u2074",
+      "size_nm": 6.5
+    },
+    {
+      "name": "Ferritin cage",
+      "category": "protein",
+      "geometry": "24-mer cage",
+      "symmetry": "O_h",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_nm": 12
+    },
+    {
+      "name": "Myelin sheath",
+      "category": "membrane",
+      "geometry": "wrapped sleeve",
+      "symmetry": "C_infty",
+      "phi_rate": "\u03c6\u207b\u2078",
+      "size_nm": 1000
+    }
+  ],
+  "best_matches": [
+    {
+      "somatic": "Collagen triple helix",
+      "cosmic": "Siloxane Helices",
+      "score": 0.7
+    },
+    {
+      "somatic": "DNA double helix",
+      "cosmic": "Se-DNA",
+      "score": 0.7
+    },
+    {
+      "somatic": "Anatomy Train spirals",
+      "cosmic": "Siloxane Helices",
+      "score": 0.25
+    },
+    {
+      "somatic": "Lymph vessel",
+      "cosmic": "Lanthanide Networks",
+      "score": 0.3
+    },
+    {
+      "somatic": "Actin filament",
+      "cosmic": "Se-DNA",
+      "score": 0.7
+    },
+    {
+      "somatic": "Microtubule",
+      "cosmic": "BN Tubes",
+      "score": 0.55
+    },
+    {
+      "somatic": "Myofibril (sarcomere)",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Fibroblast",
+      "cosmic": "Polythiazyl (SN)x Helices",
+      "score": 0.3
+    },
+    {
+      "somatic": "Adipocyte",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Chondrocyte",
+      "cosmic": "Phosphaalkene Ribbons",
+      "score": 0.3
+    },
+    {
+      "somatic": "Osteocyte",
+      "cosmic": "Se-DNA",
+      "score": 0.25
+    },
+    {
+      "somatic": "Tenocyte",
+      "cosmic": "Polythiazyl (SN)x Helices",
+      "score": 0.3
+    },
+    {
+      "somatic": "Mast cell",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Macrophage",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Pyramidal neuron",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Purkinje neuron",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Bipolar neuron",
+      "cosmic": "SiC Whiskers",
+      "score": 0.25
+    },
+    {
+      "somatic": "Astrocyte",
+      "cosmic": "Se-DNA",
+      "score": 0.25
+    },
+    {
+      "somatic": "Oligodendrocyte",
+      "cosmic": "SiC Whiskers",
+      "score": 0.3
+    },
+    {
+      "somatic": "Schwann cell",
+      "cosmic": "SiC Whiskers",
+      "score": 0.3
+    },
+    {
+      "somatic": "Microglia",
+      "cosmic": "Lanthanide Networks",
+      "score": 0.3
+    },
+    {
+      "somatic": "Cardiomyocyte",
+      "cosmic": "Phosphaalkene Ribbons",
+      "score": 0.3
+    },
+    {
+      "somatic": "Smooth muscle cell",
+      "cosmic": "Polythiazyl (SN)x Helices",
+      "score": 0.3
+    },
+    {
+      "somatic": "Skeletal muscle fiber",
+      "cosmic": "SiC Whiskers",
+      "score": 0.3
+    },
+    {
+      "somatic": "Squamous epithelial",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Columnar epithelial",
+      "cosmic": "SiC Whiskers",
+      "score": 0.25
+    },
+    {
+      "somatic": "Ciliated epithelial",
+      "cosmic": "SiC Whiskers",
+      "score": 0.3
+    },
+    {
+      "somatic": "Intermediate filament (vimentin)",
+      "cosmic": "Polythiazyl (SN)x Helices",
+      "score": 0.3
+    },
+    {
+      "somatic": "G-protein alpha subunit",
+      "cosmic": "Thioester Matrices",
+      "score": 0.0
+    },
+    {
+      "somatic": "Hemoglobin tetramer",
+      "cosmic": "Se-DNA",
+      "score": 0.3
+    },
+    {
+      "somatic": "Ferritin cage",
+      "cosmic": "Carborane Cages",
+      "score": 0.3
+    },
+    {
+      "somatic": "Myelin sheath",
+      "cosmic": "Fluorocarbon (PTFE-like) Sleeves",
+      "score": 0.6
+    }
+  ],
+  "stats": {
+    "mean_score": 0.2719,
+    "max_score": 0.7,
+    "strong_matches": 5
+  }
+}
