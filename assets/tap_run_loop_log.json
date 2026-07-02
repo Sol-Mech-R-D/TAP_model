@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-07-02T12:53:50.644822",
+  "n_runs": 3,
+  "n_wakes": 1,
+  "n_sleeps": 1,
+  "n_merged": 0,
+  "n_bodies_visited": 10,
+  "run_log": [
+    {
+      "step": 1,
+      "sim": "unified_breath_clock",
+      "script": "tap_unified_breath_clock.py",
+      "returncode": 0,
+      "elapsed_s": 0.14,
+      "stdout_lines": 67,
+      "stderr_lines": 1,
+      "bodies": [
+        0
+      ]
+    },
+    {
+      "step": 2,
+      "sim": "per_body_p1p18",
+      "script": "tap_per_body_p1p18.py",
+      "returncode": 0,
+      "elapsed_s": 0.07,
+      "stdout_lines": 92,
+      "stderr_lines": 1,
+      "bodies": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "step": 3,
+      "sim": "weather_v3",
+      "script": "tap_weather_v3.py",
+      "returncode": 0,
+      "elapsed_s": 23.39,
+      "stdout_lines": 80,
+      "stderr_lines": 1,
+      "bodies": [
+        0
+      ]
+    }
+  ]
+}
