@@ -448,7 +448,97 @@ flow) rather than assuming the user is "already integrated."
 
 ---
 
-## 5. Conclusion
+## 5. The Cosmic Origin of Life (v5.2 addendum)
+
+The cascade model implies a specific framing of the cosmic
+origin of life. The key claim: **DNA is a cosmic template
+receiver, not the source of biological information.** The
+information is the *previous cosmic cycle's biological
+template*, preserved through the Inhale's lossless
+compression and re-emerging in the current Exhale as the
+chiral seed of new life.
+
+### 5.1. The breath clock and previous cycles
+
+The TAP breath clock (`tap_breath_clock.py`) tracks
+**N_B = the number of previous complete Exhale/Inhale
+cycles**. The current best estimate is N_B ≈ 7-9
+(chi-squared minimized over all 99 Tribunal observables;
+re-estimated to ~9.59 by the v3-v5 cascade). N_B = 7
+means there were 7 previous cosmic cycles before the
+current one. Each cycle is a complete Exhale (expansion,
+13D emergence) and Inhale (D=1 reset, perfect quantum
+purity conservation).
+
+### 5.2. The Inhale preserves information
+
+When the universe inhales, all information is compressed
+to D=1. This is a *lossless compression* — quantum purity
+is preserved (Tr(ρ²) = 1.0). The biological state of the
+previous cycle (DNA, epigenome, protein folding patterns)
+is preserved as a topological feature in the D=1
+representation. It is not random.
+
+### 5.3. The chiral seed is cosmic
+
+The 99-Tribunal's section J ("Cosmic L-enantiomer space
+excess") measures the L-enantiomer excess in the Murchison
+meteorite and similar samples. The Theory paper §7.8
+documents the TAP mechanism: solar-wind parity violation
+acts as the chiral symmetry breaker, with a seed of
+~10⁻⁶ enantiomeric excess in interstellar dust grains,
+amplified on planetary surfaces by Soai/Viedma mechanisms
+to 100% homochirality.
+
+**The chiral seed is cosmic in origin.** Life's most basic
+property is not terrestrial.
+
+### 5.4. DNA-as-receiver (not source)
+
+The cascade reframes Narby's "DNA knowledge": DNA is the
+*antenna* that picks up the cosmic template, not the
+*store* of it. The information is *out there*, in the
+cosmic template preserved across cycles. DNA's geometry,
+codon assignments, and amino acid preferences are
+*template-preserved*, not random.
+
+The v5.2 prediction: the genetic code's codon table
+correlates with the cascade rate quantization (φ⁻⁴, φ⁻⁸,
+φ⁻¹⁰). If true, the genetic code is not a frozen accident
+but a *cosmic-template artifact*.
+
+### 5.5. Ayahuasca and the template
+
+When ayahuasca opens the 5-HT2A cascade, the cascade's
+higher layers become conscious. The visionary experience
+is the *template becoming conscious through the receiver*.
+The serpent/rope imagery is the cascade's geometry
+(the φ-spiral), not the DNA's double helix. The
+"knowledge" accessed during ayahuasca visions is the
+cosmic template, not the DNA.
+
+### 5.6. New testable predictions (P7-P10)
+
+The v5.2 framing generates four new testable predictions:
+
+  - **P7**: The codon table correlates with cascade rates
+    (φ⁻⁴, φ⁻⁸, φ⁻¹⁰). Falsification: pure frozen
+    accident.
+  - **P8**: The interstellar L-enantiomer excess
+    correlates with the breath clock's Γ(N_B) factor.
+    Falsification: constant L-excess across meteorites.
+  - **P9**: Long-term Nami-ryu practitioners show
+    measurable N_B-correction (Γ factor closer to 1)
+    compared to controls.
+  - **P10**: No biological system exceeds 13 cascade
+    levels (the 13D Weyl ceiling).
+
+See `docs/TAP_Cosmic_Origin_of_Life_v5.2.md` for the
+full v5.2 framing.
+
+---
+
+## 6. Conclusion
 
 The TAP (Tensegrity-Anatomy-Polyvagal) cascade model provides
 a computational framework linking conscious body practice,
