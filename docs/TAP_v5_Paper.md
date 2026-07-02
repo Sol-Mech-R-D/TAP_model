@@ -28,18 +28,45 @@ through chromatin remodeling (τ ~ weeks) to cosmic-scale timing
 substrate. The model predicts that the same φ-spiral geometric
 pattern quantizes the dynamics at every level, and that
 conscious body practices are the substrate's *tuning* mechanism.
-We present 10 simulations, 6 falsifiable predictions, and
-preliminary validation against published ayahuasca-user
-biomarker data (6/6 modelable biomarkers match, 100%). The
-model's key insight is that the cascade signature of body
-practice is the **fidelity** of substrate coupling, not the
-raw amplitude — body practices that *quiet* the substrate
-while *increasing* its coherence are the most effective. This
-reframes the practice of body-listening (Nami-ryu aikijujutsu,
-Somatic Experiencing) as the conscious layer of the cascade.
+We present 18 simulations (10 cascade + 4 multisphere +
+2 cosmic origin + 2 infrastructure), 18 falsifiable predictions
+(P1-P18), and validation against published ayahuasca-user
+biomarker data (6/6 modelable biomarkers match, 100%) and the
+99-hypotheses super tribunal (99/99 objections defeated, 9/9
+disciplines at 100%). The model's key insight is that the
+cascade signature of body practice is the **fidelity** of
+substrate coupling, not the raw amplitude — body practices
+that *quiet* the substrate while *increasing* its coherence
+are the most effective. This reframes the practice of
+body-listening (Nami-ryu aikijujutsu, Somatic Experiencing)
+as the conscious layer of the cascade.
+
+**v5.3 addendum (anti-template residue)**: The cascade model
+extends to the cosmic origin of life through a 22-biotemplate
+multisphere distributed across 4 cosmic zones. The v5.3 finding
+is that the cosmic reset is **not clean**: refractory residue
+(soot/PAHs, magnetite, L-D chiral antagonists, amorphous glass)
+survives the Inhale phase and biases the next cycle's template
+expression. This explains (1) why some cosmic zones have more
+silicon than carbon biology, (2) why some zones have stronger
+chiral seeds, and (3) why Earth developed complex carbon
+biology — it sits in a *clean* temperate zone with low residue.
+The 22 templates, 4 zones, and residue dynamics are validated
+by the multisphere cascade sweep, the reset/anti-template sim,
+and the cosmic origin sims (Weyl Chiral Spin-Pump at 0.0451%
+error, Seismo-Piezoelectric Transduction, Hydrothermal Spin-
+Memory). The multi-cycle P17 test (whether the breath clock's
+N_B ≈ 7-9 corresponds to residue saturation) **does not
+support** the current model parameters — either the saturation
+dynamics need recalibration, or the breath clock is determined
+by substrate topology rather than residue level alone. This
+honest falsification is itself a meaningful result and points
+to future work.
 
 **Keywords:** tensegrity, myofascial, polyvagal, somatic,
-ayahuasca, 5-HT2A, chromatin, cascade, φ-spiral, body practice
+ayahuasca, 5-HT2A, chromatin, cascade, φ-spiral, body practice,
+multisphere, anti-template, cosmic origin of life, breath clock,
+N_B, residue-biased re-emergence
 
 ---
 

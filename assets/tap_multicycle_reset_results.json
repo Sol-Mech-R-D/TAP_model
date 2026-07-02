@@ -1,0 +1,223 @@
+{
+  "n_cycles": 20,
+  "per_cycle": [
+    {
+      "cycle": 0,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.38371734595050855,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.17107321713022683,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 1,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 2,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 3,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 4,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 5,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 6,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 7,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 8,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 9,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 10,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 11,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 12,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 13,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 14,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 15,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 16,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 17,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 18,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    },
+    {
+      "cycle": 19,
+      "residue_state": {
+        "soot_pahs": 5.0,
+        "magnetite": 0.5,
+        "chiral_antagonist": 1.0
+      },
+      "fidelity": 0.14200255361785397,
+      "is_below_threshold": true
+    }
+  ],
+  "deltas": {
+    "soot_pahs": 5.388046366283074,
+    "magnetite": 0.2740740740740741,
+    "chiral_antagonist": 1.0
+  },
+  "saturation": {
+    "soot_pahs": 5.0,
+    "magnetite": 0.5,
+    "chiral_antagonist": 1.0
+  },
+  "n_star": 0,
+  "n_b_observed": 8.0,
+  "n_b_predicted_range": [
+    7,
+    9
+  ],
+  "n_b_predicted": 0,
+  "consistent": false
+}

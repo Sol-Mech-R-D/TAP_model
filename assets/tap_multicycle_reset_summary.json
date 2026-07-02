@@ -1,0 +1,14 @@
+{
+  "n_star": 0,
+  "n_b_observed": 8.0,
+  "n_b_predicted": 0,
+  "consistent_with_breath_clock": false,
+  "fidelity_first": 0.17107321713022683,
+  "fidelity_last": 0.14200255361785397,
+  "fidelity_drop": 0.029070663512372863,
+  "fidelity_avg": 0.1434560867934726,
+  "max_drop": 0.029070663512372863,
+  "max_drop_cycle": 1,
+  "saturated_after_n_star": true,
+  "verdict": "P17 NOT SUPPORTED: N* does not match N_B"
+}
