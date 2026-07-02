@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-07-02T11:35:19.594465",
+  "n_attempted": 44,
+  "n_added": 8,
+  "n_skipped": 26,
+  "skip_reasons": {
+    "missing endpoint: cythos=script: tap_5ht2a_ayahuasca_si, tap=concept: Nami-Ryu Body-Listeni": 1,
+    "missing endpoint: cythos=script: tap_ayahuasca_fascia_c, tap=concept: Cascade": 1,
+    "missing endpoint: cythos=script: tap_cosmic_origin_sims, tap=concept: Cosmic Breath": 1,
+    "missing endpoint: cythos=script: tap_cosmic_breath_sim., tap=concept: Sub-Breath": 1,
+    "missing endpoint: cythos=cythos: Rebrand/CyGemm/bridge/, tap=script: tap_multisphere_cascad": 1,
+    "missing endpoint: cythos=script: tap_multisphere_cascad, tap=concept: Multisphere": 1,
+    "missing endpoint: cythos=script: tap_cosmological_casca, tap=concept: Multisphere": 1,
+    "missing endpoint: cythos=script: tap_multiverse_couplin, tap=script: tap_multisphere_cascad": 1,
+    "missing endpoint: cythos=doc: TAP_Multisphere_Biotempla, tap=concept: Multisphere": 1,
+    "missing endpoint: cythos=script: tap_multiverse_couplin, tap=concept: Multiverse Coupling": 1,
+    "missing endpoint: cythos=script: tap_multiverse_constan, tap=script: tap_multiverse_couplin": 1,
+    "missing endpoint: cythos=doc: TAP_Multiverse_Constants_, tap=constant: Plastic (\u03c1)": 1,
+    "missing endpoint: cythos=doc: TAP_Multiverse_Constants_, tap=constant: Feigenbaum \u03b4": 1,
+    "missing endpoint: cythos=doc: TAP_Multiverse_Coupling_F, tap=concept: Multiverse Coupling": 1,
+    "missing endpoint: cythos=doc: tap_author_lens_narby_aud, tap=script: tap_author_lens.py": 1,
+    "missing endpoint: cythos=doc: tap_author_lens_mcKenna_a, tap=script: tap_author_lens.py": 1,
+    "missing endpoint: cythos=doc: tap_author_lens_sheldrake, tap=script: tap_author_lens.py": 1,
+    "missing endpoint: cythos=doc: tap_author_lens_wallace_a, tap=script: tap_author_lens.py": 1,
+    "missing endpoint: cythos=script: tap_author_lens.py, tap=concept: Nami-Ryu Body-Listeni": 1,
+    "missing endpoint: cythos=script: tap_seismic_correlatio, tap=concept: Sub-Breath": 1,
+    "missing endpoint: cythos=script: calibration_derivation, tap=constant: Braid Phase \u03c8": 1,
+    "missing endpoint: cythos=script: calibration_derivation, tap=constant: Calibration \u03ba": 1,
+    "missing endpoint: cythos=doc: TAP_P17_Plastic_CubeRoot_, tap=prediction: P17": 1,
+    "missing endpoint: cythos=concept: Twin Dragons (SL_L + , tap=concept: Nami-Ryu Body-Listeni": 1,
+    "missing endpoint: cythos=concept: Nami-Ryu Body-Listeni, tap=concept: \u03c8-collapse / Down-reg": 1,
+    "missing endpoint: cythos=concept: Cascade, tap=concept: Standalone sims": 1
+  },
+  "total_edges_in_graph": 27177,
+  "relation_distribution": {
+    "SUPPORTS": 27135,
+    "SYNONYM": 25,
+    "CAUSES": 5,
+    "CONTRADICTS": 1,
+    "PART_OF": 11
+  }
+}

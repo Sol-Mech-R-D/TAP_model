@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-07-02T11:36:49.842527",
+  "n_attempted": 48,
+  "n_added": 9,
+  "n_skipped": 21,
+  "explicit_relation_distribution": {
+    "SUPPORTS": 27139,
+    "SYNONYM": 25,
+    "PART_OF": 14,
+    "CAUSES": 7,
+    "CONTRADICTS": 1
+  }
+}

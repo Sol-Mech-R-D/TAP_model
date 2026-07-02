@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-07-02T11:34:40.431829",
+  "library_path": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/libcythos_bridge.a",
+  "library_size": 106814,
+  "n_members": 6,
+  "members": [
+    "hnsw_sm.o",
+    "cygemm_hnsw.o",
+    "cygemm_tokenizer.o",
+    "ccp_80m_infer.o",
+    "ccp_smmb_speculative.o",
+    "cygemm_dsp_driver.o"
+  ],
+  "performance": {
+    "c_ops_per_sec": 543102.4257852661,
+    "py_ops_per_sec": 57192.44449026053,
+    "speedup": 9.496051980742886
+  },
+  "sm_hnsw_compat": {
+    "n_nodes": 4,
+    "max_level": 3,
+    "query": [
+      0.7,
+      0.7,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "results": [
+      [
+        1.0,
+        "alpha"
+      ],
+      [
+        0.6000000000000001,
+        "alpha+beta"
+      ]
+    ]
+  }
+}

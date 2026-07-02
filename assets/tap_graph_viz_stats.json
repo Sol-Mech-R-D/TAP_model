@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-07-02T11:37:47.812757",
+  "n_nodes_total": 303,
+  "n_nodes_visualized": 202,
+  "n_edges_total": 17249,
+  "n_edges_visualized": 1569,
+  "html_size_bytes": 104269,
+  "type_counts": {
+    "cythos": 50,
+    "doc": 45,
+    "script": 107
+  }
+}
