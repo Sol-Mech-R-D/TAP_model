@@ -1,0 +1,102 @@
+cff-version: 1.2.0
+message: |
+  If you use this model, code, or framework in academic work,
+  please cite the v5 paper and the original 99-hypotheses framework.
+title: "The Tensegrity-Anatomy-Polyvagal (TAP) Cascade Model"
+type: software
+version: 5.1.0
+date-released: 2026-07-01
+license: MIT
+repository-code: "https://github.com/Sol-Mech-R-D/TAP_model"
+url: "https://github.com/Sol-Mech-R-D/TAP_model"
+
+authors:
+  - family-names: Baker
+    given-names: David
+    alias: Delta Vector
+    affiliation: "Delta Vector Research (Independent)"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+
+  - name: "The Super-Calculator Agent"
+    affiliation: "TAP Model Development Team"
+
+keywords:
+  - tensegrity
+  - myofascial
+  - polyvagal
+  - somatic
+  - ayahuasca
+  - 5-HT2A
+  - chromatin
+  - epigenetics
+  - cascade
+  - golden-ratio
+  - phi-spiral
+  - body-practice
+  - fascia
+  - anatomy-trains
+  - twin-dragons
+  - nami-ryu
+
+preferred-citation:
+  type: article
+  title: "The Tensegrity-Anatomy-Polyvagal (TAP) Cascade Model: A Multi-Scale Computational Framework Linking Conscious Body Practice, Myofascial Substrate, and Cosmic-Scale Timing"
+  authors:
+    - family-names: Baker
+      given-names: David
+    - name: "The Super-Calculator Agent"
+  journal: "TAP Model Documentation (v5.1)"
+  year: 2026
+  month: 7
+  url: "https://github.com/Sol-Mech-R-D/TAP_model/blob/master/docs/TAP_v5_Paper.md"
+
+references:
+  - type: software
+    title: "Original TAP Model: 99 Hypotheses"
+    authors:
+      - family-names: Baker
+        given-names: David
+    year: 2026
+    url: "https://github.com/Sol-Mech-R-D/TAP_model"
+    notes: |
+      The original TAP (Temporal Asymmetric Pulsation) framework
+      with 99 hypotheses covering physics, chemistry, biology,
+      neuroscience, cosmology, and condensed matter.
+
+  - type: article
+    title: "Narby Re-Evaluation v3.0-v4.0.2"
+    url: "https://github.com/Sol-Mech-R-D/TAP_model/blob/master/docs/TAP_Narby_Review.md"
+    notes: |
+      TAP-lens re-evaluation of Jeremy Narby's "The Cosmic Serpent"
+      (1998). 4-layer φ-cascade framework. v3.0 validated with
+      6/6 modelable biomarkers MATCH (100%).
+
+  - type: article
+    title: "Fascia and Anatomy Trains Substrate (v5.0)"
+    url: "https://github.com/Sol-Mech-R-D/TAP_model/blob/master/docs/TAP_Fascia_Trains_v5.md"
+    notes: |
+      Integration of Tim Myers' Anatomy Trains, Nami-ryu
+      aikijujutsu body-listening, and the piezo collagen substrate
+      into the TAP cascade. 12 myofascial meridians modeled.
+
+  - type: article
+    title: "Somatic Cascade (v5.1)"
+    url: "https://github.com/Sol-Mech-R-D/TAP_model/blob/master/docs/TAP_Somatic_Cascade.md"
+    notes: |
+      Mapping of Somatic Experiencing, Polyvagal Theory, Feldenkrais,
+      Hanna Somatics, and Nami-ryu aikijujutsu to specific φ-rates
+      in the TAP cascade.
+
+  - type: article
+    title: "Testable Predictions (v5.0)"
+    url: "https://github.com/Sol-Mech-R-D/TAP_model/blob/master/docs/TAP_Testable_Predictions_v5.md"
+    notes: |
+      Six falsifiable predictions with experimental protocols,
+      power analysis, and discriminating power.
+
+  - type: article
+    title: "P2 Lymphangiography Protocol (v5.1)"
+    url: "https://github.com/Sol-Mech-R-D/TAP_model/blob/master/docs/TAP_P2_Lymphangiography_Protocol.md"
+    notes: |
+      Full IRB-approvable study design for thoracic duct lymph
+      flow in tensegrity vs control populations.
