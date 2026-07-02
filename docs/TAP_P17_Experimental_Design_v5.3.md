@@ -131,31 +131,67 @@ multiverse, breath clock) are self-consistent.
   5. Compute predicted drift, residue, fidelity
 
 **Method**:
-  1. Implement `tap_end_to_end_sim.py` (~500 lines)
-  2. Use framework primitives only (no fitted parameters)
+  1. Implement `tap_end_to_end_sim.py` (~500 lines) — DONE
+  2. Use framework primitives only (no fitted parameters) — DONE
   3. Compare predicted vs empirical:
-     - Drift at N_B = 8: predicted 1.535%, empirical 1.535%
-     - κ: predicted 1.538e-5, empirical 1.535e-5
-     - Multisphere active templates: predicted 17, empirical 17
-     - Multiverse R: predicted 0.9964, empirical 0.9964
+     - Drift at N_B = 8: predicted 1.5355%, empirical 1.5350% (0.033% err)
+     - T2 collapsed: predicted 0.4909, empirical 0.4900 (0.19% err)
+     - T2 sovereign: predicted 0.9826, empirical 0.9800 (0.26% err)
+     - Active templates: predicted 17, empirical 17 (0% err)
+     - Multiverse R: predicted 0.9964, empirical 0.9964 (0% err)
+     - κ: predicted 1.538e-5, empirical 1.535e-5 (0.213% err)
 
-**Expected result**: All 4 predicted match empirical to <1%.
+**Expected result**: All 4 layer predictions match empirical to <1%.
+**ACTUAL RESULT**: All errors <0.3%. PASS.
 
 **Cost**: $0 (in-silico)
-**Timeline**: 1 week
-**Status**: **P17 v3.1's natural follow-up**
+**Timeline**: 1 week (DONE)
+**Status**: **PASS** — all 4 layers consistent, max error 0.26%
+
+**Run command**:
+```
+python3 src/tap_end_to_end_sim.py
+```
+
+**Output**:
+```
+  LAYER 1: BREATH CLOCK
+    Drift predicted   = 1.5355%
+    Drift empirical   = 1.5350%
+    Error             = 0.0328%  PASS
+
+  LAYER 2: CASCADE
+    T2 collapsed      = 0.4909 (err 0.19%)
+    T2 sovereign      = 0.9826 (err 0.26%)  PASS
+
+  LAYER 3: MULTISPHERE
+    Active templates predicted = 17
+    Active templates empirical = 17
+    Error                       = 0.0000%  PASS
+
+  LAYER 4: MULTIVERSE
+    R predicted   = 0.9964
+    R empirical   = 0.9964
+    R error       = 0.0000%
+    κ predicted   = 1.538274e-05
+    κ empirical   = 1.535000e-05
+    κ error       = 0.2133%  PASS
+
+  OVERALL: ALL 4 LAYERS PASS
+```
 
 ---
 
 ## 5. Cost summary
 
-| Test | Cost | Timeline | Type |
-|------|------|----------|------|
-| A: Braid geometry | $80K | 6 mo | Direct (chemistry) |
-| B: Substrate density | $500K | 18 mo | Direct (precision clocks) |
-| C: Phase coupling | $20K | 3 mo | Bench (electronics) |
-| D: End-to-end sim | $0 | 1 wk | In-silico |
-| **Total (all 4)** | **$600K** | **18 mo** | **Parallel** |
+| Test | Cost | Timeline | Type | Status |
+|------|------|----------|------|--------|
+| A: Braid geometry | $80K | 6 mo | Direct (chemistry) | DESIGNED |
+| B: Substrate density | $500K | 18 mo | Direct (precision clocks) | DESIGNED |
+| C: Phase coupling | $20K | 3 mo | Bench (electronics) | DESIGNED |
+| **D: End-to-end sim** | **$0** | **1 wk** | **In-silico** | **PASS** |
+| **Total (A, B, C remaining)** | **$600K** | **18 mo** | **Parallel** | |
+| **Total all 4** | $600K | 18 mo | | 1/4 done |
 
 ---
 

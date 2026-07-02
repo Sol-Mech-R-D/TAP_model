@@ -377,6 +377,13 @@ SIM_CASCADE_MAP = {
         "category": "MULTISPHERE",
         "description": "Hybrid (C + other element) templates, specialized environments"
     },
+    # End-to-end integration sim (v5.3.1)
+    "tap_end_to_end_sim.py": {
+        "layer": "all 4",
+        "phi_rate": "all",
+        "category": "TOOL",
+        "description": "End-to-end framework integration, all 4 layers PASS <0.3% error"
+    },
     # P15-P16 in-silico precursors (added v5.3)
     "tap_p15_soot_fidelity_sim.py": {
         "layer": "multisphere",

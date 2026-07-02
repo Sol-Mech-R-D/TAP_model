@@ -1,0 +1,45 @@
+{
+  "input_constants": {
+    "plastic": 1.3247179572447458,
+    "golden": 1.618033988749895,
+    "feigenbaum": 4.66920160910299,
+    "alpha": 0.0072973525205055605
+  },
+  "derived": {
+    "psi": 0.910525665875798,
+    "kappa": 1.5382743952480796e-05
+  },
+  "layer1": {
+    "N_B": 8,
+    "drift_predicted": 0.015355029803997056,
+    "drift_empirical": 0.01535,
+    "error_pct": 0.03276745274954294,
+    "pass": true
+  },
+  "layer2": {
+    "braid_trace": 1.8477590650225735,
+    "T2_collapsed_predicted": 0.49091099195728544,
+    "T2_sovereign_predicted": 0.9825607802891306,
+    "T2_collapsed_empirical": 0.49,
+    "T2_sovereign_empirical": 0.98,
+    "error_collapsed_pct": 0.18591672597662148,
+    "error_sovereign_pct": 0.2613041111357805,
+    "pass": true
+  },
+  "layer3": {
+    "active_templates_predicted": 17,
+    "active_templates_empirical": 17,
+    "error_pct": 0.0,
+    "pass": true
+  },
+  "layer4": {
+    "R_predicted": 0.9964,
+    "R_empirical": 0.9964,
+    "R_error_pct": 0.0,
+    "kappa_predicted": 1.5382743952480796e-05,
+    "kappa_empirical": 1.535e-05,
+    "kappa_error_pct": 0.21331565134068584,
+    "pass": true
+  },
+  "all_pass": true
+}

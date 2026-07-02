@@ -1,6 +1,6 @@
 {
   "framework": "TAP Model v5.3",
-  "total_sims": 62,
+  "total_sims": 63,
   "categories": {
     "CASCADE": [
       "tap_5ht2a_ayahuasca_sim.py",
@@ -77,6 +77,7 @@
       "render_mermaid_diagrams.py",
       "tap_audio_test.py",
       "tap_cascade_context.py",
+      "tap_end_to_end_sim.py",
       "tap_parameter_free_constants_proof.py",
       "tap_proof.py"
     ]
@@ -405,6 +406,12 @@
       "phi_rate": "phi^-16+",
       "category": "MULTISPHERE",
       "description": "Hybrid (C + other element) templates, specialized environments"
+    },
+    "tap_end_to_end_sim.py": {
+      "layer": "all 4",
+      "phi_rate": "all",
+      "category": "TOOL",
+      "description": "End-to-end framework integration, all 4 layers PASS <0.3% error"
     },
     "tap_p15_soot_fidelity_sim.py": {
       "layer": "multisphere",
