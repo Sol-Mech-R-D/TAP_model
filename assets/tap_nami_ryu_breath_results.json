@@ -1,0 +1,613 @@
+{
+  "timestamp": "2026-07-02T09:26:51.356580",
+  "nami_breath_phases": {
+    "inhale": {
+      "duration_s": 4.0,
+      "spiral_coupling_delta": 0.2
+    },
+    "hold": {
+      "duration_s": 1.0,
+      "spiral_coupling_delta": 0.05
+    },
+    "exhale": {
+      "duration_s": 6.0,
+      "spiral_coupling_delta": -0.18
+    },
+    "empty": {
+      "duration_s": 1.0,
+      "spiral_coupling_delta": -0.07
+    }
+  },
+  "cycle_duration_s": 12.0,
+  "breaths_per_day": 7200.0,
+  "earth_state": {
+    "name": "Earth",
+    "type": "rocky planet",
+    "date": "2026-07-02T12:00:00",
+    "n_b": 11365711774004,
+    "gamma_n_b": -21815105378.183945,
+    "psi": 0.677058,
+    "phase_rad": 1.1125,
+    "s_setpoint": 0.7212,
+    "t_setpoint": 0.9484,
+    "drift_sign": -1,
+    "sub_breath_days": 0.1459,
+    "age_gyr": 4.54
+  },
+  "moon_state": {
+    "name": "Moon",
+    "type": "satellite",
+    "date": "2026-07-02T12:00:00",
+    "n_b": 413246904538,
+    "gamma_n_b": -793177315.948814,
+    "psi": 0.178349,
+    "phase_rad": -2.021,
+    "s_setpoint": 0.2824,
+    "t_setpoint": 0.0498,
+    "drift_sign": -1,
+    "sub_breath_days": 3.9862,
+    "age_gyr": 4.51
+  },
+  "sun_state": {
+    "name": "Sun",
+    "type": "star",
+    "date": "2026-07-02T12:00:00",
+    "n_b": 280426698676,
+    "gamma_n_b": 538245040.50081,
+    "psi": 0.281951,
+    "phase_rad": -1.37,
+    "s_setpoint": 0.5997,
+    "t_setpoint": 0.01,
+    "drift_sign": 1,
+    "sub_breath_days": 5.9914,
+    "age_gyr": 4.6
+  },
+  "30d_projection": {
+    "0.5_yr": [
+      {
+        "day": 0,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 1,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 2,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 3,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 4,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 5,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 6,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 7,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 8,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 9,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 10,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 11,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 12,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 13,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 14,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 15,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 16,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 17,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 18,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 19,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 20,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 21,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 22,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 23,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 24,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 25,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 26,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 27,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 28,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      },
+      {
+        "day": 29,
+        "mean_coupling": 0.2101,
+        "max_coupling": 0.2101,
+        "min_coupling": 0.2101
+      }
+    ],
+    "5.0_yr": [
+      {
+        "day": 0,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 1,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 2,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 3,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 4,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 5,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 6,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 7,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 8,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 9,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 10,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 11,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 12,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 13,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 14,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 15,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 16,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 17,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 18,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 19,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 20,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 21,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 22,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 23,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 24,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 25,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 26,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 27,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 28,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      },
+      {
+        "day": 29,
+        "mean_coupling": 0.2776,
+        "max_coupling": 0.2776,
+        "min_coupling": 0.2776
+      }
+    ],
+    "15.0_yr": [
+      {
+        "day": 0,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 1,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 2,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 3,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 4,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 5,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 6,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 7,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 8,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 9,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 10,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 11,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 12,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 13,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 14,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 15,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 16,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 17,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 18,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 19,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 20,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 21,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 22,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 23,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 24,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 25,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 26,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 27,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 28,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      },
+      {
+        "day": 29,
+        "mean_coupling": 0.4276,
+        "max_coupling": 0.4276,
+        "min_coupling": 0.4276
+      }
+    ]
+  }
+}
