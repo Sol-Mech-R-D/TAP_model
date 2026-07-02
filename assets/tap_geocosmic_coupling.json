@@ -1,0 +1,13 @@
+{
+  "tectonic": {
+    "california_strike_slip_coupling": 1.1362538868474565,
+    "japan_subduction_coupling": 0.02161308704427576
+  },
+  "atmospheric": {
+    "lightning_debye_coupling": 0.17028989001766556,
+    "tornado_vortex_coupling": 0.996089217351656
+  },
+  "cosmic": {
+    "solar_reconnection_coupling": 0.01576193809380297
+  }
+}

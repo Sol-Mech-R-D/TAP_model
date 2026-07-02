@@ -1,5 +1,5 @@
 # TAP Real-Data Validator
-## Validation report — 2026-07-01 23:47
+## Validation report — 2026-07-02 07:08
 
 This report compares TAP coupled-sim predictions against published
 biomarker effects in chronic ayahuasca users. The sim predicts chromatin

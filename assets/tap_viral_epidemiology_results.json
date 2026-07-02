@@ -1,0 +1,74 @@
+{
+  "10": {
+    "density": 1.15,
+    "peak_infection": 0.1392,
+    "final_infection": 0.1392,
+    "peak_volatility": 0.1813,
+    "final_volatility": 0.1813,
+    "risk_index": 1.2087
+  },
+  "50": {
+    "density": 1.255,
+    "peak_infection": 0.5706,
+    "final_infection": 0.5706,
+    "peak_volatility": 0.2784,
+    "final_volatility": 0.2784,
+    "risk_index": 1.8559
+  },
+  "100": {
+    "density": 1.3,
+    "peak_infection": 0.7776,
+    "final_infection": 0.714,
+    "peak_volatility": 0.325,
+    "final_volatility": 0.3107,
+    "risk_index": 2.071
+  },
+  "500": {
+    "density": 1.405,
+    "peak_infection": 0.8939,
+    "final_infection": 0.6168,
+    "peak_volatility": 0.3511,
+    "final_volatility": 0.2888,
+    "risk_index": 1.9252
+  },
+  "1000": {
+    "density": 1.45,
+    "peak_infection": 0.9035,
+    "final_infection": 0.6105,
+    "peak_volatility": 0.3533,
+    "final_volatility": 0.2874,
+    "risk_index": 1.9157
+  },
+  "10000": {
+    "density": 1.6,
+    "peak_infection": 0.9119,
+    "final_infection": 0.6052,
+    "peak_volatility": 0.3552,
+    "final_volatility": 0.2862,
+    "risk_index": 1.9077
+  },
+  "50000": {
+    "density": 1.705,
+    "peak_infection": 0.9167,
+    "final_infection": 0.6023,
+    "peak_volatility": 0.3562,
+    "final_volatility": 0.2855,
+    "risk_index": 1.9034
+  },
+  "500000": {
+    "density": 1.855,
+    "peak_infection": 0.9227,
+    "final_infection": 0.5987,
+    "peak_volatility": 0.3576,
+    "final_volatility": 0.2847,
+    "risk_index": 1.8981
+  },
+  "1000000": {
+    "density": 1.9,
+    "peak_infection": 0.9244,
+    "final_infection": 0.5977,
+    "peak_volatility": 0.358,
+    "final_volatility": 0.2845,
+    "risk_index": 1.8966
+  }
+}

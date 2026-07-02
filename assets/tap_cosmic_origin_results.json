@@ -1,0 +1,18 @@
+{
+  "chiral_spin_pump": {
+    "spin_current": 625277.2875013341,
+    "energy_bias": 0.00016635502233972992,
+    "calculated_ee": 1.0004511807774502e-06,
+    "status": "PASS"
+  },
+  "siloxane_piezo": {
+    "voltage": 0.0018550980136089834,
+    "selectivity_ratio": 1.0135441174317066,
+    "status": "PASS"
+  },
+  "fes_spin_memory": {
+    "torque": 1.666776844935586e-12,
+    "stability_ratio": 1388980.7041129884,
+    "status": "PASS"
+  }
+}

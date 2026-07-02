@@ -1,0 +1,178 @@
+{
+  "Superfluid Vortex Braids": {
+    "zone": "Cosmic Voids / Deep Space",
+    "mean_temperature_k": 3.0,
+    "stable_count": 65,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        25.0
+      ]
+    ]
+  },
+  "Polythiazyl (SN)x Helices": {
+    "zone": "Cold Molecular Clouds",
+    "mean_temperature_k": 8.0,
+    "stable_count": 65,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        25.0
+      ]
+    ]
+  },
+  "Carbon Biotemplates": {
+    "zone": "Planetary Habitable Zones",
+    "mean_temperature_k": 150.0,
+    "stable_count": 55,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        50.0
+      ],
+      [
+        -50.0,
+        -25.0,
+        -50.0
+      ]
+    ]
+  },
+  "Phosphazene (P-N) Braids": {
+    "zone": "Warm Gas Giants",
+    "mean_temperature_k": 220.0,
+    "stable_count": 124,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Siloxane (Si-O) Helices": {
+    "zone": "Planetary Crusts / Magma Zones",
+    "mean_temperature_k": 450.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Ge-Sn Photonic Superlattices": {
+    "zone": "Close Binary Star Systems",
+    "mean_temperature_k": 320.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Boron-Nitrogen (BN) Nanotubes": {
+    "zone": "Stellar Nebulae / Supernova Remnants",
+    "mean_temperature_k": 850.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Dusty Plasma Helices": {
+    "zone": "Stellar Coronae / Accretion Disks",
+    "mean_temperature_k": 2500.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  }
+}

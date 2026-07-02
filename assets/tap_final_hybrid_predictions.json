@@ -1,0 +1,156 @@
+{
+  "Carbon-Germanium (Germoxane) Hybrids": {
+    "zone": "Subterranean Oceans of Icy Moons",
+    "mean_temperature_k": 200.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Boron-Carbon-Nitrogen (BCN) Hybrids": {
+    "zone": "Accretion Disks of Protoplanetary Nebulae",
+    "mean_temperature_k": 700.0,
+    "stable_count": 85,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        25.0
+      ]
+    ]
+  },
+  "Phosphorus-Carbon (Phosphaalkene) Hybrids": {
+    "zone": "Upper Atmospheres of Cold Gas Giants",
+    "mean_temperature_k": 130.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Metal-Sulfur-Carbon (Fe-S Cluster) Grids": {
+    "zone": "Deep Crustal Hydrothermal Vents",
+    "mean_temperature_k": 400.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Silicon Carbide (SiC) Whisker Templates": {
+    "zone": "Outer Envelopes of Carbon Stars",
+    "mean_temperature_k": 1100.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Fluorocarbon (PTFE-like) Templates": {
+    "zone": "Cryogenic Acid/Halogen planetary surfaces",
+    "mean_temperature_k": 120.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  },
+  "Organoselenium (Se-DNA) Hybrids": {
+    "zone": "Electro-active Planetary Magnetospheres",
+    "mean_temperature_k": 200.0,
+    "stable_count": 125,
+    "sample_coords": [
+      [
+        -50.0,
+        -50.0,
+        -50.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        -25.0
+      ],
+      [
+        -50.0,
+        -50.0,
+        0.0
+      ]
+    ]
+  }
+}
