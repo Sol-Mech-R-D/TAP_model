@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-07-02T09:51:03.965371",
+  "n_back_crossings": 220,
+  "n_forward_crossings": 220,
+  "n_actual_quakes": 2334,
+  "correlation": {
+    "n_total": 2334,
+    "n_high_stress": 1199,
+    "high_stress_pct": 51.37,
+    "n_in_window_24h": 540,
+    "in_window_pct": 23.14,
+    "n_match_mag": 540,
+    "match_pct": 23.14,
+    "rayleigh_r": 0.9004,
+    "rayleigh_Z": 437.82,
+    "rayleigh_p": 0.0
+  },
+  "v1_baseline": {
+    "within_24h_pct": 23.91,
+    "rayleigh_r": 0.76,
+    "rayleigh_Z": 323,
+    "rayleigh_p": 0.0
+  }
+}

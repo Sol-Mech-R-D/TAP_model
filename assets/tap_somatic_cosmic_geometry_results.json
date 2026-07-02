@@ -1,0 +1,265 @@
+{
+  "timestamp": "2026-07-02T09:53:12.371543",
+  "somatic": [
+    {
+      "name": "Collagen triple helix",
+      "geometry": "triple helix",
+      "symmetry": "B_3 braid",
+      "helix_radius_nm": 0.5,
+      "pitch_nm": 8.6,
+      "turns_per_unit": 0.116,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "\u03c0/8",
+      "test": "P17 v3.1"
+    },
+    {
+      "name": "DNA double helix",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "helix_radius_nm": 1.0,
+      "pitch_nm": 3.4,
+      "turns_per_unit": 10.5,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "10.5 bp/turn",
+      "test": "P7"
+    },
+    {
+      "name": "Anatomy Train spirals",
+      "geometry": "twin spirals",
+      "symmetry": "B_2",
+      "helix_radius_nm": 100,
+      "pitch_nm": 1500,
+      "turns_per_unit": 0.067,
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "phase_factor": "180\u00b0 phase",
+      "test": "P4"
+    },
+    {
+      "name": "Lymph vessel",
+      "geometry": "fractal tree",
+      "symmetry": "binary",
+      "helix_radius_nm": 0,
+      "pitch_nm": 0,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u00b9\u00b3",
+      "phase_factor": "1.5x branching",
+      "test": "P2"
+    },
+    {
+      "name": "Actin filament",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "helix_radius_nm": 2.5,
+      "pitch_nm": 36,
+      "turns_per_unit": 13.5,
+      "phi_rate": "\u03c6\u207b\u2078",
+      "phase_factor": "13.5 subunits/turn",
+      "test": "fidelity"
+    },
+    {
+      "name": "Microtubule",
+      "geometry": "hollow cylinder",
+      "symmetry": "D_25",
+      "helix_radius_nm": 12.5,
+      "pitch_nm": 0,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u00b9\u00b3",
+      "phase_factor": "13 protofilaments",
+      "test": "fidelity"
+    },
+    {
+      "name": "Myofibril (sarcomere)",
+      "geometry": "stacked bands",
+      "symmetry": "translation",
+      "helix_radius_nm": 0,
+      "pitch_nm": 2300,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u00b2",
+      "phase_factor": "Z-disc spacing",
+      "test": "P3"
+    }
+  ],
+  "cosmic_biotemplates": [
+    {
+      "name": "Carbon DNA (rocky)",
+      "zone": "temperate",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "helix_radius_nm": 1.0,
+      "pitch_nm": 3.4,
+      "turns_per_unit": 10.5,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "10.5 bp/turn",
+      "test": "P13"
+    },
+    {
+      "name": "PNA",
+      "zone": "temperate",
+      "geometry": "double helix",
+      "symmetry": "D_2",
+      "helix_radius_nm": 0.8,
+      "pitch_nm": 3.0,
+      "turns_per_unit": 11.0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "aminoethyl-glycine backbone",
+      "test": "P13"
+    },
+    {
+      "name": "BN nanotube",
+      "zone": "hot",
+      "geometry": "cylinder",
+      "symmetry": "D_nh",
+      "helix_radius_nm": 0.7,
+      "pitch_nm": 1.0,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "Fibonacci twist",
+      "test": "P10"
+    },
+    {
+      "name": "Siloxane helix",
+      "zone": "warm",
+      "geometry": "triple helix",
+      "symmetry": "B_3",
+      "helix_radius_nm": 0.4,
+      "pitch_nm": 5.0,
+      "turns_per_unit": 4.0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "Si-O-Si backbone",
+      "test": "P10"
+    },
+    {
+      "name": "Fe-S cluster",
+      "zone": "warm",
+      "geometry": "cubane",
+      "symmetry": "Td",
+      "helix_radius_nm": 0.3,
+      "pitch_nm": 0,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "Fe4S4 core",
+      "test": "P11"
+    },
+    {
+      "name": "Polythiazyl (SN)x",
+      "zone": "cold",
+      "geometry": "helical polymer",
+      "symmetry": "C_2",
+      "helix_radius_nm": 0.2,
+      "pitch_nm": 0.5,
+      "turns_per_unit": 8.0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "alternating S-N",
+      "test": "P11"
+    },
+    {
+      "name": "Phosphaalkene",
+      "zone": "cold",
+      "geometry": "polymer",
+      "symmetry": "C_2v",
+      "helix_radius_nm": 0.0,
+      "pitch_nm": 0,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "P=C double bond",
+      "test": "P11"
+    },
+    {
+      "name": "Thioester",
+      "zone": "warm",
+      "geometry": "tetrahedral",
+      "symmetry": "C_3v",
+      "helix_radius_nm": 0.0,
+      "pitch_nm": 0,
+      "turns_per_unit": 0,
+      "phi_rate": "\u03c6\u207b\u2074",
+      "phase_factor": "C-O-S-C",
+      "test": "P10"
+    }
+  ],
+  "antitemplates": [
+    {
+      "name": "Soot/PAHs",
+      "geometry": "disordered polyaromatic",
+      "symmetry": "C_1",
+      "effect": "poisons carbon templates",
+      "test": "P15 r=-0.99"
+    },
+    {
+      "name": "Magnetite chirality",
+      "geometry": "spin-polarized",
+      "symmetry": "F_d3m",
+      "effect": "interferes with template formation",
+      "test": "P16 r=0.998"
+    },
+    {
+      "name": "N_B residue",
+      "geometry": "scalar",
+      "symmetry": "Z_2",
+      "effect": "P17 v3.1 fails if \u03c8 \u2260 \u03c1^(-1/3)",
+      "test": "P17 0.21%"
+    },
+    {
+      "name": "Earth's clean composition",
+      "geometry": "statistical",
+      "symmetry": "none",
+      "effect": "anomalously low soot/magnetite",
+      "test": "P18 88%"
+    }
+  ],
+  "homologies": [
+    {
+      "somatic": "Collagen triple helix (B_3)",
+      "cosmic": "Siloxane triple helix (B_3)",
+      "link": "Same braid group",
+      "test": "P17/P10"
+    },
+    {
+      "somatic": "DNA double helix",
+      "cosmic": "Carbon DNA (temperate)",
+      "link": "10.5 bp/turn",
+      "test": "P7/P13"
+    },
+    {
+      "somatic": "Anatomy Train spirals",
+      "cosmic": "BN tube (Fibonacci twist)",
+      "link": "Torsion",
+      "test": "P4/P10"
+    },
+    {
+      "somatic": "Actin double helix",
+      "cosmic": "PNA",
+      "link": "Helical polymer",
+      "test": "fidelity/P13"
+    },
+    {
+      "somatic": "Microtubule 13-protofilament",
+      "cosmic": "13 templates max",
+      "link": "13D Weyl ceiling",
+      "test": "P10/P14"
+    },
+    {
+      "somatic": "Lymph fractal",
+      "cosmic": "Phosphaalkene polymer",
+      "link": "Branching polymer",
+      "test": "P2/P11"
+    },
+    {
+      "somatic": "Myofibril sarcomere",
+      "cosmic": "Thioester tetrahedral",
+      "link": "Stacking",
+      "test": "P3/P10"
+    }
+  ],
+  "scores": {
+    "somatic_total": 2.4,
+    "cosmic_biotemplate_total": 3.200000000000001,
+    "cosmic_extrapolated_22": 8.800000000000002
+  },
+  "phi_rate_distribution": {
+    "\u03c6\u207b\u2074": 10,
+    "\u03c6\u207b\u00b2": 2,
+    "\u03c6\u207b\u00b9\u00b3": 2,
+    "\u03c6\u207b\u2078": 1
+  }
+}

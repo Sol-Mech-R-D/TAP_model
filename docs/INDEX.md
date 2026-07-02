@@ -5,6 +5,13 @@ cascade model documentation. The model is a multi-scale computational
 framework linking conscious body practice, myofascial substrate, and
 cosmic-scale timing through a single φ-spiral geometric pattern.
 
+> **NEW v5.3.2 — TAP MEGAMATRIX**:
+> The comprehensive map of what TAP predicts, for what body, with what
+> confidence. 10 cosmic bodies × 18 testable predictions = 180 cells.
+> **106/180 testable (58.9%)**, **56/180 high-confidence ≥ 0.9 (31.1%)**.
+> Run: `python3 src/tap_multi_body_p1p18_sweep.py`
+> See: `docs/TAP_Megamatrix_v5_3.md` (this index, section 11)
+>
 > **New: [TAP_FRAMEWORK_INDEX.md](TAP_FRAMEWORK_INDEX.md)** —
 > the unified master index of all 50 sims, 30 docs, and the
 > complete cascade architecture. This is the canonical entry
@@ -95,6 +102,16 @@ cosmic-scale timing through a single φ-spiral geometric pattern.
   (thoracic duct lymph flow in tensegrity vs control populations).
   Power analysis, equipment list, budget, timeline, consent form
   template.
+
+### The Test the Framework challenge (v5.3.2)
+
+  3 experiments designed to test the framework's strongest claims:
+  - **E1** Braid group phase measurement ($250K, 18 mo)
+  - **E2** Lymph flow intervention trial ($450K, 6 mo)
+  - **E3** Multisphere template catalog ($600K, 24 mo)
+  - **Total: $1.3M, 24 months parallel**
+  - Run: `python3 src/tap_test_framework_challenge.py`
+  - See: `assets/tap_test_framework_challenge_results.json`
 
 ### For peer reviewers
 

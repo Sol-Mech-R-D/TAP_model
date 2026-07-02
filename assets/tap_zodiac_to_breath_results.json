@@ -1,0 +1,136 @@
+{
+  "timestamp": "2026-07-02T09:53:52.753690",
+  "delta_n_family": {
+    "1": 1.618,
+    "2": 2.4142,
+    "3": 3.3028,
+    "4": 4.2361,
+    "5": 5.1926,
+    "6": 6.1623,
+    "7": 7.1401,
+    "8": 8.1231,
+    "9": 9.1098,
+    "10": 10.099,
+    "11": 11.0902,
+    "12": 12.0828
+  },
+  "zodiac_mapping": [
+    {
+      "name": "Aries",
+      "symbol": "\u2648",
+      "ruler": "Mars",
+      "element": "fire",
+      "breath_constant": "Bronze",
+      "delta_n": 3,
+      "delta_value": 3.302776
+    },
+    {
+      "name": "Taurus",
+      "symbol": "\u2649",
+      "ruler": "Venus",
+      "element": "earth",
+      "breath_constant": "Silver",
+      "delta_n": 2,
+      "delta_value": 2.414214
+    },
+    {
+      "name": "Gemini",
+      "symbol": "\u264a",
+      "ruler": "Mercury",
+      "element": "air",
+      "breath_constant": "Negative Golden",
+      "delta_n": 1,
+      "delta_value": 1.618034
+    },
+    {
+      "name": "Cancer",
+      "symbol": "\u264b",
+      "ruler": "Moon",
+      "element": "water",
+      "breath_constant": "Negative Golden",
+      "delta_n": 1,
+      "delta_value": 1.618034
+    },
+    {
+      "name": "Leo",
+      "symbol": "\u264c",
+      "ruler": "Sun",
+      "element": "fire",
+      "breath_constant": "Plastic",
+      "delta_n": 4,
+      "delta_value": 4.236068
+    },
+    {
+      "name": "Virgo",
+      "symbol": "\u264d",
+      "ruler": "Mercury",
+      "element": "earth",
+      "breath_constant": "Negative Golden",
+      "delta_n": 1,
+      "delta_value": 1.618034
+    },
+    {
+      "name": "Libra",
+      "symbol": "\u264e",
+      "ruler": "Venus",
+      "element": "air",
+      "breath_constant": "Silver",
+      "delta_n": 2,
+      "delta_value": 2.414214
+    },
+    {
+      "name": "Scorpio",
+      "symbol": "\u264f",
+      "ruler": "Pluto/Mars",
+      "element": "water",
+      "breath_constant": "Bronze",
+      "delta_n": 3,
+      "delta_value": 3.302776
+    },
+    {
+      "name": "Sagittarius",
+      "symbol": "\u2650",
+      "ruler": "Jupiter",
+      "element": "fire",
+      "breath_constant": "Feigenbaum-like",
+      "delta_n": 5,
+      "delta_value": 5.192582
+    },
+    {
+      "name": "Capricorn",
+      "symbol": "\u2651",
+      "ruler": "Saturn",
+      "element": "earth",
+      "breath_constant": "Feigenbaum-like",
+      "delta_n": 5,
+      "delta_value": 5.192582
+    },
+    {
+      "name": "Aquarius",
+      "symbol": "\u2652",
+      "ruler": "Saturn/Uranus",
+      "element": "air",
+      "breath_constant": "\u03b4_6",
+      "delta_n": 6,
+      "delta_value": 6.162278
+    },
+    {
+      "name": "Pisces",
+      "symbol": "\u2653",
+      "ruler": "Jupiter/Neptune",
+      "element": "water",
+      "breath_constant": "Plastic",
+      "delta_n": 4,
+      "delta_value": 4.236068
+    }
+  ],
+  "multiverse_constants": {
+    "plastic": 1.324717957244746,
+    "golden": 1.618033988749895,
+    "negative_golden": -0.6180339887498949,
+    "silver": 2.414213562373095,
+    "bronze": 3.302775637731995,
+    "feigenbaum": 4.6692016,
+    "alpha_inv": 137.036
+  }
+}
