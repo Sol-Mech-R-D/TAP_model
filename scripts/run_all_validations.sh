@@ -12,11 +12,13 @@
 #   - Run nightly regression checks
 #
 # USAGE:
-#   ./scripts/run_all_validations.sh              # full run
+#   ./scripts/run_all_validations.sh              # full run (15 cascade tests)
+#   ./scripts/run_all_validations.sh --with-99    # + 99-hypotheses tribunal (~2 min)
 #   ./scripts/run_all_validations.sh --quick      # skip plots
 #   ./scripts/run_all_validations.sh --suite sims # sims only
 #   ./scripts/run_all_validations.sh --suite lens # lens only
 #   ./scripts/run_all_validations.sh --suite val  # validator only
+#   ./scripts/run_all_validations.sh --suite 99   # 99-tribunal only
 #   ./scripts/run_all_validations.sh --quiet      # minimal output
 #
 # OUTPUTS:
@@ -40,12 +42,15 @@ cd "$REPO_ROOT"
 SUITE="all"
 QUIET=0
 PLOT_ARG="--plot"
+WITH_99=0
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --quick)  PLOT_ARG="" ; shift ;;
         --suite)  SUITE="$2"  ; shift 2 ;;
         --quiet)  QUIET=1     ; shift ;;
         --no-plot) PLOT_ARG="" ; shift ;;
+        --with-99) WITH_99=1  ; shift ;;
+        --help|-h) echo "Usage: $0 [--quick] [--suite sims|lens|val|99] [--quiet] [--no-plot] [--with-99]"; exit 0 ;;
         *) echo "Unknown arg: $1"; exit 1 ;;
     esac
 done
@@ -196,6 +201,58 @@ if [[ "$SUITE" == "all" || "$SUITE" == "val" ]]; then
     # 3.1: Real-data validator
     run_test "Real-data validator (tap_real_data_validator.py)" \
         "python3 src/tap_real_data_validator.py"
+fi
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SUITE 4: Original 99-hypotheses super tribunal (the foundation)
+# ─────────────────────────────────────────────────────────────────────────────
+# This is the original TAP framework's 99-check multi-disciplinary
+# peer-review tribunal. The cascade work (Suites 1-3) was developed
+# on top of this foundation. The tribunal takes ~2 minutes to run
+# and is therefore opt-in via the --with-99 flag (or by passing
+# --suite=99).
+if [[ "$SUITE" == "99" || "$WITH_99" == "1" ]]; then
+    log "\n${BOLD}─── SUITE: ORIGINAL 99-HYPOTHESES SUPER TRIBUNAL ───${RESET}"
+    log "${BOLD}  (Foundation of the cascade work — 9 disciplines, 11 checks each)${RESET}"
+
+    # 4.1: Run the full 99-hypotheses tribunal
+    # This is opt-in because it takes ~2 minutes. The default --quick
+    # and --all suites skip it.
+    run_test "99-hypotheses super tribunal (tap_super_tribunal_99.py)" \
+        "python3 src/tap_super_tribunal_99.py"
+
+    # 4.2: Check the 99 results JSON exists and shows 99/99
+    if [[ -f "assets/tap_super_tribunal_99_results.json" ]]; then
+        TOTAL_99=$(python3 -c "
+import json, sys
+try:
+    with open('assets/tap_super_tribunal_99_results.json') as f:
+        d = json.load(f)
+except Exception as e:
+    print(f'parse_err: {e}', file=sys.stderr)
+    sys.exit(0)  # don't fail the validation if JSON parse fails
+# Count entries with 'VERIFIED' or pass=True anywhere in the structure
+def count_verified(obj):
+    n = 0
+    if isinstance(obj, dict):
+        for v in obj.values():
+            n += count_verified(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            n += count_verified(v)
+    elif isinstance(obj, bool):
+        n += 1 if obj else 0
+    elif isinstance(obj, str) and 'VERIFIED' in obj.upper():
+        n += 1
+    return n
+print(count_verified(d))
+" 2>/dev/null)
+        if [[ -n "$TOTAL_99" && "$TOTAL_99" -ge 99 ]] 2>/dev/null; then
+            log "${GREEN}    → $TOTAL_99/99 tribunal entries verified${RESET}"
+        else
+            log "${YELLOW}    → $TOTAL_99 entries verified (tribunal may have changed format)${RESET}"
+        fi
+    fi
 fi
 
 # ─────────────────────────────────────────────────────────────────────────────

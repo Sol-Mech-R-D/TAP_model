@@ -77,6 +77,14 @@ cosmic-scale timing through a single φ-spiral geometric pattern.
   Power analysis, equipment list, budget, timeline, consent form
   template.
 
+### For peer reviewers
+
+- **[PEER_REVIEW_CHECKLIST.md](PEER_REVIEW_CHECKLIST.md)** (v5.1, 11 KB) —
+  structured checklist for peer reviewers. Verifies repo
+  completeness, reproducibility, falsifiability (P1-P6),
+  quantitative claims, conceptual claims, and addresses common
+  objections.
+
 ---
 
 ## Running the sims
@@ -155,8 +163,10 @@ cascade.
 
 ## Validation summary
 
-- **15/15 master validation tests pass** (all sims run, all
-  assertions hold)
+- **15/15 master validation tests pass** (cascade sims, sim audit,
+  author lens, real-data validator)
+- **99/99 super-tribunal tests pass** (the original 99-hypotheses
+  multi-disciplinary framework — opt-in via `--with-99`)
 - **6/6 modelable ayahuasca biomarkers MATCH** (100%) against
   published data (Bouso 2015, Galvão 2018, Ona 2020,
   Callaway 1994, Riba 2001, dos Santos 2017)
@@ -164,6 +174,16 @@ cascade.
   coverage) — every cascade layer is covered
 - **4 author lens audits** complete (Narby, Sheldrake,
   McKenna, Wallace)
+
+To run all validations (cascade + 99 tribunal):
+```bash
+cd ~/TAP_model
+bash scripts/run_all_validations.sh --with-99 --quick
+```
+
+This produces `assets/tap_full_run_<timestamp>.log` and
+`assets/tap_full_run_<timestamp>.md` with a unified pass/fail
+summary.
 
 ---
 

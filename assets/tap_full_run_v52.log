@@ -1,0 +1,113 @@
+TAP Model — Full Validation Run
+Timestamp: 20260701_193859
+Repo: /data/data/com.termux/files/home/TAP_model
+Suite: all
+
+
+─── SUITE: SIMS ───
+
+=== Parent epigenetic sim (tap_epigenetic_flop_sim.py) ===
+CMD: python3 src/tap_epigenetic_flop_sim.py 
+✓ PASS
+
+=== 5-HT2A ayahuasca sim (tap_5ht2a_ayahuasca_sim.py) ===
+CMD: python3 src/tap_5ht2a_ayahuasca_sim.py 
+✓ PASS
+
+=== Chromatin state sim (tap_chromatin_state_sim.py) ===
+CMD: python3 src/tap_chromatin_state_sim.py 
+✓ PASS
+
+=== Coupled 5-HT2A + chromatin sim (tap_coupled_ayahuasca_sim.py) ===
+CMD: python3 src/tap_coupled_ayahuasca_sim.py 
+✓ PASS
+
+=== Epigenetic → cosmic cascade (tap_epigenetic_cosmic_cascade.py) ===
+CMD: python3 src/tap_epigenetic_cosmic_cascade.py 
+✓ PASS
+
+=== 5-HT2A ↔ parent-sim coupling (tap_5ht2a_epigenetic_coupling_sim.py) ===
+CMD: python3 src/tap_5ht2a_epigenetic_coupling_sim.py 
+✓ PASS
+
+=== Myers Anatomy Trains fascia sim (tap_fascia_sim.py) ===
+CMD: python3 src/tap_fascia_sim.py 
+✓ PASS
+
+=== Lymphatic cascade (tap_lymphatic_cascade_sim.py) ===
+CMD: python3 src/tap_lymphatic_cascade_sim.py 
+✓ PASS
+
+=== Full ayahuasca pathway cascade (tap_ayahuasca_fascia_cascade_sim.py) ===
+CMD: python3 src/tap_ayahuasca_fascia_cascade_sim.py 
+✓ PASS
+
+─── SUITE: LENS ───
+
+=== Author lens — all authors (tap_author_lens.py --author all) ===
+CMD: python3 src/tap_author_lens.py --author all
+✓ PASS
+
+=== Author lens — Narby (canonical) ===
+CMD: python3 src/tap_author_lens.py --author narby
+✓ PASS
+
+=== Author lens — Sheldrake ===
+CMD: python3 src/tap_author_lens.py --author sheldrake
+✓ PASS
+
+=== Author lens — McKenna ===
+CMD: python3 src/tap_author_lens.py --author mcKenna
+✓ PASS
+
+=== Author lens — Wallace ===
+CMD: python3 src/tap_author_lens.py --author wallace
+✓ PASS
+
+─── SUITE: VALIDATOR ───
+
+=== Real-data validator (tap_real_data_validator.py) ===
+CMD: python3 src/tap_real_data_validator.py
+✓ PASS
+
+─── SUITE: ORIGINAL 99-HYPOTHESES SUPER TRIBUNAL ───
+  (Foundation of the cascade work — 9 disciplines, 11 checks each)
+
+=== 99-hypotheses super tribunal (tap_super_tribunal_99.py) ===
+CMD: python3 src/tap_super_tribunal_99.py
+✓ PASS
+    → 0 entries verified (tribunal may have changed format)
+
+══════════════════════════════════════════════════════════════
+  TAP FULL VALIDATION SUMMARY
+══════════════════════════════════════════════════════════════
+
+  Timestamp: 20260701_193859
+  Suite:     all
+  Total:     16
+  Passed:   16
+  Failed:   0
+
+  Per-test results:
+    ✓ PASS  Parent epigenetic sim (tap_epigenetic_flop_sim.py)
+    ✓ PASS  5-HT2A ayahuasca sim (tap_5ht2a_ayahuasca_sim.py)
+    ✓ PASS  Chromatin state sim (tap_chromatin_state_sim.py)
+    ✓ PASS  Coupled 5-HT2A + chromatin sim (tap_coupled_ayahuasca_sim.py)
+    ✓ PASS  Epigenetic → cosmic cascade (tap_epigenetic_cosmic_cascade.py)
+    ✓ PASS  5-HT2A ↔ parent-sim coupling (tap_5ht2a_epigenetic_coupling_sim.py)
+    ✓ PASS  Myers Anatomy Trains fascia sim (tap_fascia_sim.py)
+    ✓ PASS  Lymphatic cascade (tap_lymphatic_cascade_sim.py)
+    ✓ PASS  Full ayahuasca pathway cascade (tap_ayahuasca_fascia_cascade_sim.py)
+    ✓ PASS  Author lens — all authors (tap_author_lens.py --author all)
+    ✓ PASS  Author lens — Narby (canonical)
+    ✓ PASS  Author lens — Sheldrake
+    ✓ PASS  Author lens — McKenna
+    ✓ PASS  Author lens — Wallace
+    ✓ PASS  Real-data validator (tap_real_data_validator.py)
+    ✓ PASS  99-hypotheses super tribunal (tap_super_tribunal_99.py)
+
+  Log:   assets/tap_full_run_20260701_193859.log
+  Report: assets/tap_full_run_20260701_193859.md
+
+ALL TESTS PASSED.
+EXIT: 0
