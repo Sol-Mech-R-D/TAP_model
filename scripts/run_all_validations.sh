@@ -150,6 +150,14 @@ if [[ "$SUITE" == "all" || "$SUITE" == "sims" ]]; then
     # to lymph flow, demonstrating the full substrate-channel chain.
     run_test "Lymphatic cascade (tap_lymphatic_cascade_sim.py)" \
         "python3 src/tap_lymphatic_cascade_sim.py $PLOT_ARG"
+
+    # 1.9: NEW v5.0.1 — Full ayahuasca pathway through the cascade
+    # This is the v5.0.1 measurement: 24 ceremonies over 84 days,
+    # the chronic ayahuasca user's state at every layer. 7/7
+    # verifications pass (lymph stagnation, spiral coupling
+    # collapse, HTR2A closure, cosmic breath tick +67%).
+    run_test "Full ayahuasca pathway cascade (tap_ayahuasca_fascia_cascade_sim.py)" \
+        "python3 src/tap_ayahuasca_fascia_cascade_sim.py $PLOT_ARG"
 fi
 
 # ─────────────────────────────────────────────────────────────────────────────
