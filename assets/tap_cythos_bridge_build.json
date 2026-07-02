@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-07-02T11:29:22.181738",
+  "build_dir": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos",
+  "n_files_attempted": 10,
+  "n_files_succeeded": 6,
+  "results": [
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/cygemm/hnsw_sm.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/hnsw_sm.o",
+      "success": true,
+      "error": null
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/cygemm/cygemm_hnsw.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/cygemm_hnsw.o",
+      "success": true,
+      "error": null
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/cygemm/cygemm_tokenizer.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/cygemm_tokenizer.o",
+      "success": true,
+      "error": null
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/cygemm/ccp_80m_infer.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/ccp_80m_infer.o",
+      "success": true,
+      "error": null
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/cygemm/ccp_smmb_speculative.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/ccp_smmb_speculative.o",
+      "success": true,
+      "error": null
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/bfloat16.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/bfloat16.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/bfloat16.c:38:10: fatal error: 'Python.h' file not found\n   38 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/norm.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/norm.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/norm.c:48:10: fatal error: 'Python.h' file not found\n   48 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/sleep.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/sleep.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/sleep.c:38:10: fatal error: 'Python.h' file not found\n   38 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/pim_updater.o",
+      "success": false,
+      "error": "/data/data/com.termux/files/home/CythOS/Rebrand/CyGemm/bridge/pim_updater.c:48:10: fatal error: 'Python.h' file not found\n   48 | #include \"Python.h\"\n      |          ^~~~~~~~~~\n1 error generated.\n"
+    },
+    {
+      "src": "/data/data/com.termux/files/home/CythOS/cygemm/cygemm_dsp_driver.c",
+      "obj": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/cygemm_dsp_driver.o",
+      "success": true,
+      "error": null
+    }
+  ],
+  "library_path": "/data/data/com.termux/files/home/TAP_model/src/../build/cythos/libcythos_bridge.a",
+  "library_size": 106814
+}
