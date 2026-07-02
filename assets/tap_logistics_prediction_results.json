@@ -1,0 +1,298 @@
+{
+  "timestamp": "2026-07-02T07:50:33.038968",
+  "data_source": "Synthetic (5% TAP modulation)",
+  "n_records": 1826,
+  "analysis": {
+    "n_records": 1826,
+    "mean_value": 1915.31,
+    "std_value": 332.64,
+    "max_value": 3187.28,
+    "max_date": "2026-05-04",
+    "min_value": 1073.17,
+    "min_date": "2021-08-03",
+    "rayleigh_r": 0.0007,
+    "rayleigh_z": 0.0009,
+    "rayleigh_p": 0.999108,
+    "phase_bin_correlation": 0.9726,
+    "bin_summary": [
+      {
+        "phase_deg": -180.0,
+        "phase_bin": 0,
+        "mean_dev": -0.050031,
+        "count": 116
+      },
+      {
+        "phase_deg": -157.5,
+        "phase_bin": 1,
+        "mean_dev": -0.043489,
+        "count": 113
+      },
+      {
+        "phase_deg": -135.0,
+        "phase_bin": 2,
+        "mean_dev": -0.041387,
+        "count": 115
+      },
+      {
+        "phase_deg": -112.5,
+        "phase_bin": 3,
+        "mean_dev": -0.012294,
+        "count": 112
+      },
+      {
+        "phase_deg": -90.0,
+        "phase_bin": 4,
+        "mean_dev": 0.004333,
+        "count": 116
+      },
+      {
+        "phase_deg": -67.5,
+        "phase_bin": 5,
+        "mean_dev": 0.038358,
+        "count": 113
+      },
+      {
+        "phase_deg": -45.0,
+        "phase_bin": 6,
+        "mean_dev": 0.051165,
+        "count": 115
+      },
+      {
+        "phase_deg": -22.5,
+        "phase_bin": 7,
+        "mean_dev": 0.053624,
+        "count": 113
+      },
+      {
+        "phase_deg": 0.0,
+        "phase_bin": 8,
+        "mean_dev": 0.04324,
+        "count": 116
+      },
+      {
+        "phase_deg": 22.5,
+        "phase_bin": 9,
+        "mean_dev": 0.043148,
+        "count": 113
+      },
+      {
+        "phase_deg": 45.0,
+        "phase_bin": 10,
+        "mean_dev": 0.03601,
+        "count": 116
+      },
+      {
+        "phase_deg": 67.5,
+        "phase_bin": 11,
+        "mean_dev": 0.012892,
+        "count": 113
+      },
+      {
+        "phase_deg": 90.0,
+        "phase_bin": 12,
+        "mean_dev": -0.01884,
+        "count": 114
+      },
+      {
+        "phase_deg": 112.5,
+        "phase_bin": 13,
+        "mean_dev": -0.016381,
+        "count": 114
+      },
+      {
+        "phase_deg": 135.0,
+        "phase_bin": 14,
+        "mean_dev": -0.041441,
+        "count": 115
+      },
+      {
+        "phase_deg": 157.5,
+        "phase_bin": 15,
+        "mean_dev": -0.055992,
+        "count": 112
+      }
+    ]
+  },
+  "forward_predictions_30d": [
+    {
+      "date": "2026-07-02",
+      "phase_deg": 91.1,
+      "predicted_value": 1913.48,
+      "tap_modulation_pct": -0.1
+    },
+    {
+      "date": "2026-07-03",
+      "phase_deg": 135.4,
+      "predicted_value": 1847.09,
+      "tap_modulation_pct": -3.56
+    },
+    {
+      "date": "2026-07-04",
+      "phase_deg": 179.8,
+      "predicted_value": 1819.55,
+      "tap_modulation_pct": -5.0
+    },
+    {
+      "date": "2026-07-05",
+      "phase_deg": -135.9,
+      "predicted_value": 1846.51,
+      "tap_modulation_pct": -3.59
+    },
+    {
+      "date": "2026-07-06",
+      "phase_deg": -91.6,
+      "predicted_value": 1912.65,
+      "tap_modulation_pct": -0.14
+    },
+    {
+      "date": "2026-07-07",
+      "phase_deg": -47.3,
+      "predicted_value": 1980.3,
+      "tap_modulation_pct": 3.39
+    },
+    {
+      "date": "2026-07-08",
+      "phase_deg": -2.9,
+      "predicted_value": 2010.95,
+      "tap_modulation_pct": 4.99
+    },
+    {
+      "date": "2026-07-09",
+      "phase_deg": 41.4,
+      "predicted_value": 1987.16,
+      "tap_modulation_pct": 3.75
+    },
+    {
+      "date": "2026-07-10",
+      "phase_deg": 85.7,
+      "predicted_value": 1922.46,
+      "tap_modulation_pct": 0.37
+    },
+    {
+      "date": "2026-07-11",
+      "phase_deg": 130.0,
+      "predicted_value": 1853.69,
+      "tap_modulation_pct": -3.22
+    },
+    {
+      "date": "2026-07-12",
+      "phase_deg": 174.4,
+      "predicted_value": 1820.01,
+      "tap_modulation_pct": -4.98
+    },
+    {
+      "date": "2026-07-13",
+      "phase_deg": -141.3,
+      "predicted_value": 1840.57,
+      "tap_modulation_pct": -3.9
+    },
+    {
+      "date": "2026-07-14",
+      "phase_deg": -97.0,
+      "predicted_value": 1903.69,
+      "tap_modulation_pct": -0.61
+    },
+    {
+      "date": "2026-07-15",
+      "phase_deg": -52.6,
+      "predicted_value": 1973.42,
+      "tap_modulation_pct": 3.03
+    },
+    {
+      "date": "2026-07-16",
+      "phase_deg": -8.3,
+      "predicted_value": 2010.07,
+      "tap_modulation_pct": 4.95
+    },
+    {
+      "date": "2026-07-17",
+      "phase_deg": 36.0,
+      "predicted_value": 1992.77,
+      "tap_modulation_pct": 4.04
+    },
+    {
+      "date": "2026-07-18",
+      "phase_deg": 80.3,
+      "predicted_value": 1931.38,
+      "tap_modulation_pct": 0.84
+    },
+    {
+      "date": "2026-07-19",
+      "phase_deg": 124.7,
+      "predicted_value": 1860.84,
+      "tap_modulation_pct": -2.84
+    },
+    {
+      "date": "2026-07-20",
+      "phase_deg": 169.0,
+      "predicted_value": 1821.31,
+      "tap_modulation_pct": -4.91
+    },
+    {
+      "date": "2026-07-21",
+      "phase_deg": -146.7,
+      "predicted_value": 1835.29,
+      "tap_modulation_pct": -4.18
+    },
+    {
+      "date": "2026-07-22",
+      "phase_deg": -102.3,
+      "predicted_value": 1894.83,
+      "tap_modulation_pct": -1.07
+    },
+    {
+      "date": "2026-07-23",
+      "phase_deg": -58.0,
+      "predicted_value": 1966.03,
+      "tap_modulation_pct": 2.65
+    },
+    {
+      "date": "2026-07-24",
+      "phase_deg": -13.7,
+      "predicted_value": 2008.35,
+      "tap_modulation_pct": 4.86
+    },
+    {
+      "date": "2026-07-25",
+      "phase_deg": 30.6,
+      "predicted_value": 1997.71,
+      "tap_modulation_pct": 4.3
+    },
+    {
+      "date": "2026-07-26",
+      "phase_deg": 75.0,
+      "predicted_value": 1940.16,
+      "tap_modulation_pct": 1.3
+    },
+    {
+      "date": "2026-07-27",
+      "phase_deg": 119.3,
+      "predicted_value": 1868.46,
+      "tap_modulation_pct": -2.45
+    },
+    {
+      "date": "2026-07-28",
+      "phase_deg": 163.6,
+      "predicted_value": 1823.43,
+      "tap_modulation_pct": -4.8
+    },
+    {
+      "date": "2026-07-29",
+      "phase_deg": -152.1,
+      "predicted_value": 1830.71,
+      "tap_modulation_pct": -4.42
+    },
+    {
+      "date": "2026-07-30",
+      "phase_deg": -107.7,
+      "predicted_value": 1886.15,
+      "tap_modulation_pct": -1.52
+    },
+    {
+      "date": "2026-07-31",
+      "phase_deg": -63.4,
+      "predicted_value": 1958.19,
+      "tap_modulation_pct": 2.24
+    }
+  ]
+}

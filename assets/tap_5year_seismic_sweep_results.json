@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-07-02T07:49:20.614895",
+  "back_window": {
+    "start": "2021-07-01T00:00:00",
+    "end": "2026-07-02T00:00:00",
+    "n_crossings": 225,
+    "n_actual_quakes": 2334,
+    "correlation": {
+      "n_crossings": 225,
+      "n_actual_quakes": 2334,
+      "n_quakes_within_24h": 558,
+      "n_hits_24h": 250,
+      "n_hits_12h": 124,
+      "n_hits_6h": 57,
+      "rayleigh_r": 0.7614,
+      "rayleigh_z": 323.4524,
+      "rayleigh_p": 0.0,
+      "mean_mag_at_crossings": 5.84,
+      "mean_mag_elsewhere": 5.87,
+      "yearly_hit_rates": {
+        "2021": 0.5455,
+        "2022": 0.4889,
+        "2023": 0.7111,
+        "2024": 0.6667,
+        "2025": 0.6,
+        "2026": 0.6522
+      }
+    }
+  },
+  "forward_window": {
+    "start": "2026-07-02T00:00:00",
+    "end": "2031-07-01T00:00:00",
+    "n_crossings": 224,
+    "mean_predicted_m_max": 6.8,
+    "max_predicted_m_max": 6.8,
+    "mean_stress_index_pct": 100.11,
+    "top_10_highest_m_max": [
+      {
+        "date": "2026-07-08 08:10:34",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1663
+      },
+      {
+        "date": "2026-07-16 14:23:39",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1668
+      },
+      {
+        "date": "2026-07-24 20:33:17",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1639
+      },
+      {
+        "date": "2026-08-02 02:35:29",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1578
+      },
+      {
+        "date": "2026-08-10 08:26:26",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1485
+      },
+      {
+        "date": "2026-08-18 14:02:34",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1362
+      },
+      {
+        "date": "2026-08-26 19:20:42",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1211
+      },
+      {
+        "date": "2026-09-04 00:17:59",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.1037
+      },
+      {
+        "date": "2026-09-12 04:52:07",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.0843
+      },
+      {
+        "date": "2026-09-20 09:01:12",
+        "predicted_max_m": 6.8,
+        "stress_index_pct": 100.0632
+      }
+    ]
+  },
+  "all_crossings_count": 449
+}

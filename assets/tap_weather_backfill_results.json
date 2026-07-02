@@ -1,0 +1,77 @@
+{
+  "Fresno": {
+    "params": {
+      "A": -0.14131778093613434,
+      "bias": -9.01637117661081,
+      "r_squared": 0.3739700152754617,
+      "n": 160
+    },
+    "n_train": 160,
+    "n_test": 40,
+    "test_mae_climatology": 6.969,
+    "test_mae_old_tap": 6.975,
+    "test_mae_recal": 13.212,
+    "improvement_vs_old_pct": -89.44,
+    "improvement_vs_climatology_pct": -89.58
+  },
+  "Tokyo": {
+    "params": {
+      "A": 0.004398277705593452,
+      "bias": -11.00557930718032,
+      "r_squared": 0.23563217526808855,
+      "n": 160
+    },
+    "n_train": 160,
+    "n_test": 40,
+    "test_mae_climatology": 7.211,
+    "test_mae_old_tap": 7.191,
+    "test_mae_recal": 13.838,
+    "improvement_vs_old_pct": -92.42,
+    "improvement_vs_climatology_pct": -91.91
+  },
+  "London": {
+    "params": {
+      "A": -0.07240179324774498,
+      "bias": -6.844878557428538,
+      "r_squared": 0.2841812244946228,
+      "n": 160
+    },
+    "n_train": 160,
+    "n_test": 40,
+    "test_mae_climatology": 10.382,
+    "test_mae_old_tap": 10.413,
+    "test_mae_recal": 18.744,
+    "improvement_vs_old_pct": -80.0,
+    "improvement_vs_climatology_pct": -80.55
+  },
+  "Singapore": {
+    "params": {
+      "A": 0.17632213343232273,
+      "bias": 2.3825536589646354,
+      "r_squared": 0.001233930800831562,
+      "n": 160
+    },
+    "n_train": 160,
+    "n_test": 40,
+    "test_mae_climatology": 1.853,
+    "test_mae_old_tap": 1.906,
+    "test_mae_recal": 3.579,
+    "improvement_vs_old_pct": -87.78,
+    "improvement_vs_climatology_pct": -93.18
+  },
+  "Sydney": {
+    "params": {
+      "A": 0.13124713136745514,
+      "bias": 9.289742576953776,
+      "r_squared": 0.18479591642636173,
+      "n": 160
+    },
+    "n_train": 160,
+    "n_test": 40,
+    "test_mae_climatology": 10.496,
+    "test_mae_old_tap": 10.498,
+    "test_mae_recal": 6.225,
+    "improvement_vs_old_pct": 40.7,
+    "improvement_vs_climatology_pct": 40.69
+  }
+}

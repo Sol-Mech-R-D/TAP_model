@@ -1,0 +1,178 @@
+{
+  "timestamp": "2026-07-02T07:51:36.124162",
+  "back_window": {
+    "start": "2021-07-01T00:00:00",
+    "end": "2026-07-02T00:00:00",
+    "n_actuals": 2334,
+    "n_predictions": 977,
+    "n_hits": 91,
+    "precision_pct": 9.3142,
+    "recall_pct": 3.8989
+  },
+  "forward_window": {
+    "start": "2026-07-02T00:00:00",
+    "end": "2026-08-02T00:00:00",
+    "predictions": [
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "region_type": "strike-slip",
+        "predicted_magnitude": 6.17,
+        "stress": 0.7483,
+        "probability": 0.4965
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "region_type": "strike-slip",
+        "predicted_magnitude": 6.17,
+        "stress": 0.7483,
+        "probability": 0.4967
+      },
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "region_type": "strike-slip",
+        "predicted_magnitude": 6.17,
+        "stress": 0.7485,
+        "probability": 0.4969
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "California Strike-Slip",
+        "lat": 35.5,
+        "lon": -120.0,
+        "region_type": "strike-slip",
+        "predicted_magnitude": 6.17,
+        "stress": 0.7484,
+        "probability": 0.4967
+      },
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "region_type": "rift",
+        "predicted_magnitude": 6.15,
+        "stress": 0.7981,
+        "probability": 0.5963
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "region_type": "rift",
+        "predicted_magnitude": 6.15,
+        "stress": 0.7982,
+        "probability": 0.5965
+      },
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "region_type": "rift",
+        "predicted_magnitude": 6.15,
+        "stress": 0.7983,
+        "probability": 0.5967
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "Mediterranean Rift",
+        "lat": 38.0,
+        "lon": 25.0,
+        "region_type": "rift",
+        "predicted_magnitude": 6.15,
+        "stress": 0.7983,
+        "probability": 0.5965
+      },
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "Indonesia Megathrust",
+        "lat": 0.0,
+        "lon": 110.0,
+        "region_type": "subduction",
+        "predicted_magnitude": 6.87,
+        "stress": 0.5487,
+        "probability": 0.0975
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "Indonesia Megathrust",
+        "lat": 0.0,
+        "lon": 110.0,
+        "region_type": "subduction",
+        "predicted_magnitude": 6.87,
+        "stress": 0.5488,
+        "probability": 0.0976
+      },
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "Indonesia Megathrust",
+        "lat": 0.0,
+        "lon": 110.0,
+        "region_type": "subduction",
+        "predicted_magnitude": 6.87,
+        "stress": 0.5489,
+        "probability": 0.0977
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "Indonesia Megathrust",
+        "lat": 0.0,
+        "lon": 110.0,
+        "region_type": "subduction",
+        "predicted_magnitude": 6.87,
+        "stress": 0.5488,
+        "probability": 0.0976
+      },
+      {
+        "time_utc": "2026-07-08 00:00:00",
+        "region": "Iran Fold Belt",
+        "lat": 32.0,
+        "lon": 53.0,
+        "region_type": "collision",
+        "predicted_magnitude": 6.02,
+        "stress": 0.6485,
+        "probability": 0.297
+      },
+      {
+        "time_utc": "2026-07-16 06:00:00",
+        "region": "Iran Fold Belt",
+        "lat": 32.0,
+        "lon": 53.0,
+        "region_type": "collision",
+        "predicted_magnitude": 6.02,
+        "stress": 0.6486,
+        "probability": 0.2971
+      },
+      {
+        "time_utc": "2026-07-24 06:00:00",
+        "region": "Iran Fold Belt",
+        "lat": 32.0,
+        "lon": 53.0,
+        "region_type": "collision",
+        "predicted_magnitude": 6.02,
+        "stress": 0.6487,
+        "probability": 0.2973
+      },
+      {
+        "time_utc": "2026-08-01 12:00:00",
+        "region": "Iran Fold Belt",
+        "lat": 32.0,
+        "lon": 53.0,
+        "region_type": "collision",
+        "predicted_magnitude": 6.02,
+        "stress": 0.6486,
+        "probability": 0.2972
+      }
+    ]
+  }
+}

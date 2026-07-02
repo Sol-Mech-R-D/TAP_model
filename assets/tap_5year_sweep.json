@@ -1,0 +1,3597 @@
+{
+  "total_crossings": 449,
+  "sweep": [
+    {
+      "step": -223,
+      "date_utc": "2021-07-07 00:34:07",
+      "interval_days": 8.2584,
+      "velocity_kms": 29.2857,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.166
+    },
+    {
+      "step": -222,
+      "date_utc": "2021-07-15 06:47:20",
+      "interval_days": 8.2592,
+      "velocity_kms": 29.2829,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1669
+    },
+    {
+      "step": -221,
+      "date_utc": "2021-07-23 12:57:38",
+      "interval_days": 8.2571,
+      "velocity_kms": 29.2902,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1645
+    },
+    {
+      "step": -220,
+      "date_utc": "2021-07-31 19:00:58",
+      "interval_days": 8.2523,
+      "velocity_kms": 29.3073,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1587
+    },
+    {
+      "step": -219,
+      "date_utc": "2021-08-09 00:53:32",
+      "interval_days": 8.2448,
+      "velocity_kms": 29.3339,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1498
+    },
+    {
+      "step": -218,
+      "date_utc": "2021-08-17 06:31:43",
+      "interval_days": 8.2349,
+      "velocity_kms": 29.3695,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1379
+    },
+    {
+      "step": -217,
+      "date_utc": "2021-08-25 11:52:16",
+      "interval_days": 8.2226,
+      "velocity_kms": 29.4132,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1232
+    },
+    {
+      "step": -216,
+      "date_utc": "2021-09-02 16:52:19",
+      "interval_days": 8.2084,
+      "velocity_kms": 29.4642,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.106
+    },
+    {
+      "step": -215,
+      "date_utc": "2021-09-10 21:29:27",
+      "interval_days": 8.1925,
+      "velocity_kms": 29.5214,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0868
+    },
+    {
+      "step": -214,
+      "date_utc": "2021-09-19 01:41:46",
+      "interval_days": 8.1752,
+      "velocity_kms": 29.5837,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0659
+    },
+    {
+      "step": -213,
+      "date_utc": "2021-09-27 05:27:54",
+      "interval_days": 8.157,
+      "velocity_kms": 29.6497,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0438
+    },
+    {
+      "step": -212,
+      "date_utc": "2021-10-05 08:46:59",
+      "interval_days": 8.1383,
+      "velocity_kms": 29.7181,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0208
+    },
+    {
+      "step": -211,
+      "date_utc": "2021-10-13 11:38:45",
+      "interval_days": 8.1193,
+      "velocity_kms": 29.7875,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0025
+    },
+    {
+      "step": -210,
+      "date_utc": "2021-10-21 14:03:25",
+      "interval_days": 8.1005,
+      "velocity_kms": 29.8567,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0258
+    },
+    {
+      "step": -209,
+      "date_utc": "2021-10-29 16:01:47",
+      "interval_days": 8.0822,
+      "velocity_kms": 29.9242,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0484
+    },
+    {
+      "step": -208,
+      "date_utc": "2021-11-06 17:35:05",
+      "interval_days": 8.0648,
+      "velocity_kms": 29.9888,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0701
+    },
+    {
+      "step": -207,
+      "date_utc": "2021-11-14 18:45:03",
+      "interval_days": 8.0486,
+      "velocity_kms": 30.0492,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0904
+    },
+    {
+      "step": -206,
+      "date_utc": "2021-11-22 19:33:46",
+      "interval_days": 8.0338,
+      "velocity_kms": 30.1043,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1089
+    },
+    {
+      "step": -205,
+      "date_utc": "2021-11-30 20:03:45",
+      "interval_days": 8.0208,
+      "velocity_kms": 30.1532,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1253
+    },
+    {
+      "step": -204,
+      "date_utc": "2021-12-08 20:17:48",
+      "interval_days": 8.0098,
+      "velocity_kms": 30.1948,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1393
+    },
+    {
+      "step": -203,
+      "date_utc": "2021-12-16 20:18:59",
+      "interval_days": 8.0008,
+      "velocity_kms": 30.2286,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1506
+    },
+    {
+      "step": -202,
+      "date_utc": "2021-12-24 20:10:33",
+      "interval_days": 7.9941,
+      "velocity_kms": 30.2538,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1591
+    },
+    {
+      "step": -201,
+      "date_utc": "2022-01-01 19:55:56",
+      "interval_days": 7.9899,
+      "velocity_kms": 30.27,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1646
+    },
+    {
+      "step": -200,
+      "date_utc": "2022-01-09 19:38:40",
+      "interval_days": 7.988,
+      "velocity_kms": 30.277,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1669
+    },
+    {
+      "step": -199,
+      "date_utc": "2022-01-17 19:22:18",
+      "interval_days": 7.9886,
+      "velocity_kms": 30.2747,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1661
+    },
+    {
+      "step": -198,
+      "date_utc": "2022-01-25 19:10:23",
+      "interval_days": 7.9917,
+      "velocity_kms": 30.263,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1622
+    },
+    {
+      "step": -197,
+      "date_utc": "2022-02-02 19:06:23",
+      "interval_days": 7.9972,
+      "velocity_kms": 30.2421,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1552
+    },
+    {
+      "step": -196,
+      "date_utc": "2022-02-10 19:13:39",
+      "interval_days": 8.0051,
+      "velocity_kms": 30.2126,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1453
+    },
+    {
+      "step": -195,
+      "date_utc": "2022-02-18 19:35:22",
+      "interval_days": 8.0151,
+      "velocity_kms": 30.1748,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1326
+    },
+    {
+      "step": -194,
+      "date_utc": "2022-02-26 20:14:26",
+      "interval_days": 8.0271,
+      "velocity_kms": 30.1295,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1174
+    },
+    {
+      "step": -193,
+      "date_utc": "2022-03-06 21:13:29",
+      "interval_days": 8.041,
+      "velocity_kms": 30.0775,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0999
+    },
+    {
+      "step": -192,
+      "date_utc": "2022-03-14 22:34:51",
+      "interval_days": 8.0565,
+      "velocity_kms": 30.0197,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0805
+    },
+    {
+      "step": -191,
+      "date_utc": "2022-03-23 00:20:24",
+      "interval_days": 8.0733,
+      "velocity_kms": 29.9572,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0595
+    },
+    {
+      "step": -190,
+      "date_utc": "2022-03-31 02:31:38",
+      "interval_days": 8.0911,
+      "velocity_kms": 29.8911,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0373
+    },
+    {
+      "step": -189,
+      "date_utc": "2022-04-08 05:09:34",
+      "interval_days": 8.1097,
+      "velocity_kms": 29.8228,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0144
+    },
+    {
+      "step": -188,
+      "date_utc": "2022-04-16 08:14:43",
+      "interval_days": 8.1286,
+      "velocity_kms": 29.7535,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0089
+    },
+    {
+      "step": -187,
+      "date_utc": "2022-04-24 11:47:02",
+      "interval_days": 8.1475,
+      "velocity_kms": 29.6845,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0321
+    },
+    {
+      "step": -186,
+      "date_utc": "2022-05-02 15:46:01",
+      "interval_days": 8.1659,
+      "velocity_kms": 29.6173,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0546
+    },
+    {
+      "step": -185,
+      "date_utc": "2022-05-10 20:10:31",
+      "interval_days": 8.1837,
+      "velocity_kms": 29.5531,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0762
+    },
+    {
+      "step": -184,
+      "date_utc": "2022-05-19 00:58:57",
+      "interval_days": 8.2003,
+      "velocity_kms": 29.4932,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0963
+    },
+    {
+      "step": -183,
+      "date_utc": "2022-05-27 06:09:08",
+      "interval_days": 8.2154,
+      "velocity_kms": 29.439,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1145
+    },
+    {
+      "step": -182,
+      "date_utc": "2022-06-04 11:38:29",
+      "interval_days": 8.2287,
+      "velocity_kms": 29.3914,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1305
+    },
+    {
+      "step": -181,
+      "date_utc": "2022-06-12 17:23:57",
+      "interval_days": 8.2399,
+      "velocity_kms": 29.3515,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1439
+    },
+    {
+      "step": -180,
+      "date_utc": "2022-06-20 23:22:05",
+      "interval_days": 8.2487,
+      "velocity_kms": 29.3201,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1544
+    },
+    {
+      "step": -179,
+      "date_utc": "2022-06-29 05:29:13",
+      "interval_days": 8.2549,
+      "velocity_kms": 29.298,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1619
+    },
+    {
+      "step": -178,
+      "date_utc": "2022-07-07 11:41:24",
+      "interval_days": 8.2585,
+      "velocity_kms": 29.2855,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1661
+    },
+    {
+      "step": -177,
+      "date_utc": "2022-07-15 17:54:37",
+      "interval_days": 8.2592,
+      "velocity_kms": 29.283,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1669
+    },
+    {
+      "step": -176,
+      "date_utc": "2022-07-24 00:04:46",
+      "interval_days": 8.2571,
+      "velocity_kms": 29.2905,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1644
+    },
+    {
+      "step": -175,
+      "date_utc": "2022-08-01 06:07:53",
+      "interval_days": 8.2522,
+      "velocity_kms": 29.3078,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1585
+    },
+    {
+      "step": -174,
+      "date_utc": "2022-08-09 12:00:08",
+      "interval_days": 8.2446,
+      "velocity_kms": 29.3347,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1495
+    },
+    {
+      "step": -173,
+      "date_utc": "2022-08-17 17:37:54",
+      "interval_days": 8.2346,
+      "velocity_kms": 29.3705,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1375
+    },
+    {
+      "step": -172,
+      "date_utc": "2022-08-25 22:57:58",
+      "interval_days": 8.2223,
+      "velocity_kms": 29.4144,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1228
+    },
+    {
+      "step": -171,
+      "date_utc": "2022-09-03 03:57:29",
+      "interval_days": 8.208,
+      "velocity_kms": 29.4656,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1056
+    },
+    {
+      "step": -170,
+      "date_utc": "2022-09-11 08:34:01",
+      "interval_days": 8.192,
+      "velocity_kms": 29.5229,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0863
+    },
+    {
+      "step": -169,
+      "date_utc": "2022-09-19 12:45:42",
+      "interval_days": 8.1748,
+      "velocity_kms": 29.5853,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0654
+    },
+    {
+      "step": -168,
+      "date_utc": "2022-09-27 16:31:09",
+      "interval_days": 8.1566,
+      "velocity_kms": 29.6514,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0432
+    },
+    {
+      "step": -167,
+      "date_utc": "2022-10-05 19:49:33",
+      "interval_days": 8.1378,
+      "velocity_kms": 29.7198,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0202
+    },
+    {
+      "step": -166,
+      "date_utc": "2022-10-13 22:40:37",
+      "interval_days": 8.1188,
+      "velocity_kms": 29.7893,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0031
+    },
+    {
+      "step": -165,
+      "date_utc": "2022-10-22 01:04:38",
+      "interval_days": 8.1,
+      "velocity_kms": 29.8584,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0263
+    },
+    {
+      "step": -164,
+      "date_utc": "2022-10-30 03:02:21",
+      "interval_days": 8.0817,
+      "velocity_kms": 29.9259,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.049
+    },
+    {
+      "step": -163,
+      "date_utc": "2022-11-07 04:35:02",
+      "interval_days": 8.0644,
+      "velocity_kms": 29.9903,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0706
+    },
+    {
+      "step": -162,
+      "date_utc": "2022-11-15 05:44:26",
+      "interval_days": 8.0482,
+      "velocity_kms": 30.0506,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0909
+    },
+    {
+      "step": -161,
+      "date_utc": "2022-11-23 06:32:40",
+      "interval_days": 8.0335,
+      "velocity_kms": 30.1056,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1093
+    },
+    {
+      "step": -160,
+      "date_utc": "2022-12-01 07:02:13",
+      "interval_days": 8.0205,
+      "velocity_kms": 30.1543,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1257
+    },
+    {
+      "step": -159,
+      "date_utc": "2022-12-09 07:15:54",
+      "interval_days": 8.0095,
+      "velocity_kms": 30.1958,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1396
+    },
+    {
+      "step": -158,
+      "date_utc": "2022-12-17 07:16:47",
+      "interval_days": 8.0006,
+      "velocity_kms": 30.2293,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1509
+    },
+    {
+      "step": -157,
+      "date_utc": "2022-12-25 07:08:09",
+      "interval_days": 7.994,
+      "velocity_kms": 30.2543,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1593
+    },
+    {
+      "step": -156,
+      "date_utc": "2023-01-02 06:53:26",
+      "interval_days": 7.9898,
+      "velocity_kms": 30.2703,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1647
+    },
+    {
+      "step": -155,
+      "date_utc": "2023-01-10 06:36:08",
+      "interval_days": 7.988,
+      "velocity_kms": 30.2771,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1669
+    },
+    {
+      "step": -154,
+      "date_utc": "2023-01-18 06:19:51",
+      "interval_days": 7.9887,
+      "velocity_kms": 30.2745,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.166
+    },
+    {
+      "step": -153,
+      "date_utc": "2023-01-26 06:08:05",
+      "interval_days": 7.9918,
+      "velocity_kms": 30.2625,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.162
+    },
+    {
+      "step": -152,
+      "date_utc": "2023-02-03 06:04:20",
+      "interval_days": 7.9974,
+      "velocity_kms": 30.2415,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.155
+    },
+    {
+      "step": -151,
+      "date_utc": "2023-02-11 06:11:56",
+      "interval_days": 8.0053,
+      "velocity_kms": 30.2117,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.145
+    },
+    {
+      "step": -150,
+      "date_utc": "2023-02-19 06:34:02",
+      "interval_days": 8.0154,
+      "velocity_kms": 30.1737,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1322
+    },
+    {
+      "step": -149,
+      "date_utc": "2023-02-27 07:13:34",
+      "interval_days": 8.0275,
+      "velocity_kms": 30.1283,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1169
+    },
+    {
+      "step": -148,
+      "date_utc": "2023-03-07 08:13:10",
+      "interval_days": 8.0414,
+      "velocity_kms": 30.0761,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0994
+    },
+    {
+      "step": -147,
+      "date_utc": "2023-03-15 09:35:06",
+      "interval_days": 8.0569,
+      "velocity_kms": 30.0181,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.08
+    },
+    {
+      "step": -146,
+      "date_utc": "2023-03-23 11:21:17",
+      "interval_days": 8.0737,
+      "velocity_kms": 29.9555,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0589
+    },
+    {
+      "step": -145,
+      "date_utc": "2023-03-31 13:33:11",
+      "interval_days": 8.0916,
+      "velocity_kms": 29.8894,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0367
+    },
+    {
+      "step": -144,
+      "date_utc": "2023-04-08 16:11:48",
+      "interval_days": 8.1101,
+      "velocity_kms": 29.8211,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0138
+    },
+    {
+      "step": -143,
+      "date_utc": "2023-04-16 19:17:38",
+      "interval_days": 8.129,
+      "velocity_kms": 29.7517,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0095
+    },
+    {
+      "step": -142,
+      "date_utc": "2023-04-24 22:50:38",
+      "interval_days": 8.1479,
+      "velocity_kms": 29.6828,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0326
+    },
+    {
+      "step": -141,
+      "date_utc": "2023-05-03 02:50:16",
+      "interval_days": 8.1664,
+      "velocity_kms": 29.6156,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0552
+    },
+    {
+      "step": -140,
+      "date_utc": "2023-05-11 07:15:24",
+      "interval_days": 8.1841,
+      "velocity_kms": 29.5515,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0767
+    },
+    {
+      "step": -139,
+      "date_utc": "2023-05-19 12:04:24",
+      "interval_days": 8.2007,
+      "velocity_kms": 29.4918,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0968
+    },
+    {
+      "step": -138,
+      "date_utc": "2023-05-27 17:15:06",
+      "interval_days": 8.2158,
+      "velocity_kms": 29.4377,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.115
+    },
+    {
+      "step": -137,
+      "date_utc": "2023-06-04 22:44:54",
+      "interval_days": 8.229,
+      "velocity_kms": 29.3903,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1309
+    },
+    {
+      "step": -136,
+      "date_utc": "2023-06-13 04:30:43",
+      "interval_days": 8.2402,
+      "velocity_kms": 29.3506,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1442
+    },
+    {
+      "step": -135,
+      "date_utc": "2023-06-21 10:29:08",
+      "interval_days": 8.2489,
+      "velocity_kms": 29.3194,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1547
+    },
+    {
+      "step": -134,
+      "date_utc": "2023-06-29 16:36:26",
+      "interval_days": 8.2551,
+      "velocity_kms": 29.2975,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.162
+    },
+    {
+      "step": -133,
+      "date_utc": "2023-07-07 22:48:42",
+      "interval_days": 8.2585,
+      "velocity_kms": 29.2853,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1661
+    },
+    {
+      "step": -132,
+      "date_utc": "2023-07-16 05:01:52",
+      "interval_days": 8.2592,
+      "velocity_kms": 29.2831,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1669
+    },
+    {
+      "step": -131,
+      "date_utc": "2023-07-24 11:11:54",
+      "interval_days": 8.257,
+      "velocity_kms": 29.2908,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1643
+    },
+    {
+      "step": -130,
+      "date_utc": "2023-08-01 17:14:48",
+      "interval_days": 8.252,
+      "velocity_kms": 29.3084,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1584
+    },
+    {
+      "step": -129,
+      "date_utc": "2023-08-09 23:06:43",
+      "interval_days": 8.2444,
+      "velocity_kms": 29.3355,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1493
+    },
+    {
+      "step": -128,
+      "date_utc": "2023-08-18 04:44:05",
+      "interval_days": 8.2343,
+      "velocity_kms": 29.3715,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1372
+    },
+    {
+      "step": -127,
+      "date_utc": "2023-08-26 10:03:40",
+      "interval_days": 8.2219,
+      "velocity_kms": 29.4156,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1224
+    },
+    {
+      "step": -126,
+      "date_utc": "2023-09-03 15:02:38",
+      "interval_days": 8.2076,
+      "velocity_kms": 29.467,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1051
+    },
+    {
+      "step": -125,
+      "date_utc": "2023-09-11 19:38:34",
+      "interval_days": 8.1916,
+      "velocity_kms": 29.5245,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0858
+    },
+    {
+      "step": -124,
+      "date_utc": "2023-09-19 23:49:36",
+      "interval_days": 8.1743,
+      "velocity_kms": 29.5869,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0648
+    },
+    {
+      "step": -123,
+      "date_utc": "2023-09-28 03:34:23",
+      "interval_days": 8.1561,
+      "velocity_kms": 29.6531,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0426
+    },
+    {
+      "step": -122,
+      "date_utc": "2023-10-06 06:52:06",
+      "interval_days": 8.1373,
+      "velocity_kms": 29.7215,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0196
+    },
+    {
+      "step": -121,
+      "date_utc": "2023-10-14 09:42:29",
+      "interval_days": 8.1183,
+      "velocity_kms": 29.791,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0037
+    },
+    {
+      "step": -120,
+      "date_utc": "2023-10-22 12:05:49",
+      "interval_days": 8.0995,
+      "velocity_kms": 29.8601,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0269
+    },
+    {
+      "step": -119,
+      "date_utc": "2023-10-30 14:02:53",
+      "interval_days": 8.0813,
+      "velocity_kms": 29.9275,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0495
+    },
+    {
+      "step": -118,
+      "date_utc": "2023-11-07 15:34:59",
+      "interval_days": 8.0639,
+      "velocity_kms": 29.9919,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0712
+    },
+    {
+      "step": -117,
+      "date_utc": "2023-11-15 16:43:49",
+      "interval_days": 8.0478,
+      "velocity_kms": 30.0521,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0914
+    },
+    {
+      "step": -116,
+      "date_utc": "2023-11-23 17:31:32",
+      "interval_days": 8.0331,
+      "velocity_kms": 30.1069,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1098
+    },
+    {
+      "step": -115,
+      "date_utc": "2023-12-01 18:00:39",
+      "interval_days": 8.0202,
+      "velocity_kms": 30.1554,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1261
+    },
+    {
+      "step": -114,
+      "date_utc": "2023-12-09 18:13:59",
+      "interval_days": 8.0093,
+      "velocity_kms": 30.1967,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1399
+    },
+    {
+      "step": -113,
+      "date_utc": "2023-12-17 18:14:35",
+      "interval_days": 8.0004,
+      "velocity_kms": 30.2301,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1511
+    },
+    {
+      "step": -112,
+      "date_utc": "2023-12-25 18:05:46",
+      "interval_days": 7.9939,
+      "velocity_kms": 30.2548,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1594
+    },
+    {
+      "step": -111,
+      "date_utc": "2024-01-02 17:50:56",
+      "interval_days": 7.9897,
+      "velocity_kms": 30.2706,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1647
+    },
+    {
+      "step": -110,
+      "date_utc": "2024-01-10 17:33:37",
+      "interval_days": 7.988,
+      "velocity_kms": 30.2771,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1669
+    },
+    {
+      "step": -109,
+      "date_utc": "2024-01-18 17:17:24",
+      "interval_days": 7.9887,
+      "velocity_kms": 30.2743,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.166
+    },
+    {
+      "step": -108,
+      "date_utc": "2024-01-26 17:05:47",
+      "interval_days": 7.9919,
+      "velocity_kms": 30.2621,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1619
+    },
+    {
+      "step": -107,
+      "date_utc": "2024-02-03 17:02:17",
+      "interval_days": 7.9976,
+      "velocity_kms": 30.2409,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1548
+    },
+    {
+      "step": -106,
+      "date_utc": "2024-02-11 17:10:13",
+      "interval_days": 8.0055,
+      "velocity_kms": 30.2109,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1447
+    },
+    {
+      "step": -105,
+      "date_utc": "2024-02-19 17:32:43",
+      "interval_days": 8.0156,
+      "velocity_kms": 30.1727,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1319
+    },
+    {
+      "step": -104,
+      "date_utc": "2024-02-27 18:12:44",
+      "interval_days": 8.0278,
+      "velocity_kms": 30.127,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1165
+    },
+    {
+      "step": -103,
+      "date_utc": "2024-03-06 19:12:51",
+      "interval_days": 8.0418,
+      "velocity_kms": 30.0747,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.099
+    },
+    {
+      "step": -102,
+      "date_utc": "2024-03-14 20:35:23",
+      "interval_days": 8.0573,
+      "velocity_kms": 30.0166,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0795
+    },
+    {
+      "step": -101,
+      "date_utc": "2024-03-22 22:22:12",
+      "interval_days": 8.0742,
+      "velocity_kms": 29.9539,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0584
+    },
+    {
+      "step": -100,
+      "date_utc": "2024-03-31 00:34:46",
+      "interval_days": 8.0921,
+      "velocity_kms": 29.8877,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0362
+    },
+    {
+      "step": -99,
+      "date_utc": "2024-04-08 03:14:03",
+      "interval_days": 8.1106,
+      "velocity_kms": 29.8193,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0132
+    },
+    {
+      "step": -98,
+      "date_utc": "2024-04-16 06:20:34",
+      "interval_days": 8.1295,
+      "velocity_kms": 29.75,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0101
+    },
+    {
+      "step": -97,
+      "date_utc": "2024-04-24 09:54:15",
+      "interval_days": 8.1484,
+      "velocity_kms": 29.6811,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0332
+    },
+    {
+      "step": -96,
+      "date_utc": "2024-05-02 13:54:32",
+      "interval_days": 8.1669,
+      "velocity_kms": 29.614,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0558
+    },
+    {
+      "step": -95,
+      "date_utc": "2024-05-10 18:20:17",
+      "interval_days": 8.1846,
+      "velocity_kms": 29.55,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0772
+    },
+    {
+      "step": -94,
+      "date_utc": "2024-05-18 23:09:51",
+      "interval_days": 8.2011,
+      "velocity_kms": 29.4904,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0973
+    },
+    {
+      "step": -93,
+      "date_utc": "2024-05-27 04:21:05",
+      "interval_days": 8.2161,
+      "velocity_kms": 29.4364,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1154
+    },
+    {
+      "step": -92,
+      "date_utc": "2024-06-04 09:51:19",
+      "interval_days": 8.2293,
+      "velocity_kms": 29.3892,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1312
+    },
+    {
+      "step": -91,
+      "date_utc": "2024-06-12 15:37:29",
+      "interval_days": 8.2404,
+      "velocity_kms": 29.3497,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1445
+    },
+    {
+      "step": -90,
+      "date_utc": "2024-06-20 21:36:11",
+      "interval_days": 8.2491,
+      "velocity_kms": 29.3188,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1549
+    },
+    {
+      "step": -89,
+      "date_utc": "2024-06-29 03:43:39",
+      "interval_days": 8.2552,
+      "velocity_kms": 29.2971,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1622
+    },
+    {
+      "step": -88,
+      "date_utc": "2024-07-07 09:55:59",
+      "interval_days": 8.2586,
+      "velocity_kms": 29.2851,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1662
+    },
+    {
+      "step": -87,
+      "date_utc": "2024-07-15 16:09:08",
+      "interval_days": 8.2591,
+      "velocity_kms": 29.2831,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1668
+    },
+    {
+      "step": -86,
+      "date_utc": "2024-07-23 22:19:02",
+      "interval_days": 8.2569,
+      "velocity_kms": 29.2911,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1642
+    },
+    {
+      "step": -85,
+      "date_utc": "2024-08-01 04:21:42",
+      "interval_days": 8.2518,
+      "velocity_kms": 29.309,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1582
+    },
+    {
+      "step": -84,
+      "date_utc": "2024-08-09 10:13:18",
+      "interval_days": 8.2442,
+      "velocity_kms": 29.3363,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.149
+    },
+    {
+      "step": -83,
+      "date_utc": "2024-08-17 15:50:16",
+      "interval_days": 8.234,
+      "velocity_kms": 29.3725,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1368
+    },
+    {
+      "step": -82,
+      "date_utc": "2024-08-25 21:09:22",
+      "interval_days": 8.2216,
+      "velocity_kms": 29.4168,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.122
+    },
+    {
+      "step": -81,
+      "date_utc": "2024-09-03 02:07:46",
+      "interval_days": 8.2072,
+      "velocity_kms": 29.4683,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1047
+    },
+    {
+      "step": -80,
+      "date_utc": "2024-09-11 06:43:06",
+      "interval_days": 8.1912,
+      "velocity_kms": 29.526,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0853
+    },
+    {
+      "step": -79,
+      "date_utc": "2024-09-19 10:53:29",
+      "interval_days": 8.1739,
+      "velocity_kms": 29.5885,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0643
+    },
+    {
+      "step": -78,
+      "date_utc": "2024-09-27 14:37:36",
+      "interval_days": 8.1556,
+      "velocity_kms": 29.6547,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0421
+    },
+    {
+      "step": -77,
+      "date_utc": "2024-10-05 17:54:37",
+      "interval_days": 8.1368,
+      "velocity_kms": 29.7233,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.019
+    },
+    {
+      "step": -76,
+      "date_utc": "2024-10-13 20:44:20",
+      "interval_days": 8.1178,
+      "velocity_kms": 29.7928,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0043
+    },
+    {
+      "step": -75,
+      "date_utc": "2024-10-21 23:06:59",
+      "interval_days": 8.0991,
+      "velocity_kms": 29.8618,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0275
+    },
+    {
+      "step": -74,
+      "date_utc": "2024-10-30 01:03:25",
+      "interval_days": 8.0809,
+      "velocity_kms": 29.9292,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0501
+    },
+    {
+      "step": -73,
+      "date_utc": "2024-11-07 02:34:54",
+      "interval_days": 8.0635,
+      "velocity_kms": 29.9935,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0717
+    },
+    {
+      "step": -72,
+      "date_utc": "2024-11-15 03:43:10",
+      "interval_days": 8.0474,
+      "velocity_kms": 30.0535,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0918
+    },
+    {
+      "step": -71,
+      "date_utc": "2024-11-23 04:30:24",
+      "interval_days": 8.0328,
+      "velocity_kms": 30.1082,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1102
+    },
+    {
+      "step": -70,
+      "date_utc": "2024-12-01 04:59:05",
+      "interval_days": 8.0199,
+      "velocity_kms": 30.1566,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1264
+    },
+    {
+      "step": -69,
+      "date_utc": "2024-12-09 05:12:03",
+      "interval_days": 8.009,
+      "velocity_kms": 30.1977,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1402
+    },
+    {
+      "step": -68,
+      "date_utc": "2024-12-17 05:12:23",
+      "interval_days": 8.0002,
+      "velocity_kms": 30.2308,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1514
+    },
+    {
+      "step": -67,
+      "date_utc": "2024-12-25 05:03:22",
+      "interval_days": 7.9937,
+      "velocity_kms": 30.2553,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1596
+    },
+    {
+      "step": -66,
+      "date_utc": "2025-01-02 04:48:26",
+      "interval_days": 7.9896,
+      "velocity_kms": 30.2709,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1648
+    },
+    {
+      "step": -65,
+      "date_utc": "2025-01-10 04:31:06",
+      "interval_days": 7.988,
+      "velocity_kms": 30.2772,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": -64,
+      "date_utc": "2025-01-18 04:14:57",
+      "interval_days": 7.9888,
+      "velocity_kms": 30.2741,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1659
+    },
+    {
+      "step": -63,
+      "date_utc": "2025-01-26 04:03:30",
+      "interval_days": 7.9921,
+      "velocity_kms": 30.2617,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1618
+    },
+    {
+      "step": -62,
+      "date_utc": "2025-02-03 04:00:15",
+      "interval_days": 7.9977,
+      "velocity_kms": 30.2402,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1545
+    },
+    {
+      "step": -61,
+      "date_utc": "2025-02-11 04:08:30",
+      "interval_days": 8.0057,
+      "velocity_kms": 30.21,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1444
+    },
+    {
+      "step": -60,
+      "date_utc": "2025-02-19 04:31:25",
+      "interval_days": 8.0159,
+      "velocity_kms": 30.1716,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1315
+    },
+    {
+      "step": -59,
+      "date_utc": "2025-02-27 05:11:54",
+      "interval_days": 8.0281,
+      "velocity_kms": 30.1258,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1161
+    },
+    {
+      "step": -58,
+      "date_utc": "2025-03-07 06:12:34",
+      "interval_days": 8.0421,
+      "velocity_kms": 30.0733,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0985
+    },
+    {
+      "step": -57,
+      "date_utc": "2025-03-15 07:35:41",
+      "interval_days": 8.0577,
+      "velocity_kms": 30.0151,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0789
+    },
+    {
+      "step": -56,
+      "date_utc": "2025-03-23 09:23:07",
+      "interval_days": 8.0746,
+      "velocity_kms": 29.9523,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0579
+    },
+    {
+      "step": -55,
+      "date_utc": "2025-03-31 11:36:21",
+      "interval_days": 8.0925,
+      "velocity_kms": 29.886,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0356
+    },
+    {
+      "step": -54,
+      "date_utc": "2025-04-08 14:16:19",
+      "interval_days": 8.1111,
+      "velocity_kms": 29.8176,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0126
+    },
+    {
+      "step": -53,
+      "date_utc": "2025-04-16 17:23:31",
+      "interval_days": 8.13,
+      "velocity_kms": 29.7483,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0107
+    },
+    {
+      "step": -52,
+      "date_utc": "2025-04-24 20:57:52",
+      "interval_days": 8.1489,
+      "velocity_kms": 29.6794,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0338
+    },
+    {
+      "step": -51,
+      "date_utc": "2025-05-03 00:58:49",
+      "interval_days": 8.1673,
+      "velocity_kms": 29.6123,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0563
+    },
+    {
+      "step": -50,
+      "date_utc": "2025-05-11 05:25:11",
+      "interval_days": 8.185,
+      "velocity_kms": 29.5484,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0778
+    },
+    {
+      "step": -49,
+      "date_utc": "2025-05-19 10:15:20",
+      "interval_days": 8.2015,
+      "velocity_kms": 29.4889,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0977
+    },
+    {
+      "step": -48,
+      "date_utc": "2025-05-27 15:27:04",
+      "interval_days": 8.2165,
+      "velocity_kms": 29.4351,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1158
+    },
+    {
+      "step": -47,
+      "date_utc": "2025-06-04 20:57:45",
+      "interval_days": 8.2296,
+      "velocity_kms": 29.3881,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1316
+    },
+    {
+      "step": -46,
+      "date_utc": "2025-06-13 02:44:17",
+      "interval_days": 8.2406,
+      "velocity_kms": 29.3488,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1448
+    },
+    {
+      "step": -45,
+      "date_utc": "2025-06-21 08:43:14",
+      "interval_days": 8.2493,
+      "velocity_kms": 29.3181,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1551
+    },
+    {
+      "step": -44,
+      "date_utc": "2025-06-29 14:50:52",
+      "interval_days": 8.2553,
+      "velocity_kms": 29.2967,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1623
+    },
+    {
+      "step": -43,
+      "date_utc": "2025-07-07 21:03:17",
+      "interval_days": 8.2586,
+      "velocity_kms": 29.285,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1662
+    },
+    {
+      "step": -42,
+      "date_utc": "2025-07-16 03:16:24",
+      "interval_days": 8.2591,
+      "velocity_kms": 29.2832,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1668
+    },
+    {
+      "step": -41,
+      "date_utc": "2025-07-24 09:26:10",
+      "interval_days": 8.2568,
+      "velocity_kms": 29.2915,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1641
+    },
+    {
+      "step": -40,
+      "date_utc": "2025-08-01 15:28:36",
+      "interval_days": 8.2517,
+      "velocity_kms": 29.3095,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.158
+    },
+    {
+      "step": -39,
+      "date_utc": "2025-08-09 21:19:52",
+      "interval_days": 8.2439,
+      "velocity_kms": 29.3371,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1487
+    },
+    {
+      "step": -38,
+      "date_utc": "2025-08-18 02:56:25",
+      "interval_days": 8.2337,
+      "velocity_kms": 29.3735,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1365
+    },
+    {
+      "step": -37,
+      "date_utc": "2025-08-26 08:15:02",
+      "interval_days": 8.2213,
+      "velocity_kms": 29.418,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1215
+    },
+    {
+      "step": -36,
+      "date_utc": "2025-09-03 13:12:53",
+      "interval_days": 8.2068,
+      "velocity_kms": 29.4697,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1042
+    },
+    {
+      "step": -35,
+      "date_utc": "2025-09-11 17:47:37",
+      "interval_days": 8.1908,
+      "velocity_kms": 29.5275,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0848
+    },
+    {
+      "step": -34,
+      "date_utc": "2025-09-19 21:57:21",
+      "interval_days": 8.1734,
+      "velocity_kms": 29.5902,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0637
+    },
+    {
+      "step": -33,
+      "date_utc": "2025-09-28 01:40:47",
+      "interval_days": 8.1552,
+      "velocity_kms": 29.6564,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0415
+    },
+    {
+      "step": -32,
+      "date_utc": "2025-10-06 04:57:08",
+      "interval_days": 8.1364,
+      "velocity_kms": 29.725,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0185
+    },
+    {
+      "step": -31,
+      "date_utc": "2025-10-14 07:46:09",
+      "interval_days": 8.1174,
+      "velocity_kms": 29.7945,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0049
+    },
+    {
+      "step": -30,
+      "date_utc": "2025-10-22 10:08:09",
+      "interval_days": 8.0986,
+      "velocity_kms": 29.8636,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0281
+    },
+    {
+      "step": -29,
+      "date_utc": "2025-10-30 12:03:56",
+      "interval_days": 8.0804,
+      "velocity_kms": 29.9308,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0506
+    },
+    {
+      "step": -28,
+      "date_utc": "2025-11-07 13:34:48",
+      "interval_days": 8.0631,
+      "velocity_kms": 29.995,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0722
+    },
+    {
+      "step": -27,
+      "date_utc": "2025-11-15 14:42:31",
+      "interval_days": 8.047,
+      "velocity_kms": 30.055,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0923
+    },
+    {
+      "step": -26,
+      "date_utc": "2025-11-23 15:29:15",
+      "interval_days": 8.0324,
+      "velocity_kms": 30.1095,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1107
+    },
+    {
+      "step": -25,
+      "date_utc": "2025-12-01 15:57:30",
+      "interval_days": 8.0196,
+      "velocity_kms": 30.1577,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1268
+    },
+    {
+      "step": -24,
+      "date_utc": "2025-12-09 16:10:07",
+      "interval_days": 8.0088,
+      "velocity_kms": 30.1986,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1406
+    },
+    {
+      "step": -23,
+      "date_utc": "2025-12-17 16:10:10",
+      "interval_days": 8.0,
+      "velocity_kms": 30.2315,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1516
+    },
+    {
+      "step": -22,
+      "date_utc": "2025-12-25 16:00:58",
+      "interval_days": 7.9936,
+      "velocity_kms": 30.2558,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1598
+    },
+    {
+      "step": -21,
+      "date_utc": "2026-01-02 15:45:55",
+      "interval_days": 7.9896,
+      "velocity_kms": 30.2712,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1649
+    },
+    {
+      "step": -20,
+      "date_utc": "2026-01-10 15:28:35",
+      "interval_days": 7.988,
+      "velocity_kms": 30.2772,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": -19,
+      "date_utc": "2026-01-18 15:12:30",
+      "interval_days": 7.9888,
+      "velocity_kms": 30.2739,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1659
+    },
+    {
+      "step": -18,
+      "date_utc": "2026-01-26 15:01:14",
+      "interval_days": 7.9922,
+      "velocity_kms": 30.2613,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1616
+    },
+    {
+      "step": -17,
+      "date_utc": "2026-02-03 14:58:13",
+      "interval_days": 7.9979,
+      "velocity_kms": 30.2396,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1543
+    },
+    {
+      "step": -16,
+      "date_utc": "2026-02-11 15:06:48",
+      "interval_days": 8.006,
+      "velocity_kms": 30.2091,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1441
+    },
+    {
+      "step": -15,
+      "date_utc": "2026-02-19 15:30:07",
+      "interval_days": 8.0162,
+      "velocity_kms": 30.1706,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1312
+    },
+    {
+      "step": -14,
+      "date_utc": "2026-02-27 16:11:05",
+      "interval_days": 8.0284,
+      "velocity_kms": 30.1245,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1157
+    },
+    {
+      "step": -13,
+      "date_utc": "2026-03-07 17:12:17",
+      "interval_days": 8.0425,
+      "velocity_kms": 30.0719,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.098
+    },
+    {
+      "step": -12,
+      "date_utc": "2026-03-15 18:35:59",
+      "interval_days": 8.0581,
+      "velocity_kms": 30.0136,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0784
+    },
+    {
+      "step": -11,
+      "date_utc": "2026-03-23 20:24:04",
+      "interval_days": 8.0751,
+      "velocity_kms": 29.9507,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0573
+    },
+    {
+      "step": -10,
+      "date_utc": "2026-03-31 22:37:57",
+      "interval_days": 8.093,
+      "velocity_kms": 29.8843,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.035
+    },
+    {
+      "step": -9,
+      "date_utc": "2026-04-09 01:18:36",
+      "interval_days": 8.1116,
+      "velocity_kms": 29.8159,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.012
+    },
+    {
+      "step": -8,
+      "date_utc": "2026-04-17 04:26:29",
+      "interval_days": 8.1305,
+      "velocity_kms": 29.7465,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0112
+    },
+    {
+      "step": -7,
+      "date_utc": "2026-04-25 08:01:31",
+      "interval_days": 8.1493,
+      "velocity_kms": 29.6777,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0344
+    },
+    {
+      "step": -6,
+      "date_utc": "2026-05-03 12:03:07",
+      "interval_days": 8.1678,
+      "velocity_kms": 29.6107,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0569
+    },
+    {
+      "step": -5,
+      "date_utc": "2026-05-11 16:30:06",
+      "interval_days": 8.1854,
+      "velocity_kms": 29.5469,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0783
+    },
+    {
+      "step": -4,
+      "date_utc": "2026-05-19 21:20:49",
+      "interval_days": 8.2019,
+      "velocity_kms": 29.4875,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0982
+    },
+    {
+      "step": -3,
+      "date_utc": "2026-05-28 02:33:04",
+      "interval_days": 8.2168,
+      "velocity_kms": 29.4339,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1162
+    },
+    {
+      "step": -2,
+      "date_utc": "2026-06-05 08:04:11",
+      "interval_days": 8.2299,
+      "velocity_kms": 29.387,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.132
+    },
+    {
+      "step": -1,
+      "date_utc": "2026-06-13 13:51:04",
+      "interval_days": 8.2409,
+      "velocity_kms": 29.3479,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1451
+    },
+    {
+      "step": 0,
+      "date_utc": "2026-06-21 19:50:17",
+      "interval_days": 8.2495,
+      "velocity_kms": 29.3175,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1553
+    },
+    {
+      "step": 1,
+      "date_utc": "2026-06-30 01:58:06",
+      "interval_days": 8.2554,
+      "velocity_kms": 29.2963,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1624
+    },
+    {
+      "step": 2,
+      "date_utc": "2026-07-08 08:10:34",
+      "interval_days": 8.2587,
+      "velocity_kms": 29.2848,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1663
+    },
+    {
+      "step": 3,
+      "date_utc": "2026-07-16 14:23:39",
+      "interval_days": 8.2591,
+      "velocity_kms": 29.2833,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1668
+    },
+    {
+      "step": 4,
+      "date_utc": "2026-07-24 20:33:17",
+      "interval_days": 8.2567,
+      "velocity_kms": 29.2918,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1639
+    },
+    {
+      "step": 5,
+      "date_utc": "2026-08-02 02:35:29",
+      "interval_days": 8.2515,
+      "velocity_kms": 29.3101,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1578
+    },
+    {
+      "step": 6,
+      "date_utc": "2026-08-10 08:26:26",
+      "interval_days": 8.2437,
+      "velocity_kms": 29.3379,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1485
+    },
+    {
+      "step": 7,
+      "date_utc": "2026-08-18 14:02:34",
+      "interval_days": 8.2334,
+      "velocity_kms": 29.3745,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1362
+    },
+    {
+      "step": 8,
+      "date_utc": "2026-08-26 19:20:42",
+      "interval_days": 8.2209,
+      "velocity_kms": 29.4192,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1211
+    },
+    {
+      "step": 9,
+      "date_utc": "2026-09-04 00:17:59",
+      "interval_days": 8.2065,
+      "velocity_kms": 29.4711,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1037
+    },
+    {
+      "step": 10,
+      "date_utc": "2026-09-12 04:52:07",
+      "interval_days": 8.1904,
+      "velocity_kms": 29.529,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0843
+    },
+    {
+      "step": 11,
+      "date_utc": "2026-09-20 09:01:12",
+      "interval_days": 8.173,
+      "velocity_kms": 29.5918,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0632
+    },
+    {
+      "step": 12,
+      "date_utc": "2026-09-28 12:43:58",
+      "interval_days": 8.1547,
+      "velocity_kms": 29.6581,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0409
+    },
+    {
+      "step": 13,
+      "date_utc": "2026-10-06 15:59:38",
+      "interval_days": 8.1359,
+      "velocity_kms": 29.7268,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0179
+    },
+    {
+      "step": 14,
+      "date_utc": "2026-10-14 18:47:58",
+      "interval_days": 8.1169,
+      "velocity_kms": 29.7963,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0055
+    },
+    {
+      "step": 15,
+      "date_utc": "2026-10-22 21:09:17",
+      "interval_days": 8.0981,
+      "velocity_kms": 29.8653,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0286
+    },
+    {
+      "step": 16,
+      "date_utc": "2026-10-30 23:04:25",
+      "interval_days": 8.08,
+      "velocity_kms": 29.9325,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0512
+    },
+    {
+      "step": 17,
+      "date_utc": "2026-11-08 00:34:42",
+      "interval_days": 8.0627,
+      "velocity_kms": 29.9966,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0727
+    },
+    {
+      "step": 18,
+      "date_utc": "2026-11-16 01:41:52",
+      "interval_days": 8.0466,
+      "velocity_kms": 30.0564,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0928
+    },
+    {
+      "step": 19,
+      "date_utc": "2026-11-24 02:28:05",
+      "interval_days": 8.0321,
+      "velocity_kms": 30.1108,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1111
+    },
+    {
+      "step": 20,
+      "date_utc": "2026-12-02 02:55:55",
+      "interval_days": 8.0193,
+      "velocity_kms": 30.1588,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1272
+    },
+    {
+      "step": 21,
+      "date_utc": "2026-12-10 03:08:10",
+      "interval_days": 8.0085,
+      "velocity_kms": 30.1995,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1409
+    },
+    {
+      "step": 22,
+      "date_utc": "2026-12-18 03:07:57",
+      "interval_days": 7.9998,
+      "velocity_kms": 30.2322,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1519
+    },
+    {
+      "step": 23,
+      "date_utc": "2026-12-26 02:58:33",
+      "interval_days": 7.9935,
+      "velocity_kms": 30.2563,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.16
+    },
+    {
+      "step": 24,
+      "date_utc": "2027-01-03 02:43:25",
+      "interval_days": 7.9895,
+      "velocity_kms": 30.2714,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.165
+    },
+    {
+      "step": 25,
+      "date_utc": "2027-01-11 02:26:04",
+      "interval_days": 7.9879,
+      "velocity_kms": 30.2773,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": 26,
+      "date_utc": "2027-01-19 02:10:04",
+      "interval_days": 7.9889,
+      "velocity_kms": 30.2737,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1658
+    },
+    {
+      "step": 27,
+      "date_utc": "2027-01-27 01:58:57",
+      "interval_days": 7.9923,
+      "velocity_kms": 30.2608,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1615
+    },
+    {
+      "step": 28,
+      "date_utc": "2027-02-04 01:56:11",
+      "interval_days": 7.9981,
+      "velocity_kms": 30.2389,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1541
+    },
+    {
+      "step": 29,
+      "date_utc": "2027-02-12 02:05:06",
+      "interval_days": 8.0062,
+      "velocity_kms": 30.2083,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1438
+    },
+    {
+      "step": 30,
+      "date_utc": "2027-02-20 02:28:50",
+      "interval_days": 8.0165,
+      "velocity_kms": 30.1695,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1308
+    },
+    {
+      "step": 31,
+      "date_utc": "2027-02-28 03:10:17",
+      "interval_days": 8.0288,
+      "velocity_kms": 30.1233,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1153
+    },
+    {
+      "step": 32,
+      "date_utc": "2027-03-08 04:12:01",
+      "interval_days": 8.0429,
+      "velocity_kms": 30.0705,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0975
+    },
+    {
+      "step": 33,
+      "date_utc": "2027-03-16 05:36:19",
+      "interval_days": 8.0585,
+      "velocity_kms": 30.012,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0779
+    },
+    {
+      "step": 34,
+      "date_utc": "2027-03-24 07:25:01",
+      "interval_days": 8.0755,
+      "velocity_kms": 29.949,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0568
+    },
+    {
+      "step": 35,
+      "date_utc": "2027-04-01 09:39:34",
+      "interval_days": 8.0934,
+      "velocity_kms": 29.8826,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0345
+    },
+    {
+      "step": 36,
+      "date_utc": "2027-04-09 12:20:54",
+      "interval_days": 8.112,
+      "velocity_kms": 29.8141,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0115
+    },
+    {
+      "step": 37,
+      "date_utc": "2027-04-17 15:29:28",
+      "interval_days": 8.1309,
+      "velocity_kms": 29.7448,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0118
+    },
+    {
+      "step": 38,
+      "date_utc": "2027-04-25 19:05:11",
+      "interval_days": 8.1498,
+      "velocity_kms": 29.676,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0349
+    },
+    {
+      "step": 39,
+      "date_utc": "2027-05-03 23:07:26",
+      "interval_days": 8.1682,
+      "velocity_kms": 29.609,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0574
+    },
+    {
+      "step": 40,
+      "date_utc": "2027-05-12 03:35:02",
+      "interval_days": 8.1858,
+      "velocity_kms": 29.5453,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0788
+    },
+    {
+      "step": 41,
+      "date_utc": "2027-05-20 08:26:20",
+      "interval_days": 8.2023,
+      "velocity_kms": 29.4861,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0987
+    },
+    {
+      "step": 42,
+      "date_utc": "2027-05-28 13:39:05",
+      "interval_days": 8.2172,
+      "velocity_kms": 29.4326,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1167
+    },
+    {
+      "step": 43,
+      "date_utc": "2027-06-05 19:10:38",
+      "interval_days": 8.2302,
+      "velocity_kms": 29.3859,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1323
+    },
+    {
+      "step": 44,
+      "date_utc": "2027-06-14 00:57:52",
+      "interval_days": 8.2411,
+      "velocity_kms": 29.3471,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1454
+    },
+    {
+      "step": 45,
+      "date_utc": "2027-06-22 06:57:21",
+      "interval_days": 8.2496,
+      "velocity_kms": 29.3168,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1555
+    },
+    {
+      "step": 46,
+      "date_utc": "2027-06-30 13:05:20",
+      "interval_days": 8.2555,
+      "velocity_kms": 29.2959,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1626
+    },
+    {
+      "step": 47,
+      "date_utc": "2027-07-08 19:17:52",
+      "interval_days": 8.2587,
+      "velocity_kms": 29.2846,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1663
+    },
+    {
+      "step": 48,
+      "date_utc": "2027-07-17 01:30:55",
+      "interval_days": 8.2591,
+      "velocity_kms": 29.2834,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1668
+    },
+    {
+      "step": 49,
+      "date_utc": "2027-07-25 07:40:25",
+      "interval_days": 8.2566,
+      "velocity_kms": 29.2921,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1638
+    },
+    {
+      "step": 50,
+      "date_utc": "2027-08-02 13:42:22",
+      "interval_days": 8.2514,
+      "velocity_kms": 29.3107,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1576
+    },
+    {
+      "step": 51,
+      "date_utc": "2027-08-10 19:32:59",
+      "interval_days": 8.2435,
+      "velocity_kms": 29.3387,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1482
+    },
+    {
+      "step": 52,
+      "date_utc": "2027-08-19 01:08:43",
+      "interval_days": 8.2331,
+      "velocity_kms": 29.3756,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1358
+    },
+    {
+      "step": 53,
+      "date_utc": "2027-08-27 06:26:20",
+      "interval_days": 8.2206,
+      "velocity_kms": 29.4205,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1207
+    },
+    {
+      "step": 54,
+      "date_utc": "2027-09-04 11:23:05",
+      "interval_days": 8.2061,
+      "velocity_kms": 29.4725,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1033
+    },
+    {
+      "step": 55,
+      "date_utc": "2027-09-12 15:56:36",
+      "interval_days": 8.1899,
+      "velocity_kms": 29.5305,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0838
+    },
+    {
+      "step": 56,
+      "date_utc": "2027-09-20 20:05:03",
+      "interval_days": 8.1725,
+      "velocity_kms": 29.5934,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0627
+    },
+    {
+      "step": 57,
+      "date_utc": "2027-09-28 23:47:08",
+      "interval_days": 8.1542,
+      "velocity_kms": 29.6598,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0403
+    },
+    {
+      "step": 58,
+      "date_utc": "2027-10-07 03:02:06",
+      "interval_days": 8.1354,
+      "velocity_kms": 29.7285,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0173
+    },
+    {
+      "step": 59,
+      "date_utc": "2027-10-15 05:49:45",
+      "interval_days": 8.1164,
+      "velocity_kms": 29.798,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.006
+    },
+    {
+      "step": 60,
+      "date_utc": "2027-10-23 08:10:25",
+      "interval_days": 8.0977,
+      "velocity_kms": 29.867,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0292
+    },
+    {
+      "step": 61,
+      "date_utc": "2027-10-31 10:04:54",
+      "interval_days": 8.0795,
+      "velocity_kms": 29.9341,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0518
+    },
+    {
+      "step": 62,
+      "date_utc": "2027-11-08 11:34:34",
+      "interval_days": 8.0623,
+      "velocity_kms": 29.9982,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0733
+    },
+    {
+      "step": 63,
+      "date_utc": "2027-11-16 12:41:11",
+      "interval_days": 8.0463,
+      "velocity_kms": 30.0578,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0933
+    },
+    {
+      "step": 64,
+      "date_utc": "2027-11-24 13:26:55",
+      "interval_days": 8.0318,
+      "velocity_kms": 30.1121,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1115
+    },
+    {
+      "step": 65,
+      "date_utc": "2027-12-02 13:54:19",
+      "interval_days": 8.019,
+      "velocity_kms": 30.1599,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1276
+    },
+    {
+      "step": 66,
+      "date_utc": "2027-12-10 14:06:13",
+      "interval_days": 8.0083,
+      "velocity_kms": 30.2004,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1412
+    },
+    {
+      "step": 67,
+      "date_utc": "2027-12-18 14:05:44",
+      "interval_days": 7.9997,
+      "velocity_kms": 30.2329,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1521
+    },
+    {
+      "step": 68,
+      "date_utc": "2027-12-26 13:56:09",
+      "interval_days": 7.9933,
+      "velocity_kms": 30.2568,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1601
+    },
+    {
+      "step": 69,
+      "date_utc": "2028-01-03 13:40:55",
+      "interval_days": 7.9894,
+      "velocity_kms": 30.2717,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1651
+    },
+    {
+      "step": 70,
+      "date_utc": "2028-01-11 13:23:33",
+      "interval_days": 7.9879,
+      "velocity_kms": 30.2773,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": 71,
+      "date_utc": "2028-01-19 13:07:37",
+      "interval_days": 7.9889,
+      "velocity_kms": 30.2735,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1657
+    },
+    {
+      "step": 72,
+      "date_utc": "2028-01-27 12:56:41",
+      "interval_days": 7.9924,
+      "velocity_kms": 30.2604,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1613
+    },
+    {
+      "step": 73,
+      "date_utc": "2028-02-04 12:54:10",
+      "interval_days": 7.9983,
+      "velocity_kms": 30.2382,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1539
+    },
+    {
+      "step": 74,
+      "date_utc": "2028-02-12 13:03:26",
+      "interval_days": 8.0064,
+      "velocity_kms": 30.2074,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1435
+    },
+    {
+      "step": 75,
+      "date_utc": "2028-02-20 13:27:34",
+      "interval_days": 8.0168,
+      "velocity_kms": 30.1684,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1304
+    },
+    {
+      "step": 76,
+      "date_utc": "2028-02-28 14:09:29",
+      "interval_days": 8.0291,
+      "velocity_kms": 30.122,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1149
+    },
+    {
+      "step": 77,
+      "date_utc": "2028-03-07 15:11:46",
+      "interval_days": 8.0433,
+      "velocity_kms": 30.0691,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0971
+    },
+    {
+      "step": 78,
+      "date_utc": "2028-03-15 16:36:39",
+      "interval_days": 8.0589,
+      "velocity_kms": 30.0105,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0774
+    },
+    {
+      "step": 79,
+      "date_utc": "2028-03-23 18:26:00",
+      "interval_days": 8.0759,
+      "velocity_kms": 29.9474,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0562
+    },
+    {
+      "step": 80,
+      "date_utc": "2028-03-31 20:41:12",
+      "interval_days": 8.0939,
+      "velocity_kms": 29.8809,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0339
+    },
+    {
+      "step": 81,
+      "date_utc": "2028-04-08 23:23:13",
+      "interval_days": 8.1125,
+      "velocity_kms": 29.8124,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0109
+    },
+    {
+      "step": 82,
+      "date_utc": "2028-04-17 02:32:28",
+      "interval_days": 8.1314,
+      "velocity_kms": 29.743,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0124
+    },
+    {
+      "step": 83,
+      "date_utc": "2028-04-25 06:08:52",
+      "interval_days": 8.1503,
+      "velocity_kms": 29.6742,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0355
+    },
+    {
+      "step": 84,
+      "date_utc": "2028-05-03 10:11:45",
+      "interval_days": 8.1687,
+      "velocity_kms": 29.6074,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.058
+    },
+    {
+      "step": 85,
+      "date_utc": "2028-05-11 14:39:59",
+      "interval_days": 8.1863,
+      "velocity_kms": 29.5438,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0793
+    },
+    {
+      "step": 86,
+      "date_utc": "2028-05-19 19:31:51",
+      "interval_days": 8.2027,
+      "velocity_kms": 29.4847,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0992
+    },
+    {
+      "step": 87,
+      "date_utc": "2028-05-28 00:45:06",
+      "interval_days": 8.2175,
+      "velocity_kms": 29.4313,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1171
+    },
+    {
+      "step": 88,
+      "date_utc": "2028-06-05 06:17:05",
+      "interval_days": 8.2305,
+      "velocity_kms": 29.3848,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1327
+    },
+    {
+      "step": 89,
+      "date_utc": "2028-06-13 12:04:41",
+      "interval_days": 8.2414,
+      "velocity_kms": 29.3462,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1457
+    },
+    {
+      "step": 90,
+      "date_utc": "2028-06-21 18:04:25",
+      "interval_days": 8.2498,
+      "velocity_kms": 29.3162,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1557
+    },
+    {
+      "step": 91,
+      "date_utc": "2028-06-30 00:12:34",
+      "interval_days": 8.2557,
+      "velocity_kms": 29.2955,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1627
+    },
+    {
+      "step": 92,
+      "date_utc": "2028-07-08 06:25:10",
+      "interval_days": 8.2588,
+      "velocity_kms": 29.2845,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1664
+    },
+    {
+      "step": 93,
+      "date_utc": "2028-07-16 12:38:10",
+      "interval_days": 8.259,
+      "velocity_kms": 29.2835,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1667
+    },
+    {
+      "step": 94,
+      "date_utc": "2028-07-24 18:47:31",
+      "interval_days": 8.2565,
+      "velocity_kms": 29.2925,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1637
+    },
+    {
+      "step": 95,
+      "date_utc": "2028-08-02 00:49:14",
+      "interval_days": 8.2512,
+      "velocity_kms": 29.3113,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1574
+    },
+    {
+      "step": 96,
+      "date_utc": "2028-08-10 06:39:31",
+      "interval_days": 8.2433,
+      "velocity_kms": 29.3395,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1479
+    },
+    {
+      "step": 97,
+      "date_utc": "2028-08-18 12:14:50",
+      "interval_days": 8.2329,
+      "velocity_kms": 29.3766,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1355
+    },
+    {
+      "step": 98,
+      "date_utc": "2028-08-26 17:31:59",
+      "interval_days": 8.2202,
+      "velocity_kms": 29.4217,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1203
+    },
+    {
+      "step": 99,
+      "date_utc": "2028-09-03 22:28:10",
+      "interval_days": 8.2057,
+      "velocity_kms": 29.4739,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1028
+    },
+    {
+      "step": 100,
+      "date_utc": "2028-09-12 03:01:04",
+      "interval_days": 8.1895,
+      "velocity_kms": 29.5321,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0833
+    },
+    {
+      "step": 101,
+      "date_utc": "2028-09-20 07:08:52",
+      "interval_days": 8.1721,
+      "velocity_kms": 29.595,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0621
+    },
+    {
+      "step": 102,
+      "date_utc": "2028-09-28 10:50:17",
+      "interval_days": 8.1538,
+      "velocity_kms": 29.6616,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0398
+    },
+    {
+      "step": 103,
+      "date_utc": "2028-10-06 14:04:34",
+      "interval_days": 8.1349,
+      "velocity_kms": 29.7302,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0167
+    },
+    {
+      "step": 104,
+      "date_utc": "2028-10-14 16:51:32",
+      "interval_days": 8.1159,
+      "velocity_kms": 29.7997,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0066
+    },
+    {
+      "step": 105,
+      "date_utc": "2028-10-22 19:11:31",
+      "interval_days": 8.0972,
+      "velocity_kms": 29.8687,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0298
+    },
+    {
+      "step": 106,
+      "date_utc": "2028-10-30 21:05:22",
+      "interval_days": 8.0791,
+      "velocity_kms": 29.9358,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0523
+    },
+    {
+      "step": 107,
+      "date_utc": "2028-11-07 22:34:26",
+      "interval_days": 8.0619,
+      "velocity_kms": 29.9997,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0738
+    },
+    {
+      "step": 108,
+      "date_utc": "2028-11-15 23:40:30",
+      "interval_days": 8.0459,
+      "velocity_kms": 30.0593,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0938
+    },
+    {
+      "step": 109,
+      "date_utc": "2028-11-24 00:25:44",
+      "interval_days": 8.0314,
+      "velocity_kms": 30.1134,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1119
+    },
+    {
+      "step": 110,
+      "date_utc": "2028-12-02 00:52:43",
+      "interval_days": 8.0187,
+      "velocity_kms": 30.161,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1279
+    },
+    {
+      "step": 111,
+      "date_utc": "2028-12-10 01:04:16",
+      "interval_days": 8.008,
+      "velocity_kms": 30.2014,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1415
+    },
+    {
+      "step": 112,
+      "date_utc": "2028-12-18 01:03:30",
+      "interval_days": 7.9995,
+      "velocity_kms": 30.2336,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1523
+    },
+    {
+      "step": 113,
+      "date_utc": "2028-12-26 00:53:44",
+      "interval_days": 7.9932,
+      "velocity_kms": 30.2573,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1603
+    },
+    {
+      "step": 114,
+      "date_utc": "2029-01-03 00:38:24",
+      "interval_days": 7.9893,
+      "velocity_kms": 30.272,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1652
+    },
+    {
+      "step": 115,
+      "date_utc": "2029-01-11 00:21:02",
+      "interval_days": 7.9879,
+      "velocity_kms": 30.2773,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": 116,
+      "date_utc": "2029-01-19 00:05:11",
+      "interval_days": 7.989,
+      "velocity_kms": 30.2733,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1656
+    },
+    {
+      "step": 117,
+      "date_utc": "2029-01-26 23:54:25",
+      "interval_days": 7.9925,
+      "velocity_kms": 30.26,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1612
+    },
+    {
+      "step": 118,
+      "date_utc": "2029-02-03 23:52:10",
+      "interval_days": 7.9984,
+      "velocity_kms": 30.2376,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1536
+    },
+    {
+      "step": 119,
+      "date_utc": "2029-02-12 00:01:45",
+      "interval_days": 8.0067,
+      "velocity_kms": 30.2065,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1432
+    },
+    {
+      "step": 120,
+      "date_utc": "2029-02-20 00:26:18",
+      "interval_days": 8.0171,
+      "velocity_kms": 30.1674,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1301
+    },
+    {
+      "step": 121,
+      "date_utc": "2029-02-28 01:08:42",
+      "interval_days": 8.0294,
+      "velocity_kms": 30.1208,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1144
+    },
+    {
+      "step": 122,
+      "date_utc": "2029-03-08 02:11:32",
+      "interval_days": 8.0436,
+      "velocity_kms": 30.0677,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0966
+    },
+    {
+      "step": 123,
+      "date_utc": "2029-03-16 03:37:00",
+      "interval_days": 8.0594,
+      "velocity_kms": 30.009,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0769
+    },
+    {
+      "step": 124,
+      "date_utc": "2029-03-24 05:26:59",
+      "interval_days": 8.0764,
+      "velocity_kms": 29.9458,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0557
+    },
+    {
+      "step": 125,
+      "date_utc": "2029-04-01 07:42:51",
+      "interval_days": 8.0944,
+      "velocity_kms": 29.8792,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0333
+    },
+    {
+      "step": 126,
+      "date_utc": "2029-04-09 10:25:33",
+      "interval_days": 8.113,
+      "velocity_kms": 29.8106,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0103
+    },
+    {
+      "step": 127,
+      "date_utc": "2029-04-17 13:35:29",
+      "interval_days": 8.1319,
+      "velocity_kms": 29.7413,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.013
+    },
+    {
+      "step": 128,
+      "date_utc": "2029-04-25 17:12:33",
+      "interval_days": 8.1507,
+      "velocity_kms": 29.6725,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0361
+    },
+    {
+      "step": 129,
+      "date_utc": "2029-05-03 21:16:06",
+      "interval_days": 8.1691,
+      "velocity_kms": 29.6057,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0585
+    },
+    {
+      "step": 130,
+      "date_utc": "2029-05-12 01:44:57",
+      "interval_days": 8.1867,
+      "velocity_kms": 29.5422,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0798
+    },
+    {
+      "step": 131,
+      "date_utc": "2029-05-20 06:37:22",
+      "interval_days": 8.2031,
+      "velocity_kms": 29.4833,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0996
+    },
+    {
+      "step": 132,
+      "date_utc": "2029-05-28 11:51:08",
+      "interval_days": 8.2179,
+      "velocity_kms": 29.4301,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1175
+    },
+    {
+      "step": 133,
+      "date_utc": "2029-06-05 17:23:33",
+      "interval_days": 8.2308,
+      "velocity_kms": 29.3838,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1331
+    },
+    {
+      "step": 134,
+      "date_utc": "2029-06-13 23:11:30",
+      "interval_days": 8.2416,
+      "velocity_kms": 29.3453,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.146
+    },
+    {
+      "step": 135,
+      "date_utc": "2029-06-22 05:11:30",
+      "interval_days": 8.25,
+      "velocity_kms": 29.3155,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.156
+    },
+    {
+      "step": 136,
+      "date_utc": "2029-06-30 11:19:48",
+      "interval_days": 8.2558,
+      "velocity_kms": 29.2951,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1628
+    },
+    {
+      "step": 137,
+      "date_utc": "2029-07-08 17:32:27",
+      "interval_days": 8.2588,
+      "velocity_kms": 29.2843,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1664
+    },
+    {
+      "step": 138,
+      "date_utc": "2029-07-16 23:45:25",
+      "interval_days": 8.259,
+      "velocity_kms": 29.2836,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1667
+    },
+    {
+      "step": 139,
+      "date_utc": "2029-07-25 05:54:38",
+      "interval_days": 8.2564,
+      "velocity_kms": 29.2928,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1636
+    },
+    {
+      "step": 140,
+      "date_utc": "2029-08-02 11:56:07",
+      "interval_days": 8.251,
+      "velocity_kms": 29.3119,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1572
+    },
+    {
+      "step": 141,
+      "date_utc": "2029-08-10 17:46:04",
+      "interval_days": 8.243,
+      "velocity_kms": 29.3404,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1476
+    },
+    {
+      "step": 142,
+      "date_utc": "2029-08-18 23:20:57",
+      "interval_days": 8.2326,
+      "velocity_kms": 29.3776,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1351
+    },
+    {
+      "step": 143,
+      "date_utc": "2029-08-27 04:37:36",
+      "interval_days": 8.2199,
+      "velocity_kms": 29.4229,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1199
+    },
+    {
+      "step": 144,
+      "date_utc": "2029-09-04 09:33:13",
+      "interval_days": 8.2053,
+      "velocity_kms": 29.4753,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1023
+    },
+    {
+      "step": 145,
+      "date_utc": "2029-09-12 14:05:31",
+      "interval_days": 8.1891,
+      "velocity_kms": 29.5336,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0827
+    },
+    {
+      "step": 146,
+      "date_utc": "2029-09-20 18:12:40",
+      "interval_days": 8.1716,
+      "velocity_kms": 29.5967,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0616
+    },
+    {
+      "step": 147,
+      "date_utc": "2029-09-28 21:53:25",
+      "interval_days": 8.1533,
+      "velocity_kms": 29.6633,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0392
+    },
+    {
+      "step": 148,
+      "date_utc": "2029-10-07 01:07:01",
+      "interval_days": 8.1344,
+      "velocity_kms": 29.732,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0161
+    },
+    {
+      "step": 149,
+      "date_utc": "2029-10-15 03:53:18",
+      "interval_days": 8.1155,
+      "velocity_kms": 29.8015,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0072
+    },
+    {
+      "step": 150,
+      "date_utc": "2029-10-23 06:12:36",
+      "interval_days": 8.0967,
+      "velocity_kms": 29.8704,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0304
+    },
+    {
+      "step": 151,
+      "date_utc": "2029-10-31 08:05:49",
+      "interval_days": 8.0786,
+      "velocity_kms": 29.9374,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0529
+    },
+    {
+      "step": 152,
+      "date_utc": "2029-11-08 09:34:17",
+      "interval_days": 8.0614,
+      "velocity_kms": 30.0013,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0743
+    },
+    {
+      "step": 153,
+      "date_utc": "2029-11-16 10:39:47",
+      "interval_days": 8.0455,
+      "velocity_kms": 30.0607,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0943
+    },
+    {
+      "step": 154,
+      "date_utc": "2029-11-24 11:24:33",
+      "interval_days": 8.0311,
+      "velocity_kms": 30.1147,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1124
+    },
+    {
+      "step": 155,
+      "date_utc": "2029-12-02 11:51:06",
+      "interval_days": 8.0184,
+      "velocity_kms": 30.1621,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1283
+    },
+    {
+      "step": 156,
+      "date_utc": "2029-12-10 12:02:18",
+      "interval_days": 8.0078,
+      "velocity_kms": 30.2023,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1418
+    },
+    {
+      "step": 157,
+      "date_utc": "2029-12-18 12:01:16",
+      "interval_days": 7.9993,
+      "velocity_kms": 30.2343,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1526
+    },
+    {
+      "step": 158,
+      "date_utc": "2029-12-26 11:51:19",
+      "interval_days": 7.9931,
+      "velocity_kms": 30.2578,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1604
+    },
+    {
+      "step": 159,
+      "date_utc": "2030-01-03 11:35:53",
+      "interval_days": 7.9893,
+      "velocity_kms": 30.2722,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1653
+    },
+    {
+      "step": 160,
+      "date_utc": "2030-01-11 11:18:31",
+      "interval_days": 7.9879,
+      "velocity_kms": 30.2773,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": 161,
+      "date_utc": "2030-01-19 11:02:46",
+      "interval_days": 7.9891,
+      "velocity_kms": 30.2731,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1656
+    },
+    {
+      "step": 162,
+      "date_utc": "2030-01-27 10:52:09",
+      "interval_days": 7.9926,
+      "velocity_kms": 30.2595,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.161
+    },
+    {
+      "step": 163,
+      "date_utc": "2030-02-04 10:50:10",
+      "interval_days": 7.9986,
+      "velocity_kms": 30.2369,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1534
+    },
+    {
+      "step": 164,
+      "date_utc": "2030-02-12 11:00:05",
+      "interval_days": 8.0069,
+      "velocity_kms": 30.2056,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1429
+    },
+    {
+      "step": 165,
+      "date_utc": "2030-02-20 11:25:03",
+      "interval_days": 8.0173,
+      "velocity_kms": 30.1663,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1297
+    },
+    {
+      "step": 166,
+      "date_utc": "2030-02-28 12:07:56",
+      "interval_days": 8.0298,
+      "velocity_kms": 30.1195,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.114
+    },
+    {
+      "step": 167,
+      "date_utc": "2030-03-08 13:11:18",
+      "interval_days": 8.044,
+      "velocity_kms": 30.0663,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0961
+    },
+    {
+      "step": 168,
+      "date_utc": "2030-03-16 14:37:23",
+      "interval_days": 8.0598,
+      "velocity_kms": 30.0074,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0764
+    },
+    {
+      "step": 169,
+      "date_utc": "2030-03-24 16:27:59",
+      "interval_days": 8.0768,
+      "velocity_kms": 29.9441,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0551
+    },
+    {
+      "step": 170,
+      "date_utc": "2030-04-01 18:44:32",
+      "interval_days": 8.0948,
+      "velocity_kms": 29.8775,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0328
+    },
+    {
+      "step": 171,
+      "date_utc": "2030-04-09 21:27:54",
+      "interval_days": 8.1135,
+      "velocity_kms": 29.8089,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0097
+    },
+    {
+      "step": 172,
+      "date_utc": "2030-04-18 00:38:31",
+      "interval_days": 8.1324,
+      "velocity_kms": 29.7396,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0136
+    },
+    {
+      "step": 173,
+      "date_utc": "2030-04-26 04:16:16",
+      "interval_days": 8.1512,
+      "velocity_kms": 29.6708,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0367
+    },
+    {
+      "step": 174,
+      "date_utc": "2030-05-04 08:20:28",
+      "interval_days": 8.1696,
+      "velocity_kms": 29.6041,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0591
+    },
+    {
+      "step": 175,
+      "date_utc": "2030-05-12 12:49:56",
+      "interval_days": 8.1871,
+      "velocity_kms": 29.5407,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0804
+    },
+    {
+      "step": 176,
+      "date_utc": "2030-05-20 17:42:55",
+      "interval_days": 8.2035,
+      "velocity_kms": 29.4818,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1001
+    },
+    {
+      "step": 177,
+      "date_utc": "2030-05-28 22:57:11",
+      "interval_days": 8.2182,
+      "velocity_kms": 29.4288,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1179
+    },
+    {
+      "step": 178,
+      "date_utc": "2030-06-06 04:30:02",
+      "interval_days": 8.2311,
+      "velocity_kms": 29.3827,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1334
+    },
+    {
+      "step": 179,
+      "date_utc": "2030-06-14 10:18:19",
+      "interval_days": 8.2419,
+      "velocity_kms": 29.3445,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1462
+    },
+    {
+      "step": 180,
+      "date_utc": "2030-06-22 16:18:34",
+      "interval_days": 8.2502,
+      "velocity_kms": 29.3149,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1562
+    },
+    {
+      "step": 181,
+      "date_utc": "2030-06-30 22:27:02",
+      "interval_days": 8.2559,
+      "velocity_kms": 29.2947,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.163
+    },
+    {
+      "step": 182,
+      "date_utc": "2030-07-09 04:39:45",
+      "interval_days": 8.2588,
+      "velocity_kms": 29.2842,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1665
+    },
+    {
+      "step": 183,
+      "date_utc": "2030-07-17 10:52:40",
+      "interval_days": 8.259,
+      "velocity_kms": 29.2837,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1667
+    },
+    {
+      "step": 184,
+      "date_utc": "2030-07-25 17:01:44",
+      "interval_days": 8.2563,
+      "velocity_kms": 29.2932,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1635
+    },
+    {
+      "step": 185,
+      "date_utc": "2030-08-02 23:02:58",
+      "interval_days": 8.2509,
+      "velocity_kms": 29.3125,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.157
+    },
+    {
+      "step": 186,
+      "date_utc": "2030-08-11 04:52:35",
+      "interval_days": 8.2428,
+      "velocity_kms": 29.3412,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1473
+    },
+    {
+      "step": 187,
+      "date_utc": "2030-08-19 10:27:03",
+      "interval_days": 8.2323,
+      "velocity_kms": 29.3787,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1348
+    },
+    {
+      "step": 188,
+      "date_utc": "2030-08-27 15:43:12",
+      "interval_days": 8.2195,
+      "velocity_kms": 29.4241,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1195
+    },
+    {
+      "step": 189,
+      "date_utc": "2030-09-04 20:38:16",
+      "interval_days": 8.2049,
+      "velocity_kms": 29.4767,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1019
+    },
+    {
+      "step": 190,
+      "date_utc": "2030-09-13 01:09:57",
+      "interval_days": 8.1887,
+      "velocity_kms": 29.5351,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0822
+    },
+    {
+      "step": 191,
+      "date_utc": "2030-09-21 05:16:27",
+      "interval_days": 8.1712,
+      "velocity_kms": 29.5983,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.061
+    },
+    {
+      "step": 192,
+      "date_utc": "2030-09-29 08:56:31",
+      "interval_days": 8.1528,
+      "velocity_kms": 29.665,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0386
+    },
+    {
+      "step": 193,
+      "date_utc": "2030-10-07 12:09:26",
+      "interval_days": 8.134,
+      "velocity_kms": 29.7337,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0155
+    },
+    {
+      "step": 194,
+      "date_utc": "2030-10-15 14:55:02",
+      "interval_days": 8.115,
+      "velocity_kms": 29.8032,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0078
+    },
+    {
+      "step": 195,
+      "date_utc": "2030-10-23 17:13:41",
+      "interval_days": 8.0963,
+      "velocity_kms": 29.8721,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0309
+    },
+    {
+      "step": 196,
+      "date_utc": "2030-10-31 19:06:15",
+      "interval_days": 8.0782,
+      "velocity_kms": 29.9391,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0534
+    },
+    {
+      "step": 197,
+      "date_utc": "2030-11-08 20:34:07",
+      "interval_days": 8.061,
+      "velocity_kms": 30.0028,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0748
+    },
+    {
+      "step": 198,
+      "date_utc": "2030-11-16 21:39:04",
+      "interval_days": 8.0451,
+      "velocity_kms": 30.0621,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0947
+    },
+    {
+      "step": 199,
+      "date_utc": "2030-11-24 22:23:20",
+      "interval_days": 8.0307,
+      "velocity_kms": 30.1159,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1128
+    },
+    {
+      "step": 200,
+      "date_utc": "2030-12-02 22:49:28",
+      "interval_days": 8.0181,
+      "velocity_kms": 30.1632,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1287
+    },
+    {
+      "step": 201,
+      "date_utc": "2030-12-10 23:00:20",
+      "interval_days": 8.0075,
+      "velocity_kms": 30.2032,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1421
+    },
+    {
+      "step": 202,
+      "date_utc": "2030-12-18 22:59:02",
+      "interval_days": 7.9991,
+      "velocity_kms": 30.235,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1528
+    },
+    {
+      "step": 203,
+      "date_utc": "2030-12-26 22:48:54",
+      "interval_days": 7.993,
+      "velocity_kms": 30.2583,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1606
+    },
+    {
+      "step": 204,
+      "date_utc": "2031-01-03 22:33:23",
+      "interval_days": 7.9892,
+      "velocity_kms": 30.2724,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1654
+    },
+    {
+      "step": 205,
+      "date_utc": "2031-01-11 22:16:00",
+      "interval_days": 7.9879,
+      "velocity_kms": 30.2773,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.167
+    },
+    {
+      "step": 206,
+      "date_utc": "2031-01-19 22:00:20",
+      "interval_days": 7.9891,
+      "velocity_kms": 30.2728,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1655
+    },
+    {
+      "step": 207,
+      "date_utc": "2031-01-27 21:49:54",
+      "interval_days": 7.9928,
+      "velocity_kms": 30.259,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1609
+    },
+    {
+      "step": 208,
+      "date_utc": "2031-02-04 21:48:10",
+      "interval_days": 7.9988,
+      "velocity_kms": 30.2362,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1532
+    },
+    {
+      "step": 209,
+      "date_utc": "2031-02-12 21:58:26",
+      "interval_days": 8.0071,
+      "velocity_kms": 30.2047,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1426
+    },
+    {
+      "step": 210,
+      "date_utc": "2031-02-20 22:23:49",
+      "interval_days": 8.0176,
+      "velocity_kms": 30.1652,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1293
+    },
+    {
+      "step": 211,
+      "date_utc": "2031-02-28 23:07:11",
+      "interval_days": 8.0301,
+      "velocity_kms": 30.1183,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1136
+    },
+    {
+      "step": 212,
+      "date_utc": "2031-03-09 00:11:06",
+      "interval_days": 8.0444,
+      "velocity_kms": 30.0649,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0957
+    },
+    {
+      "step": 213,
+      "date_utc": "2031-03-17 01:37:46",
+      "interval_days": 8.0602,
+      "velocity_kms": 30.0059,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0759
+    },
+    {
+      "step": 214,
+      "date_utc": "2031-03-25 03:29:01",
+      "interval_days": 8.0773,
+      "velocity_kms": 29.9425,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0546
+    },
+    {
+      "step": 215,
+      "date_utc": "2031-04-02 05:46:13",
+      "interval_days": 8.0953,
+      "velocity_kms": 29.8758,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0322
+    },
+    {
+      "step": 216,
+      "date_utc": "2031-04-10 08:30:16",
+      "interval_days": 8.1139,
+      "velocity_kms": 29.8072,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0091
+    },
+    {
+      "step": 217,
+      "date_utc": "2031-04-18 11:41:35",
+      "interval_days": 8.1329,
+      "velocity_kms": 29.7378,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0142
+    },
+    {
+      "step": 218,
+      "date_utc": "2031-04-26 15:20:00",
+      "interval_days": 8.1517,
+      "velocity_kms": 29.6691,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0372
+    },
+    {
+      "step": 219,
+      "date_utc": "2031-05-04 19:24:51",
+      "interval_days": 8.17,
+      "velocity_kms": 29.6025,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0596
+    },
+    {
+      "step": 220,
+      "date_utc": "2031-05-12 23:54:56",
+      "interval_days": 8.1876,
+      "velocity_kms": 29.5391,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.0809
+    },
+    {
+      "step": 221,
+      "date_utc": "2031-05-21 04:48:29",
+      "interval_days": 8.2039,
+      "velocity_kms": 29.4804,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1006
+    },
+    {
+      "step": 222,
+      "date_utc": "2031-05-29 10:03:15",
+      "interval_days": 8.2186,
+      "velocity_kms": 29.4276,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1183
+    },
+    {
+      "step": 223,
+      "date_utc": "2031-06-06 15:36:31",
+      "interval_days": 8.2314,
+      "velocity_kms": 29.3816,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1338
+    },
+    {
+      "step": 224,
+      "date_utc": "2031-06-14 21:25:09",
+      "interval_days": 8.2421,
+      "velocity_kms": 29.3436,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1465
+    },
+    {
+      "step": 225,
+      "date_utc": "2031-06-23 03:25:39",
+      "interval_days": 8.2504,
+      "velocity_kms": 29.3143,
+      "predicted_max_m": 6.8,
+      "stress_index_pct": 100.1564
+    }
+  ]
+}
