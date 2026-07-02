@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-07-02T10:12:31.023765",
-  "n_source_files": 102,
-  "files_using_phi": 82,
-  "files_using_breath": 56,
-  "files_using_per_body": 31,
+  "timestamp": "2026-07-02T10:50:00.133642",
+  "n_source_files": 111,
+  "files_using_phi": 87,
+  "files_using_breath": 62,
+  "files_using_per_body": 34,
   "files_with_solstice_anchor": 20,
-  "files_with_base_period": 21,
-  "files_referencing_p17": 11,
+  "files_with_base_period": 23,
+  "files_referencing_p17": 18,
   "coherence_scores": {
-    "constant_alignment": 0.803921568627451,
-    "breath_alignment": 0.5490196078431373,
-    "per_body_alignment": 0.30392156862745096,
+    "constant_alignment": 0.7837837837837838,
+    "breath_alignment": 0.5585585585585585,
+    "per_body_alignment": 0.3063063063063063,
     "validation_pass_rate": 1.0
   },
-  "overall_coherence": 0.6642156862745098,
+  "overall_coherence": 0.6621621621621622,
   "validations": [
     [
       "99-tribunal",

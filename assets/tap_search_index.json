@@ -1,0 +1,2586 @@
+{
+  "timestamp": "2026-07-02T10:49:51.439805",
+  "n_documents": 152,
+  "n_unique_words": 373,
+  "documents": [
+    {
+      "id": "script:calibration_derivation.py",
+      "type": "script",
+      "name": "calibration_derivation.py",
+      "path": "src/calibration_derivation.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:check_env.py",
+      "type": "script",
+      "name": "check_env.py",
+      "path": "src/check_env.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:dump_descriptors.py",
+      "type": "script",
+      "name": "dump_descriptors.py",
+      "path": "src/dump_descriptors.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:flash_arduino.py",
+      "type": "script",
+      "name": "flash_arduino.py",
+      "path": "src/flash_arduino.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:read_qubit.py",
+      "type": "script",
+      "name": "read_qubit.py",
+      "path": "src/read_qubit.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:render_mermaid_diagrams.py",
+      "type": "script",
+      "name": "render_mermaid_diagrams.py",
+      "path": "src/render_mermaid_diagrams.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:run_all_sweeps.py",
+      "type": "script",
+      "name": "run_all_sweeps.py",
+      "path": "src/run_all_sweeps.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:run_coupled_sweep.py",
+      "type": "script",
+      "name": "run_coupled_sweep.py",
+      "path": "src/run_coupled_sweep.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:run_ratchet_test_auto.py",
+      "type": "script",
+      "name": "run_ratchet_test_auto.py",
+      "path": "src/run_ratchet_test_auto.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:run_tetrahedral_sweep.py",
+      "type": "script",
+      "name": "run_tetrahedral_sweep.py",
+      "path": "src/run_tetrahedral_sweep.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:science_constants.py",
+      "type": "script",
+      "name": "science_constants.py",
+      "path": "src/science_constants.py",
+      "n_tokens": 12
+    },
+    {
+      "id": "script:tap_5ht2a_ayahuasca_sim.py",
+      "type": "script",
+      "name": "tap_5ht2a_ayahuasca_sim.py",
+      "path": "src/tap_5ht2a_ayahuasca_sim.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_5ht2a_epigenetic_coupling_sim.py",
+      "type": "script",
+      "name": "tap_5ht2a_epigenetic_coupling_sim.py",
+      "path": "src/tap_5ht2a_epigenetic_coupling_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_5year_seismic_sweep.py",
+      "type": "script",
+      "name": "tap_5year_seismic_sweep.py",
+      "path": "src/tap_5year_seismic_sweep.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_5year_seismic_v2.py",
+      "type": "script",
+      "name": "tap_5year_seismic_v2.py",
+      "path": "src/tap_5year_seismic_v2.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_asynchronous_pulsation_sim.py",
+      "type": "script",
+      "name": "tap_asynchronous_pulsation_sim.py",
+      "path": "src/tap_asynchronous_pulsation_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_audio_test.py",
+      "type": "script",
+      "name": "tap_audio_test.py",
+      "path": "src/tap_audio_test.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_author_lens.py",
+      "type": "script",
+      "name": "tap_author_lens.py",
+      "path": "src/tap_author_lens.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_ayahuasca_fascia_cascade_sim.py",
+      "type": "script",
+      "name": "tap_ayahuasca_fascia_cascade_sim.py",
+      "path": "src/tap_ayahuasca_fascia_cascade_sim.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_biochem_qubit_graphene.py",
+      "type": "script",
+      "name": "tap_biochem_qubit_graphene.py",
+      "path": "src/tap_biochem_qubit_graphene.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_body_breath_states.py",
+      "type": "script",
+      "name": "tap_body_breath_states.py",
+      "path": "src/tap_body_breath_states.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_breath_clock.py",
+      "type": "script",
+      "name": "tap_breath_clock.py",
+      "path": "src/tap_breath_clock.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_breath_clock_chem_mod.py",
+      "type": "script",
+      "name": "tap_breath_clock_chem_mod.py",
+      "path": "src/tap_breath_clock_chem_mod.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_breath_per_body.py",
+      "type": "script",
+      "name": "tap_breath_per_body.py",
+      "path": "src/tap_breath_per_body.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_cascade_context.py",
+      "type": "script",
+      "name": "tap_cascade_context.py",
+      "path": "src/tap_cascade_context.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_chromatin_state_sim.py",
+      "type": "script",
+      "name": "tap_chromatin_state_sim.py",
+      "path": "src/tap_chromatin_state_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_collagen_braiding_sim.py",
+      "type": "script",
+      "name": "tap_collagen_braiding_sim.py",
+      "path": "src/tap_collagen_braiding_sim.py",
+      "n_tokens": 7
+    },
+    {
+      "id": "script:tap_core_ai_cascade.py",
+      "type": "script",
+      "name": "tap_core_ai_cascade.py",
+      "path": "src/tap_core_ai_cascade.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_cosmic_breath_sim.py",
+      "type": "script",
+      "name": "tap_cosmic_breath_sim.py",
+      "path": "src/tap_cosmic_breath_sim.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_cosmic_kp_validation.py",
+      "type": "script",
+      "name": "tap_cosmic_kp_validation.py",
+      "path": "src/tap_cosmic_kp_validation.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_cosmic_origin_sims.py",
+      "type": "script",
+      "name": "tap_cosmic_origin_sims.py",
+      "path": "src/tap_cosmic_origin_sims.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_cosmic_quantum_neuro.py",
+      "type": "script",
+      "name": "tap_cosmic_quantum_neuro.py",
+      "path": "src/tap_cosmic_quantum_neuro.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_cosmological_cascade_sweep.py",
+      "type": "script",
+      "name": "tap_cosmological_cascade_sweep.py",
+      "path": "src/tap_cosmological_cascade_sweep.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_coupled_ayahuasca_sim.py",
+      "type": "script",
+      "name": "tap_coupled_ayahuasca_sim.py",
+      "path": "src/tap_coupled_ayahuasca_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_cross_body_coupling.py",
+      "type": "script",
+      "name": "tap_cross_body_coupling.py",
+      "path": "src/tap_cross_body_coupling.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_daily_prediction_check.py",
+      "type": "script",
+      "name": "tap_daily_prediction_check.py",
+      "path": "src/tap_daily_prediction_check.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_dashboard.py",
+      "type": "script",
+      "name": "tap_dashboard.py",
+      "path": "src/tap_dashboard.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_device_coupled_soliton.py",
+      "type": "script",
+      "name": "tap_device_coupled_soliton.py",
+      "path": "src/tap_device_coupled_soliton.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_digital_soliton_sim.py",
+      "type": "script",
+      "name": "tap_digital_soliton_sim.py",
+      "path": "src/tap_digital_soliton_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_encyclopedia.py",
+      "type": "script",
+      "name": "tap_encyclopedia.py",
+      "path": "src/tap_encyclopedia.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_encyclopedia_v2.py",
+      "type": "script",
+      "name": "tap_encyclopedia_v2.py",
+      "path": "src/tap_encyclopedia_v2.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_end_to_end_sim.py",
+      "type": "script",
+      "name": "tap_end_to_end_sim.py",
+      "path": "src/tap_end_to_end_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_epigenetic_cosmic_cascade.py",
+      "type": "script",
+      "name": "tap_epigenetic_cosmic_cascade.py",
+      "path": "src/tap_epigenetic_cosmic_cascade.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_epigenetic_flop_sim.py",
+      "type": "script",
+      "name": "tap_epigenetic_flop_sim.py",
+      "path": "src/tap_epigenetic_flop_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_fascia_sim.py",
+      "type": "script",
+      "name": "tap_fascia_sim.py",
+      "path": "src/tap_fascia_sim.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_final_hybrid_predictions.py",
+      "type": "script",
+      "name": "tap_final_hybrid_predictions.py",
+      "path": "src/tap_final_hybrid_predictions.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_finance_rescreen.py",
+      "type": "script",
+      "name": "tap_finance_rescreen.py",
+      "path": "src/tap_finance_rescreen.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_framework_coherence.py",
+      "type": "script",
+      "name": "tap_framework_coherence.py",
+      "path": "src/tap_framework_coherence.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_global_weather.py",
+      "type": "script",
+      "name": "tap_global_weather.py",
+      "path": "src/tap_global_weather.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_gravitational_waveform.py",
+      "type": "script",
+      "name": "tap_gravitational_waveform.py",
+      "path": "src/tap_gravitational_waveform.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_group_hysteria_sim.py",
+      "type": "script",
+      "name": "tap_group_hysteria_sim.py",
+      "path": "src/tap_group_hysteria_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_high_dimension_sequence_sim.py",
+      "type": "script",
+      "name": "tap_high_dimension_sequence_sim.py",
+      "path": "src/tap_high_dimension_sequence_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_kp_prediction_sim.py",
+      "type": "script",
+      "name": "tap_kp_prediction_sim.py",
+      "path": "src/tap_kp_prediction_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_logistics_prediction.py",
+      "type": "script",
+      "name": "tap_logistics_prediction.py",
+      "path": "src/tap_logistics_prediction.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_lymphatic_cascade_sim.py",
+      "type": "script",
+      "name": "tap_lymphatic_cascade_sim.py",
+      "path": "src/tap_lymphatic_cascade_sim.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_marketing_contagion_sim.py",
+      "type": "script",
+      "name": "tap_marketing_contagion_sim.py",
+      "path": "src/tap_marketing_contagion_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_multi_body_p1p18_sweep.py",
+      "type": "script",
+      "name": "tap_multi_body_p1p18_sweep.py",
+      "path": "src/tap_multi_body_p1p18_sweep.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_multicycle_reset_sweep.py",
+      "type": "script",
+      "name": "tap_multicycle_reset_sweep.py",
+      "path": "src/tap_multicycle_reset_sweep.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_multidiscipline_sweep.py",
+      "type": "script",
+      "name": "tap_multidiscipline_sweep.py",
+      "path": "src/tap_multidiscipline_sweep.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_multisphere_predictions.py",
+      "type": "script",
+      "name": "tap_multisphere_predictions.py",
+      "path": "src/tap_multisphere_predictions.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_multiverse_coupling_sim.py",
+      "type": "script",
+      "name": "tap_multiverse_coupling_sim.py",
+      "path": "src/tap_multiverse_coupling_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_muscle_memory_sim.py",
+      "type": "script",
+      "name": "tap_muscle_memory_sim.py",
+      "path": "src/tap_muscle_memory_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_nami_per_body_p1p18.py",
+      "type": "script",
+      "name": "tap_nami_per_body_p1p18.py",
+      "path": "src/tap_nami_per_body_p1p18.py",
+      "n_tokens": 7
+    },
+    {
+      "id": "script:tap_nami_ryu_breath.py",
+      "type": "script",
+      "name": "tap_nami_ryu_breath.py",
+      "path": "src/tap_nami_ryu_breath.py",
+      "n_tokens": 7
+    },
+    {
+      "id": "script:tap_neural_resonance.py",
+      "type": "script",
+      "name": "tap_neural_resonance.py",
+      "path": "src/tap_neural_resonance.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_option_arbitrage.py",
+      "type": "script",
+      "name": "tap_option_arbitrage.py",
+      "path": "src/tap_option_arbitrage.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_p15_soot_fidelity_sim.py",
+      "type": "script",
+      "name": "tap_p15_soot_fidelity_sim.py",
+      "path": "src/tap_p15_soot_fidelity_sim.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_p16_magnetite_chiral_sim.py",
+      "type": "script",
+      "name": "tap_p16_magnetite_chiral_sim.py",
+      "path": "src/tap_p16_magnetite_chiral_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_p1p18_re_evaluation.py",
+      "type": "script",
+      "name": "tap_p1p18_re_evaluation.py",
+      "path": "src/tap_p1p18_re_evaluation.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_pair_bonding_sim.py",
+      "type": "script",
+      "name": "tap_pair_bonding_sim.py",
+      "path": "src/tap_pair_bonding_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_parameter_free_constants_proof.py",
+      "type": "script",
+      "name": "tap_parameter_free_constants_proof.py",
+      "path": "src/tap_parameter_free_constants_proof.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_per_body_p1p18.py",
+      "type": "script",
+      "name": "tap_per_body_p1p18.py",
+      "path": "src/tap_per_body_p1p18.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_per_event_seismic.py",
+      "type": "script",
+      "name": "tap_per_event_seismic.py",
+      "path": "src/tap_per_event_seismic.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_per_event_seismic_v2.py",
+      "type": "script",
+      "name": "tap_per_event_seismic_v2.py",
+      "path": "src/tap_per_event_seismic_v2.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_phone_minimal_soliton.py",
+      "type": "script",
+      "name": "tap_phone_minimal_soliton.py",
+      "path": "src/tap_phone_minimal_soliton.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_population_sweeps_sim.py",
+      "type": "script",
+      "name": "tap_population_sweeps_sim.py",
+      "path": "src/tap_population_sweeps_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_proof.py",
+      "type": "script",
+      "name": "tap_proof.py",
+      "path": "src/tap_proof.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_quantum_decoherence.py",
+      "type": "script",
+      "name": "tap_quantum_decoherence.py",
+      "path": "src/tap_quantum_decoherence.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_qubit_coherence_sweep.py",
+      "type": "script",
+      "name": "tap_qubit_coherence_sweep.py",
+      "path": "src/tap_qubit_coherence_sweep.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_real_data_validator.py",
+      "type": "script",
+      "name": "tap_real_data_validator.py",
+      "path": "src/tap_real_data_validator.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_reset_antitemplate_sim.py",
+      "type": "script",
+      "name": "tap_reset_antitemplate_sim.py",
+      "path": "src/tap_reset_antitemplate_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_schumann_resonance.py",
+      "type": "script",
+      "name": "tap_schumann_resonance.py",
+      "path": "src/tap_schumann_resonance.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_seismic_correlation.py",
+      "type": "script",
+      "name": "tap_seismic_correlation.py",
+      "path": "src/tap_seismic_correlation.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_solar_dynamo.py",
+      "type": "script",
+      "name": "tap_solar_dynamo.py",
+      "path": "src/tap_solar_dynamo.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_soliton_collision_stress.py",
+      "type": "script",
+      "name": "tap_soliton_collision_stress.py",
+      "path": "src/tap_soliton_collision_stress.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_soliton_shielding_comparison.py",
+      "type": "script",
+      "name": "tap_soliton_shielding_comparison.py",
+      "path": "src/tap_soliton_shielding_comparison.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_somatic_cosmic_geometry.py",
+      "type": "script",
+      "name": "tap_somatic_cosmic_geometry.py",
+      "path": "src/tap_somatic_cosmic_geometry.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_somatic_cosmic_geometry_v2.py",
+      "type": "script",
+      "name": "tap_somatic_cosmic_geometry_v2.py",
+      "path": "src/tap_somatic_cosmic_geometry_v2.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_somatic_cosmic_v3.py",
+      "type": "script",
+      "name": "tap_somatic_cosmic_v3.py",
+      "path": "src/tap_somatic_cosmic_v3.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_somynence_48_sim.py",
+      "type": "script",
+      "name": "tap_somynence_48_sim.py",
+      "path": "src/tap_somynence_48_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_standalone_cascade_tribunal.py",
+      "type": "script",
+      "name": "tap_standalone_cascade_tribunal.py",
+      "path": "src/tap_standalone_cascade_tribunal.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_super_tribunal_99.py",
+      "type": "script",
+      "name": "tap_super_tribunal_99.py",
+      "path": "src/tap_super_tribunal_99.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_superconductivity_sweep.py",
+      "type": "script",
+      "name": "tap_superconductivity_sweep.py",
+      "path": "src/tap_superconductivity_sweep.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_tappasecond.py",
+      "type": "script",
+      "name": "tap_tappasecond.py",
+      "path": "src/tap_tappasecond.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_test_framework_challenge.py",
+      "type": "script",
+      "name": "tap_test_framework_challenge.py",
+      "path": "src/tap_test_framework_challenge.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_trans_cyclic_sweep.py",
+      "type": "script",
+      "name": "tap_trans_cyclic_sweep.py",
+      "path": "src/tap_trans_cyclic_sweep.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_unified_breath_clock.py",
+      "type": "script",
+      "name": "tap_unified_breath_clock.py",
+      "path": "src/tap_unified_breath_clock.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_unified_cascade.py",
+      "type": "script",
+      "name": "tap_unified_cascade.py",
+      "path": "src/tap_unified_cascade.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_unified_social_sim.py",
+      "type": "script",
+      "name": "tap_unified_social_sim.py",
+      "path": "src/tap_unified_social_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_usgs_monitor.py",
+      "type": "script",
+      "name": "tap_usgs_monitor.py",
+      "path": "src/tap_usgs_monitor.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_viral_epidemiology_sim.py",
+      "type": "script",
+      "name": "tap_viral_epidemiology_sim.py",
+      "path": "src/tap_viral_epidemiology_sim.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "script:tap_weather_backfill.py",
+      "type": "script",
+      "name": "tap_weather_backfill.py",
+      "path": "src/tap_weather_backfill.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_weather_recalibration.py",
+      "type": "script",
+      "name": "tap_weather_recalibration.py",
+      "path": "src/tap_weather_recalibration.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_weather_v2.py",
+      "type": "script",
+      "name": "tap_weather_v2.py",
+      "path": "src/tap_weather_v2.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_weather_v3.py",
+      "type": "script",
+      "name": "tap_weather_v3.py",
+      "path": "src/tap_weather_v3.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:tap_zodiac_to_breath.py",
+      "type": "script",
+      "name": "tap_zodiac_to_breath.py",
+      "path": "src/tap_zodiac_to_breath.py",
+      "n_tokens": 6
+    },
+    {
+      "id": "script:update_dashboard.py",
+      "type": "script",
+      "name": "update_dashboard.py",
+      "path": "src/update_dashboard.py",
+      "n_tokens": 5
+    },
+    {
+      "id": "doc:INDEX.md",
+      "type": "doc",
+      "name": "INDEX.md",
+      "path": "docs/INDEX.md",
+      "n_tokens": 6
+    },
+    {
+      "id": "doc:PEER_REVIEW_CHECKLIST.md",
+      "type": "doc",
+      "name": "PEER_REVIEW_CHECKLIST.md",
+      "path": "docs/PEER_REVIEW_CHECKLIST.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_12th_Grade_Peer_Review_Curriculum.md",
+      "type": "doc",
+      "name": "TAP_12th_Grade_Peer_Review_Curriculum.md",
+      "path": "docs/TAP_12th_Grade_Peer_Review_Curriculum.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_8th_Grade_Fundamentals_Curriculum.md",
+      "type": "doc",
+      "name": "TAP_8th_Grade_Fundamentals_Curriculum.md",
+      "path": "docs/TAP_8th_Grade_Fundamentals_Curriculum.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_Anti_Template_Residue_v5.3.md",
+      "type": "doc",
+      "name": "TAP_Anti_Template_Residue_v5.3.md",
+      "path": "docs/TAP_Anti_Template_Residue_v5.3.md",
+      "n_tokens": 13
+    },
+    {
+      "id": "doc:TAP_Biochem_Qubit_Graphene_Brainstorm.md",
+      "type": "doc",
+      "name": "TAP_Biochem_Qubit_Graphene_Brainstorm.md",
+      "path": "docs/TAP_Biochem_Qubit_Graphene_Brainstorm.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_CONNECTIVITY_DASHBOARD.md",
+      "type": "doc",
+      "name": "TAP_CONNECTIVITY_DASHBOARD.md",
+      "path": "docs/TAP_CONNECTIVITY_DASHBOARD.md",
+      "n_tokens": 6
+    },
+    {
+      "id": "doc:TAP_Capacitor_and_Diode_Inventory.md",
+      "type": "doc",
+      "name": "TAP_Capacitor_and_Diode_Inventory.md",
+      "path": "docs/TAP_Capacitor_and_Diode_Inventory.md",
+      "n_tokens": 7
+    },
+    {
+      "id": "doc:TAP_Cosmic_Origin_of_Life_v5.2.md",
+      "type": "doc",
+      "name": "TAP_Cosmic_Origin_of_Life_v5.2.md",
+      "path": "docs/TAP_Cosmic_Origin_of_Life_v5.2.md",
+      "n_tokens": 16
+    },
+    {
+      "id": "doc:TAP_Cosmic_Quantum_Neuro_Brainstorm.md",
+      "type": "doc",
+      "name": "TAP_Cosmic_Quantum_Neuro_Brainstorm.md",
+      "path": "docs/TAP_Cosmic_Quantum_Neuro_Brainstorm.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_Coupled_Waveguide_All_Results.md",
+      "type": "doc",
+      "name": "TAP_Coupled_Waveguide_All_Results.md",
+      "path": "docs/TAP_Coupled_Waveguide_All_Results.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_Coupled_Waveguide_Brainstorm.md",
+      "type": "doc",
+      "name": "TAP_Coupled_Waveguide_Brainstorm.md",
+      "path": "docs/TAP_Coupled_Waveguide_Brainstorm.md",
+      "n_tokens": 10
+    },
+    {
+      "id": "doc:TAP_Coupled_Waveguide_Sweep_Results.md",
+      "type": "doc",
+      "name": "TAP_Coupled_Waveguide_Sweep_Results.md",
+      "path": "docs/TAP_Coupled_Waveguide_Sweep_Results.md",
+      "n_tokens": 11
+    },
+    {
+      "id": "doc:TAP_DNA_Topology_Epigenetics.md",
+      "type": "doc",
+      "name": "TAP_DNA_Topology_Epigenetics.md",
+      "path": "docs/TAP_DNA_Topology_Epigenetics.md",
+      "n_tokens": 10
+    },
+    {
+      "id": "doc:TAP_Daily_Check_2026-07-02.md",
+      "type": "doc",
+      "name": "TAP_Daily_Check_2026-07-02.md",
+      "path": "docs/TAP_Daily_Check_2026-07-02.md",
+      "n_tokens": 11
+    },
+    {
+      "id": "doc:TAP_Daily_Check_2026-07-02_Deep.md",
+      "type": "doc",
+      "name": "TAP_Daily_Check_2026-07-02_Deep.md",
+      "path": "docs/TAP_Daily_Check_2026-07-02_Deep.md",
+      "n_tokens": 11
+    },
+    {
+      "id": "doc:TAP_Double_DDCFET_Cascade.md",
+      "type": "doc",
+      "name": "TAP_Double_DDCFET_Cascade.md",
+      "path": "docs/TAP_Double_DDCFET_Cascade.md",
+      "n_tokens": 13
+    },
+    {
+      "id": "doc:TAP_Encyclopedia_v5_3.md",
+      "type": "doc",
+      "name": "TAP_Encyclopedia_v5_3.md",
+      "path": "docs/TAP_Encyclopedia_v5_3.md",
+      "n_tokens": 7
+    },
+    {
+      "id": "doc:TAP_Experimental_Designs_v5.3.md",
+      "type": "doc",
+      "name": "TAP_Experimental_Designs_v5.3.md",
+      "path": "docs/TAP_Experimental_Designs_v5.3.md",
+      "n_tokens": 11
+    },
+    {
+      "id": "doc:TAP_FRAMEWORK_INDEX.md",
+      "type": "doc",
+      "name": "TAP_FRAMEWORK_INDEX.md",
+      "path": "docs/TAP_FRAMEWORK_INDEX.md",
+      "n_tokens": 6
+    },
+    {
+      "id": "doc:TAP_Fascia_Trains_v5.md",
+      "type": "doc",
+      "name": "TAP_Fascia_Trains_v5.md",
+      "path": "docs/TAP_Fascia_Trains_v5.md",
+      "n_tokens": 15
+    },
+    {
+      "id": "doc:TAP_Global_Weather_Operations.md",
+      "type": "doc",
+      "name": "TAP_Global_Weather_Operations.md",
+      "path": "docs/TAP_Global_Weather_Operations.md",
+      "n_tokens": 9
+    },
+    {
+      "id": "doc:TAP_Hardware_Bill_of_Materials.md",
+      "type": "doc",
+      "name": "TAP_Hardware_Bill_of_Materials.md",
+      "path": "docs/TAP_Hardware_Bill_of_Materials.md",
+      "n_tokens": 10
+    },
+    {
+      "id": "doc:TAP_Macro_Qubit_Graphene_Schematic.md",
+      "type": "doc",
+      "name": "TAP_Macro_Qubit_Graphene_Schematic.md",
+      "path": "docs/TAP_Macro_Qubit_Graphene_Schematic.md",
+      "n_tokens": 9
+    },
+    {
+      "id": "doc:TAP_Multisphere_Biotemplates_v5.3.md",
+      "type": "doc",
+      "name": "TAP_Multisphere_Biotemplates_v5.3.md",
+      "path": "docs/TAP_Multisphere_Biotemplates_v5.3.md",
+      "n_tokens": 14
+    },
+    {
+      "id": "doc:TAP_Multisphere_Cascade_Diagram.md",
+      "type": "doc",
+      "name": "TAP_Multisphere_Cascade_Diagram.md",
+      "path": "docs/TAP_Multisphere_Cascade_Diagram.md",
+      "n_tokens": 7
+    },
+    {
+      "id": "doc:TAP_Multisphere_Mermaid.md",
+      "type": "doc",
+      "name": "TAP_Multisphere_Mermaid.md",
+      "path": "docs/TAP_Multisphere_Mermaid.md",
+      "n_tokens": 6
+    },
+    {
+      "id": "doc:TAP_Multiverse_Constants_Reduction_v5.3.md",
+      "type": "doc",
+      "name": "TAP_Multiverse_Constants_Reduction_v5.3.md",
+      "path": "docs/TAP_Multiverse_Constants_Reduction_v5.3.md",
+      "n_tokens": 13
+    },
+    {
+      "id": "doc:TAP_Multiverse_Coupling_Framework_v5.3.md",
+      "type": "doc",
+      "name": "TAP_Multiverse_Coupling_Framework_v5.3.md",
+      "path": "docs/TAP_Multiverse_Coupling_Framework_v5.3.md",
+      "n_tokens": 9
+    },
+    {
+      "id": "doc:TAP_Narby_Review.md",
+      "type": "doc",
+      "name": "TAP_Narby_Review.md",
+      "path": "docs/TAP_Narby_Review.md",
+      "n_tokens": 10
+    },
+    {
+      "id": "doc:TAP_P17_Calibration_Constant_v5.3.md",
+      "type": "doc",
+      "name": "TAP_P17_Calibration_Constant_v5.3.md",
+      "path": "docs/TAP_P17_Calibration_Constant_v5.3.md",
+      "n_tokens": 11
+    },
+    {
+      "id": "doc:TAP_P17_Experimental_Design_v5.3.md",
+      "type": "doc",
+      "name": "TAP_P17_Experimental_Design_v5.3.md",
+      "path": "docs/TAP_P17_Experimental_Design_v5.3.md",
+      "n_tokens": 11
+    },
+    {
+      "id": "doc:TAP_P17_Plastic_CubeRoot_v5.3.md",
+      "type": "doc",
+      "name": "TAP_P17_Plastic_CubeRoot_v5.3.md",
+      "path": "docs/TAP_P17_Plastic_CubeRoot_v5.3.md",
+      "n_tokens": 14
+    },
+    {
+      "id": "doc:TAP_P2_Lymphangiography_Protocol.md",
+      "type": "doc",
+      "name": "TAP_P2_Lymphangiography_Protocol.md",
+      "path": "docs/TAP_P2_Lymphangiography_Protocol.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_PlanetaryCores_AI_Energy_Brainstorm.md",
+      "type": "doc",
+      "name": "TAP_PlanetaryCores_AI_Energy_Brainstorm.md",
+      "path": "docs/TAP_PlanetaryCores_AI_Energy_Brainstorm.md",
+      "n_tokens": 10
+    },
+    {
+      "id": "doc:TAP_Qubit_Coherence_Sweep_Results.md",
+      "type": "doc",
+      "name": "TAP_Qubit_Coherence_Sweep_Results.md",
+      "path": "docs/TAP_Qubit_Coherence_Sweep_Results.md",
+      "n_tokens": 9
+    },
+    {
+      "id": "doc:TAP_Ratchet_Sweep_Results.md",
+      "type": "doc",
+      "name": "TAP_Ratchet_Sweep_Results.md",
+      "path": "docs/TAP_Ratchet_Sweep_Results.md",
+      "n_tokens": 12
+    },
+    {
+      "id": "doc:TAP_Somatic_Cascade.md",
+      "type": "doc",
+      "name": "TAP_Somatic_Cascade.md",
+      "path": "docs/TAP_Somatic_Cascade.md",
+      "n_tokens": 8
+    },
+    {
+      "id": "doc:TAP_Superconductivity_Sweep_Results.md",
+      "type": "doc",
+      "name": "TAP_Superconductivity_Sweep_Results.md",
+      "path": "docs/TAP_Superconductivity_Sweep_Results.md",
+      "n_tokens": 8
+    },
+    {
+      "id": "doc:TAP_Testable_Predictions_v5.md",
+      "type": "doc",
+      "name": "TAP_Testable_Predictions_v5.md",
+      "path": "docs/TAP_Testable_Predictions_v5.md",
+      "n_tokens": 10
+    },
+    {
+      "id": "doc:TAP_Tetrahedral_Sweep_Results.md",
+      "type": "doc",
+      "name": "TAP_Tetrahedral_Sweep_Results.md",
+      "path": "docs/TAP_Tetrahedral_Sweep_Results.md",
+      "n_tokens": 9
+    },
+    {
+      "id": "doc:TAP_Theory_Paper.md",
+      "type": "doc",
+      "name": "TAP_Theory_Paper.md",
+      "path": "docs/TAP_Theory_Paper.md",
+      "n_tokens": 8
+    },
+    {
+      "id": "doc:TAP_White_Paper.md",
+      "type": "doc",
+      "name": "TAP_White_Paper.md",
+      "path": "docs/TAP_White_Paper.md",
+      "n_tokens": 8
+    },
+    {
+      "id": "doc:TAP_v5_OnePager.md",
+      "type": "doc",
+      "name": "TAP_v5_OnePager.md",
+      "path": "docs/TAP_v5_OnePager.md",
+      "n_tokens": 8
+    },
+    {
+      "id": "doc:TAP_v5_Paper.md",
+      "type": "doc",
+      "name": "TAP_v5_Paper.md",
+      "path": "docs/TAP_v5_Paper.md",
+      "n_tokens": 9
+    }
+  ],
+  "idf_table": {
+    "calibration": 4.9252682321781664,
+    "calibration_derivation": 5.330733340286331,
+    "py": 1.3417492937220568,
+    "other": 2.3350010667323398,
+    "framework": 4.077970371790963,
+    "check_env": 5.330733340286331,
+    "tap": 2.239690886928015,
+    "script": 4.9252682321781664,
+    "dump_descriptors": 5.330733340286331,
+    "flash_arduino": 5.330733340286331,
+    "read_qubit": 5.330733340286331,
+    "render_mermaid_diagrams": 5.330733340286331,
+    "rendering": 5.330733340286331,
+    "run_all_sweeps": 5.330733340286331,
+    "run_coupled_sweep": 5.330733340286331,
+    "tribunal": 4.414442608412176,
+    "run_ratchet_test_auto": 5.330733340286331,
+    "tests": 4.637586159726386,
+    "run_tetrahedral_sweep": 5.330733340286331,
+    "constants": 4.9252682321781664,
+    "scientific": 5.330733340286331,
+    "benchmarks": 5.330733340286331,
+    "for": 4.637586159726386,
+    "scripts": 5.330733340286331,
+    "observational": 5.330733340286331,
+    "centralized": 5.330733340286331,
+    "science_constants": 5.330733340286331,
+    "and": 3.7212954278522306,
+    "ht2a": 5.330733340286331,
+    "tap_5ht2a_ayahuasca_sim": 5.330733340286331,
+    "5": 5.330733340286331,
+    "tap_5ht2a_epigenetic_coupling_sim": 5.330733340286331,
+    "epigenetic": 4.9252682321781664,
+    "seismic": 4.232121051618222,
+    "geological": 4.232121051618222,
+    "tap_5year_seismic_sweep": 5.330733340286331,
+    "tap_5year_seismic_v2": 5.330733340286331,
+    "tap_asynchronous_pulsation_sim": 5.330733340286331,
+    "tap_audio_test": 5.330733340286331,
+    "author": 5.330733340286331,
+    "lens": 5.330733340286331,
+    "tap_author_lens": 5.330733340286331,
+    "cascade": 3.3158303197440664,
+    "tap_ayahuasca_fascia_cascade_sim": 5.330733340286331,
+    "sims": 3.9444389791664403,
+    "tap_biochem_qubit_graphene": 5.330733340286331,
+    "clock": 3.826655943510057,
+    "breath": 3.9444389791664403,
+    "tap_body_breath_states": 5.330733340286331,
+    "tap_breath_clock": 5.330733340286331,
+    "tap_breath_clock_chem_mod": 5.330733340286331,
+    "tap_breath_per_body": 5.330733340286331,
+    "tap_cascade_context": 5.330733340286331,
+    "chromatin": 5.330733340286331,
+    "tap_chromatin_state_sim": 5.330733340286331,
+    "braid": 5.330733340286331,
+    "group": 5.330733340286331,
+    "tap_collagen_braiding_sim": 5.330733340286331,
+    "quantum": 5.330733340286331,
+    "tap_core_ai_cascade": 5.330733340286331,
+    "core": 4.9252682321781664,
+    "cosmic": 3.625985248047906,
+    "tap_cosmic_breath_sim": 5.330733340286331,
+    "planetary": 3.826655943510057,
+    "tap_cosmic_kp_validation": 5.330733340286331,
+    "tap_cosmic_origin_sims": 5.330733340286331,
+    "tap_cosmic_quantum_neuro": 5.330733340286331,
+    "tap_cosmological_cascade_sweep": 5.330733340286331,
+    "tap_coupled_ayahuasca_sim": 5.330733340286331,
+    "ayahuasca": 5.330733340286331,
+    "cross": 5.330733340286331,
+    "tap_cross_body_coupling": 5.330733340286331,
+    "domain": 5.330733340286331,
+    "daily": 4.637586159726386,
+    "check": 4.637586159726386,
+    "tap_daily_prediction_check": 5.330733340286331,
+    "dashboard": 4.637586159726386,
+    "tap_dashboard": 5.330733340286331,
+    "tap_device_coupled_soliton": 5.330733340286331,
+    "tap_digital_soliton_sim": 5.330733340286331,
+    "tap_encyclopedia": 5.330733340286331,
+    "encyclopedia": 4.637586159726386,
+    "tap_encyclopedia_v2": 5.330733340286331,
+    "tap_end_to_end_sim": 5.330733340286331,
+    "tap_epigenetic_cosmic_cascade": 5.330733340286331,
+    "tap_epigenetic_flop_sim": 5.330733340286331,
+    "spirals": 5.330733340286331,
+    "tap_fascia_sim": 5.330733340286331,
+    "fascia": 4.9252682321781664,
+    "tap_final_hybrid_predictions": 5.330733340286331,
+    "finance": 5.330733340286331,
+    "tap_finance_rescreen": 5.330733340286331,
+    "economics": 5.330733340286331,
+    "coherence": 4.232121051618222,
+    "tap_framework_coherence": 5.330733340286331,
+    "tap_global_weather": 5.330733340286331,
+    "atmospheric": 4.232121051618222,
+    "weather": 4.077970371790963,
+    "tap_gravitational_waveform": 5.330733340286331,
+    "tap_group_hysteria_sim": 5.330733340286331,
+    "tap_high_dimension_sequence_sim": 5.330733340286331,
+    "tap_kp_prediction_sim": 5.330733340286331,
+    "shipping": 5.330733340286331,
+    "logistics": 5.330733340286331,
+    "tap_logistics_prediction": 5.330733340286331,
+    "tap_lymphatic_cascade_sim": 5.330733340286331,
+    "tap_marketing_contagion_sim": 5.330733340286331,
+    "tap_multi_body_p1p18_sweep": 5.330733340286331,
+    "tap_multicycle_reset_sweep": 5.330733340286331,
+    "tap_multidiscipline_sweep": 5.330733340286331,
+    "tap_multisphere_predictions": 5.330733340286331,
+    "multisphere": 4.414442608412176,
+    "tap_multiverse_coupling_sim": 5.330733340286331,
+    "multiverse": 4.637586159726386,
+    "tap_muscle_memory_sim": 5.330733340286331,
+    "ryu": 4.9252682321781664,
+    "somatic": 4.637586159726386,
+    "nami": 4.9252682321781664,
+    "tap_nami_per_body_p1p18": 5.330733340286331,
+    "tap_nami_ryu_breath": 5.330733340286331,
+    "tap_neural_resonance": 5.330733340286331,
+    "tap_option_arbitrage": 5.330733340286331,
+    "geometry": 5.330733340286331,
+    "tap_p15_soot_fidelity_sim": 5.330733340286331,
+    "visualization": 5.330733340286331,
+    "tap_p16_magnetite_chiral_sim": 5.330733340286331,
+    "tap_p1p18_re_evaluation": 5.330733340286331,
+    "tap_pair_bonding_sim": 5.330733340286331,
+    "tap_parameter_free_constants_proof": 5.330733340286331,
+    "tap_per_body_p1p18": 5.330733340286331,
+    "per": 4.9252682321781664,
+    "body": 4.9252682321781664,
+    "tap_per_event_seismic": 5.330733340286331,
+    "tap_per_event_seismic_v2": 5.330733340286331,
+    "tap_phone_minimal_soliton": 5.330733340286331,
+    "tap_population_sweeps_sim": 5.330733340286331,
+    "tap_proof": 5.330733340286331,
+    "tap_quantum_decoherence": 5.330733340286331,
+    "tap_qubit_coherence_sweep": 5.330733340286331,
+    "real": 5.330733340286331,
+    "tap_real_data_validator": 5.330733340286331,
+    "data": 5.330733340286331,
+    "tap_reset_antitemplate_sim": 5.330733340286331,
+    "tap_schumann_resonance": 5.330733340286331,
+    "tap_seismic_correlation": 5.330733340286331,
+    "solar": 5.330733340286331,
+    "tap_solar_dynamo": 5.330733340286331,
+    "tap_soliton_collision_stress": 5.330733340286331,
+    "tap_soliton_shielding_comparison": 5.330733340286331,
+    "tap_somatic_cosmic_geometry": 5.330733340286331,
+    "tap_somatic_cosmic_geometry_v2": 5.330733340286331,
+    "tap_somatic_cosmic_v3": 5.330733340286331,
+    "tap_somynence_48_sim": 5.330733340286331,
+    "tap_standalone_cascade_tribunal": 5.330733340286331,
+    "99": 5.330733340286331,
+    "tap_super_tribunal_99": 5.330733340286331,
+    "tap_superconductivity_sweep": 5.330733340286331,
+    "tap_tappasecond": 5.330733340286331,
+    "tappasecond": 5.330733340286331,
+    "tap_test_framework_challenge": 5.330733340286331,
+    "cyclic": 5.330733340286331,
+    "tap_trans_cyclic_sweep": 5.330733340286331,
+    "trans": 5.330733340286331,
+    "tap_unified_breath_clock": 5.330733340286331,
+    "tap_unified_cascade": 5.330733340286331,
+    "unified": 5.330733340286331,
+    "tap_unified_social_sim": 5.330733340286331,
+    "tap_usgs_monitor": 5.330733340286331,
+    "tap_viral_epidemiology_sim": 5.330733340286331,
+    "tap_weather_backfill": 5.330733340286331,
+    "tap_weather_recalibration": 5.330733340286331,
+    "tap_weather_v2": 5.330733340286331,
+    "tap_weather_v3": 5.330733340286331,
+    "tap_zodiac_to_breath": 5.330733340286331,
+    "update_dashboard": 5.330733340286331,
+    "md": 2.1952391243571814,
+    "model": 3.4589311633847397,
+    "index": 4.9252682321781664,
+    "documentation": 5.330733340286331,
+    "review": 4.9252682321781664,
+    "peer_review_checklist": 5.330733340286331,
+    "peer": 5.330733340286331,
+    "checklist": 5.330733340286331,
+    "v5": 3.1906671767900603,
+    "the": 3.028148247292285,
+    "1": 4.637586159726386,
+    "12th": 5.330733340286331,
+    "physics": 5.330733340286331,
+    "level": 4.9252682321781664,
+    "curriculum": 5.330733340286331,
+    "advanced": 5.330733340286331,
+    "grade": 4.9252682321781664,
+    "tap_12th_grade_peer_review_curriculum": 5.330733340286331,
+    "freshman": 5.330733340286331,
+    "beginner": 5.330733340286331,
+    "s": 4.9252682321781664,
+    "tap_8th_grade_fundamentals_curriculum": 5.330733340286331,
+    "guide": 5.330733340286331,
+    "a": 4.9252682321781664,
+    "8th": 5.330733340286331,
+    "incomplete": 5.330733340286331,
+    "reset": 4.9252682321781664,
+    "template": 5.330733340286331,
+    "residue": 5.330733340286331,
+    "tap_anti_template_residue_v5": 5.330733340286331,
+    "anti": 5.330733340286331,
+    "3": 3.7212954278522306,
+    "tap_biochem_qubit_graphene_brainstorm": 5.330733340286331,
+    "flows": 5.330733340286331,
+    "low": 5.330733340286331,
+    "tech": 5.330733340286331,
+    "qubits": 4.9252682321781664,
+    "graphene": 4.9252682321781664,
+    "synthesis": 5.330733340286331,
+    "biochemical": 5.330733340286331,
+    "tap_connectivity_dashboard": 5.330733340286331,
+    "connectivity": 5.330733340286331,
+    "inventory": 5.330733340286331,
+    "diodes": 5.330733340286331,
+    "capacitors": 5.330733340286331,
+    "tap_capacitor_and_diode_inventory": 5.330733340286331,
+    "component": 4.9252682321781664,
+    "of": 4.414442608412176,
+    "dna": 4.9252682321781664,
+    "life": 4.9252682321781664,
+    "2": 4.9252682321781664,
+    "tap_cosmic_origin_of_life_v5": 5.330733340286331,
+    "origin": 4.9252682321781664,
+    "receiver": 5.330733340286331,
+    "as": 4.9252682321781664,
+    "temperature": 5.330733340286331,
+    "tap_cosmic_quantum_neuro_brainstorm": 5.330733340286331,
+    "resonances": 5.330733340286331,
+    "interpersonal": 5.330733340286331,
+    "room": 5.330733340286331,
+    "electro": 5.330733340286331,
+    "report": 4.637586159726386,
+    "tap_coupled_waveguide_all_results": 5.330733340286331,
+    "capacitor": 4.9252682321781664,
+    "with": 5.330733340286331,
+    "lab": 4.637586159726386,
+    "hybrid": 5.330733340286331,
+    "acoustic": 5.330733340286331,
+    "waveguide": 4.637586159726386,
+    "physical": 4.414442608412176,
+    "topological": 4.9252682321781664,
+    "brainstorming": 5.330733340286331,
+    "voltage": 4.9252682321781664,
+    "to": 4.637586159726386,
+    "tap_coupled_waveguide_brainstorm": 5.330733340286331,
+    "coupled": 4.9252682321781664,
+    "phase": 4.9252682321781664,
+    "tap_coupled_waveguide_sweep_results": 5.330733340286331,
+    "question": 5.330733340286331,
+    "source": 5.330733340286331,
+    "tap_dna_topology_epigenetics": 5.330733340286331,
+    "epigenetics": 5.330733340286331,
+    "topology": 5.330733340286331,
+    "02": 4.9252682321781664,
+    "prediction": 4.9252682321781664,
+    "2026": 4.9252682321781664,
+    "07": 4.9252682321781664,
+    "tap_daily_check_2026": 4.9252682321781664,
+    "deep": 5.330733340286331,
+    "02_deep": 5.330733340286331,
+    "ddcfet": 5.330733340286331,
+    "specification": 5.330733340286331,
+    "regenerative": 5.330733340286331,
+    "double": 5.330733340286331,
+    "tap_double_ddcfet_cascade": 5.330733340286331,
+    "design": 4.9252682321781664,
+    "tap_encyclopedia_v5_3": 5.330733340286331,
+    "tap_experimental_designs_v5": 5.330733340286331,
+    "designs": 5.330733340286331,
+    "p15": 5.330733340286331,
+    "p18": 5.330733340286331,
+    "experimental": 4.637586159726386,
+    "master": 5.330733340286331,
+    "tap_framework_index": 5.330733340286331,
+    "tap_fascia_trains_v5": 5.330733340286331,
+    "dragons": 5.330733340286331,
+    "anatomy": 4.9252682321781664,
+    "twin": 5.330733340286331,
+    "0": 4.414442608412176,
+    "myers": 5.330733340286331,
+    "trains": 5.330733340286331,
+    "magnetospheric": 5.330733340286331,
+    "global": 5.330733340286331,
+    "tap_global_weather_operations": 5.330733340286331,
+    "engine": 5.330733340286331,
+    "analysis": 5.330733340286331,
+    "operations": 5.330733340286331,
+    "bom": 5.330733340286331,
+    "bill": 5.330733340286331,
+    "tap_hardware_bill_of_materials": 5.330733340286331,
+    "hardware": 5.330733340286331,
+    "materials": 5.330733340286331,
+    "logs": 5.330733340286331,
+    "qubit": 4.637586159726386,
+    "exfoliation": 5.330733340286331,
+    "tap_macro_qubit_graphene_schematic": 5.330733340286331,
+    "driver": 5.330733340286331,
+    "macroscopic": 5.330733340286331,
+    "biotemplates": 5.330733340286331,
+    "tap_multisphere_biotemplates_v5": 5.330733340286331,
+    "visual": 5.330733340286331,
+    "tap_multisphere_cascade_diagram": 5.330733340286331,
+    "diagram": 4.9252682321781664,
+    "tap_multisphere_mermaid": 5.330733340286331,
+    "mermaid": 5.330733340286331,
+    "tap_multiverse_constants_reduction_v5": 5.330733340286331,
+    "reduction": 5.330733340286331,
+    "4": 5.330733340286331,
+    "7": 5.330733340286331,
+    "coupling": 5.330733340286331,
+    "tap_multiverse_coupling_framework_v5": 5.330733340286331,
+    "jeremy": 5.330733340286331,
+    "narby": 5.330733340286331,
+    "science": 5.330733340286331,
+    "tap_narby_review": 5.330733340286331,
+    "tap_p17_calibration_constant_v5": 5.330733340286331,
+    "constant": 5.330733340286331,
+    "p17": 4.637586159726386,
+    "reframed": 5.330733340286331,
+    "tap_p17_experimental_design_v5": 5.330733340286331,
+    "v3": 4.9252682321781664,
+    "resolved": 5.330733340286331,
+    "cube": 5.330733340286331,
+    "root": 5.330733340286331,
+    "derivation": 5.330733340286331,
+    "tap_p17_plastic_cuberoot_v5": 5.330733340286331,
+    "plastic": 5.330733340286331,
+    "lymph": 5.330733340286331,
+    "p2": 5.330733340286331,
+    "tap_p2_lymphangiography_protocol": 5.330733340286331,
+    "duct": 5.330733340286331,
+    "flow": 5.330733340286331,
+    "in": 5.330733340286331,
+    "thoracic": 5.330733340286331,
+    "industrial": 5.330733340286331,
+    "compute": 5.330733340286331,
+    "tap_planetarycores_ai_energy_brainstorm": 5.330733340286331,
+    "parameter": 4.9252682321781664,
+    "tap_qubit_coherence_sweep_results": 5.330733340286331,
+    "optimization": 4.9252682321781664,
+    "sweep": 4.414442608412176,
+    "results": 4.637586159726386,
+    "tap_ratchet_sweep_results": 5.330733340286331,
+    "path": 5.330733340286331,
+    "temporal": 4.637586159726386,
+    "ratchet": 5.330733340286331,
+    "diode": 5.330733340286331,
+    "tap_somatic_cascade": 5.330733340286331,
+    "superconductivity": 5.330733340286331,
+    "tap_superconductivity_sweep_results": 5.330733340286331,
+    "tap_testable_predictions_v5": 5.330733340286331,
+    "protocols": 5.330733340286331,
+    "testable": 5.330733340286331,
+    "predictions": 5.330733340286331,
+    "tap_tetrahedral_sweep_results": 5.330733340286331,
+    "tetrahedral": 5.330733340286331,
+    "bridge": 5.330733340286331,
+    "asymmetric": 4.9252682321781664,
+    "pulsation": 4.9252682321781664,
+    "tap_theory_paper": 5.330733340286331,
+    "tap_white_paper": 5.330733340286331,
+    "summary": 5.330733340286331,
+    "tap_v5_onepager": 5.330733340286331,
+    "one": 5.330733340286331,
+    "page": 5.330733340286331,
+    "tensegrity": 5.330733340286331,
+    "tap_v5_paper": 5.330733340286331,
+    "polyvagal": 5.330733340286331
+  },
+  "tf_table": [
+    {
+      "calibration_derivation": 0.4,
+      "py": 0.4,
+      "calibration": 0.2
+    },
+    {
+      "check_env": 0.1667,
+      "py": 0.1667,
+      "other": 0.1667,
+      "tap": 0.1667,
+      "framework": 0.1667,
+      "script": 0.1667
+    },
+    {
+      "dump_descriptors": 0.1667,
+      "py": 0.1667,
+      "other": 0.1667,
+      "tap": 0.1667,
+      "framework": 0.1667,
+      "script": 0.1667
+    },
+    {
+      "flash_arduino": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "read_qubit": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "render_mermaid_diagrams": 0.4,
+      "py": 0.4,
+      "rendering": 0.2
+    },
+    {
+      "run_all_sweeps": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "run_coupled_sweep": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "run_ratchet_test_auto": 0.3333,
+      "py": 0.3333,
+      "tests": 0.1667,
+      "tribunal": 0.1667
+    },
+    {
+      "run_tetrahedral_sweep": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "science_constants": 0.0833,
+      "py": 0.0833,
+      "other": 0.0833,
+      "centralized": 0.0833,
+      "scientific": 0.0833,
+      "constants": 0.0833,
+      "and": 0.0833,
+      "observational": 0.0833,
+      "benchmarks": 0.0833,
+      "for": 0.0833,
+      "tap": 0.0833,
+      "scripts": 0.0833
+    },
+    {
+      "tap_5ht2a_ayahuasca_sim": 0.3333,
+      "py": 0.3333,
+      "5": 0.1667,
+      "ht2a": 0.1667
+    },
+    {
+      "tap_5ht2a_epigenetic_coupling_sim": 0.4,
+      "py": 0.4,
+      "epigenetic": 0.2
+    },
+    {
+      "tap_5year_seismic_sweep": 0.3333,
+      "py": 0.3333,
+      "seismic": 0.1667,
+      "geological": 0.1667
+    },
+    {
+      "tap_5year_seismic_v2": 0.3333,
+      "py": 0.3333,
+      "seismic": 0.1667,
+      "geological": 0.1667
+    },
+    {
+      "tap_asynchronous_pulsation_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_audio_test": 0.3333,
+      "py": 0.3333,
+      "tests": 0.1667,
+      "tribunal": 0.1667
+    },
+    {
+      "tap_author_lens": 0.3333,
+      "py": 0.3333,
+      "author": 0.1667,
+      "lens": 0.1667
+    },
+    {
+      "tap_ayahuasca_fascia_cascade_sim": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_biochem_qubit_graphene": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_body_breath_states": 0.3333,
+      "py": 0.3333,
+      "breath": 0.1667,
+      "clock": 0.1667
+    },
+    {
+      "tap_breath_clock": 0.3333,
+      "py": 0.3333,
+      "breath": 0.1667,
+      "clock": 0.1667
+    },
+    {
+      "tap_breath_clock_chem_mod": 0.3333,
+      "py": 0.3333,
+      "breath": 0.1667,
+      "clock": 0.1667
+    },
+    {
+      "tap_breath_per_body": 0.3333,
+      "py": 0.3333,
+      "breath": 0.1667,
+      "clock": 0.1667
+    },
+    {
+      "tap_cascade_context": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_chromatin_state_sim": 0.4,
+      "py": 0.4,
+      "chromatin": 0.2
+    },
+    {
+      "tap_collagen_braiding_sim": 0.2857,
+      "py": 0.2857,
+      "braid": 0.1429,
+      "group": 0.1429,
+      "quantum": 0.1429
+    },
+    {
+      "tap_core_ai_cascade": 0.3333,
+      "py": 0.3333,
+      "core": 0.1667,
+      "framework": 0.1667
+    },
+    {
+      "tap_cosmic_breath_sim": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_cosmic_kp_validation": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_cosmic_origin_sims": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_cosmic_quantum_neuro": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_cosmological_cascade_sweep": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_coupled_ayahuasca_sim": 0.4,
+      "py": 0.4,
+      "ayahuasca": 0.2
+    },
+    {
+      "tap_cross_body_coupling": 0.3333,
+      "py": 0.3333,
+      "cross": 0.1667,
+      "domain": 0.1667
+    },
+    {
+      "tap_daily_prediction_check": 0.3333,
+      "py": 0.3333,
+      "daily": 0.1667,
+      "check": 0.1667
+    },
+    {
+      "tap_dashboard": 0.4,
+      "py": 0.4,
+      "dashboard": 0.2
+    },
+    {
+      "tap_device_coupled_soliton": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_digital_soliton_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_encyclopedia": 0.4,
+      "py": 0.4,
+      "encyclopedia": 0.2
+    },
+    {
+      "tap_encyclopedia_v2": 0.4,
+      "py": 0.4,
+      "encyclopedia": 0.2
+    },
+    {
+      "tap_end_to_end_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_epigenetic_cosmic_cascade": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_epigenetic_flop_sim": 0.4,
+      "py": 0.4,
+      "epigenetic": 0.2
+    },
+    {
+      "tap_fascia_sim": 0.3333,
+      "py": 0.3333,
+      "fascia": 0.1667,
+      "spirals": 0.1667
+    },
+    {
+      "tap_final_hybrid_predictions": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_finance_rescreen": 0.3333,
+      "py": 0.3333,
+      "finance": 0.1667,
+      "economics": 0.1667
+    },
+    {
+      "tap_framework_coherence": 0.4,
+      "py": 0.4,
+      "coherence": 0.2
+    },
+    {
+      "tap_global_weather": 0.3333,
+      "py": 0.3333,
+      "weather": 0.1667,
+      "atmospheric": 0.1667
+    },
+    {
+      "tap_gravitational_waveform": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_group_hysteria_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_high_dimension_sequence_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_kp_prediction_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_logistics_prediction": 0.3333,
+      "py": 0.3333,
+      "logistics": 0.1667,
+      "shipping": 0.1667
+    },
+    {
+      "tap_lymphatic_cascade_sim": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_marketing_contagion_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_multi_body_p1p18_sweep": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_multicycle_reset_sweep": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_multidiscipline_sweep": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_multisphere_predictions": 0.4,
+      "py": 0.4,
+      "multisphere": 0.2
+    },
+    {
+      "tap_multiverse_coupling_sim": 0.4,
+      "py": 0.4,
+      "multiverse": 0.2
+    },
+    {
+      "tap_muscle_memory_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_nami_per_body_p1p18": 0.2857,
+      "py": 0.2857,
+      "nami": 0.1429,
+      "ryu": 0.1429,
+      "somatic": 0.1429
+    },
+    {
+      "tap_nami_ryu_breath": 0.2857,
+      "py": 0.2857,
+      "nami": 0.1429,
+      "ryu": 0.1429,
+      "somatic": 0.1429
+    },
+    {
+      "tap_neural_resonance": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_option_arbitrage": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_p15_soot_fidelity_sim": 0.3333,
+      "py": 0.3333,
+      "geometry": 0.1667,
+      "visualization": 0.1667
+    },
+    {
+      "tap_p16_magnetite_chiral_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_p1p18_re_evaluation": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_pair_bonding_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_parameter_free_constants_proof": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_per_body_p1p18": 0.3333,
+      "py": 0.3333,
+      "per": 0.1667,
+      "body": 0.1667
+    },
+    {
+      "tap_per_event_seismic": 0.3333,
+      "py": 0.3333,
+      "seismic": 0.1667,
+      "geological": 0.1667
+    },
+    {
+      "tap_per_event_seismic_v2": 0.3333,
+      "py": 0.3333,
+      "seismic": 0.1667,
+      "geological": 0.1667
+    },
+    {
+      "tap_phone_minimal_soliton": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_population_sweeps_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_proof": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_quantum_decoherence": 0.4,
+      "py": 0.4,
+      "coherence": 0.2
+    },
+    {
+      "tap_qubit_coherence_sweep": 0.4,
+      "py": 0.4,
+      "coherence": 0.2
+    },
+    {
+      "tap_real_data_validator": 0.3333,
+      "py": 0.3333,
+      "real": 0.1667,
+      "data": 0.1667
+    },
+    {
+      "tap_reset_antitemplate_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_schumann_resonance": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_seismic_correlation": 0.3333,
+      "py": 0.3333,
+      "seismic": 0.1667,
+      "geological": 0.1667
+    },
+    {
+      "tap_solar_dynamo": 0.4,
+      "py": 0.4,
+      "solar": 0.2
+    },
+    {
+      "tap_soliton_collision_stress": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_soliton_shielding_comparison": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_somatic_cosmic_geometry": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_somatic_cosmic_geometry_v2": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_somatic_cosmic_v3": 0.3333,
+      "py": 0.3333,
+      "cosmic": 0.1667,
+      "planetary": 0.1667
+    },
+    {
+      "tap_somynence_48_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_standalone_cascade_tribunal": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_super_tribunal_99": 0.3333,
+      "py": 0.3333,
+      "99": 0.1667,
+      "tribunal": 0.1667
+    },
+    {
+      "tap_superconductivity_sweep": 0.3333,
+      "py": 0.3333,
+      "per": 0.1667,
+      "body": 0.1667
+    },
+    {
+      "tap_tappasecond": 0.4,
+      "py": 0.4,
+      "tappasecond": 0.2
+    },
+    {
+      "tap_test_framework_challenge": 0.3333,
+      "py": 0.3333,
+      "tests": 0.1667,
+      "tribunal": 0.1667
+    },
+    {
+      "tap_trans_cyclic_sweep": 0.3333,
+      "py": 0.3333,
+      "trans": 0.1667,
+      "cyclic": 0.1667
+    },
+    {
+      "tap_unified_breath_clock": 0.3333,
+      "py": 0.3333,
+      "breath": 0.1667,
+      "clock": 0.1667
+    },
+    {
+      "tap_unified_cascade": 0.3333,
+      "py": 0.3333,
+      "cascade": 0.1667,
+      "sims": 0.1667
+    },
+    {
+      "tap_unified_social_sim": 0.4,
+      "py": 0.4,
+      "unified": 0.2
+    },
+    {
+      "tap_usgs_monitor": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_viral_epidemiology_sim": 0.4,
+      "py": 0.4,
+      "other": 0.2
+    },
+    {
+      "tap_weather_backfill": 0.3333,
+      "py": 0.3333,
+      "weather": 0.1667,
+      "atmospheric": 0.1667
+    },
+    {
+      "tap_weather_recalibration": 0.3333,
+      "py": 0.3333,
+      "weather": 0.1667,
+      "atmospheric": 0.1667
+    },
+    {
+      "tap_weather_v2": 0.3333,
+      "py": 0.3333,
+      "weather": 0.1667,
+      "atmospheric": 0.1667
+    },
+    {
+      "tap_weather_v3": 0.3333,
+      "py": 0.3333,
+      "weather": 0.1667,
+      "atmospheric": 0.1667
+    },
+    {
+      "tap_zodiac_to_breath": 0.3333,
+      "py": 0.3333,
+      "breath": 0.1667,
+      "clock": 0.1667
+    },
+    {
+      "update_dashboard": 0.4,
+      "py": 0.4,
+      "dashboard": 0.2
+    },
+    {
+      "index": 0.3333,
+      "md": 0.1667,
+      "tap": 0.1667,
+      "model": 0.1667,
+      "documentation": 0.1667
+    },
+    {
+      "peer_review_checklist": 0.0833,
+      "md": 0.0833,
+      "peer": 0.0833,
+      "review": 0.0833,
+      "checklist": 0.0833,
+      "for": 0.0833,
+      "the": 0.0833,
+      "tap": 0.0833,
+      "cascade": 0.0833,
+      "model": 0.0833,
+      "v5": 0.0833,
+      "1": 0.0833
+    },
+    {
+      "tap_12th_grade_peer_review_curriculum": 0.0833,
+      "md": 0.0833,
+      "the": 0.0833,
+      "tap": 0.0833,
+      "model": 0.0833,
+      "advanced": 0.0833,
+      "physics": 0.0833,
+      "curriculum": 0.0833,
+      "12th": 0.0833,
+      "grade": 0.0833,
+      "freshman": 0.0833,
+      "level": 0.0833
+    },
+    {
+      "tap_8th_grade_fundamentals_curriculum": 0.0833,
+      "md": 0.0833,
+      "the": 0.0833,
+      "tap": 0.0833,
+      "model": 0.0833,
+      "a": 0.0833,
+      "beginner": 0.0833,
+      "s": 0.0833,
+      "guide": 0.0833,
+      "8th": 0.0833,
+      "grade": 0.0833,
+      "level": 0.0833
+    },
+    {
+      "tap_anti_template_residue_v5": 0.0769,
+      "3": 0.1538,
+      "md": 0.0769,
+      "tap": 0.0769,
+      "v5": 0.0769,
+      "anti": 0.0769,
+      "template": 0.0769,
+      "residue": 0.0769,
+      "and": 0.0769,
+      "the": 0.0769,
+      "incomplete": 0.0769,
+      "reset": 0.0769
+    },
+    {
+      "tap_biochem_qubit_graphene_brainstorm": 0.0833,
+      "md": 0.0833,
+      "tap": 0.0833,
+      "model": 0.0833,
+      "biochemical": 0.0833,
+      "flows": 0.0833,
+      "low": 0.0833,
+      "tech": 0.0833,
+      "qubits": 0.0833,
+      "and": 0.0833,
+      "graphene": 0.0833,
+      "synthesis": 0.0833
+    },
+    {
+      "tap_connectivity_dashboard": 0.1667,
+      "md": 0.1667,
+      "tap": 0.1667,
+      "framework": 0.1667,
+      "connectivity": 0.1667,
+      "dashboard": 0.1667
+    },
+    {
+      "tap_capacitor_and_diode_inventory": 0.1429,
+      "md": 0.1429,
+      "tap": 0.1429,
+      "component": 0.1429,
+      "inventory": 0.1429,
+      "capacitors": 0.1429,
+      "diodes": 0.1429
+    },
+    {
+      "tap_cosmic_origin_of_life_v5": 0.0625,
+      "2": 0.125,
+      "md": 0.0625,
+      "tap": 0.0625,
+      "v5": 0.0625,
+      "cosmic": 0.0625,
+      "origin": 0.0625,
+      "of": 0.0625,
+      "life": 0.0625,
+      "and": 0.0625,
+      "the": 0.0625,
+      "dna": 0.0625,
+      "as": 0.0625,
+      "receiver": 0.0625,
+      "model": 0.0625
+    },
+    {
+      "tap_cosmic_quantum_neuro_brainstorm": 0.0833,
+      "md": 0.0833,
+      "tap": 0.0833,
+      "model": 0.0833,
+      "cosmic": 0.0833,
+      "resonances": 0.0833,
+      "room": 0.0833,
+      "temperature": 0.0833,
+      "qubits": 0.0833,
+      "and": 0.0833,
+      "interpersonal": 0.0833,
+      "coherence": 0.0833
+    },
+    {
+      "tap_coupled_waveguide_all_results": 0.0833,
+      "md": 0.0833,
+      "physical": 0.0833,
+      "lab": 0.0833,
+      "report": 0.0833,
+      "hybrid": 0.0833,
+      "electro": 0.0833,
+      "acoustic": 0.0833,
+      "waveguide": 0.0833,
+      "with": 0.0833,
+      "capacitor": 0.0833,
+      "clock": 0.0833
+    },
+    {
+      "tap_coupled_waveguide_brainstorm": 0.1,
+      "md": 0.1,
+      "brainstorming": 0.1,
+      "the": 0.1,
+      "coupled": 0.1,
+      "phase": 0.1,
+      "to": 0.1,
+      "voltage": 0.1,
+      "topological": 0.1,
+      "waveguide": 0.1
+    },
+    {
+      "tap_coupled_waveguide_sweep_results": 0.0909,
+      "md": 0.0909,
+      "physical": 0.0909,
+      "lab": 0.0909,
+      "report": 0.0909,
+      "coupled": 0.0909,
+      "phase": 0.0909,
+      "to": 0.0909,
+      "voltage": 0.0909,
+      "topological": 0.0909,
+      "waveguide": 0.0909
+    },
+    {
+      "tap_dna_topology_epigenetics": 0.1,
+      "md": 0.1,
+      "dna": 0.1,
+      "as": 0.1,
+      "topology": 0.1,
+      "epigenetics": 0.1,
+      "and": 0.1,
+      "the": 0.1,
+      "source": 0.1,
+      "question": 0.1
+    },
+    {
+      "tap_daily_check_2026": 0.0909,
+      "07": 0.1818,
+      "02": 0.1818,
+      "md": 0.0909,
+      "tap": 0.0909,
+      "daily": 0.0909,
+      "prediction": 0.0909,
+      "check": 0.0909,
+      "2026": 0.0909
+    },
+    {
+      "tap_daily_check_2026": 0.0909,
+      "07": 0.1818,
+      "02_deep": 0.0909,
+      "md": 0.0909,
+      "tap": 0.0909,
+      "deep": 0.0909,
+      "daily": 0.0909,
+      "check": 0.0909,
+      "2026": 0.0909,
+      "02": 0.0909
+    },
+    {
+      "tap_double_ddcfet_cascade": 0.0769,
+      "md": 0.0769,
+      "design": 0.0769,
+      "specification": 0.0769,
+      "the": 0.0769,
+      "double": 0.0769,
+      "ddcfet": 0.0769,
+      "regenerative": 0.0769,
+      "cascade": 0.0769,
+      "reset": 0.0769,
+      "tap": 0.0769,
+      "breath": 0.0769,
+      "clock": 0.0769
+    },
+    {
+      "tap_encyclopedia_v5_3": 0.1429,
+      "md": 0.1429,
+      "tap": 0.1429,
+      "encyclopedia": 0.1429,
+      "v5": 0.1429,
+      "3": 0.1429,
+      "2": 0.1429
+    },
+    {
+      "tap_experimental_designs_v5": 0.0909,
+      "3": 0.1818,
+      "md": 0.0909,
+      "tap": 0.0909,
+      "v5": 0.0909,
+      "experimental": 0.0909,
+      "designs": 0.0909,
+      "for": 0.0909,
+      "p15": 0.0909,
+      "p18": 0.0909
+    },
+    {
+      "tap_framework_index": 0.1667,
+      "md": 0.1667,
+      "tap": 0.1667,
+      "framework": 0.1667,
+      "master": 0.1667,
+      "index": 0.1667
+    },
+    {
+      "tap_fascia_trains_v5": 0.0667,
+      "md": 0.0667,
+      "tap": 0.0667,
+      "v5": 0.0667,
+      "0": 0.0667,
+      "myers": 0.0667,
+      "anatomy": 0.0667,
+      "trains": 0.0667,
+      "the": 0.1333,
+      "twin": 0.0667,
+      "dragons": 0.0667,
+      "and": 0.0667,
+      "fascia": 0.0667,
+      "cascade": 0.0667
+    },
+    {
+      "tap_global_weather_operations": 0.1111,
+      "md": 0.1111,
+      "tap": 0.1111,
+      "global": 0.1111,
+      "weather": 0.1111,
+      "engine": 0.1111,
+      "magnetospheric": 0.1111,
+      "operations": 0.1111,
+      "analysis": 0.1111
+    },
+    {
+      "tap_hardware_bill_of_materials": 0.1,
+      "md": 0.1,
+      "tap": 0.1,
+      "hardware": 0.1,
+      "bill": 0.1,
+      "of": 0.1,
+      "materials": 0.1,
+      "bom": 0.1,
+      "component": 0.1,
+      "logs": 0.1
+    },
+    {
+      "tap_macro_qubit_graphene_schematic": 0.1111,
+      "md": 0.1111,
+      "the": 0.1111,
+      "tap": 0.1111,
+      "macroscopic": 0.1111,
+      "qubit": 0.1111,
+      "graphene": 0.1111,
+      "exfoliation": 0.1111,
+      "driver": 0.1111
+    },
+    {
+      "tap_multisphere_biotemplates_v5": 0.0714,
+      "3": 0.1429,
+      "md": 0.0714,
+      "tap": 0.0714,
+      "v5": 0.0714,
+      "multisphere": 0.0714,
+      "biotemplates": 0.0714,
+      "and": 0.0714,
+      "the": 0.0714,
+      "cosmic": 0.0714,
+      "origin": 0.0714,
+      "of": 0.0714,
+      "life": 0.0714
+    },
+    {
+      "tap_multisphere_cascade_diagram": 0.1429,
+      "md": 0.1429,
+      "tap": 0.1429,
+      "multisphere": 0.1429,
+      "visual": 0.1429,
+      "cascade": 0.1429,
+      "diagram": 0.1429
+    },
+    {
+      "tap_multisphere_mermaid": 0.1667,
+      "md": 0.1667,
+      "tap": 0.1667,
+      "multisphere": 0.1667,
+      "mermaid": 0.1667,
+      "diagram": 0.1667
+    },
+    {
+      "tap_multiverse_constants_reduction_v5": 0.0769,
+      "3": 0.1538,
+      "md": 0.0769,
+      "tap": 0.0769,
+      "v5": 0.0769,
+      "the": 0.0769,
+      "7": 0.0769,
+      "multiverse": 0.0769,
+      "constants": 0.0769,
+      "reduction": 0.0769,
+      "to": 0.0769,
+      "4": 0.0769
+    },
+    {
+      "tap_multiverse_coupling_framework_v5": 0.1111,
+      "3": 0.2222,
+      "md": 0.1111,
+      "tap": 0.1111,
+      "v5": 0.1111,
+      "multiverse": 0.1111,
+      "coupling": 0.1111,
+      "framework": 0.1111
+    },
+    {
+      "tap_narby_review": 0.1,
+      "md": 0.1,
+      "tap": 0.1,
+      "model": 0.1,
+      "review": 0.1,
+      "of": 0.1,
+      "jeremy": 0.1,
+      "narby": 0.1,
+      "s": 0.1,
+      "science": 0.1
+    },
+    {
+      "tap_p17_calibration_constant_v5": 0.0909,
+      "3": 0.1818,
+      "md": 0.0909,
+      "tap": 0.0909,
+      "v5": 0.0909,
+      "p17": 0.0909,
+      "reframed": 0.0909,
+      "the": 0.0909,
+      "calibration": 0.0909,
+      "constant": 0.0909
+    },
+    {
+      "tap_p17_experimental_design_v5": 0.0909,
+      "3": 0.1818,
+      "md": 0.0909,
+      "tap": 0.0909,
+      "v5": 0.0909,
+      "p17": 0.0909,
+      "v3": 0.0909,
+      "1": 0.0909,
+      "experimental": 0.0909,
+      "design": 0.0909
+    },
+    {
+      "tap_p17_plastic_cuberoot_v5": 0.0714,
+      "3": 0.1429,
+      "md": 0.0714,
+      "tap": 0.0714,
+      "v5": 0.0714,
+      "p17": 0.0714,
+      "v3": 0.0714,
+      "resolved": 0.0714,
+      "the": 0.0714,
+      "plastic": 0.0714,
+      "cube": 0.0714,
+      "root": 0.0714,
+      "derivation": 0.0714
+    },
+    {
+      "tap_p2_lymphangiography_protocol": 0.0833,
+      "md": 0.0833,
+      "tap": 0.0833,
+      "v5": 0.0833,
+      "0": 0.0833,
+      "prediction": 0.0833,
+      "p2": 0.0833,
+      "thoracic": 0.0833,
+      "duct": 0.0833,
+      "lymph": 0.0833,
+      "flow": 0.0833,
+      "in": 0.0833
+    },
+    {
+      "tap_planetarycores_ai_energy_brainstorm": 0.1,
+      "md": 0.1,
+      "tap": 0.1,
+      "model": 0.1,
+      "the": 0.1,
+      "planetary": 0.1,
+      "core": 0.1,
+      "industrial": 0.1,
+      "compute": 0.1,
+      "cascade": 0.1
+    },
+    {
+      "tap_qubit_coherence_sweep_results": 0.1111,
+      "md": 0.1111,
+      "tap": 0.1111,
+      "qubit": 0.1111,
+      "coherence": 0.1111,
+      "optimization": 0.1111,
+      "parameter": 0.1111,
+      "sweep": 0.1111,
+      "results": 0.1111
+    },
+    {
+      "tap_ratchet_sweep_results": 0.0833,
+      "md": 0.0833,
+      "physical": 0.0833,
+      "lab": 0.0833,
+      "report": 0.0833,
+      "diode": 0.0833,
+      "capacitor": 0.0833,
+      "temporal": 0.0833,
+      "ratchet": 0.0833,
+      "sweep": 0.0833,
+      "path": 0.0833,
+      "a": 0.0833
+    },
+    {
+      "tap_somatic_cascade": 0.125,
+      "md": 0.125,
+      "tap": 0.125,
+      "v5": 0.125,
+      "1": 0.125,
+      "the": 0.125,
+      "somatic": 0.125,
+      "cascade": 0.125
+    },
+    {
+      "tap_superconductivity_sweep_results": 0.125,
+      "md": 0.125,
+      "tap": 0.125,
+      "superconductivity": 0.125,
+      "optimization": 0.125,
+      "parameter": 0.125,
+      "sweep": 0.125,
+      "results": 0.125
+    },
+    {
+      "tap_testable_predictions_v5": 0.1,
+      "md": 0.1,
+      "tap": 0.1,
+      "v5": 0.1,
+      "0": 0.1,
+      "testable": 0.1,
+      "predictions": 0.1,
+      "and": 0.1,
+      "experimental": 0.1,
+      "protocols": 0.1
+    },
+    {
+      "tap_tetrahedral_sweep_results": 0.1111,
+      "md": 0.1111,
+      "tap": 0.1111,
+      "tetrahedral": 0.1111,
+      "qubit": 0.1111,
+      "bridge": 0.1111,
+      "physical": 0.1111,
+      "sweep": 0.1111,
+      "results": 0.1111
+    },
+    {
+      "tap_theory_paper": 0.125,
+      "md": 0.125,
+      "the": 0.125,
+      "temporal": 0.125,
+      "asymmetric": 0.125,
+      "pulsation": 0.125,
+      "tap": 0.125,
+      "model": 0.125
+    },
+    {
+      "tap_white_paper": 0.125,
+      "md": 0.125,
+      "the": 0.125,
+      "temporal": 0.125,
+      "asymmetric": 0.125,
+      "pulsation": 0.125,
+      "tap": 0.125,
+      "model": 0.125
+    },
+    {
+      "tap_v5_onepager": 0.125,
+      "md": 0.125,
+      "tap": 0.125,
+      "v5": 0.125,
+      "0": 0.125,
+      "one": 0.125,
+      "page": 0.125,
+      "summary": 0.125
+    },
+    {
+      "tap_v5_paper": 0.1111,
+      "md": 0.1111,
+      "the": 0.1111,
+      "tensegrity": 0.1111,
+      "anatomy": 0.1111,
+      "polyvagal": 0.1111,
+      "tap": 0.1111,
+      "cascade": 0.1111,
+      "model": 0.1111
+    }
+  ]
+}

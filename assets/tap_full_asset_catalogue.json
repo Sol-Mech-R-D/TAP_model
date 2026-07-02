@@ -1,0 +1,1373 @@
+{
+  "timestamp": "2026-07-02T10:49:14.076077",
+  "n_total": 165,
+  "by_type": {
+    "hex": {
+      "extension": ".hex",
+      "description": "Hex dump",
+      "purpose": "Binary data dump",
+      "n_files": 1,
+      "total_size": 9520,
+      "files": [
+        {
+          "name": "tap_qubit_driver.hex",
+          "size_bytes": 9520,
+          "modified": "2026-06-29T05:32:16.663510",
+          "type": "hex",
+          "description": "Hex dump",
+          "purpose": "Binary data dump"
+        }
+      ]
+    },
+    "html": {
+      "extension": ".html",
+      "description": "HTML file",
+      "purpose": "Generated report/dashboard",
+      "n_files": 4,
+      "total_size": 2782788,
+      "files": [
+        {
+          "name": "dashboard.html",
+          "size_bytes": 1373002,
+          "modified": "2026-07-01T10:03:48.242629",
+          "type": "html",
+          "description": "HTML file",
+          "purpose": "Generated report/dashboard"
+        },
+        {
+          "name": "tap_dashboard.html",
+          "size_bytes": 21283,
+          "modified": "2026-07-02T10:21:06.560836",
+          "type": "html",
+          "description": "HTML file",
+          "purpose": "Generated report/dashboard"
+        },
+        {
+          "name": "tap_multisphere_cascade.html",
+          "size_bytes": 15501,
+          "modified": "2026-07-01T23:04:04.428816",
+          "type": "html",
+          "description": "HTML file",
+          "purpose": "Generated report/dashboard"
+        },
+        {
+          "name": "tap_universe_dashboard.html",
+          "size_bytes": 1373002,
+          "modified": "2026-07-01T10:03:48.238629",
+          "type": "html",
+          "description": "HTML file",
+          "purpose": "Generated report/dashboard"
+        }
+      ]
+    },
+    "log": {
+      "extension": ".log",
+      "description": "Log file",
+      "purpose": "Validation/tribunal log",
+      "n_files": 79,
+      "total_size": 1501170,
+      "files": [
+        {
+          "name": "descriptors.log",
+          "size_bytes": 0,
+          "modified": "2026-06-28T18:57:05.968244",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "env_test.log",
+          "size_bytes": 6416,
+          "modified": "2026-06-28T18:55:04.936244",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "live_qubit_data.log",
+          "size_bytes": 146532,
+          "modified": "2026-06-28T20:38:53.932247",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "python_flash.log",
+          "size_bytes": 657,
+          "modified": "2026-06-28T19:51:03.364246",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-01T19:15:52.216810",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_10year.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T07:48:09.852832",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_bodies.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T08:38:31.108833",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_braid.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T00:20:55.892818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_calib.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-01T23:56:20.252818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_coherence.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T10:14:06.212836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_d_seismic.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T09:43:04.076835",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_dash.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T10:21:30.132836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_e2e.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T05:59:20.008828",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_multiverse.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T00:08:16.416818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_nami.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T09:27:21.008834",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_p15p16.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T00:30:44.244819",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_p17.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-01T23:38:28.460817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_p1p18.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T08:54:11.156833",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_recal.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T07:30:14.168831",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_schumann.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T09:32:08.196835",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_sm.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T10:30:26.796836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_unified.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T08:18:47.064832",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_v2.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-02T08:04:24.328832",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_v53.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-01T23:04:05.840816",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_99_run_v53_final.log",
+          "size_bytes": 5967,
+          "modified": "2026-07-01T23:27:40.876817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_152602.log",
+          "size_bytes": 12246,
+          "modified": "2026-07-01T15:26:33.352803",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_153750.log",
+          "size_bytes": 12246,
+          "modified": "2026-07-01T15:38:19.508803",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_155640.log",
+          "size_bytes": 12246,
+          "modified": "2026-07-01T15:57:13.252804",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_155810.log",
+          "size_bytes": 13302,
+          "modified": "2026-07-01T15:58:41.928804",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_155955.log",
+          "size_bytes": 13302,
+          "modified": "2026-07-01T16:00:27.652804",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_160110.log",
+          "size_bytes": 13302,
+          "modified": "2026-07-01T16:01:42.152804",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_161237.log",
+          "size_bytes": 15177,
+          "modified": "2026-07-01T16:13:10.312804",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_164532.log",
+          "size_bytes": 18669,
+          "modified": "2026-07-01T16:46:06.512805",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_170532.log",
+          "size_bytes": 20589,
+          "modified": "2026-07-01T17:06:20.468806",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_172916.log",
+          "size_bytes": 18840,
+          "modified": "2026-07-01T17:30:08.596806",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_173028.log",
+          "size_bytes": 20589,
+          "modified": "2026-07-01T17:31:44.332806",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_173146.log",
+          "size_bytes": 20589,
+          "modified": "2026-07-01T17:33:10.884806",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_184109.log",
+          "size_bytes": 20589,
+          "modified": "2026-07-01T18:41:53.532809",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_193600.log",
+          "size_bytes": 26548,
+          "modified": "2026-07-01T19:38:12.884810",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_193859.log",
+          "size_bytes": 26548,
+          "modified": "2026-07-01T19:41:17.564810",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_195454.log",
+          "size_bytes": 21792,
+          "modified": "2026-07-01T19:55:39.664811",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_214301.log",
+          "size_bytes": 15592,
+          "modified": "2026-07-01T21:43:35.652814",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_214500.log",
+          "size_bytes": 23015,
+          "modified": "2026-07-01T21:45:46.144814",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_221620.log",
+          "size_bytes": 25091,
+          "modified": "2026-07-01T22:17:05.180815",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_222443.log",
+          "size_bytes": 26148,
+          "modified": "2026-07-01T22:25:27.896815",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_223747.log",
+          "size_bytes": 26041,
+          "modified": "2026-07-01T22:38:37.000815",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_232457.log",
+          "size_bytes": 27001,
+          "modified": "2026-07-01T23:25:43.032817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_232950.log",
+          "size_bytes": 27001,
+          "modified": "2026-07-01T23:30:36.368817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_233544.log",
+          "size_bytes": 28177,
+          "modified": "2026-07-01T23:36:30.208817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_233959.log",
+          "size_bytes": 28174,
+          "modified": "2026-07-01T23:40:48.180817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_234205.log",
+          "size_bytes": 28174,
+          "modified": "2026-07-01T23:42:51.780817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_234704.log",
+          "size_bytes": 28171,
+          "modified": "2026-07-01T23:47:50.460817",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_235344.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-01T23:54:31.396818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_235714.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-01T23:58:02.232818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260701_235927.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T00:00:16.416818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_000923.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T00:10:12.476818",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_002606.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T00:26:51.040819",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_003433.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T00:35:19.616819",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_055920.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T06:00:05.948828",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_070744.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T07:08:30.292830",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_073625.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T07:37:10.400831",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_075234.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T07:53:26.084832",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_080546.log",
+          "size_bytes": 27406,
+          "modified": "2026-07-02T08:06:32.524832",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_080651.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T08:08:07.036832",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_082227.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T08:23:18.168833",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_084003.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T08:41:00.616833",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_085859.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T08:59:47.216834",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_092829.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T09:29:15.384835",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_093251.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T09:33:36.224835",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_095410.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T09:55:32.928835",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_101438.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T10:15:48.912836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_102242.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T10:23:41.196836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_20260702_103449.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T10:37:22.168836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_LATEST.log",
+          "size_bytes": 29155,
+          "modified": "2026-07-02T10:37:22.168836",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_v51.log",
+          "size_bytes": 2221,
+          "modified": "2026-07-01T19:38:13.268810",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_full_run_v52.log",
+          "size_bytes": 3935,
+          "modified": "2026-07-01T19:41:18.008810",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_validation_run.log",
+          "size_bytes": 3552,
+          "modified": "2026-07-01T17:33:11.200806",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "tap_validation_run_v2.log",
+          "size_bytes": 3552,
+          "modified": "2026-07-01T18:41:53.764808",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        },
+        {
+          "name": "uartcat_output.log",
+          "size_bytes": 178,
+          "modified": "2026-06-28T18:54:13.160244",
+          "type": "log",
+          "description": "Log file",
+          "purpose": "Validation/tribunal log"
+        }
+      ]
+    },
+    "audio": {
+      "extension": ".wav",
+      "description": "WAV audio",
+      "purpose": "Voice memo or sim audio",
+      "n_files": 2,
+      "total_size": 120988,
+      "files": [
+        {
+          "name": "loop_record.wav",
+          "size_bytes": 18510,
+          "modified": "2026-07-01T00:15:50.354545",
+          "type": "audio",
+          "description": "WAV audio",
+          "purpose": "Voice memo or sim audio"
+        },
+        {
+          "name": "test_record.wav",
+          "size_bytes": 102478,
+          "modified": "2026-07-01T00:08:15.958545",
+          "type": "audio",
+          "description": "WAV audio",
+          "purpose": "Voice memo or sim audio"
+        }
+      ]
+    },
+    "markdown": {
+      "extension": ".md",
+      "description": "Markdown doc",
+      "purpose": "Documentation",
+      "n_files": 50,
+      "total_size": 136231,
+      "files": [
+        {
+          "name": "tap_author_lens_mcKenna_audit.md",
+          "size_bytes": 7678,
+          "modified": "2026-07-02T10:36:49.984836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_author_lens_narby_audit.md",
+          "size_bytes": 6314,
+          "modified": "2026-07-02T10:36:47.544837",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_author_lens_sheldrake_audit.md",
+          "size_bytes": 5825,
+          "modified": "2026-07-02T10:36:48.612836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_author_lens_wallace_audit.md",
+          "size_bytes": 6681,
+          "modified": "2026-07-02T10:36:51.124836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_152602.md",
+          "size_bytes": 1574,
+          "modified": "2026-07-01T15:26:33.476803",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_153750.md",
+          "size_bytes": 1574,
+          "modified": "2026-07-01T15:38:19.624803",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_155640.md",
+          "size_bytes": 1574,
+          "modified": "2026-07-01T15:57:13.356804",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_155810.md",
+          "size_bytes": 1654,
+          "modified": "2026-07-01T15:58:42.056804",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_155955.md",
+          "size_bytes": 1654,
+          "modified": "2026-07-01T16:00:27.760804",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_160110.md",
+          "size_bytes": 1654,
+          "modified": "2026-07-01T16:01:42.284804",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_161237.md",
+          "size_bytes": 1739,
+          "modified": "2026-07-01T16:13:10.444804",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_164532.md",
+          "size_bytes": 1870,
+          "modified": "2026-07-01T16:46:06.624805",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_170532.md",
+          "size_bytes": 1954,
+          "modified": "2026-07-01T17:06:20.576806",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_173146.md",
+          "size_bytes": 1954,
+          "modified": "2026-07-01T17:33:11.076807",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_184109.md",
+          "size_bytes": 1954,
+          "modified": "2026-07-01T18:41:53.672808",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_193859.md",
+          "size_bytes": 2025,
+          "modified": "2026-07-01T19:41:17.948810",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_195454.md",
+          "size_bytes": 2037,
+          "modified": "2026-07-01T19:55:39.824811",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_214500.md",
+          "size_bytes": 2120,
+          "modified": "2026-07-01T21:45:46.264814",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_221620.md",
+          "size_bytes": 2203,
+          "modified": "2026-07-01T22:17:05.340815",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_222443.md",
+          "size_bytes": 2280,
+          "modified": "2026-07-01T22:25:28.028815",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_223747.md",
+          "size_bytes": 2280,
+          "modified": "2026-07-01T22:38:37.100815",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_232457.md",
+          "size_bytes": 2361,
+          "modified": "2026-07-01T23:25:43.192817",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_232950.md",
+          "size_bytes": 2361,
+          "modified": "2026-07-01T23:30:36.532817",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_233544.md",
+          "size_bytes": 2435,
+          "modified": "2026-07-01T23:36:30.316817",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_233959.md",
+          "size_bytes": 2435,
+          "modified": "2026-07-01T23:40:48.340817",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_234205.md",
+          "size_bytes": 2435,
+          "modified": "2026-07-01T23:42:51.896817",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_234704.md",
+          "size_bytes": 2435,
+          "modified": "2026-07-01T23:47:50.572817",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_235344.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-01T23:54:31.528818",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_235714.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-01T23:58:02.368818",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260701_235927.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T00:00:16.548818",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_000923.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T00:10:12.652818",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_002606.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T00:26:51.160819",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_003433.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T00:35:19.768819",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_055920.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T06:00:06.052828",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_070744.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T07:08:30.416830",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_073625.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T07:37:10.520831",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_075234.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T07:53:26.212832",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_080651.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T08:08:07.168832",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_082227.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T08:23:18.304832",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_084003.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T08:41:00.744833",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_085859.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T08:59:47.360834",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_092829.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T09:29:15.524834",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_093251.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T09:33:36.332834",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_095410.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T09:55:33.140835",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_101438.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T10:15:49.080836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_102242.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T10:23:41.344836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_20260702_103449.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T10:37:22.472836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_full_run_LATEST.md",
+          "size_bytes": 2526,
+          "modified": "2026-07-02T10:37:22.472836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_real_data_validation.md",
+          "size_bytes": 5587,
+          "modified": "2026-07-02T10:37:22.164836",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        },
+        {
+          "name": "tap_sim_audit.md",
+          "size_bytes": 4538,
+          "modified": "2026-07-01T17:30:22.716806",
+          "type": "markdown",
+          "description": "Markdown doc",
+          "purpose": "Documentation"
+        }
+      ]
+    },
+    "image": {
+      "extension": ".png",
+      "description": "PNG image",
+      "purpose": "Mermaid/visualization output",
+      "n_files": 26,
+      "total_size": 3785214,
+      "files": [
+        {
+          "name": "tap_5ht2a_ceremonial_timeline.png",
+          "size_bytes": 153868,
+          "modified": "2026-07-01T14:40:00.288801",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_5ht2a_epigenetic_coupling.png",
+          "size_bytes": 174133,
+          "modified": "2026-07-01T16:09:25.488804",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_ayahuasca_fascia_cascade.png",
+          "size_bytes": 226966,
+          "modified": "2026-07-01T17:04:25.284806",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_breath_clock.png",
+          "size_bytes": 364843,
+          "modified": "2026-07-02T07:08:52.576830",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_chromatin_stress_timeline.png",
+          "size_bytes": 267800,
+          "modified": "2026-07-01T15:24:50.592803",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_coupled_2d_heatmap.png",
+          "size_bytes": 91504,
+          "modified": "2026-06-29T23:33:44.680785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_coupled_ceremonial_84d.png",
+          "size_bytes": 224312,
+          "modified": "2026-07-01T14:46:17.440802",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_coupled_decay_sweep.png",
+          "size_bytes": 57064,
+          "modified": "2026-06-29T23:33:44.680785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_coupled_floquet_sweep.png",
+          "size_bytes": 74184,
+          "modified": "2026-06-29T23:33:44.680785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_coupled_frequency_sweep.png",
+          "size_bytes": 75962,
+          "modified": "2026-06-29T23:33:44.684785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_coupled_waveguide_sweep.png",
+          "size_bytes": 82440,
+          "modified": "2026-06-29T23:33:44.684785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_diagrams_anti_template.png",
+          "size_bytes": 74854,
+          "modified": "2026-07-01T23:41:22.276817",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_diagrams_architecture.png",
+          "size_bytes": 85259,
+          "modified": "2026-07-01T23:41:21.940817",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_diagrams_cascade_flow.png",
+          "size_bytes": 61383,
+          "modified": "2026-07-01T23:41:21.584817",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_diagrams_multisphere.png",
+          "size_bytes": 162277,
+          "modified": "2026-07-01T23:41:21.232817",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_diagrams_predictions.png",
+          "size_bytes": 124201,
+          "modified": "2026-07-01T23:41:22.808817",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_epigenetic_cosmic_cascade.png",
+          "size_bytes": 112648,
+          "modified": "2026-07-01T15:57:56.708804",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_fascia_comparison.png",
+          "size_bytes": 240149,
+          "modified": "2026-07-01T16:28:48.404804",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_lymphatic_cascade.png",
+          "size_bytes": 124851,
+          "modified": "2026-07-01T16:29:42.220805",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_multicycle_reset_fidelity.png",
+          "size_bytes": 157412,
+          "modified": "2026-07-01T23:48:25.140817",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_parameter_sweep.png",
+          "size_bytes": 324192,
+          "modified": "2026-06-28T14:32:11.194548",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_proof_plots.png",
+          "size_bytes": 195800,
+          "modified": "2026-06-28T07:28:37.002536",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_qubit_coherence_sweep.png",
+          "size_bytes": 81855,
+          "modified": "2026-06-29T23:33:44.684785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_ratchet_sweep_results.png",
+          "size_bytes": 76739,
+          "modified": "2026-06-29T23:33:44.684785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_superconductivity_sweep.png",
+          "size_bytes": 91040,
+          "modified": "2026-06-29T23:33:44.688785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        },
+        {
+          "name": "tap_tetrahedral_sweep_results.png",
+          "size_bytes": 79478,
+          "modified": "2026-06-29T23:33:44.688785",
+          "type": "image",
+          "description": "PNG image",
+          "purpose": "Mermaid/visualization output"
+        }
+      ]
+    },
+    "text": {
+      "extension": ".txt",
+      "description": "Text file",
+      "purpose": "Notes/observations",
+      "n_files": 1,
+      "total_size": 0,
+      "files": [
+        {
+          "name": "raw_output.txt",
+          "size_bytes": 0,
+          "modified": "2026-06-28T18:51:53.016244",
+          "type": "text",
+          "description": "Text file",
+          "purpose": "Notes/observations"
+        }
+      ]
+    }
+  }
+}
