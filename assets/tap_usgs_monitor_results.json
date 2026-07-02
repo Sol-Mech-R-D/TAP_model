@@ -4,123 +4,123 @@
   "cycle_period_days": 8.12133,
   "aligned_events": [
     {
-      "place": "50 km ENE of Kuji, Japan",
-      "magnitude": 4.9,
-      "time": "2026-07-01T16:15:34.646000+00:00",
-      "phase": 0.2133,
-      "node_distance": 0.2133,
+      "place": "91 km S of Sand Point, Alaska",
+      "magnitude": 2.7,
+      "time": "2026-07-02T13:23:30.754000+00:00",
+      "phase": 0.3218,
+      "node_distance": 0.3218,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "14 km ENE of P\u0101hala, Hawaii",
-      "magnitude": 2.68,
-      "time": "2026-07-01T16:14:21.660000+00:00",
-      "phase": 0.2132,
-      "node_distance": 0.2132,
+      "place": "39 km E of Uonuma, Japan",
+      "magnitude": 4.7,
+      "time": "2026-07-02T11:48:28.653000+00:00",
+      "phase": 0.3136,
+      "node_distance": 0.3136,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "59 km S of Boca de Yuma, Dominican Republic",
-      "magnitude": 3.77,
-      "time": "2026-07-01T16:04:19.290000+00:00",
-      "phase": 0.2124,
-      "node_distance": 0.2124,
+      "place": "60 km WNW of Catuday, Philippines",
+      "magnitude": 4.7,
+      "time": "2026-07-02T11:24:38.577000+00:00",
+      "phase": 0.3116,
+      "node_distance": 0.3116,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "3 km N of Otra Banda, Dominican Republic",
-      "magnitude": 3.38,
-      "time": "2026-07-01T15:57:37.310000+00:00",
-      "phase": 0.2118,
-      "node_distance": 0.2118,
+      "place": "23 km SSE of Karpathos, Greece",
+      "magnitude": 5.2,
+      "time": "2026-07-02T11:06:21.727000+00:00",
+      "phase": 0.31,
+      "node_distance": 0.31,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "21 km NW of Golfito, Costa Rica",
+      "place": "64 km WNW of Catuday, Philippines",
+      "magnitude": 4.7,
+      "time": "2026-07-02T09:59:26.168000+00:00",
+      "phase": 0.3043,
+      "node_distance": 0.3043,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "56 km WNW of Catuday, Philippines",
+      "magnitude": 4.6,
+      "time": "2026-07-02T09:30:13.542000+00:00",
+      "phase": 0.3018,
+      "node_distance": 0.3018,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "65 km WNW of Catuday, Philippines",
+      "magnitude": 4.8,
+      "time": "2026-07-02T09:11:23.313000+00:00",
+      "phase": 0.3002,
+      "node_distance": 0.3002,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "central East Pacific Rise",
       "magnitude": 4.4,
-      "time": "2026-07-01T13:41:16.690000+00:00",
-      "phase": 0.2001,
-      "node_distance": 0.2001,
+      "time": "2026-07-02T08:44:39.701000+00:00",
+      "phase": 0.2979,
+      "node_distance": 0.2979,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "11 km ENE of Unalakleet, Alaska",
-      "magnitude": 3.6,
-      "time": "2026-07-01T13:08:18.660000+00:00",
-      "phase": 0.1973,
-      "node_distance": 0.1973,
+      "place": "63 km ENE of Healy, Alaska",
+      "magnitude": 3.5,
+      "time": "2026-07-02T07:45:42.245000+00:00",
+      "phase": 0.2929,
+      "node_distance": 0.2929,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "14 km S of Volcano, Hawaii",
-      "magnitude": 2.54,
-      "time": "2026-07-01T12:10:07.220000+00:00",
-      "phase": 0.1923,
-      "node_distance": 0.1923,
+      "place": "60 km N of Hatillo, Puerto Rico",
+      "magnitude": 3.93,
+      "time": "2026-07-02T07:05:16.050000+00:00",
+      "phase": 0.2894,
+      "node_distance": 0.2894,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "49 km E of Noda, Japan",
-      "magnitude": 6,
-      "time": "2026-07-01T12:08:29.986000+00:00",
-      "phase": 0.1922,
-      "node_distance": 0.1922,
+      "place": "2 km ESE of Oak Harbor, Washington",
+      "magnitude": 3.81,
+      "time": "2026-07-02T06:35:47.600000+00:00",
+      "phase": 0.2869,
+      "node_distance": 0.2869,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "2 km WSW of Bayam\u00f3n, Puerto Rico",
-      "magnitude": 2.66,
-      "time": "2026-07-01T11:54:14.230000+00:00",
-      "phase": 0.191,
-      "node_distance": 0.191,
-      "stress_coupling_pct": 0.0
-    },
-    {
-      "place": "12 km W of Stanton, Texas",
+      "place": "13 km SSE of Stonewall Gap, Colorado",
       "magnitude": 2.9,
-      "time": "2026-07-01T11:22:57.446000+00:00",
-      "phase": 0.1883,
-      "node_distance": 0.1883,
+      "time": "2026-07-02T06:18:18.034000+00:00",
+      "phase": 0.2854,
+      "node_distance": 0.2854,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "224 km S of Suva, Fiji",
-      "magnitude": 5.6,
-      "time": "2026-07-01T10:42:43.103000+00:00",
-      "phase": 0.1849,
-      "node_distance": 0.1849,
+      "place": "12 km N of Ocotillo Wells, CA",
+      "magnitude": 3.26949813565297,
+      "time": "2026-07-02T06:17:26.390000+00:00",
+      "phase": 0.2853,
+      "node_distance": 0.2853,
       "stress_coupling_pct": 0.0
     },
     {
-      "place": "7 km ESE of An\u00e1vra, Greece",
-      "magnitude": 4.2,
-      "time": "2026-07-01T09:54:15.932000+00:00",
-      "phase": 0.1807,
-      "node_distance": 0.1807,
-      "stress_coupling_pct": 0.0
-    },
-    {
-      "place": "65 km NNE of Punta Cana, Dominican Republic",
-      "magnitude": 3.69,
-      "time": "2026-07-01T09:23:22.150000+00:00",
-      "phase": 0.1781,
-      "node_distance": 0.1781,
-      "stress_coupling_pct": 0.0
-    },
-    {
-      "place": "229 km ESE of Attu Station, Alaska",
-      "magnitude": 4.1,
-      "time": "2026-07-01T09:01:29.360000+00:00",
-      "phase": 0.1762,
-      "node_distance": 0.1762,
-      "stress_coupling_pct": 0.0
-    },
-    {
-      "place": "83 km NNE of Ollag\u00fce, Chile",
+      "place": "88 km WSW of Gorontalo, Indonesia",
       "magnitude": 4.5,
-      "time": "2026-07-01T08:00:50.534000+00:00",
-      "phase": 0.171,
-      "node_distance": 0.171,
+      "time": "2026-07-02T05:50:15.796000+00:00",
+      "phase": 0.283,
+      "node_distance": 0.283,
+      "stress_coupling_pct": 0.0
+    },
+    {
+      "place": "South Sandwich Islands region",
+      "magnitude": 5.3,
+      "time": "2026-07-02T05:23:17.823000+00:00",
+      "phase": 0.2807,
+      "node_distance": 0.2807,
       "stress_coupling_pct": 0.0
     }
   ]
