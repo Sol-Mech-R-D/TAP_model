@@ -1,0 +1,206 @@
+{
+  "timestamp": "2026-07-02T08:37:58.068064",
+  "earth_n_b": 8,
+  "phi_inv13": 0.0019193787254996309,
+  "n_b_per_meta_breath": 523,
+  "bodies": [
+    {
+      "name": "Sun",
+      "type": "star (G2V)",
+      "rotation_days": 25.38,
+      "sub_breath_days": 5.9914,
+      "n_b": 280426698676,
+      "gamma_n_b": 538245040.50081,
+      "age_gyr": 4.6,
+      "phi_depth": 3,
+      "notes": "Per tap_cosmic_quantum_neuro.py: T = 27.2753 \u00d7 \u03c6\u207b\u00b3 \u2248 6.44d"
+    },
+    {
+      "name": "Mercury",
+      "type": "rocky planet",
+      "rotation_days": 58.646,
+      "sub_breath_days": 8.5563,
+      "n_b": 192094488018,
+      "gamma_n_b": 368702074.587493,
+      "age_gyr": 4.5,
+      "phi_depth": 4,
+      "notes": "3:2 resonance with orbital period (87.97d)"
+    },
+    {
+      "name": "Venus",
+      "type": "rocky planet",
+      "rotation_days": 243.025,
+      "sub_breath_days": 35.4569,
+      "n_b": 46355615037,
+      "gamma_n_b": 88973982.309469,
+      "age_gyr": 4.5,
+      "phi_depth": 4,
+      "notes": "Retrograde rotation, very slow"
+    },
+    {
+      "name": "Earth",
+      "type": "rocky planet",
+      "rotation_days": 1.0,
+      "sub_breath_days": 0.1459,
+      "n_b": 11365711774004,
+      "gamma_n_b": 21815105380.183945,
+      "age_gyr": 4.54,
+      "phi_depth": 4,
+      "notes": "Primary reference. T_sub-breath = 8.1213 days (Earth-Moon beat)"
+    },
+    {
+      "name": "Moon",
+      "type": "natural satellite",
+      "rotation_days": 27.3217,
+      "sub_breath_days": 3.9862,
+      "n_b": 413246904538,
+      "gamma_n_b": 793177317.948814,
+      "age_gyr": 4.51,
+      "phi_depth": 4,
+      "notes": "Per tap_cosmic_quantum_neuro.py: T = 27.3217 \u00d7 \u03c6\u207b\u2074 \u2248 3.99d"
+    },
+    {
+      "name": "Mars",
+      "type": "rocky planet",
+      "rotation_days": 1.026,
+      "sub_breath_days": 0.1497,
+      "n_b": 11224093000579,
+      "gamma_n_b": 21543285319.34065,
+      "age_gyr": 4.6,
+      "phi_depth": 4,
+      "notes": "Similar to Earth"
+    },
+    {
+      "name": "Jupiter",
+      "type": "gas giant",
+      "rotation_days": 0.4135,
+      "sub_breath_days": 0.0008,
+      "n_b": 2116956166491333,
+      "gamma_n_b": 4063240628779.719,
+      "age_gyr": 4.6,
+      "phi_depth": 13,
+      "notes": "Per tap_cosmic_quantum_neuro.py: T = 4332.59 \u00d7 \u03c6\u207b\u00b9\u00b3 \u2248 8.30d"
+    },
+    {
+      "name": "Saturn",
+      "type": "gas giant",
+      "rotation_days": 0.444,
+      "sub_breath_days": 0.0009,
+      "n_b": 1928675179592022,
+      "gamma_n_b": 3701858108109.107,
+      "age_gyr": 4.5,
+      "phi_depth": 13,
+      "notes": "Orbital period 10,759 days \u2248 29.46 years"
+    },
+    {
+      "name": "Uranus",
+      "type": "ice giant",
+      "rotation_days": 0.718,
+      "sub_breath_days": 0.0014,
+      "n_b": 1192662645875847,
+      "gamma_n_b": 2289171309193.2007,
+      "age_gyr": 4.5,
+      "phi_depth": 13,
+      "notes": "Tilted 98\u00b0, retrograde"
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant",
+      "rotation_days": 0.671,
+      "sub_breath_days": 0.0013,
+      "n_b": 1276202354305302,
+      "gamma_n_b": 2449515648287.1387,
+      "age_gyr": 4.5,
+      "phi_depth": 13,
+      "notes": ""
+    },
+    {
+      "name": "Pluto",
+      "type": "dwarf planet",
+      "rotation_days": 6.387,
+      "sub_breath_days": 0.0123,
+      "n_b": 134074178759802,
+      "gamma_n_b": 257339126351.39844,
+      "age_gyr": 4.5,
+      "phi_depth": 13,
+      "notes": "Orbital period 248 yr"
+    },
+    {
+      "name": "Milky Way (galactic rotation)",
+      "type": "spiral galaxy",
+      "rotation_days": 230000000.0,
+      "sub_breath_days": 847.3234,
+      "n_b": 5862460688,
+      "gamma_n_b": 11252283.323625,
+      "age_gyr": 13.6,
+      "phi_depth": 26,
+      "notes": "T_galactic = 2.3e8 \u00d7 \u03c6\u207b\u00b2\u2076 days = ?"
+    },
+    {
+      "name": "Sgr A* (galactic center)",
+      "type": "supermassive black hole",
+      "rotation_days": 0.000166,
+      "sub_breath_days": 0.0,
+      "n_b": 8122686495070488625152,
+      "gamma_n_b": 1.5590511652541458e+19,
+      "age_gyr": 13.6,
+      "phi_depth": 26,
+      "notes": "S2 star orbital period = 16 yr"
+    },
+    {
+      "name": "Local stellar group",
+      "type": "stellar association",
+      "rotation_days": 10000000000.0,
+      "sub_breath_days": 36840.1469,
+      "n_b": 134836596,
+      "gamma_n_b": 258803.493781,
+      "age_gyr": 13.6,
+      "phi_depth": 26,
+      "notes": ""
+    },
+    {
+      "name": "Proxima Centauri",
+      "type": "red dwarf (M5.5V)",
+      "rotation_days": 31.0,
+      "sub_breath_days": 4.5228,
+      "n_b": 391670471109,
+      "gamma_n_b": 751763970.653032,
+      "age_gyr": 4.85,
+      "phi_depth": 4,
+      "notes": ""
+    },
+    {
+      "name": "Sirius A",
+      "type": "main sequence (A1V)",
+      "rotation_days": 5.4,
+      "sub_breath_days": 0.7878,
+      "n_b": 111264921919,
+      "gamma_n_b": 213559525.025706,
+      "age_gyr": 0.24,
+      "phi_depth": 4,
+      "notes": "Younger star"
+    },
+    {
+      "name": "Betelgeuse",
+      "type": "red supergiant",
+      "rotation_days": 36.0,
+      "sub_breath_days": 5.2523,
+      "n_b": 591094898,
+      "gamma_n_b": 1134535.971973,
+      "age_gyr": 0.0085,
+      "phi_depth": 4,
+      "notes": "Near end of life"
+    },
+    {
+      "name": "Crab Pulsar",
+      "type": "neutron star",
+      "rotation_days": 0.0331,
+      "sub_breath_days": 0.0126,
+      "n_b": 28022652778,
+      "gamma_n_b": 53786084.574156,
+      "age_gyr": 0.00097,
+      "phi_depth": 2,
+      "notes": "Remnant of SN 1054"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "Fresno": {
+    "best_config": {
+      "alpha": 0.0,
+      "shrinkage": 0.5,
+      "A": -0.2313729443195795,
+      "bias": -3.0790787663983545,
+      "r2_train": 0.4046767598545312
+    },
+    "mae_climatology": 9.318,
+    "mae_v2": 8.317,
+    "mae_v3": 7.373,
+    "v3_vs_clim_pct": 20.87,
+    "v3_vs_v2_pct": 11.35
+  },
+  "Tokyo": {
+    "best_config": {
+      "alpha": 0.0,
+      "shrinkage": 0.7,
+      "A": 0.3781081460131732,
+      "bias": -4.19392632753163,
+      "r2_train": 0.2235244661520689
+    },
+    "mae_climatology": 9.488,
+    "mae_v2": 5.911,
+    "mae_v3": 5.612,
+    "v3_vs_clim_pct": 40.86,
+    "v3_vs_v2_pct": 5.07
+  },
+  "London": {
+    "best_config": {
+      "alpha": 20.0,
+      "shrinkage": 0.7,
+      "A": 0.033465792576057606,
+      "bias": -2.664787736495813,
+      "r2_train": 0.327544578552027
+    },
+    "mae_climatology": 9.333,
+    "mae_v2": 8.912,
+    "mae_v3": 8.566,
+    "v3_vs_clim_pct": 8.21,
+    "v3_vs_v2_pct": 3.88
+  },
+  "Singapore": {
+    "best_config": {
+      "alpha": 0.0,
+      "shrinkage": 1.0,
+      "A": 0.001854140408523702,
+      "bias": 1.441629961888115,
+      "r2_train": -0.6386544229120172
+    },
+    "mae_climatology": 3.221,
+    "mae_v2": 2.267,
+    "mae_v3": 2.267,
+    "v3_vs_clim_pct": 29.62,
+    "v3_vs_v2_pct": 0.0
+  },
+  "Sydney": {
+    "best_config": {
+      "alpha": 20.0,
+      "shrinkage": 1.0,
+      "A": -0.3619414658600476,
+      "bias": 7.712994635216303,
+      "r2_train": 0.30887988018913837
+    },
+    "mae_climatology": 12.946,
+    "mae_v2": 4.059,
+    "mae_v3": 3.722,
+    "v3_vs_clim_pct": 71.25,
+    "v3_vs_v2_pct": 8.3
+  }
+}

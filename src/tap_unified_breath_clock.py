@@ -125,6 +125,35 @@ BREATH_PRODUCERS = [
         "coupling": PHI_INV26,  # ≈ 3.68e-6
         "description": "Cosmic breath, age of universe",
     },
+    # === GALACTIC AND BEYOND (v5.3.2 extension) ===
+    {
+        "name": "Galactic rotation (Milky Way)",
+        "period_days": 2.3e8 * 365.25,  # 230 Myr galactic year
+        "phi_power": 26,        # cosmic scale
+        "coupling": PHI ** -22,  # intermediate cosmic
+        "description": "Milky Way rotation period",
+    },
+    {
+        "name": "Local stellar group (moving group)",
+        "period_days": 1e7 * 365.25,  # 10 Myr
+        "phi_power": 22,
+        "coupling": PHI ** -20,
+        "description": "Local association of stars",
+    },
+    {
+        "name": "Solar apex (peculiar motion)",
+        "period_days": 1.0 * 365.25,  # 1 year (annual cycle)
+        "phi_power": 13,
+        "coupling": PHI_INV13,
+        "description": "Solar peculiar motion ~1 year cycle",
+    },
+    {
+        "name": "Galactic tide (vertical oscillation)",
+        "period_days": 70e6 * 365.25,  # 70 Myr
+        "phi_power": 24,
+        "coupling": PHI ** -24,
+        "description": "Sun oscillates through galactic plane ~70 Myr",
+    },
 ]
 
 
