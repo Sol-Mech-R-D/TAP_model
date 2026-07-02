@@ -1,0 +1,21 @@
+{
+  "params": {
+    "baseline": 123.4745,
+    "A": -0.3594,
+    "B": 7281.221,
+    "r_squared": 0.1694,
+    "n_samples": 60
+  },
+  "train_params": {
+    "baseline": 273.7664,
+    "A": -0.1283,
+    "B": 16314.0706,
+    "r_squared": 0.2769,
+    "n_samples": 48
+  },
+  "test_mae": 1.0648877617977606,
+  "test_rmse": 1.4036064482414583,
+  "today_prediction": 1.9734855686865416,
+  "today_rounded": 2,
+  "current_actual": 1
+}

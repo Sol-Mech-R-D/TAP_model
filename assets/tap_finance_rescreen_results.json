@@ -1,0 +1,360 @@
+{
+  "total_contracts": 960,
+  "thresholds": {
+    "3": {
+      "threshold_pct": 3,
+      "n_buy": 111,
+      "n_sell": 80,
+      "n_total": 191,
+      "buy_yield_mean": 14.79,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": -5.34,
+      "sell_yield_min": -11.95,
+      "top_assets": {
+        "RKDA": 19,
+        "ERCOT_Proxy": 18,
+        "GEOS": 15,
+        "MUX": 14,
+        "NXE": 13,
+        "SHIP": 13,
+        "WTI_Crude": 12,
+        "WWR": 12,
+        "XLE_ETF": 11,
+        "Henry_Hub": 10
+      },
+      "top_buy_assets": {
+        "RKDA": 14,
+        "ERCOT_Proxy": 12,
+        "MUX": 8,
+        "NXE": 8,
+        "WWR": 8
+      },
+      "top_sell_assets": {
+        "XLE_ETF": 7,
+        "GEOS": 7,
+        "WTI_Crude": 6,
+        "Henry_Hub": 6,
+        "ERCOT_Proxy": 6
+      },
+      "top_maturities": {
+        "3": 57,
+        "2": 54,
+        "7": 50,
+        "5": 19,
+        "14": 11
+      }
+    },
+    "5": {
+      "threshold_pct": 5,
+      "n_buy": 100,
+      "n_sell": 39,
+      "n_total": 139,
+      "buy_yield_mean": 16.0,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": -6.85,
+      "sell_yield_min": -11.95,
+      "top_assets": {
+        "ERCOT_Proxy": 15,
+        "WTI_Crude": 12,
+        "GEOS": 12,
+        "MUX": 11,
+        "NXE": 11,
+        "RKDA": 11,
+        "SHIP": 10,
+        "XLE_ETF": 9,
+        "WWR": 8,
+        "GEVO": 7
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 12,
+        "RKDA": 10,
+        "MUX": 8,
+        "NXE": 8,
+        "GEOS": 8
+      },
+      "top_sell_assets": {
+        "WTI_Crude": 6,
+        "XLE_ETF": 5,
+        "GEOS": 4,
+        "ERCOT_Proxy": 3,
+        "MUX": 3
+      },
+      "top_maturities": {
+        "3": 54,
+        "2": 46,
+        "7": 28,
+        "5": 8,
+        "14": 3
+      }
+    },
+    "7": {
+      "threshold_pct": 7,
+      "n_buy": 68,
+      "n_sell": 17,
+      "n_total": 85,
+      "buy_yield_mean": 20.52,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": -8.45,
+      "sell_yield_min": -11.95,
+      "top_assets": {
+        "ERCOT_Proxy": 12,
+        "MUX": 8,
+        "NXE": 8,
+        "GEOS": 8,
+        "SHIP": 8,
+        "RKDA": 8,
+        "XLE_ETF": 7,
+        "WTI_Crude": 6,
+        "WWR": 4,
+        "CTRM": 3
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 10,
+        "RKDA": 8,
+        "MUX": 6,
+        "NXE": 6,
+        "GEOS": 6
+      },
+      "top_sell_assets": {
+        "XLE_ETF": 5,
+        "WTI_Crude": 2,
+        "ERCOT_Proxy": 2,
+        "MUX": 2,
+        "NXE": 2
+      },
+      "top_maturities": {
+        "2": 46,
+        "3": 22,
+        "7": 14,
+        "5": 2,
+        "14": 1
+      }
+    },
+    "10": {
+      "threshold_pct": 10,
+      "n_buy": 68,
+      "n_sell": 2,
+      "n_total": 70,
+      "buy_yield_mean": 20.52,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": -11.39,
+      "sell_yield_min": -11.95,
+      "top_assets": {
+        "ERCOT_Proxy": 10,
+        "RKDA": 8,
+        "MUX": 6,
+        "NXE": 6,
+        "GEOS": 6,
+        "SHIP": 6,
+        "WTI_Crude": 4,
+        "XLE_ETF": 4,
+        "WWR": 4,
+        "CTRM": 3
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 10,
+        "RKDA": 8,
+        "MUX": 6,
+        "NXE": 6,
+        "GEOS": 6
+      },
+      "top_sell_assets": {
+        "XLE_ETF": 2
+      },
+      "top_maturities": {
+        "2": 46,
+        "3": 22,
+        "7": 2
+      }
+    },
+    "12": {
+      "threshold_pct": 12,
+      "n_buy": 34,
+      "n_sell": 0,
+      "n_total": 34,
+      "buy_yield_mean": 30.19,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": 0,
+      "sell_yield_min": 0,
+      "top_assets": {
+        "ERCOT_Proxy": 8,
+        "MUX": 4,
+        "NXE": 4,
+        "GEOS": 4,
+        "SHIP": 4,
+        "RKDA": 4,
+        "WTI_Crude": 2,
+        "WWR": 2,
+        "CTRM": 1,
+        "GEVO": 1
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 8,
+        "MUX": 4,
+        "NXE": 4,
+        "GEOS": 4,
+        "SHIP": 4
+      },
+      "top_sell_assets": {},
+      "top_maturities": {
+        "3": 20,
+        "2": 14
+      }
+    },
+    "15": {
+      "threshold_pct": 15,
+      "n_buy": 30,
+      "n_sell": 0,
+      "n_total": 30,
+      "buy_yield_mean": 32.41,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": 0,
+      "sell_yield_min": 0,
+      "top_assets": {
+        "ERCOT_Proxy": 8,
+        "MUX": 4,
+        "NXE": 4,
+        "GEOS": 4,
+        "SHIP": 4,
+        "RKDA": 4,
+        "WTI_Crude": 2
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 8,
+        "MUX": 4,
+        "NXE": 4,
+        "GEOS": 4,
+        "SHIP": 4
+      },
+      "top_sell_assets": {},
+      "top_maturities": {
+        "3": 16,
+        "2": 14
+      }
+    },
+    "20": {
+      "threshold_pct": 20,
+      "n_buy": 19,
+      "n_sell": 0,
+      "n_total": 19,
+      "buy_yield_mean": 41.0,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": 0,
+      "sell_yield_min": 0,
+      "top_assets": {
+        "ERCOT_Proxy": 6,
+        "RKDA": 3,
+        "WTI_Crude": 2,
+        "MUX": 2,
+        "NXE": 2,
+        "GEOS": 2,
+        "SHIP": 2
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 6,
+        "RKDA": 3,
+        "WTI_Crude": 2,
+        "MUX": 2,
+        "NXE": 2
+      },
+      "top_sell_assets": {},
+      "top_maturities": {
+        "2": 14,
+        "3": 5
+      }
+    },
+    "30": {
+      "threshold_pct": 30,
+      "n_buy": 16,
+      "n_sell": 0,
+      "n_total": 16,
+      "buy_yield_mean": 44.66,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": 0,
+      "sell_yield_min": 0,
+      "top_assets": {
+        "ERCOT_Proxy": 6,
+        "WTI_Crude": 2,
+        "MUX": 2,
+        "NXE": 2,
+        "GEOS": 2,
+        "SHIP": 2
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 6,
+        "WTI_Crude": 2,
+        "MUX": 2,
+        "NXE": 2,
+        "GEOS": 2
+      },
+      "top_sell_assets": {},
+      "top_maturities": {
+        "2": 12,
+        "3": 4
+      }
+    },
+    "50": {
+      "threshold_pct": 50,
+      "n_buy": 2,
+      "n_sell": 0,
+      "n_total": 2,
+      "buy_yield_mean": 91.19,
+      "buy_yield_max": 99.97,
+      "sell_yield_mean": 0,
+      "sell_yield_min": 0,
+      "top_assets": {
+        "ERCOT_Proxy": 2
+      },
+      "top_buy_assets": {
+        "ERCOT_Proxy": 2
+      },
+      "top_sell_assets": {},
+      "top_maturities": {
+        "2": 2
+      }
+    }
+  },
+  "default_5pct": {
+    "threshold_pct": 5,
+    "n_buy": 100,
+    "n_sell": 39,
+    "n_total": 139,
+    "buy_yield_mean": 16.0,
+    "buy_yield_max": 99.97,
+    "sell_yield_mean": -6.85,
+    "sell_yield_min": -11.95,
+    "top_assets": {
+      "ERCOT_Proxy": 15,
+      "WTI_Crude": 12,
+      "GEOS": 12,
+      "MUX": 11,
+      "NXE": 11,
+      "RKDA": 11,
+      "SHIP": 10,
+      "XLE_ETF": 9,
+      "WWR": 8,
+      "GEVO": 7
+    },
+    "top_buy_assets": {
+      "ERCOT_Proxy": 12,
+      "RKDA": 10,
+      "MUX": 8,
+      "NXE": 8,
+      "GEOS": 8
+    },
+    "top_sell_assets": {
+      "WTI_Crude": 6,
+      "XLE_ETF": 5,
+      "GEOS": 4,
+      "ERCOT_Proxy": 3,
+      "MUX": 3
+    },
+    "top_maturities": {
+      "3": 54,
+      "2": 46,
+      "7": 28,
+      "5": 8,
+      "14": 3
+    }
+  }
+}

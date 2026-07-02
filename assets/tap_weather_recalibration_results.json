@@ -1,0 +1,117 @@
+{
+  "Fresno": {
+    "optimal": {
+      "amplitude": -0.7878,
+      "bias": -5.2485,
+      "r_squared": 0.0042,
+      "n_samples": 60,
+      "latitude": 36.7468,
+      "lat_factor": 0.5983
+    },
+    "validation": {
+      "hub": "Fresno",
+      "date": "2026-07-01",
+      "climatology_f": 98.0,
+      "actual_f": 92.7,
+      "tap_old_f": 99.0,
+      "tap_new_f": 92.4,
+      "api_err": 5.38,
+      "tap_old_err": 6.32,
+      "tap_new_err": -0.25,
+      "tap_old_better": false,
+      "tap_new_better": true
+    }
+  },
+  "Tokyo": {
+    "optimal": {
+      "amplitude": 0.466,
+      "bias": -5.6728,
+      "r_squared": 0.003,
+      "n_samples": 60,
+      "latitude": 35.6762,
+      "lat_factor": 0.5832
+    },
+    "validation": {
+      "hub": "Tokyo",
+      "date": "2026-07-01",
+      "climatology_f": 84.8,
+      "actual_f": 82.6,
+      "tap_old_f": 85.6,
+      "tap_new_f": 79.3,
+      "api_err": 2.18,
+      "tap_old_err": 2.98,
+      "tap_new_err": -3.27,
+      "tap_old_better": false,
+      "tap_new_better": false
+    }
+  },
+  "London": {
+    "optimal": {
+      "amplitude": -2.0236,
+      "bias": 1.8072,
+      "r_squared": 0.0155,
+      "n_samples": 60,
+      "latitude": 51.5074,
+      "lat_factor": 0.7827
+    },
+    "validation": {
+      "hub": "London",
+      "date": "2026-07-01",
+      "climatology_f": 72.0,
+      "actual_f": 77.5,
+      "tap_old_f": 72.7,
+      "tap_new_f": 72.8,
+      "api_err": -5.58,
+      "tap_old_err": -4.85,
+      "tap_new_err": -4.77,
+      "tap_old_better": true,
+      "tap_new_better": true
+    }
+  },
+  "Singapore": {
+    "optimal": {
+      "amplitude": 1.0368,
+      "bias": 0.8541,
+      "r_squared": 0.0894,
+      "n_samples": 60,
+      "latitude": 1.3521,
+      "lat_factor": 0.0236
+    },
+    "validation": {
+      "hub": "Singapore",
+      "date": "2026-07-01",
+      "climatology_f": 88.4,
+      "actual_f": 88.3,
+      "tap_old_f": 89.0,
+      "tap_new_f": 89.7,
+      "api_err": 0.04,
+      "tap_old_err": 0.7,
+      "tap_new_err": 1.41,
+      "tap_old_better": false,
+      "tap_new_better": false
+    }
+  },
+  "Sydney": {
+    "optimal": {
+      "amplitude": 0.1393,
+      "bias": 11.0215,
+      "r_squared": 0.0011,
+      "n_samples": 60,
+      "latitude": -33.8688,
+      "lat_factor": 0.5573
+    },
+    "validation": {
+      "hub": "Sydney",
+      "date": "2026-07-01",
+      "climatology_f": 54.2,
+      "actual_f": 70.0,
+      "tap_old_f": 54.7,
+      "tap_new_f": 65.3,
+      "api_err": -15.8,
+      "tap_old_err": -15.29,
+      "tap_new_err": -4.71,
+      "tap_old_better": true,
+      "tap_new_better": true
+    }
+  }
+}
