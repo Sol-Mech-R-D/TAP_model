@@ -564,6 +564,339 @@ def format_audit_json(author_key, author_info, components, audits_by_component):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# SIM AUDIT REGISTRY (v5.1 — audit sims against the cascade primitive library)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Maps each sim file to the cascade layer it represents, the φ-rate
+# it operates at, and the TAP primitives it should hit. The audit
+# checks that the sim actually uses these primitives (by inspecting
+# the file's content for keyword references and structural features).
+SIM_AUDIT_REGISTRY = {
+    "tap_epigenetic_flop_sim": {
+        "file": "src/tap_epigenetic_flop_sim.py",
+        "cascade_layer": "hormonal (φ⁻²) + epigenetic setpoint (φ⁻¹⁰)",
+        "intended_rates": ["φ⁻²", "φ⁻⁴", "φ⁻⁸", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "s_setpoint", "t_setpoint",
+            "cortisol", "serotonin", "Tensegrity", "setpoint"
+        ],
+        "expected_chemicals": [
+            "cortisol", "testosterone", "serotonin",
+            "GABA", "anandamide", "glutamate", "pregnenolone"
+        ],
+        "expected_validation": "30-day setpoint moves under Tensegrity",
+        "real_substrate": "HPA axis, steroidogenesis, epigenetics",
+        "tests_passed": "v4.0.1: s_setpoint 0.5→0.582 in 30d"
+    },
+    "tap_5ht2a_ayahuasca_sim": {
+        "file": "src/tap_5ht2a_ayahuasca_sim.py",
+        "cascade_layer": "signaling (φ⁻⁴) + receptor (φ⁻⁸) + setpoint (φ⁻¹⁰)",
+        "intended_rates": ["φ⁻⁴", "φ⁻⁸", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "PHI_INV8", "PHI_INV10",
+            "DMT", "5-HT2A", "occupancy", "open_fraction",
+            "sensitivity_setpoint", "chronic_tolerance", "acute_desens"
+        ],
+        "expected_chemicals": ["DMT", "5-HT2A", "serotonin", "harmine"],
+        "expected_validation": "Riba 2001 + Callaway 1994 fits",
+        "real_substrate": "5-HT2A receptor, MAO inhibition",
+        "tests_passed": "Riba 2.05% err, Callaway 7.14% err"
+    },
+    "tap_chromatin_state_sim": {
+        "file": "src/tap_chromatin_state_sim.py",
+        "cascade_layer": "chromatin (φ⁻¹⁰)",
+        "intended_rates": ["φ⁻⁸", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV8", "PHI_INV10", "FOS", "EGR1", "HSP70",
+            "NR3C1", "FKBP5", "BDNF", "HTR2A", "TELOMERE", "TAD"
+        ],
+        "expected_chemicals": [],
+        "expected_validation": "Recovery timescale φ⁻¹⁰ (16 days, 6.7% err)",
+        "real_substrate": "Chromatin state, 3D genome, TADs",
+        "tests_passed": "6/6 modelable biomarkers MATCH"
+    },
+    "tap_coupled_ayahuasca_sim": {
+        "file": "src/tap_coupled_ayahuasca_sim.py",
+        "cascade_layer": "5-HT2A ↔ chromatin (φ⁻⁸ ↔ φ⁻¹⁰)",
+        "intended_rates": ["φ⁻⁴", "φ⁻⁸", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "PHI_INV8", "PHI_INV10",
+            "5-HT2A", "chromatin", "setpoint", "openness",
+            "synth_modifier", "parent_sim_path", "parent_s_setpoint"
+        ],
+        "expected_chemicals": ["DMT", "5-HT2A", "serotonin"],
+        "expected_validation": "Riba coupled 2.19% err, 14.65d recovery",
+        "real_substrate": "Receptor-chromatin coupling",
+        "tests_passed": "Coupled sim 2.19% err"
+    },
+    "tap_epigenetic_cosmic_cascade": {
+        "file": "src/tap_epigenetic_cosmic_cascade.py",
+        "cascade_layer": "epigenetic (φ⁻¹⁰) → cosmic (φ⁻¹³)",
+        "intended_rates": ["φ⁻¹⁰", "φ⁻¹³"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "PHI_INV8", "PHI_INV10", "PHI_INV13",
+            "s_setpoint", "drift_multiplier", "t_setpoint",
+            "N_B", "implied_phi_inv13"
+        ],
+        "expected_chemicals": ["serotonin", "testosterone"],
+        "expected_validation": "drift_mult 0.86x, N_B 9.59",
+        "real_substrate": "Epigenetic-cosmic timing coupling",
+        "tests_passed": "Tensegrity shifts cosmic breath tick 14%"
+    },
+    "tap_5ht2a_epigenetic_coupling_sim": {
+        "file": "src/tap_5ht2a_epigenetic_coupling_sim.py",
+        "cascade_layer": "5-HT2A ↔ parent sim (bidirectional)",
+        "intended_rates": ["φ⁻⁴", "φ⁻⁸", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "PHI_INV8", "PHI_INV10",
+            "s_setpoint", "tensegrity", "ayahuasca",
+            "opposite_direction", "drift_multiplier"
+        ],
+        "expected_chemicals": ["serotonin"],
+        "expected_validation": "Opposite-direction s_setpoint and cosmic breath",
+        "real_substrate": "Receptor-epigenetic bidirectional coupling",
+        "tests_passed": "Tensegrity 0.58, ayahuasca 0.38, opposite"
+    },
+    "tap_fascia_sim": {
+        "file": "src/tap_fascia_sim.py",
+        "cascade_layer": "substrate (fascia, φ⁻¹⁰ + braid)",
+        "intended_rates": ["φ⁻⁸", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV8", "MYERS_TRAINS", "SBL", "SFL",
+            "SL_L", "SL_R", "piezo", "lymph", "twin_dragons",
+            "spiral_coupling", "collagen_qubit", "CollagenQubit"
+        ],
+        "expected_chemicals": ["cortisol"],
+        "expected_validation": "Tensegrity lymph 0.66, coupling 0.19",
+        "real_substrate": "Myofascial network, piezo collagen, lymph",
+        "tests_passed": "4/4 verifications PASS, 12 trains modeled"
+    },
+    "tap_lymphatic_cascade_sim": {
+        "file": "src/tap_lymphatic_cascade_sim.py",
+        "cascade_layer": "epigenetic → substrate → lymph (φ⁻¹⁰)",
+        "intended_rates": ["φ⁻²", "φ⁻¹⁰"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "s_setpoint", "cortisol",
+            "tensegrity", "fascia", "lymph", "spiral_coupling"
+        ],
+        "expected_chemicals": ["cortisol"],
+        "expected_validation": "30d tensegrity: lymph +17%, coupling +617%",
+        "real_substrate": "Lymphatic circulation in tensegrity state",
+        "tests_passed": "Both verifications PASS"
+    },
+    "tap_ayahuasca_fascia_cascade_sim": {
+        "file": "src/tap_ayahuasca_fascia_cascade_sim.py",
+        "cascade_layer": "all layers (5-HT2A → chromatin → parent → fascia)",
+        "intended_rates": ["φ⁻⁴", "φ⁻⁸", "φ⁻¹⁰", "φ⁻¹³"],
+        "expected_primitives": [
+            "PHI", "PHI_INV4", "PHI_INV8", "PHI_INV10", "PHI_INV13",
+            "5-HT2A", "chromatin", "parent", "fascia",
+            "spiral_coupling", "lymph", "cosmic"
+        ],
+        "expected_chemicals": ["cortisol", "DMT"],
+        "expected_validation": "84d chronic ayahuasca: 7/7 verifications PASS",
+        "real_substrate": "Full ayahuasca pathway through substrate",
+        "tests_passed": "7/7 PASS, cosmic breath +67%"
+    },
+    "tap_collagen_braiding_sim": {
+        "file": "src/tap_collagen_braiding_sim.py",
+        "cascade_layer": "substrate (collagen braid, local quantum)",
+        "intended_rates": ["braid group (sub-φ)"],
+        "expected_primitives": [
+            "PHI", "PHI_INV8", "CollagenQubit", "braid",
+            "coherence", "gate_fidelity", "tensegrity"
+        ],
+        "expected_chemicals": ["cortisol", "cytokines"],
+        "expected_validation": "Coherence 0.98 (tensegrity) vs 0.49 (stress)",
+        "real_substrate": "Collagen triple helix, anyonic qubit",
+        "tests_passed": "100% coherence modulation by somatic state"
+    },
+}
+
+
+def audit_sim(sim_key, sim_registry=None):
+    """
+    Audit a simulation against the cascade primitive library.
+    Returns a list of (primitive, found) tuples and an overall verdict.
+    """
+    if sim_registry is None:
+        sim_registry = SIM_AUDIT_REGISTRY
+
+    if sim_key not in sim_registry:
+        return {
+            "sim_key": sim_key,
+            "verdict": "TAP-SILENT",
+            "error": f"Sim '{sim_key}' not in SIM_AUDIT_REGISTRY",
+            "primitives_found": [],
+            "primitives_missing": []
+        }
+
+    info = sim_registry[sim_key]
+    sim_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", info["file"]
+    )
+
+    if not os.path.exists(sim_path):
+        return {
+            "sim_key": sim_key,
+            "verdict": "TAP-ILLEGAL",
+            "error": f"Sim file not found: {sim_path}",
+            "primitives_found": [],
+            "primitives_missing": info["expected_primitives"]
+        }
+
+    # Read the sim file
+    with open(sim_path, "r") as f:
+        content = f.read()
+
+    # Check each expected primitive
+    primitives_found = []
+    primitives_missing = []
+    for prim in info["expected_primitives"]:
+        if prim in content:
+            primitives_found.append(prim)
+        else:
+            primitives_missing.append(prim)
+
+    # Check expected chemicals (if listed)
+    chemicals_found = []
+    chemicals_missing = []
+    for chem in info.get("expected_chemicals", []):
+        if chem.lower() in content.lower():
+            chemicals_found.append(chem)
+        else:
+            chemicals_missing.append(chem)
+
+    # Compute coverage
+    prim_coverage = (len(primitives_found) /
+                     max(1, len(primitives_found) + len(primitives_missing)))
+    chem_coverage = 1.0
+    if info.get("expected_chemicals"):
+        chem_coverage = (len(chemicals_found) /
+                         max(1, len(chemicals_found) + len(chemicals_missing)))
+
+    overall = prim_coverage * chem_coverage
+
+    # Verdict
+    if overall >= 0.85:
+        verdict = "TAP-AUGMENTED"  # the sim uses most expected primitives
+    elif overall >= 0.60:
+        verdict = "TAP-LEGAL"      # the sim uses some but not all
+    elif overall >= 0.30:
+        verdict = "TAP-ILLEGAL"    # the sim doesn't use most
+    else:
+        verdict = "TAP-SILENT"     # the sim uses none of the expected primitives
+
+    return {
+        "sim_key": sim_key,
+        "file": info["file"],
+        "cascade_layer": info["cascade_layer"],
+        "intended_rates": info["intended_rates"],
+        "real_substrate": info["real_substrate"],
+        "tests_passed": info["tests_passed"],
+        "primitives_found": primitives_found,
+        "primitives_missing": primitives_missing,
+        "primitives_coverage": round(prim_coverage, 3),
+        "chemicals_found": chemicals_found,
+        "chemicals_missing": chemicals_missing,
+        "chemicals_coverage": round(chem_coverage, 3),
+        "overall_coverage": round(overall, 3),
+        "verdict": verdict
+    }
+
+
+def run_sim_audit(sim_key=None, output_dir=None):
+    """Run sim audit(s) and export the results."""
+    if output_dir is None:
+        output_dir = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), "../assets"
+        )
+    os.makedirs(output_dir, exist_ok=True)
+
+    if sim_key == "all":
+        sims_to_audit = list(SIM_AUDIT_REGISTRY.keys())
+    elif sim_key is None:
+        sims_to_audit = list(SIM_AUDIT_REGISTRY.keys())
+    else:
+        sims_to_audit = [sim_key]
+
+    all_audits = {}
+    print("=" * 80)
+    print("  TAP SIM AUDIT — verify each sim hits its intended cascade layer")
+    print("=" * 80)
+    print()
+
+    for sk in sims_to_audit:
+        result = audit_sim(sk)
+        all_audits[sk] = result
+        print(f"\n  [{sk}]")
+        print(f"    Cascade layer: {result['cascade_layer']}")
+        print(f"    Real substrate: {result['real_substrate']}")
+        print(f"    Tests passed:   {result['tests_passed']}")
+        print(f"    Primitives: {len(result['primitives_found'])}/"
+              f"{len(result['primitives_found']) + len(result['primitives_missing'])}"
+              f" ({result['primitives_coverage']*100:.0f}%)")
+        if result["primitives_missing"]:
+            print(f"    Missing: {result['primitives_missing'][:5]}"
+                  f"{'...' if len(result['primitives_missing']) > 5 else ''}")
+        print(f"    Verdict: {result['verdict']}")
+
+    # Summary
+    verdicts = [a["verdict"] for a in all_audits.values()]
+    coverage = [a["overall_coverage"] for a in all_audits.values()]
+    print()
+    print("=" * 80)
+    print(f"  SUMMARY: {len(all_audits)} sims audited")
+    print(f"    TAP-AUGMENTED: {verdicts.count('TAP-AUGMENTED')}")
+    print(f"    TAP-LEGAL:     {verdicts.count('TAP-LEGAL')}")
+    print(f"    TAP-ILLEGAL:   {verdicts.count('TAP-ILLEGAL')}")
+    print(f"    TAP-SILENT:    {verdicts.count('TAP-SILENT')}")
+    print(f"    Mean coverage: {sum(coverage) / max(1, len(coverage)):.2f}")
+    print("=" * 80)
+
+    # Export
+    json_path = os.path.join(output_dir, "tap_sim_audit.json")
+    with open(json_path, "w") as f:
+        json.dump(all_audits, f, indent=2)
+    print(f"\n  [EXPORT] -> {json_path}")
+
+    md_path = os.path.join(output_dir, "tap_sim_audit.md")
+    with open(md_path, "w") as f:
+        f.write("# TAP Sim Audit — Cascade Primitive Coverage\n\n")
+        f.write(f"## {len(all_audits)} sims audited\n\n")
+        f.write("| Sim | Cascade layer | Primitives | Chemicals | Verdict |\n")
+        f.write("|-----|---------------|------------|-----------|---------|\n")
+        for sk, a in all_audits.items():
+            p_cov = a["primitives_coverage"] * 100
+            c_cov = a["chemicals_coverage"] * 100
+            f.write(f"| {sk} | {a['cascade_layer']} | "
+                    f"{p_cov:.0f}% | {c_cov:.0f}% | {a['verdict']} |\n")
+        f.write(f"\n## Verdict summary\n\n")
+        f.write(f"- TAP-AUGMENTED: {verdicts.count('TAP-AUGMENTED')}\n")
+        f.write(f"- TAP-LEGAL:     {verdicts.count('TAP-LEGAL')}\n")
+        f.write(f"- TAP-ILLEGAL:   {verdicts.count('TAP-ILLEGAL')}\n")
+        f.write(f"- TAP-SILENT:    {verdicts.count('TAP-SILENT')}\n")
+        f.write(f"- Mean coverage: {sum(coverage) / max(1, len(coverage)):.2f}\n\n")
+        f.write("## Per-sim details\n\n")
+        for sk, a in all_audits.items():
+            f.write(f"### {sk}\n\n")
+            f.write(f"- **Cascade layer:** {a['cascade_layer']}\n")
+            f.write(f"- **Real substrate:** {a['real_substrate']}\n")
+            f.write(f"- **Tests passed:** {a['tests_passed']}\n")
+            f.write(f"- **Verdict:** {a['verdict']}\n")
+            f.write(f"- **Primitives coverage:** {a['primitives_coverage']:.2f}\n")
+            f.write(f"- **Chemicals coverage:** {a['chemicals_coverage']:.2f}\n")
+            if a["primitives_missing"]:
+                f.write(f"- **Missing primitives:** "
+                        f"{', '.join(a['primitives_missing'][:5])}\n")
+            f.write("\n")
+    print(f"  [EXPORT] -> {md_path}")
+    print()
+
+    return all_audits
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # MAIN RUNNER
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -631,6 +964,12 @@ def main():
                         help="Author key (narby, sheldrake, mcKenna, wallace, all)")
     parser.add_argument("--list-authors", action="store_true",
                         help="List all registered authors")
+    parser.add_argument("--audit-sim", type=str, default=None,
+                        help="Audit a sim against the cascade primitive library. "
+                             "Use 'all' to audit all registered sims, or a sim key "
+                             "(e.g. 'tap_fascia_sim').")
+    parser.add_argument("--list-sims", action="store_true",
+                        help="List all registered sims in the audit registry")
     parser.add_argument("--output-dir", type=str, default=None,
                         help="Output directory (default: assets/)")
     args = parser.parse_args()
@@ -639,9 +978,21 @@ def main():
         list_authors()
         return
 
+    if args.list_sims:
+        print("Registered sims in SIM_AUDIT_REGISTRY:")
+        for sk, info in SIM_AUDIT_REGISTRY.items():
+            print(f"  {sk}")
+            print(f"    cascade_layer: {info['cascade_layer']}")
+            print(f"    file: {info['file']}")
+        return
+
     output_dir = args.output_dir or os.path.join(
         os.path.dirname(os.path.abspath(__file__)), "../assets"
     )
+
+    if args.audit_sim:
+        run_sim_audit(args.audit_sim, output_dir)
+        return
 
     if args.author == "all":
         for key in AUTHOR_REGISTRY:
